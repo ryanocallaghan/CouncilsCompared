@@ -1,0 +1,1180 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/graphics/favicon.ico" type="image/x-icon" />
+
+    <meta property="og:title" content="https://www.lgo.org.uk/">
+    <meta property="og:type" content="web application">
+    <meta property="og:url" content="/Decisions/SearchResults">
+    <meta property="og:image" content="/graphics/shortcut-icons/OGimageDefault.png">
+
+    <meta name="url" content="/Decisions/SearchResults" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/graphics/shortcut-icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/graphics/shortcut-icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/graphics/shortcut-icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/graphics/shortcut-icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/graphics/shortcut-icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/graphics/shortcut-icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/graphics/shortcut-icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/graphics/shortcut-icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/graphics/shortcut-icons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/graphics/shortcut-icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/graphics/shortcut-icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/graphics/shortcut-icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/graphics/shortcut-icons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="https://www.lgo.org.uk/" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/graphics/shortcut-icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/graphics/shortcut-icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/graphics/shortcut-icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/graphics/shortcut-icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/graphics/shortcut-icons/mstile-310x310.png" />
+
+    <title>SearchResult - Local Government and Social Care Ombudsman</title>
+
+    <meta name="DC.description" content="The Local Government and Social Care Ombudsman, We are the final stage for complaints about councils, all adult social care providers (including care homes and home care agencies) and some other organisations providing local public services. We are a free service. We investigate complaints in a fair and independent way - we do not take sides." />
+    <meta name="DC.identifier" content="https://www.lgo.org.uk/" />
+    <meta name="DC.source" content="https://www.lgo.org.uk/" />
+    <meta name="DC.publisher" content="Local Government and Social Care Ombudsman" />
+    <meta name="DC.title" content="SearchResult - Local Government and Social Care Ombudsman" />
+    <meta name="DC.language" content="eng" />
+    <meta name="DC.rights.copyright" content="Copyright 2021 Local Government and Social Care Ombudsman" />
+    <meta name="DC.coverage" content="UK" />
+    <meta name="DC.subject" content="The Local Government and Social Care Ombudsman, We are the final stage for complaints about councils, all adult social care providers (including care homes and home care agencies) and some other organisations providing local public services. We are a free service. We investigate complaints in a fair and independent way - we do not take sides." />
+
+
+    <link rel="stylesheet" href="/css/app-min.css?v=16" />
+
+
+
+
+
+    
+    
+
+
+
+                        <meta name="category" content="Decisions" />
+                        <meta name="subcategory" content="SearchResults" />
+        <meta name="pageUpdated" content="01/01/2015" />
+
+
+
+    
+
+
+
+    
+</head>
+<body>
+<script>
+import(`https://eu.engage.app/api/ecs/v1/loader/4e243da0-9c61-4be0-98fa-b39fb4d85af3.js?path=${encodeURIComponent(window.location.origin+window.location.pathname)}&selectedVersion=${(new URLSearchParams(window.location.search)).get('ecsSelectedVersion') || ''}`)
+</script>
+    <div id="appendTarget"></div>
+
+
+    <nav>
+    <ul id="accessbar">
+        <li><a href="#article" title="Skip to Content, accesskey 2" class="skip_content" accesskey="2" tabindex="0">Skip to Content</a></li>
+        <li><a href="/accessibility" title="Accessibility Options Page, accesskey 0" class="skip_content" accesskey="0" tabindex="0">Accessibility Options Page</a></li>
+        <li><a href="/" title="Home Page, accesskey 1" class="skip_content" accesskey="1" tabindex="0">Home Page</a></li>
+        <li><a href="#headerNav" title="Skip to navigation, accesskey 2" class="skip_content" accesskey="2" tabindex="0">Skip to navigation</a></li>
+        <li><a href="/sitemap" title="Site Map, accesskey 3" class="skip_content" accesskey="3" tabindex="0">Site Map</a></li>
+        <li><a href="/search" title="Search, accesskey 4" class="skip_content" accesskey="4" tabindex="0">Search</a></li>
+        <li><a href="#footer" title="Skip to Base of page, accesskey 5" class="skip_content" accesskey="5" tabindex="0">Skip to Base of page</a></li>
+        <li><a href="#welcomeCookies" title="Skip to Review your privacy settings, accesskey 6" class="skip_content" id="accesskeyscookieControl" accesskey="6" tabindex="0">Skip to Review your privacy settings</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+<div class="pageContainer">
+
+    <header class="header-lgo">
+        
+        
+
+<div class="colour1 headerNav">
+    <div class="wrapper fullWidthLayout">
+        <div class="row">
+
+            <div class="mast" id="headerNav">
+
+                <a href="/" title="Go to the Local Government & Social Care Ombudsman Home page" class="headerLogo masthref">
+                    <span class="visuallyhidden">Local Government & Social Care Ombudsman</span>
+                </a>
+
+                <a href="#displayMenu" class="masthref mastCallToAction mainMenu trigger" role="button" aria-controls="displayMenu" id="displayMenu-label">
+                    <span class="toggleLabel visuallyhidden">View</span> <span>Menu</span>
+                </a>
+
+                <a href="#displaySearch" class="masthref mastCallToAction mainSearch trigger" role="button" aria-controls="displaySearch" id="displaySearch-label">
+                    <span class="toggleLabel visuallyhidden">View</span> <span>Search</span>
+                </a>
+                <a href="#recite-header" id="enableRecite" class="masthref mastCallToAction mainDisplay bottom" onclick="return false" data-tooltip data-click-open="false" title="Launch assistive technology">
+                    <span>Accessibility</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="colour2">
+
+    <div class="menuExpanded" style="display:none" id="displayMenu" role="region" aria-labelledby="displayMenu-label" tabindex="-1" aria-expanded="false">
+        <div class="wrapper fullWidthLayout">
+            <div class="row">
+                <nav>
+                    <ul class="headerMenu expanded horizontal medium-vertical align-center align-middle">
+
+                                    <li><a href="/how-to-complain"><span>How to complain</span></a></li>
+                                    <li><a href="/adult-social-care"><span>Adult Social Care</span></a></li>
+                                    <li><a href="/decisions"><span>Decisions</span></a></li>
+                                    <li><a href="/information-centre"><span>Information Centre</span></a></li>
+                                    <li><a href="/for-advisors"><span>Advisers &amp; Advocates</span></a></li>
+                                    <li><a href="/accessibility"><span>Accessibility</span></a></li>
+                                    <li><a href="/jobs"><span>Careers</span></a></li>
+                        <li><a href="https://complaints.lgo.org.uk"><span>Log in</span></a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="menuExpanded" style="display:none" id="displayAccount" role="region" aria-labelledby="displayAccount-label" tabindex="-1" aria-expanded="false">
+        <div class="wrapper fullWidthLayout">
+            <div class="row">
+                <nav>
+                    <ul class="headerMenu expanded horizontal medium-vertical align-center">
+                        <li><a href="/jobs/myjobs"><span>My Jobs</span></a></li>
+                        <li><a href="/jobs/settings"><span>Account settings</span></a></li>
+                        <li><a href="/jobs/logout"><span>Logout</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="searchExpanded" style="display:none" id="displaySearch" role="region" aria-labelledby="displaySearch-label" tabindex="-1" aria-expanded="false">
+        <div class="wrapper fullWidthLayout">
+            <div class="row">
+                <form id="#" class="relative" action="/searchpost" method="post" role="search">
+                    <label for="searchTop">
+                        <span class="visuallyhidden">Search the Local Government & Social Care Ombudsman website</span>
+                        <input id="searchTop" class="FormField" placeholder="Search lgo.org.uk" type="text" name="searchtxt">
+                    </label>
+                    <button type="submit" class="button">GO</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="breadcrumbs clearfix">
+    <div class="wrapper fullWidthLayout">
+        <div class="row paddingSides">
+            <nav aria-label="breadcrumb navigation">
+                <ul>
+
+                                <li><a href="/" title="Home">Home</a><span class="arrowRight icn"></span></li>
+
+                    <li>Search Results</li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+    </header>
+
+    <main id="Main">
+        
+
+        
+
+
+
+
+<!-- wrapper -->
+<div class="wrapper fullWidthLayout marginBottom clearfix">
+
+    <article id="article" class="row paddingSides wysiwyg">
+
+        <!-- all this is part of the page intro - for the design to work this is all required -->
+
+        <span class="icn icnCategory icnDecisions left"></span>
+
+        <div class="left introCategory wysiwyg">
+            <h1>Decision search</h1>
+
+            <!-- both fields here are required -->
+        </div>
+        <hr>
+
+        <div class="clearfix"></div>
+        <!-- Search Start -->
+        <section class="clear">
+            <a href="#helpBlock" class="helpLink right">What's this <span class="question">?</span></a>
+            <div class="block sectionBlock blockPadding greenBlock">
+                <form id="descisionsearch" name="decisionSearch" action="/decisionsnew/newsearchpost" method="POST">
+
+
+                    <!-- help -->
+                    <div id="helpBlock" class="helpBlock" style="display:none">
+
+                        <a href="#" class="close">close</a>
+                        <p><strong>Use 'advanced search' to refine your search results. You can also browse decisions by subject further down the page.</strong></p>
+
+                        <p><strong>Decision statements are kept for 5 years. Public interest reports, where we highlight systemic and serious issues, are kept for 10 years.</strong></p>
+
+                        <p>We issue our decisions as statements of reason on most of our cases. This is where we are satisfied with the actions a council has taken or proposes to take as a result of our investigation and recommendations, or when we decide not to investigate a complaint, or end an investigation. </p>
+                        <p>In a small number of investigations, particularly those with wider public interest, we will issue a report. If we decide it is in the public interest we will also publish the report. This means the organisation involved must make a public announcement about our findings, and we will promote the report in the media. We might do this where we decide it is in the public interest to highlight particular issues or problems or where what went wrong is significant and the impact on the person complaining (or on other people) is significant. We must also issue (and decide whether to publish) a report if we are not satisfied with the action the organisation has taken or proposes to take in response to our recommendations.</p>
+                    </div>
+                    <!-- help ends -->
+                    <!-- basic search -->
+                    <div class="searchLine clearfix">
+                        <input id="keywords" class="FormField mainSearch" placeholder="Keywords" type="text" name="keywordstext"> <button class="buttonSearch" type="submit">Search</button>
+                    </div>
+                    <!-- basic search ends -->
+
+                    <ul class="FormFields">
+                        <li>
+                            <fieldset>
+                                <legend>Organisation</legend>
+
+
+                                <div class="searchSection">
+                                    <label for="authorityName">Organisation name: <input id="authorityName" class="FormField" placeholder="Organisation name" type="text" name="authorityname" value="Central Bedfordshire Council" /> </label>
+                                </div>
+                                <div class="searchSection">
+
+                                    <label for="authorityType">
+                                        Organisation type: <select id="authorityType" name="authoritytype" class="formField">
+    <option value="" >All</option>
+    <option value="County council" >County council</option>
+
+    <option value="District council" >District council</option>
+
+    <option value="Unitary authority" >Unitary authority</option>
+
+    <option value="London borough" >London borough</option>
+
+    <option value="Metropolitan council" >Metropolitan council</option>
+
+    <option value="Greater London Authority" >Greater London Authority</option>
+
+    <option value="National park" >National park</option>
+
+    <option value="Police and crime bodies" >Police and crime bodies</option>
+
+    <option value="School" >School</option>
+
+    <option value="Joint committee/boards" >Joint committee/boards</option>
+
+    <option value="Care provider" >Care provider</option>
+
+    <option value="Health provider" >Health provider</option>
+
+    <option value="Combined authority" >Combined authority</option>
+
+    <option value="Other" >Other</option>
+
+</select>
+                                    </label>
+                                </div>
+
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend>Decision type</legend>
+                                <p>
+
+                                    <label for="type_1"><input class="formRadio" name="type" value="1" id="type_1" type="radio" > Statements</label>
+                                    <label for="type_2"><input class="formRadio" name="type" value="2" id="type_2" type="radio" > Reports</label>
+                                    <label for="type_3"><input class="formRadio" name="type" value="0" id="type_3" type="radio" checked> Both</label>
+                                </p>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend>Reference number</legend>
+                                <div class="searchSection">
+
+                                    <label for="referenceNumber">Reference number: <input id="referenceNumber" class="FormField" placeholder="Reference number" type="text" name="referencenumber" /> </label>
+                                </div>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend>Date range</legend>
+                                <p class="date-range">
+
+                                    <label for="dateDecisionFrom">                                        
+                                        From <input type="text" name="fromDate2" id="dateDecisionFrom" class="FormField ddmmyyyy" placeholder="DD/MM/YYYY" maxlength="10" inputmode="numeric" autocomplete="off" value="01/04/2024">
+                                    </label>
+                                    &nbsp;
+                                    <label for="dateDecisionTo">
+                                        To <input type="text" name="toDate2" id="dateDecisionTo" class="FormField ddmmyyyy" placeholder="DD/MM/YYYY" maxlength="10" inputmode="numeric" autocomplete="off" value="31/03/2026">
+                                    </label>
+                                </p>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend>Sort Results</legend>
+                                <p>
+
+                                    <label for="sort_1"><input class="formRadio" name="sort" value="descending" id="sort_1" type="radio" checked> Descending (latest first)</label>
+                                    <label for="sort_2"><input class="formRadio" name="sort" value="ascending" id="sort_2" type="radio" > Ascending (oldest first)</label>
+                                </p>
+                            </fieldset>
+                        </li>
+
+                    </ul>
+
+
+
+
+
+                    <!-- advanced options -->
+                    <div class="searchLine clearfix">
+                        <div class="advancedSearchBlock" id="advancedSearchBlock" style="display:none" aria-expanded="false" tabindex="-1">
+                            <h2>Advanced search</h2>
+                            <ul class="FormFields">
+                                <li>
+                                    <label class="blockLabel">
+                                        Exclude (NOT)<br>
+                                        <input type="text" id="fieldId2" class="FormField ErrorFormField fullWidth" placeholder="keywords you don't want to search" name="nottxt">
+                                    </label>
+                                    
+                                </li>
+                                <li>
+                                    <fieldset>
+                                        <legend>Subject area</legend>
+
+                                        <div class="field">
+                                            <label id="lblCategoryLevel1" for="categoryLevel1">Category</label>
+                                            <select id="categoryLevel1" name="category" tooltip="Select a category to search against">
+                                                <option value=""> - Choose - </option>
+                                                <option value="1">Adult care services</option>
+                                                <option value="2">Benefits and tax</option>
+                                                <option value="3">Children's care services</option>
+                                                <option value="4">Education</option>
+                                                <option value="5">Environment and regulation</option>
+                                                <option value="10">Health</option>
+                                                <option value="6">Housing</option>
+                                                <option value="8">Planning</option>
+                                                <option value="9">Transport and highways</option>
+                                                <option value="7">Other categories</option>
+                                            </select>
+                                        </div>
+                                        <div class="field nextWidth subCategory1 subCatHide" style="display: none;">
+                                            <label id="lblSubCategory2a" for="categoryLevel2a">Sub category</label>
+                                            <select id="categoryLevel2a" name="subcategorya" tooltip="Select a sub category to search against">
+                                                <option value=""> - Choose - </option>
+                                                <option value="Assessment and care plan">Assessment and care plan</option>
+                                                <option value="Charging">Charging</option>
+                                                <option value="COVID-19">COVID-19</option>
+                                                <option value="Direct payments">Direct payments</option>
+                                                <option value="Disabled facilities grants">Disabled facilities grants</option>
+                                                <option value="Domiciliary care">Domiciliary care</option>
+                                                <option value="Other">Other</option>
+                                                <option value="Residential care">Residential care</option>
+                                                <option value="Safeguarding">Safeguarding</option>
+                                                <option value="Transition from childrens services">Transition from children's services</option>
+                                                <option value="Transport">Transport</option>
+                                            </select>
+                                        </div>
+                                        <div class="field nextWidth subCategory2 subCatHide" style="display: none;">
+                                            <label id="lblSubCategory2b" for="categoryLevel2b">Sub category</label>
+                                            <select id="categoryLevel2b" name="subcategoryb" tooltip="Select a sub category to search against">
+                                                <option value=""> - Choose - </option>
+                                                <option value="Council tax">Council tax</option>
+                                                <option value="COVID-19">COVID-19</option>
+                                                <option value="Housing benefit and council tax benefit">Housing benefit and council tax benefit</option>
+                                                <option value="Council tax support">Council tax support</option>
+                                                <option value="Local welfare payments">Local welfare payments</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="field nextWidth subCategory3 subCatHide" style="display: none;">
+                                            <label id="lblSubCategory2c" for="categoryLevel2c">Sub category</label>
+                                            <select id="categoryLevel2c" name="subcategoryc" tooltip="Select a sub category to search against">
+                                                <option value=""> - Choose - </option>
+                                                <option value="Child protection">Child protection</option>
+                                                <option value="COVID-19">COVID-19</option>
+                                                <option value="Disabled children">Disabled children</option>
+                                                <option value="Fostering">Fostering</option>
+                                                <option value="Looked after children">Looked after children</option>
+                                                <option value="Adoption">Adoption</option>
+                                                <option value="Friends and family carers">Friends and family carers</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="field nextWidth subCategory4 subCatHide" style="display: none;">
+                                            <label id="lblSubCategory2d" for="categoryLevel2d">Sub category</label>
+                                            <select id="categoryLevel2d" name="subcategoryd" tooltip="Select a sub category to search against">
+                                                <option value=""> - Choose - </option>
+                                                <option value="Alternative provision">Alternative provision</option>
+                                                <option value="COVID-19">COVID-19</option>
+                                                <option value="Other">Other</option>
+                                                <option value="School admissions">School admissions</option>
+                                                <option value="School exclusions">School exclusions</option>
+                                                <option value="School transport">School transport</option>
+                                                <option value="Special educational needs">Special educational needs</option>
+                                            </select>
+                                        </div>
+                                        <div class="field nextWidth subCategory5 subCatHide" style="display: none;">
+                                            <label id="lblSubCategory2e" for="categoryLevel2e">Sub category</label>
+                                            <select id="categoryLevel2e" name="subcategorye" tooltip="Select a sub category to search against">
+                                                <option value=""> - Choose - </option>
+                                                <option value="Antisocial behaviour">Antisocial behaviour</option>
+                                                <option value="Cemeteries and crematoria">Cemeteries and crematoria</option>
+                                                <option value="COVID-19">COVID-19</option>
+                                                <option value="Drainage">Drainage</option>
+                                                <option value="Health and safety">Health and safety</option>
+                                                <option value="Licensing">Licensing</option>
+                                                <option value="Noise">Noise</option>
+                                                <option value="Other">Other</option>
+                                                <option value="Pollution">Pollution</option>
+                                                <option value="Refuse and recycling">Refuse and recycling</option>
+                                                <option value="Trading standards">Trading standards</option>
+                                                <option value="Trees">Trees</option>
+                                            </select>
+                                        </div>
+                                        <div class="field nextWidth subCategory6 subCatHide" style="display: none;">
+                                            <label id="lblSubCategory2f" for="categoryLevel2f">Sub category</label>
+                                            <select id="categoryLevel2f" name="subcategoryf" tooltip="Select a sub category to search against">
+                                                <option value=""> - Choose - </option>
+                                                <option value="Allocations">Allocations</option>
+                                                <option value="Council house improvement">Council house improvement</option>
+                                                <option value="Council house rent">Council house rent</option>
+                                                <option value="Council house repairs">Council house repairs</option>
+                                                <option value="Council house sales and leaseholders">Council house sales and leaseholders</option>
+                                                <option value="COVID-19">COVID-19</option>
+                                                <option value="Homelessness">Homelessness</option>
+                                                <option value="Managing council tenancies">Managing council tenancies</option>
+                                                <option value="Other">Other</option>
+                                                <option value="Private housing">Private housing</option>
+                                            </select>
+                                        </div>
+                                        <div class="field nextWidth subCategory7 subCatHide" style="display: none;">
+                                            <label id="lblSubCategory2g" for="categoryLevel2g">Sub category</label>
+                                            <select id="categoryLevel2g" name="subcategoryg" tooltip="Select a sub category to search against">
+                                                <option value=""> - Choose - </option>
+                                                <option value="Commercial and contracts">Commercial and contracts</option>
+                                                <option value="Councillor conduct and standards">Councillor conduct and standards</option>
+                                                <option value="COVID-19">COVID-19</option>
+                                                <option value="Elections and electoral register">Elections and electoral register</option>
+                                                <option value="Land">Land</option>
+                                                <option value="Leisure and culture">Leisure and culture</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                        <div class="field nextWidth subCategory8 subCatHide" style="display: none;">
+                                            <label id="lblSubCategory2h" for="categoryLevel2h">Sub category</label>
+                                            <select id="categoryLevel2h" name="subcategoryh" tooltip="Select a sub category to search against">
+                                                <option value=""> - Choose - </option>
+                                                <option value="Building control">Building control</option>
+                                                <option value="COVID-19">COVID-19</option>
+                                                <option value="Enforcement">Enforcement</option>
+                                                <option value="Other">Other</option>
+                                                <option value="Planning advice">Planning advice</option>
+                                                <option value="Planning applications">Planning applications</option>
+                                            </select>
+                                        </div>
+                                        <div class="field nextWidth subCategory9 subCatHide" style="display: none;">
+                                            <label id="lblSubCategory2i" for="categoryLevel2i">Sub category</label>
+                                            <select id="categoryLevel2i" name="subcategoryi" tooltip="Select a sub category to search against">
+                                                <option value=""> - Choose - </option>
+                                                <option value="COVID-19">COVID-19</option>
+                                                <option value="Highway adoption">Highway adoption</option>
+                                                <option value="Highway repair and maintenance">Highway repair and maintenance</option>
+                                                <option value="Other">Other</option>
+                                                <option value="Parking and other penalties">Parking and other penalties</option>
+                                                <option value="Public transport">Public transport</option>
+                                                <option value="Rights of way">Rights of way</option>
+                                                <option value="Street furniture and lighting">Street furniture and lighting</option>
+                                                <option value="Traffic management">Traffic management</option>
+                                            </select>
+                                        </div>
+                                        <div class="field nextWidth subCategory10 subCatHide" style="display: none;">
+                                            <label id="lblSubCategory2j" for="categoryLevel2j">Sub category</label>
+                                            <select id="categoryLevel2j" name="subcategoryj" tooltip="Select a sub category to search against">
+                                                <option value=""> - Choose - </option>
+                                                <option value="Ambulance services">Ambulance services</option>
+                                                <option value="Assessment and funding">Assesment and funding</option>
+                                                <option value="Autism">Autism</option>
+                                                <option value="Care and treatment">Care and treatment</option>
+                                                <option value="Community hospital services">Community hospital services</option>
+                                                <option value="COVID-19">COVID-19</option>
+                                                <option value="Dental">Dental</option>
+                                                <option value="Education, health and care plans">EHCP</option>
+                                                <option value="General Practice">General Practice</option>
+                                                <option value="Hospital acute services">Hospital acute services</option>
+                                                <option value="Mental health services">Mental health services</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+
+                                    </fieldset>
+                                </li>
+
+                                <li>
+                                    <fieldset>
+                                        <legend><span>Advanced options</span></legend>
+                                        <div class="searchSection">
+                                            <p>
+                                                Decision reason: &nbsp;
+
+                                                <input id="closed" type="checkbox" name="closed" >
+                                                <label for="closed">
+                                                    Closed after initial enquiries
+                                                </label>
+
+                                                <input id="not-upheld" type="checkbox" name="notupheld" >
+                                                <label for="not-upheld">
+                                                    Not upheld
+                                                </label>
+
+
+                                                <input id="upheld" type="checkbox" name="upheld" checked>
+                                                <label for="upheld">
+                                                    Upheld
+                                                </label>
+                                            </p>
+                                        </div>
+
+
+                                    </fieldset>
+                                </li>
+                            </ul>
+
+
+                            
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <!-- advanced options end -->
+
+                    <div class="searchLine clearfix">
+                        <button type="submit" class="button">Search</button>
+
+                    </div>
+
+
+                    <a href="#advancedSearchBlock" class="advancedSearchLink" title="view more complex search filters"><span class="toggleText">Show</span> advanced search</a>
+                </form>
+            </div>
+        </section>
+        <!-- Search End -->
+
+        <section class="reports" id=“reports”>
+            <h2>Your search has 32 results</h2>
+                <!-- listing -->
+                <div class="results">
+
+                    <ul>
+
+<li>
+    <p class="mainItemLabel"><a href="/decisions/adult-care-services/assessment-and-care-plan/24-011-071">Central Bedfordshire Council (24 011 071)</a></p>
+    <p class="identifiers"><span>Statement</span> <span>Upheld</span> <span>Assessment and care plan</span> <span>18-Dec-2024</span></p>
+    <p class="summary">Summary:  We have upheld Mr X’s complaint the Council did not complete an adult social care assessment. The Council has agreed to complete an assessment. That is a proportionate remedy for any injustice caused.</p>
+</li>
+
+<li>
+    <p class="mainItemLabel"><a href="/decisions/education/special-educational-needs/23-019-428">Central Bedfordshire Council (23 019 428)</a></p>
+    <p class="identifiers"><span>Statement</span> <span>Upheld</span> <span>Special educational needs</span> <span>21-Oct-2024</span></p>
+    <p class="summary">Summary:  Mr X said the Council failed to secure the special educational provision in W’s Education, Health and Care Plan. The Council was not at fault in how it arranged W’s education but was at fault for delaying in carrying out an annual review of W’s Plan. This caused Mr X avoidable frustration and uncertainty for which the Council will apologise and pay him £300.</p>
+</li>
+
+<li>
+    <p class="mainItemLabel"><a href="/decisions/environment-and-regulation/other/24-007-633">Central Bedfordshire Council (24 007 633)</a></p>
+    <p class="identifiers"><span>Statement</span> <span>Upheld</span> <span>Other</span> <span>16-Oct-2024</span></p>
+    <p class="summary">Summary:  We will not investigate this complaint about the way the Council has dealt with the complainant’s enquiries about an insurance claim. The Council has recognised the initial responses to Mr X’s concerns fell short of its expected standards and has apologised. We consider that further investigation on this point will not lead to a different outcome. Also, Mr X can approach the Information Commissioner’s Office with his concerns about access to information. Finally, the Ombudsman cannot determine liability for damages. So we consider it reasonable for Mr X to contact the relevant insurer about damages to his car and if that fails to pursue the claim in court. </p>
+</li>
+
+<li>
+    <p class="mainItemLabel"><a href="/decisions/environment-and-regulation/refuse-and-recycling/24-007-350">Central Bedfordshire Council (24 007 350)</a></p>
+    <p class="identifiers"><span>Statement</span> <span>Upheld</span> <span>Refuse and recycling</span> <span>29-Sep-2024</span></p>
+    <p class="summary">Summary:  We will not investigate this complaint about the conduct of the refuse collection crew. This is because the Council has provided a satisfactory response. </p>
+</li>
+
+<li>
+    <p class="mainItemLabel"><a href="/decisions/housing/private-housing/23-015-668">Central Bedfordshire Council (23 015 668)</a></p>
+    <p class="identifiers"><span>Statement</span> <span>Upheld</span> <span>Private housing</span> <span>19-Aug-2024</span></p>
+    <p class="summary">Summary:  Mrs C complained about the way the Council handled her claim for compensation for defects and damage caused to her property by contractors who received a Home Improvement loan to renew her roof. We have upheld one part of her complaint and found fault by the Council in the way it responded to Mrs X’s concerns about the contractor’s standard of work and her compensation claim, causing injustice. The Council has agreed to remedy the injustice by; apologising and making a payment to reflect the distress caused; arranging for a surveyor to inspect the roof and meeting the cost of any work identified by the surveyor; and making a service improvement.</p>
+</li>
+
+<li>
+    <p class="mainItemLabel"><a href="/decisions/education/special-educational-needs/23-017-717">Central Bedfordshire Council (23 017 717)</a></p>
+    <p class="identifiers"><span>Statement</span> <span>Upheld</span> <span>Special educational needs</span> <span>15-Aug-2024</span></p>
+    <p class="summary">Summary:  The Council was at fault for delaying changes to Mrs B’s daughter’s special educational needs support. It was then also at fault for only partly dealing with Mrs B’s concerns about the support her daughter received. It has agreed to make symbolic payments to recognise the injustice suffered by Mrs B and her daughter, and will take steps to improve its service.</p>
+</li>
+
+<li>
+    <p class="mainItemLabel"><a href="/decisions/education/special-educational-needs/23-015-514">Central Bedfordshire Council (23 015 514)</a></p>
+    <p class="identifiers"><span>Statement</span> <span>Upheld</span> <span>Special educational needs</span> <span>13-Aug-2024</span></p>
+    <p class="summary">Summary:  The complainant (Mrs X) said the Council failed within its duties to her son (Y) for whom it maintains Education Health and Care Plan. We found fault in the Council’s delays to issue Y’s amended Education Health and Care Plan following its Annual Review in June 2022 and in its inadequate communication with Mrs X. We also found fault with the Council’s failure to arrange respite services for Y from June 2023. These faults caused uncertainty and distress. We do not propose to find fault in the way the Council handled alternative provision for Y. Some of the issues Mrs X complained about were or could have been appealed to the Special Educational Needs and Disabilities Tribunal or were linked to her appeal. The Council agreed to apologise, make a symbolic payment for Mrs X’s distress and to carry out some service improvements.</p>
+</li>
+
+<li>
+    <p class="mainItemLabel"><a href="/decisions/education/alternative-provision/23-017-901">Central Bedfordshire Council (23 017 901)</a></p>
+    <p class="identifiers"><span>Statement</span> <span>Upheld</span> <span>Alternative provision</span> <span>28-Jul-2024</span></p>
+    <p class="summary">Summary:  There was fault by the Council, because it did not properly discharge its duty to arrange alternative provision for a child who was not attending school. It is not possibly to state clearly what material difference this made, but we consider it caused frustration and distress to the complainant and child. The Council has agreed to offer a financial remedy to account for this, and to formally apologise.</p>
+</li>
+
+<li>
+    <p class="mainItemLabel"><a href="/decisions/education/special-educational-needs/23-014-112">Central Bedfordshire Council (23 014 112)</a></p>
+    <p class="identifiers"><span>Statement</span> <span>Upheld</span> <span>Special educational needs</span> <span>23-Jul-2024</span></p>
+    <p class="summary">Summary:  The Council investigated the complainants’ concern that it delayed in issuing their daughter’s Education, Health and Care Plan, after an annual review, Children Services did not attend this review and services were wrongly withdrawn. The Council accepted fault and provided redress to ensure the complainants’ daughter received services in accordance with her Plan. The Council also apologised and made a small symbolic payment. We are satisfied that this is sufficient remedy and therefore we are closing the complaint.</p>
+</li>
+
+<li>
+    <p class="mainItemLabel"><a href="/decisions/education/alternative-provision/23-015-961">Central Bedfordshire Council (23 015 961)</a></p>
+    <p class="identifiers"><span>Statement</span> <span>Upheld</span> <span>Alternative provision</span> <span>19-Jun-2024</span></p>
+    <p class="summary">Summary:  Miss B complained the Council failed to provide suitable education for her son, C, and failed to ensure he received the provision set out in his Education, Health and Care Plan from March 2022 to January 2023. Miss B said C missed education and plan provision and she was distressed and impacted financially by the Councils actions. There was fault in the way the Council did not ensure C received any education or plan provision, did not follow the plan review process and not fully considering Miss B’s complaint. C missed out on education and plan provision for two and a half academic terms. Miss B was frustrated and put to time and trouble to complain. The Council has agreed to apologise, make a financial payment and remind staff of the Councils responsibilities.</p>
+</li>
+                    </ul>
+                    <!-- listing ends -->
+                    
+    <ul class="pagination grid clearfix">
+    <li>
+            <a href="?fd=2024-04-01&amp;td=2026-03-31&amp;dc=u%2B&amp;aname=Central+Bedfordshire+Council&amp;page=2" rel="prev">Back</a>
+    </li>
+
+    <li>
+            <a href="?fd=2024-04-01&amp;td=2026-03-31&amp;dc=u%2B&amp;aname=Central+Bedfordshire+Council&amp;page=1">1</a>
+    </li>
+    <li>
+            <a href="?fd=2024-04-01&amp;td=2026-03-31&amp;dc=u%2B&amp;aname=Central+Bedfordshire+Council&amp;page=2">2</a>
+    </li>
+    <li>
+            <span class="active">3</span>
+    </li>
+    <li>
+            <a href="?fd=2024-04-01&amp;td=2026-03-31&amp;dc=u%2B&amp;aname=Central+Bedfordshire+Council&amp;page=4">4</a>
+    </li>
+
+    <li>
+            <a href="?fd=2024-04-01&amp;td=2026-03-31&amp;dc=u%2B&amp;aname=Central+Bedfordshire+Council&amp;page=4" rel="next">Next</a>
+    </li>
+    </ul>
+
+
+                </div>
+                <div class="clear"></div>
+        </section>
+
+
+
+    </article>
+
+
+</div>
+<!-- wrapper ends -->
+
+
+
+
+
+
+
+
+
+
+    </main>
+    
+
+
+
+    
+
+<!-- footer -->
+<footer class="footer" id="footer">
+
+    <div class="wrapper fullWidthLayout">
+        <div class="row paddingSides">
+
+            <div class="block fiveCol">
+                <p class="h5">Using the site</p>
+                <ul>
+                    <li>
+                        <a href="/accessibility/accessibility-statement">Accessibility statement</a>
+                    </li>
+                    <li>
+                        <a href="/cookies">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="/sitemap">Site map</a>
+                    </li>
+                    <li>
+                        <a href="https://asctoolkit.lgo.org.uk/" rel="external" target="_blank">ASCtoolkit</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <div class="block fiveCol">
+                <p class="h5">Legal</p>
+                <ul>
+                    <li>
+                        <a href="/privacy">Your privacy</a>
+                    </li>
+                    <li>
+                        <a href="/copyright">Copyright</a>
+                    </li>
+                    <li>
+                        <a href="/disclaimer-of-liability">Disclaimer of liability</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="block fiveCol">
+                <p class="h5">Working for us</p>
+                <ul>
+                    <li>
+                        <a href="/jobs/careers">Careers</a>
+                    </li>
+                    <li>
+                        <a href="/recruitment-policies">Recruitment policies</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="block fiveCol">
+                <p class="h5" id="contactus">Contact</p>
+                <ul>
+                    <li><a href="/contact-us">Contact us</a></li>
+                    <li><a href="/information-centre/about-us/our-performance/complaints-about-our-service">Complain about our service</a></li>
+                </ul>
+            </div>
+
+            <div class="block fiveCol last formBlock">
+                    <p class="h5">Email sign up</p>
+                    <p>Receive email alerts for new content</p>
+                    <form id="newsletter" action="/emailpost" method="post">
+                        <input type="hidden" name="currentPage" id="currentPage" value="https://www.lgo.org.uk/Decisions/SearchResults?fd=2024-04-01&amp;td=2026-03-31&amp;dc=u%2B&amp;aname=Central+Bedfordshire+Council&amp;page=3" />
+                        <p>
+                            <label for="emailnews">
+                                <span class="visuallyhidden">Email address</span>
+                                <input id="emailnews" class="FormField" placeholder="Email" type="email" name="emailaddress">
+
+                            </label>
+                        </p>
+
+<script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
+
+<div id="recaptcha1" class="g-recaptcha" data-sitekey="6Lc6oycTAAAAADdOLKYKhulvT_hwTJoPuhkdnAi3"></div>
+
+
+
+                        <p><button class="button buttonAlt" type="submit">Subscribe</button></p>
+
+
+                        <a name="subscribe"></a>
+
+                    </form>
+                </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="wrapper fullWidthLayout credits">
+        <div class="row paddingSides">
+            <div class="block twoCol"><p><a href="http://www.web-labs.co.uk/" rel="external">CMS by web labs</a></p></div>
+            <div class="block twoCol last"><p class="right"><a href="http://www.web-labs.co.uk/" rel="external">Design by web labs design</a></p></div>
+        </div>
+    </div>
+
+
+
+
+
+</footer>
+<!-- footer ends -->
+
+</div>
+
+
+    
+
+
+
+
+
+
+<div class="reveal large gdpr" id="gdpr" aria-labelledby="gdprTitle" data-reveal data-close-on-esc="false" data-close-on-click="false" data-v-offset="50" data-animation-out="slide-out-down" data-animation-in="fade-in" data-append-to="#appendTarget">
+
+    <!-- content for modal starts -->
+    <div class="foundation panel">
+        <div class="content">
+
+            <form>
+
+                <div id="welcomeCookies">
+
+                    <div class="row show-for-small hide-for-large">
+                        <div class="columns small-8 medium-4 small-centered text-center">
+                            <img src="/graphics/logo-socialCare.png" alt="LGO logogram" class="marginBottom" />
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div id="reviewCookies" aria-labelledby="reviewTitle">
+
+                    <div class="row">
+                        <div class="columns small-12 text-center">
+
+                            <h1 id="reviewTitle" class="reviewTitle"><span class="icon shieldTick"></span>Review your privacy settings</h1>
+
+                        </div>
+                    </div>
+
+                    <!-- section -->
+                    <div class="row">
+                        <div class="columns small-12">
+
+                            <p class="h3">Required cookies</p>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="columns small-12">
+
+                            <p>These cookies enable the website to function properly. You can only disable these by changing your browser preferences, but this will affect how the website performs.</p>
+
+                            <p><a href="#requiredCookies" class="clearfix marginTop trigger" role="button" aria-controls="requiredCookies" id="requiredCookiesLabel"><span class="toggleLabel" data-hidetext="Hide" data-showtext="View">View</span> required cookies</a></p>
+
+                            <div id="requiredCookies" style="display:none" role="region" tabindex="-1" aria-expanded="false">
+                                <table>
+                                    <caption class="text-left visuallyhidden">Required cookies</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Cookie name</th>
+                                            <th>Description</th>
+                                            <th class="text-right">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ASPSESSIONID</td>
+                                            <td>This helps the site to function smoothly during your visit. For example, remembering your display settings and online complaint form preferences.</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>CookieNotice.Analytics</td>
+                                            <td>Used to remember your choice for analytical cookies.</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>TH_TOOLBAR_SETTINGS</td>
+                                            <td>
+                                                Stores an object containing user specific settings for the Browsealoud toolbar such as dialog positions and button states. No personally identifiable data is stored.
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>API_SETTINGS</td>
+                                            <td>
+                                                Stores an object containing user specific API settings for the Browsealoud toolbar such as voice and language selection, user preferences set in the toolbar settings panel and selected styles for word highlighting.
+
+                                                No personally identifiable data is stored.
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>audioalert</td>
+                                            <td>Stores a value ‘audioalert = true’ after the first Browsealoud audio alert.</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>__utma</td>
+                                            <td>Used to distinguish users and sessions. The cookie is created when the javascript library executes and no existing __utma cookies exists. The cookie is updated every time data is sent to Google Analytics.</td>
+                                            <td class="text-right"><a href="https://docs.google.com/document/d/e/2PACX-1vQktLPdDB5XlaOHz6tdZLvoWyKlToPu3wNHnWeSwYpHD89EZgxIfu_E9Tal13ZfcExzDf612a-VQifQ/pub" rel="external" title="launches as new window">BrowseAloud v.3 documentation</a><br><a href="https://www.google.com/intl/en/policies/privacy/" rel="external" title="launches as new window">Privacy policy</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>__utmt</td>
+                                            <td>Used to throttle request rate.</td>
+                                            <td class="text-right"><a href="https://docs.google.com/document/d/e/2PACX-1vQktLPdDB5XlaOHz6tdZLvoWyKlToPu3wNHnWeSwYpHD89EZgxIfu_E9Tal13ZfcExzDf612a-VQifQ/pub" rel="external" title="launches as new window">BrowseAloud v.3 documentation</a><br><a href="https://www.google.com/intl/en/policies/privacy/" rel="external" title="launches as new window">Privacy policy</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>__utmb</td>
+                                            <td>Used to determine new sessions/visits. The cookie is created when the javascript library executes and no existing __utmb cookies exists. The cookie is updated every time data is sent to Google Analytics.</td>
+                                            <td class="text-right"><a href="https://docs.google.com/document/d/e/2PACX-1vQktLPdDB5XlaOHz6tdZLvoWyKlToPu3wNHnWeSwYpHD89EZgxIfu_E9Tal13ZfcExzDf612a-VQifQ/pub" rel="external" title="launches as new window">BrowseAloud v.3 documentation</a><br><a href="https://www.google.com/intl/en/policies/privacy/" rel="external" title="launches as new window">Privacy policy</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>__utmc</td>
+                                            <td>Not used in ga.js. Set for interoperability with urchin.js. Historically, this cookie operated in conjunction with the__utmbcookie to determine whether the user was in a new session/visit.</td>
+                                            <td class="text-right"><a href="https://docs.google.com/document/d/e/2PACX-1vQktLPdDB5XlaOHz6tdZLvoWyKlToPu3wNHnWeSwYpHD89EZgxIfu_E9Tal13ZfcExzDf612a-VQifQ/pub" rel="external" title="launches as new window">BrowseAloud v.3 documentation</a><br><a href="https://www.google.com/intl/en/policies/privacy/" rel="external" title="launches as new window">Privacy policy</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>__utmz</td>
+                                            <td>Stores the traffic source or campaign that explains how the user reached your site. The cookie is created when the javascript library executes and is updated every time data is sent to Google Analytics.</td>
+                                            <td class="text-right"><a href="https://docs.google.com/document/d/e/2PACX-1vQktLPdDB5XlaOHz6tdZLvoWyKlToPu3wNHnWeSwYpHD89EZgxIfu_E9Tal13ZfcExzDf612a-VQifQ/pub" rel="external" title="launches as new window">BrowseAloud v.3 documentation</a><br><a href="https://www.google.com/intl/en/policies/privacy/" rel="external" title="launches as new window">Privacy policy</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>_ga</td>
+                                            <td>Used to distinguish users. The ID is used only to identify the session for the statistics and is completely anonymous.</td>
+                                            <td class="text-right"><a href="https://docs.google.com/document/d/e/2PACX-1vQktLPdDB5XlaOHz6tdZLvoWyKlToPu3wNHnWeSwYpHD89EZgxIfu_E9Tal13ZfcExzDf612a-VQifQ/pub" rel="external" title="launches as new window">BrowseAloud v.3 documentation</a><br><a href="https://www.google.com/intl/en/policies/privacy/" rel="external" title="launches as new window">Privacy policy</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>_gat_UA-4669579-11</td>
+                                            <td>Used to throttle request rate. If Google Analytics is deployed via Google Tag Manager, this cookie will be named _dc_gtm_<property-id>.</td>
+                                            <td class="text-right"><a href="https://docs.google.com/document/d/e/2PACX-1vQktLPdDB5XlaOHz6tdZLvoWyKlToPu3wNHnWeSwYpHD89EZgxIfu_E9Tal13ZfcExzDf612a-VQifQ/pub" rel="external" title="launches as new window">BrowseAloud v.3 documentation</a><br><a href="https://www.google.com/intl/en/policies/privacy/" rel="external" title="launches as new window">Privacy policy</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>_gid</td>
+                                            <td>Used to distinguish users.</td>
+                                            <td class="text-right"><a href="https://docs.google.com/document/d/e/2PACX-1vQktLPdDB5XlaOHz6tdZLvoWyKlToPu3wNHnWeSwYpHD89EZgxIfu_E9Tal13ZfcExzDf612a-VQifQ/pub" rel="external" title="launches as new window">BrowseAloud v.3 documentation</a><br><a href="https://www.google.com/intl/en/policies/privacy/" rel="external" title="launches as new window">Privacy policy</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- section ends -->
+                    <!-- section -->
+                    <div class="row">
+                        <div class="columns small-6">
+
+                            <p class="h3 paddingTopSmall">Analytical cookies</p>
+
+                        </div>
+                        <div class="columns small-6">
+
+                            <div class="switch uppercase float-right">
+                                <input class="switch-input" id="analytical-yes-no" type="checkbox" name="cookiesSwitches">
+                                <label class="switch-paddle" for="analytical-yes-no">
+                                    <span class="show-for-sr">Switch analytical cookies</span>
+                                    <span class="switch-active" aria-hidden="true">On</span>
+                                    <span class="switch-inactive" aria-hidden="true">Off</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="columns small-12">
+
+                            <p>Google Analytics cookies help us improve the performance of the website by understanding how visitors use the site.<br><strong>We recommend you set these 'ON'.</strong></p>
+
+                            <p><a href="#analyticalCookies" class="clearfix marginTop trigger" role="button" aria-controls="analyticalCookies" id="analyticalCookiesLabel"><span class="toggleLabel" data-hidetext="Hide" data-showtext="Show">View</span> analytical cookies</a></p>
+
+                            <div id="analyticalCookies" style="display:none" role="region" tabindex="-1" aria-expanded="false">
+                                <table>
+                                    <caption class="text-left visuallyhidden">Analytical Cookies</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Company</th>
+                                            <th>Description</th>
+                                            <th class="text-right">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Google Inc = _ga</td>
+                                            <td>Google Analytics tracking cookie. Helps us to know how many people visit our site by tracking if you've visited before.</td>
+                                            <td class="text-right"><a href="https://www.google.com/intl/en/policies/terms/" rel="external" title="launches as new window">Terms and conditions</a><br><a href="https://www.google.com/intl/en/policies/privacy/" rel="external" title="launches as new window">Privacy policy</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Google Inc = _gid</td>
+                                            <td>Google Analytics tracking cookie. Helps us to know how many people visit our site by tracking if you've visited before.</td>
+                                            <td class="text-right"><a href="https://www.google.com/intl/en/policies/terms/" rel="external" title="launches as new window">Terms and conditions</a><br><a href="https://www.google.com/intl/en/policies/privacy/" rel="external" title="launches as new window">Privacy policy</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Google Inc = _gat</td>
+                                            <td>Google Analytics tracking cookie. Used to manage the rate at which page view requests are made.</td>
+                                            <td class="text-right"><a href="https://www.google.com/intl/en/policies/terms/" rel="external" title="launches as new window">Terms and conditions</a><br><a href="https://www.google.com/intl/en/policies/privacy/" rel="external" title="launches as new window">Privacy policy</a></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- section ends -->
+
+                    <p style="padding-left:10px;padding-right:10px">
+                        In using Google Analytics, we do not collect or store personal information that could identify you (for example your name or address). We do not allow Google to use or share our analytics data.
+                        Google has developed a tool to help you <a href="https://tools.google.com/dlpage/gaoptout" rel="external">opt out of Google Analytics cookies</a>.
+                    </p>
+
+                </div>
+
+                <div class="row">
+                    <div class="columns small-12">
+
+                        <button id="recommendedSettingsSubmit" class="button large expanded" type="button">Use the recommended privacy settings</button>
+                        <button id="confirmCookiesTrigger" class="button buttonAlt large expanded noBottomMargin" type="button">Save & close privacy settings</button>
+
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <!-- content for modal ends -->
+    <!--
+
+    this should not be dismissable so we dont include the close button and we add these attributes for javascript control:
+
+    data-close-on-esc="false" data-close-on-click="false"
+
+    -->
+    <!--
+    <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>  -->
+</div>
+<!-- new cookie consent ends -->
+<div class="cookieControlTrigger rightPosition" title="Review your choices regarding cookies on this web site"><p class="noBottomMargin"><a href="#gdpr" id="cookieControl" tabindex="0">Privacy settings</a></p></div>
+
+    
+
+
+
+
+
+
+
+
+    <noscript>
+        <div class="noScript">
+            <h1>Javascript is not enabled!</h1>
+            <p>It appears that your web browser does not support JavaScript, or you have temporarily disabled scripting. Either way, this site won't work without it. Please take a look at <a href="http://www.enable-javascript.com/">how to enable javascript</a> for more help.</p>
+        </div>
+    </noscript>
+
+    <script src="/js/app-min.js?v=17"></script>
+
+    
+
+
+
+<script>
+      //var recaptcha1;
+      //var recaptcha2;
+      var myCallBack = function() {
+          if ($('#recaptcha1').length) {
+              grecaptcha.render('recaptcha1', {
+                  'sitekey': '6Lc6oycTAAAAADdOLKYKhulvT_hwTJoPuhkdnAi3', 'theme': 'light'
+              });
+          }
+          if ($('#recaptcha2').length) {
+              grecaptcha.render('recaptcha2', {
+                  'sitekey': '6Lc6oycTAAAAADdOLKYKhulvT_hwTJoPuhkdnAi3', 'theme': 'light'
+              });
+          }
+      };
+</script>
+
+<script type="text/javascript">
+
+        //<![CDATA[
+        $(document).ready(function ()
+        {
+            /* cookie consent */
+            function doCookie() {
+
+                $('#cookie-law').show().addClass('showCookie');
+                $('#cookie-law').attr('aria-hidden', 'false');
+
+                // launch with a click event
+                $('#close-reveal').on('click', function () {
+
+                    $('#cookie-law').addClass('hideCookie');
+
+                    var expires = new Date();
+                    expires.setTime(expires.getTime() + (180 * 24 * 60 * 60 * 1000));
+                    document.cookie = 'CookieNotice.Hide=1; expires=' + expires.toUTCString() + ";path=/";
+                    setTimeout(function () {
+
+                        $('#cookie-law').removeClass('showCookie').hide();
+                        $('#cookie-law').attr('aria-hidden', 'true');
+
+                    }, 1000);
+
+
+                });
+
+            }
+            //alert("here");
+            doCookie()
+
+
+        });
+        //]]>
+</script>
+
+
+
+
+
+    
+
+    <script src="/scripts/trackLinks.js"></script>
+
+    <!-- NEW cookie consent JS -->
+    
+
+    <script src="/scripts/cookieConsent/script-min.js?v=1"></script>
+
+    
+    <script type="text/javascript">
+        //<![CDATA[
+        $(document).ready(function () {
+
+
+            $('#categoryLevel1').change(function () {
+                $('.subCatHide').hide();
+                $('.subCategory' + $(this).val()).show('slow');
+                $('.subCatHide select').val('');
+            }).change();
+
+
+
+        });
+                        //]]>
+    </script>
+   
+
+<script type="text/javascript" src="/bnith__hX4cIn8cey9yPgZjSEvgVOjbLrtH8s0XH_UAKyjNOx6TRtM30I0MqcPcggEfslck"></script> <script language="JavaScript" type="text/javascript">const _0x35e8=['visitorId','18127kSXadA','356575NPKVMA','7306axxsAH','get','657833TzFjkt','717302TQdBjl','34lMHocq','x-bni-rncf=1792346399400;expires=Thu, 01 Jan 2037 00:00:00 UTC;path=/;','61XMWbpU','cookie',';expires=Thu, 01 Jan 2037 00:00:00 UTC;path=/;','then','651866OSUgMa','811155xdatvf','x-bni-fpc='];function _0x258e(_0x5954fe,_0x43567d){return _0x258e=function(_0x35e81f,_0x258e26){_0x35e81f=_0x35e81f-0x179;let _0x1280dc=_0x35e8[_0x35e81f];return _0x1280dc;},_0x258e(_0x5954fe,_0x43567d);}(function(_0x5674de,_0xdcf1af){const _0x512a29=_0x258e;while(!![]){try{const _0x55f636=parseInt(_0x512a29(0x17b))+-parseInt(_0x512a29(0x179))*parseInt(_0x512a29(0x17f))+-parseInt(_0x512a29(0x183))+-parseInt(_0x512a29(0x184))+parseInt(_0x512a29(0x187))*parseInt(_0x512a29(0x17d))+parseInt(_0x512a29(0x188))+parseInt(_0x512a29(0x17c));if(_0x55f636===_0xdcf1af)break;else _0x5674de['push'](_0x5674de['shift']());}catch(_0xd3a1ce){_0x5674de['push'](_0x5674de['shift']());}}}(_0x35e8,0x6b42d));function getClientIdentity(){const _0x47e86b=_0x258e,_0x448fbc=FingerprintJS['load']();_0x448fbc[_0x47e86b(0x182)](_0x4bb924=>_0x4bb924[_0x47e86b(0x17a)]())[_0x47e86b(0x182)](_0x2f8ca1=>{const _0x44872c=_0x47e86b,_0xa48f50=_0x2f8ca1[_0x44872c(0x186)];document[_0x44872c(0x180)]=_0x44872c(0x185)+_0xa48f50+_0x44872c(0x181),document[_0x44872c(0x180)]=_0x44872c(0x17e);});}getClientIdentity();</script></body>
+
+</html>
