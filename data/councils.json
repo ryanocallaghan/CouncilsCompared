@@ -1,0 +1,4696 @@
+{
+ "sources": {
+  "population": {
+   "title": "ONS: Population estimates, mid-2025",
+   "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales",
+   "period": "mid-2025",
+   "published": ""
+  },
+  "neighbours": {
+   "title": "Department for Education: Children's services statistical neighbours",
+   "url": "https://www.gov.uk/government/publications/local-authority-interactive-tool-lait",
+   "period": "2025",
+   "published": "2014-01-28"
+  },
+  "ehcp": {
+   "title": "Department for Education: Education, health and care plans",
+   "url": "https://explore-education-statistics.service.gov.uk/find-statistics/education-health-and-care-plans",
+   "period": "2025",
+   "published": "2026-09-17"
+  }
+ },
+ "councils": [
+  {
+   "code": "E09000002",
+   "name": "Barking and Dagenham",
+   "slug": "barking-and-dagenham",
+   "type": "London borough",
+   "region": "London",
+   "population": 238295,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 27.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000010",
+    "E06000032",
+    "E09000018",
+    "E08000028",
+    "E08000031",
+    "E09000009",
+    "E09000005",
+    "E09000017",
+    "E06000031",
+    "E09000011"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 73.1,
+     "2020": 70.3,
+     "2021": 65.9,
+     "2022": 24.7,
+     "2023": 14.4,
+     "2024": 27.7,
+     "2025": 27.2
+    }
+   }
+  },
+  {
+   "code": "E09000003",
+   "name": "Barnet",
+   "slug": "barnet",
+   "type": "London borough",
+   "region": "London",
+   "population": 408087,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 100.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000031",
+    "E06000038",
+    "E09000015",
+    "E09000026",
+    "E09000024",
+    "E09000008",
+    "E09000023",
+    "E09000017",
+    "E09000014",
+    "E09000009"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 97.1,
+     "2020": 98.0,
+     "2021": 98.3,
+     "2022": 97.9,
+     "2023": 100.0,
+     "2024": 100.0,
+     "2025": 100.0
+    }
+   }
+  },
+  {
+   "code": "E08000016",
+   "name": "Barnsley",
+   "slug": "barnsley",
+   "type": "Metropolitan district",
+   "region": null,
+   "population": 252784,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 98.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000018",
+    "E08000036",
+    "E08000008",
+    "E08000017",
+    "E08000027",
+    "E06000020",
+    "E06000047",
+    "E08000037",
+    "E06000003",
+    "E08000024"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 74.5,
+     "2020": 75.8,
+     "2021": 86.4,
+     "2022": 90.7,
+     "2023": 91.7,
+     "2024": 96.8,
+     "2025": 98.6
+    }
+   }
+  },
+  {
+   "code": "E06000022",
+   "name": "Bath and North East Somerset",
+   "slug": "bath-and-north-east-somerset",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 200898,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 33.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000014",
+    "E08000009",
+    "E08000007",
+    "E09000021",
+    "E06000060"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 82.0,
+     "2020": 58.4,
+     "2021": 60.4,
+     "2022": 23.6,
+     "2023": 39.1,
+     "2024": 24.8,
+     "2025": 33.2
+    }
+   }
+  },
+  {
+   "code": "E06000055",
+   "name": "Bedford",
+   "slug": "bedford",
+   "type": "Unitary authority",
+   "region": "East of England",
+   "population": 196398,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 94.3
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000004",
+    "E06000042",
+    "E06000062",
+    "E09000016",
+    "E06000058",
+    "E06000030"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 100.0,
+     "2020": 100.0,
+     "2021": 93.0,
+     "2022": 77.5,
+     "2023": 90.0,
+     "2024": 74.2,
+     "2025": 94.3
+    }
+   }
+  },
+  {
+   "code": "E09000004",
+   "name": "Bexley",
+   "slug": "bexley",
+   "type": "London borough",
+   "region": "London",
+   "population": 257103,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 65.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000016",
+    "E06000055",
+    "E06000034",
+    "E06000035",
+    "E06000042",
+    "E06000030",
+    "E06000058",
+    "E08000002"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 93.6,
+     "2020": 82.0,
+     "2021": 73.2,
+     "2022": 89.8,
+     "2023": 84.8,
+     "2024": 68.6,
+     "2025": 65.9
+    }
+   }
+  },
+  {
+   "code": "E08000025",
+   "name": "Birmingham",
+   "slug": "birmingham",
+   "type": "Metropolitan district",
+   "region": "West Midlands",
+   "population": 1176960,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 37.1
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000018",
+    "E08000003",
+    "E08000032",
+    "E08000021",
+    "E08000004",
+    "E06000008",
+    "E08000019",
+    "E06000002",
+    "E06000045",
+    "E08000006"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 71.6,
+     "2020": 39.9,
+     "2021": 59.7,
+     "2022": 65.6,
+     "2023": 60.5,
+     "2024": 26.7,
+     "2025": 37.1
+    }
+   }
+  },
+  {
+   "code": "E06000008",
+   "name": "Blackburn with Darwen",
+   "slug": "blackburn-with-darwen",
+   "type": "Unitary authority",
+   "region": "North West",
+   "population": 163801,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 79.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000032",
+    "E08000004",
+    "E08000001",
+    "E06000015",
+    "E08000005",
+    "E08000030",
+    "E08000019",
+    "E06000021",
+    "E08000025",
+    "E08000034"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 91.6,
+     "2020": 93.9,
+     "2021": 95.8,
+     "2022": 94.8,
+     "2023": 91.4,
+     "2024": 86.5,
+     "2025": 79.9
+    }
+   }
+  },
+  {
+   "code": "E06000009",
+   "name": "Blackpool",
+   "slug": "blackpool",
+   "type": "Unitary authority",
+   "region": "North West",
+   "population": 143492,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 55.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000001",
+    "E06000002",
+    "E08000024",
+    "E08000012",
+    "E08000023",
+    "E06000003",
+    "E08000005",
+    "E06000027",
+    "E08000006",
+    "E06000021"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 65.2,
+     "2020": 88.1,
+     "2021": 73.6,
+     "2022": 83.8,
+     "2023": 85.0,
+     "2024": 61.6,
+     "2025": 55.0
+    }
+   }
+  },
+  {
+   "code": "E08000001",
+   "name": "Bolton",
+   "slug": "bolton",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 309732,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 86.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000005",
+    "E06000015",
+    "E08000004",
+    "E08000008",
+    "E08000030",
+    "E08000006",
+    "E06000008",
+    "E08000026",
+    "E08000019",
+    "E06000031"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 36.9,
+     "2020": 54.5,
+     "2021": 62.6,
+     "2022": 44.1,
+     "2023": 46.3,
+     "2024": 72.3,
+     "2025": 86.0
+    }
+   }
+  },
+  {
+   "code": "E06000058",
+   "name": "Bournemouth, Christchurch and Poole",
+   "slug": "bournemouth-christchurch-and-poole",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 405829,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 69.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000055",
+    "E06000033",
+    "E06000042",
+    "E09000004"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 91.3,
+     "2020": 21.9,
+     "2021": 31.2,
+     "2022": 7.3,
+     "2023": 4.8,
+     "2024": 77.6,
+     "2025": 69.0
+    }
+   }
+  },
+  {
+   "code": "E06000036",
+   "name": "Bracknell Forest",
+   "slug": "bracknell-forest",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 132145,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 100.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000060",
+    "E06000037",
+    "E06000025",
+    "E06000056",
+    "E06000054"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 66.5,
+     "2020": 21.5,
+     "2021": 49.2,
+     "2022": 46.3,
+     "2023": 40.3,
+     "2024": 45.8,
+     "2025": 100.0
+    }
+   }
+  },
+  {
+   "code": "E08000032",
+   "name": "Bradford",
+   "slug": "bradford",
+   "type": "Metropolitan district",
+   "region": "Yorkshire and The Humber",
+   "population": 557758,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 86.5
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000008",
+    "E08000025",
+    "E08000004",
+    "E08000019",
+    "E06000015",
+    "E08000005",
+    "E08000001",
+    "E08000030",
+    "E08000028",
+    "E08000034"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 28.7,
+     "2020": 53.2,
+     "2021": 80.7,
+     "2022": 79.2,
+     "2023": 71.4,
+     "2024": 89.6,
+     "2025": 86.5
+    }
+   }
+  },
+  {
+   "code": "E09000005",
+   "name": "Brent",
+   "slug": "brent",
+   "type": "London borough",
+   "region": "London",
+   "population": 352201,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 69.7
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000009",
+    "E09000025",
+    "E09000018",
+    "E09000014",
+    "E06000032",
+    "E06000039",
+    "E09000002",
+    "E09000010",
+    "E09000031",
+    "E09000026"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 83.6,
+     "2020": 80.3,
+     "2021": 55.9,
+     "2022": 42.0,
+     "2023": 38.1,
+     "2024": 89.3,
+     "2025": 69.7
+    }
+   }
+  },
+  {
+   "code": "E06000043",
+   "name": "Brighton and Hove",
+   "slug": "brighton-and-hove",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 284170,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 57.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000023",
+    "E06000033",
+    "E09000003",
+    "E09000021",
+    "E06000022",
+    "E08000035",
+    "E09000023",
+    "E06000042",
+    "E09000032",
+    "E06000014"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 62.4,
+     "2020": 73.9,
+     "2021": 73.1,
+     "2022": 59.3,
+     "2023": 80.5,
+     "2024": 97.8,
+     "2025": 57.4
+    }
+   }
+  },
+  {
+   "code": "E06000023",
+   "name": "Bristol",
+   "slug": "bristol",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 495260,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 6.8
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000043",
+    "E08000035",
+    "E06000033",
+    "E08000019",
+    "E06000042",
+    "E06000044",
+    "E06000038",
+    "E09000003",
+    "E06000058",
+    "E08000034"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 0.8,
+     "2020": 21.9,
+     "2021": 33.9,
+     "2022": 38.4,
+     "2023": 57.1,
+     "2024": 17.4,
+     "2025": 6.8
+    }
+   }
+  },
+  {
+   "code": "E09000006",
+   "name": "Bromley",
+   "slug": "bromley",
+   "type": "London borough",
+   "region": "London",
+   "population": 336048,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 71.3
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000009",
+    "E06000060",
+    "E06000037",
+    "E06000036",
+    "E06000040",
+    "E08000029"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 53.7,
+     "2020": 61.6,
+     "2021": 64.8,
+     "2022": 27.2,
+     "2023": 34.9,
+     "2024": 64.7,
+     "2025": 71.3
+    }
+   }
+  },
+  {
+   "code": "E06000060",
+   "name": "Buckinghamshire",
+   "slug": "buckinghamshire",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 584296,
+   "households": null,
+   "band_d": null,
+   "values": {},
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000037",
+    "E06000036",
+    "E06000056",
+    "E06000040",
+    "E08000009"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2020": 74.7,
+     "2021": 82.0,
+     "2022": 67.1
+    }
+   }
+  },
+  {
+   "code": "E08000002",
+   "name": "Bury",
+   "slug": "bury",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 199271,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 98.1
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000052",
+    "E08000022",
+    "E08000027",
+    "E06000004",
+    "E06000035",
+    "E09000004"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 78.9,
+     "2020": 27.4,
+     "2021": 34.7,
+     "2022": 51.0,
+     "2023": 74.1,
+     "2024": 99.0,
+     "2025": 98.1
+    }
+   }
+  },
+  {
+   "code": "E08000033",
+   "name": "Calderdale",
+   "slug": "calderdale",
+   "type": "Metropolitan district",
+   "region": "Yorkshire and The Humber",
+   "population": 210734,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 94.1
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000058",
+    "E06000046",
+    "E06000033",
+    "E08000001",
+    "E06000057",
+    "E08000035",
+    "E08000007"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 100.0,
+     "2020": 89.4,
+     "2021": 100.0,
+     "2022": 99.4,
+     "2023": 97.8,
+     "2024": 95.6,
+     "2025": 94.1
+    }
+   }
+  },
+  {
+   "code": "E09000007",
+   "name": "Camden",
+   "slug": "camden",
+   "type": "London borough",
+   "region": "London",
+   "population": 216658,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 73.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000019",
+    "E09000033",
+    "E09000013",
+    "E09000028",
+    "E09000022",
+    "E09000020",
+    "E09000023",
+    "E09000014",
+    "E09000012",
+    "E09000003"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 94.6,
+     "2020": 95.2,
+     "2021": 96.2,
+     "2022": 99.2,
+     "2023": 96.6,
+     "2024": 96.6,
+     "2025": 73.0
+    }
+   }
+  },
+  {
+   "code": "E06000056",
+   "name": "Central Bedfordshire",
+   "slug": "central-bedfordshire",
+   "type": "Unitary authority",
+   "region": "East of England",
+   "population": 321605,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 56.3
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000060",
+    "E06000025",
+    "E06000054",
+    "E06000036",
+    "E06000037"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 88.8,
+     "2020": 61.9,
+     "2021": 12.7,
+     "2022": 12.0,
+     "2023": 33.4,
+     "2024": 48.8,
+     "2025": 56.3
+    }
+   }
+  },
+  {
+   "code": "E06000049",
+   "name": "Cheshire East",
+   "slug": "cheshire-east",
+   "type": "Unitary authority",
+   "region": "North West",
+   "population": 425459,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 23.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000065",
+    "E06000007",
+    "E06000054",
+    "E06000050"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 51.0,
+     "2020": 42.7,
+     "2021": 66.6,
+     "2022": 40.1,
+     "2023": 67.8,
+     "2024": 47.9,
+     "2025": 23.9
+    }
+   }
+  },
+  {
+   "code": "E06000050",
+   "name": "Cheshire West and Chester",
+   "slug": "cheshire-west-and-chester",
+   "type": "Unitary authority",
+   "region": "North West",
+   "population": 373951,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 22.1
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000029",
+    "E08000007",
+    "E06000049",
+    "E06000007",
+    "E06000057"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 88.7,
+     "2020": 54.3,
+     "2021": 27.6,
+     "2022": 31.2,
+     "2023": 6.5,
+     "2024": 15.8,
+     "2025": 22.1
+    }
+   }
+  },
+  {
+   "code": "E06000052",
+   "name": "Cornwall",
+   "slug": "cornwall",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 584782,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 34.1
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000002",
+    "E06000057"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 94.4,
+     "2020": 95.8,
+     "2021": 90.9,
+     "2022": 26.2,
+     "2023": 1.6,
+     "2024": 7.0,
+     "2025": 34.1
+    }
+   }
+  },
+  {
+   "code": "E06000047",
+   "name": "County Durham",
+   "slug": "county-durham",
+   "type": "Unitary authority",
+   "region": "North East",
+   "population": 539146,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 77.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000006",
+    "E08000015",
+    "E08000037",
+    "E06000003",
+    "E08000018",
+    "E08000016",
+    "E08000024",
+    "E08000023",
+    "E06000004",
+    "E06000005"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 70.2,
+     "2020": 73.2,
+     "2021": 76.2,
+     "2022": 29.2,
+     "2023": 1.9,
+     "2024": 18.3,
+     "2025": 77.6
+    }
+   }
+  },
+  {
+   "code": "E08000026",
+   "name": "Coventry",
+   "slug": "coventry",
+   "type": "Metropolitan district",
+   "region": "West Midlands",
+   "population": 364766,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 37.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000015",
+    "E06000045",
+    "E06000031",
+    "E08000001",
+    "E08000031",
+    "E09000017",
+    "E08000005",
+    "E08000030",
+    "E06000032",
+    "E06000021"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 57.0,
+     "2020": 61.5,
+     "2021": 79.8,
+     "2022": 81.0,
+     "2023": 35.7,
+     "2024": 63.4,
+     "2025": 37.6
+    }
+   }
+  },
+  {
+   "code": "E09000008",
+   "name": "Croydon",
+   "slug": "croydon",
+   "type": "London borough",
+   "region": "London",
+   "population": 410085,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 61.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000023",
+    "E09000031",
+    "E08000035",
+    "E06000038",
+    "E06000042",
+    "E06000033",
+    "E09000003",
+    "E06000045",
+    "E08000006",
+    "E09000011"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 74.4,
+     "2020": 60.6,
+     "2021": 40.8,
+     "2022": 37.7,
+     "2023": 82.5,
+     "2024": 72.8,
+     "2025": 61.2
+    }
+   }
+  },
+  {
+   "code": "E06000063",
+   "name": "Cumberland",
+   "slug": "cumberland",
+   "type": "Unitary authority",
+   "region": "North West",
+   "population": 282343,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 6.7
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000064",
+    "E06000019",
+    "E06000013",
+    "E08000036",
+    "E06000057",
+    "E08000017",
+    "E08000016"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2023": 27.1,
+     "2024": 42.6,
+     "2025": 6.7
+    }
+   }
+  },
+  {
+   "code": "E06000005",
+   "name": "Darlington",
+   "slug": "darlington",
+   "type": "Unitary authority",
+   "region": "North East",
+   "population": 113402,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 81.5
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000037",
+    "E06000004",
+    "E08000027",
+    "E08000036",
+    "E06000020",
+    "E08000018",
+    "E08000008",
+    "E06000047",
+    "E08000017"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 97.4,
+     "2020": 85.3,
+     "2021": 92.1,
+     "2022": 90.2,
+     "2023": 83.9,
+     "2024": 72.5,
+     "2025": 81.5
+    }
+   }
+  },
+  {
+   "code": "E06000015",
+   "name": "Derby",
+   "slug": "derby",
+   "type": "Unitary authority",
+   "region": "East Midlands",
+   "population": 275344,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 52.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000026",
+    "E08000001",
+    "E08000030",
+    "E06000045",
+    "E08000034",
+    "E06000031",
+    "E08000005",
+    "E08000019",
+    "E08000008",
+    "E06000021"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 24.7,
+     "2020": 23.1,
+     "2021": 39.9,
+     "2022": 28.2,
+     "2023": 26.8,
+     "2024": 16.4,
+     "2025": 52.6
+    }
+   }
+  },
+  {
+   "code": "E08000017",
+   "name": "Doncaster",
+   "slug": "doncaster",
+   "type": "Metropolitan district",
+   "region": "Yorkshire and The Humber",
+   "population": 323016,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 83.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000018",
+    "E08000016",
+    "E08000036",
+    "E06000020",
+    "E08000008",
+    "E06000012",
+    "E08000030",
+    "E06000021",
+    "E08000005",
+    "E06000013"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 85.8,
+     "2020": 74.2,
+     "2021": 68.4,
+     "2022": 72.9,
+     "2023": 43.4,
+     "2024": 84.9,
+     "2025": 83.9
+    }
+   }
+  },
+  {
+   "code": "E06000059",
+   "name": "Dorset",
+   "slug": "dorset",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 391036,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 78.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000066",
+    "E06000051",
+    "E06000065"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 91.0,
+     "2020": 79.9,
+     "2021": 70.8,
+     "2022": 62.3,
+     "2023": 60.2,
+     "2024": NaN,
+     "2025": 78.2
+    }
+   }
+  },
+  {
+   "code": "E08000027",
+   "name": "Dudley",
+   "slug": "dudley",
+   "type": "Metropolitan district",
+   "region": "West Midlands",
+   "population": 333941,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 25.1
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000036",
+    "E06000020",
+    "E06000004",
+    "E08000018",
+    "E08000016",
+    "E06000035",
+    "E08000008",
+    "E06000005"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 42.3,
+     "2020": 21.7,
+     "2021": 45.0,
+     "2022": 41.1,
+     "2023": 46.6,
+     "2024": 52.3,
+     "2025": 25.1
+    }
+   }
+  },
+  {
+   "code": "E09000009",
+   "name": "Ealing",
+   "slug": "ealing",
+   "type": "London borough",
+   "region": "London",
+   "population": 387072,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 52.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000018",
+    "E09000026",
+    "E09000017",
+    "E09000031",
+    "E09000005",
+    "E09000014",
+    "E09000015",
+    "E06000039",
+    "E06000032",
+    "E09000003"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 86.8,
+     "2020": 69.7,
+     "2021": 69.0,
+     "2022": 36.0,
+     "2023": 83.4,
+     "2024": 71.5,
+     "2025": 52.2
+    }
+   }
+  },
+  {
+   "code": "E06000011",
+   "name": "East Riding of Yorkshire",
+   "slug": "east-riding-of-yorkshire",
+   "type": "Unitary authority",
+   "region": "Yorkshire and The Humber",
+   "population": 360334,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 92.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000051",
+    "E06000065",
+    "E06000007",
+    "E06000066",
+    "E06000019",
+    "E06000064"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 32.6,
+     "2020": 90.4,
+     "2021": 97.0,
+     "2022": 98.6,
+     "2023": 98.7,
+     "2024": 96.5,
+     "2025": 92.9
+    }
+   }
+  },
+  {
+   "code": "E09000010",
+   "name": "Enfield",
+   "slug": "enfield",
+   "type": "London borough",
+   "region": "London",
+   "population": 329400,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 67.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000002",
+    "E09000014",
+    "E06000032",
+    "E08000025",
+    "E08000003",
+    "E09000009",
+    "E09000031",
+    "E09000011",
+    "E09000008",
+    "E08000006"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 60.6,
+     "2020": 62.2,
+     "2021": 69.6,
+     "2022": 90.7,
+     "2023": 95.6,
+     "2024": 85.1,
+     "2025": 67.2
+    }
+   }
+  },
+  {
+   "code": "E08000037",
+   "name": "Gateshead",
+   "slug": "gateshead",
+   "type": "Metropolitan district",
+   "region": "North East",
+   "population": 202509,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 83.7
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000005",
+    "E08000008",
+    "E08000023",
+    "E08000018",
+    "E06000004",
+    "E06000047",
+    "E06000003",
+    "E08000024",
+    "E08000027",
+    "E08000036"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 96.6,
+     "2020": 93.9,
+     "2021": 97.1,
+     "2022": 98.5,
+     "2023": 86.9,
+     "2024": 80.8,
+     "2025": 83.7
+    }
+   }
+  },
+  {
+   "code": "E09000011",
+   "name": "Greenwich",
+   "slug": "greenwich",
+   "type": "London borough",
+   "region": "London",
+   "population": 301225,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 31.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000023",
+    "E09000022",
+    "E09000008",
+    "E09000028",
+    "E08000006",
+    "E09000031",
+    "E06000044",
+    "E06000045",
+    "E08000021",
+    "E06000038"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 75.0,
+     "2020": 38.8,
+     "2021": 44.0,
+     "2022": 34.5,
+     "2023": 63.5,
+     "2024": 36.1,
+     "2025": 31.2
+    }
+   }
+  },
+  {
+   "code": "E09000012",
+   "name": "Hackney",
+   "slug": "hackney",
+   "type": "London borough",
+   "region": "London",
+   "population": 266241,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 32.8
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000028",
+    "E09000019",
+    "E09000014",
+    "E09000022",
+    "E09000030",
+    "E09000023",
+    "E09000007",
+    "E08000003",
+    "E09000031",
+    "E09000033"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 45.3,
+     "2020": 46.1,
+     "2021": 43.0,
+     "2022": 54.3,
+     "2024": 43.3,
+     "2025": 32.8
+    }
+   }
+  },
+  {
+   "code": "E06000006",
+   "name": "Halton",
+   "slug": "halton",
+   "type": "Unitary authority",
+   "region": "North West",
+   "population": 131912,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 94.7
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000013",
+    "E06000047",
+    "E08000015",
+    "E08000024",
+    "E06000003",
+    "E08000016",
+    "E08000037",
+    "E08000018",
+    "E06000004",
+    "E08000014"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 34.2,
+     "2020": 50.3,
+     "2021": 77.0,
+     "2022": 53.6,
+     "2023": 26.3,
+     "2024": 56.5,
+     "2025": 94.7
+    }
+   }
+  },
+  {
+   "code": "E09000013",
+   "name": "Hammersmith and Fulham",
+   "slug": "hammersmith-and-fulham",
+   "type": "London borough",
+   "region": "London",
+   "population": 190216,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 87.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000022",
+    "E09000020",
+    "E09000023",
+    "E09000028",
+    "E09000032",
+    "E09000007",
+    "E09000003",
+    "E09000014",
+    "E09000008",
+    "E09000019"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 60.6,
+     "2020": 66.3,
+     "2021": 21.1,
+     "2022": 82.1,
+     "2023": 81.0,
+     "2024": 85.4,
+     "2025": 87.2
+    }
+   }
+  },
+  {
+   "code": "E09000014",
+   "name": "Haringey",
+   "slug": "haringey",
+   "type": "London borough",
+   "region": "London",
+   "population": 266218,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 89.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000031",
+    "E09000009",
+    "E09000023",
+    "E09000022",
+    "E09000003",
+    "E09000010",
+    "E09000028",
+    "E09000005",
+    "E09000018",
+    "E09000026"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 70.3,
+     "2020": 67.5,
+     "2021": 29.6,
+     "2022": 44.1,
+     "2023": 97.7,
+     "2024": 84.2,
+     "2025": 89.6
+    }
+   }
+  },
+  {
+   "code": "E09000015",
+   "name": "Harrow",
+   "slug": "harrow",
+   "type": "London borough",
+   "region": "London",
+   "population": 272612,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 88.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000026",
+    "E09000017",
+    "E09000003",
+    "E09000009",
+    "E09000031",
+    "E06000038",
+    "E09000018",
+    "E09000024",
+    "E06000039",
+    "E06000042"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 60.3,
+     "2020": 38.4,
+     "2021": 55.0,
+     "2022": 28.9,
+     "2023": 21.2,
+     "2024": 38.7,
+     "2025": 88.2
+    }
+   }
+  },
+  {
+   "code": "E06000001",
+   "name": "Hartlepool",
+   "slug": "hartlepool",
+   "type": "Unitary authority",
+   "region": "North East",
+   "population": 99656,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 21.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000003",
+    "E08000024",
+    "E08000023",
+    "E06000009",
+    "E06000002",
+    "E08000037",
+    "E06000047",
+    "E06000006",
+    "E08000018",
+    "E08000011"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 35.9,
+     "2020": 55.9,
+     "2021": 46.6,
+     "2022": 55.1,
+     "2023": 44.3,
+     "2024": 74.6,
+     "2025": 21.4
+    }
+   }
+  },
+  {
+   "code": "E09000016",
+   "name": "Havering",
+   "slug": "havering",
+   "type": "London borough",
+   "region": "London",
+   "population": 280787,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 32.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000004",
+    "E06000055",
+    "E06000034",
+    "E06000030",
+    "E06000062",
+    "E06000042",
+    "E06000035"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 66.4,
+     "2020": 60.8,
+     "2021": 40.1,
+     "2023": 94.3,
+     "2024": 29.4,
+     "2025": 32.0
+    }
+   }
+  },
+  {
+   "code": "E06000019",
+   "name": "Herefordshire",
+   "slug": "herefordshire",
+   "type": "Unitary authority",
+   "region": "West Midlands",
+   "population": 192539,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 57.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000064",
+    "E06000051",
+    "E06000066",
+    "E06000011",
+    "E06000065"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 90.1,
+     "2020": 91.0,
+     "2021": 85.5,
+     "2022": 74.7,
+     "2023": 77.1,
+     "2024": 67.6,
+     "2025": 57.0
+    }
+   }
+  },
+  {
+   "code": "E09000017",
+   "name": "Hillingdon",
+   "slug": "hillingdon",
+   "type": "London borough",
+   "region": "London",
+   "population": 326671,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 77.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000018",
+    "E09000026",
+    "E09000031",
+    "E06000031",
+    "E09000009",
+    "E06000045",
+    "E09000015",
+    "E06000038",
+    "E06000039",
+    "E08000026"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 22.7,
+     "2020": 34.1,
+     "2021": 86.3,
+     "2022": 66.0,
+     "2023": 56.5,
+     "2024": 90.8,
+     "2025": 77.6
+    }
+   }
+  },
+  {
+   "code": "E09000018",
+   "name": "Hounslow",
+   "slug": "hounslow",
+   "type": "London borough",
+   "region": "London",
+   "population": 299486,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 58.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000009",
+    "E09000017",
+    "E06000039",
+    "E09000026",
+    "E09000031",
+    "E06000032",
+    "E09000005",
+    "E09000015",
+    "E06000045",
+    "E09000002"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 37.2,
+     "2020": 91.4,
+     "2021": 90.7,
+     "2022": 49.7,
+     "2023": 94.0,
+     "2024": 79.3,
+     "2025": 58.4
+    }
+   }
+  },
+  {
+   "code": "E06000046",
+   "name": "Isle of Wight",
+   "slug": "isle-of-wight",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 140777,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 12.5
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000008",
+    "E06000052",
+    "E06000027",
+    "E06000026",
+    "E08000001",
+    "E06000057",
+    "E08000018",
+    "E08000005",
+    "E08000002"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 76.9,
+     "2020": 86.0,
+     "2021": 86.3,
+     "2022": 75.3,
+     "2024": 28.6,
+     "2025": 12.5
+    }
+   }
+  },
+  {
+   "code": "E09000019",
+   "name": "Islington",
+   "slug": "islington",
+   "type": "London borough",
+   "region": "London",
+   "population": 224551,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 85.8
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000007",
+    "E09000028",
+    "E09000022",
+    "E09000033",
+    "E09000012",
+    "E09000013",
+    "E09000023",
+    "E09000014",
+    "E09000011",
+    "E08000003"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 81.8,
+     "2020": 54.5,
+     "2021": 60.4,
+     "2022": 38.5,
+     "2023": 65.9,
+     "2024": 79.5,
+     "2025": 85.8
+    }
+   }
+  },
+  {
+   "code": "E09000020",
+   "name": "Kensington and Chelsea",
+   "slug": "kensington-and-chelsea",
+   "type": "London borough",
+   "region": "London",
+   "population": 145734,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 97.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000013",
+    "E09000007",
+    "E09000022",
+    "E09000033",
+    "E09000028",
+    "E09000023",
+    "E09000032",
+    "E09000019",
+    "E09000003",
+    "E09000011"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 97.4,
+     "2020": 98.7,
+     "2021": 100.0,
+     "2022": 100.0,
+     "2023": 98.9,
+     "2024": 100.0,
+     "2025": 97.9
+    }
+   }
+  },
+  {
+   "code": "E06000010",
+   "name": "Kingston upon Hull",
+   "slug": "kingston-upon-hull",
+   "type": "Unitary authority",
+   "region": "Yorkshire and The Humber",
+   "population": 273257,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 37.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000028",
+    "E08000031",
+    "E06000021",
+    "E08000030",
+    "E06000012",
+    "E08000005",
+    "E06000002",
+    "E08000017",
+    "E06000015",
+    "E08000018"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 92.9,
+     "2020": 89.2,
+     "2021": 23.2,
+     "2022": 27.1,
+     "2023": 28.5,
+     "2024": 5.8,
+     "2025": 37.4
+    }
+   }
+  },
+  {
+   "code": "E09000021",
+   "name": "Kingston upon Thames",
+   "slug": "kingston-upon-thames",
+   "type": "London borough",
+   "region": "London",
+   "population": 172761,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 97.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000029",
+    "E09000024",
+    "E09000006",
+    "E06000022",
+    "E06000040",
+    "E08000009",
+    "E09000027",
+    "E06000060"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 96.2,
+     "2020": 87.5,
+     "2021": 68.7,
+     "2022": 72.0,
+     "2023": 47.3,
+     "2024": 93.8,
+     "2025": 97.2
+    }
+   }
+  },
+  {
+   "code": "E08000034",
+   "name": "Kirklees",
+   "slug": "kirklees",
+   "type": "Metropolitan district",
+   "region": "Yorkshire and The Humber",
+   "population": 445832,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 62.8
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000019",
+    "E08000008",
+    "E06000044",
+    "E06000015",
+    "E06000026",
+    "E08000005",
+    "E08000002",
+    "E08000036",
+    "E06000052",
+    "E08000037"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 71.5,
+     "2020": 83.4,
+     "2021": 41.0,
+     "2022": 14.4,
+     "2023": 13.0,
+     "2024": 22.9,
+     "2025": 62.8
+    }
+   }
+  },
+  {
+   "code": "E08000011",
+   "name": "Knowsley",
+   "slug": "knowsley",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 163723,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 86.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000013",
+    "E06000006",
+    "E08000024",
+    "E06000001",
+    "E06000003",
+    "E08000014",
+    "E08000015",
+    "E08000023",
+    "E06000047",
+    "E08000012"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 64.5,
+     "2020": 73.4,
+     "2021": 80.1,
+     "2022": 63.6,
+     "2023": 46.9,
+     "2024": 55.2,
+     "2025": 86.4
+    }
+   }
+  },
+  {
+   "code": "E09000022",
+   "name": "Lambeth",
+   "slug": "lambeth",
+   "type": "London borough",
+   "region": "London",
+   "population": 314298,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 89.1
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000028",
+    "E09000023",
+    "E09000013",
+    "E09000011",
+    "E09000014",
+    "E09000019",
+    "E09000008",
+    "E09000031",
+    "E09000007",
+    "E09000032"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 71.6,
+     "2020": 60.6,
+     "2021": 80.6,
+     "2022": 20.6,
+     "2023": 71.5,
+     "2024": 87.2,
+     "2025": 89.1
+    }
+   }
+  },
+  {
+   "code": "E08000035",
+   "name": "Leeds",
+   "slug": "leeds",
+   "type": "Metropolitan district",
+   "region": "Yorkshire and The Humber",
+   "population": 840550,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 7.3
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000044",
+    "E06000033",
+    "E08000019",
+    "E06000042",
+    "E08000034",
+    "E08000006",
+    "E06000023",
+    "E06000045",
+    "E09000008",
+    "E06000058"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 96.1,
+     "2020": 88.8,
+     "2021": 88.7,
+     "2022": 12.3,
+     "2023": 8.4,
+     "2024": 9.3,
+     "2025": 7.3
+    }
+   }
+  },
+  {
+   "code": "E06000016",
+   "name": "Leicester",
+   "slug": "leicester",
+   "type": "Unitary authority",
+   "region": "East Midlands",
+   "population": 383116,
+   "households": null,
+   "band_d": null,
+   "values": {},
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000032",
+    "E06000039",
+    "E09000005",
+    "E09000025",
+    "E08000028",
+    "E08000032",
+    "E09000009",
+    "E09000018",
+    "E08000025",
+    "E06000008"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 37.9,
+     "2020": 46.0,
+     "2021": 37.0,
+     "2022": 45.4,
+     "2024": 51.5
+    }
+   }
+  },
+  {
+   "code": "E09000023",
+   "name": "Lewisham",
+   "slug": "lewisham",
+   "type": "London borough",
+   "region": "London",
+   "population": 301037,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 22.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000022",
+    "E09000028",
+    "E09000008",
+    "E09000013",
+    "E09000011",
+    "E09000031",
+    "E09000014",
+    "E09000003",
+    "E08000035",
+    "E08000006"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 67.1,
+     "2020": 35.1,
+     "2021": 37.7,
+     "2022": 35.3,
+     "2023": 98.6,
+     "2025": 22.9
+    }
+   }
+  },
+  {
+   "code": "E08000012",
+   "name": "Liverpool",
+   "slug": "liverpool",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 507915,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 97.3
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000009",
+    "E06000001",
+    "E06000002",
+    "E08000006",
+    "E08000023",
+    "E08000011",
+    "E08000024",
+    "E08000021",
+    "E06000003",
+    "E08000005"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 7.5,
+     "2020": 9.2,
+     "2021": 59.7,
+     "2022": 92.0,
+     "2023": 98.8,
+     "2024": 97.9,
+     "2025": 97.3
+    }
+   }
+  },
+  {
+   "code": "E06000032",
+   "name": "Luton",
+   "slug": "luton",
+   "type": "Unitary authority",
+   "region": "East of England",
+   "population": 236380,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 29.1
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000039",
+    "E06000031",
+    "E08000026",
+    "E09000018",
+    "E09000017",
+    "E06000016",
+    "E09000009",
+    "E08000028",
+    "E06000045",
+    "E09000002"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 67.2,
+     "2020": 68.7,
+     "2021": 65.0,
+     "2022": 27.5,
+     "2023": 32.1,
+     "2024": 27.1,
+     "2025": 29.1
+    }
+   }
+  },
+  {
+   "code": "E08000003",
+   "name": "Manchester",
+   "slug": "manchester",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 588256,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 74.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000018",
+    "E08000025",
+    "E08000021",
+    "E09000010",
+    "E08000032",
+    "E08000006",
+    "E06000002",
+    "E06000045",
+    "E09000014",
+    "E08000004"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 66.7,
+     "2020": 51.0,
+     "2021": 72.6,
+     "2022": 57.5,
+     "2023": 61.6,
+     "2024": 76.8,
+     "2025": 74.2
+    }
+   }
+  },
+  {
+   "code": "E06000035",
+   "name": "Medway",
+   "slug": "medway",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 292697,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 21.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000030",
+    "E08000027",
+    "E09000004",
+    "E06000034",
+    "E08000002",
+    "E08000036"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 60.9,
+     "2020": 68.0,
+     "2021": 55.5,
+     "2022": 67.7,
+     "2023": 26.0,
+     "2024": 11.9,
+     "2025": 21.4
+    }
+   }
+  },
+  {
+   "code": "E09000024",
+   "name": "Merton",
+   "slug": "merton",
+   "type": "London borough",
+   "region": "London",
+   "population": 218891,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 95.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000029",
+    "E09000021",
+    "E06000038",
+    "E09000003",
+    "E06000042",
+    "E06000055",
+    "E09000008",
+    "E09000015"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 56.4,
+     "2020": 39.6,
+     "2021": 72.3,
+     "2022": 88.7,
+     "2023": 67.3,
+     "2024": 82.3,
+     "2025": 95.6
+    }
+   }
+  },
+  {
+   "code": "E06000002",
+   "name": "Middlesbrough",
+   "slug": "middlesbrough",
+   "type": "Unitary authority",
+   "region": "North East",
+   "population": 152795,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 93.3
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000009",
+    "E06000001",
+    "E06000021",
+    "E08000005",
+    "E08000021",
+    "E08000031",
+    "E08000030",
+    "E08000023",
+    "E08000012",
+    "E08000006"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 95.9,
+     "2020": 99.0,
+     "2021": 97.0,
+     "2022": 63.9,
+     "2023": 96.8,
+     "2024": 98.0,
+     "2025": 93.3
+    }
+   }
+  },
+  {
+   "code": "E06000042",
+   "name": "Milton Keynes",
+   "slug": "milton-keynes",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 308866,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 11.5
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000055",
+    "E09000004",
+    "E06000033",
+    "E06000038",
+    "E06000058",
+    "E09000016",
+    "E09000029",
+    "E08000035"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 85.6,
+     "2020": 63.1,
+     "2021": 82.4,
+     "2022": 92.1,
+     "2023": 66.1,
+     "2024": 43.0,
+     "2025": 11.5
+    }
+   }
+  },
+  {
+   "code": "E08000021",
+   "name": "Newcastle upon Tyne",
+   "slug": "newcastle-upon-tyne",
+   "type": "Metropolitan district",
+   "region": "North East",
+   "population": 320838,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 21.8
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000006",
+    "E08000019",
+    "E06000002",
+    "E06000044",
+    "E06000018",
+    "E08000035",
+    "E08000025",
+    "E06000045",
+    "E08000003",
+    "E06000009"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 51.4,
+     "2020": 43.9,
+     "2021": 15.3,
+     "2022": 12.8,
+     "2023": 6.5,
+     "2024": 8.8,
+     "2025": 21.8
+    }
+   }
+  },
+  {
+   "code": "E09000025",
+   "name": "Newham",
+   "slug": "newham",
+   "type": "London borough",
+   "region": "London",
+   "population": 376542,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 31.5
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000005",
+    "E09000002",
+    "E09000010",
+    "E06000016",
+    "E09000014",
+    "E06000032",
+    "E09000009",
+    "E09000018",
+    "E08000003",
+    "E06000039"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 23.6,
+     "2020": 13.9,
+     "2021": 29.5,
+     "2022": 61.2,
+     "2023": 79.6,
+     "2024": 57.6,
+     "2025": 31.5
+    }
+   }
+  },
+  {
+   "code": "E06000012",
+   "name": "North East Lincolnshire",
+   "slug": "north-east-lincolnshire",
+   "type": "Unitary authority",
+   "region": "Yorkshire and The Humber",
+   "population": 160101,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 98.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000017",
+    "E06000021",
+    "E08000018",
+    "E06000020",
+    "E08000030",
+    "E08000036",
+    "E06000005",
+    "E08000016",
+    "E06000003",
+    "E08000008"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 36.5,
+     "2020": 81.0,
+     "2021": 39.7,
+     "2022": 62.5,
+     "2023": 38.7,
+     "2024": 36.8,
+     "2025": 98.6
+    }
+   }
+  },
+  {
+   "code": "E06000013",
+   "name": "North Lincolnshire",
+   "slug": "north-lincolnshire",
+   "type": "Unitary authority",
+   "region": "Yorkshire and The Humber",
+   "population": 171421,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 70.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000036",
+    "E08000017",
+    "E08000016",
+    "E06000061",
+    "E08000027",
+    "E06000063",
+    "E08000018",
+    "E06000020"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 68.6,
+     "2020": 41.8,
+     "2021": 81.0,
+     "2022": 83.2,
+     "2023": 30.0,
+     "2024": 18.6,
+     "2025": 70.4
+    }
+   }
+  },
+  {
+   "code": "E06000061",
+   "name": "North Northamptonshire",
+   "slug": "north-northamptonshire",
+   "type": "Unitary authority",
+   "region": "East Midlands",
+   "population": 379569,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 56.5
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000030",
+    "E06000062",
+    "E06000066",
+    "E06000034",
+    "E06000013",
+    "E06000035",
+    "E08000036"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2021": 19.8,
+     "2022": 47.4,
+     "2023": 73.6,
+     "2024": 17.2,
+     "2025": 56.5
+    }
+   }
+  },
+  {
+   "code": "E06000024",
+   "name": "North Somerset",
+   "slug": "north-somerset",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 227160,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 96.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000054",
+    "E06000025"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 100.0,
+     "2020": 17.8,
+     "2021": 63.2,
+     "2022": 38.8,
+     "2023": 41.7,
+     "2024": 61.5,
+     "2025": 96.0
+    }
+   }
+  },
+  {
+   "code": "E08000022",
+   "name": "North Tyneside",
+   "slug": "north-tyneside",
+   "type": "Metropolitan district",
+   "region": "North East",
+   "population": 215401,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 26.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000002",
+    "E06000004",
+    "E06000024",
+    "E06000005",
+    "E08000029",
+    "E06000052",
+    "E08000037"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 31.2,
+     "2020": 66.1,
+     "2021": 56.1,
+     "2022": 81.3,
+     "2023": 78.7,
+     "2024": 40.7,
+     "2025": 26.0
+    }
+   }
+  },
+  {
+   "code": "E06000065",
+   "name": "North Yorkshire",
+   "slug": "north-yorkshire",
+   "type": "Unitary authority",
+   "region": "Yorkshire and The Humber",
+   "population": 639133,
+   "households": null,
+   "band_d": null,
+   "values": {},
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000051",
+    "E06000049",
+    "E06000011",
+    "E06000007",
+    "E06000019",
+    "E06000054",
+    "E06000066"
+   ],
+   "trends": {}
+  },
+  {
+   "code": "E06000057",
+   "name": "Northumberland",
+   "slug": "northumberland",
+   "type": "Unitary authority",
+   "region": "North East",
+   "population": 333975,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 81.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000052",
+    "E06000047",
+    "E06000059"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 85.1,
+     "2020": 89.9,
+     "2021": 86.4,
+     "2022": 66.6,
+     "2023": 41.6,
+     "2024": 49.0,
+     "2025": 81.4
+    }
+   }
+  },
+  {
+   "code": "E06000018",
+   "name": "Nottingham",
+   "slug": "nottingham",
+   "type": "Unitary authority",
+   "region": "East Midlands",
+   "population": 325765,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 30.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000025",
+    "E08000003",
+    "E08000021",
+    "E06000002",
+    "E08000032",
+    "E08000028",
+    "E06000045",
+    "E08000004",
+    "E08000019",
+    "E08000006"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 98.1,
+     "2020": 83.4,
+     "2021": 81.7,
+     "2022": 45.5,
+     "2023": 67.1,
+     "2024": 29.9,
+     "2025": 30.2
+    }
+   }
+  },
+  {
+   "code": "E08000004",
+   "name": "Oldham",
+   "slug": "oldham",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 251915,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 76.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000008",
+    "E08000001",
+    "E08000005",
+    "E08000032",
+    "E08000030",
+    "E06000015",
+    "E06000021",
+    "E08000026",
+    "E08000025",
+    "E08000028"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 86.6,
+     "2020": 94.8,
+     "2021": 89.1,
+     "2022": 96.5,
+     "2023": 95.0,
+     "2024": 76.6,
+     "2025": 76.9
+    }
+   }
+  },
+  {
+   "code": "E06000031",
+   "name": "Peterborough",
+   "slug": "peterborough",
+   "type": "Unitary authority",
+   "region": "East of England",
+   "population": 224757,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 66.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000026",
+    "E06000015",
+    "E09000017",
+    "E08000001",
+    "E06000045",
+    "E08000030",
+    "E06000032",
+    "E08000005",
+    "E08000031",
+    "E06000034"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 65.4,
+     "2020": 52.1,
+     "2021": 92.9,
+     "2022": 90.7,
+     "2023": 82.9,
+     "2024": 89.4,
+     "2025": 66.0
+    }
+   }
+  },
+  {
+   "code": "E06000026",
+   "name": "Plymouth",
+   "slug": "plymouth",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 271361,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 10.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000008",
+    "E06000027",
+    "E06000020",
+    "E08000027",
+    "E08000018",
+    "E08000036",
+    "E08000034",
+    "E08000037",
+    "E06000035",
+    "E06000052"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 72.3,
+     "2020": 51.1,
+     "2021": 51.5,
+     "2022": 50.1,
+     "2023": 17.8,
+     "2024": 6.0,
+     "2025": 10.2
+    }
+   }
+  },
+  {
+   "code": "E06000044",
+   "name": "Portsmouth",
+   "slug": "portsmouth",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 211475,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 42.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000019",
+    "E08000035",
+    "E08000034",
+    "E08000006",
+    "E06000045",
+    "E06000033",
+    "E06000026",
+    "E06000015",
+    "E08000037",
+    "E08000008"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 100.0,
+     "2020": 100.0,
+     "2021": 97.0,
+     "2022": 90.0,
+     "2023": 1.6,
+     "2024": 4.3,
+     "2025": 42.9
+    }
+   }
+  },
+  {
+   "code": "E06000038",
+   "name": "Reading",
+   "slug": "reading",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 183762,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 62.5
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000042",
+    "E09000003",
+    "E09000017",
+    "E09000024",
+    "E06000055",
+    "E09000008",
+    "E09000031",
+    "E08000035",
+    "E06000045",
+    "E09000015"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 49.4,
+     "2020": 85.9,
+     "2021": 89.9,
+     "2022": 79.8,
+     "2023": 74.9,
+     "2024": 59.1,
+     "2025": 62.5
+    }
+   }
+  },
+  {
+   "code": "E09000026",
+   "name": "Redbridge",
+   "slug": "redbridge",
+   "type": "London borough",
+   "region": "London",
+   "population": 321829,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 27.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000015",
+    "E09000017",
+    "E09000031",
+    "E09000009",
+    "E09000018",
+    "E09000003",
+    "E06000039",
+    "E06000038",
+    "E06000045",
+    "E06000032"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 49.4,
+     "2020": 61.3,
+     "2021": 83.8,
+     "2022": 57.1,
+     "2023": 76.4,
+     "2024": 7.0,
+     "2025": 27.9
+    }
+   }
+  },
+  {
+   "code": "E06000003",
+   "name": "Redcar and Cleveland",
+   "slug": "redcar-and-cleveland",
+   "type": "Unitary authority",
+   "region": "North East",
+   "population": 139541,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 19.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000024",
+    "E08000023",
+    "E06000001",
+    "E08000018",
+    "E08000037",
+    "E06000047",
+    "E08000016",
+    "E08000008",
+    "E08000017",
+    "E06000027"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 72.6,
+     "2020": 71.8,
+     "2021": 97.6,
+     "2022": 31.2,
+     "2023": 48.4,
+     "2024": 45.7,
+     "2025": 19.9
+    }
+   }
+  },
+  {
+   "code": "E09000027",
+   "name": "Richmond upon Thames",
+   "slug": "richmond-upon-thames",
+   "type": "London borough",
+   "region": "London",
+   "population": 196713,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 96.5
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000040",
+    "E09000021",
+    "E06000041",
+    "E09000006",
+    "E08000009",
+    "E06000060",
+    "E06000022",
+    "E06000037"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 96.4,
+     "2020": 82.2,
+     "2021": 62.6,
+     "2022": 73.7,
+     "2023": 45.1,
+     "2024": 94.2,
+     "2025": 96.5
+    }
+   }
+  },
+  {
+   "code": "E08000005",
+   "name": "Rochdale",
+   "slug": "rochdale",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 237641,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 49.3
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000030",
+    "E08000008",
+    "E06000021",
+    "E08000001",
+    "E08000024",
+    "E08000017",
+    "E08000018",
+    "E06000015",
+    "E08000004",
+    "E08000006"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 55.0,
+     "2020": 97.2,
+     "2021": 95.9,
+     "2022": 91.8,
+     "2023": 47.0,
+     "2024": 42.2,
+     "2025": 49.3
+    }
+   }
+  },
+  {
+   "code": "E08000018",
+   "name": "Rotherham",
+   "slug": "rotherham",
+   "type": "Metropolitan district",
+   "region": "Yorkshire and The Humber",
+   "population": 279161,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 79.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000016",
+    "E08000008",
+    "E08000017",
+    "E08000036",
+    "E06000020",
+    "E08000027",
+    "E06000003",
+    "E08000024",
+    "E08000037",
+    "E06000047"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 67.9,
+     "2020": 65.1,
+     "2021": 62.2,
+     "2022": 51.6,
+     "2023": 76.7,
+     "2024": 77.7,
+     "2025": 79.4
+    }
+   }
+  },
+  {
+   "code": "E06000017",
+   "name": "Rutland",
+   "slug": "rutland",
+   "type": "Unitary authority",
+   "region": "East Midlands",
+   "population": 41629,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 80.7
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000054",
+    "E06000065",
+    "E06000051",
+    "E06000049",
+    "E06000056",
+    "E06000037",
+    "E06000011"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 100.0,
+     "2020": 75.6,
+     "2021": 43.2,
+     "2022": 42.1,
+     "2023": 65.7,
+     "2024": 78.4,
+     "2025": 80.7
+    }
+   }
+  },
+  {
+   "code": "E08000006",
+   "name": "Salford",
+   "slug": "salford",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 297004,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 54.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000019",
+    "E08000005",
+    "E06000044",
+    "E08000021",
+    "E08000037",
+    "E08000001",
+    "E08000023",
+    "E08000008",
+    "E06000045",
+    "E08000035"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 92.9,
+     "2020": 66.4,
+     "2021": 62.6,
+     "2022": 48.3,
+     "2023": 49.6,
+     "2024": 62.6,
+     "2025": 54.9
+    }
+   }
+  },
+  {
+   "code": "E08000028",
+   "name": "Sandwell",
+   "slug": "sandwell",
+   "type": "Metropolitan district",
+   "region": "West Midlands",
+   "population": 352918,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 29.8
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000031",
+    "E06000010",
+    "E06000021",
+    "E08000030",
+    "E08000005",
+    "E08000032",
+    "E06000002",
+    "E08000026",
+    "E08000004",
+    "E06000032"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 76.4,
+     "2020": 69.9,
+     "2021": 76.9,
+     "2022": 50.4,
+     "2023": 35.2,
+     "2024": 27.2,
+     "2025": 29.8
+    }
+   }
+  },
+  {
+   "code": "E08000014",
+   "name": "Sefton",
+   "slug": "sefton",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 287583,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 42.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000015",
+    "E08000013",
+    "E08000010",
+    "E06000006",
+    "E06000047",
+    "E06000004",
+    "E08000011",
+    "E06000005",
+    "E08000002"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 23.0,
+     "2020": 66.9,
+     "2021": 61.1,
+     "2022": 27.4,
+     "2023": 40.4,
+     "2024": 53.1,
+     "2025": 42.9
+    }
+   }
+  },
+  {
+   "code": "E08000019",
+   "name": "Sheffield",
+   "slug": "sheffield",
+   "type": "Metropolitan district",
+   "region": null,
+   "population": 579517,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 27.8
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000034",
+    "E06000044",
+    "E08000006",
+    "E08000035",
+    "E06000015",
+    "E08000005",
+    "E08000021",
+    "E06000045",
+    "E08000008",
+    "E08000001"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 69.1,
+     "2020": 82.6,
+     "2021": 50.2,
+     "2022": 80.1,
+     "2023": 53.1,
+     "2024": 49.0,
+     "2025": 27.8
+    }
+   }
+  },
+  {
+   "code": "E06000051",
+   "name": "Shropshire",
+   "slug": "shropshire",
+   "type": "Unitary authority",
+   "region": "West Midlands",
+   "population": 333162,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 11.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000065",
+    "E06000066",
+    "E06000011",
+    "E06000059",
+    "E06000019",
+    "E06000064"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 81.9,
+     "2020": 65.7,
+     "2021": 67.9,
+     "2022": 45.9,
+     "2023": 38.3,
+     "2024": 36.5,
+     "2025": 11.9
+    }
+   }
+  },
+  {
+   "code": "E06000039",
+   "name": "Slough",
+   "slug": "slough",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 167450,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 30.5
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000018",
+    "E09000017",
+    "E06000032",
+    "E09000009",
+    "E09000026",
+    "E09000015",
+    "E09000005",
+    "E06000031",
+    "E09000031",
+    "E06000016"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 68.3,
+     "2020": 60.7,
+     "2021": 25.0,
+     "2022": 11.6,
+     "2023": 18.5,
+     "2024": 7.5,
+     "2025": 30.5
+    }
+   }
+  },
+  {
+   "code": "E08000029",
+   "name": "Solihull",
+   "slug": "solihull",
+   "type": "Metropolitan district",
+   "region": "West Midlands",
+   "population": 221449,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 74.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000007",
+    "E06000050",
+    "E06000007",
+    "E06000024",
+    "E06000049"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 29.2,
+     "2020": 54.2,
+     "2021": 50.0,
+     "2022": 92.4,
+     "2023": 99.4,
+     "2024": 80.4,
+     "2025": 74.0
+    }
+   }
+  },
+  {
+   "code": "E06000066",
+   "name": "Somerset",
+   "slug": "somerset",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 590972,
+   "households": null,
+   "band_d": null,
+   "values": {},
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000059",
+    "E06000051"
+   ],
+   "trends": {}
+  },
+  {
+   "code": "E06000025",
+   "name": "South Gloucestershire",
+   "slug": "south-gloucestershire",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 308787,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 56.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000056",
+    "E06000024",
+    "E06000054"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 72.1,
+     "2020": 67.2,
+     "2021": 29.1,
+     "2022": 16.3,
+     "2023": 43.1,
+     "2024": 61.6,
+     "2025": 56.6
+    }
+   }
+  },
+  {
+   "code": "E08000023",
+   "name": "South Tyneside",
+   "slug": "south-tyneside",
+   "type": "Metropolitan district",
+   "region": "North East",
+   "population": 151255,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 92.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000024",
+    "E06000003",
+    "E08000037",
+    "E06000001",
+    "E06000047",
+    "E08000008",
+    "E08000018",
+    "E08000005",
+    "E06000009",
+    "E06000005"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 100.0,
+     "2020": 100.0,
+     "2021": 89.6,
+     "2022": 89.2,
+     "2023": 74.6,
+     "2024": 70.9,
+     "2025": 92.0
+    }
+   }
+  },
+  {
+   "code": "E06000045",
+   "name": "Southampton",
+   "slug": "southampton",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 259230,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 80.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000026",
+    "E06000015",
+    "E06000044",
+    "E08000019",
+    "E09000017",
+    "E08000006",
+    "E06000031",
+    "E08000035",
+    "E08000001",
+    "E09000031"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 52.7,
+     "2020": 100.0,
+     "2021": 99.5,
+     "2022": 98.8,
+     "2023": 100.0,
+     "2024": 97.5,
+     "2025": 80.0
+    }
+   }
+  },
+  {
+   "code": "E06000033",
+   "name": "Southend-on-Sea",
+   "slug": "southend-on-sea",
+   "type": "Unitary authority",
+   "region": "East of England",
+   "population": 185214,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 47.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000058",
+    "E08000035",
+    "E06000042",
+    "E08000002",
+    "E06000044",
+    "E09000004",
+    "E08000022",
+    "E06000055"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 98.5,
+     "2020": 93.5,
+     "2021": 96.2,
+     "2022": 72.5,
+     "2023": 3.8,
+     "2024": 16.1,
+     "2025": 47.0
+    }
+   }
+  },
+  {
+   "code": "E09000028",
+   "name": "Southwark",
+   "slug": "southwark",
+   "type": "London borough",
+   "region": "London",
+   "population": 312366,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 42.8
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000022",
+    "E09000023",
+    "E09000013",
+    "E09000019",
+    "E09000011",
+    "E09000014",
+    "E09000007",
+    "E09000012",
+    "E09000008",
+    "E09000031"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 64.8,
+     "2020": 72.8,
+     "2021": 74.0,
+     "2022": 43.4,
+     "2023": 19.2,
+     "2024": 36.0,
+     "2025": 42.8
+    }
+   }
+  },
+  {
+   "code": "E08000013",
+   "name": "St. Helens",
+   "slug": "st-helens",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 189890,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 59.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000006",
+    "E08000014",
+    "E08000011",
+    "E06000047",
+    "E06000003",
+    "E08000016",
+    "E08000024",
+    "E08000015",
+    "E06000004",
+    "E06000020"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 50.5,
+     "2020": 100.0,
+     "2021": 96.2,
+     "2022": 28.9,
+     "2023": 10.8,
+     "2024": 28.8,
+     "2025": 59.6
+    }
+   }
+  },
+  {
+   "code": "E08000007",
+   "name": "Stockport",
+   "slug": "stockport",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 304879,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 18.1
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000029",
+    "E08000009",
+    "E06000050",
+    "E06000024",
+    "E06000025"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 45.6,
+     "2020": 42.0,
+     "2021": 94.4,
+     "2022": 49.9,
+     "2023": 9.9,
+     "2024": 7.8,
+     "2025": 18.1
+    }
+   }
+  },
+  {
+   "code": "E06000004",
+   "name": "Stockton-on-Tees",
+   "slug": "stockton-on-tees",
+   "type": "Unitary authority",
+   "region": "North East",
+   "population": 207158,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 52.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000005",
+    "E08000027",
+    "E08000037",
+    "E08000036",
+    "E08000002",
+    "E06000047",
+    "E08000018",
+    "E06000020",
+    "E08000015"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 93.5,
+     "2020": 96.5,
+     "2021": 97.9,
+     "2022": 95.2,
+     "2023": 99.4,
+     "2024": 71.2,
+     "2025": 52.9
+    }
+   }
+  },
+  {
+   "code": "E06000021",
+   "name": "Stoke-on-Trent",
+   "slug": "stoke-on-trent",
+   "type": "Unitary authority",
+   "region": "West Midlands",
+   "population": 272282,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 58.7
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000030",
+    "E08000005",
+    "E08000031",
+    "E08000017",
+    "E06000012",
+    "E06000010",
+    "E08000028",
+    "E08000008",
+    "E06000015",
+    "E08000018"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 27.6,
+     "2020": 19.1,
+     "2021": 3.7,
+     "2022": 62.6,
+     "2023": 48.9,
+     "2024": 32.8,
+     "2025": 58.7
+    }
+   }
+  },
+  {
+   "code": "E08000024",
+   "name": "Sunderland",
+   "slug": "sunderland",
+   "type": "Metropolitan district",
+   "region": "North East",
+   "population": 287070,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 59.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000003",
+    "E08000023",
+    "E06000001",
+    "E08000018",
+    "E08000008",
+    "E06000027",
+    "E08000037",
+    "E06000047",
+    "E08000016",
+    "E08000005"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 65.0,
+     "2020": 66.1,
+     "2021": 54.1,
+     "2022": 73.4,
+     "2023": 61.0,
+     "2024": 79.1,
+     "2025": 59.4
+    }
+   }
+  },
+  {
+   "code": "E09000029",
+   "name": "Sutton",
+   "slug": "sutton",
+   "type": "London borough",
+   "region": "London",
+   "population": 213972,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 96.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000024",
+    "E06000042",
+    "E09000021",
+    "E06000055",
+    "E06000058",
+    "E06000060"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 97.9,
+     "2020": 95.8,
+     "2021": 78.8,
+     "2022": 51.8,
+     "2023": 92.9,
+     "2024": 76.5,
+     "2025": 96.0
+    }
+   }
+  },
+  {
+   "code": "E06000030",
+   "name": "Swindon",
+   "slug": "swindon",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 245286,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 11.8
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000035",
+    "E06000061",
+    "E06000034",
+    "E09000004",
+    "E06000055",
+    "E06000062",
+    "E09000016"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 29.5,
+     "2020": 52.1,
+     "2021": 85.6,
+     "2022": 71.1,
+     "2023": 73.7,
+     "2024": 49.4,
+     "2025": 11.8
+    }
+   }
+  },
+  {
+   "code": "E08000008",
+   "name": "Tameside",
+   "slug": "tameside",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 240822,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 30.3
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000018",
+    "E08000037",
+    "E08000005",
+    "E08000016",
+    "E08000036",
+    "E08000027",
+    "E06000020",
+    "E06000026",
+    "E08000024",
+    "E06000027"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 49.3,
+     "2020": 82.4,
+     "2021": 36.6,
+     "2022": 39.2,
+     "2023": 57.2,
+     "2024": 29.4,
+     "2025": 30.3
+    }
+   }
+  },
+  {
+   "code": "E06000020",
+   "name": "Telford and Wrekin",
+   "slug": "telford-and-wrekin",
+   "type": "Unitary authority",
+   "region": "West Midlands",
+   "population": 199378,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 97.3
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000036",
+    "E08000018",
+    "E08000027",
+    "E08000016",
+    "E08000008",
+    "E08000017",
+    "E06000005",
+    "E08000037",
+    "E06000026",
+    "E06000004"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 97.7,
+     "2020": 98.0,
+     "2021": 99.3,
+     "2022": 100.0,
+     "2023": 98.1,
+     "2024": 87.4,
+     "2025": 97.3
+    }
+   }
+  },
+  {
+   "code": "E06000034",
+   "name": "Thurrock",
+   "slug": "thurrock",
+   "type": "Unitary authority",
+   "region": "East of England",
+   "population": 181664,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 35.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000030",
+    "E09000004",
+    "E09000016",
+    "E06000035",
+    "E06000061",
+    "E06000055",
+    "E06000062",
+    "E08000027"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 75.8,
+     "2020": 86.1,
+     "2021": 78.9,
+     "2022": 59.9,
+     "2023": 88.5,
+     "2024": 48.6,
+     "2025": 35.4
+    }
+   }
+  },
+  {
+   "code": "E06000027",
+   "name": "Torbay",
+   "slug": "torbay",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 139486,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 27.1
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000008",
+    "E08000024",
+    "E06000026",
+    "E08000018",
+    "E06000003",
+    "E06000046",
+    "E08000016",
+    "E08000037",
+    "E08000005",
+    "E06000020"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 22.9,
+     "2020": 52.9,
+     "2021": 79.3,
+     "2022": 65.4,
+     "2023": 46.2,
+     "2024": 28.9,
+     "2025": 27.1
+    }
+   }
+  },
+  {
+   "code": "E09000030",
+   "name": "Tower Hamlets",
+   "slug": "tower-hamlets",
+   "type": "London borough",
+   "region": "London",
+   "population": 334240,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 46.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000012",
+    "E09000019",
+    "E09000025",
+    "E08000003",
+    "E09000007",
+    "E09000014",
+    "E09000033",
+    "E09000028",
+    "E08000025",
+    "E09000005"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 41.8,
+     "2020": 5.5,
+     "2021": 32.0,
+     "2023": 48.3,
+     "2024": 39.7,
+     "2025": 46.0
+    }
+   }
+  },
+  {
+   "code": "E08000009",
+   "name": "Trafford",
+   "slug": "trafford",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 240981,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 47.4
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000007",
+    "E06000060",
+    "E09000006",
+    "E06000049",
+    "E08000029"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 61.8,
+     "2020": 81.8,
+     "2021": 75.9,
+     "2022": 36.3,
+     "2023": 62.4,
+     "2024": 53.4,
+     "2025": 47.4
+    }
+   }
+  },
+  {
+   "code": "E08000036",
+   "name": "Wakefield",
+   "slug": "wakefield",
+   "type": "Metropolitan district",
+   "region": "Yorkshire and The Humber",
+   "population": 369450,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 80.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000027",
+    "E08000016",
+    "E06000020",
+    "E08000018",
+    "E08000008",
+    "E08000017",
+    "E06000013",
+    "E06000005"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 86.1,
+     "2020": 88.7,
+     "2021": 88.3,
+     "2022": 81.2,
+     "2023": 89.3,
+     "2024": 86.2,
+     "2025": 80.2
+    }
+   }
+  },
+  {
+   "code": "E08000030",
+   "name": "Walsall",
+   "slug": "walsall",
+   "type": "Metropolitan district",
+   "region": "West Midlands",
+   "population": 295722,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 96.3
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000005",
+    "E06000021",
+    "E08000008",
+    "E08000031",
+    "E08000017",
+    "E06000015",
+    "E08000001",
+    "E08000018",
+    "E06000012",
+    "E08000028"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 4.5,
+     "2020": 19.7,
+     "2021": 37.0,
+     "2022": 9.0,
+     "2023": 60.2,
+     "2024": 87.1,
+     "2025": 96.3
+    }
+   }
+  },
+  {
+   "code": "E09000031",
+   "name": "Waltham Forest",
+   "slug": "waltham-forest",
+   "type": "London borough",
+   "region": "London",
+   "population": 283713,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 25.7
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000026",
+    "E09000003",
+    "E09000017",
+    "E09000008",
+    "E09000009",
+    "E09000014",
+    "E09000018",
+    "E09000015",
+    "E09000023",
+    "E06000045"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 56.5,
+     "2020": 89.6,
+     "2021": 89.6,
+     "2022": 89.7,
+     "2023": 90.7,
+     "2024": 50.8,
+     "2025": 25.7
+    }
+   }
+  },
+  {
+   "code": "E09000032",
+   "name": "Wandsworth",
+   "slug": "wandsworth",
+   "type": "London borough",
+   "region": "London",
+   "population": 339859,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 100.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000013",
+    "E09000021",
+    "E09000024",
+    "E09000022",
+    "E09000023",
+    "E09000003",
+    "E06000038",
+    "E06000023",
+    "E06000043",
+    "E09000006"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 45.4,
+     "2020": 46.4,
+     "2021": 85.5,
+     "2022": 79.2,
+     "2023": 99.7,
+     "2024": 100.0,
+     "2025": 100.0
+    }
+   }
+  },
+  {
+   "code": "E06000007",
+   "name": "Warrington",
+   "slug": "warrington",
+   "type": "Unitary authority",
+   "region": "North West",
+   "population": 215425,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 73.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000049",
+    "E06000011",
+    "E06000065",
+    "E08000029",
+    "E06000051",
+    "E06000054"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 18.6,
+     "2020": 86.4,
+     "2021": 57.2,
+     "2022": 48.2,
+     "2023": 30.4,
+     "2024": 59.7,
+     "2025": 73.6
+    }
+   }
+  },
+  {
+   "code": "E06000037",
+   "name": "West Berkshire",
+   "slug": "west-berkshire",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 165523,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 25.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000060",
+    "E06000036",
+    "E06000056",
+    "E06000054",
+    "E09000006"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 96.3,
+     "2020": 98.8,
+     "2021": 80.2,
+     "2023": 73.9,
+     "2024": 55.8,
+     "2025": 25.2
+    }
+   }
+  },
+  {
+   "code": "E06000062",
+   "name": "West Northamptonshire",
+   "slug": "west-northamptonshire",
+   "type": "Unitary authority",
+   "region": "East Midlands",
+   "population": 444218,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 7.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000055",
+    "E06000061",
+    "E06000030",
+    "E06000066",
+    "E09000016",
+    "E09000004"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2021": 34.9,
+     "2022": 10.0,
+     "2023": 6.2,
+     "2024": 12.2,
+     "2025": 7.9
+    }
+   }
+  },
+  {
+   "code": "E09000033",
+   "name": "Westminster",
+   "slug": "westminster",
+   "type": "London borough",
+   "region": "London",
+   "population": 212367,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 92.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E09000007",
+    "E09000019",
+    "E09000028",
+    "E09000020",
+    "E09000013",
+    "E09000022",
+    "E09000011",
+    "E08000003",
+    "E09000012",
+    "E09000014"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 99.2,
+     "2020": 100.0,
+     "2021": 99.1,
+     "2022": 99.2,
+     "2023": 99.4,
+     "2024": 100.0,
+     "2025": 92.9
+    }
+   }
+  },
+  {
+   "code": "E06000064",
+   "name": "Westmorland and Furness",
+   "slug": "westmorland-and-furness",
+   "type": "Unitary authority",
+   "region": "North West",
+   "population": 231307,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 72.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000019",
+    "E06000063",
+    "E06000051",
+    "E06000011",
+    "E06000065",
+    "E06000066"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2023": 55.3,
+     "2024": 91.6,
+     "2025": 72.0
+    }
+   }
+  },
+  {
+   "code": "E08000010",
+   "name": "Wigan",
+   "slug": "wigan",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 347089,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 21.9
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000014",
+    "E06000007",
+    "E08000027",
+    "E06000057",
+    "E06000019",
+    "E06000004",
+    "E06000051"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 98.6,
+     "2020": 80.4,
+     "2021": 83.5,
+     "2022": 83.9,
+     "2023": 64.4,
+     "2024": 42.6,
+     "2025": 21.9
+    }
+   }
+  },
+  {
+   "code": "E06000054",
+   "name": "Wiltshire",
+   "slug": "wiltshire",
+   "type": "Unitary authority",
+   "region": "South West",
+   "population": 526392,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 61.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000024",
+    "E06000049",
+    "E06000065",
+    "E06000025"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 84.8,
+     "2020": 56.6,
+     "2021": 25.5,
+     "2022": 14.2,
+     "2023": 27.5,
+     "2024": 29.5,
+     "2025": 61.6
+    }
+   }
+  },
+  {
+   "code": "E06000040",
+   "name": "Windsor and Maidenhead",
+   "slug": "windsor-and-maidenhead",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 159776,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 100.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000060",
+    "E06000041",
+    "E08000009",
+    "E06000037",
+    "E09000006",
+    "E06000056",
+    "E06000036"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 93.8,
+     "2020": 94.7,
+     "2021": 100.0,
+     "2022": 88.4,
+     "2023": 95.3,
+     "2024": 100.0,
+     "2025": 100.0
+    }
+   }
+  },
+  {
+   "code": "E08000015",
+   "name": "Wirral",
+   "slug": "wirral",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 329896,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 8.2
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000047",
+    "E08000014",
+    "E06000006",
+    "E06000004",
+    "E08000024",
+    "E08000037",
+    "E06000003",
+    "E08000002",
+    "E08000023"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 32.5,
+     "2020": 52.4,
+     "2021": 18.7,
+     "2022": 36.2,
+     "2023": 32.5,
+     "2024": 12.6,
+     "2025": 8.2
+    }
+   }
+  },
+  {
+   "code": "E06000041",
+   "name": "Wokingham",
+   "slug": "wokingham",
+   "type": "Unitary authority",
+   "region": "South East",
+   "population": 189024,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 43.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000040",
+    "E06000060",
+    "E06000037",
+    "E09000006",
+    "E08000009",
+    "E09000027",
+    "E06000036",
+    "E06000056"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 6.0,
+     "2020": 64.0,
+     "2021": 85.9,
+     "2022": 59.1,
+     "2023": 71.6,
+     "2024": 56.8,
+     "2025": 43.0
+    }
+   }
+  },
+  {
+   "code": "E08000031",
+   "name": "Wolverhampton",
+   "slug": "wolverhampton",
+   "type": "Metropolitan district",
+   "region": "West Midlands",
+   "population": 281434,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 19.6
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E08000028",
+    "E06000021",
+    "E08000030",
+    "E06000010",
+    "E08000005",
+    "E08000026",
+    "E08000017",
+    "E06000015",
+    "E06000002",
+    "E06000012"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 50.2,
+     "2020": 24.4,
+     "2021": 38.1,
+     "2022": 25.7,
+     "2023": 75.8,
+     "2024": 55.8,
+     "2025": 19.6
+    }
+   }
+  },
+  {
+   "code": "E06000014",
+   "name": "York",
+   "slug": "york",
+   "type": "Unitary authority",
+   "region": "Yorkshire and The Humber",
+   "population": 209118,
+   "households": null,
+   "band_d": null,
+   "values": {
+    "ehcp_20wk": 98.5
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "E06000022",
+    "E06000024",
+    "E08000009",
+    "E08000007"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2019": 88.7,
+     "2020": 74.7,
+     "2021": 63.0,
+     "2022": 88.2,
+     "2023": 96.2,
+     "2024": 65.1,
+     "2025": 98.5
+    }
+   }
+  }
+ ]
+}

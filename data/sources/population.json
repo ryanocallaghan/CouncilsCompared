@@ -1,0 +1,1190 @@
+{
+ "extra": {
+  "E06000001": {
+   "name": "Hartlepool",
+   "ons_name": "Hartlepool",
+   "region": "North East",
+   "type": "Unitary authority"
+  },
+  "E06000002": {
+   "name": "Middlesbrough",
+   "ons_name": "Middlesbrough",
+   "region": "North East",
+   "type": "Unitary authority"
+  },
+  "E06000003": {
+   "name": "Redcar and Cleveland",
+   "ons_name": "Redcar and Cleveland",
+   "region": "North East",
+   "type": "Unitary authority"
+  },
+  "E06000004": {
+   "name": "Stockton-on-Tees",
+   "ons_name": "Stockton-on-Tees",
+   "region": "North East",
+   "type": "Unitary authority"
+  },
+  "E06000005": {
+   "name": "Darlington",
+   "ons_name": "Darlington",
+   "region": "North East",
+   "type": "Unitary authority"
+  },
+  "E06000006": {
+   "name": "Halton",
+   "ons_name": "Halton",
+   "region": "North West",
+   "type": "Unitary authority"
+  },
+  "E06000007": {
+   "name": "Warrington",
+   "ons_name": "Warrington",
+   "region": "North West",
+   "type": "Unitary authority"
+  },
+  "E06000008": {
+   "name": "Blackburn with Darwen",
+   "ons_name": "Blackburn with Darwen",
+   "region": "North West",
+   "type": "Unitary authority"
+  },
+  "E06000009": {
+   "name": "Blackpool",
+   "ons_name": "Blackpool",
+   "region": "North West",
+   "type": "Unitary authority"
+  },
+  "E06000010": {
+   "name": "Kingston upon Hull",
+   "ons_name": "Kingston upon Hull, City of",
+   "region": "Yorkshire and The Humber",
+   "type": "Unitary authority"
+  },
+  "E06000011": {
+   "name": "East Riding of Yorkshire",
+   "ons_name": "East Riding of Yorkshire",
+   "region": "Yorkshire and The Humber",
+   "type": "Unitary authority"
+  },
+  "E06000012": {
+   "name": "North East Lincolnshire",
+   "ons_name": "North East Lincolnshire",
+   "region": "Yorkshire and The Humber",
+   "type": "Unitary authority"
+  },
+  "E06000013": {
+   "name": "North Lincolnshire",
+   "ons_name": "North Lincolnshire",
+   "region": "Yorkshire and The Humber",
+   "type": "Unitary authority"
+  },
+  "E06000014": {
+   "name": "York",
+   "ons_name": "York",
+   "region": "Yorkshire and The Humber",
+   "type": "Unitary authority"
+  },
+  "E06000015": {
+   "name": "Derby",
+   "ons_name": "Derby",
+   "region": "East Midlands",
+   "type": "Unitary authority"
+  },
+  "E06000016": {
+   "name": "Leicester",
+   "ons_name": "Leicester",
+   "region": "East Midlands",
+   "type": "Unitary authority"
+  },
+  "E06000017": {
+   "name": "Rutland",
+   "ons_name": "Rutland",
+   "region": "East Midlands",
+   "type": "Unitary authority"
+  },
+  "E06000018": {
+   "name": "Nottingham",
+   "ons_name": "Nottingham",
+   "region": "East Midlands",
+   "type": "Unitary authority"
+  },
+  "E06000019": {
+   "name": "Herefordshire",
+   "ons_name": "Herefordshire, County of",
+   "region": "West Midlands",
+   "type": "Unitary authority"
+  },
+  "E06000020": {
+   "name": "Telford and Wrekin",
+   "ons_name": "Telford and Wrekin",
+   "region": "West Midlands",
+   "type": "Unitary authority"
+  },
+  "E06000021": {
+   "name": "Stoke-on-Trent",
+   "ons_name": "Stoke-on-Trent",
+   "region": "West Midlands",
+   "type": "Unitary authority"
+  },
+  "E06000022": {
+   "name": "Bath and North East Somerset",
+   "ons_name": "Bath and North East Somerset",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E06000023": {
+   "name": "Bristol",
+   "ons_name": "Bristol, City of",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E06000024": {
+   "name": "North Somerset",
+   "ons_name": "North Somerset",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E06000025": {
+   "name": "South Gloucestershire",
+   "ons_name": "South Gloucestershire",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E06000026": {
+   "name": "Plymouth",
+   "ons_name": "Plymouth",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E06000027": {
+   "name": "Torbay",
+   "ons_name": "Torbay",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E06000030": {
+   "name": "Swindon",
+   "ons_name": "Swindon",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E06000031": {
+   "name": "Peterborough",
+   "ons_name": "Peterborough",
+   "region": "East of England",
+   "type": "Unitary authority"
+  },
+  "E06000032": {
+   "name": "Luton",
+   "ons_name": "Luton",
+   "region": "East of England",
+   "type": "Unitary authority"
+  },
+  "E06000033": {
+   "name": "Southend-on-Sea",
+   "ons_name": "Southend-on-Sea",
+   "region": "East of England",
+   "type": "Unitary authority"
+  },
+  "E06000034": {
+   "name": "Thurrock",
+   "ons_name": "Thurrock",
+   "region": "East of England",
+   "type": "Unitary authority"
+  },
+  "E06000035": {
+   "name": "Medway",
+   "ons_name": "Medway",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000036": {
+   "name": "Bracknell Forest",
+   "ons_name": "Bracknell Forest",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000037": {
+   "name": "West Berkshire",
+   "ons_name": "West Berkshire",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000038": {
+   "name": "Reading",
+   "ons_name": "Reading",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000039": {
+   "name": "Slough",
+   "ons_name": "Slough",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000040": {
+   "name": "Windsor and Maidenhead",
+   "ons_name": "Windsor and Maidenhead",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000041": {
+   "name": "Wokingham",
+   "ons_name": "Wokingham",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000042": {
+   "name": "Milton Keynes",
+   "ons_name": "Milton Keynes",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000043": {
+   "name": "Brighton and Hove",
+   "ons_name": "Brighton and Hove",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000044": {
+   "name": "Portsmouth",
+   "ons_name": "Portsmouth",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000045": {
+   "name": "Southampton",
+   "ons_name": "Southampton",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000046": {
+   "name": "Isle of Wight",
+   "ons_name": "Isle of Wight",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000047": {
+   "name": "County Durham",
+   "ons_name": "County Durham",
+   "region": "North East",
+   "type": "Unitary authority"
+  },
+  "E06000049": {
+   "name": "Cheshire East",
+   "ons_name": "Cheshire East",
+   "region": "North West",
+   "type": "Unitary authority"
+  },
+  "E06000050": {
+   "name": "Cheshire West and Chester",
+   "ons_name": "Cheshire West and Chester",
+   "region": "North West",
+   "type": "Unitary authority"
+  },
+  "E06000051": {
+   "name": "Shropshire",
+   "ons_name": "Shropshire",
+   "region": "West Midlands",
+   "type": "Unitary authority"
+  },
+  "E06000052": {
+   "name": "Cornwall",
+   "ons_name": "Cornwall",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E06000054": {
+   "name": "Wiltshire",
+   "ons_name": "Wiltshire",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E06000055": {
+   "name": "Bedford",
+   "ons_name": "Bedford",
+   "region": "East of England",
+   "type": "Unitary authority"
+  },
+  "E06000056": {
+   "name": "Central Bedfordshire",
+   "ons_name": "Central Bedfordshire",
+   "region": "East of England",
+   "type": "Unitary authority"
+  },
+  "E06000057": {
+   "name": "Northumberland",
+   "ons_name": "Northumberland",
+   "region": "North East",
+   "type": "Unitary authority"
+  },
+  "E06000058": {
+   "name": "Bournemouth, Christchurch and Poole",
+   "ons_name": "Bournemouth, Christchurch and Poole",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E06000059": {
+   "name": "Dorset",
+   "ons_name": "Dorset",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E06000060": {
+   "name": "Buckinghamshire",
+   "ons_name": "Buckinghamshire",
+   "region": "South East",
+   "type": "Unitary authority"
+  },
+  "E06000061": {
+   "name": "North Northamptonshire",
+   "ons_name": "North Northamptonshire",
+   "region": "East Midlands",
+   "type": "Unitary authority"
+  },
+  "E06000062": {
+   "name": "West Northamptonshire",
+   "ons_name": "West Northamptonshire",
+   "region": "East Midlands",
+   "type": "Unitary authority"
+  },
+  "E06000063": {
+   "name": "Cumberland",
+   "ons_name": "Cumberland",
+   "region": "North West",
+   "type": "Unitary authority"
+  },
+  "E06000064": {
+   "name": "Westmorland and Furness",
+   "ons_name": "Westmorland and Furness",
+   "region": "North West",
+   "type": "Unitary authority"
+  },
+  "E06000065": {
+   "name": "North Yorkshire",
+   "ons_name": "North Yorkshire",
+   "region": "Yorkshire and The Humber",
+   "type": "Unitary authority"
+  },
+  "E06000066": {
+   "name": "Somerset",
+   "ons_name": "Somerset",
+   "region": "South West",
+   "type": "Unitary authority"
+  },
+  "E08000001": {
+   "name": "Bolton",
+   "ons_name": "Bolton",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000002": {
+   "name": "Bury",
+   "ons_name": "Bury",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000003": {
+   "name": "Manchester",
+   "ons_name": "Manchester",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000004": {
+   "name": "Oldham",
+   "ons_name": "Oldham",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000005": {
+   "name": "Rochdale",
+   "ons_name": "Rochdale",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000006": {
+   "name": "Salford",
+   "ons_name": "Salford",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000007": {
+   "name": "Stockport",
+   "ons_name": "Stockport",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000008": {
+   "name": "Tameside",
+   "ons_name": "Tameside",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000009": {
+   "name": "Trafford",
+   "ons_name": "Trafford",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000010": {
+   "name": "Wigan",
+   "ons_name": "Wigan",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000011": {
+   "name": "Knowsley",
+   "ons_name": "Knowsley",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000012": {
+   "name": "Liverpool",
+   "ons_name": "Liverpool",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000013": {
+   "name": "St. Helens",
+   "ons_name": "St. Helens",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000014": {
+   "name": "Sefton",
+   "ons_name": "Sefton",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000015": {
+   "name": "Wirral",
+   "ons_name": "Wirral",
+   "region": "North West",
+   "type": "Metropolitan district"
+  },
+  "E08000016": {
+   "name": "Barnsley",
+   "ons_name": "Barnsley",
+   "region": null,
+   "type": "Metropolitan district"
+  },
+  "E08000017": {
+   "name": "Doncaster",
+   "ons_name": "Doncaster",
+   "region": "Yorkshire and The Humber",
+   "type": "Metropolitan district"
+  },
+  "E08000018": {
+   "name": "Rotherham",
+   "ons_name": "Rotherham",
+   "region": "Yorkshire and The Humber",
+   "type": "Metropolitan district"
+  },
+  "E08000019": {
+   "name": "Sheffield",
+   "ons_name": "Sheffield",
+   "region": null,
+   "type": "Metropolitan district"
+  },
+  "E08000021": {
+   "name": "Newcastle upon Tyne",
+   "ons_name": "Newcastle upon Tyne",
+   "region": "North East",
+   "type": "Metropolitan district"
+  },
+  "E08000022": {
+   "name": "North Tyneside",
+   "ons_name": "North Tyneside",
+   "region": "North East",
+   "type": "Metropolitan district"
+  },
+  "E08000023": {
+   "name": "South Tyneside",
+   "ons_name": "South Tyneside",
+   "region": "North East",
+   "type": "Metropolitan district"
+  },
+  "E08000024": {
+   "name": "Sunderland",
+   "ons_name": "Sunderland",
+   "region": "North East",
+   "type": "Metropolitan district"
+  },
+  "E08000025": {
+   "name": "Birmingham",
+   "ons_name": "Birmingham",
+   "region": "West Midlands",
+   "type": "Metropolitan district"
+  },
+  "E08000026": {
+   "name": "Coventry",
+   "ons_name": "Coventry",
+   "region": "West Midlands",
+   "type": "Metropolitan district"
+  },
+  "E08000027": {
+   "name": "Dudley",
+   "ons_name": "Dudley",
+   "region": "West Midlands",
+   "type": "Metropolitan district"
+  },
+  "E08000028": {
+   "name": "Sandwell",
+   "ons_name": "Sandwell",
+   "region": "West Midlands",
+   "type": "Metropolitan district"
+  },
+  "E08000029": {
+   "name": "Solihull",
+   "ons_name": "Solihull",
+   "region": "West Midlands",
+   "type": "Metropolitan district"
+  },
+  "E08000030": {
+   "name": "Walsall",
+   "ons_name": "Walsall",
+   "region": "West Midlands",
+   "type": "Metropolitan district"
+  },
+  "E08000031": {
+   "name": "Wolverhampton",
+   "ons_name": "Wolverhampton",
+   "region": "West Midlands",
+   "type": "Metropolitan district"
+  },
+  "E08000032": {
+   "name": "Bradford",
+   "ons_name": "Bradford",
+   "region": "Yorkshire and The Humber",
+   "type": "Metropolitan district"
+  },
+  "E08000033": {
+   "name": "Calderdale",
+   "ons_name": "Calderdale",
+   "region": "Yorkshire and The Humber",
+   "type": "Metropolitan district"
+  },
+  "E08000034": {
+   "name": "Kirklees",
+   "ons_name": "Kirklees",
+   "region": "Yorkshire and The Humber",
+   "type": "Metropolitan district"
+  },
+  "E08000035": {
+   "name": "Leeds",
+   "ons_name": "Leeds",
+   "region": "Yorkshire and The Humber",
+   "type": "Metropolitan district"
+  },
+  "E08000036": {
+   "name": "Wakefield",
+   "ons_name": "Wakefield",
+   "region": "Yorkshire and The Humber",
+   "type": "Metropolitan district"
+  },
+  "E08000037": {
+   "name": "Gateshead",
+   "ons_name": "Gateshead",
+   "region": "North East",
+   "type": "Metropolitan district"
+  },
+  "E09000002": {
+   "name": "Barking and Dagenham",
+   "ons_name": "Barking and Dagenham",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000003": {
+   "name": "Barnet",
+   "ons_name": "Barnet",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000004": {
+   "name": "Bexley",
+   "ons_name": "Bexley",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000005": {
+   "name": "Brent",
+   "ons_name": "Brent",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000006": {
+   "name": "Bromley",
+   "ons_name": "Bromley",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000007": {
+   "name": "Camden",
+   "ons_name": "Camden",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000008": {
+   "name": "Croydon",
+   "ons_name": "Croydon",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000009": {
+   "name": "Ealing",
+   "ons_name": "Ealing",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000010": {
+   "name": "Enfield",
+   "ons_name": "Enfield",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000011": {
+   "name": "Greenwich",
+   "ons_name": "Greenwich",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000012": {
+   "name": "Hackney",
+   "ons_name": "Hackney",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000013": {
+   "name": "Hammersmith and Fulham",
+   "ons_name": "Hammersmith and Fulham",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000014": {
+   "name": "Haringey",
+   "ons_name": "Haringey",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000015": {
+   "name": "Harrow",
+   "ons_name": "Harrow",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000016": {
+   "name": "Havering",
+   "ons_name": "Havering",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000017": {
+   "name": "Hillingdon",
+   "ons_name": "Hillingdon",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000018": {
+   "name": "Hounslow",
+   "ons_name": "Hounslow",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000019": {
+   "name": "Islington",
+   "ons_name": "Islington",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000020": {
+   "name": "Kensington and Chelsea",
+   "ons_name": "Kensington and Chelsea",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000021": {
+   "name": "Kingston upon Thames",
+   "ons_name": "Kingston upon Thames",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000022": {
+   "name": "Lambeth",
+   "ons_name": "Lambeth",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000023": {
+   "name": "Lewisham",
+   "ons_name": "Lewisham",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000024": {
+   "name": "Merton",
+   "ons_name": "Merton",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000025": {
+   "name": "Newham",
+   "ons_name": "Newham",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000026": {
+   "name": "Redbridge",
+   "ons_name": "Redbridge",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000027": {
+   "name": "Richmond upon Thames",
+   "ons_name": "Richmond upon Thames",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000028": {
+   "name": "Southwark",
+   "ons_name": "Southwark",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000029": {
+   "name": "Sutton",
+   "ons_name": "Sutton",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000030": {
+   "name": "Tower Hamlets",
+   "ons_name": "Tower Hamlets",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000031": {
+   "name": "Waltham Forest",
+   "ons_name": "Waltham Forest",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000032": {
+   "name": "Wandsworth",
+   "ons_name": "Wandsworth",
+   "region": "London",
+   "type": "London borough"
+  },
+  "E09000033": {
+   "name": "Westminster",
+   "ons_name": "Westminster",
+   "region": "London",
+   "type": "London borough"
+  }
+ },
+ "files": [
+  "https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales/mid20252023localauthorityboundaries/mye25tablesew.xlsx",
+  "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/LAD25_RGN25_EN_LU_v2"
+ ],
+ "id": "population",
+ "notes": [
+  "No region for Barnsley (E08000016)",
+  "No region for Sheffield (E08000019)"
+ ],
+ "period": "mid-2025",
+ "published": "",
+ "title": "ONS: Population estimates, mid-2025",
+ "trends": {},
+ "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales",
+ "values": {
+  "E06000001": {
+   "population": 99656
+  },
+  "E06000002": {
+   "population": 152795
+  },
+  "E06000003": {
+   "population": 139541
+  },
+  "E06000004": {
+   "population": 207158
+  },
+  "E06000005": {
+   "population": 113402
+  },
+  "E06000006": {
+   "population": 131912
+  },
+  "E06000007": {
+   "population": 215425
+  },
+  "E06000008": {
+   "population": 163801
+  },
+  "E06000009": {
+   "population": 143492
+  },
+  "E06000010": {
+   "population": 273257
+  },
+  "E06000011": {
+   "population": 360334
+  },
+  "E06000012": {
+   "population": 160101
+  },
+  "E06000013": {
+   "population": 171421
+  },
+  "E06000014": {
+   "population": 209118
+  },
+  "E06000015": {
+   "population": 275344
+  },
+  "E06000016": {
+   "population": 383116
+  },
+  "E06000017": {
+   "population": 41629
+  },
+  "E06000018": {
+   "population": 325765
+  },
+  "E06000019": {
+   "population": 192539
+  },
+  "E06000020": {
+   "population": 199378
+  },
+  "E06000021": {
+   "population": 272282
+  },
+  "E06000022": {
+   "population": 200898
+  },
+  "E06000023": {
+   "population": 495260
+  },
+  "E06000024": {
+   "population": 227160
+  },
+  "E06000025": {
+   "population": 308787
+  },
+  "E06000026": {
+   "population": 271361
+  },
+  "E06000027": {
+   "population": 139486
+  },
+  "E06000030": {
+   "population": 245286
+  },
+  "E06000031": {
+   "population": 224757
+  },
+  "E06000032": {
+   "population": 236380
+  },
+  "E06000033": {
+   "population": 185214
+  },
+  "E06000034": {
+   "population": 181664
+  },
+  "E06000035": {
+   "population": 292697
+  },
+  "E06000036": {
+   "population": 132145
+  },
+  "E06000037": {
+   "population": 165523
+  },
+  "E06000038": {
+   "population": 183762
+  },
+  "E06000039": {
+   "population": 167450
+  },
+  "E06000040": {
+   "population": 159776
+  },
+  "E06000041": {
+   "population": 189024
+  },
+  "E06000042": {
+   "population": 308866
+  },
+  "E06000043": {
+   "population": 284170
+  },
+  "E06000044": {
+   "population": 211475
+  },
+  "E06000045": {
+   "population": 259230
+  },
+  "E06000046": {
+   "population": 140777
+  },
+  "E06000047": {
+   "population": 539146
+  },
+  "E06000049": {
+   "population": 425459
+  },
+  "E06000050": {
+   "population": 373951
+  },
+  "E06000051": {
+   "population": 333162
+  },
+  "E06000052": {
+   "population": 584782
+  },
+  "E06000054": {
+   "population": 526392
+  },
+  "E06000055": {
+   "population": 196398
+  },
+  "E06000056": {
+   "population": 321605
+  },
+  "E06000057": {
+   "population": 333975
+  },
+  "E06000058": {
+   "population": 405829
+  },
+  "E06000059": {
+   "population": 391036
+  },
+  "E06000060": {
+   "population": 584296
+  },
+  "E06000061": {
+   "population": 379569
+  },
+  "E06000062": {
+   "population": 444218
+  },
+  "E06000063": {
+   "population": 282343
+  },
+  "E06000064": {
+   "population": 231307
+  },
+  "E06000065": {
+   "population": 639133
+  },
+  "E06000066": {
+   "population": 590972
+  },
+  "E08000001": {
+   "population": 309732
+  },
+  "E08000002": {
+   "population": 199271
+  },
+  "E08000003": {
+   "population": 588256
+  },
+  "E08000004": {
+   "population": 251915
+  },
+  "E08000005": {
+   "population": 237641
+  },
+  "E08000006": {
+   "population": 297004
+  },
+  "E08000007": {
+   "population": 304879
+  },
+  "E08000008": {
+   "population": 240822
+  },
+  "E08000009": {
+   "population": 240981
+  },
+  "E08000010": {
+   "population": 347089
+  },
+  "E08000011": {
+   "population": 163723
+  },
+  "E08000012": {
+   "population": 507915
+  },
+  "E08000013": {
+   "population": 189890
+  },
+  "E08000014": {
+   "population": 287583
+  },
+  "E08000015": {
+   "population": 329896
+  },
+  "E08000016": {
+   "population": 252784
+  },
+  "E08000017": {
+   "population": 323016
+  },
+  "E08000018": {
+   "population": 279161
+  },
+  "E08000019": {
+   "population": 579517
+  },
+  "E08000021": {
+   "population": 320838
+  },
+  "E08000022": {
+   "population": 215401
+  },
+  "E08000023": {
+   "population": 151255
+  },
+  "E08000024": {
+   "population": 287070
+  },
+  "E08000025": {
+   "population": 1176960
+  },
+  "E08000026": {
+   "population": 364766
+  },
+  "E08000027": {
+   "population": 333941
+  },
+  "E08000028": {
+   "population": 352918
+  },
+  "E08000029": {
+   "population": 221449
+  },
+  "E08000030": {
+   "population": 295722
+  },
+  "E08000031": {
+   "population": 281434
+  },
+  "E08000032": {
+   "population": 557758
+  },
+  "E08000033": {
+   "population": 210734
+  },
+  "E08000034": {
+   "population": 445832
+  },
+  "E08000035": {
+   "population": 840550
+  },
+  "E08000036": {
+   "population": 369450
+  },
+  "E08000037": {
+   "population": 202509
+  },
+  "E09000002": {
+   "population": 238295
+  },
+  "E09000003": {
+   "population": 408087
+  },
+  "E09000004": {
+   "population": 257103
+  },
+  "E09000005": {
+   "population": 352201
+  },
+  "E09000006": {
+   "population": 336048
+  },
+  "E09000007": {
+   "population": 216658
+  },
+  "E09000008": {
+   "population": 410085
+  },
+  "E09000009": {
+   "population": 387072
+  },
+  "E09000010": {
+   "population": 329400
+  },
+  "E09000011": {
+   "population": 301225
+  },
+  "E09000012": {
+   "population": 266241
+  },
+  "E09000013": {
+   "population": 190216
+  },
+  "E09000014": {
+   "population": 266218
+  },
+  "E09000015": {
+   "population": 272612
+  },
+  "E09000016": {
+   "population": 280787
+  },
+  "E09000017": {
+   "population": 326671
+  },
+  "E09000018": {
+   "population": 299486
+  },
+  "E09000019": {
+   "population": 224551
+  },
+  "E09000020": {
+   "population": 145734
+  },
+  "E09000021": {
+   "population": 172761
+  },
+  "E09000022": {
+   "population": 314298
+  },
+  "E09000023": {
+   "population": 301037
+  },
+  "E09000024": {
+   "population": 218891
+  },
+  "E09000025": {
+   "population": 376542
+  },
+  "E09000026": {
+   "population": 321829
+  },
+  "E09000027": {
+   "population": 196713
+  },
+  "E09000028": {
+   "population": 312366
+  },
+  "E09000029": {
+   "population": 213972
+  },
+  "E09000030": {
+   "population": 334240
+  },
+  "E09000031": {
+   "population": 283713
+  },
+  "E09000032": {
+   "population": 339859
+  },
+  "E09000033": {
+   "population": 212367
+  }
+ }
+}
