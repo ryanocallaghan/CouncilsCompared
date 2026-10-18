@@ -11,6 +11,7 @@ it waits a second between each, and only runs again once a month.
 
 import re
 import time
+import urllib.error
 import urllib.parse
 from collections import Counter
 
@@ -39,7 +40,12 @@ def search(name, start, end, page):
 def decisions(name, start, end):
     """Counter of (category, subcategory) for one council's upheld decisions."""
     counts = Counter()
-    first = search(name, start, end, 1)
+    try:
+        first = search(name, start, end, 1)
+    except urllib.error.HTTPError as e:
+        if e.code == 404:  # what the search gives when nothing matches
+            return None
+        raise
     match = COUNT.search(first)
     total = int(match.group(1)) if match else 0
     pages = -(-total // 10)
@@ -59,10 +65,18 @@ def fetch(context):
     population = context["population"]
     result = Result(id=ID, title="Local Government and Social Care Ombudsman: published decisions",
                     url=PAGE, period=period, extra={"checked": time.strftime("%Y-%m-%d"), "counts": {}})
+    not_found = []
     for code, name in sorted(context["results"]["lgo"].extra["names"].items()):
         counts = decisions(name, start, end)
+        if counts is None:
+            not_found.append(name)
+            counts = Counter()
         result.extra["counts"][code] = {f"{c}/{s}": n for (c, s), n in sorted(counts.items())}
         for measure, matches in MEASURES.items():
             n = sum(v for (c, s), v in counts.items() if matches(c, s))
             result.set(code, measure, n / population[code] * 100_000)
+    if len(not_found) > len(population) / 4:
+        raise RuntimeError(f"The decision search found nothing for {len(not_found)} councils: has it changed?")
+    if not_found:
+        result.notes.append(f"No upheld decisions found for: {', '.join(not_found)}")
     return result
