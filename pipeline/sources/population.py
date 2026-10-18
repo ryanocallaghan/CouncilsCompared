@@ -71,9 +71,9 @@ def fetch(context=None):
             continue
         name = sheets.text(row[col_name])
         result.values[code] = {"population": int(sheets.num(row[col_all]))}
-        result.extra[code] = {"name": display_name(name), "ons_name": name, "type": kind,
-                              "region": region_of.get(code)}
-        if not region_of.get(code):
+        region = region_of.get(code) or region_of.get(sheets._ALIASES.get(code))
+        result.extra[code] = {"name": display_name(name), "ons_name": name, "type": kind, "region": region}
+        if not region:
             result.notes.append(f"No region for {name} ({code})")
     if not 120 <= len(result.values) <= 140:
         raise RuntimeError(f"Expected about 130 single-tier councils, found {len(result.values)}")

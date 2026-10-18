@@ -11,6 +11,15 @@ from python_calamine import CalamineWorkbook
 
 CODE = re.compile(r"E0[6-9]\d{6}")
 
+# Councils whose code changed with a boundary change but are the same
+# council: publications switch to the new code at different times
+SAME_COUNCIL = [
+    ("E08000016", "E08000038"),  # Barnsley, 2025
+    ("E08000019", "E08000039"),  # Sheffield, 2025
+]
+_ALIASES = {a: b for pair in SAME_COUNCIL for a, b in (pair, pair[::-1])}
+KNOWN = set()  # the codes being compared, set by pipeline.update
+
 
 def workbook(data):
     return CalamineWorkbook.from_filelike(io.BytesIO(data))
@@ -46,8 +55,14 @@ def column(header, pattern, exclude=None, last=False):
 
 
 def code(value):
+    """The ONS code in a cell, as the code the councils being compared use."""
     match = CODE.fullmatch(text(value))
-    return match.group(0) if match else None
+    if not match:
+        return None
+    found = match.group(0)
+    if KNOWN and found not in KNOWN and _ALIASES.get(found) in KNOWN:
+        return _ALIASES[found]
+    return found
 
 
 def code_in(row):

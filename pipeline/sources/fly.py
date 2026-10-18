@@ -13,9 +13,7 @@ PAGE = "/government/statistical-data-sets/env24-fly-tipping-incidents-and-action
 def data_attachment(item):
     candidates = [a for a in govuk.attachments(item)
                   if a.get("url", "").lower().endswith((".ods", ".xlsx"))
-                  and re.search(r"local authority|LA |incidents and actions", a.get("title", ""), re.I)]
-    if not candidates:
-        candidates = [a for a in govuk.attachments(item) if a.get("url", "").lower().endswith((".ods", ".xlsx"))]
+                  and re.search(r"reported by LAs|by local authority", a.get("title", ""), re.I)]
     return max(candidates, key=lambda a: (govuk.years_in(a["title"] + " " + a["url"]), a["url"].endswith(".ods")))
 
 

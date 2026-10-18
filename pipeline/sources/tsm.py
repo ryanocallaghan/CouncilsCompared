@@ -19,8 +19,8 @@ PERCEPTION = {
     "tsm_listens": r"\(TP06\)$",
 }
 MANAGEMENT = {
-    "tsm_decent": r"\(RP01\)",
-    "tsm_repairs": r"\(RP02 1\)",
+    "tsm_decent": r"^Proportion of homes that do not meet.*\(RP01\)",
+    "tsm_repairs": r"^Proportion of non-emergency.*\(RP02 1\)",
     "tsm_complaints": r"^LCRA - Proportion of stage one complaints.*\(CH02 1\)",
 }
 

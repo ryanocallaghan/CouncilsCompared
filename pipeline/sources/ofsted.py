@@ -37,13 +37,11 @@ def fetch(context):
     ons = sheets.column(header, r"^Local authority area code$")
     overall = sheets.column(header, r"^Overall effectiveness$")
     inspected = sheets.column(header, r"^Inspection date$")
-    link = sheets.column(header, r"^Web link$")
     period = re.sub(r"^.*as at ", "", item["title"])
     result = Result(id=ID, title=f"Ofsted: {item['title']}", url=item["web_url"], period=period,
                     published=govuk.published(item), files=[attachment["url"]])
     for row in rows[head + 1:]:
         code = sheets.code(row[ons])
         if code in context["population"] and sheets.text(row[overall]):
-            result.extra[code] = {"grade": grade(row[overall]), "inspected": iso_date(row[inspected]),
-                                  "report": sheets.text(row[link])}
+            result.extra[code] = {"grade": grade(row[overall]), "inspected": iso_date(row[inspected])}
     return result

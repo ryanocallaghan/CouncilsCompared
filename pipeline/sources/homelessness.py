@@ -58,7 +58,9 @@ def fetch(context):
     for row in rows:
         code = sheets.code(row[0])
         if code in population:
-            parts = [sheets.num(row[i]) for i in long_cols]
+            # Small numbers are suppressed ([c]): almost always families in
+            # B&Bs, which are few, so they are counted as none
+            parts = [0.0 if sheets.text(row[i]) == "[c]" else sheets.num(row[i]) for i in long_cols]
             if None not in parts:
                 result.set(code, "ta_long", share(sum(parts), sheets.num(row[total])))
 

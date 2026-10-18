@@ -14,7 +14,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: CC_CACHE=cache python -m pipeline.update --summary summary.md || true
+      - run: CC_CACHE=cache python -m pipeline.update --only fly,lgo_decisions,silktide --summary summary.md || true
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"

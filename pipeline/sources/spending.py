@@ -1,5 +1,7 @@
 """Net spending per resident, from MHCLG's revenue outturn (RSX)."""
 
+import re
+
 from pipeline import govuk, sheets
 from pipeline.http import get
 from pipeline.sources import Result
@@ -30,7 +32,7 @@ def fetch(context):
     ons = sheets.column(header, r"^ONS Code$")
 
     def net(service):
-        return sheets.column(header, rf"^{service} - Net Current Expenditure")
+        return sheets.column(header, rf"^{re.escape(service)} - Net Current Expenditure")
 
     cols = {label: [net(s) for s in services] for label, services in SERVICES.items()}
     total, education = net("Total Service Expenditure"), net("Education services")

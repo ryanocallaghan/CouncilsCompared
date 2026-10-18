@@ -1,0 +1,757 @@
+{
+ "extra": {},
+ "files": [
+  "https://assets.publishing.service.gov.uk/media/69394723e447374889cd9005/2025_TSM_Full_Data_v1.1_FINAL.xlsx"
+ ],
+ "id": "tsm",
+ "notes": [],
+ "period": "2024-25",
+ "published": "2025-11-04",
+ "title": "Regulator of Social Housing: Tenant Satisfaction Measures 2024/25",
+ "trends": {},
+ "url": "https://www.gov.uk/government/statistics/tenant-satisfaction-measures-202425",
+ "values": {
+  "E06000005": {
+   "tsm_complaints": 79.9,
+   "tsm_decent": 0.0,
+   "tsm_listens": 70.3,
+   "tsm_maintained": 81.8,
+   "tsm_overall": 79.4,
+   "tsm_repairs": 78.4,
+   "tsm_safe": 84.6
+  },
+  "E06000009": {
+   "tsm_complaints": 98.7,
+   "tsm_decent": 0.0,
+   "tsm_listens": 66.1,
+   "tsm_maintained": 77.2,
+   "tsm_overall": 79.2,
+   "tsm_repairs": 92.3,
+   "tsm_safe": 79.0
+  },
+  "E06000010": {
+   "tsm_complaints": 96.3,
+   "tsm_decent": 10.6,
+   "tsm_listens": 66.2,
+   "tsm_maintained": 75.4,
+   "tsm_overall": 72.4,
+   "tsm_repairs": 67.7,
+   "tsm_safe": 79.3
+  },
+  "E06000011": {
+   "tsm_complaints": 82.3,
+   "tsm_decent": 2.8,
+   "tsm_listens": 69.8,
+   "tsm_maintained": 81.5,
+   "tsm_overall": 77.7,
+   "tsm_repairs": 99.0,
+   "tsm_safe": 87.0
+  },
+  "E06000014": {
+   "tsm_complaints": 54.7,
+   "tsm_decent": 2.0,
+   "tsm_listens": 46.2,
+   "tsm_maintained": 56.1,
+   "tsm_overall": 59.9,
+   "tsm_repairs": 81.5,
+   "tsm_safe": 63.5
+  },
+  "E06000015": {
+   "tsm_complaints": 97.8,
+   "tsm_decent": 0.7,
+   "tsm_listens": 73.5,
+   "tsm_maintained": 84.7,
+   "tsm_overall": 85.0,
+   "tsm_repairs": 85.9,
+   "tsm_safe": 86.2
+  },
+  "E06000016": {
+   "tsm_complaints": 72.6,
+   "tsm_decent": 0.5,
+   "tsm_listens": 60.0,
+   "tsm_maintained": 68.9,
+   "tsm_overall": 64.5,
+   "tsm_repairs": 73.2,
+   "tsm_safe": 78.3
+  },
+  "E06000018": {
+   "tsm_complaints": 100.0,
+   "tsm_decent": 0.3,
+   "tsm_listens": 52.8,
+   "tsm_maintained": 64.2,
+   "tsm_overall": 59.5,
+   "tsm_repairs": 83.3,
+   "tsm_safe": 75.3
+  },
+  "E06000021": {
+   "tsm_complaints": 67.7,
+   "tsm_decent": 1.5,
+   "tsm_repairs": 77.9
+  },
+  "E06000023": {
+   "tsm_complaints": 62.0,
+   "tsm_decent": 7.7,
+   "tsm_listens": 52.3,
+   "tsm_maintained": 63.9,
+   "tsm_overall": 64.5,
+   "tsm_repairs": 89.9,
+   "tsm_safe": 70.3
+  },
+  "E06000030": {
+   "tsm_complaints": 93.7,
+   "tsm_decent": 12.8,
+   "tsm_listens": 41.1,
+   "tsm_maintained": 53.2,
+   "tsm_overall": 53.6,
+   "tsm_repairs": 80.3,
+   "tsm_safe": 60.2
+  },
+  "E06000032": {
+   "tsm_complaints": 82.2,
+   "tsm_decent": 0.8,
+   "tsm_listens": 57.2,
+   "tsm_maintained": 73.6,
+   "tsm_overall": 70.4,
+   "tsm_repairs": 83.3,
+   "tsm_safe": 73.9
+  },
+  "E06000033": {
+   "tsm_complaints": 69.5,
+   "tsm_decent": 0.4,
+   "tsm_listens": 63.0,
+   "tsm_maintained": 75.1,
+   "tsm_overall": 69.8,
+   "tsm_repairs": 66.8,
+   "tsm_safe": 77.3
+  },
+  "E06000034": {
+   "tsm_complaints": 90.6,
+   "tsm_decent": 5.6,
+   "tsm_listens": 59.1,
+   "tsm_maintained": 70.3,
+   "tsm_overall": 69.2,
+   "tsm_repairs": 96.3,
+   "tsm_safe": 73.4
+  },
+  "E06000035": {
+   "tsm_complaints": 92.4,
+   "tsm_decent": 4.8,
+   "tsm_listens": 64.5,
+   "tsm_maintained": 73.2,
+   "tsm_overall": 70.7,
+   "tsm_repairs": 96.0,
+   "tsm_safe": 76.2
+  },
+  "E06000038": {
+   "tsm_complaints": 47.9,
+   "tsm_decent": 7.8,
+   "tsm_listens": 68.3,
+   "tsm_maintained": 71.9,
+   "tsm_overall": 71.2,
+   "tsm_repairs": 82.1,
+   "tsm_safe": 80.7
+  },
+  "E06000039": {
+   "tsm_complaints": 30.0,
+   "tsm_decent": 4.3,
+   "tsm_listens": 37.4,
+   "tsm_maintained": 49.5,
+   "tsm_overall": 45.1,
+   "tsm_repairs": 80.3,
+   "tsm_safe": 58.7
+  },
+  "E06000041": {
+   "tsm_complaints": 66.7,
+   "tsm_decent": 0.0,
+   "tsm_listens": 51.0,
+   "tsm_maintained": 64.6,
+   "tsm_overall": 64.1,
+   "tsm_repairs": 86.1,
+   "tsm_safe": 68.6
+  },
+  "E06000042": {
+   "tsm_complaints": 53.2,
+   "tsm_decent": 6.4,
+   "tsm_listens": 38.0,
+   "tsm_maintained": 50.4,
+   "tsm_overall": 53.1,
+   "tsm_repairs": 99.7,
+   "tsm_safe": 55.5
+  },
+  "E06000043": {
+   "tsm_complaints": 72.9,
+   "tsm_decent": 2.0,
+   "tsm_listens": 52.6,
+   "tsm_maintained": 65.2,
+   "tsm_overall": 67.0,
+   "tsm_repairs": 47.2,
+   "tsm_safe": 69.3
+  },
+  "E06000044": {
+   "tsm_complaints": 55.4,
+   "tsm_decent": 4.5,
+   "tsm_listens": 77.8,
+   "tsm_maintained": 84.1,
+   "tsm_overall": 83.6,
+   "tsm_repairs": 84.7,
+   "tsm_safe": 83.5
+  },
+  "E06000045": {
+   "tsm_complaints": 68.6,
+   "tsm_decent": 47.8,
+   "tsm_listens": 52.2,
+   "tsm_maintained": 63.2,
+   "tsm_overall": 62.2,
+   "tsm_repairs": 58.3,
+   "tsm_safe": 69.5
+  },
+  "E06000050": {
+   "tsm_complaints": 47.0,
+   "tsm_decent": 0.0,
+   "tsm_listens": 63.3,
+   "tsm_maintained": 67.5,
+   "tsm_overall": 65.5,
+   "tsm_repairs": 75.6,
+   "tsm_safe": 77.1
+  },
+  "E06000051": {
+   "tsm_complaints": 94.2,
+   "tsm_decent": 0.3,
+   "tsm_listens": 74.4,
+   "tsm_maintained": 84.6,
+   "tsm_overall": 84.5,
+   "tsm_repairs": 85.6,
+   "tsm_safe": 89.0
+  },
+  "E06000052": {
+   "tsm_complaints": 73.5,
+   "tsm_decent": 17.9,
+   "tsm_listens": 56.3,
+   "tsm_maintained": 65.6,
+   "tsm_overall": 68.8,
+   "tsm_repairs": 60.7,
+   "tsm_safe": 74.0
+  },
+  "E06000054": {
+   "tsm_complaints": 94.2,
+   "tsm_decent": 3.6,
+   "tsm_listens": 50.6,
+   "tsm_maintained": 67.0,
+   "tsm_overall": 72.3,
+   "tsm_repairs": 84.2,
+   "tsm_safe": 68.9
+  },
+  "E06000056": {
+   "tsm_complaints": 50.5,
+   "tsm_decent": 13.8,
+   "tsm_listens": 51.4,
+   "tsm_maintained": 60.8,
+   "tsm_overall": 60.9,
+   "tsm_repairs": 59.8,
+   "tsm_safe": 65.2
+  },
+  "E06000057": {
+   "tsm_complaints": 69.0,
+   "tsm_decent": 1.9,
+   "tsm_listens": 52.1,
+   "tsm_maintained": 65.7,
+   "tsm_overall": 68.3,
+   "tsm_repairs": 99.3,
+   "tsm_safe": 69.2
+  },
+  "E06000058": {
+   "tsm_complaints": 94.0,
+   "tsm_decent": 0.1,
+   "tsm_listens": 66.7,
+   "tsm_maintained": 79.3,
+   "tsm_overall": 81.2,
+   "tsm_repairs": 83.1,
+   "tsm_safe": 80.4
+  },
+  "E06000061": {
+   "tsm_complaints": 40.4,
+   "tsm_decent": 14.6,
+   "tsm_listens": 56.2,
+   "tsm_maintained": 63.0,
+   "tsm_overall": 67.0,
+   "tsm_repairs": 59.9,
+   "tsm_safe": 74.6
+  },
+  "E06000062": {
+   "tsm_complaints": 73.6,
+   "tsm_decent": 19.2,
+   "tsm_listens": 57.3,
+   "tsm_maintained": 67.7,
+   "tsm_overall": 67.5,
+   "tsm_repairs": 93.0,
+   "tsm_safe": 72.6
+  },
+  "E06000064": {
+   "tsm_complaints": 88.9,
+   "tsm_decent": 0.0,
+   "tsm_listens": 67.8,
+   "tsm_maintained": 73.8,
+   "tsm_overall": 79.6,
+   "tsm_repairs": 82.0,
+   "tsm_safe": 79.3
+  },
+  "E06000065": {
+   "tsm_complaints": 68.5,
+   "tsm_decent": 0.0,
+   "tsm_listens": 58.0,
+   "tsm_maintained": 71.0,
+   "tsm_overall": 69.1,
+   "tsm_repairs": 68.8,
+   "tsm_safe": 82.1
+  },
+  "E06000066": {
+   "tsm_complaints": 79.6,
+   "tsm_decent": 2.4,
+   "tsm_listens": 67.1,
+   "tsm_maintained": 78.3,
+   "tsm_overall": 79.0,
+   "tsm_repairs": 89.8,
+   "tsm_safe": 82.5
+  },
+  "E08000002": {
+   "tsm_complaints": 100.0,
+   "tsm_decent": 0.5,
+   "tsm_listens": 58.6,
+   "tsm_maintained": 66.8,
+   "tsm_overall": 70.6,
+   "tsm_repairs": 78.8,
+   "tsm_safe": 69.5
+  },
+  "E08000003": {
+   "tsm_complaints": 46.6,
+   "tsm_decent": 3.3,
+   "tsm_listens": 53.8,
+   "tsm_maintained": 58.7,
+   "tsm_overall": 60.1,
+   "tsm_repairs": 64.2,
+   "tsm_safe": 65.3
+  },
+  "E08000004": {
+   "tsm_complaints": 100.0,
+   "tsm_decent": 0.0,
+   "tsm_listens": 80.1,
+   "tsm_maintained": 90.7,
+   "tsm_overall": 89.2,
+   "tsm_repairs": 100.0,
+   "tsm_safe": 91.1
+  },
+  "E08000006": {
+   "tsm_complaints": 100.0,
+   "tsm_decent": 0.0,
+   "tsm_listens": 68.5,
+   "tsm_maintained": 77.3,
+   "tsm_overall": 74.8,
+   "tsm_repairs": 98.7,
+   "tsm_safe": 74.7
+  },
+  "E08000007": {
+   "tsm_complaints": 99.3,
+   "tsm_decent": 0.1,
+   "tsm_listens": 87.5,
+   "tsm_maintained": 88.3,
+   "tsm_overall": 89.4,
+   "tsm_repairs": 76.8,
+   "tsm_safe": 90.9
+  },
+  "E08000010": {
+   "tsm_complaints": 48.5,
+   "tsm_decent": 9.2,
+   "tsm_listens": 49.3,
+   "tsm_maintained": 58.4,
+   "tsm_overall": 63.1,
+   "tsm_repairs": 82.5,
+   "tsm_safe": 66.4
+  },
+  "E08000016": {
+   "tsm_complaints": 93.0,
+   "tsm_decent": 0.2,
+   "tsm_listens": 62.3,
+   "tsm_maintained": 70.7,
+   "tsm_overall": 75.2,
+   "tsm_repairs": 85.7,
+   "tsm_safe": 71.5
+  },
+  "E08000017": {
+   "tsm_complaints": 99.7,
+   "tsm_decent": 5.5,
+   "tsm_listens": 75.4,
+   "tsm_maintained": 82.0,
+   "tsm_overall": 81.0,
+   "tsm_repairs": 68.7,
+   "tsm_safe": 86.3
+  },
+  "E08000018": {
+   "tsm_complaints": 78.1,
+   "tsm_decent": 7.2,
+   "tsm_listens": 71.5,
+   "tsm_maintained": 77.7,
+   "tsm_overall": 78.2,
+   "tsm_repairs": 96.7,
+   "tsm_safe": 81.0
+  },
+  "E08000019": {
+   "tsm_complaints": 63.7,
+   "tsm_decent": 5.4,
+   "tsm_listens": 59.2,
+   "tsm_maintained": 68.8,
+   "tsm_overall": 67.6,
+   "tsm_repairs": 70.9,
+   "tsm_safe": 75.4
+  },
+  "E08000021": {
+   "tsm_complaints": 62.6,
+   "tsm_decent": 11.1,
+   "tsm_listens": 42.3,
+   "tsm_maintained": 54.2,
+   "tsm_overall": 48.6,
+   "tsm_repairs": 89.7,
+   "tsm_safe": 61.9
+  },
+  "E08000022": {
+   "tsm_complaints": 100.0,
+   "tsm_decent": 2.9,
+   "tsm_listens": 50.4,
+   "tsm_maintained": 67.1,
+   "tsm_overall": 70.6,
+   "tsm_repairs": 94.3,
+   "tsm_safe": 73.5
+  },
+  "E08000023": {
+   "tsm_complaints": 92.6,
+   "tsm_decent": 0.0,
+   "tsm_listens": 56.4,
+   "tsm_maintained": 66.7,
+   "tsm_overall": 65.1,
+   "tsm_repairs": 91.9,
+   "tsm_safe": 71.5
+  },
+  "E08000025": {
+   "tsm_complaints": 82.5,
+   "tsm_decent": 71.8,
+   "tsm_listens": 49.9,
+   "tsm_maintained": 54.7,
+   "tsm_overall": 58.5,
+   "tsm_repairs": 82.6,
+   "tsm_safe": 64.1
+  },
+  "E08000027": {
+   "tsm_complaints": 74.7,
+   "tsm_decent": 3.8,
+   "tsm_listens": 56.9,
+   "tsm_maintained": 68.7,
+   "tsm_overall": 69.5,
+   "tsm_repairs": 96.8,
+   "tsm_safe": 75.8
+  },
+  "E08000028": {
+   "tsm_complaints": 38.2,
+   "tsm_decent": 1.1,
+   "tsm_listens": 58.7,
+   "tsm_maintained": 68.9,
+   "tsm_overall": 67.0,
+   "tsm_repairs": 75.7,
+   "tsm_safe": 75.0
+  },
+  "E08000029": {
+   "tsm_complaints": 73.6,
+   "tsm_decent": 1.8,
+   "tsm_listens": 67.2,
+   "tsm_maintained": 74.1,
+   "tsm_overall": 77.2,
+   "tsm_repairs": 81.6,
+   "tsm_safe": 80.1
+  },
+  "E08000031": {
+   "tsm_complaints": 98.9,
+   "tsm_decent": 4.8,
+   "tsm_listens": 53.3,
+   "tsm_maintained": 68.1,
+   "tsm_overall": 66.4,
+   "tsm_repairs": 95.4,
+   "tsm_safe": 71.8
+  },
+  "E08000034": {
+   "tsm_complaints": 69.6,
+   "tsm_decent": 21.7,
+   "tsm_listens": 49.6,
+   "tsm_maintained": 58.6,
+   "tsm_overall": 57.0,
+   "tsm_repairs": 84.2,
+   "tsm_safe": 66.1
+  },
+  "E08000035": {
+   "tsm_complaints": 94.7,
+   "tsm_decent": 3.8,
+   "tsm_listens": 54.2,
+   "tsm_maintained": 67.0,
+   "tsm_overall": 66.0,
+   "tsm_repairs": 93.1,
+   "tsm_safe": 71.8
+  },
+  "E08000037": {
+   "tsm_complaints": 66.8,
+   "tsm_decent": 2.6,
+   "tsm_listens": 60.7,
+   "tsm_maintained": 65.8,
+   "tsm_overall": 64.3,
+   "tsm_repairs": 82.5,
+   "tsm_safe": 73.6
+  },
+  "E09000002": {
+   "tsm_complaints": 76.8,
+   "tsm_decent": 9.2,
+   "tsm_listens": 40.2,
+   "tsm_maintained": 52.4,
+   "tsm_overall": 53.7,
+   "tsm_repairs": 89.8,
+   "tsm_safe": 55.1
+  },
+  "E09000003": {
+   "tsm_complaints": 81.2,
+   "tsm_decent": 2.9,
+   "tsm_listens": 49.9,
+   "tsm_maintained": 59.9,
+   "tsm_overall": 59.4,
+   "tsm_repairs": 59.0,
+   "tsm_safe": 65.6
+  },
+  "E09000005": {
+   "tsm_complaints": 81.8,
+   "tsm_decent": 4.8,
+   "tsm_listens": 39.2,
+   "tsm_maintained": 49.5,
+   "tsm_overall": 47.8,
+   "tsm_repairs": 77.9,
+   "tsm_safe": 61.9
+  },
+  "E09000007": {
+   "tsm_complaints": 89.3,
+   "tsm_decent": 6.0,
+   "tsm_listens": 55.9,
+   "tsm_maintained": 64.8,
+   "tsm_overall": 71.0,
+   "tsm_repairs": 84.5,
+   "tsm_safe": 77.2
+  },
+  "E09000008": {
+   "tsm_complaints": 35.5,
+   "tsm_decent": 7.2,
+   "tsm_listens": 42.9,
+   "tsm_maintained": 52.8,
+   "tsm_overall": 52.8,
+   "tsm_repairs": 90.6,
+   "tsm_safe": 62.2
+  },
+  "E09000009": {
+   "tsm_complaints": 60.9,
+   "tsm_decent": 7.1,
+   "tsm_listens": 45.9,
+   "tsm_maintained": 56.1,
+   "tsm_overall": 56.2,
+   "tsm_repairs": 82.6,
+   "tsm_safe": 66.4
+  },
+  "E09000010": {
+   "tsm_complaints": 95.5,
+   "tsm_decent": 5.3,
+   "tsm_listens": 68.9,
+   "tsm_maintained": 72.3,
+   "tsm_overall": 61.6,
+   "tsm_repairs": 87.5,
+   "tsm_safe": 82.9
+  },
+  "E09000011": {
+   "tsm_complaints": 54.4,
+   "tsm_decent": 1.9,
+   "tsm_listens": 55.8,
+   "tsm_maintained": 65.5,
+   "tsm_overall": 66.0,
+   "tsm_repairs": 67.2,
+   "tsm_safe": 74.6
+  },
+  "E09000012": {
+   "tsm_complaints": 67.4,
+   "tsm_decent": 9.6,
+   "tsm_listens": 52.7,
+   "tsm_maintained": 57.3,
+   "tsm_overall": 57.4,
+   "tsm_repairs": 88.6,
+   "tsm_safe": 62.6
+  },
+  "E09000013": {
+   "tsm_complaints": 93.3,
+   "tsm_decent": 4.1,
+   "tsm_listens": 62.5,
+   "tsm_maintained": 68.6,
+   "tsm_overall": 62.7,
+   "tsm_repairs": 86.2,
+   "tsm_safe": 73.3
+  },
+  "E09000014": {
+   "tsm_complaints": 70.0,
+   "tsm_decent": 19.5,
+   "tsm_listens": 43.4,
+   "tsm_maintained": 47.4,
+   "tsm_overall": 47.7,
+   "tsm_repairs": 61.9,
+   "tsm_safe": 58.3
+  },
+  "E09000015": {
+   "tsm_complaints": 58.4,
+   "tsm_decent": 2.8,
+   "tsm_listens": 41.4,
+   "tsm_maintained": 53.5,
+   "tsm_overall": 52.1,
+   "tsm_repairs": 47.6,
+   "tsm_safe": 65.2
+  },
+  "E09000016": {
+   "tsm_complaints": 82.6,
+   "tsm_decent": 2.8,
+   "tsm_listens": 32.3,
+   "tsm_maintained": 46.8,
+   "tsm_overall": 44.5,
+   "tsm_repairs": 95.0,
+   "tsm_safe": 51.7
+  },
+  "E09000017": {
+   "tsm_complaints": 60.2,
+   "tsm_decent": 18.2,
+   "tsm_listens": 51.7,
+   "tsm_maintained": 65.2,
+   "tsm_overall": 59.0,
+   "tsm_repairs": 85.7,
+   "tsm_safe": 74.1
+  },
+  "E09000018": {
+   "tsm_complaints": 42.4,
+   "tsm_decent": 4.1,
+   "tsm_listens": 64.7,
+   "tsm_maintained": 68.4,
+   "tsm_overall": 69.6,
+   "tsm_repairs": 75.4,
+   "tsm_safe": 72.7
+  },
+  "E09000019": {
+   "tsm_decent": 4.0,
+   "tsm_listens": 59.3,
+   "tsm_maintained": 68.3,
+   "tsm_overall": 66.5,
+   "tsm_repairs": 76.4,
+   "tsm_safe": 71.3
+  },
+  "E09000020": {
+   "tsm_complaints": 93.9,
+   "tsm_decent": 31.8,
+   "tsm_listens": 60.4,
+   "tsm_maintained": 66.3,
+   "tsm_overall": 68.2,
+   "tsm_repairs": 85.1,
+   "tsm_safe": 66.2
+  },
+  "E09000021": {
+   "tsm_complaints": 55.9,
+   "tsm_decent": 14.0,
+   "tsm_listens": 50.1,
+   "tsm_maintained": 61.0,
+   "tsm_overall": 64.0,
+   "tsm_repairs": 95.1,
+   "tsm_safe": 69.7
+  },
+  "E09000022": {
+   "tsm_complaints": 36.3,
+   "tsm_decent": 11.5,
+   "tsm_listens": 44.0,
+   "tsm_maintained": 49.6,
+   "tsm_overall": 47.2,
+   "tsm_repairs": 85.4,
+   "tsm_safe": 61.7
+  },
+  "E09000023": {
+   "tsm_complaints": 34.2,
+   "tsm_decent": 17.4,
+   "tsm_listens": 43.9,
+   "tsm_maintained": 51.3,
+   "tsm_overall": 50.8,
+   "tsm_repairs": 68.9,
+   "tsm_safe": 61.4
+  },
+  "E09000025": {
+   "tsm_complaints": 67.6,
+   "tsm_decent": 26.0,
+   "tsm_listens": 63.3,
+   "tsm_maintained": 66.6,
+   "tsm_overall": 70.8,
+   "tsm_repairs": 83.8,
+   "tsm_safe": 77.4
+  },
+  "E09000026": {
+   "tsm_complaints": 76.3,
+   "tsm_decent": 6.7,
+   "tsm_listens": 54.7,
+   "tsm_maintained": 66.7,
+   "tsm_overall": 65.8,
+   "tsm_repairs": 93.4,
+   "tsm_safe": 71.6
+  },
+  "E09000028": {
+   "tsm_complaints": 27.1,
+   "tsm_decent": 22.9,
+   "tsm_listens": 50.6,
+   "tsm_maintained": 61.5,
+   "tsm_overall": 58.2,
+   "tsm_repairs": 80.0,
+   "tsm_safe": 68.2
+  },
+  "E09000029": {
+   "tsm_complaints": 90.8,
+   "tsm_decent": 1.2,
+   "tsm_listens": 57.2,
+   "tsm_maintained": 66.5,
+   "tsm_overall": 69.9,
+   "tsm_repairs": 74.9,
+   "tsm_safe": 73.3
+  },
+  "E09000030": {
+   "tsm_complaints": 70.7,
+   "tsm_decent": 20.1,
+   "tsm_listens": 53.4,
+   "tsm_maintained": 62.8,
+   "tsm_overall": 60.1,
+   "tsm_repairs": 75.6,
+   "tsm_safe": 67.7
+  },
+  "E09000031": {
+   "tsm_complaints": 88.7,
+   "tsm_decent": 18.8,
+   "tsm_listens": 56.2,
+   "tsm_maintained": 63.5,
+   "tsm_overall": 62.1,
+   "tsm_repairs": 78.8,
+   "tsm_safe": 68.6
+  },
+  "E09000032": {
+   "tsm_complaints": 71.0,
+   "tsm_decent": 3.6,
+   "tsm_listens": 50.2,
+   "tsm_maintained": 61.0,
+   "tsm_overall": 64.7,
+   "tsm_repairs": 81.4,
+   "tsm_safe": 69.5
+  },
+  "E09000033": {
+   "tsm_complaints": 83.0,
+   "tsm_decent": 4.5,
+   "tsm_listens": 63.4,
+   "tsm_maintained": 65.5,
+   "tsm_overall": 66.5,
+   "tsm_repairs": 83.5,
+   "tsm_safe": 70.5
+  }
+ }
+}

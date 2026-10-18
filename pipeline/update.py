@@ -17,6 +17,7 @@ import os
 import sys
 import traceback
 
+from pipeline import sheets
 from pipeline.names import Matcher
 from pipeline.sources import Result
 
@@ -64,6 +65,8 @@ def save(result):
 
 def context_from(population):
     councils = {code: extra["ons_name"] for code, extra in population.extra.items()}
+    sheets.KNOWN.clear()
+    sheets.KNOWN.update(councils)
     return {
         "councils": councils,
         "population": {code: v["population"] for code, v in population.values.items()},
@@ -79,8 +82,8 @@ def is_fresh(module, previous, context):
     checked = previous.extra.get("checked")
     if not checked:
         return False
-    if module.ID == "lgo_decisions" and "lgo" in context:
-        latest = context["lgo"].extra.get("latest")
+    if module.ID == "lgo_decisions" and "lgo" in context["results"]:
+        latest = context["results"]["lgo"].extra.get("latest")
         if previous.period != f"{latest - 1}-{str(latest)[2:]} and {latest}-{str(latest + 1)[2:]}":
             return False
     age = (datetime.date.today() - datetime.date.fromisoformat(checked)).days
@@ -90,7 +93,7 @@ def is_fresh(module, previous, context):
 def run(only=None):
     """Fetch the sources. Returns {id: "updated" | "fresh" | "kept" | "failed: ..."}."""
     status = {}
-    context = {}
+    context = {"results": {}}
     for source_id, module_name, function in STEPS:
         previous = load(source_id)
         module = importlib.import_module(f"pipeline.sources.{module_name}")
@@ -110,7 +113,7 @@ def run(only=None):
                 raise SystemExit("No population figures, so nothing can be compared")
             context.update(context_from(result))
         if result is not None:
-            context[source_id] = result
+            context["results"][source_id] = result
     return status
 
 

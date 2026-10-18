@@ -53,13 +53,13 @@ def decisions(name, start, end):
 
 
 def fetch(context):
-    latest = context["lgo"].extra["latest"]  # the last financial year in the annual review data
+    latest = context["results"]["lgo"].extra["latest"]  # the last financial year in the annual review data
     start, end = f"{latest - 1}-04-01", f"{latest + 1}-03-31"
     period = f"{latest - 1}-{str(latest)[2:]} and {latest}-{str(latest + 1)[2:]}"
     population = context["population"]
     result = Result(id=ID, title="Local Government and Social Care Ombudsman: published decisions",
                     url=PAGE, period=period, extra={"checked": time.strftime("%Y-%m-%d"), "counts": {}})
-    for code, name in sorted(context["lgo"].extra["names"].items()):
+    for code, name in sorted(context["results"]["lgo"].extra["names"].items()):
         counts = decisions(name, start, end)
         result.extra["counts"][code] = {f"{c}/{s}": n for (c, s), n in sorted(counts.items())}
         for measure, matches in MEASURES.items():

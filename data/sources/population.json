@@ -465,7 +465,7 @@
   "E08000016": {
    "name": "Barnsley",
    "ons_name": "Barnsley",
-   "region": null,
+   "region": "Yorkshire and The Humber",
    "type": "Metropolitan district"
   },
   "E08000017": {
@@ -483,7 +483,7 @@
   "E08000019": {
    "name": "Sheffield",
    "ons_name": "Sheffield",
-   "region": null,
+   "region": "Yorkshire and The Humber",
    "type": "Metropolitan district"
   },
   "E08000021": {
@@ -786,10 +786,7 @@
   "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/LAD25_RGN25_EN_LU_v2"
  ],
  "id": "population",
- "notes": [
-  "No region for Barnsley (E08000016)",
-  "No region for Sheffield (E08000019)"
- ],
+ "notes": [],
  "period": "mid-2025",
  "published": "",
  "title": "ONS: Population estimates, mid-2025",
