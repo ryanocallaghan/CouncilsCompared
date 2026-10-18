@@ -1,0 +1,1078 @@
+{
+ "analytics_identifier": null,
+ "base_path": "/government/publications/local-authority-interactive-tool-lait",
+ "content_id": "5efc0446-7631-11e4-a3cb-005056011aef",
+ "description": "An interactive dashboard for comparing data about children and young people across all local authorities in England.",
+ "details": {
+  "attachments": [
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternative.formats@education.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "682dd813e9440506ee95390e",
+      "filename": "Children_s_services_statistical_neighbour_benchmarking_tool.xlsx"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "file_size": 166686,
+    "filename": "Children_s_services_statistical_neighbour_benchmarking_tool.xlsx",
+    "hoc_paper_number": "",
+    "id": "8629391",
+    "isbn": "",
+    "title": "Children\u2019s services statistical neighbour benchmarking tool",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/682dd813e9440506ee95390e/Children_s_services_statistical_neighbour_benchmarking_tool.xlsx"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternative.formats@education.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "682e32e6c054883884bff3c9",
+      "filename": "Children_s_services_statistical_neighbour_benchmarking_tool_-_update_note.pdf"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/pdf",
+    "file_size": 354630,
+    "filename": "Children_s_services_statistical_neighbour_benchmarking_tool_-_update_note.pdf",
+    "hoc_paper_number": "",
+    "id": "8629392",
+    "isbn": "",
+    "number_of_pages": 8,
+    "title": "Children\u2019s services statistical neighbour benchmarking tool: update note",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/682e32e6c054883884bff3c9/Children_s_services_statistical_neighbour_benchmarking_tool_-_update_note.pdf"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternative.formats@education.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "682e32faa599d03a16bff3d8",
+      "filename": "Children_s_services_statistical_neighbour_benchmarking_model_-_technical_report.pdf"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/pdf",
+    "file_size": 373861,
+    "filename": "Children_s_services_statistical_neighbour_benchmarking_model_-_technical_report.pdf",
+    "hoc_paper_number": "",
+    "id": "8645488",
+    "isbn": "",
+    "number_of_pages": 22,
+    "title": "Children\u2019s services statistical neighbour benchmarking model: technical report",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/682e32faa599d03a16bff3d8/Children_s_services_statistical_neighbour_benchmarking_model_-_technical_report.pdf"
+   }
+  ],
+  "body": "<div class=\"govspeak\"><p>The <a rel=\"external\" href=\"https://department-for-education.shinyapps.io/local-authority-interactive-tool/\">local authority interactive tool</a> (LAIT) is an app that presents information in interactive tables and charts, along with local authorities\u2019 rank positions in England and against statistical neighbours.</p>\n\n<p>It includes local authority, regional and national data on:</p>\n\n<ul>\n  <li>children looked after and adoption</li>\n  <li>child protection</li>\n  <li>the children\u2019s social care workforce</li>\n  <li>special educational needs and disability</li>\n  <li>pupil attainment and attendance</li>\n  <li>children\u2019s health</li>\n  <li>youth justice</li>\n  <li>post-16</li>\n  <li>finance</li>\n</ul>\n\n<p>The \u2018Children\u2019s services statistical neighbour benchmarking tool\u2019 allows you to select a local authority and display its \u2018closest statistical neighbours\u2019 (local authorities with similar characteristics). The tool has been reviewed and rebuilt to include updated socio-economic variables from the 2021 census. More information is available in the associated update note and technical report.</p>\n</div>",
+  "change_history": [
+   {
+    "note": "Added a new version of the children's services statistical neighbour benchmarking tool, plus an update note and a technical report.\r\n",
+    "public_timestamp": "2025-05-28T10:29:07Z"
+   },
+   {
+    "note": "Added 'Children\u2019s services statistical neighbour tool guide'. Removed 'Local authority interactive tool: user guide' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2024-12-19T13:14:11Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2024-11-22T15:56:19Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2024-11-07T14:33:52Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2024-09-20T08:30:05Z"
+   },
+   {
+    "note": "Removed 'Local authority interactive tool'. Updated 'Local authority interactive tool: user guide' and 'Local authority interactive tool: version log'. ",
+    "public_timestamp": "2024-08-09T11:26:37Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2024-03-07T09:30:08Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2024-02-14T11:27:55Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2024-01-12T14:48:20Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2023-11-24T09:30:04Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2023-11-10T11:48:52Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2023-08-01T12:31:55Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2023-06-27T10:47:28Z"
+   },
+   {
+    "note": "Removed link to survey about decommissioning the local authority interactive tool as the survey is now closed. Added link to Ofsted\u2019s 5-year inspection data.",
+    "public_timestamp": "2023-05-10T11:01:26Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2023-05-05T11:04:48Z"
+   },
+   {
+    "note": "'Local authority interactive tool' and 'Local authority interactive tool: version log' have been updated.",
+    "public_timestamp": "2023-03-03T10:48:45Z"
+   },
+   {
+    "note": "'Local authority interactive tool' and 'Local authority interactive tool: version log' have been updated for January.",
+    "public_timestamp": "2023-01-24T09:30:02Z"
+   },
+   {
+    "note": "'Local authority interactive tool' and 'Local authority interactive tool: version log' have been updated for December.",
+    "public_timestamp": "2022-12-16T09:30:03Z"
+   },
+   {
+    "note": "'Local authority interactive tool' and 'Local authority interactive tool: version log' have been updated.",
+    "public_timestamp": "2022-11-28T17:55:42Z"
+   },
+   {
+    "note": "'Local authority interactive tool' and 'Local authority interactive tool: version log' have been updated.",
+    "public_timestamp": "2022-11-07T09:30:04Z"
+   },
+   {
+    "note": "'Local authority interactive tool' and 'Local authority interactive tool: version log' have been updated.",
+    "public_timestamp": "2022-11-01T10:13:32Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'. Also added details on sources of original data on the LAIT.",
+    "public_timestamp": "2022-09-30T11:49:08Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2022-08-16T08:30:03Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2022-07-06T08:35:53Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2022-05-19T09:30:41Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2022-04-07T08:30:05Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2022-03-03T12:12:08Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2021-12-21T09:30:06Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'.\r\n\r\n",
+    "public_timestamp": "2021-11-25T09:30:13Z"
+   },
+   {
+    "note": "Updated version log attached. ",
+    "public_timestamp": "2021-11-12T11:05:40Z"
+   },
+   {
+    "note": "Added an updated version of the local authority interactive tool.",
+    "public_timestamp": "2021-11-05T09:30:00Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'.\r\n\r\n",
+    "public_timestamp": "2021-08-05T08:30:03Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2021-07-08T08:30:06Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2021-05-21T11:49:27Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2021-04-20T14:23:36Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool', 'Local authority interactive tool: user guide', 'Local authority interactive tool: version log' and 'Children's services statistical neighbour benchmarking tool'. ",
+    "public_timestamp": "2021-04-01T08:30:05Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2021-03-02T13:34:11Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2021-02-02T15:19:54Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2021-01-08T12:02:46Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2020-12-17T12:23:25Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2020-10-08T11:09:59Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2020-09-11T12:29:54Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2020-08-04T12:50:36Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2020-07-03T11:21:22Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2020-05-14T11:45:20Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2020-04-23T15:53:55Z"
+   },
+   {
+    "note": "Updated local authority interactive tool (LAIT), and  LAIT version log.",
+    "public_timestamp": "2020-04-09T09:54:30Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2020-03-05T10:12:52Z"
+   },
+   {
+    "note": "Added updated versions of 'Local authority interactive tool', 'Local authority interactive tool: user guide' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2020-02-17T14:15:11Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.\r\nAdded a link to a survey to help us understand how you use LAIT and related data sets and tools.",
+    "public_timestamp": "2020-01-31T12:00:08Z"
+   },
+   {
+    "note": "Replaced the 'local authority interactive tool' and version log documents with updated versions. ",
+    "public_timestamp": "2019-12-20T14:50:23Z"
+   },
+   {
+    "note": "Updated tool with corrected 2019 data for percentage of child protection re-referrals within 12 months.",
+    "public_timestamp": "2019-11-20T14:06:14Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2019-11-05T13:53:21Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2019-10-29T13:14:42Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log. ",
+    "public_timestamp": "2019-10-07T15:07:55Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2019-09-20T15:33:44Z"
+   },
+   {
+    "note": "Replaced all 4 documents with updated versions.",
+    "public_timestamp": "2019-07-30T16:03:01Z"
+   },
+   {
+    "note": "Replaced the local authority interactive tool and log files with updated versions. ",
+    "public_timestamp": "2019-07-09T12:05:05Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2019-06-14T09:00:10Z"
+   },
+   {
+    "note": "Attached updated versions of the local authority interactive tool (LAIT) and version log.",
+    "public_timestamp": "2019-04-26T09:57:30Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2019-04-11T11:29:35Z"
+   },
+   {
+    "note": "Added information about the review of statistical neighbour groupings.",
+    "public_timestamp": "2019-03-22T15:34:18Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2019-03-19T16:46:40Z"
+   },
+   {
+    "note": "Updated LAIT and version log.",
+    "public_timestamp": "2019-03-05T15:32:25Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2019-01-30T16:01:02Z"
+   },
+   {
+    "note": "Updated LAIT tool and version log.",
+    "public_timestamp": "2018-12-19T16:27:32Z"
+   },
+   {
+    "note": "Added a new version of the local authority interactive tool and version log. ",
+    "public_timestamp": "2018-11-28T15:50:26Z"
+   },
+   {
+    "note": "Updated documents 'Local authority interactive tool' and 'Local authority interactive tool: version log'.",
+    "public_timestamp": "2018-11-21T16:16:20Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2018-11-09T14:38:37Z"
+   },
+   {
+    "note": "Attached updated versions of LAIT tool and version log.",
+    "public_timestamp": "2018-10-19T15:12:56Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log. ",
+    "public_timestamp": "2018-10-15T11:52:27Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log. ",
+    "public_timestamp": "2018-09-11T16:00:27Z"
+   },
+   {
+    "note": "Updated the LAIT tool.",
+    "public_timestamp": "2018-08-07T11:27:56Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool' and 'Local authority interactive tool: version log'",
+    "public_timestamp": "2018-08-01T16:01:52Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2018-07-10T08:49:58Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2018-06-06T15:40:08Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2018-05-08T09:09:18Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2018-04-11T14:59:29Z"
+   },
+   {
+    "note": "Replaced the Local Authority Interactive Tool and version log with new versions.",
+    "public_timestamp": "2018-02-21T13:57:42Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2018-02-02T16:20:18Z"
+   },
+   {
+    "note": "Updated the LAIT version log.",
+    "public_timestamp": "2017-12-22T13:28:09Z"
+   },
+   {
+    "note": "Updated 'Local authority interactive tool' spreadsheet, following update of data from other statistical releases.",
+    "public_timestamp": "2017-12-22T11:29:10Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log. ",
+    "public_timestamp": "2017-11-10T11:07:00Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2017-10-05T14:43:13Z"
+   },
+   {
+    "note": "Updated LAIT, the version log and user guide.",
+    "public_timestamp": "2017-09-08T11:01:39Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2017-08-24T08:43:09Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2017-07-07T16:03:20Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2017-06-16T11:50:16Z"
+   },
+   {
+    "note": "Updated the tool and version log.",
+    "public_timestamp": "2017-04-03T13:53:55Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2017-02-28T12:32:02Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2017-02-10T13:02:15Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2017-02-08T16:56:34Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2017-02-01T09:47:15Z"
+   },
+   {
+    "note": "Replaced the LAIT tool and version log with December documents.",
+    "public_timestamp": "2016-12-20T16:43:29Z"
+   },
+   {
+    "note": "New version of the local authority interactive tool. See the version log to find out what data has changed.  ",
+    "public_timestamp": "2016-11-29T16:26:53Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2016-11-11T14:43:40Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2016-10-24T14:35:43Z"
+   },
+   {
+    "note": "Updated the LAIT tool and version log.",
+    "public_timestamp": "2016-10-20T15:05:20Z"
+   },
+   {
+    "note": "Updates to the LAIT tool and version log.",
+    "public_timestamp": "2016-10-04T14:23:40Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2016-09-06T12:08:42Z"
+   },
+   {
+    "note": "Updated the LAIT and version log to include percentage of pupils with special educational needs (SEN), dedicated schools grant, pupil premium, child death reviews, 'ForeverFSM6' (free school meals) and permanent/fixed period exclusions.",
+    "public_timestamp": "2016-07-29T10:24:06Z"
+   },
+   {
+    "note": "Updated tool and version log. ",
+    "public_timestamp": "2016-07-12T12:55:45Z"
+   },
+   {
+    "note": "Updated tool and version log. ",
+    "public_timestamp": "2016-07-04T09:52:58Z"
+   },
+   {
+    "note": "Updated tool and version log. ",
+    "public_timestamp": "2016-05-26T16:24:28Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2016-05-10T10:20:52Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2016-04-11T15:40:54Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2016-04-07T15:23:17Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2016-03-11T10:39:37Z"
+   },
+   {
+    "note": "Updated tool and version log. ",
+    "public_timestamp": "2016-02-26T16:26:27Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2016-01-28T08:28:36Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2016-01-07T13:19:51Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-12-16T16:53:52Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-12-01T16:07:50Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-11-23T16:46:08Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-11-10T10:28:42Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-10-23T09:44:29Z"
+   },
+   {
+    "note": "Updated tool and version log. ",
+    "public_timestamp": "2015-10-19T13:40:03Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-10-14T12:47:37Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-10-09T11:14:11Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-10-05T11:14:55Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-09-08T14:39:29Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-09-02T14:04:49Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-08-04T09:17:26Z"
+   },
+   {
+    "note": "Updated tool and version log. ",
+    "public_timestamp": "2015-07-13T10:24:03Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-06-30T14:55:13Z"
+   },
+   {
+    "note": "Updated tool. ",
+    "public_timestamp": "2015-06-16T09:03:43Z"
+   },
+   {
+    "note": "Updated tool and version log. ",
+    "public_timestamp": "2015-06-15T13:48:12Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-05-21T12:46:37Z"
+   },
+   {
+    "note": "Updated LAIT, user guide and version log.",
+    "public_timestamp": "2015-05-19T09:10:28Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-03-02T15:51:32Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2015-02-10T16:00:48Z"
+   },
+   {
+    "note": "Updated LAIT, user guide and version log.",
+    "public_timestamp": "2015-02-04T11:30:15Z"
+   },
+   {
+    "note": "Updated the local authority interactive tool and version log documents.",
+    "public_timestamp": "2015-01-21T16:49:30Z"
+   },
+   {
+    "note": "Updated the local authority interactive tool and version log documents.",
+    "public_timestamp": "2015-01-14T15:51:46Z"
+   },
+   {
+    "note": "Updated the local authority interactive tool and version log documents.",
+    "public_timestamp": "2014-12-18T15:07:20Z"
+   },
+   {
+    "note": "Updated the local authority interactive tool and version log documents.",
+    "public_timestamp": "2014-11-27T10:49:44Z"
+   },
+   {
+    "note": "Added updated version of the local authority interactive tool and the version log.",
+    "public_timestamp": "2014-11-05T15:18:56Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2014-10-23T15:42:24Z"
+   },
+   {
+    "note": "Updated LAIT, user guide and version log.",
+    "public_timestamp": "2014-10-03T14:48:45Z"
+   },
+   {
+    "note": "Updated tool and version log.",
+    "public_timestamp": "2014-09-15T15:51:50Z"
+   },
+   {
+    "note": "Revised tool and version log.",
+    "public_timestamp": "2014-09-03T15:12:52Z"
+   },
+   {
+    "note": "Revised tool and version log.",
+    "public_timestamp": "2014-08-08T15:41:48Z"
+   },
+   {
+    "note": "Tool updated.",
+    "public_timestamp": "2014-08-04T12:01:13Z"
+   },
+   {
+    "note": "Tool revised.",
+    "public_timestamp": "2014-07-02T15:44:21Z"
+   },
+   {
+    "note": "Revised the local authority interactive tool (LAIT) and updated the version log.",
+    "public_timestamp": "2014-06-30T14:59:40Z"
+   },
+   {
+    "note": "Tool revised",
+    "public_timestamp": "2014-05-20T12:24:17Z"
+   },
+   {
+    "note": "Tool revised.",
+    "public_timestamp": "2014-04-28T10:55:51Z"
+   },
+   {
+    "note": "Tool revised.",
+    "public_timestamp": "2014-04-09T09:47:27Z"
+   },
+   {
+    "note": "Tool revised.",
+    "public_timestamp": "2014-03-10T15:02:03Z"
+   },
+   {
+    "note": "Tool revised.",
+    "public_timestamp": "2014-02-03T12:39:23Z"
+   },
+   {
+    "note": "Tool updated with new data.",
+    "public_timestamp": "2014-01-30T09:24:48Z"
+   },
+   {
+    "note": "First published.",
+    "public_timestamp": "2014-01-28T00:00:00Z"
+   }
+  ],
+  "document_type_label": "Transparency data",
+  "documents": [
+   "<section data-module=\"ga4-link-tracker\" class=\"gem-c-attachment govuk-!-margin-bottom-6\">\n  <div class=\"gem-c-attachment__thumbnail govuk-!-display-none-print\">\n    <a class=\"govuk-link\" target=\"_self\" tabindex=\"-1\" aria-hidden=\"true\" data-ga4-link=\"{&quot;event_name&quot;:&quot;file_download&quot;,&quot;type&quot;:&quot;attachment&quot;}\" href=\"https://assets.publishing.service.gov.uk/media/682dd813e9440506ee95390e/Children_s_services_statistical_neighbour_benchmarking_tool.xlsx\">\n        <svg class=\"gem-c-attachment__thumbnail-image gem-c-attachment__thumbnail-image--spreadsheet\" version=\"1.1\" viewBox=\"0 0 99 140\" width=\"99\" height=\"140\" aria-hidden=\"true\">\n  <path d=\"M12 12h75v27H12zm0 47h18.75v63H12zm55 2v59H51V61h16m2-2H49v63h20V59z\" stroke-width=\"0\" />\n  <path d=\"M49 61.05V120H32.8V61.05H49m2-2H30.75v63H51V59zm34 2V120H69.05V61.05H85m2-2H67v63h20V59z\" stroke-width=\"0\" />\n  <path d=\"M30 68.5h56.5M30 77.34h56.5M30 112.7h56.5M30 95.02h56.5M30 86.18h56.5M30 103.86h56.5\" fill=\"none\" stroke-miterlimit=\"10\" stroke-width=\"2\" />\n</svg>\n\n</a></div>\n  <div class=\"gem-c-attachment__details\">\n    <h2 class=\"gem-c-attachment__title\">\n      <a class=\"govuk-link\" target=\"_self\" data-ga4-link=\"{&quot;event_name&quot;:&quot;file_download&quot;,&quot;type&quot;:&quot;attachment&quot;}\" href=\"https://assets.publishing.service.gov.uk/media/682dd813e9440506ee95390e/Children_s_services_statistical_neighbour_benchmarking_tool.xlsx\">Children\u2019s services statistical neighbour benchmarking tool</a>\n</h2>\n\n\n      <p class=\"gem-c-attachment__metadata\"><span class=\"gem-c-attachment__attribute\">MS Excel Spreadsheet</span>, <span class=\"gem-c-attachment__attribute\">163 KB</span></p>\n\n\n\n\n</div></section>",
+   "<section data-module=\"ga4-link-tracker\" class=\"gem-c-attachment govuk-!-margin-bottom-6\">\n  <div class=\"gem-c-attachment__thumbnail govuk-!-display-none-print\">\n    <a class=\"govuk-link\" target=\"_self\" tabindex=\"-1\" aria-hidden=\"true\" data-ga4-link=\"{&quot;event_name&quot;:&quot;file_download&quot;,&quot;type&quot;:&quot;attachment&quot;}\" href=\"https://assets.publishing.service.gov.uk/media/682e32e6c054883884bff3c9/Children_s_services_statistical_neighbour_benchmarking_tool_-_update_note.pdf\">\n        <svg class=\"gem-c-attachment__thumbnail-image gem-c-attachment__thumbnail-image--pdf\" version=\"1.1\" viewBox=\"0 0 99 140\">\n  <path d=\"M12,59h9v9h-9v-9ZM30,77v9h39v-9H30ZM30,104h57v-9H30v9ZM30,122h48v-9H30v9ZM12,86h9v-9h-9v9ZM12,122h9v-9h-9v9ZM12,104h9v-9h-9v9ZM30,68h57v-9H30v9ZM35.2,21c-.3-.2-.6-.4-1-.5s-.8-.2-1.3-.2h-2.6v5.5h2.6c.5,0,1,0,1.3-.2s.7-.3,1-.5c.3-.2.5-.5.7-.8s.2-.7.2-1.1h0c0-.5,0-.9-.2-1.2-.2-.3-.4-.6-.7-.8h0ZM52.4,21.9c-.4-.5-1-.9-1.6-1.1-.7-.3-1.5-.4-2.4-.4h-2.7v11.5h2.7c.9,0,1.7-.1,2.4-.4s1.2-.7,1.6-1.1c.4-.5.7-1.1.9-1.7.2-.7.3-1.4.3-2.1v-.7c0-.8,0-1.5-.3-2.1-.2-.6-.5-1.2-.9-1.7h0ZM87,12v27H12V12h75ZM39.8,23c0-.9-.1-1.6-.4-2.4-.3-.7-.7-1.4-1.2-1.9-.5-.5-1.2-1-1.9-1.2-.8-.3-1.6-.5-2.5-.5h-7.2v17.9h3.6v-6h3.2c.9,0,1.8-.1,2.6-.5.8-.3,1.4-.7,2-1.2.5-.5,1-1.2,1.3-1.9.3-.7.5-1.5.5-2.4h0ZM57.4,26c0-1.3-.2-2.6-.5-3.7s-.9-2-1.6-2.8c-.7-.8-1.6-1.4-2.7-1.8-1.1-.4-2.3-.6-3.8-.6h-6.6v17.9h6.6c1.5,0,2.7-.2,3.8-.6,1.1-.4,2-1,2.7-1.8.7-.8,1.3-1.7,1.6-2.8.4-1.1.5-2.3.5-3.7h0ZM72.4,17.1h-12.1v17.9h3.6v-7.5h7.8v-3.3h-7.8v-3.8h8.4s0-3.3,0-3.3Z\" />\n</svg>\n\n</a></div>\n  <div class=\"gem-c-attachment__details\">\n    <h2 class=\"gem-c-attachment__title\">\n      <a class=\"govuk-link\" target=\"_self\" data-ga4-link=\"{&quot;event_name&quot;:&quot;file_download&quot;,&quot;type&quot;:&quot;attachment&quot;}\" href=\"https://assets.publishing.service.gov.uk/media/682e32e6c054883884bff3c9/Children_s_services_statistical_neighbour_benchmarking_tool_-_update_note.pdf\">Children\u2019s services statistical neighbour benchmarking tool: update note</a>\n</h2>\n\n\n      <p class=\"gem-c-attachment__metadata\"><span class=\"gem-c-attachment__attribute\"><abbr title=\"Portable Document Format\" class=\"gem-c-attachment__abbr\">PDF</abbr></span>, <span class=\"gem-c-attachment__attribute\">346 KB</span>, <span class=\"gem-c-attachment__attribute\">8 pages</span></p>\n\n\n\n\n</div></section>",
+   "<section data-module=\"ga4-link-tracker\" class=\"gem-c-attachment govuk-!-margin-bottom-6\">\n  <div class=\"gem-c-attachment__thumbnail govuk-!-display-none-print\">\n    <a class=\"govuk-link\" target=\"_self\" tabindex=\"-1\" aria-hidden=\"true\" data-ga4-link=\"{&quot;event_name&quot;:&quot;file_download&quot;,&quot;type&quot;:&quot;attachment&quot;}\" href=\"https://assets.publishing.service.gov.uk/media/682e32faa599d03a16bff3d8/Children_s_services_statistical_neighbour_benchmarking_model_-_technical_report.pdf\">\n        <svg class=\"gem-c-attachment__thumbnail-image gem-c-attachment__thumbnail-image--pdf\" version=\"1.1\" viewBox=\"0 0 99 140\">\n  <path d=\"M12,59h9v9h-9v-9ZM30,77v9h39v-9H30ZM30,104h57v-9H30v9ZM30,122h48v-9H30v9ZM12,86h9v-9h-9v9ZM12,122h9v-9h-9v9ZM12,104h9v-9h-9v9ZM30,68h57v-9H30v9ZM35.2,21c-.3-.2-.6-.4-1-.5s-.8-.2-1.3-.2h-2.6v5.5h2.6c.5,0,1,0,1.3-.2s.7-.3,1-.5c.3-.2.5-.5.7-.8s.2-.7.2-1.1h0c0-.5,0-.9-.2-1.2-.2-.3-.4-.6-.7-.8h0ZM52.4,21.9c-.4-.5-1-.9-1.6-1.1-.7-.3-1.5-.4-2.4-.4h-2.7v11.5h2.7c.9,0,1.7-.1,2.4-.4s1.2-.7,1.6-1.1c.4-.5.7-1.1.9-1.7.2-.7.3-1.4.3-2.1v-.7c0-.8,0-1.5-.3-2.1-.2-.6-.5-1.2-.9-1.7h0ZM87,12v27H12V12h75ZM39.8,23c0-.9-.1-1.6-.4-2.4-.3-.7-.7-1.4-1.2-1.9-.5-.5-1.2-1-1.9-1.2-.8-.3-1.6-.5-2.5-.5h-7.2v17.9h3.6v-6h3.2c.9,0,1.8-.1,2.6-.5.8-.3,1.4-.7,2-1.2.5-.5,1-1.2,1.3-1.9.3-.7.5-1.5.5-2.4h0ZM57.4,26c0-1.3-.2-2.6-.5-3.7s-.9-2-1.6-2.8c-.7-.8-1.6-1.4-2.7-1.8-1.1-.4-2.3-.6-3.8-.6h-6.6v17.9h6.6c1.5,0,2.7-.2,3.8-.6,1.1-.4,2-1,2.7-1.8.7-.8,1.3-1.7,1.6-2.8.4-1.1.5-2.3.5-3.7h0ZM72.4,17.1h-12.1v17.9h3.6v-7.5h7.8v-3.3h-7.8v-3.8h8.4s0-3.3,0-3.3Z\" />\n</svg>\n\n</a></div>\n  <div class=\"gem-c-attachment__details\">\n    <h2 class=\"gem-c-attachment__title\">\n      <a class=\"govuk-link\" target=\"_self\" data-ga4-link=\"{&quot;event_name&quot;:&quot;file_download&quot;,&quot;type&quot;:&quot;attachment&quot;}\" href=\"https://assets.publishing.service.gov.uk/media/682e32faa599d03a16bff3d8/Children_s_services_statistical_neighbour_benchmarking_model_-_technical_report.pdf\">Children\u2019s services statistical neighbour benchmarking model: technical report</a>\n</h2>\n\n\n      <p class=\"gem-c-attachment__metadata\"><span class=\"gem-c-attachment__attribute\"><abbr title=\"Portable Document Format\" class=\"gem-c-attachment__abbr\">PDF</abbr></span>, <span class=\"gem-c-attachment__attribute\">365 KB</span>, <span class=\"gem-c-attachment__attribute\">22 pages</span></p>\n\n\n\n\n</div></section>"
+  ],
+  "emphasised_organisations": [
+   "ebd15ade-73b2-4eaf-b1c3-43034a42eb37"
+  ],
+  "featured_attachments": [
+   "8629391",
+   "8629392",
+   "8645488"
+  ],
+  "first_public_at": "2014-01-28T00:00:00.000+00:00",
+  "national_applicability": {
+   "england": {
+    "applicable": true,
+    "label": "England"
+   },
+   "northern_ireland": {
+    "alternative_url": "",
+    "applicable": false,
+    "label": "Northern Ireland"
+   },
+   "scotland": {
+    "alternative_url": "",
+    "applicable": false,
+    "label": "Scotland"
+   },
+   "wales": {
+    "alternative_url": "",
+    "applicable": false,
+    "label": "Wales"
+   }
+  },
+  "political": false,
+  "tags": {
+   "browse_pages": []
+  }
+ },
+ "document_type": "transparency",
+ "first_published_at": "2014-01-28T00:00:00+00:00",
+ "links": {
+  "available_translations": [
+   {
+    "api_path": "/api/content/government/publications/local-authority-interactive-tool-lait",
+    "api_url": "https://www.gov.uk/api/content/government/publications/local-authority-interactive-tool-lait",
+    "base_path": "/government/publications/local-authority-interactive-tool-lait",
+    "content_id": "5efc0446-7631-11e4-a3cb-005056011aef",
+    "document_type": "transparency",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-05-28T10:29:07Z",
+    "schema_name": "publication",
+    "title": "Local authority interactive tool (LAIT)",
+    "web_url": "https://www.gov.uk/government/publications/local-authority-interactive-tool-lait",
+    "withdrawn": false
+   }
+  ],
+  "government": [
+   {
+    "api_path": "/api/content/government/2010-to-2015-conservative-and-liberal-democrat-coalition-government",
+    "api_url": "https://www.gov.uk/api/content/government/2010-to-2015-conservative-and-liberal-democrat-coalition-government",
+    "base_path": "/government/2010-to-2015-conservative-and-liberal-democrat-coalition-government",
+    "content_id": "591c83aa-3b74-437d-a342-612bddd97572",
+    "details": {
+     "current": false,
+     "ended_on": "2015-05-08T00:00:00+00:00",
+     "started_on": "2010-05-12T00:00:00+00:00"
+    },
+    "document_type": "government",
+    "links": {},
+    "locale": "en",
+    "title": "2010 to 2015 Conservative and Liberal Democrat coalition government",
+    "web_url": "https://www.gov.uk/government/2010-to-2015-conservative-and-liberal-democrat-coalition-government"
+   }
+  ],
+  "organisations": [
+   {
+    "analytics_identifier": "D6",
+    "api_path": "/api/content/government/organisations/department-for-education",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/department-for-education",
+    "base_path": "/government/organisations/department-for-education",
+    "content_id": "ebd15ade-73b2-4eaf-b1c3-43034a42eb37",
+    "details": {
+     "acronym": "DfE",
+     "brand": "department-for-education",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/69de23bb9af91e9ee4b2c327/s960_DfE_Sanctuary_Building_London_office.jpeg",
+      "url": "https://assets.publishing.service.gov.uk/media/69de23bb3e81003ae042250c/s300_DfE_Sanctuary_Building_London_office.jpeg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Department <br/>for Education"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Department for Education",
+    "web_url": "https://www.gov.uk/government/organisations/department-for-education",
+    "withdrawn": false
+   }
+  ],
+  "original_primary_publishing_organisation": [
+   {
+    "analytics_identifier": "D6",
+    "api_path": "/api/content/government/organisations/department-for-education",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/department-for-education",
+    "base_path": "/government/organisations/department-for-education",
+    "content_id": "ebd15ade-73b2-4eaf-b1c3-43034a42eb37",
+    "details": {
+     "acronym": "DfE",
+     "brand": "department-for-education",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/69de23bb9af91e9ee4b2c327/s960_DfE_Sanctuary_Building_London_office.jpeg",
+      "url": "https://assets.publishing.service.gov.uk/media/69de23bb3e81003ae042250c/s300_DfE_Sanctuary_Building_London_office.jpeg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Department <br/>for Education"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Department for Education",
+    "web_url": "https://www.gov.uk/government/organisations/department-for-education",
+    "withdrawn": false
+   }
+  ],
+  "primary_publishing_organisation": [
+   {
+    "analytics_identifier": "D6",
+    "api_path": "/api/content/government/organisations/department-for-education",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/department-for-education",
+    "base_path": "/government/organisations/department-for-education",
+    "content_id": "ebd15ade-73b2-4eaf-b1c3-43034a42eb37",
+    "details": {
+     "acronym": "DfE",
+     "brand": "department-for-education",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/69de23bb9af91e9ee4b2c327/s960_DfE_Sanctuary_Building_London_office.jpeg",
+      "url": "https://assets.publishing.service.gov.uk/media/69de23bb3e81003ae042250c/s300_DfE_Sanctuary_Building_London_office.jpeg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Department <br/>for Education"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Department for Education",
+    "web_url": "https://www.gov.uk/government/organisations/department-for-education",
+    "withdrawn": false
+   }
+  ],
+  "taxons": [
+   {
+    "api_path": "/api/content/education/performance-data-and-ofsted-reports-of-further-education-providers",
+    "api_url": "https://www.gov.uk/api/content/education/performance-data-and-ofsted-reports-of-further-education-providers",
+    "base_path": "/education/performance-data-and-ofsted-reports-of-further-education-providers",
+    "content_id": "bdb7a7e0-c307-4514-a271-d7f76ee8364d",
+    "description": "16 to 18 destination measures, calculate level 3 value-added measures. Find an Ofsted report, 16 to 19 accountability headline measures. ",
+    "details": {
+     "internal_name": "Performance data and Ofsted reports of further education providers",
+     "notes_for_editors": "",
+     "visible_to_departmental_editors": false
+    },
+    "document_type": "taxon",
+    "links": {
+     "parent_taxons": [
+      {
+       "api_path": "/api/content/education/inspection-and-performance-of-further-education-providers",
+       "api_url": "https://www.gov.uk/api/content/education/inspection-and-performance-of-further-education-providers",
+       "base_path": "/education/inspection-and-performance-of-further-education-providers",
+       "content_id": "2dc353bf-d481-4c81-9f8f-25e1d4bc5da9",
+       "description": "Performance tables, inspection reports and outcomes, intervention notices and reports, skills inspection handbook.",
+       "details": {
+        "internal_name": "Inspection and performance of further education providers",
+        "notes_for_editors": "",
+        "visible_to_departmental_editors": false
+       },
+       "document_type": "taxon",
+       "links": {
+        "parent_taxons": [
+         {
+          "api_path": "/api/content/education/inspections-and-performance-of-education-providers",
+          "api_url": "https://www.gov.uk/api/content/education/inspections-and-performance-of-education-providers",
+          "base_path": "/education/inspections-and-performance-of-education-providers",
+          "content_id": "f0dcb0b9-2f2c-46b0-adea-42a4fe608170",
+          "description": "Inspection information for further education providers, and by school type. Performance tables and Ofsted reports.",
+          "details": {
+           "internal_name": "Inspections and performance of education providers",
+           "notes_for_editors": ""
+          },
+          "document_type": "taxon",
+          "links": {
+           "parent_taxons": [
+            {
+             "api_path": "/api/content/education",
+             "api_url": "https://www.gov.uk/api/content/education",
+             "base_path": "/education",
+             "content_id": "c58fdadd-7743-46d6-9629-90bb3ccc4ef0",
+             "description": "Schools and academies, further and higher education, apprenticeships and other skills training, student funding, early years.",
+             "details": {
+              "internal_name": "Education, training and skills",
+              "notes_for_editors": "",
+              "visible_to_departmental_editors": true
+             },
+             "document_type": "taxon",
+             "links": {
+              "root_taxon": [
+               {
+                "api_path": "/api/content/",
+                "api_url": "https://www.gov.uk/api/content/",
+                "base_path": "/",
+                "content_id": "f3bbdec2-0e62-4520-a7fd-6ffd5d36e03a",
+                "document_type": "homepage",
+                "links": {},
+                "locale": "en",
+                "public_updated_at": "2026-02-18T13:00:23Z",
+                "schema_name": "homepage",
+                "title": "GOV.UK homepage",
+                "web_url": "https://www.gov.uk/",
+                "withdrawn": false
+               }
+              ]
+             },
+             "locale": "en",
+             "phase": "live",
+             "public_updated_at": "2018-06-07T15:19:07Z",
+             "schema_name": "taxon",
+             "title": "Education, training and skills",
+             "web_url": "https://www.gov.uk/education",
+             "withdrawn": false
+            }
+           ]
+          },
+          "locale": "en",
+          "phase": "live",
+          "public_updated_at": "2017-02-28T16:54:24Z",
+          "schema_name": "taxon",
+          "title": "Inspections and performance of education providers",
+          "web_url": "https://www.gov.uk/education/inspections-and-performance-of-education-providers",
+          "withdrawn": false
+         }
+        ]
+       },
+       "locale": "en",
+       "phase": "live",
+       "public_updated_at": "2017-06-29T12:57:20Z",
+       "schema_name": "taxon",
+       "title": "Inspection and performance of further education providers",
+       "web_url": "https://www.gov.uk/education/inspection-and-performance-of-further-education-providers",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "phase": "live",
+    "public_updated_at": "2017-06-29T12:28:55Z",
+    "schema_name": "taxon",
+    "title": "Performance data and Ofsted reports of further education providers",
+    "web_url": "https://www.gov.uk/education/performance-data-and-ofsted-reports-of-further-education-providers",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/childcare-parenting/safeguarding-child-protection",
+    "api_url": "https://www.gov.uk/api/content/childcare-parenting/safeguarding-child-protection",
+    "base_path": "/childcare-parenting/safeguarding-child-protection",
+    "content_id": "5af6180c-d5db-4cc1-a68e-7bd066908132",
+    "description": "Preventing and reporting abuse. Homeless children, abduction, serious case reviews, data collection.",
+    "details": {
+     "internal_name": "Safeguarding and child protection",
+     "notes_for_editors": "",
+     "visible_to_departmental_editors": false
+    },
+    "document_type": "taxon",
+    "links": {
+     "parent_taxons": [
+      {
+       "api_path": "/api/content/childcare-parenting/safeguarding-and-social-care-for-children",
+       "api_url": "https://www.gov.uk/api/content/childcare-parenting/safeguarding-and-social-care-for-children",
+       "base_path": "/childcare-parenting/safeguarding-and-social-care-for-children",
+       "content_id": "20eb4e84-98ee-404b-a4bd-fe8a36d5d71d",
+       "description": "Child protection, social work, children in care and looked-after children, becoming a social care provider.",
+       "details": {
+        "internal_name": "Safeguarding and social care for children",
+        "notes_for_editors": "",
+        "visible_to_departmental_editors": false
+       },
+       "document_type": "taxon",
+       "links": {
+        "parent_taxons": [
+         {
+          "api_path": "/api/content/childcare-parenting",
+          "api_url": "https://www.gov.uk/api/content/childcare-parenting",
+          "base_path": "/childcare-parenting",
+          "content_id": "206b7f3a-49b5-476f-af0f-fd27e2a68473",
+          "description": "Financial support, finding and providing childcare, pregnancy and birth, adoption and fostering, looked-after children, safeguarding.",
+          "details": {
+           "internal_name": "Parenting, childcare and childrens services",
+           "notes_for_editors": "",
+           "visible_to_departmental_editors": true
+          },
+          "document_type": "taxon",
+          "links": {
+           "root_taxon": [
+            {
+             "api_path": "/api/content/",
+             "api_url": "https://www.gov.uk/api/content/",
+             "base_path": "/",
+             "content_id": "f3bbdec2-0e62-4520-a7fd-6ffd5d36e03a",
+             "document_type": "homepage",
+             "links": {},
+             "locale": "en",
+             "public_updated_at": "2026-02-18T13:00:23Z",
+             "schema_name": "homepage",
+             "title": "GOV.UK homepage",
+             "web_url": "https://www.gov.uk/",
+             "withdrawn": false
+            }
+           ]
+          },
+          "locale": "en",
+          "phase": "live",
+          "public_updated_at": "2017-07-27T13:29:23Z",
+          "schema_name": "taxon",
+          "title": "Parenting, childcare and children's services ",
+          "web_url": "https://www.gov.uk/childcare-parenting",
+          "withdrawn": false
+         }
+        ]
+       },
+       "locale": "en",
+       "phase": "live",
+       "public_updated_at": "2017-07-27T13:38:52Z",
+       "schema_name": "taxon",
+       "title": "Safeguarding and social care for children",
+       "web_url": "https://www.gov.uk/childcare-parenting/safeguarding-and-social-care-for-children",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "phase": "live",
+    "public_updated_at": "2018-03-06T14:21:18Z",
+    "schema_name": "taxon",
+    "title": "Safeguarding and child protection",
+    "web_url": "https://www.gov.uk/childcare-parenting/safeguarding-child-protection",
+    "withdrawn": false
+   }
+  ]
+ },
+ "locale": "en",
+ "phase": "live",
+ "public_updated_at": "2025-05-28T11:29:07+01:00",
+ "publishing_app": "whitehall",
+ "publishing_request_id": "21-1763996290.565-10.13.22.247-2506",
+ "publishing_scheduled_at": "2024-09-20T09:30:00+01:00",
+ "rendering_app": "frontend",
+ "scheduled_publishing_delay_seconds": 7,
+ "schema_name": "publication",
+ "title": "Local authority interactive tool (LAIT)",
+ "updated_at": "2026-09-24T16:53:30+01:00",
+ "withdrawn_notice": {}
+}

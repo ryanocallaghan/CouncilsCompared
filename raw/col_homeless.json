@@ -1,0 +1,2168 @@
+{
+ "analytics_identifier": null,
+ "base_path": "/government/collections/homelessness-statistics",
+ "content_id": "5eb618dd-7631-11e4-a3cb-005056011aef",
+ "description": "This collection includes the latest statistics and management information on homelessness and rough sleeping in England.",
+ "details": {
+  "body": "<div class=\"govspeak\"><p>The collection includes:</p>\n\n<p><a href=\"#statutory-homelessness\">Statutory homelessness statistics</a>, which provide quarterly information about those who local authorities have a duty to accommodate\u00a0as they are homeless through no\u00a0fault of their own, eligible for\u00a0assistance, and have a\u00a0\u2018priority\u00a0need\u2019.\u00a0This\u00a0primarily includes those with children or a vulnerability, including disability or mental ill-health. It\u00a0also includes information about new statutory duties created by the\u00a0<a href=\"https://www.gov.uk/guidance/homelessness-code-of-guidance-for-local-authorities/overview-of-the-homelessness-legislation\">Homelessness Reduction Act</a> to try and\u00a0prevent and relieve homelessness for\u00a0single people, regardless of priority need,\u00a0or intentional homelessness.</p>\n\n<p><a href=\"#rough-sleeping\">Rough sleeping snapshot statistics</a>, about people sleeping rough\u00a0on a single night in autumn each year. These statistics provide a way of estimating the number of people sleeping rough across England on a single night and assessing change over time.</p>\n\n<p>The <a href=\"#rough-sleeping\">Rough Sleeping Data Framework</a>, which provides quarterly management information to better understand how far rough sleeping is prevented wherever possible, and where it does occur, if it is rare, brief, and non-recurring. This replaces the previous rough sleeping management information about the support for people sleeping rough.</p>\n<div class=\"call-to-action\">\n  <p>For more information about:</p>\n\n  <p>Homelessness statistics, contact\u00a0<a href=\"mailto:HomelessnessStats@communities.gov.uk\">HomelessnessStats@communities.gov.uk</a></p>\n\n  <p>Rough sleeping statistics and management information, contact\u00a0<a href=\"mailto:RoughSleepingStatistics@communities.gov.uk\">RoughSleepingStatistics@communities.gov.uk</a></p>\n</div>\n</div>",
+  "change_history": [
+   {
+    "note": "Added Rough Sleeping Data Framework, April to June 2026.",
+    "public_timestamp": "2026-08-27T08:30:07Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: January to March 2026",
+    "public_timestamp": "2026-08-13T08:30:08Z"
+   },
+   {
+    "note": "Added Rough Sleeping Data Framework, January to March 2026.",
+    "public_timestamp": "2026-05-28T08:30:14Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: October to December 2025.",
+    "public_timestamp": "2026-04-30T08:30:07Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: July to September 2025; Rough sleeping data framework, October to December 2025; and Rough sleeping snapshot in England: autumn 2025",
+    "public_timestamp": "2026-02-26T09:30:14Z"
+   },
+   {
+    "note": "Added Rough sleeping data framework, July to September 2025 and Statutory homelessness in England: financial year 2024-25.",
+    "public_timestamp": "2025-11-27T09:30:11Z"
+   },
+   {
+    "note": "New group added to the collection \"Ad hoc analyses and statistics\" to allow users to quickly find new ad hoc analyses related to our published statistics",
+    "public_timestamp": "2025-11-20T09:30:07Z"
+   },
+   {
+    "note": "Statutory homelessness in England: April to June 2025 added to Homelessness Statistics Collection and Rough Sleeping Data Framework, April to June 2025 added to Rough Sleeping Statistics Collection\r\n\r\n",
+    "public_timestamp": "2025-10-16T08:30:04Z"
+   },
+   {
+    "note": "Statutory homelessness in England: January to March 2025 added to Homelessness Statistics Collection",
+    "public_timestamp": "2025-07-22T08:30:02Z"
+   },
+   {
+    "note": "Rough Sleeping Data Framework, January to March 2025 added to Rough Sleeping Statistics Collection",
+    "public_timestamp": "2025-06-05T08:30:03Z"
+   },
+   {
+    "note": "Statutory homelessness in England: October to December 2024 added to Homelessness Statistics Collection",
+    "public_timestamp": "2025-04-30T08:30:08Z"
+   },
+   {
+    "note": "Added Rough Sleeping Snapshot in England, Autumn 2024, Rough Sleeping Data Framework, December 2024 and Statutory homelessness in England: July to September 2024.",
+    "public_timestamp": "2025-02-27T09:30:08Z"
+   },
+   {
+    "note": "Added Rough Sleeping Data Framework, September 2024, and Statutory Homelessness in England: April to June 2024.",
+    "public_timestamp": "2024-11-28T09:30:25Z"
+   },
+   {
+    "note": "Added Rough Sleeping Data Framework, June 2024, and Statutory homelessness in England: financial year 2023-24.",
+    "public_timestamp": "2024-10-03T08:30:04Z"
+   },
+   {
+    "note": "Added Statutory Homelessness in England: January to March 2024.",
+    "public_timestamp": "2024-08-08T08:30:10Z"
+   },
+   {
+    "note": "Statutory homelessness in England: October to December 2023 added to Homelessness Statistics",
+    "public_timestamp": "2024-04-30T08:30:03Z"
+   },
+   {
+    "note": "Added Rough Sleeping Snapshot in England, Autumn 2023. Added Ending Rough Sleeping Data Framework, December 2023. Added Statutory homelessness in England: July to September 2023. ",
+    "public_timestamp": "2024-02-29T09:30:14Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: April to June 2023. Added Ending Rough Sleeping Data Framework, September 2023.",
+    "public_timestamp": "2023-11-30T09:30:11Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: financial year 2022-23.\r\nAdded Support for people sleeping rough in England, June 2023.",
+    "public_timestamp": "2023-10-13T08:30:09Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: January to March 2023.",
+    "public_timestamp": "2023-07-25T08:30:15Z"
+   },
+   {
+    "note": "Added Support for people sleeping rough in England, March 2023.",
+    "public_timestamp": "2023-06-29T08:30:15Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: October to December 2022.",
+    "public_timestamp": "2023-05-10T08:30:04Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: July to September 2022.\r\nAdded Rough sleeping snapshot in England: autumn 2022.\r\nAdded Support for people sleeping rough in England, December 2022.",
+    "public_timestamp": "2023-02-28T09:30:05Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: April to June 2022.\r\nAdded Support for people sleeping rough in England, September 2022.",
+    "public_timestamp": "2022-11-24T09:30:18Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: financial year 2021-22.",
+    "public_timestamp": "2022-09-22T08:30:07Z"
+   },
+   {
+    "note": "Added management information: Support for people sleeping rough in England, March 2022.",
+    "public_timestamp": "2022-09-02T23:15:06Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: January to March 2022.",
+    "public_timestamp": "2022-07-28T08:30:12Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: October to December 2021.",
+    "public_timestamp": "2022-04-28T08:30:09Z"
+   },
+   {
+    "note": "Added link to Rough sleeping snapshot in England: autumn 2021.",
+    "public_timestamp": "2022-02-24T09:31:33Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: July to September 2021.",
+    "public_timestamp": "2022-01-27T09:30:17Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: April to June 2021.",
+    "public_timestamp": "2021-10-28T08:30:04Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: financial year 2020-21.",
+    "public_timestamp": "2021-09-09T08:30:06Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: January to March 2021.",
+    "public_timestamp": "2021-07-22T08:30:10Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: October to December 2020.",
+    "public_timestamp": "2021-04-22T08:30:03Z"
+   },
+   {
+    "note": "Added Rough sleeping snapshot in England: autumn 2020.",
+    "public_timestamp": "2021-02-25T09:30:11Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: July to September 2020.",
+    "public_timestamp": "2021-01-28T09:30:06Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: April to June 2020.",
+    "public_timestamp": "2020-10-29T09:30:06Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: financial year 2019-20.",
+    "public_timestamp": "2020-10-01T08:30:05Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: January to March 2020.",
+    "public_timestamp": "2020-08-20T08:30:03Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: October to December 2019.",
+    "public_timestamp": "2020-05-21T08:30:01Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: July to September 2019.",
+    "public_timestamp": "2020-03-19T09:30:05Z"
+   },
+   {
+    "note": "Added Rough sleeping snapshot in England: autumn 2019.",
+    "public_timestamp": "2020-02-27T09:36:58Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: April to June 2019.",
+    "public_timestamp": "2019-12-18T09:30:13Z"
+   },
+   {
+    "note": "Deadline for the online consultation survey has been extended from 31 October to 22 November 2019.",
+    "public_timestamp": "2019-10-28T16:15:37Z"
+   },
+   {
+    "note": "Added text on statutory homelessness statistics online consultation survey.",
+    "public_timestamp": "2019-10-04T14:54:02Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: January to March 2019.",
+    "public_timestamp": "2019-09-12T08:30:07Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: July to September 2018 and October to December 2018.",
+    "public_timestamp": "2019-05-24T08:30:05Z"
+   },
+   {
+    "note": "Added Rough sleeping in England: autumn 2018",
+    "public_timestamp": "2019-01-31T09:30:19Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: April to June 2018. ",
+    "public_timestamp": "2018-12-13T09:30:06Z"
+   },
+   {
+    "note": "Added Homelessness prevention and relief: England 2014 to 2015, also related homelessness prevention and relief live tables have been updated.",
+    "public_timestamp": "2015-07-09T10:29:17Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: October to December 2014.",
+    "public_timestamp": "2015-03-26T09:31:30Z"
+   },
+   {
+    "note": "Added Rough sleeping in England: autumn 2014.",
+    "public_timestamp": "2015-02-26T09:30:37Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: July to September 2014.",
+    "public_timestamp": "2014-12-11T09:30:47Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: April to June 2014.",
+    "public_timestamp": "2014-09-25T08:30:47Z"
+   },
+   {
+    "note": "Added Homelessness prevention and relief: England 2013 to 2014.",
+    "public_timestamp": "2014-07-24T08:30:19Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: January to March 2014.",
+    "public_timestamp": "2014-06-19T08:30:44Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: October to December 2013",
+    "public_timestamp": "2014-03-06T09:32:22Z"
+   },
+   {
+    "note": "Added Rough sleeping in England: autumn 2013.",
+    "public_timestamp": "2014-02-25T09:31:56Z"
+   },
+   {
+    "note": "Added Statutory homelessness in England: July to September 2013",
+    "public_timestamp": "2013-12-05T09:30:21Z"
+   },
+   {
+    "note": "First published.",
+    "public_timestamp": "2013-09-12T23:00:00Z"
+   }
+  ],
+  "collection_groups": [
+   {
+    "body": "<div class=\"govspeak\">\n</div>",
+    "documents": [
+     "695508e0-2cf8-4038-a477-43552caa3257",
+     "dbdec2c7-e873-40d2-9200-83cf16a40b11",
+     "1073e42b-e6b6-4aea-9285-a7b46206424f",
+     "caa0d48c-72dd-41a6-a43d-27b0594c82ca",
+     "768a7dfb-c29a-4d93-bcf7-28e942ac7ee6",
+     "3fab18ec-9dd7-4618-8406-f37a235cc674",
+     "061035f8-a68a-415b-82df-5fcdbf08508e",
+     "e7f51445-7d5e-4c83-80d8-78dd1d107944",
+     "4ab9bcc0-f098-4046-bf45-275488b94e2d",
+     "fcdd2b31-5aef-42d5-bc5e-03113a8e622c",
+     "71ae46b0-e7d0-4184-ae20-286eafa56cfe",
+     "fdd266b7-826d-4bee-b198-15983fa34e0e",
+     "8f522d89-f955-4548-836c-db6c62723758",
+     "dceede51-2844-44ef-8b8e-bdaec8f9dfe3",
+     "242ab011-c164-4a5f-8b86-1a936183a73c",
+     "5d5cb6db-5a23-42f7-ae7d-558796da56d3",
+     "82df3c29-f27d-49a7-8006-4c4e3e9b7ff3",
+     "d82eeb4b-80c4-4479-8ceb-699d3023cd9f",
+     "3c6f5dcb-dcaf-41d5-818a-0f63dde49bc2",
+     "e9c4e66e-4dc9-4422-a582-465fb5897e59",
+     "8a82cd6c-5064-41bd-946a-fdc9ac7bb41e",
+     "b85b49d2-bb17-4162-8664-5e46430eca00",
+     "78e4002d-412f-4d3f-a8ef-b14d375da9f8",
+     "d097555d-da48-420a-8399-814adbbf72fe",
+     "38a35d85-3935-41dc-8cad-97414786f627",
+     "5ae11a2d-da6f-437b-936d-0764e1cb27d3",
+     "9ec52a54-2fe7-4c96-959c-576f8e0c4471",
+     "b1041109-9ef2-4819-ab16-261728c0d557",
+     "176824ea-c287-48bf-b3a7-dbfd0af4fc00",
+     "49280cdb-a48b-4907-9f51-4e6b2e1e70b0",
+     "7d2eca2e-5977-46ab-86d7-c29eb7329032",
+     "0f4d9f54-0177-4345-97c1-821039612927",
+     "2696469b-5957-4cf7-a3f8-a780cab02560",
+     "4ddfd6c3-f78d-40a5-a80c-e41de7395d6a",
+     "89d7bbd8-7678-40c9-b81a-c83ca7c7b2fa",
+     "0345b9a0-0ba7-4a4f-82da-242ffbcbf674",
+     "1976542c-c10b-4b2f-9e5b-30931ecd58d6",
+     "bc2c4a3f-28ed-45a2-ad60-d420ee537c3e",
+     "55142d81-bf12-4d33-9634-f4de7182f580",
+     "14284630-f0db-4c8b-a2a2-ba75edd54f19",
+     "98c08e4f-9c2f-4973-be68-7b63f689d1cb",
+     "7bb51c62-ad41-4572-816c-d109c78bd3dc",
+     "239f7b1d-ddd4-4008-b4ef-8d98b8d17f5c",
+     "9086f2bb-1cd5-4a88-a404-611f8ab805bf",
+     "96a6648a-b48a-446e-9f3f-040adb8b6299",
+     "f251fb93-f766-4737-aea6-c6b453b8005f",
+     "ef8a3da1-7d3f-4e88-8b86-f3a4ad7e213f",
+     "5eee6c29-1f18-4fc0-b5ab-591a41576f05",
+     "e5b04cbc-d0d7-457a-a232-4b1a4e0ee46d",
+     "dbbd6fb9-22b3-442b-93c4-394bdcdb8378",
+     "934e4d2b-4dcb-4d2a-b1ab-1bd8eb0eeb64",
+     "954c4b50-d4f6-4ed5-b8c5-9d3fad5ee84a",
+     "f1199275-0e9b-4948-9d3d-9eab1dd84067",
+     "d2e7b792-289a-4506-a5f0-ca43cd43a809",
+     "601cc747-7631-11e4-a3cb-005056011aef",
+     "5f654885-7631-11e4-a3cb-005056011aef",
+     "217acbe2-bed3-454f-b148-985de3de521b",
+     "5e63e6d4-7631-11e4-a3cb-005056011aef",
+     "5fdd6606-7631-11e4-a3cb-005056011aef",
+     "5e60d9bb-7631-11e4-a3cb-005056011aef",
+     "5c7e37d4-7631-11e4-a3cb-005056011aef",
+     "5c7de8a0-7631-11e4-a3cb-005056011aef",
+     "5c7de823-7631-11e4-a3cb-005056011aef"
+    ],
+    "title": "Statutory homelessness"
+   },
+   {
+    "body": "<div class=\"govspeak\">\n</div>",
+    "documents": [
+     "e141f6da-43f1-4893-ac1f-5845185e7373",
+     "b72adbae-808e-47ae-b14f-98ca206a5c8a",
+     "6617d24a-ffea-4700-a0fd-b8ac5bbd8a38",
+     "8b751dbc-ced7-4909-a111-70aa10f646bb",
+     "47376e98-1e42-4f3d-aaa1-37a387c3cce6",
+     "bb9fb55f-4969-4e2a-8299-cafac41d983e",
+     "71266555-477a-40d5-bedb-9278f1b180b5",
+     "470e7486-ed35-466e-8240-966e3c9c8df5",
+     "b75f5e2e-a6e5-4d57-8a71-813f22666a8b",
+     "348afe7c-df55-4fff-98f7-37ed721e8c40",
+     "e5f29390-9c1c-40c6-80cc-dcd6b235e7da",
+     "bbbded11-de37-4cd3-9f10-e2f5c8b8c42f",
+     "81f6e799-3289-4535-b5fe-3b3c6d008a15",
+     "b5516663-a7fa-4927-95ed-43c1fbb1bca7",
+     "12093d16-63af-4246-b512-dabceef7834d",
+     "b0a0be82-aefc-4129-b842-7bbbd0171e6a",
+     "1f9eb95a-c70b-4212-a655-24ec01a409d0",
+     "b8f6ee76-2dd4-4471-9400-7401a7014d02",
+     "218d2a34-bf18-44b8-90cd-455a86a0a45d",
+     "550626d5-10cc-4bf9-b552-f8dc476d50ec",
+     "91f23efe-12b0-4d0a-8602-9cd784f7892e",
+     "5019143c-93f9-4099-b243-ba18af9c7d00",
+     "d4de5a78-f98b-4c54-9c7d-90887dabab06",
+     "cc388efc-78ad-4ee2-8c4f-56d535ec8029",
+     "0cf43b06-8092-41fa-937d-8b20148390b5",
+     "d59962a4-4415-419b-bbbe-0ef476414fa6",
+     "8fcd2307-8a87-467e-b128-13c4eaae2b3b",
+     "acc48447-aa88-4c82-b0c7-63df2ee6b3f3",
+     "5f182141-7631-11e4-a3cb-005056011aef",
+     "5d57b93e-7631-11e4-a3cb-005056011aef",
+     "5c7e1a11-7631-11e4-a3cb-005056011aef",
+     "5c7e19c3-7631-11e4-a3cb-005056011aef",
+     "5c7e1a60-7631-11e4-a3cb-005056011aef",
+     "5c7d3e3b-7631-11e4-a3cb-005056011aef"
+    ],
+    "title": "Rough sleeping"
+   },
+   {
+    "body": "<div class=\"govspeak\">\n</div>",
+    "documents": [
+     "5c81d6b5-7631-11e4-a3cb-005056011aef",
+     "ac205893-1e92-4821-ba5a-d09923b87730",
+     "5e323a51-7631-11e4-a3cb-005056011aef"
+    ],
+    "title": "Data tables"
+   },
+   {
+    "body": "<div class=\"govspeak\">\n</div>",
+    "documents": [
+     "c72f5dd8-bfa9-4ee4-9a9f-f94d3cedfa90",
+     "ce74ff12-7e09-427b-988e-ebe24e765aba"
+    ],
+    "title": "Dashboards"
+   },
+   {
+    "body": "<div class=\"govspeak\"><p>Additional statistical analyses that have not been previously included in our  homelessness or rough sleeping statistical releases.</p>\n</div>",
+    "documents": [
+     "7e198ec1-20af-4a62-add9-84db8d78851c"
+    ],
+    "title": "Ad hoc analyses and statistics"
+   }
+  ],
+  "emphasised_organisations": [
+   "1390d07f-12b3-4f55-9dd5-fec5fd9e3649"
+  ],
+  "first_public_at": "2013-09-13T00:00:00.000+01:00",
+  "political": false
+ },
+ "document_type": "document_collection",
+ "first_published_at": "2013-09-13T00:00:00+01:00",
+ "links": {
+  "available_translations": [
+   {
+    "api_path": "/api/content/government/collections/homelessness-statistics",
+    "api_url": "https://www.gov.uk/api/content/government/collections/homelessness-statistics",
+    "base_path": "/government/collections/homelessness-statistics",
+    "content_id": "5eb618dd-7631-11e4-a3cb-005056011aef",
+    "document_type": "document_collection",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-08-27T08:30:07Z",
+    "schema_name": "document_collection",
+    "title": "Homelessness statistics",
+    "web_url": "https://www.gov.uk/government/collections/homelessness-statistics",
+    "withdrawn": false
+   }
+  ],
+  "document_collections": [
+   {
+    "api_path": "/api/content/government/collections/homelessness-and-rough-sleeping-research-and-evaluation",
+    "api_url": "https://www.gov.uk/api/content/government/collections/homelessness-and-rough-sleeping-research-and-evaluation",
+    "base_path": "/government/collections/homelessness-and-rough-sleeping-research-and-evaluation",
+    "content_id": "fdf5d5b1-7016-4153-b834-df855adea834",
+    "document_type": "document_collection",
+    "links": {
+     "documents": [
+      {
+       "api_path": "/api/content/government/collections/homelessness-statistics",
+       "api_url": "https://www.gov.uk/api/content/government/collections/homelessness-statistics",
+       "base_path": "/government/collections/homelessness-statistics",
+       "content_id": "5eb618dd-7631-11e4-a3cb-005056011aef",
+       "document_type": "document_collection",
+       "links": {},
+       "locale": "en",
+       "public_updated_at": "2026-08-27T08:30:07Z",
+       "schema_name": "document_collection",
+       "title": "Homelessness statistics",
+       "web_url": "https://www.gov.uk/government/collections/homelessness-statistics",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "public_updated_at": "2026-02-25T11:40:14Z",
+    "schema_name": "document_collection",
+    "title": "Homelessness and rough sleeping research and evaluation",
+    "web_url": "https://www.gov.uk/government/collections/homelessness-and-rough-sleeping-research-and-evaluation",
+    "withdrawn": false
+   }
+  ],
+  "documents": [
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2026",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2026",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-january-to-march-2026",
+    "content_id": "695508e0-2cf8-4038-a477-43552caa3257",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-08-13T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: January to March 2026",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2026",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2025",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2025",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-october-to-december-2025",
+    "content_id": "dbdec2c7-e873-40d2-9200-83cf16a40b11",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-08-04T10:36:14Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: October to December 2025",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-october-to-december-2025",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2025",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2025",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-july-to-september-2025",
+    "content_id": "1073e42b-e6b6-4aea-9285-a7b46206424f",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-02-26T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: July to September 2025",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-july-to-september-2025",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2025",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2025",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-april-to-june-2025",
+    "content_id": "caa0d48c-72dd-41a6-a43d-27b0594c82ca",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-10-27T09:51:02Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: April to June 2025",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-april-to-june-2025",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2024-25",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2024-25",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-financial-year-2024-25",
+    "content_id": "768a7dfb-c29a-4d93-bcf7-28e942ac7ee6",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-11-27T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: financial year 2024-25",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-financial-year-2024-25",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2025",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2025",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-january-to-march-2025",
+    "content_id": "3fab18ec-9dd7-4618-8406-f37a235cc674",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-07-31T09:22:56Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: January to March 2025",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2025",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2024",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2024",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-october-to-december-2024",
+    "content_id": "061035f8-a68a-415b-82df-5fcdbf08508e",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-06-19T14:14:13Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: October to December 2024",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-october-to-december-2024",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2024",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2024",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-july-to-september-2024",
+    "content_id": "e7f51445-7d5e-4c83-80d8-78dd1d107944",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-02-27T09:30:15Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: July to September 2024",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-july-to-september-2024",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2024",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2024",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-april-to-june-2024",
+    "content_id": "4ab9bcc0-f098-4046-bf45-275488b94e2d",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-12-03T14:17:26Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: April to June 2024",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-april-to-june-2024",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2023-24",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2023-24",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-financial-year-2023-24",
+    "content_id": "fcdd2b31-5aef-42d5-bc5e-03113a8e622c",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-06-19T14:14:23Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: financial year 2023-24",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-financial-year-2023-24",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2024",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2024",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-january-to-march-2024",
+    "content_id": "71ae46b0-e7d0-4184-ae20-286eafa56cfe",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-08-07T23:00:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: January to March 2024",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2024",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2023",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2023",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-october-to-december-2023",
+    "content_id": "fdd266b7-826d-4bee-b198-15983fa34e0e",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-04-30T08:30:02Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: October to December 2023",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-october-to-december-2023",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2023",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2023",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-july-to-september-2023",
+    "content_id": "8f522d89-f955-4548-836c-db6c62723758",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-04-30T08:30:06Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: July to September 2023",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-july-to-september-2023",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2023",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2023",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-april-to-june-2023",
+    "content_id": "dceede51-2844-44ef-8b8e-bdaec8f9dfe3",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2023-11-30T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: April to June 2023",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-april-to-june-2023",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2022-23",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2022-23",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-financial-year-2022-23",
+    "content_id": "242ab011-c164-4a5f-8b86-1a936183a73c",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2023-11-06T16:55:05Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: financial year 2022-23",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-financial-year-2022-23",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2023",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2023",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-january-to-march-2023",
+    "content_id": "5d5cb6db-5a23-42f7-ae7d-558796da56d3",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2023-07-24T23:00:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: January to March 2023",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2023",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2022",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2022",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-october-to-december-2022",
+    "content_id": "82df3c29-f27d-49a7-8006-4c4e3e9b7ff3",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2023-05-10T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: October to December 2022",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-october-to-december-2022",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2022",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2022",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-july-to-september-2022",
+    "content_id": "d82eeb4b-80c4-4479-8ceb-699d3023cd9f",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2023-02-28T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: July to September 2022",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-july-to-september-2022",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2022",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2022",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-april-to-june-2022",
+    "content_id": "3c6f5dcb-dcaf-41d5-818a-0f63dde49bc2",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2022-11-24T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: April to June 2022",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-april-to-june-2022",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2021-22",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2021-22",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-financial-year-2021-22",
+    "content_id": "e9c4e66e-4dc9-4422-a582-465fb5897e59",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2022-09-22T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: financial year 2021-22",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-financial-year-2021-22",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2022",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2022",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-january-to-march-2022",
+    "content_id": "8a82cd6c-5064-41bd-946a-fdc9ac7bb41e",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2022-07-28T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: January to March 2022",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2022",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2021",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2021",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-october-to-december-2021",
+    "content_id": "b85b49d2-bb17-4162-8664-5e46430eca00",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2022-04-28T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: October to December 2021",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-october-to-december-2021",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2021",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2021",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-july-to-september-2021",
+    "content_id": "78e4002d-412f-4d3f-a8ef-b14d375da9f8",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2022-01-27T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: July to September 2021",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-july-to-september-2021",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2021",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2021",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-april-to-june-2021",
+    "content_id": "d097555d-da48-420a-8399-814adbbf72fe",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2021-10-28T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: April to June 2021",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-april-to-june-2021",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2020-21",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2020-21",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-financial-year-2020-21",
+    "content_id": "38a35d85-3935-41dc-8cad-97414786f627",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2021-09-09T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: financial year 2020-21",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-financial-year-2020-21",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2021",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2021",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-january-to-march-2021",
+    "content_id": "5ae11a2d-da6f-437b-936d-0764e1cb27d3",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2021-07-22T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: January to March 2021",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2021",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2020",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2020",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-october-to-december-2020",
+    "content_id": "9ec52a54-2fe7-4c96-959c-576f8e0c4471",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2021-04-22T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: October to December 2020",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-october-to-december-2020",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2020",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2020",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-july-to-september-2020",
+    "content_id": "b1041109-9ef2-4819-ab16-261728c0d557",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2021-01-28T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: July to September 2020",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-july-to-september-2020",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2020",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2020",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-april-to-june-2020",
+    "content_id": "176824ea-c287-48bf-b3a7-dbfd0af4fc00",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2020-10-29T09:30:06Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: April to June 2020",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-april-to-june-2020",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2019-20",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-financial-year-2019-20",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-financial-year-2019-20",
+    "content_id": "49280cdb-a48b-4907-9f51-4e6b2e1e70b0",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2021-01-28T09:30:08Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: financial year 2019-20",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-financial-year-2019-20",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2020",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2020",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-january-to-march-2020",
+    "content_id": "7d2eca2e-5977-46ab-86d7-c29eb7329032",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2020-08-20T08:30:03Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: January to March 2020",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2020",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2019",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2019",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-october-to-december-2019",
+    "content_id": "0f4d9f54-0177-4345-97c1-821039612927",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2020-05-21T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: October to December 2019",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-october-to-december-2019",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2019",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2019",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-july-to-september-2019",
+    "content_id": "2696469b-5957-4cf7-a3f8-a780cab02560",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2020-03-19T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: July to September 2019",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-july-to-september-2019",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2019",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2019",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-april-to-june-2019",
+    "content_id": "4ddfd6c3-f78d-40a5-a80c-e41de7395d6a",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2019-12-18T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: April to June 2019",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-april-to-june-2019",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2019",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2019",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-january-to-march-2019",
+    "content_id": "89d7bbd8-7678-40c9-b81a-c83ca7c7b2fa",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2019-09-12T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: January to March 2019",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2019",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2018",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2018",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-october-to-december-2018",
+    "content_id": "0345b9a0-0ba7-4a4f-82da-242ffbcbf674",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2019-05-24T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: October to December 2018",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-october-to-december-2018",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2018",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2018",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-july-to-september-2018",
+    "content_id": "1976542c-c10b-4b2f-9e5b-30931ecd58d6",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2019-05-24T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: July to September 2018",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-july-to-september-2018",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2018",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2018",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-april-to-june-2018",
+    "content_id": "bc2c4a3f-28ed-45a2-ad60-d420ee537c3e",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2018-12-13T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: April to June 2018",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-april-to-june-2018",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/changes-to-statutory-homelessness-statistics-user-note",
+    "api_url": "https://www.gov.uk/api/content/government/publications/changes-to-statutory-homelessness-statistics-user-note",
+    "base_path": "/government/publications/changes-to-statutory-homelessness-statistics-user-note",
+    "content_id": "55142d81-bf12-4d33-9634-f4de7182f580",
+    "document_type": "guidance",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2018-06-27T08:31:02Z",
+    "schema_name": "publication",
+    "title": "Changes to statutory homelessness statistics: user note",
+    "web_url": "https://www.gov.uk/government/publications/changes-to-statutory-homelessness-statistics-user-note",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-january-to-march-2018",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-january-to-march-2018",
+    "base_path": "/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-january-to-march-2018",
+    "content_id": "14284630-f0db-4c8b-a2a2-ba75edd54f19",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2018-06-27T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness and homelessness prevention and relief, England: January to March 2018 (Revised)",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-january-to-march-2018",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-october-to-december-2017",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-october-to-december-2017",
+    "base_path": "/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-october-to-december-2017",
+    "content_id": "98c08e4f-9c2f-4973-be68-7b63f689d1cb",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2018-03-22T09:30:23Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness and homelessness prevention and relief, England: October to December 2017",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-october-to-december-2017",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-july-to-september-2017",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-july-to-september-2017",
+    "base_path": "/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-july-to-september-2017",
+    "content_id": "7bb51c62-ad41-4572-816c-d109c78bd3dc",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2017-12-14T09:30:36Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness and homelessness prevention and relief, England: July to September 2017",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-july-to-september-2017",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-april-to-june-2017",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-april-to-june-2017",
+    "base_path": "/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-april-to-june-2017",
+    "content_id": "239f7b1d-ddd4-4008-b4ef-8d98b8d17f5c",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2017-09-28T08:30:26Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness and homelessness prevention and relief, England: April to June 2017",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-april-to-june-2017",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-january-to-march-2017",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-january-to-march-2017",
+    "base_path": "/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-january-to-march-2017",
+    "content_id": "9086f2bb-1cd5-4a88-a404-611f8ab805bf",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2017-06-22T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness and homelessness prevention and relief, England: January to March 2017",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-january-to-march-2017",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-october-to-december-2016",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-october-to-december-2016",
+    "base_path": "/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-october-to-december-2016",
+    "content_id": "96a6648a-b48a-446e-9f3f-040adb8b6299",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2017-03-23T14:15:16Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness and homelessness prevention and relief, England: October to December 2016",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-october-to-december-2016",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-july-to-september-2016",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-july-to-september-2016",
+    "base_path": "/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-july-to-september-2016",
+    "content_id": "f251fb93-f766-4737-aea6-c6b453b8005f",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2016-12-15T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness and homelessness prevention and relief, England: July to September 2016",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-july-to-september-2016",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-april-to-june-2016",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-april-to-june-2016",
+    "base_path": "/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-april-to-june-2016",
+    "content_id": "ef8a3da1-7d3f-4e88-8b86-f3a4ad7e213f",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2016-09-28T08:30:08Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness and homelessness prevention and relief, England: April to June 2016",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-and-homelessness-prevention-and-relief-england-april-to-june-2016",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-january-to-march-2016-and-homelessness-prevention-and-relief-2015-to-2016-england",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-january-to-march-2016-and-homelessness-prevention-and-relief-2015-to-2016-england",
+    "base_path": "/government/statistics/statutory-homelessness-january-to-march-2016-and-homelessness-prevention-and-relief-2015-to-2016-england",
+    "content_id": "5eee6c29-1f18-4fc0-b5ab-591a41576f05",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2016-06-30T08:31:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness January to March 2016 and homelessness prevention and relief 2015 to 2016: England",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-january-to-march-2016-and-homelessness-prevention-and-relief-2015-to-2016-england",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2015",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2015",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-october-to-december-2015",
+    "content_id": "e5b04cbc-d0d7-457a-a232-4b1a4e0ee46d",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2016-03-23T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: October to December 2015",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-october-to-december-2015",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2015",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2015",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-july-to-september-2015",
+    "content_id": "dbbd6fb9-22b3-442b-93c4-394bdcdb8378",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2015-12-17T09:31:07Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: July to September 2015",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-july-to-september-2015",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2015",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2015",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-april-to-june-2015",
+    "content_id": "934e4d2b-4dcb-4d2a-b1ab-1bd8eb0eeb64",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2015-09-24T08:30:47Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: April to June 2015",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-april-to-june-2015",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2015",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2015",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-january-to-march-2015",
+    "content_id": "954c4b50-d4f6-4ed5-b8c5-9d3fad5ee84a",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2015-06-24T08:30:31Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: January to March 2015",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2015",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2014",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-october-to-december-2014",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-october-to-december-2014",
+    "content_id": "f1199275-0e9b-4948-9d3d-9eab1dd84067",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2015-03-26T09:31:06Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: October to December 2014",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-october-to-december-2014",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2014",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-july-to-september-2014",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-july-to-september-2014",
+    "content_id": "d2e7b792-289a-4506-a5f0-ca43cd43a809",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2014-12-11T09:30:45Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: July to September 2014",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-july-to-september-2014",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2014",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-april-to-june-2014",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-april-to-june-2014",
+    "content_id": "601cc747-7631-11e4-a3cb-005056011aef",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2014-09-25T08:30:44Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: April to June 2014",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-april-to-june-2014",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2014",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/statutory-homelessness-in-england-january-to-march-2014",
+    "base_path": "/government/statistics/statutory-homelessness-in-england-january-to-march-2014",
+    "content_id": "5f654885-7631-11e4-a3cb-005056011aef",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2014-07-31T08:31:00Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness in England: January to March 2014",
+    "web_url": "https://www.gov.uk/government/statistics/statutory-homelessness-in-england-january-to-march-2014",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/homelessness-prevention-and-relief-england-2014-to-2015",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/homelessness-prevention-and-relief-england-2014-to-2015",
+    "base_path": "/government/statistics/homelessness-prevention-and-relief-england-2014-to-2015",
+    "content_id": "217acbe2-bed3-454f-b148-985de3de521b",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2015-07-09T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Homelessness prevention and relief: England 2014 to 2015",
+    "web_url": "https://www.gov.uk/government/statistics/homelessness-prevention-and-relief-england-2014-to-2015",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/homelessness-prevention-and-relief-england-2008-to-2009",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/homelessness-prevention-and-relief-england-2008-to-2009",
+    "base_path": "/government/statistics/homelessness-prevention-and-relief-england-2008-to-2009",
+    "content_id": "5e63e6d4-7631-11e4-a3cb-005056011aef",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2013-08-16T10:58:21Z",
+    "schema_name": "publication",
+    "title": "Homelessness prevention and relief: England 2008 to 2009",
+    "web_url": "https://www.gov.uk/government/statistics/homelessness-prevention-and-relief-england-2008-to-2009",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/homelessness-prevention-and-relief-england-2013-to-2014",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/homelessness-prevention-and-relief-england-2013-to-2014",
+    "base_path": "/government/statistics/homelessness-prevention-and-relief-england-2013-to-2014",
+    "content_id": "5fdd6606-7631-11e4-a3cb-005056011aef",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2014-07-24T08:30:15Z",
+    "schema_name": "publication",
+    "title": "Homelessness prevention and relief: England 2013 to 2014",
+    "web_url": "https://www.gov.uk/government/statistics/homelessness-prevention-and-relief-england-2013-to-2014",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/homelessness-prevention-and-relief-england-2012-to-2013",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/homelessness-prevention-and-relief-england-2012-to-2013",
+    "base_path": "/government/statistics/homelessness-prevention-and-relief-england-2012-to-2013",
+    "content_id": "5e60d9bb-7631-11e4-a3cb-005056011aef",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2013-08-15T08:30:06Z",
+    "schema_name": "publication",
+    "title": "Homelessness prevention and relief: England 2012 to 2013",
+    "web_url": "https://www.gov.uk/government/statistics/homelessness-prevention-and-relief-england-2012-to-2013",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/homelessness-prevention-and-relief-england-2011-to-2012",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/homelessness-prevention-and-relief-england-2011-to-2012",
+    "base_path": "/government/statistics/homelessness-prevention-and-relief-england-2011-to-2012",
+    "content_id": "5c7e37d4-7631-11e4-a3cb-005056011aef",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2012-08-16T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Homelessness prevention and relief: England 2011 to 2012",
+    "web_url": "https://www.gov.uk/government/statistics/homelessness-prevention-and-relief-england-2011-to-2012",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/homelessness-prevention-and-relief-england-2010-to-2011",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/homelessness-prevention-and-relief-england-2010-to-2011",
+    "base_path": "/government/statistics/homelessness-prevention-and-relief-england-2010-to-2011",
+    "content_id": "5c7de8a0-7631-11e4-a3cb-005056011aef",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2011-08-18T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Homelessness prevention and relief: England 2010 to 2011",
+    "web_url": "https://www.gov.uk/government/statistics/homelessness-prevention-and-relief-england-2010-to-2011",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/homelessness-prevention-and-relief-england-2009-to-2010",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/homelessness-prevention-and-relief-england-2009-to-2010",
+    "base_path": "/government/statistics/homelessness-prevention-and-relief-england-2009-to-2010",
+    "content_id": "5c7de823-7631-11e4-a3cb-005056011aef",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2010-08-26T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Homelessness prevention and relief: England 2009 to 2010",
+    "web_url": "https://www.gov.uk/government/statistics/homelessness-prevention-and-relief-england-2009-to-2010",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/rough-sleeping-data-framework-april-to-june-2026",
+    "api_url": "https://www.gov.uk/api/content/government/publications/rough-sleeping-data-framework-april-to-june-2026",
+    "base_path": "/government/publications/rough-sleeping-data-framework-april-to-june-2026",
+    "content_id": "e141f6da-43f1-4893-ac1f-5845185e7373",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-08-27T08:30:05Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping data framework, April to June 2026",
+    "web_url": "https://www.gov.uk/government/publications/rough-sleeping-data-framework-april-to-june-2026",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/rough-sleeping-data-framework-january-to-march-2026",
+    "api_url": "https://www.gov.uk/api/content/government/publications/rough-sleeping-data-framework-january-to-march-2026",
+    "base_path": "/government/publications/rough-sleeping-data-framework-january-to-march-2026",
+    "content_id": "b72adbae-808e-47ae-b14f-98ca206a5c8a",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-05-28T08:30:14Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping data framework, January to March 2026",
+    "web_url": "https://www.gov.uk/government/publications/rough-sleeping-data-framework-january-to-march-2026",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2025",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2025",
+    "base_path": "/government/statistics/rough-sleeping-snapshot-in-england-autumn-2025",
+    "content_id": "6617d24a-ffea-4700-a0fd-b8ac5bbd8a38",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-02-26T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping snapshot in England: autumn 2025",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-snapshot-in-england-autumn-2025",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/rough-sleeping-data-framework-october-to-december-2025",
+    "api_url": "https://www.gov.uk/api/content/government/publications/rough-sleeping-data-framework-october-to-december-2025",
+    "base_path": "/government/publications/rough-sleeping-data-framework-october-to-december-2025",
+    "content_id": "8b751dbc-ced7-4909-a111-70aa10f646bb",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-04-20T15:11:47Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping data framework, October to December 2025",
+    "web_url": "https://www.gov.uk/government/publications/rough-sleeping-data-framework-october-to-december-2025",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/rough-sleeping-data-framework-july-to-september-2025",
+    "api_url": "https://www.gov.uk/api/content/government/publications/rough-sleeping-data-framework-july-to-september-2025",
+    "base_path": "/government/publications/rough-sleeping-data-framework-july-to-september-2025",
+    "content_id": "47376e98-1e42-4f3d-aaa1-37a387c3cce6",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-11-28T16:20:17Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping data framework, July to September 2025",
+    "web_url": "https://www.gov.uk/government/publications/rough-sleeping-data-framework-july-to-september-2025",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/rough-sleeping-data-framework-april-to-june-2025",
+    "api_url": "https://www.gov.uk/api/content/government/publications/rough-sleeping-data-framework-april-to-june-2025",
+    "base_path": "/government/publications/rough-sleeping-data-framework-april-to-june-2025",
+    "content_id": "bb9fb55f-4969-4e2a-8299-cafac41d983e",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-10-16T08:30:02Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping data framework, April to June 2025",
+    "web_url": "https://www.gov.uk/government/publications/rough-sleeping-data-framework-april-to-june-2025",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/rough-sleeping-data-framework-january-to-march-2025",
+    "api_url": "https://www.gov.uk/api/content/government/publications/rough-sleeping-data-framework-january-to-march-2025",
+    "base_path": "/government/publications/rough-sleeping-data-framework-january-to-march-2025",
+    "content_id": "71266555-477a-40d5-bedb-9278f1b180b5",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-06-04T23:00:00Z",
+    "schema_name": "publication",
+    "title": "Rough Sleeping Data Framework, January to March 2025",
+    "web_url": "https://www.gov.uk/government/publications/rough-sleeping-data-framework-january-to-march-2025",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2024",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2024",
+    "base_path": "/government/statistics/rough-sleeping-snapshot-in-england-autumn-2024",
+    "content_id": "470e7486-ed35-466e-8240-966e3c9c8df5",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-07-15T15:50:06Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping snapshot in England: autumn 2024",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-snapshot-in-england-autumn-2024",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/rough-sleeping-data-framework-december-2024",
+    "api_url": "https://www.gov.uk/api/content/government/publications/rough-sleeping-data-framework-december-2024",
+    "base_path": "/government/publications/rough-sleeping-data-framework-december-2024",
+    "content_id": "b75f5e2e-a6e5-4d57-8a71-813f22666a8b",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-02-27T09:30:08Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping data framework, December 2024",
+    "web_url": "https://www.gov.uk/government/publications/rough-sleeping-data-framework-december-2024",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/rough-sleeping-data-framework-september-2024",
+    "api_url": "https://www.gov.uk/api/content/government/publications/rough-sleeping-data-framework-september-2024",
+    "base_path": "/government/publications/rough-sleeping-data-framework-september-2024",
+    "content_id": "348afe7c-df55-4fff-98f7-37ed721e8c40",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-11-28T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Rough Sleeping Data Framework, September 2024",
+    "web_url": "https://www.gov.uk/government/publications/rough-sleeping-data-framework-september-2024",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/rough-sleeping-data-framework-june-2024",
+    "api_url": "https://www.gov.uk/api/content/government/publications/rough-sleeping-data-framework-june-2024",
+    "base_path": "/government/publications/rough-sleeping-data-framework-june-2024",
+    "content_id": "e5f29390-9c1c-40c6-80cc-dcd6b235e7da",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-10-02T23:00:00Z",
+    "schema_name": "publication",
+    "title": "Rough Sleeping Data Framework, June 2024",
+    "web_url": "https://www.gov.uk/government/publications/rough-sleeping-data-framework-june-2024",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2023",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2023",
+    "base_path": "/government/statistics/rough-sleeping-snapshot-in-england-autumn-2023",
+    "content_id": "bbbded11-de37-4cd3-9f10-e2f5c8b8c42f",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-02-29T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping snapshot in England: autumn 2023",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-snapshot-in-england-autumn-2023",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/ending-rough-sleeping-data-framework-december-2023",
+    "api_url": "https://www.gov.uk/api/content/government/publications/ending-rough-sleeping-data-framework-december-2023",
+    "base_path": "/government/publications/ending-rough-sleeping-data-framework-december-2023",
+    "content_id": "81f6e799-3289-4535-b5fe-3b3c6d008a15",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-02-29T09:30:08Z",
+    "schema_name": "publication",
+    "title": "Ending Rough Sleeping Data Framework, December 2023",
+    "web_url": "https://www.gov.uk/government/publications/ending-rough-sleeping-data-framework-december-2023",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/ending-rough-sleeping-data-framework-september-2023",
+    "api_url": "https://www.gov.uk/api/content/government/publications/ending-rough-sleeping-data-framework-september-2023",
+    "base_path": "/government/publications/ending-rough-sleeping-data-framework-september-2023",
+    "content_id": "b5516663-a7fa-4927-95ed-43c1fbb1bca7",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2023-11-30T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Ending Rough Sleeping Data Framework, September 2023",
+    "web_url": "https://www.gov.uk/government/publications/ending-rough-sleeping-data-framework-september-2023",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/support-for-people-sleeping-rough-in-england-june-2023",
+    "api_url": "https://www.gov.uk/api/content/government/publications/support-for-people-sleeping-rough-in-england-june-2023",
+    "base_path": "/government/publications/support-for-people-sleeping-rough-in-england-june-2023",
+    "content_id": "12093d16-63af-4246-b512-dabceef7834d",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2023-11-30T09:30:16Z",
+    "schema_name": "publication",
+    "title": "Support for people sleeping rough in England, June 2023",
+    "web_url": "https://www.gov.uk/government/publications/support-for-people-sleeping-rough-in-england-june-2023",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/support-for-people-sleeping-rough-in-england-march-2023",
+    "api_url": "https://www.gov.uk/api/content/government/publications/support-for-people-sleeping-rough-in-england-march-2023",
+    "base_path": "/government/publications/support-for-people-sleeping-rough-in-england-march-2023",
+    "content_id": "b0a0be82-aefc-4129-b842-7bbbd0171e6a",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2023-06-29T08:30:00Z",
+    "schema_name": "publication",
+    "title": "Support for people sleeping rough in England, March 2023",
+    "web_url": "https://www.gov.uk/government/publications/support-for-people-sleeping-rough-in-england-march-2023",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2022",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2022",
+    "base_path": "/government/statistics/rough-sleeping-snapshot-in-england-autumn-2022",
+    "content_id": "1f9eb95a-c70b-4212-a655-24ec01a409d0",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2023-02-28T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping snapshot in England: autumn 2022",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-snapshot-in-england-autumn-2022",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/support-for-people-sleeping-rough-in-england-december-2022",
+    "api_url": "https://www.gov.uk/api/content/government/publications/support-for-people-sleeping-rough-in-england-december-2022",
+    "base_path": "/government/publications/support-for-people-sleeping-rough-in-england-december-2022",
+    "content_id": "b8f6ee76-2dd4-4471-9400-7401a7014d02",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2023-02-28T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Support for people sleeping rough in England, December 2022",
+    "web_url": "https://www.gov.uk/government/publications/support-for-people-sleeping-rough-in-england-december-2022",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/support-for-people-sleeping-rough-in-england-september-2022",
+    "api_url": "https://www.gov.uk/api/content/government/publications/support-for-people-sleeping-rough-in-england-september-2022",
+    "base_path": "/government/publications/support-for-people-sleeping-rough-in-england-september-2022",
+    "content_id": "218d2a34-bf18-44b8-90cd-455a86a0a45d",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2022-11-24T09:30:12Z",
+    "schema_name": "publication",
+    "title": "Support for people sleeping rough in England, September 2022",
+    "web_url": "https://www.gov.uk/government/publications/support-for-people-sleeping-rough-in-england-september-2022",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/support-for-people-sleeping-rough-in-england-march-2022",
+    "api_url": "https://www.gov.uk/api/content/government/publications/support-for-people-sleeping-rough-in-england-march-2022",
+    "base_path": "/government/publications/support-for-people-sleeping-rough-in-england-march-2022",
+    "content_id": "550626d5-10cc-4bf9-b552-f8dc476d50ec",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2022-09-02T23:15:00Z",
+    "schema_name": "publication",
+    "title": "Support for people sleeping rough in England, March 2022",
+    "web_url": "https://www.gov.uk/government/publications/support-for-people-sleeping-rough-in-england-march-2022",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2021",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2021",
+    "base_path": "/government/statistics/rough-sleeping-snapshot-in-england-autumn-2021",
+    "content_id": "91f23efe-12b0-4d0a-8602-9cd784f7892e",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2022-03-31T10:04:07Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping snapshot in England: autumn 2021",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-snapshot-in-england-autumn-2021",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2020",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2020",
+    "base_path": "/government/statistics/rough-sleeping-snapshot-in-england-autumn-2020",
+    "content_id": "5019143c-93f9-4099-b243-ba18af9c7d00",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2021-02-25T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping snapshot in England: autumn 2020",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-snapshot-in-england-autumn-2020",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2019",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-snapshot-in-england-autumn-2019",
+    "base_path": "/government/statistics/rough-sleeping-snapshot-in-england-autumn-2019",
+    "content_id": "d4de5a78-f98b-4c54-9c7d-90887dabab06",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2020-02-27T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping snapshot in England: autumn 2019",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-snapshot-in-england-autumn-2019",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-in-england-autumn-2018",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-in-england-autumn-2018",
+    "base_path": "/government/statistics/rough-sleeping-in-england-autumn-2018",
+    "content_id": "cc388efc-78ad-4ee2-8c4f-56d535ec8029",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2019-02-26T12:03:14Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping in England: autumn 2018",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-in-england-autumn-2018",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-in-england-autumn-2017",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-in-england-autumn-2017",
+    "base_path": "/government/statistics/rough-sleeping-in-england-autumn-2017",
+    "content_id": "0cf43b06-8092-41fa-937d-8b20148390b5",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2018-02-16T10:48:19Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping in England: autumn 2017",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-in-england-autumn-2017",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-in-england-autumn-2016",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-in-england-autumn-2016",
+    "base_path": "/government/statistics/rough-sleeping-in-england-autumn-2016",
+    "content_id": "d59962a4-4415-419b-bbbe-0ef476414fa6",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2017-01-25T09:30:34Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping in England: autumn 2016",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-in-england-autumn-2016",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-in-england-autumn-2015",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-in-england-autumn-2015",
+    "base_path": "/government/statistics/rough-sleeping-in-england-autumn-2015",
+    "content_id": "8fcd2307-8a87-467e-b128-13c4eaae2b3b",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2016-02-25T09:30:14Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping in England: autumn 2015",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-in-england-autumn-2015",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-in-england-autumn-2014",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-in-england-autumn-2014",
+    "base_path": "/government/statistics/rough-sleeping-in-england-autumn-2014",
+    "content_id": "acc48447-aa88-4c82-b0c7-63df2ee6b3f3",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2015-02-26T09:30:22Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping in England: autumn 2014",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-in-england-autumn-2014",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-in-england-autumn-2013",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-in-england-autumn-2013",
+    "base_path": "/government/statistics/rough-sleeping-in-england-autumn-2013",
+    "content_id": "5f182141-7631-11e4-a3cb-005056011aef",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2014-02-25T09:32:22Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping in England: autumn 2013",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-in-england-autumn-2013",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-in-england-autumn-2012",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-in-england-autumn-2012",
+    "base_path": "/government/statistics/rough-sleeping-in-england-autumn-2012",
+    "content_id": "5d57b93e-7631-11e4-a3cb-005056011aef",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2013-02-06T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping in England: autumn 2012",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-in-england-autumn-2012",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-in-england-autumn-2011",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-in-england-autumn-2011",
+    "base_path": "/government/statistics/rough-sleeping-in-england-autumn-2011",
+    "content_id": "5c7e1a11-7631-11e4-a3cb-005056011aef",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2012-02-23T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping in England: autumn 2011",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-in-england-autumn-2011",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-in-england-autumn-2010",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-in-england-autumn-2010",
+    "base_path": "/government/statistics/rough-sleeping-in-england-autumn-2010",
+    "content_id": "5c7e19c3-7631-11e4-a3cb-005056011aef",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2011-02-17T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping in England: autumn 2010",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-in-england-autumn-2010",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/rough-sleeping-in-england-total-street-count-and-estimates-2010",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/rough-sleeping-in-england-total-street-count-and-estimates-2010",
+    "base_path": "/government/statistics/rough-sleeping-in-england-total-street-count-and-estimates-2010",
+    "content_id": "5c7e1a60-7631-11e4-a3cb-005056011aef",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2010-07-23T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Rough sleeping in England: total street count and estimates 2010",
+    "web_url": "https://www.gov.uk/government/statistics/rough-sleeping-in-england-total-street-count-and-estimates-2010",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/evaluating-the-extent-of-rough-sleeping--2",
+    "api_url": "https://www.gov.uk/api/content/government/publications/evaluating-the-extent-of-rough-sleeping--2",
+    "base_path": "/government/publications/evaluating-the-extent-of-rough-sleeping--2",
+    "content_id": "5c7d3e3b-7631-11e4-a3cb-005056011aef",
+    "document_type": "guidance",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2016-09-07T09:00:58Z",
+    "schema_name": "publication",
+    "title": "Evaluating the extent of rough sleeping: local authority form and guidance",
+    "web_url": "https://www.gov.uk/government/publications/evaluating-the-extent-of-rough-sleeping--2",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistical-data-sets/live-tables-on-homelessness",
+    "api_url": "https://www.gov.uk/api/content/government/statistical-data-sets/live-tables-on-homelessness",
+    "base_path": "/government/statistical-data-sets/live-tables-on-homelessness",
+    "content_id": "5c81d6b5-7631-11e4-a3cb-005056011aef",
+    "document_type": "statistical_data_set",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-08-13T08:30:08Z",
+    "schema_name": "statistical_data_set",
+    "title": "Tables on homelessness",
+    "web_url": "https://www.gov.uk/government/statistical-data-sets/live-tables-on-homelessness",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistical-data-sets/tables-on-rough-sleeping",
+    "api_url": "https://www.gov.uk/api/content/government/statistical-data-sets/tables-on-rough-sleeping",
+    "base_path": "/government/statistical-data-sets/tables-on-rough-sleeping",
+    "content_id": "ac205893-1e92-4821-ba5a-d09923b87730",
+    "document_type": "statistical_data_set",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-08-27T08:30:07Z",
+    "schema_name": "statistical_data_set",
+    "title": "Tables on rough sleeping",
+    "web_url": "https://www.gov.uk/government/statistical-data-sets/tables-on-rough-sleeping",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistical-data-sets/families-in-bed-and-breakfast-accommodation-for-more-than-6-weeks",
+    "api_url": "https://www.gov.uk/api/content/government/statistical-data-sets/families-in-bed-and-breakfast-accommodation-for-more-than-6-weeks",
+    "base_path": "/government/statistical-data-sets/families-in-bed-and-breakfast-accommodation-for-more-than-6-weeks",
+    "content_id": "5e323a51-7631-11e4-a3cb-005056011aef",
+    "document_type": "statistical_data_set",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2013-06-04T11:45:26Z",
+    "schema_name": "statistical_data_set",
+    "title": "Families in bed and breakfast accommodation for more than 6 weeks",
+    "web_url": "https://www.gov.uk/government/statistical-data-sets/families-in-bed-and-breakfast-accommodation-for-more-than-6-weeks",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/dashboards-on-homelessness",
+    "api_url": "https://www.gov.uk/api/content/government/publications/dashboards-on-homelessness",
+    "base_path": "/government/publications/dashboards-on-homelessness",
+    "content_id": "c72f5dd8-bfa9-4ee4-9a9f-f94d3cedfa90",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-09-14T09:46:39Z",
+    "schema_name": "publication",
+    "title": "Dashboards on homelessness",
+    "web_url": "https://www.gov.uk/government/publications/dashboards-on-homelessness",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/dashboards-on-rough-sleeping",
+    "api_url": "https://www.gov.uk/api/content/government/publications/dashboards-on-rough-sleeping",
+    "base_path": "/government/publications/dashboards-on-rough-sleeping",
+    "content_id": "ce74ff12-7e09-427b-988e-ebe24e765aba",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-08-27T08:30:08Z",
+    "schema_name": "publication",
+    "title": "Dashboards on rough sleeping",
+    "web_url": "https://www.gov.uk/government/publications/dashboards-on-rough-sleeping",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/publications/statutory-homelessness-ad-hoc-analyses",
+    "api_url": "https://www.gov.uk/api/content/government/publications/statutory-homelessness-ad-hoc-analyses",
+    "base_path": "/government/publications/statutory-homelessness-ad-hoc-analyses",
+    "content_id": "7e198ec1-20af-4a62-add9-84db8d78851c",
+    "document_type": "research",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-10-12T10:55:16Z",
+    "schema_name": "publication",
+    "title": "Statutory homelessness ad hoc analyses",
+    "web_url": "https://www.gov.uk/government/publications/statutory-homelessness-ad-hoc-analyses",
+    "withdrawn": false
+   }
+  ],
+  "government": [
+   {
+    "api_path": "/api/content/government/2010-to-2015-conservative-and-liberal-democrat-coalition-government",
+    "api_url": "https://www.gov.uk/api/content/government/2010-to-2015-conservative-and-liberal-democrat-coalition-government",
+    "base_path": "/government/2010-to-2015-conservative-and-liberal-democrat-coalition-government",
+    "content_id": "591c83aa-3b74-437d-a342-612bddd97572",
+    "details": {
+     "current": false,
+     "ended_on": "2015-05-08T00:00:00+00:00",
+     "started_on": "2010-05-12T00:00:00+00:00"
+    },
+    "document_type": "government",
+    "links": {},
+    "locale": "en",
+    "title": "2010 to 2015 Conservative and Liberal Democrat coalition government",
+    "web_url": "https://www.gov.uk/government/2010-to-2015-conservative-and-liberal-democrat-coalition-government"
+   }
+  ],
+  "organisations": [
+   {
+    "analytics_identifier": "D1419",
+    "api_path": "/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "base_path": "/government/organisations/ministry-of-housing-communities-local-government",
+    "content_id": "1390d07f-12b3-4f55-9dd5-fec5fd9e3649",
+    "details": {
+     "acronym": "MHCLG",
+     "brand": "ministry-of-housing-communities-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/668f9d9ea3c2a28abb50cd88/s960_2_Marsham_Street_1_-_960x640.jpg",
+      "url": "https://assets.publishing.service.gov.uk/media/668f9d9eab418ab055592384/s300_2_Marsham_Street_1_-_960x640.jpg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Ministry of Housing,<br/>Communities &amp; <br/>Local Government"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Ministry of Housing, Communities and Local Government",
+    "web_url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government",
+    "withdrawn": false
+   },
+   {
+    "analytics_identifier": "D4",
+    "api_path": "/api/content/government/organisations/ministry-of-housing-communities-and-local-government-2018-2021",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/ministry-of-housing-communities-and-local-government-2018-2021",
+    "base_path": "/government/organisations/ministry-of-housing-communities-and-local-government-2018-2021",
+    "content_id": "2e7868a8-38f5-4ff6-b62f-9a15d1c22d28",
+    "details": {
+     "acronym": "",
+     "brand": "department-for-communities-and-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/5a37db37ed915d5a62fdc789/s960_2_Marsham_Street_960x640.jpg",
+      "url": "https://assets.publishing.service.gov.uk/media/5a37db36e5274a79051c927d/s300_2_Marsham_Street_960x640.jpg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Ministry of Housing,<br/>Communities &amp;<br/>Local Government (2018 to 2021)"
+     },
+     "organisation_govuk_status": {
+      "status": "changed_name",
+      "updated_at": "2021-09-20T00:00:00.000+01:00",
+      "url": "http://www.communities.gov.uk/"
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Ministry of Housing, Communities & Local Government (2018 to 2021)",
+    "web_url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-and-local-government-2018-2021",
+    "withdrawn": false
+   },
+   {
+    "analytics_identifier": "D1342",
+    "api_path": "/api/content/government/organisations/department-for-levelling-up-housing-and-communities",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/department-for-levelling-up-housing-and-communities",
+    "base_path": "/government/organisations/department-for-levelling-up-housing-and-communities",
+    "content_id": "c45c316a-a4f5-42c7-b94d-d7f1821be18e",
+    "details": {
+     "acronym": "DLUHC",
+     "brand": "department-for-levelling-up-housing-and-communities",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/6156c35c8fa8f52983494766/s960_2_Marsham_Street_960x640.jpg",
+      "url": "https://assets.publishing.service.gov.uk/media/6156c35c8fa8f52985dd7453/s300_2_Marsham_Street_960x640.jpg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Department for Levelling Up,<br/>Housing &amp; Communities"
+     },
+     "organisation_govuk_status": {
+      "status": "changed_name",
+      "updated_at": null,
+      "url": ""
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Department for Levelling Up, Housing and Communities ",
+    "web_url": "https://www.gov.uk/government/organisations/department-for-levelling-up-housing-and-communities",
+    "withdrawn": false
+   }
+  ],
+  "original_primary_publishing_organisation": [
+   {
+    "analytics_identifier": "D4",
+    "api_path": "/api/content/government/organisations/ministry-of-housing-communities-and-local-government-2018-2021",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/ministry-of-housing-communities-and-local-government-2018-2021",
+    "base_path": "/government/organisations/ministry-of-housing-communities-and-local-government-2018-2021",
+    "content_id": "2e7868a8-38f5-4ff6-b62f-9a15d1c22d28",
+    "details": {
+     "acronym": "",
+     "brand": "department-for-communities-and-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/5a37db37ed915d5a62fdc789/s960_2_Marsham_Street_960x640.jpg",
+      "url": "https://assets.publishing.service.gov.uk/media/5a37db36e5274a79051c927d/s300_2_Marsham_Street_960x640.jpg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Ministry of Housing,<br/>Communities &amp;<br/>Local Government (2018 to 2021)"
+     },
+     "organisation_govuk_status": {
+      "status": "changed_name",
+      "updated_at": "2021-09-20T00:00:00.000+01:00",
+      "url": "http://www.communities.gov.uk/"
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Ministry of Housing, Communities & Local Government (2018 to 2021)",
+    "web_url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-and-local-government-2018-2021",
+    "withdrawn": false
+   }
+  ],
+  "primary_publishing_organisation": [
+   {
+    "analytics_identifier": "D1419",
+    "api_path": "/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "base_path": "/government/organisations/ministry-of-housing-communities-local-government",
+    "content_id": "1390d07f-12b3-4f55-9dd5-fec5fd9e3649",
+    "details": {
+     "acronym": "MHCLG",
+     "brand": "ministry-of-housing-communities-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/668f9d9ea3c2a28abb50cd88/s960_2_Marsham_Street_1_-_960x640.jpg",
+      "url": "https://assets.publishing.service.gov.uk/media/668f9d9eab418ab055592384/s300_2_Marsham_Street_1_-_960x640.jpg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Ministry of Housing,<br/>Communities &amp; <br/>Local Government"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Ministry of Housing, Communities and Local Government",
+    "web_url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government",
+    "withdrawn": false
+   }
+  ],
+  "taxons": [
+   {
+    "api_path": "/api/content/housing-local-and-community/homelessness-rough-sleeping",
+    "api_url": "https://www.gov.uk/api/content/housing-local-and-community/homelessness-rough-sleeping",
+    "base_path": "/housing-local-and-community/homelessness-rough-sleeping",
+    "content_id": "dad5f9c9-410f-4320-aa14-860ccba2273e",
+    "description": "",
+    "details": {
+     "internal_name": "Homelessness and rough sleeping",
+     "notes_for_editors": "",
+     "visible_to_departmental_editors": false
+    },
+    "document_type": "taxon",
+    "links": {
+     "parent_taxons": [
+      {
+       "api_path": "/api/content/housing-local-and-community/housing-and-communities",
+       "api_url": "https://www.gov.uk/api/content/housing-local-and-community/housing-and-communities",
+       "base_path": "/housing-local-and-community/housing-and-communities",
+       "content_id": "4ad66168-274d-4d83-9195-f4ab0ccc97cb",
+       "description": "",
+       "details": {
+        "internal_name": "Housing and communities (level 2)",
+        "notes_for_editors": "",
+        "url_override": "",
+        "visible_to_departmental_editors": false
+       },
+       "document_type": "taxon",
+       "links": {
+        "parent_taxons": [
+         {
+          "api_path": "/api/content/housing-local-and-community",
+          "api_url": "https://www.gov.uk/api/content/housing-local-and-community",
+          "base_path": "/housing-local-and-community",
+          "content_id": "4794066e-e3cc-425e-8cc4-e7ff3edb4c39",
+          "description": "",
+          "details": {
+           "internal_name": "Housing, local and community",
+           "notes_for_editors": "",
+           "visible_to_departmental_editors": true
+          },
+          "document_type": "taxon",
+          "links": {
+           "root_taxon": [
+            {
+             "api_path": "/api/content/",
+             "api_url": "https://www.gov.uk/api/content/",
+             "base_path": "/",
+             "content_id": "f3bbdec2-0e62-4520-a7fd-6ffd5d36e03a",
+             "document_type": "homepage",
+             "links": {},
+             "locale": "en",
+             "public_updated_at": "2026-02-18T13:00:23Z",
+             "schema_name": "homepage",
+             "title": "GOV.UK homepage",
+             "web_url": "https://www.gov.uk/",
+             "withdrawn": false
+            }
+           ]
+          },
+          "locale": "en",
+          "phase": "live",
+          "public_updated_at": "2018-09-16T20:32:02Z",
+          "schema_name": "taxon",
+          "title": "Housing, local and community",
+          "web_url": "https://www.gov.uk/housing-local-and-community",
+          "withdrawn": false
+         }
+        ]
+       },
+       "locale": "en",
+       "phase": "live",
+       "public_updated_at": "2022-02-14T14:24:18Z",
+       "schema_name": "taxon",
+       "title": "Housing and communities",
+       "web_url": "https://www.gov.uk/housing-local-and-community/housing-and-communities",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "phase": "live",
+    "public_updated_at": "2019-01-03T10:54:56Z",
+    "schema_name": "taxon",
+    "title": "Homelessness and rough sleeping",
+    "web_url": "https://www.gov.uk/housing-local-and-community/homelessness-rough-sleeping",
+    "withdrawn": false
+   }
+  ]
+ },
+ "locale": "en",
+ "phase": "live",
+ "public_updated_at": "2026-08-27T09:30:07+01:00",
+ "publishing_app": "whitehall",
+ "publishing_request_id": "21-1787750870.908-10.13.20.244-2636",
+ "publishing_scheduled_at": "2026-08-27T09:30:00+01:00",
+ "rendering_app": "frontend",
+ "scheduled_publishing_delay_seconds": 8,
+ "schema_name": "document_collection",
+ "title": "Homelessness statistics",
+ "updated_at": "2026-10-13T16:25:27+01:00",
+ "withdrawn_notice": {}
+}

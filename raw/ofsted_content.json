@@ -1,0 +1,446 @@
+{
+ "analytics_identifier": null,
+ "base_path": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+ "content_id": "ca989a4d-aada-40db-b3d7-ea89f6f861e6",
+ "description": "Statistics from Ofsted on inspections of local authority children\u2019s services in England.",
+ "details": {
+  "attachments": [
+   {
+    "attachment_type": "html",
+    "command_paper_number": "",
+    "hoc_paper_number": "",
+    "id": "9418926",
+    "isbn": "",
+    "title": "Main findings: local authority inspection outcomes as at 31 March 2026",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/main-findings-local-authority-inspection-outcomes-as-at-31-march-2026"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "enquiries@ofsted.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a6c6b2a8319ab05f7caa29d",
+      "filename": "local_authority_inspection_outcomes_as_at_31_march_2026_underlying_data.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 112075,
+    "filename": "local_authority_inspection_outcomes_as_at_31_march_2026_underlying_data.ods",
+    "hoc_paper_number": "",
+    "id": "9428094",
+    "isbn": "",
+    "title": "Underlying data: local authority inspection outcomes as at 31 March 2026",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a6c6b2a8319ab05f7caa29d/local_authority_inspection_outcomes_as_at_31_march_2026_underlying_data.ods"
+   },
+   {
+    "attachment_type": "html",
+    "command_paper_number": "",
+    "hoc_paper_number": "",
+    "id": "9419018",
+    "isbn": "",
+    "title": "Methodology report: local authority inspection outcomes as at 31 March 2026",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/methodology-report-local-authority-inspection-outcomes-as-at-31-march-2026"
+   },
+   {
+    "attachment_type": "html",
+    "command_paper_number": "",
+    "hoc_paper_number": "",
+    "id": "9419034",
+    "isbn": "",
+    "title": "Pre-release access list: local authority inspection outcomes as at 31 March 2026",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/pre-release-access-list-local-authority-inspection-outcomes-as-at-31-march-2026"
+   }
+  ],
+  "body": "<div class=\"govspeak\"><p>These local authority inspection outcomes statistics are made up of:</p>\n\n<ul>\n  <li>main findings</li>\n  <li>underlying data in ODS format</li>\n  <li>methodology and quality report</li>\n  <li>pre-release access list</li>\n</ul>\n\n<p>Official statistics are produced impartially and free from political influence.</p>\n</div>",
+  "change_history": [
+   {
+    "note": "First published.",
+    "public_timestamp": "2026-08-06T08:30:02Z"
+   }
+  ],
+  "document_type_label": "Official Statistics",
+  "emphasised_organisations": [
+   "ad5f6169-ac7b-4382-9eb6-e58af71a2f00"
+  ],
+  "featured_attachments": [
+   "9418926",
+   "9428094",
+   "9419018",
+   "9419034"
+  ],
+  "first_public_at": "2026-08-06T09:30:02.000+01:00",
+  "national_applicability": {
+   "england": {
+    "applicable": true,
+    "label": "England"
+   },
+   "northern_ireland": {
+    "alternative_url": "",
+    "applicable": false,
+    "label": "Northern Ireland"
+   },
+   "scotland": {
+    "alternative_url": "",
+    "applicable": false,
+    "label": "Scotland"
+   },
+   "wales": {
+    "alternative_url": "",
+    "applicable": false,
+    "label": "Wales"
+   }
+  },
+  "political": false,
+  "tags": {
+   "browse_pages": []
+  }
+ },
+ "document_type": "official_statistics",
+ "first_published_at": "2026-08-06T09:30:02+01:00",
+ "links": {
+  "available_translations": [
+   {
+    "api_path": "/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+    "base_path": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+    "content_id": "ca989a4d-aada-40db-b3d7-ea89f6f861e6",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-08-06T08:30:02Z",
+    "schema_name": "publication",
+    "title": "Local authority inspection outcomes as at 31 March 2026",
+    "web_url": "https://www.gov.uk/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+    "withdrawn": false
+   }
+  ],
+  "children": [
+   {
+    "api_path": "/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/pre-release-access-list-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/pre-release-access-list-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "base_path": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/pre-release-access-list-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "content_id": "cca6c9f2-db2b-4852-8b0c-9ad9908e39c0",
+    "document_type": "html_publication",
+    "links": {
+     "parent": [
+      {
+       "api_path": "/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "api_url": "https://www.gov.uk/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "base_path": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "content_id": "ca989a4d-aada-40db-b3d7-ea89f6f861e6",
+       "document_type": "official_statistics",
+       "links": {},
+       "locale": "en",
+       "public_updated_at": "2026-08-06T08:30:02Z",
+       "schema_name": "publication",
+       "title": "Local authority inspection outcomes as at 31 March 2026",
+       "web_url": "https://www.gov.uk/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "public_updated_at": "2026-08-06T08:30:02Z",
+    "schema_name": "html_publication",
+    "title": "Pre-release access list: local authority inspection outcomes as at 31 March 2026",
+    "web_url": "https://www.gov.uk/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/pre-release-access-list-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/methodology-report-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/methodology-report-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "base_path": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/methodology-report-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "content_id": "34946758-7b3d-46c7-ac83-b353d01b70b1",
+    "document_type": "html_publication",
+    "links": {
+     "parent": [
+      {
+       "api_path": "/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "api_url": "https://www.gov.uk/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "base_path": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "content_id": "ca989a4d-aada-40db-b3d7-ea89f6f861e6",
+       "document_type": "official_statistics",
+       "links": {},
+       "locale": "en",
+       "public_updated_at": "2026-08-06T08:30:02Z",
+       "schema_name": "publication",
+       "title": "Local authority inspection outcomes as at 31 March 2026",
+       "web_url": "https://www.gov.uk/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "public_updated_at": "2026-08-06T08:30:02Z",
+    "schema_name": "html_publication",
+    "title": "Methodology report: local authority inspection outcomes as at 31 March 2026",
+    "web_url": "https://www.gov.uk/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/methodology-report-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/main-findings-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/main-findings-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "base_path": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/main-findings-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "content_id": "59562d03-ddcb-4ece-ab53-e8252372847e",
+    "document_type": "html_publication",
+    "links": {
+     "parent": [
+      {
+       "api_path": "/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "api_url": "https://www.gov.uk/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "base_path": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "content_id": "ca989a4d-aada-40db-b3d7-ea89f6f861e6",
+       "document_type": "official_statistics",
+       "links": {},
+       "locale": "en",
+       "public_updated_at": "2026-08-06T08:30:02Z",
+       "schema_name": "publication",
+       "title": "Local authority inspection outcomes as at 31 March 2026",
+       "web_url": "https://www.gov.uk/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "public_updated_at": "2026-08-06T08:30:02Z",
+    "schema_name": "html_publication",
+    "title": "Main findings: local authority inspection outcomes as at 31 March 2026",
+    "web_url": "https://www.gov.uk/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026/main-findings-local-authority-inspection-outcomes-as-at-31-march-2026",
+    "withdrawn": false
+   }
+  ],
+  "document_collections": [
+   {
+    "api_path": "/api/content/government/collections/childrens-social-care-statistics",
+    "api_url": "https://www.gov.uk/api/content/government/collections/childrens-social-care-statistics",
+    "base_path": "/government/collections/childrens-social-care-statistics",
+    "content_id": "b862b791-bc9c-486b-ad7d-a9942dbe1539",
+    "document_type": "document_collection",
+    "links": {
+     "documents": [
+      {
+       "api_path": "/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "api_url": "https://www.gov.uk/api/content/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "base_path": "/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "content_id": "ca989a4d-aada-40db-b3d7-ea89f6f861e6",
+       "document_type": "official_statistics",
+       "links": {},
+       "locale": "en",
+       "public_updated_at": "2026-08-06T08:30:02Z",
+       "schema_name": "publication",
+       "title": "Local authority inspection outcomes as at 31 March 2026",
+       "web_url": "https://www.gov.uk/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "public_updated_at": "2026-08-18T08:30:01Z",
+    "schema_name": "document_collection",
+    "title": "Children's social care statistics",
+    "web_url": "https://www.gov.uk/government/collections/childrens-social-care-statistics",
+    "withdrawn": false
+   }
+  ],
+  "government": [
+   {
+    "api_path": "/api/content/government/2026-burnham-labour-government",
+    "api_url": "https://www.gov.uk/api/content/government/2026-burnham-labour-government",
+    "base_path": "/government/2026-burnham-labour-government",
+    "content_id": "1fb8162a-7f42-4a44-ae9b-42e8d8f36807",
+    "details": {
+     "current": true,
+     "ended_on": null,
+     "started_on": "2026-07-20T00:00:00+00:00"
+    },
+    "document_type": "government",
+    "links": {},
+    "locale": "en",
+    "title": "2026 Burnham Labour government",
+    "web_url": "https://www.gov.uk/government/2026-burnham-labour-government"
+   }
+  ],
+  "organisations": [
+   {
+    "analytics_identifier": "D106",
+    "api_path": "/api/content/government/organisations/ofsted",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/ofsted",
+    "base_path": "/government/organisations/ofsted",
+    "content_id": "ad5f6169-ac7b-4382-9eb6-e58af71a2f00",
+    "details": {
+     "acronym": "Ofsted",
+     "brand": "department-for-education",
+     "default_news_image": null,
+     "logo": {
+      "crest": "custom",
+      "formatted_title": "Ofsted",
+      "image": {
+       "alt_text": "Ofsted",
+       "url": "https://assets.publishing.service.gov.uk/media/6aaa91cd44ec1aa417346b58/ofsted-colour-logo-large-govuk.jpg"
+      }
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Ofsted",
+    "web_url": "https://www.gov.uk/government/organisations/ofsted",
+    "withdrawn": false
+   }
+  ],
+  "primary_publishing_organisation": [
+   {
+    "analytics_identifier": "D106",
+    "api_path": "/api/content/government/organisations/ofsted",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/ofsted",
+    "base_path": "/government/organisations/ofsted",
+    "content_id": "ad5f6169-ac7b-4382-9eb6-e58af71a2f00",
+    "details": {
+     "acronym": "Ofsted",
+     "brand": "department-for-education",
+     "default_news_image": null,
+     "logo": {
+      "crest": "custom",
+      "formatted_title": "Ofsted",
+      "image": {
+       "alt_text": "Ofsted",
+       "url": "https://assets.publishing.service.gov.uk/media/6aaa91cd44ec1aa417346b58/ofsted-colour-logo-large-govuk.jpg"
+      }
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Ofsted",
+    "web_url": "https://www.gov.uk/government/organisations/ofsted",
+    "withdrawn": false
+   }
+  ],
+  "taxons": [
+   {
+    "api_path": "/api/content/childcare-parenting/childrens-social-care-providers",
+    "api_url": "https://www.gov.uk/api/content/childcare-parenting/childrens-social-care-providers",
+    "base_path": "/childcare-parenting/childrens-social-care-providers",
+    "content_id": "454b3d57-870e-4691-a700-abbf7d883c34",
+    "description": "Registering, inspections, complaints, roles and responsibilities, Ofsted safeguarding policy, complaints.",
+    "details": {
+     "internal_name": "Children's social care providers",
+     "notes_for_editors": "",
+     "visible_to_departmental_editors": false
+    },
+    "document_type": "taxon",
+    "links": {
+     "parent_taxons": [
+      {
+       "api_path": "/api/content/childcare-parenting/safeguarding-and-social-care-for-children",
+       "api_url": "https://www.gov.uk/api/content/childcare-parenting/safeguarding-and-social-care-for-children",
+       "base_path": "/childcare-parenting/safeguarding-and-social-care-for-children",
+       "content_id": "20eb4e84-98ee-404b-a4bd-fe8a36d5d71d",
+       "description": "Child protection, social work, children in care and looked-after children, becoming a social care provider.",
+       "details": {
+        "internal_name": "Safeguarding and social care for children",
+        "notes_for_editors": "",
+        "visible_to_departmental_editors": false
+       },
+       "document_type": "taxon",
+       "links": {
+        "parent_taxons": [
+         {
+          "api_path": "/api/content/childcare-parenting",
+          "api_url": "https://www.gov.uk/api/content/childcare-parenting",
+          "base_path": "/childcare-parenting",
+          "content_id": "206b7f3a-49b5-476f-af0f-fd27e2a68473",
+          "description": "Financial support, finding and providing childcare, pregnancy and birth, adoption and fostering, looked-after children, safeguarding.",
+          "details": {
+           "internal_name": "Parenting, childcare and childrens services",
+           "notes_for_editors": "",
+           "visible_to_departmental_editors": true
+          },
+          "document_type": "taxon",
+          "links": {
+           "root_taxon": [
+            {
+             "api_path": "/api/content/",
+             "api_url": "https://www.gov.uk/api/content/",
+             "base_path": "/",
+             "content_id": "f3bbdec2-0e62-4520-a7fd-6ffd5d36e03a",
+             "document_type": "homepage",
+             "links": {},
+             "locale": "en",
+             "public_updated_at": "2026-02-18T13:00:23Z",
+             "schema_name": "homepage",
+             "title": "GOV.UK homepage",
+             "web_url": "https://www.gov.uk/",
+             "withdrawn": false
+            }
+           ]
+          },
+          "locale": "en",
+          "phase": "live",
+          "public_updated_at": "2017-07-27T13:29:23Z",
+          "schema_name": "taxon",
+          "title": "Parenting, childcare and children's services ",
+          "web_url": "https://www.gov.uk/childcare-parenting",
+          "withdrawn": false
+         }
+        ]
+       },
+       "locale": "en",
+       "phase": "live",
+       "public_updated_at": "2017-07-27T13:38:52Z",
+       "schema_name": "taxon",
+       "title": "Safeguarding and social care for children",
+       "web_url": "https://www.gov.uk/childcare-parenting/safeguarding-and-social-care-for-children",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "phase": "live",
+    "public_updated_at": "2017-07-27T13:39:08Z",
+    "schema_name": "taxon",
+    "title": "Children's social care providers",
+    "web_url": "https://www.gov.uk/childcare-parenting/childrens-social-care-providers",
+    "withdrawn": false
+   }
+  ]
+ },
+ "locale": "en",
+ "phase": "live",
+ "public_updated_at": "2026-08-06T09:30:02+01:00",
+ "publishing_app": "whitehall",
+ "publishing_request_id": "21-1785944540.366-10.13.21.211-2358",
+ "publishing_scheduled_at": "2026-08-06T09:30:00+01:00",
+ "rendering_app": "frontend",
+ "scheduled_publishing_delay_seconds": 2,
+ "schema_name": "publication",
+ "title": "Local authority inspection outcomes as at 31 March 2026",
+ "updated_at": "2026-09-16T13:56:56+01:00",
+ "withdrawn_notice": {}
+}

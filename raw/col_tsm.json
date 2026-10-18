@@ -1,0 +1,646 @@
+{
+ "analytics_identifier": null,
+ "base_path": "/government/collections/tenant-satisfaction-measures",
+ "content_id": "8cd78244-ab4d-4b10-ae3c-fde68d537198",
+ "description": "Tenant Satisfaction Measures reports, data quality and methodology.",
+ "details": {
+  "body": "<div class=\"govspeak\"><p>Tenant Satisfactions Measures are collected by landlords according to requirements set by the regulator in the <a href=\"https://www.gov.uk/government/collections/transparency-influence-and-accountability-including-tenant-satisfaction-measures\">Transparency, Influence and Accountability Standard</a>. Landlords that own 1,000 or more units of social housing are required to submit information about their <abbr title=\"Tenant Satisfaction Measures\">TSM</abbr> results and relevant contextual information to <abbr title=\"Regulator of Social Housing\">RSH</abbr>.\u00a0 <abbr title=\"Tenant Satisfaction Measures\">TSMs</abbr> include information from tenant surveys and those generated from management information held by landlords on areas including repairs and maintenance, complaints and engagement, respectful and helpful engagement and building safety.</p>\n\n<p><abbr title=\"Tenant Satisfaction Measures\">TSMs</abbr> are intended to be a tool to allow tenants to scrutinise their landlord\u2019s performance, give insights to landlords on where they might look to improve their services, and provide a source of intelligence to the regulator on how far landlords are meeting the outcomes of the new consumer standards.</p>\n\n<p>These statistics are drawn from our\u00a0<abbr title=\"Tenant Satisfaction Measures\">TSM</abbr>\u00a0data collection were published for the first time in 2024. They are currently official statistics in development. Generating the\u00a0<abbr title=\"Tenant Satisfaction Measures\">TSMs</abbr>, using them to gain insight, and reflecting this in regulation has been a process of transition for both landlords and regulator. Caution is therefore required, particularly in making reasonable landlord comparisons based on\u00a0<abbr title=\"Tenant Satisfaction Measures\">TSMs</abbr>\u00a0in isolation.</p>\n\n<p>To understand\u00a0<abbr title=\"Tenant Satisfaction Measures\">TSM</abbr>\u00a0results in more detail in 2024 we also published a separate\u00a0<a href=\"https://www.gov.uk/government/collections/national-tenant-survey\">National Tenant Survey</a>. This can provide useful context and information on what can impact the \u00a0<abbr title=\"Tenant Satisfaction Measures\">TSMs</abbr>\u00a0drawn from tenant surveys.</p>\n\n<h2 id=\"user-feedback\">User feedback</h2>\n\n<p><abbr title=\"Regulator of Social Housing\">RSH</abbr>\u00a0is committed to continuous improvement of our statistical releases to ensure they meet the needs of our users. Feedback from those using the statistics is central to this.</p>\n\n<p>Users are encouraged to provide comments and feedback on how these statistics are used and how they meet their needs either using any of the following routes:</p>\n\n<ul>\n  <li>Our\u00a0<a rel=\"external\" href=\"https://forms.office.com/e/0WnTGc5WBS\"><abbr title=\"Regulator of Social Housing\">RSH</abbr>\u00a0<abbr title=\"Tenant Satisfaction Measures\">TSM</abbr> user feedback survey</a>\n</li>\n  <li>Direct email contact (please send these entitled \u201c<abbr title=\"Tenant Satisfaction Measures\">TSM</abbr>\u00a0statistics feedback\u201d to\u00a0<a href=\"mailto:enquiries@rsh.gov.uk\">enquiries@rsh.gov.uk</a>.</li>\n</ul>\n\n</div>",
+  "change_history": [
+   {
+    "note": "First published.",
+    "public_timestamp": "2024-11-26T00:00:00Z"
+   }
+  ],
+  "collection_groups": [
+   {
+    "body": "<div class=\"govspeak\">\n</div>",
+    "documents": [
+     "596579e6-3f53-48e4-a0af-40c76db1447a"
+    ],
+    "title": "Tenant Satisfaction Measures 2024-25"
+   },
+   {
+    "body": "<div class=\"govspeak\">\n</div>",
+    "documents": [
+     "3a938206-2c00-4f72-8207-48c829256896",
+     "293baef5-5456-4d8d-a397-bc595406f048",
+     "32f93f8f-fb23-4f14-916b-ef99570a4294",
+     "66e1266e-b255-46b4-be96-e684e0283f2f"
+    ],
+    "title": "Tenant Satisfaction Measures 2023-24"
+   }
+  ],
+  "emphasised_organisations": [
+   "0e8892fa-d676-43c4-9f51-9674e1830892"
+  ],
+  "first_public_at": "2024-11-26T00:00:00.000+00:00",
+  "headers": [
+   {
+    "id": "user-feedback",
+    "level": 2,
+    "text": "User feedback"
+   }
+  ],
+  "political": false
+ },
+ "document_type": "document_collection",
+ "first_published_at": "2024-11-26T00:00:00+00:00",
+ "links": {
+  "available_translations": [
+   {
+    "api_path": "/api/content/government/collections/tenant-satisfaction-measures",
+    "api_url": "https://www.gov.uk/api/content/government/collections/tenant-satisfaction-measures",
+    "base_path": "/government/collections/tenant-satisfaction-measures",
+    "content_id": "8cd78244-ab4d-4b10-ae3c-fde68d537198",
+    "document_type": "document_collection",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-11-26T00:00:00Z",
+    "schema_name": "document_collection",
+    "title": "Tenant Satisfaction Measures",
+    "web_url": "https://www.gov.uk/government/collections/tenant-satisfaction-measures",
+    "withdrawn": false
+   }
+  ],
+  "document_collections": [
+   {
+    "api_path": "/api/content/government/collections/sector-reports",
+    "api_url": "https://www.gov.uk/api/content/government/collections/sector-reports",
+    "base_path": "/government/collections/sector-reports",
+    "content_id": "532902e9-5f10-4cc5-8b56-6f17c32a573c",
+    "document_type": "document_collection",
+    "links": {
+     "documents": [
+      {
+       "api_path": "/api/content/government/collections/tenant-satisfaction-measures",
+       "api_url": "https://www.gov.uk/api/content/government/collections/tenant-satisfaction-measures",
+       "base_path": "/government/collections/tenant-satisfaction-measures",
+       "content_id": "8cd78244-ab4d-4b10-ae3c-fde68d537198",
+       "document_type": "document_collection",
+       "links": {},
+       "locale": "en",
+       "public_updated_at": "2024-11-26T00:00:00Z",
+       "schema_name": "document_collection",
+       "title": "Tenant Satisfaction Measures",
+       "web_url": "https://www.gov.uk/government/collections/tenant-satisfaction-measures",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "public_updated_at": "2024-04-01T23:00:00Z",
+    "schema_name": "document_collection",
+    "title": "Reports and statistics",
+    "web_url": "https://www.gov.uk/government/collections/sector-reports",
+    "withdrawn": false
+   }
+  ],
+  "documents": [
+   {
+    "api_path": "/api/content/government/statistics/tenant-satisfaction-measures-202425",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/tenant-satisfaction-measures-202425",
+    "base_path": "/government/statistics/tenant-satisfaction-measures-202425",
+    "content_id": "596579e6-3f53-48e4-a0af-40c76db1447a",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-11-04T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Tenant Satisfaction Measures 2024/25",
+    "web_url": "https://www.gov.uk/government/statistics/tenant-satisfaction-measures-202425",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/tenant-satisfaction-measures-202324",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/tenant-satisfaction-measures-202324",
+    "base_path": "/government/statistics/tenant-satisfaction-measures-202324",
+    "content_id": "3a938206-2c00-4f72-8207-48c829256896",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2025-11-04T09:30:02Z",
+    "schema_name": "publication",
+    "title": "Tenant Satisfaction Measures 2023/24",
+    "web_url": "https://www.gov.uk/government/statistics/tenant-satisfaction-measures-202324",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/data-quality-and-methodology-tsm-2024",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/data-quality-and-methodology-tsm-2024",
+    "base_path": "/government/statistics/data-quality-and-methodology-tsm-2024",
+    "content_id": "293baef5-5456-4d8d-a397-bc595406f048",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-11-26T09:30:04Z",
+    "schema_name": "publication",
+    "title": "Data quality and methodology (TSM 2024)",
+    "web_url": "https://www.gov.uk/government/statistics/data-quality-and-methodology-tsm-2024",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/data-release-tsm-2024",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/data-release-tsm-2024",
+    "base_path": "/government/statistics/data-release-tsm-2024",
+    "content_id": "32f93f8f-fb23-4f14-916b-ef99570a4294",
+    "document_type": "official_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-11-26T00:00:00Z",
+    "schema_name": "publication",
+    "title": "Data release (TSM 2024)",
+    "web_url": "https://www.gov.uk/government/statistics/data-release-tsm-2024",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/guidance/pre-release-access-list-tsm-2024",
+    "api_url": "https://www.gov.uk/api/content/guidance/pre-release-access-list-tsm-2024",
+    "base_path": "/guidance/pre-release-access-list-tsm-2024",
+    "content_id": "66e1266e-b255-46b4-be96-e684e0283f2f",
+    "document_type": "detailed_guide",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2024-11-26T09:30:05Z",
+    "schema_name": "detailed_guide",
+    "title": "Pre-release access list (TSM 2024)",
+    "web_url": "https://www.gov.uk/guidance/pre-release-access-list-tsm-2024",
+    "withdrawn": false
+   }
+  ],
+  "government": [
+   {
+    "api_path": "/api/content/government/2024-starmer-labour-government",
+    "api_url": "https://www.gov.uk/api/content/government/2024-starmer-labour-government",
+    "base_path": "/government/2024-starmer-labour-government",
+    "content_id": "9dbff654-cdeb-4ebe-9a12-cd4cc20a033e",
+    "details": {
+     "current": false,
+     "ended_on": "2026-07-20T00:00:00+00:00",
+     "started_on": "2024-07-05T00:00:00+00:00"
+    },
+    "document_type": "government",
+    "links": {},
+    "locale": "en",
+    "title": "2024 to 2026 Starmer Labour government",
+    "web_url": "https://www.gov.uk/government/2024-starmer-labour-government"
+   }
+  ],
+  "organisations": [
+   {
+    "analytics_identifier": "PB1218",
+    "api_path": "/api/content/government/organisations/regulator-of-social-housing",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/regulator-of-social-housing",
+    "base_path": "/government/organisations/regulator-of-social-housing",
+    "content_id": "0e8892fa-d676-43c4-9f51-9674e1830892",
+    "details": {
+     "acronym": "RSH",
+     "brand": "ministry-of-housing-communities-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/667012bdfed5bd09e5195ab2/s960_Untitled_design__24_.png",
+      "url": "https://assets.publishing.service.gov.uk/media/667012bdfed5bd09e5195ab1/s300_Untitled_design__24_.png"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Regulator of <br/>Social Housing"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Regulator of Social Housing",
+    "web_url": "https://www.gov.uk/government/organisations/regulator-of-social-housing",
+    "withdrawn": false
+   }
+  ],
+  "original_primary_publishing_organisation": [
+   {
+    "analytics_identifier": "PB1218",
+    "api_path": "/api/content/government/organisations/regulator-of-social-housing",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/regulator-of-social-housing",
+    "base_path": "/government/organisations/regulator-of-social-housing",
+    "content_id": "0e8892fa-d676-43c4-9f51-9674e1830892",
+    "details": {
+     "acronym": "RSH",
+     "brand": "ministry-of-housing-communities-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/667012bdfed5bd09e5195ab2/s960_Untitled_design__24_.png",
+      "url": "https://assets.publishing.service.gov.uk/media/667012bdfed5bd09e5195ab1/s300_Untitled_design__24_.png"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Regulator of <br/>Social Housing"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Regulator of Social Housing",
+    "web_url": "https://www.gov.uk/government/organisations/regulator-of-social-housing",
+    "withdrawn": false
+   }
+  ],
+  "primary_publishing_organisation": [
+   {
+    "analytics_identifier": "PB1218",
+    "api_path": "/api/content/government/organisations/regulator-of-social-housing",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/regulator-of-social-housing",
+    "base_path": "/government/organisations/regulator-of-social-housing",
+    "content_id": "0e8892fa-d676-43c4-9f51-9674e1830892",
+    "details": {
+     "acronym": "RSH",
+     "brand": "ministry-of-housing-communities-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/667012bdfed5bd09e5195ab2/s960_Untitled_design__24_.png",
+      "url": "https://assets.publishing.service.gov.uk/media/667012bdfed5bd09e5195ab1/s300_Untitled_design__24_.png"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Regulator of <br/>Social Housing"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Regulator of Social Housing",
+    "web_url": "https://www.gov.uk/government/organisations/regulator-of-social-housing",
+    "withdrawn": false
+   }
+  ],
+  "taxons": [
+   {
+    "api_path": "/api/content/housing-local-and-community/council-housing-association",
+    "api_url": "https://www.gov.uk/api/content/housing-local-and-community/council-housing-association",
+    "base_path": "/housing-local-and-community/council-housing-association",
+    "content_id": "c8fec9a9-94e0-4d5e-b317-fc926d5e7b1c",
+    "details": {
+     "internal_name": "Council housing and housing association [M] (level 3, housing theme)",
+     "notes_for_editors": "",
+     "visible_to_departmental_editors": false
+    },
+    "document_type": "taxon",
+    "links": {
+     "parent_taxons": [
+      {
+       "api_path": "/api/content/housing-local-and-community/housing-and-communities",
+       "api_url": "https://www.gov.uk/api/content/housing-local-and-community/housing-and-communities",
+       "base_path": "/housing-local-and-community/housing-and-communities",
+       "content_id": "4ad66168-274d-4d83-9195-f4ab0ccc97cb",
+       "description": "",
+       "details": {
+        "internal_name": "Housing and communities (level 2)",
+        "notes_for_editors": "",
+        "url_override": "",
+        "visible_to_departmental_editors": false
+       },
+       "document_type": "taxon",
+       "links": {
+        "parent_taxons": [
+         {
+          "api_path": "/api/content/housing-local-and-community",
+          "api_url": "https://www.gov.uk/api/content/housing-local-and-community",
+          "base_path": "/housing-local-and-community",
+          "content_id": "4794066e-e3cc-425e-8cc4-e7ff3edb4c39",
+          "description": "",
+          "details": {
+           "internal_name": "Housing, local and community",
+           "notes_for_editors": "",
+           "visible_to_departmental_editors": true
+          },
+          "document_type": "taxon",
+          "links": {
+           "root_taxon": [
+            {
+             "api_path": "/api/content/",
+             "api_url": "https://www.gov.uk/api/content/",
+             "base_path": "/",
+             "content_id": "f3bbdec2-0e62-4520-a7fd-6ffd5d36e03a",
+             "document_type": "homepage",
+             "links": {},
+             "locale": "en",
+             "public_updated_at": "2026-02-18T13:00:23Z",
+             "schema_name": "homepage",
+             "title": "GOV.UK homepage",
+             "web_url": "https://www.gov.uk/",
+             "withdrawn": false
+            }
+           ]
+          },
+          "locale": "en",
+          "phase": "live",
+          "public_updated_at": "2018-09-16T20:32:02Z",
+          "schema_name": "taxon",
+          "title": "Housing, local and community",
+          "web_url": "https://www.gov.uk/housing-local-and-community",
+          "withdrawn": false
+         }
+        ]
+       },
+       "locale": "en",
+       "phase": "live",
+       "public_updated_at": "2022-02-14T14:24:18Z",
+       "schema_name": "taxon",
+       "title": "Housing and communities",
+       "web_url": "https://www.gov.uk/housing-local-and-community/housing-and-communities",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "phase": "live",
+    "public_updated_at": "2018-08-22T12:54:43Z",
+    "schema_name": "taxon",
+    "title": "Council housing and housing association",
+    "web_url": "https://www.gov.uk/housing-local-and-community/council-housing-association",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/housing-local-and-community/housing-for-older-and-vulnerable-people",
+    "api_url": "https://www.gov.uk/api/content/housing-local-and-community/housing-for-older-and-vulnerable-people",
+    "base_path": "/housing-local-and-community/housing-for-older-and-vulnerable-people",
+    "content_id": "b1846db8-acab-4fc2-b1ad-b98250c78c62",
+    "details": {
+     "internal_name": "Housing for older and vulnerable people [P] (level 3, housing theme)",
+     "notes_for_editors": "",
+     "visible_to_departmental_editors": false
+    },
+    "document_type": "taxon",
+    "links": {
+     "parent_taxons": [
+      {
+       "api_path": "/api/content/housing-local-and-community/housing-and-communities",
+       "api_url": "https://www.gov.uk/api/content/housing-local-and-community/housing-and-communities",
+       "base_path": "/housing-local-and-community/housing-and-communities",
+       "content_id": "4ad66168-274d-4d83-9195-f4ab0ccc97cb",
+       "description": "",
+       "details": {
+        "internal_name": "Housing and communities (level 2)",
+        "notes_for_editors": "",
+        "url_override": "",
+        "visible_to_departmental_editors": false
+       },
+       "document_type": "taxon",
+       "links": {
+        "parent_taxons": [
+         {
+          "api_path": "/api/content/housing-local-and-community",
+          "api_url": "https://www.gov.uk/api/content/housing-local-and-community",
+          "base_path": "/housing-local-and-community",
+          "content_id": "4794066e-e3cc-425e-8cc4-e7ff3edb4c39",
+          "description": "",
+          "details": {
+           "internal_name": "Housing, local and community",
+           "notes_for_editors": "",
+           "visible_to_departmental_editors": true
+          },
+          "document_type": "taxon",
+          "links": {
+           "root_taxon": [
+            {
+             "api_path": "/api/content/",
+             "api_url": "https://www.gov.uk/api/content/",
+             "base_path": "/",
+             "content_id": "f3bbdec2-0e62-4520-a7fd-6ffd5d36e03a",
+             "document_type": "homepage",
+             "links": {},
+             "locale": "en",
+             "public_updated_at": "2026-02-18T13:00:23Z",
+             "schema_name": "homepage",
+             "title": "GOV.UK homepage",
+             "web_url": "https://www.gov.uk/",
+             "withdrawn": false
+            }
+           ]
+          },
+          "locale": "en",
+          "phase": "live",
+          "public_updated_at": "2018-09-16T20:32:02Z",
+          "schema_name": "taxon",
+          "title": "Housing, local and community",
+          "web_url": "https://www.gov.uk/housing-local-and-community",
+          "withdrawn": false
+         }
+        ]
+       },
+       "locale": "en",
+       "phase": "live",
+       "public_updated_at": "2022-02-14T14:24:18Z",
+       "schema_name": "taxon",
+       "title": "Housing and communities",
+       "web_url": "https://www.gov.uk/housing-local-and-community/housing-and-communities",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "phase": "live",
+    "public_updated_at": "2018-08-22T12:54:42Z",
+    "schema_name": "taxon",
+    "title": "Housing for older and vulnerable people",
+    "web_url": "https://www.gov.uk/housing-local-and-community/housing-for-older-and-vulnerable-people",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/housing-local-and-community/regulation",
+    "api_url": "https://www.gov.uk/api/content/housing-local-and-community/regulation",
+    "base_path": "/housing-local-and-community/regulation",
+    "content_id": "45a38712-a3d6-42a7-a3ef-70c37665f429",
+    "details": {
+     "internal_name": "Housing regulation [T] (level 2)",
+     "notes_for_editors": "",
+     "visible_to_departmental_editors": false
+    },
+    "document_type": "taxon",
+    "links": {
+     "parent_taxons": [
+      {
+       "api_path": "/api/content/housing-local-and-community/housing-and-communities",
+       "api_url": "https://www.gov.uk/api/content/housing-local-and-community/housing-and-communities",
+       "base_path": "/housing-local-and-community/housing-and-communities",
+       "content_id": "4ad66168-274d-4d83-9195-f4ab0ccc97cb",
+       "description": "",
+       "details": {
+        "internal_name": "Housing and communities (level 2)",
+        "notes_for_editors": "",
+        "url_override": "",
+        "visible_to_departmental_editors": false
+       },
+       "document_type": "taxon",
+       "links": {
+        "parent_taxons": [
+         {
+          "api_path": "/api/content/housing-local-and-community",
+          "api_url": "https://www.gov.uk/api/content/housing-local-and-community",
+          "base_path": "/housing-local-and-community",
+          "content_id": "4794066e-e3cc-425e-8cc4-e7ff3edb4c39",
+          "description": "",
+          "details": {
+           "internal_name": "Housing, local and community",
+           "notes_for_editors": "",
+           "visible_to_departmental_editors": true
+          },
+          "document_type": "taxon",
+          "links": {
+           "root_taxon": [
+            {
+             "api_path": "/api/content/",
+             "api_url": "https://www.gov.uk/api/content/",
+             "base_path": "/",
+             "content_id": "f3bbdec2-0e62-4520-a7fd-6ffd5d36e03a",
+             "document_type": "homepage",
+             "links": {},
+             "locale": "en",
+             "public_updated_at": "2026-02-18T13:00:23Z",
+             "schema_name": "homepage",
+             "title": "GOV.UK homepage",
+             "web_url": "https://www.gov.uk/",
+             "withdrawn": false
+            }
+           ]
+          },
+          "locale": "en",
+          "phase": "live",
+          "public_updated_at": "2018-09-16T20:32:02Z",
+          "schema_name": "taxon",
+          "title": "Housing, local and community",
+          "web_url": "https://www.gov.uk/housing-local-and-community",
+          "withdrawn": false
+         }
+        ]
+       },
+       "locale": "en",
+       "phase": "live",
+       "public_updated_at": "2022-02-14T14:24:18Z",
+       "schema_name": "taxon",
+       "title": "Housing and communities",
+       "web_url": "https://www.gov.uk/housing-local-and-community/housing-and-communities",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "phase": "live",
+    "public_updated_at": "2018-08-22T12:54:42Z",
+    "schema_name": "taxon",
+    "title": "Housing regulation",
+    "web_url": "https://www.gov.uk/housing-local-and-community/regulation",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/housing-local-and-community/rented-housing-sector",
+    "api_url": "https://www.gov.uk/api/content/housing-local-and-community/rented-housing-sector",
+    "base_path": "/housing-local-and-community/rented-housing-sector",
+    "content_id": "7b710bd4-796c-4b99-933e-1eeb596b27a8",
+    "details": {
+     "internal_name": "Rented housing sector [P] (level 3, housing theme)",
+     "notes_for_editors": "",
+     "visible_to_departmental_editors": false
+    },
+    "document_type": "taxon",
+    "links": {
+     "parent_taxons": [
+      {
+       "api_path": "/api/content/housing-local-and-community/housing-and-communities",
+       "api_url": "https://www.gov.uk/api/content/housing-local-and-community/housing-and-communities",
+       "base_path": "/housing-local-and-community/housing-and-communities",
+       "content_id": "4ad66168-274d-4d83-9195-f4ab0ccc97cb",
+       "description": "",
+       "details": {
+        "internal_name": "Housing and communities (level 2)",
+        "notes_for_editors": "",
+        "url_override": "",
+        "visible_to_departmental_editors": false
+       },
+       "document_type": "taxon",
+       "links": {
+        "parent_taxons": [
+         {
+          "api_path": "/api/content/housing-local-and-community",
+          "api_url": "https://www.gov.uk/api/content/housing-local-and-community",
+          "base_path": "/housing-local-and-community",
+          "content_id": "4794066e-e3cc-425e-8cc4-e7ff3edb4c39",
+          "description": "",
+          "details": {
+           "internal_name": "Housing, local and community",
+           "notes_for_editors": "",
+           "visible_to_departmental_editors": true
+          },
+          "document_type": "taxon",
+          "links": {
+           "root_taxon": [
+            {
+             "api_path": "/api/content/",
+             "api_url": "https://www.gov.uk/api/content/",
+             "base_path": "/",
+             "content_id": "f3bbdec2-0e62-4520-a7fd-6ffd5d36e03a",
+             "document_type": "homepage",
+             "links": {},
+             "locale": "en",
+             "public_updated_at": "2026-02-18T13:00:23Z",
+             "schema_name": "homepage",
+             "title": "GOV.UK homepage",
+             "web_url": "https://www.gov.uk/",
+             "withdrawn": false
+            }
+           ]
+          },
+          "locale": "en",
+          "phase": "live",
+          "public_updated_at": "2018-09-16T20:32:02Z",
+          "schema_name": "taxon",
+          "title": "Housing, local and community",
+          "web_url": "https://www.gov.uk/housing-local-and-community",
+          "withdrawn": false
+         }
+        ]
+       },
+       "locale": "en",
+       "phase": "live",
+       "public_updated_at": "2022-02-14T14:24:18Z",
+       "schema_name": "taxon",
+       "title": "Housing and communities",
+       "web_url": "https://www.gov.uk/housing-local-and-community/housing-and-communities",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "phase": "live",
+    "public_updated_at": "2018-08-22T12:54:42Z",
+    "schema_name": "taxon",
+    "title": "Rented housing sector",
+    "web_url": "https://www.gov.uk/housing-local-and-community/rented-housing-sector",
+    "withdrawn": false
+   }
+  ]
+ },
+ "locale": "en",
+ "phase": "live",
+ "public_updated_at": "2024-11-26T00:00:00+00:00",
+ "publishing_app": "whitehall",
+ "publishing_request_id": "21-1762163301.302-10.13.21.159-2322",
+ "publishing_scheduled_at": "2025-11-04T09:30:00+00:00",
+ "rendering_app": "frontend",
+ "scheduled_publishing_delay_seconds": 3,
+ "schema_name": "document_collection",
+ "title": "Tenant Satisfaction Measures",
+ "updated_at": "2026-09-24T13:28:37+01:00",
+ "withdrawn_notice": {}
+}

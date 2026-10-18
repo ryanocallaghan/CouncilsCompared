@@ -1,0 +1,574 @@
+{
+ "analytics_identifier": null,
+ "base_path": "/government/statistics/local-authority-revenue-expenditure-and-financing-england-2024-to-2025-individual-local-authority-data-outturn",
+ "content_id": "60fbffb8-f3f3-4f9c-a00d-0af269bcb442",
+ "description": "Outturn data of local authority revenue expenditure and financing for the financial year April 2024 to March 2025.",
+ "details": {
+  "attachments": [
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a2aca48a3674dfd3eb50749",
+      "filename": "RS_LA_Data_2024-25_data_by_LA.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 394496,
+    "filename": "RS_LA_Data_2024-25_data_by_LA.ods",
+    "hoc_paper_number": "",
+    "id": "9339825",
+    "isbn": "",
+    "title": "Revenue outturn summary (RS) 2024 to 2025",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a2aca48a3674dfd3eb50749/RS_LA_Data_2024-25_data_by_LA.ods"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a291b0fade52dc088221881",
+      "filename": "RSX_LA_Data_2024-25_data_by_LA.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 338701,
+    "filename": "RSX_LA_Data_2024-25_data_by_LA.ods",
+    "hoc_paper_number": "",
+    "id": "9339826",
+    "isbn": "",
+    "title": "Revenue outturn service expenditure summary (RSX) 2024 to 2025",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a291b0fade52dc088221881/RSX_LA_Data_2024-25_data_by_LA.ods"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a291b1df553ec1112221868",
+      "filename": "RG_LA_Data_2024-25_data_by_LA.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 108206,
+    "filename": "RG_LA_Data_2024-25_data_by_LA.ods",
+    "hoc_paper_number": "",
+    "id": "9339827",
+    "isbn": "",
+    "title": "Revenue outturn specific and special revenue grants (RG) 2024 to 2025",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a291b1df553ec1112221868/RG_LA_Data_2024-25_data_by_LA.ods"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a291b2fe371d9d2c0052b80",
+      "filename": "RG_Other_LA_Data_2024-25_data_by_LA.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 1134994,
+    "filename": "RG_Other_LA_Data_2024-25_data_by_LA.ods",
+    "hoc_paper_number": "",
+    "id": "9339828",
+    "isbn": "",
+    "title": "Revenue outturn specific and special revenue grants (RG) - detailed grants 2024 to 2025",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a291b2fe371d9d2c0052b80/RG_Other_LA_Data_2024-25_data_by_LA.ods"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a291b3ce371d9d2c0052b81",
+      "filename": "RO1_LA_Data_2024-25_data_by_LA.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 145605,
+    "filename": "RO1_LA_Data_2024-25_data_by_LA.ods",
+    "hoc_paper_number": "",
+    "id": "9339829",
+    "isbn": "",
+    "title": "Revenue outturn education services (RO1) 2024 to 2025",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a291b3ce371d9d2c0052b81/RO1_LA_Data_2024-25_data_by_LA.ods"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a291b4a3b15d05a7ce31ffc",
+      "filename": "RO2_LA_Data_2024-25_data_by_LA.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 332026,
+    "filename": "RO2_LA_Data_2024-25_data_by_LA.ods",
+    "hoc_paper_number": "",
+    "id": "9339830",
+    "isbn": "",
+    "title": "Revenue outturn highways and transport services (RO2) 2024 to 2025",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a291b4a3b15d05a7ce31ffc/RO2_LA_Data_2024-25_data_by_LA.ods"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a291b59e371d9d2c0052b82",
+      "filename": "RO3_LA_Data_2024-25_data_by_LA.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 868847,
+    "filename": "RO3_LA_Data_2024-25_data_by_LA.ods",
+    "hoc_paper_number": "",
+    "id": "9339831",
+    "isbn": "",
+    "title": "Revenue outturn social care and public health services (RO3) 2024 to 2025",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a291b59e371d9d2c0052b82/RO3_LA_Data_2024-25_data_by_LA.ods"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a291b65e371d9d2c0052b83",
+      "filename": "RO4_LA_Data_2024-25_data_by_LA.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 355468,
+    "filename": "RO4_LA_Data_2024-25_data_by_LA.ods",
+    "hoc_paper_number": "",
+    "id": "9339832",
+    "isbn": "",
+    "title": "Revenue outturn housing services (RO4) 2024 to 2025",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a291b65e371d9d2c0052b83/RO4_LA_Data_2024-25_data_by_LA.ods"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a291b72db0592d809052b7b",
+      "filename": "RO5_LA_Data_2024-25_data_by_LA.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 849141,
+    "filename": "RO5_LA_Data_2024-25_data_by_LA.ods",
+    "hoc_paper_number": "",
+    "id": "9339833",
+    "isbn": "",
+    "title": "Revenue outturn cultural, environmental, regulatory and planning services (RO5) 2024 to 2025",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a291b72db0592d809052b7b/RO5_LA_Data_2024-25_data_by_LA.ods"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a291b813b15d05a7ce31ffd",
+      "filename": "RO6_LA_Data_2024-25_data_by_LA.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 671505,
+    "filename": "RO6_LA_Data_2024-25_data_by_LA.ods",
+    "hoc_paper_number": "",
+    "id": "9339834",
+    "isbn": "",
+    "title": "Revenue outturn central, protective and other services (RO6) 2024 to 2025",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a291b813b15d05a7ce31ffd/RO6_LA_Data_2024-25_data_by_LA.ods"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a291b90e371d9d2c0052b84",
+      "filename": "TSR_LA_Data_2024-25_data_by_LA.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 201233,
+    "filename": "TSR_LA_Data_2024-25_data_by_LA.ods",
+    "hoc_paper_number": "",
+    "id": "9339835",
+    "isbn": "",
+    "title": "Revenue outturn trading account services (TSR) 2024 to 2025",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a291b90e371d9d2c0052b84/TSR_LA_Data_2024-25_data_by_LA.ods"
+   }
+  ],
+  "body": "<div class=\"govspeak\"><p>The data in the above spreadsheets have been used to compile the outturn of local authority revenue expenditure and financing for the financial year April 2024 to March 2025.</p>\n</div>",
+  "change_history": [
+   {
+    "note": "Update to include 410 out of 411 local authorities.",
+    "public_timestamp": "2026-06-11T08:30:09Z"
+   },
+   {
+    "note": "Updated tables.",
+    "public_timestamp": "2025-12-04T09:30:05Z"
+   },
+   {
+    "note": "Tables RO2, RO6, RG, RS and RSX updated following a revision from one local authority.",
+    "public_timestamp": "2025-10-20T15:32:37Z"
+   },
+   {
+    "note": "Added revised RSX and RO3 tables.",
+    "public_timestamp": "2025-10-02T08:50:12Z"
+   },
+   {
+    "note": "First published.",
+    "public_timestamp": "2025-09-17T23:00:00Z"
+   }
+  ],
+  "document_type_label": "Accredited official statistics",
+  "emphasised_organisations": [
+   "1390d07f-12b3-4f55-9dd5-fec5fd9e3649"
+  ],
+  "featured_attachments": [
+   "9339825",
+   "9339826",
+   "9339827",
+   "9339828",
+   "9339829",
+   "9339830",
+   "9339831",
+   "9339832",
+   "9339833",
+   "9339834",
+   "9339835"
+  ],
+  "first_public_at": "2025-09-18T00:00:00.000+01:00",
+  "national_applicability": {
+   "england": {
+    "applicable": true,
+    "label": "England"
+   },
+   "northern_ireland": {
+    "alternative_url": "",
+    "applicable": false,
+    "label": "Northern Ireland"
+   },
+   "scotland": {
+    "alternative_url": "",
+    "applicable": false,
+    "label": "Scotland"
+   },
+   "wales": {
+    "alternative_url": "",
+    "applicable": false,
+    "label": "Wales"
+   }
+  },
+  "political": false,
+  "tags": {
+   "browse_pages": []
+  }
+ },
+ "document_type": "national_statistics",
+ "first_published_at": "2025-09-18T00:00:00+01:00",
+ "links": {
+  "available_translations": [
+   {
+    "api_path": "/api/content/government/statistics/local-authority-revenue-expenditure-and-financing-england-2024-to-2025-individual-local-authority-data-outturn",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/local-authority-revenue-expenditure-and-financing-england-2024-to-2025-individual-local-authority-data-outturn",
+    "base_path": "/government/statistics/local-authority-revenue-expenditure-and-financing-england-2024-to-2025-individual-local-authority-data-outturn",
+    "content_id": "60fbffb8-f3f3-4f9c-a00d-0af269bcb442",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-06-11T08:30:09Z",
+    "schema_name": "publication",
+    "title": "Local authority revenue expenditure and financing England: 2024 to 2025 individual local authority data - outturn",
+    "web_url": "https://www.gov.uk/government/statistics/local-authority-revenue-expenditure-and-financing-england-2024-to-2025-individual-local-authority-data-outturn",
+    "withdrawn": false
+   }
+  ],
+  "document_collections": [
+   {
+    "api_path": "/api/content/government/collections/local-authority-revenue-expenditure-and-financing",
+    "api_url": "https://www.gov.uk/api/content/government/collections/local-authority-revenue-expenditure-and-financing",
+    "base_path": "/government/collections/local-authority-revenue-expenditure-and-financing",
+    "content_id": "5eb6318c-7631-11e4-a3cb-005056011aef",
+    "document_type": "document_collection",
+    "links": {
+     "documents": [
+      {
+       "api_path": "/api/content/government/statistics/local-authority-revenue-expenditure-and-financing-england-2024-to-2025-individual-local-authority-data-outturn",
+       "api_url": "https://www.gov.uk/api/content/government/statistics/local-authority-revenue-expenditure-and-financing-england-2024-to-2025-individual-local-authority-data-outturn",
+       "base_path": "/government/statistics/local-authority-revenue-expenditure-and-financing-england-2024-to-2025-individual-local-authority-data-outturn",
+       "content_id": "60fbffb8-f3f3-4f9c-a00d-0af269bcb442",
+       "document_type": "national_statistics",
+       "links": {},
+       "locale": "en",
+       "public_updated_at": "2026-06-11T08:30:09Z",
+       "schema_name": "publication",
+       "title": "Local authority revenue expenditure and financing England: 2024 to 2025 individual local authority data - outturn",
+       "web_url": "https://www.gov.uk/government/statistics/local-authority-revenue-expenditure-and-financing-england-2024-to-2025-individual-local-authority-data-outturn",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "public_updated_at": "2026-09-17T08:30:08Z",
+    "schema_name": "document_collection",
+    "title": "Local authority revenue expenditure and financing",
+    "web_url": "https://www.gov.uk/government/collections/local-authority-revenue-expenditure-and-financing",
+    "withdrawn": false
+   }
+  ],
+  "government": [
+   {
+    "api_path": "/api/content/government/2024-starmer-labour-government",
+    "api_url": "https://www.gov.uk/api/content/government/2024-starmer-labour-government",
+    "base_path": "/government/2024-starmer-labour-government",
+    "content_id": "9dbff654-cdeb-4ebe-9a12-cd4cc20a033e",
+    "details": {
+     "current": false,
+     "ended_on": "2026-07-20T00:00:00+00:00",
+     "started_on": "2024-07-05T00:00:00+00:00"
+    },
+    "document_type": "government",
+    "links": {},
+    "locale": "en",
+    "title": "2024 to 2026 Starmer Labour government",
+    "web_url": "https://www.gov.uk/government/2024-starmer-labour-government"
+   }
+  ],
+  "organisations": [
+   {
+    "analytics_identifier": "D1419",
+    "api_path": "/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "base_path": "/government/organisations/ministry-of-housing-communities-local-government",
+    "content_id": "1390d07f-12b3-4f55-9dd5-fec5fd9e3649",
+    "details": {
+     "acronym": "MHCLG",
+     "brand": "ministry-of-housing-communities-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/668f9d9ea3c2a28abb50cd88/s960_2_Marsham_Street_1_-_960x640.jpg",
+      "url": "https://assets.publishing.service.gov.uk/media/668f9d9eab418ab055592384/s300_2_Marsham_Street_1_-_960x640.jpg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Ministry of Housing,<br/>Communities &amp; <br/>Local Government"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Ministry of Housing, Communities and Local Government",
+    "web_url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government",
+    "withdrawn": false
+   }
+  ],
+  "original_primary_publishing_organisation": [
+   {
+    "analytics_identifier": "D1419",
+    "api_path": "/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "base_path": "/government/organisations/ministry-of-housing-communities-local-government",
+    "content_id": "1390d07f-12b3-4f55-9dd5-fec5fd9e3649",
+    "details": {
+     "acronym": "MHCLG",
+     "brand": "ministry-of-housing-communities-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/668f9d9ea3c2a28abb50cd88/s960_2_Marsham_Street_1_-_960x640.jpg",
+      "url": "https://assets.publishing.service.gov.uk/media/668f9d9eab418ab055592384/s300_2_Marsham_Street_1_-_960x640.jpg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Ministry of Housing,<br/>Communities &amp; <br/>Local Government"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Ministry of Housing, Communities and Local Government",
+    "web_url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government",
+    "withdrawn": false
+   }
+  ],
+  "primary_publishing_organisation": [
+   {
+    "analytics_identifier": "D1419",
+    "api_path": "/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "base_path": "/government/organisations/ministry-of-housing-communities-local-government",
+    "content_id": "1390d07f-12b3-4f55-9dd5-fec5fd9e3649",
+    "details": {
+     "acronym": "MHCLG",
+     "brand": "ministry-of-housing-communities-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/668f9d9ea3c2a28abb50cd88/s960_2_Marsham_Street_1_-_960x640.jpg",
+      "url": "https://assets.publishing.service.gov.uk/media/668f9d9eab418ab055592384/s300_2_Marsham_Street_1_-_960x640.jpg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Ministry of Housing,<br/>Communities &amp; <br/>Local Government"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Ministry of Housing, Communities and Local Government",
+    "web_url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government",
+    "withdrawn": false
+   }
+  ],
+  "taxons": [
+   {
+    "api_path": "/api/content/regional-and-local-government/local-government",
+    "api_url": "https://www.gov.uk/api/content/regional-and-local-government/local-government",
+    "base_path": "/regional-and-local-government/local-government",
+    "content_id": "c914fd40-dd0a-45c4-a6ff-bce0cda31bde",
+    "details": {
+     "internal_name": "Local government (merged, Level 2)",
+     "notes_for_editors": "",
+     "visible_to_departmental_editors": false
+    },
+    "document_type": "taxon",
+    "links": {
+     "parent_taxons": [
+      {
+       "api_path": "/api/content/regional-and-local-government",
+       "api_url": "https://www.gov.uk/api/content/regional-and-local-government",
+       "base_path": "/regional-and-local-government",
+       "content_id": "503c5bc7-809a-47b9-83e2-bd0c212dbabb",
+       "description": "",
+       "details": {
+        "internal_name": "Regional and local government",
+        "notes_for_editors": "",
+        "visible_to_departmental_editors": true
+       },
+       "document_type": "taxon",
+       "links": {
+        "root_taxon": [
+         {
+          "api_path": "/api/content/",
+          "api_url": "https://www.gov.uk/api/content/",
+          "base_path": "/",
+          "content_id": "f3bbdec2-0e62-4520-a7fd-6ffd5d36e03a",
+          "document_type": "homepage",
+          "links": {},
+          "locale": "en",
+          "public_updated_at": "2026-02-18T13:00:23Z",
+          "schema_name": "homepage",
+          "title": "GOV.UK homepage",
+          "web_url": "https://www.gov.uk/",
+          "withdrawn": false
+         }
+        ]
+       },
+       "locale": "en",
+       "phase": "live",
+       "public_updated_at": "2018-09-16T20:30:05Z",
+       "schema_name": "taxon",
+       "title": "Regional and local government",
+       "web_url": "https://www.gov.uk/regional-and-local-government",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "phase": "live",
+    "public_updated_at": "2018-08-22T13:09:38Z",
+    "schema_name": "taxon",
+    "title": "Local government",
+    "web_url": "https://www.gov.uk/regional-and-local-government/local-government",
+    "withdrawn": false
+   }
+  ]
+ },
+ "locale": "en",
+ "phase": "live",
+ "public_updated_at": "2026-06-11T09:30:09+01:00",
+ "publishing_app": "whitehall",
+ "publishing_request_id": "21-1781189461.982-10.13.22.175-2893",
+ "publishing_scheduled_at": "2026-06-11T09:30:00+01:00",
+ "rendering_app": "frontend",
+ "scheduled_publishing_delay_seconds": 10,
+ "schema_name": "publication",
+ "title": "Local authority revenue expenditure and financing England: 2024 to 2025 individual local authority data - outturn",
+ "updated_at": "2026-10-13T16:25:32+01:00",
+ "withdrawn_notice": {}
+}

@@ -1,0 +1,29 @@
+{
+ "analytics_identifier": null,
+ "base_path": "/government/statistics/fly-tipping-in-england",
+ "content_id": null,
+ "description": null,
+ "details": {},
+ "document_type": "redirect",
+ "first_published_at": "2025-11-24T17:19:37+00:00",
+ "links": {},
+ "locale": "en",
+ "phase": "live",
+ "public_updated_at": "2025-11-24T17:19:37+00:00",
+ "publishing_app": "whitehall",
+ "publishing_request_id": null,
+ "publishing_scheduled_at": "2025-02-26T09:30:00+00:00",
+ "redirects": [
+  {
+   "destination": "/government/statistics/deleted-fly-tipping-statistics-for-england",
+   "path": "/government/statistics/fly-tipping-in-england",
+   "type": "exact"
+  }
+ ],
+ "rendering_app": null,
+ "scheduled_publishing_delay_seconds": 8,
+ "schema_name": "redirect",
+ "title": null,
+ "updated_at": "2025-11-24T17:19:37+00:00",
+ "withdrawn_notice": {}
+}

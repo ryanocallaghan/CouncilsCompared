@@ -1,0 +1,422 @@
+{
+ "analytics_identifier": null,
+ "base_path": "/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+ "content_id": "e918c590-24b4-4186-b702-633802c18dc5",
+ "description": "Details of the level of Council Tax set by local authorities in England for financial year 2026 to 2027.",
+ "details": {
+  "attachments": [
+   {
+    "attachment_type": "html",
+    "command_paper_number": "",
+    "hoc_paper_number": "",
+    "id": "9284197",
+    "isbn": "",
+    "title": "Council Tax levels set by local authorities in England 2026 to 2027",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027"
+   },
+   {
+    "attachment_type": "html",
+    "command_paper_number": "",
+    "hoc_paper_number": "",
+    "id": "9284198",
+    "isbn": "",
+    "title": "Council Tax levels set by local authorities in England 2026 to 2027: Technical Notes",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027-technical-notes"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "69de1fa63e81003ae0422508",
+      "filename": "Tables_1-9_2026-27.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 99083,
+    "filename": "Tables_1-9_2026-27.ods",
+    "hoc_paper_number": "",
+    "id": "9284199",
+    "isbn": "",
+    "title": "Council Tax levels set by local authorities in England 2026 to 2027: Tables 1 to 9",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/69de1fa63e81003ae0422508/Tables_1-9_2026-27.ods"
+   },
+   {
+    "accessible": true,
+    "alternative_format_contact_email": "alternativeformats@communities.gov.uk",
+    "assets": [
+     {
+      "asset_manager_id": "6a02eeeccd2e0e8b5b20b449",
+      "filename": "Table_10_2026-27.ods"
+     }
+    ],
+    "attachment_type": "file",
+    "command_paper_number": "",
+    "content_type": "application/vnd.oasis.opendocument.spreadsheet",
+    "file_size": 279362,
+    "filename": "Table_10_2026-27.ods",
+    "hoc_paper_number": "",
+    "id": "9284200",
+    "isbn": "",
+    "title": "Council Tax levels set by local authorities in England 2026 to 2027: Table 10 Local Authority Level Data",
+    "unique_reference": "",
+    "unnumbered_command_paper": false,
+    "unnumbered_hoc_paper": false,
+    "url": "https://assets.publishing.service.gov.uk/media/6a02eeeccd2e0e8b5b20b449/Table_10_2026-27.ods"
+   }
+  ],
+  "body": "<div class=\"govspeak\"><p>Information on Council Tax levels set by local authorities in England and associated information for the financial year 2026\u00a0to 2027.</p>\n</div>",
+  "change_history": [
+   {
+    "note": "First published.",
+    "public_timestamp": "2026-03-25T09:30:00Z"
+   }
+  ],
+  "document_type_label": "Accredited official statistics",
+  "emphasised_organisations": [
+   "1390d07f-12b3-4f55-9dd5-fec5fd9e3649"
+  ],
+  "featured_attachments": [
+   "9284197",
+   "9284198",
+   "9284199",
+   "9284200"
+  ],
+  "first_public_at": "2026-03-25T09:30:00.000+00:00",
+  "national_applicability": {
+   "england": {
+    "applicable": true,
+    "label": "England"
+   },
+   "northern_ireland": {
+    "alternative_url": "",
+    "applicable": false,
+    "label": "Northern Ireland"
+   },
+   "scotland": {
+    "alternative_url": "https://www.gov.scot/collections/local-government-finance-statistics/",
+    "applicable": false,
+    "label": "Scotland"
+   },
+   "wales": {
+    "alternative_url": "https://www.gov.wales/council-tax-levels",
+    "applicable": false,
+    "label": "Wales"
+   }
+  },
+  "political": false,
+  "tags": {
+   "browse_pages": []
+  }
+ },
+ "document_type": "national_statistics",
+ "first_published_at": "2026-03-25T09:30:00+00:00",
+ "links": {
+  "available_translations": [
+   {
+    "api_path": "/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+    "base_path": "/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+    "content_id": "e918c590-24b4-4186-b702-633802c18dc5",
+    "document_type": "national_statistics",
+    "links": {},
+    "locale": "en",
+    "public_updated_at": "2026-03-25T09:30:00Z",
+    "schema_name": "publication",
+    "title": "Council Tax levels set by local authorities in England 2026 to 2027",
+    "web_url": "https://www.gov.uk/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+    "withdrawn": false
+   }
+  ],
+  "children": [
+   {
+    "api_path": "/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027-technical-notes",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027-technical-notes",
+    "base_path": "/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027-technical-notes",
+    "content_id": "abd988b5-f6d9-48a3-a2cf-9eb14a0e93b2",
+    "document_type": "html_publication",
+    "links": {
+     "parent": [
+      {
+       "api_path": "/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "api_url": "https://www.gov.uk/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "base_path": "/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "content_id": "e918c590-24b4-4186-b702-633802c18dc5",
+       "document_type": "national_statistics",
+       "links": {},
+       "locale": "en",
+       "public_updated_at": "2026-03-25T09:30:00Z",
+       "schema_name": "publication",
+       "title": "Council Tax levels set by local authorities in England 2026 to 2027",
+       "web_url": "https://www.gov.uk/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "public_updated_at": "2026-03-25T09:30:00Z",
+    "schema_name": "html_publication",
+    "title": "Council Tax levels set by local authorities in England 2026 to 2027: Technical Notes",
+    "web_url": "https://www.gov.uk/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027-technical-notes",
+    "withdrawn": false
+   },
+   {
+    "api_path": "/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+    "api_url": "https://www.gov.uk/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+    "base_path": "/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+    "content_id": "3f84351a-b17d-4946-8980-8a910e2ed721",
+    "document_type": "html_publication",
+    "links": {
+     "parent": [
+      {
+       "api_path": "/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "api_url": "https://www.gov.uk/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "base_path": "/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "content_id": "e918c590-24b4-4186-b702-633802c18dc5",
+       "document_type": "national_statistics",
+       "links": {},
+       "locale": "en",
+       "public_updated_at": "2026-03-25T09:30:00Z",
+       "schema_name": "publication",
+       "title": "Council Tax levels set by local authorities in England 2026 to 2027",
+       "web_url": "https://www.gov.uk/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "public_updated_at": "2026-03-25T09:30:00Z",
+    "schema_name": "html_publication",
+    "title": "Council Tax levels set by local authorities in England 2026 to 2027",
+    "web_url": "https://www.gov.uk/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+    "withdrawn": false
+   }
+  ],
+  "document_collections": [
+   {
+    "api_path": "/api/content/government/collections/council-tax-statistics",
+    "api_url": "https://www.gov.uk/api/content/government/collections/council-tax-statistics",
+    "base_path": "/government/collections/council-tax-statistics",
+    "content_id": "5eb62b2f-7631-11e4-a3cb-005056011aef",
+    "document_type": "document_collection",
+    "links": {
+     "documents": [
+      {
+       "api_path": "/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "api_url": "https://www.gov.uk/api/content/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "base_path": "/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "content_id": "e918c590-24b4-4186-b702-633802c18dc5",
+       "document_type": "national_statistics",
+       "links": {},
+       "locale": "en",
+       "public_updated_at": "2026-03-25T09:30:00Z",
+       "schema_name": "publication",
+       "title": "Council Tax levels set by local authorities in England 2026 to 2027",
+       "web_url": "https://www.gov.uk/government/statistics/council-tax-levels-set-by-local-authorities-in-england-2026-to-2027",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "public_updated_at": "2026-06-24T08:30:02Z",
+    "schema_name": "document_collection",
+    "title": "Council Tax statistics",
+    "web_url": "https://www.gov.uk/government/collections/council-tax-statistics",
+    "withdrawn": false
+   }
+  ],
+  "government": [
+   {
+    "api_path": "/api/content/government/2024-starmer-labour-government",
+    "api_url": "https://www.gov.uk/api/content/government/2024-starmer-labour-government",
+    "base_path": "/government/2024-starmer-labour-government",
+    "content_id": "9dbff654-cdeb-4ebe-9a12-cd4cc20a033e",
+    "details": {
+     "current": false,
+     "ended_on": "2026-07-20T00:00:00+00:00",
+     "started_on": "2024-07-05T00:00:00+00:00"
+    },
+    "document_type": "government",
+    "links": {},
+    "locale": "en",
+    "title": "2024 to 2026 Starmer Labour government",
+    "web_url": "https://www.gov.uk/government/2024-starmer-labour-government"
+   }
+  ],
+  "organisations": [
+   {
+    "analytics_identifier": "D1419",
+    "api_path": "/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "base_path": "/government/organisations/ministry-of-housing-communities-local-government",
+    "content_id": "1390d07f-12b3-4f55-9dd5-fec5fd9e3649",
+    "details": {
+     "acronym": "MHCLG",
+     "brand": "ministry-of-housing-communities-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/668f9d9ea3c2a28abb50cd88/s960_2_Marsham_Street_1_-_960x640.jpg",
+      "url": "https://assets.publishing.service.gov.uk/media/668f9d9eab418ab055592384/s300_2_Marsham_Street_1_-_960x640.jpg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Ministry of Housing,<br/>Communities &amp; <br/>Local Government"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Ministry of Housing, Communities and Local Government",
+    "web_url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government",
+    "withdrawn": false
+   }
+  ],
+  "primary_publishing_organisation": [
+   {
+    "analytics_identifier": "D1419",
+    "api_path": "/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "api_url": "https://www.gov.uk/api/content/government/organisations/ministry-of-housing-communities-local-government",
+    "base_path": "/government/organisations/ministry-of-housing-communities-local-government",
+    "content_id": "1390d07f-12b3-4f55-9dd5-fec5fd9e3649",
+    "details": {
+     "acronym": "MHCLG",
+     "brand": "ministry-of-housing-communities-local-government",
+     "default_news_image": {
+      "high_resolution_url": "https://assets.publishing.service.gov.uk/media/668f9d9ea3c2a28abb50cd88/s960_2_Marsham_Street_1_-_960x640.jpg",
+      "url": "https://assets.publishing.service.gov.uk/media/668f9d9eab418ab055592384/s300_2_Marsham_Street_1_-_960x640.jpg"
+     },
+     "logo": {
+      "crest": "single-identity",
+      "formatted_title": "Ministry of Housing,<br/>Communities &amp; <br/>Local Government"
+     },
+     "organisation_govuk_status": {
+      "status": "live",
+      "updated_at": null,
+      "url": null
+     }
+    },
+    "document_type": "organisation",
+    "links": {},
+    "locale": "en",
+    "schema_name": "organisation",
+    "title": "Ministry of Housing, Communities and Local Government",
+    "web_url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government",
+    "withdrawn": false
+   }
+  ],
+  "taxons": [
+   {
+    "api_path": "/api/content/regional-and-local-government/local-government-council-tax",
+    "api_url": "https://www.gov.uk/api/content/regional-and-local-government/local-government-council-tax",
+    "base_path": "/regional-and-local-government/local-government-council-tax",
+    "content_id": "107b4fd7-fef4-4a86-9796-2967c95f3f3c",
+    "details": {
+     "internal_name": "Council Tax [T]",
+     "notes_for_editors": "",
+     "visible_to_departmental_editors": false
+    },
+    "document_type": "taxon",
+    "links": {
+     "parent_taxons": [
+      {
+       "api_path": "/api/content/regional-and-local-government/local-government",
+       "api_url": "https://www.gov.uk/api/content/regional-and-local-government/local-government",
+       "base_path": "/regional-and-local-government/local-government",
+       "content_id": "c914fd40-dd0a-45c4-a6ff-bce0cda31bde",
+       "details": {
+        "internal_name": "Local government (merged, Level 2)",
+        "notes_for_editors": "",
+        "visible_to_departmental_editors": false
+       },
+       "document_type": "taxon",
+       "links": {
+        "parent_taxons": [
+         {
+          "api_path": "/api/content/regional-and-local-government",
+          "api_url": "https://www.gov.uk/api/content/regional-and-local-government",
+          "base_path": "/regional-and-local-government",
+          "content_id": "503c5bc7-809a-47b9-83e2-bd0c212dbabb",
+          "description": "",
+          "details": {
+           "internal_name": "Regional and local government",
+           "notes_for_editors": "",
+           "visible_to_departmental_editors": true
+          },
+          "document_type": "taxon",
+          "links": {
+           "root_taxon": [
+            {
+             "api_path": "/api/content/",
+             "api_url": "https://www.gov.uk/api/content/",
+             "base_path": "/",
+             "content_id": "f3bbdec2-0e62-4520-a7fd-6ffd5d36e03a",
+             "document_type": "homepage",
+             "links": {},
+             "locale": "en",
+             "public_updated_at": "2026-02-18T13:00:23Z",
+             "schema_name": "homepage",
+             "title": "GOV.UK homepage",
+             "web_url": "https://www.gov.uk/",
+             "withdrawn": false
+            }
+           ]
+          },
+          "locale": "en",
+          "phase": "live",
+          "public_updated_at": "2018-09-16T20:30:05Z",
+          "schema_name": "taxon",
+          "title": "Regional and local government",
+          "web_url": "https://www.gov.uk/regional-and-local-government",
+          "withdrawn": false
+         }
+        ]
+       },
+       "locale": "en",
+       "phase": "live",
+       "public_updated_at": "2018-08-22T13:09:38Z",
+       "schema_name": "taxon",
+       "title": "Local government",
+       "web_url": "https://www.gov.uk/regional-and-local-government/local-government",
+       "withdrawn": false
+      }
+     ]
+    },
+    "locale": "en",
+    "phase": "live",
+    "public_updated_at": "2018-08-22T13:09:39Z",
+    "schema_name": "taxon",
+    "title": "Council Tax",
+    "web_url": "https://www.gov.uk/regional-and-local-government/local-government-council-tax",
+    "withdrawn": false
+   }
+  ]
+ },
+ "locale": "en",
+ "phase": "live",
+ "public_updated_at": "2026-03-25T09:30:00+00:00",
+ "publishing_app": "whitehall",
+ "publishing_request_id": "21-1778579027.953-10.13.20.175-2684",
+ "publishing_scheduled_at": "2026-03-25T09:30:00+00:00",
+ "rendering_app": "frontend",
+ "scheduled_publishing_delay_seconds": 5,
+ "schema_name": "publication",
+ "title": "Council Tax levels set by local authorities in England 2026 to 2027",
+ "updated_at": "2026-10-13T16:26:57+01:00",
+ "withdrawn_notice": {}
+}
