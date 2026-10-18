@@ -1,0 +1,907 @@
+{
+ "extra": {
+  "households": {
+   "E06000001": 42429,
+   "E06000002": 65252,
+   "E06000003": 63406,
+   "E06000004": 87826,
+   "E06000005": 51601,
+   "E06000006": 57910,
+   "E06000007": 92717,
+   "E06000008": 60192,
+   "E06000009": 65135,
+   "E06000010": 117977,
+   "E06000011": 161429,
+   "E06000012": 71043,
+   "E06000013": 74809,
+   "E06000014": 88083,
+   "E06000015": 109180,
+   "E06000016": 135343,
+   "E06000017": 17547,
+   "E06000018": 130011,
+   "E06000019": 87185,
+   "E06000020": 82223,
+   "E06000021": 112817,
+   "E06000022": 83659,
+   "E06000023": 201662,
+   "E06000024": 99403,
+   "E06000025": 127132,
+   "E06000026": 118422,
+   "E06000027": 65281,
+   "E06000030": 100557,
+   "E06000031": 88420,
+   "E06000032": 82844,
+   "E06000033": 80225,
+   "E06000034": 68622,
+   "E06000035": 115442,
+   "E06000036": 53702,
+   "E06000037": 68716,
+   "E06000038": 70106,
+   "E06000039": 54514,
+   "E06000040": 63219,
+   "E06000041": 75483,
+   "E06000042": 122193,
+   "E06000043": 125030,
+   "E06000044": 88753,
+   "E06000045": 108363,
+   "E06000046": 67240,
+   "E06000047": 245488,
+   "E06000049": 187924,
+   "E06000050": 164868,
+   "E06000051": 149459,
+   "E06000052": 266641,
+   "E06000054": 228148,
+   "E06000055": 80598,
+   "E06000056": 132520,
+   "E06000057": 155975,
+   "E06000058": 179469,
+   "E06000059": 179430,
+   "E06000060": 232563,
+   "E06000061": 157436,
+   "E06000062": 181951,
+   "E06000063": 129392,
+   "E06000064": 106655,
+   "E06000065": 290375,
+   "E06000066": 264686,
+   "E08000001": 122630,
+   "E08000002": 82363,
+   "E08000003": 233427,
+   "E08000004": 95942,
+   "E08000005": 94201,
+   "E08000006": 125654,
+   "E08000007": 131041,
+   "E08000008": 102574,
+   "E08000009": 99040,
+   "E08000010": 150404,
+   "E08000011": 69386,
+   "E08000012": 219378,
+   "E08000013": 83700,
+   "E08000014": 126549,
+   "E08000015": 147402,
+   "E08000016": 112070,
+   "E08000017": 138498,
+   "E08000018": 117123,
+   "E08000019": 246636,
+   "E08000021": 131685,
+   "E08000022": 100566,
+   "E08000023": 69799,
+   "E08000024": 126051,
+   "E08000025": 438177,
+   "E08000026": 147176,
+   "E08000027": 140328,
+   "E08000028": 133894,
+   "E08000029": 91540,
+   "E08000030": 115614,
+   "E08000031": 110112,
+   "E08000032": 220654,
+   "E08000033": 92832,
+   "E08000034": 185982,
+   "E08000035": 357068,
+   "E08000036": 161956,
+   "E08000037": 90240,
+   "E09000002": 76836,
+   "E09000003": 156679,
+   "E09000004": 98370,
+   "E09000005": 122803,
+   "E09000006": 138572,
+   "E09000007": 101608,
+   "E09000008": 158704,
+   "E09000009": 139747,
+   "E09000010": 122009,
+   "E09000011": 121752,
+   "E09000012": 112483,
+   "E09000013": 84945,
+   "E09000014": 107080,
+   "E09000015": 93134,
+   "E09000016": 104736,
+   "E09000017": 116641,
+   "E09000018": 108379,
+   "E09000019": 102912,
+   "E09000020": 71121,
+   "E09000021": 68435,
+   "E09000022": 137502,
+   "E09000023": 125846,
+   "E09000024": 83819,
+   "E09000025": 126480,
+   "E09000026": 107833,
+   "E09000027": 82781,
+   "E09000028": 140319,
+   "E09000029": 85146,
+   "E09000030": 140545,
+   "E09000031": 106304,
+   "E09000032": 143863,
+   "E09000033": 103277
+  }
+ },
+ "files": [
+  "https://assets.publishing.service.gov.uk/media/6a82eeb83bd75b81e2329a7a/Statutory_Homelessness_Detailed_Local_Authority_Data_202603.ods"
+ ],
+ "id": "homelessness",
+ "notes": [],
+ "period": "January to March 2026",
+ "published": "",
+ "title": "MHCLG: Statutory homelessness, January to March 2026",
+ "trends": {},
+ "url": "https://www.gov.uk/government/statistical-data-sets/live-tables-on-homelessness",
+ "values": {
+  "E06000001": {
+   "prevention": 75.6,
+   "relief": 50.7,
+   "ta_rate": 0.4
+  },
+  "E06000002": {
+   "prevention": 67.1,
+   "relief": 61.7,
+   "ta_long": 0.0,
+   "ta_rate": 1.5
+  },
+  "E06000003": {
+   "prevention": 90.0,
+   "relief": 81.5
+  },
+  "E06000004": {
+   "prevention": 74.2,
+   "relief": 67.3,
+   "ta_rate": 0.6
+  },
+  "E06000005": {
+   "prevention": 47.1,
+   "relief": 45.7,
+   "ta_long": 5.6,
+   "ta_rate": 1.5
+  },
+  "E06000006": {
+   "prevention": 58.3,
+   "relief": 19.4,
+   "ta_long": 0.0,
+   "ta_rate": 2.1
+  },
+  "E06000007": {
+   "prevention": 44.1,
+   "relief": 33.0,
+   "ta_long": 4.5,
+   "ta_rate": 2.1
+  },
+  "E06000008": {
+   "prevention": 79.2,
+   "relief": 71.3,
+   "ta_long": 0.0,
+   "ta_rate": 0.6
+  },
+  "E06000009": {
+   "prevention": 49.0,
+   "relief": 43.5,
+   "ta_long": 0.0,
+   "ta_rate": 2.0
+  },
+  "E06000010": {
+   "prevention": 52.8,
+   "relief": 31.1,
+   "ta_long": 0.8,
+   "ta_rate": 1.9
+  },
+  "E06000011": {
+   "prevention": 10.7,
+   "relief": 18.2,
+   "ta_long": 8.5,
+   "ta_rate": 1.8
+  },
+  "E06000012": {
+   "prevention": 48.2,
+   "relief": 41.9
+  },
+  "E06000013": {
+   "prevention": 66.4,
+   "relief": 42.3,
+   "ta_long": 10.5,
+   "ta_rate": 1.4
+  },
+  "E06000014": {
+   "prevention": 46.5,
+   "relief": 31.5,
+   "ta_long": 0.0,
+   "ta_rate": 0.7
+  },
+  "E06000015": {
+   "prevention": 58.2,
+   "relief": 42.0,
+   "ta_long": 14.2,
+   "ta_rate": 4.9
+  },
+  "E06000016": {
+   "prevention": 47.0,
+   "relief": 15.7,
+   "ta_long": 3.7,
+   "ta_rate": 8.6
+  },
+  "E06000017": {
+   "prevention": 33.3,
+   "relief": 37.5,
+   "ta_rate": 1.4
+  },
+  "E06000018": {
+   "prevention": 48.3,
+   "relief": 41.1,
+   "ta_long": 10.8,
+   "ta_rate": 5.3
+  },
+  "E06000019": {
+   "prevention": 56.8,
+   "relief": 14.9,
+   "ta_long": 13.6,
+   "ta_rate": 2.2
+  },
+  "E06000020": {
+   "prevention": 38.5,
+   "relief": 55.9,
+   "ta_long": 8.8,
+   "ta_rate": 0.8
+  },
+  "E06000021": {
+   "prevention": 83.8,
+   "relief": 64.3,
+   "ta_long": 0.0,
+   "ta_rate": 0.7
+  },
+  "E06000022": {
+   "prevention": 56.2,
+   "relief": 17.7,
+   "ta_long": 0.0,
+   "ta_rate": 1.0
+  },
+  "E06000024": {
+   "prevention": 74.0,
+   "relief": 54.9,
+   "ta_long": 12.5,
+   "ta_rate": 0.8
+  },
+  "E06000025": {
+   "prevention": 67.8,
+   "relief": 44.8,
+   "ta_long": 4.2,
+   "ta_rate": 2.0
+  },
+  "E06000026": {
+   "prevention": 47.6,
+   "relief": 40.8,
+   "ta_long": 7.9,
+   "ta_rate": 2.9
+  },
+  "E06000027": {
+   "prevention": 45.2,
+   "relief": 25.3,
+   "ta_long": 0.0,
+   "ta_rate": 2.6
+  },
+  "E06000030": {
+   "prevention": 49.0,
+   "relief": 38.5,
+   "ta_long": 17.1,
+   "ta_rate": 3.5
+  },
+  "E06000031": {
+   "prevention": 47.4,
+   "relief": 25.3,
+   "ta_long": 16.8,
+   "ta_rate": 3.7
+  },
+  "E06000032": {
+   "prevention": 75.0,
+   "relief": 51.7,
+   "ta_long": 65.2,
+   "ta_rate": 11.0
+  },
+  "E06000033": {
+   "prevention": 63.0,
+   "relief": 30.0,
+   "ta_long": 26.4,
+   "ta_rate": 5.3
+  },
+  "E06000034": {
+   "prevention": 34.6,
+   "relief": 32.5,
+   "ta_long": 27.2,
+   "ta_rate": 9.4
+  },
+  "E06000035": {
+   "prevention": 70.2,
+   "relief": 37.0,
+   "ta_long": 14.6,
+   "ta_rate": 5.4
+  },
+  "E06000036": {
+   "prevention": 67.9,
+   "relief": 23.2,
+   "ta_long": 20.6,
+   "ta_rate": 3.0
+  },
+  "E06000037": {
+   "prevention": 49.3,
+   "relief": 56.9,
+   "ta_long": 25.0,
+   "ta_rate": 2.3
+  },
+  "E06000038": {
+   "prevention": 46.4,
+   "relief": 34.9,
+   "ta_long": 18.8,
+   "ta_rate": 6.2
+  },
+  "E06000040": {
+   "prevention": 18.8,
+   "relief": 12.5,
+   "ta_long": 20.0,
+   "ta_rate": 4.0
+  },
+  "E06000041": {
+   "prevention": 52.5,
+   "relief": 46.5,
+   "ta_long": 0.0,
+   "ta_rate": 1.1
+  },
+  "E06000042": {
+   "prevention": 42.5,
+   "relief": 16.0,
+   "ta_long": 45.8,
+   "ta_rate": 8.4
+  },
+  "E06000043": {
+   "prevention": 63.5,
+   "relief": 16.2,
+   "ta_long": 63.0,
+   "ta_rate": 16.2
+  },
+  "E06000044": {
+   "prevention": 32.7,
+   "relief": 21.9,
+   "ta_long": 2.5,
+   "ta_rate": 6.9
+  },
+  "E06000045": {
+   "prevention": 63.0,
+   "relief": 40.0,
+   "ta_long": 27.5,
+   "ta_rate": 3.8
+  },
+  "E06000046": {
+   "prevention": 63.9,
+   "relief": 29.0,
+   "ta_long": 48.3,
+   "ta_rate": 3.8
+  },
+  "E06000047": {
+   "prevention": 41.0,
+   "relief": 33.4,
+   "ta_long": 3.8,
+   "ta_rate": 0.5
+  },
+  "E06000049": {
+   "prevention": 82.9,
+   "relief": 58.3,
+   "ta_long": 0.0,
+   "ta_rate": 0.3
+  },
+  "E06000050": {
+   "prevention": 46.6,
+   "relief": 33.6,
+   "ta_long": 0.0,
+   "ta_rate": 0.6
+  },
+  "E06000051": {
+   "prevention": 51.0,
+   "relief": 19.7,
+   "ta_long": 5.1,
+   "ta_rate": 1.7
+  },
+  "E06000052": {
+   "prevention": 59.7,
+   "relief": 37.4,
+   "ta_long": 16.7,
+   "ta_rate": 3.3
+  },
+  "E06000054": {
+   "prevention": 54.8,
+   "relief": 43.1,
+   "ta_long": 2.0,
+   "ta_rate": 0.4
+  },
+  "E06000055": {
+   "prevention": 66.0,
+   "relief": 36.9,
+   "ta_long": 22.4,
+   "ta_rate": 11.6
+  },
+  "E06000056": {
+   "prevention": 50.0,
+   "relief": 38.0,
+   "ta_long": 15.4,
+   "ta_rate": 1.8
+  },
+  "E06000057": {
+   "prevention": 34.6,
+   "relief": 39.5,
+   "ta_long": 0.0,
+   "ta_rate": 0.5
+  },
+  "E06000058": {
+   "prevention": 58.0,
+   "relief": 46.7,
+   "ta_long": 15.4,
+   "ta_rate": 2.7
+  },
+  "E06000059": {
+   "prevention": 66.3,
+   "relief": 37.9,
+   "ta_long": 3.4,
+   "ta_rate": 1.1
+  },
+  "E06000060": {
+   "prevention": 40.1,
+   "relief": 20.6,
+   "ta_long": 5.1,
+   "ta_rate": 1.6
+  },
+  "E06000061": {
+   "prevention": 44.9,
+   "relief": 48.2,
+   "ta_long": 17.6,
+   "ta_rate": 1.6
+  },
+  "E06000062": {
+   "prevention": 50.0,
+   "relief": 42.2,
+   "ta_long": 10.2,
+   "ta_rate": 3.7
+  },
+  "E06000063": {
+   "prevention": 48.1,
+   "relief": 35.8,
+   "ta_long": 4.0,
+   "ta_rate": 0.7
+  },
+  "E06000064": {
+   "prevention": 54.9,
+   "relief": 43.2,
+   "ta_long": 0.0,
+   "ta_rate": 0.6
+  },
+  "E06000065": {
+   "prevention": 42.4,
+   "relief": 34.9,
+   "ta_long": 3.7,
+   "ta_rate": 0.9
+  },
+  "E06000066": {
+   "prevention": 37.1,
+   "relief": 22.3,
+   "ta_long": 7.7,
+   "ta_rate": 1.2
+  },
+  "E08000001": {
+   "prevention": 52.5,
+   "relief": 26.0,
+   "ta_long": 2.1,
+   "ta_rate": 1.7
+  },
+  "E08000002": {
+   "prevention": 39.3,
+   "relief": 13.0,
+   "ta_long": 8.9,
+   "ta_rate": 2.9
+  },
+  "E08000003": {
+   "prevention": 60.1,
+   "relief": 14.8,
+   "ta_long": 52.6,
+   "ta_rate": 11.9
+  },
+  "E08000004": {
+   "prevention": 44.7,
+   "relief": 21.0,
+   "ta_long": 26.1,
+   "ta_rate": 5.0
+  },
+  "E08000005": {
+   "prevention": 46.4,
+   "relief": 27.3,
+   "ta_long": 4.7,
+   "ta_rate": 3.3
+  },
+  "E08000006": {
+   "prevention": 56.3,
+   "relief": 34.2,
+   "ta_long": 19.8,
+   "ta_rate": 6.7
+  },
+  "E08000007": {
+   "prevention": 62.8,
+   "relief": 29.5,
+   "ta_long": 0.8,
+   "ta_rate": 1.6
+  },
+  "E08000008": {
+   "prevention": 57.5,
+   "relief": 27.1,
+   "ta_long": 1.4,
+   "ta_rate": 3.8
+  },
+  "E08000009": {
+   "prevention": 40.4,
+   "relief": 27.8,
+   "ta_long": 11.7,
+   "ta_rate": 2.7
+  },
+  "E08000010": {
+   "prevention": 56.1,
+   "relief": 40.9,
+   "ta_long": 0.0,
+   "ta_rate": 1.7
+  },
+  "E08000011": {
+   "prevention": 49.4,
+   "relief": 26.9,
+   "ta_long": 0.0,
+   "ta_rate": 1.4
+  },
+  "E08000012": {
+   "ta_long": 4.1,
+   "ta_rate": 8.4
+  },
+  "E08000013": {
+   "prevention": 51.9,
+   "relief": 52.3,
+   "ta_long": 0.0,
+   "ta_rate": 0.5
+  },
+  "E08000014": {
+   "prevention": 57.1,
+   "relief": 53.5,
+   "ta_long": 1.8,
+   "ta_rate": 1.6
+  },
+  "E08000015": {
+   "prevention": 38.6,
+   "relief": 36.0,
+   "ta_long": 0.0,
+   "ta_rate": 1.3
+  },
+  "E08000016": {
+   "prevention": 80.9,
+   "relief": 72.4,
+   "ta_long": 0.0,
+   "ta_rate": 0.5
+  },
+  "E08000017": {
+   "prevention": 59.1,
+   "relief": 39.0,
+   "ta_long": 0.0,
+   "ta_rate": 0.9
+  },
+  "E08000018": {
+   "prevention": 52.8,
+   "relief": 45.3,
+   "ta_long": 0.0,
+   "ta_rate": 1.5
+  },
+  "E08000019": {
+   "prevention": 40.5,
+   "relief": 26.1,
+   "ta_long": 4.2,
+   "ta_rate": 2.8
+  },
+  "E08000021": {
+   "prevention": 42.1,
+   "relief": 31.5,
+   "ta_long": 3.6,
+   "ta_rate": 1.6
+  },
+  "E08000022": {
+   "prevention": 50.5,
+   "relief": 26.1,
+   "ta_long": 25.0,
+   "ta_rate": 0.7
+  },
+  "E08000023": {
+   "prevention": 55.6,
+   "relief": 36.4,
+   "ta_long": 18.2,
+   "ta_rate": 0.6
+  },
+  "E08000024": {
+   "prevention": 38.9,
+   "relief": 32.4,
+   "ta_long": 6.7,
+   "ta_rate": 1.3
+  },
+  "E08000025": {
+   "prevention": 58.4,
+   "relief": 22.0,
+   "ta_long": 31.6,
+   "ta_rate": 11.9
+  },
+  "E08000026": {
+   "prevention": 52.1,
+   "relief": 29.1,
+   "ta_long": 14.0,
+   "ta_rate": 7.2
+  },
+  "E08000027": {
+   "prevention": 32.7,
+   "relief": 52.4,
+   "ta_long": 0.0,
+   "ta_rate": 0.2
+  },
+  "E08000028": {
+   "prevention": 86.6,
+   "relief": 25.7,
+   "ta_long": 1.0,
+   "ta_rate": 1.7
+  },
+  "E08000029": {
+   "prevention": 67.3,
+   "relief": 35.3,
+   "ta_long": 19.8,
+   "ta_rate": 2.2
+  },
+  "E08000030": {
+   "prevention": 42.9,
+   "relief": 45.3,
+   "ta_long": 6.5,
+   "ta_rate": 1.0
+  },
+  "E08000031": {
+   "prevention": 44.3,
+   "relief": 22.4,
+   "ta_long": 1.5,
+   "ta_rate": 2.2
+  },
+  "E08000032": {
+   "prevention": 68.2,
+   "relief": 41.4,
+   "ta_long": 3.4,
+   "ta_rate": 2.6
+  },
+  "E08000033": {
+   "prevention": 71.0,
+   "relief": 38.8,
+   "ta_long": 0.0,
+   "ta_rate": 1.2
+  },
+  "E08000034": {
+   "prevention": 51.7,
+   "relief": 32.0,
+   "ta_long": 21.6,
+   "ta_rate": 1.9
+  },
+  "E08000035": {
+   "prevention": 67.3,
+   "relief": 22.8,
+   "ta_long": 0.2,
+   "ta_rate": 2.1
+  },
+  "E08000036": {
+   "prevention": 53.7,
+   "relief": 33.5,
+   "ta_long": 0.0,
+   "ta_rate": 1.5
+  },
+  "E08000037": {
+   "prevention": 50.4,
+   "relief": 51.2,
+   "ta_long": 0.0,
+   "ta_rate": 1.4
+  },
+  "E09000002": {
+   "prevention": 29.7,
+   "relief": 51.0,
+   "ta_long": 60.8,
+   "ta_rate": 13.1
+  },
+  "E09000003": {
+   "prevention": 54.8,
+   "relief": 32.3,
+   "ta_long": 49.2,
+   "ta_rate": 19.3
+  },
+  "E09000004": {
+   "prevention": 67.5,
+   "relief": 71.2,
+   "ta_long": 76.2,
+   "ta_rate": 2.8
+  },
+  "E09000005": {
+   "prevention": 29.0,
+   "relief": 32.6,
+   "ta_long": 51.2,
+   "ta_rate": 19.9
+  },
+  "E09000006": {
+   "prevention": 47.9,
+   "relief": 36.6,
+   "ta_long": 58.7,
+   "ta_rate": 11.7
+  },
+  "E09000007": {
+   "prevention": 50.4,
+   "relief": 31.6,
+   "ta_long": 40.0,
+   "ta_rate": 13.3
+  },
+  "E09000008": {
+   "prevention": 12.3,
+   "relief": 17.6,
+   "ta_long": 63.4,
+   "ta_rate": 20.4
+  },
+  "E09000009": {
+   "prevention": 50.0,
+   "relief": 37.4,
+   "ta_long": 77.7,
+   "ta_rate": 21.2
+  },
+  "E09000010": {
+   "prevention": 69.3,
+   "relief": 51.2,
+   "ta_long": 63.7,
+   "ta_rate": 25.3
+  },
+  "E09000011": {
+   "prevention": 51.5,
+   "relief": 41.8,
+   "ta_long": 45.5,
+   "ta_rate": 15.5
+  },
+  "E09000012": {
+   "prevention": 56.0,
+   "relief": 23.5,
+   "ta_long": 61.9,
+   "ta_rate": 32.8
+  },
+  "E09000013": {
+   "prevention": 41.5,
+   "relief": 32.9,
+   "ta_long": 62.6,
+   "ta_rate": 17.1
+  },
+  "E09000014": {
+   "prevention": 51.7,
+   "relief": 26.0,
+   "ta_long": 69.0,
+   "ta_rate": 25.3
+  },
+  "E09000015": {
+   "prevention": 56.9,
+   "relief": 52.5,
+   "ta_long": 52.3,
+   "ta_rate": 15.9
+  },
+  "E09000016": {
+   "prevention": 51.7,
+   "relief": 41.0,
+   "ta_long": 63.0,
+   "ta_rate": 12.6
+  },
+  "E09000017": {
+   "prevention": 38.7,
+   "relief": 43.8,
+   "ta_long": 42.9,
+   "ta_rate": 13.5
+  },
+  "E09000018": {
+   "prevention": 29.1,
+   "relief": 18.1,
+   "ta_long": 14.1,
+   "ta_rate": 4.8
+  },
+  "E09000019": {
+   "prevention": 52.5,
+   "relief": 33.1,
+   "ta_long": 41.1,
+   "ta_rate": 19.7
+  },
+  "E09000020": {
+   "prevention": 64.3,
+   "relief": 64.5,
+   "ta_long": 82.0,
+   "ta_rate": 25.4
+  },
+  "E09000021": {
+   "prevention": 60.9,
+   "relief": 18.7,
+   "ta_long": 72.3,
+   "ta_rate": 12.4
+  },
+  "E09000022": {
+   "prevention": 86.1,
+   "relief": 31.6,
+   "ta_long": 73.1,
+   "ta_rate": 30.9
+  },
+  "E09000023": {
+   "prevention": 48.5,
+   "relief": 41.2,
+   "ta_long": 67.6,
+   "ta_rate": 18.4
+  },
+  "E09000024": {
+   "prevention": 48.9,
+   "relief": 32.9,
+   "ta_long": 44.5,
+   "ta_rate": 8.6
+  },
+  "E09000025": {
+   "prevention": 64.0,
+   "relief": 38.5,
+   "ta_long": 65.0,
+   "ta_rate": 59.8
+  },
+  "E09000026": {
+   "prevention": 27.8,
+   "relief": 17.8,
+   "ta_long": 64.8,
+   "ta_rate": 26.1
+  },
+  "E09000027": {
+   "prevention": 53.5,
+   "relief": 20.0,
+   "ta_long": 31.8,
+   "ta_rate": 8.3
+  },
+  "E09000028": {
+   "prevention": 78.5,
+   "relief": 29.1,
+   "ta_long": 70.1,
+   "ta_rate": 29.9
+  },
+  "E09000029": {
+   "prevention": 45.5,
+   "relief": 38.7,
+   "ta_long": 53.9,
+   "ta_rate": 12.9
+  },
+  "E09000030": {
+   "prevention": 47.2,
+   "relief": 51.7,
+   "ta_long": 69.6,
+   "ta_rate": 22.0
+  },
+  "E09000031": {
+   "prevention": 45.5,
+   "relief": 22.0,
+   "ta_long": 42.8,
+   "ta_rate": 14.5
+  },
+  "E09000032": {
+   "prevention": 50.5,
+   "relief": 21.5,
+   "ta_long": 55.7,
+   "ta_rate": 30.0
+  },
+  "E09000033": {
+   "prevention": 89.2,
+   "relief": 18.5,
+   "ta_long": 73.3,
+   "ta_rate": 48.6
+  }
+ }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "councilscompared",
+  "private": true,
+  "description": "Styles for councilscompared.com (GOV.UK Frontend, compiled with Sass)",
+  "scripts": {
+    "build:css": "sass --load-path=node_modules --style=compressed --no-source-map --quiet-deps web/scss/main.scss dist/assets/main.css",
+    "build": "npm run build:css && python3 -m web.build"
+  },
+  "dependencies": {
+    "govuk-frontend": "^6.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}

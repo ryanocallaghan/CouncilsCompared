@@ -1,0 +1,354 @@
+// GOV.UK Frontend, configured for a website that is not on GOV.UK:
+// the GDS Transport typeface is licensed for GOV.UK only, so use Arial.
+@use "govuk-frontend/dist/govuk" with (
+  $govuk-font-family: (arial, sans-serif),
+  $govuk-assets-path: "/assets/"
+);
+
+// The site's own colour, distinct from GOV.UK blue, so it is not mistaken
+// for a government service
+$app-brand: #00625e;
+$app-me: #00625e;
+
+:root {
+  --govuk-brand-colour: #{$app-brand};
+}
+
+.govuk-generic-header {
+  background: $app-brand;
+}
+
+.govuk-footer {
+  border-top-color: $app-brand;
+}
+
+.govuk-generic-header__logo {
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+
+.app-logo__text {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.app-logo__thin {
+  font-weight: 400;
+}
+
+.app-secondary-text {
+  color: var(--govuk-secondary-text-colour, #484949);
+}
+
+.app-footer__independent {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.app-choose {
+  margin-top: 10px;
+  padding: 20px;
+  background: govuk.govuk-colour("black", $variant: "tint-95");
+
+  .govuk-select {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.app-region .govuk-list {
+  margin-bottom: 30px;
+}
+
+// Facts at the top of a council page
+.app-facts {
+  margin-bottom: 20px;
+
+  .govuk-summary-list__key {
+    width: 30%;
+  }
+}
+
+// "Compare with": links to the council's other comparison pages
+.app-sub-nav {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--govuk-border-colour, #cecece);
+}
+
+.app-sub-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-sub-nav__item {
+  @include govuk.govuk-font($size: 19);
+}
+
+.app-sub-nav__link {
+  display: inline-block;
+  padding: 10px 0 8px;
+  border-bottom: 4px solid transparent;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+  }
+
+  &[aria-current="page"] {
+    border-bottom-color: $app-brand;
+    color: var(--govuk-text-colour, #0b0c0c);
+    font-weight: 700;
+  }
+
+  &:focus {
+    border-bottom-color: var(--govuk-focus-text-colour, #0b0c0c);
+  }
+}
+
+// Headline counts with a colour rule above each, matching the tag colours
+.app-stats--compare {
+  margin-bottom: 20px;
+}
+
+.app-stats__item {
+  margin-bottom: 15px;
+  padding-top: 10px;
+  border-top: 5px solid var(--govuk-border-colour, #cecece);
+}
+
+.app-stats__item--bottom {
+  border-top-color: govuk.govuk-colour("red");
+}
+
+.app-stats__item--middle {
+  border-top-color: govuk.govuk-colour("yellow");
+}
+
+.app-stats__item--top {
+  border-top-color: govuk.govuk-colour("green");
+}
+
+.app-inset--bottom {
+  border-left-color: govuk.govuk-colour("red");
+}
+
+.app-inset--top {
+  border-left-color: govuk.govuk-colour("green");
+}
+
+.app-inset--bottom .govuk-list,
+.app-inset--top .govuk-list {
+  margin-bottom: 0;
+}
+
+.app-measure-note {
+  max-width: 40em;
+}
+
+// On wide screens a normal table; on phones each measure stacks, its
+// figures labelled from the column headings (data-label), so nothing
+// scrolls sideways
+.app-compare-table {
+  @media (max-width: 40.0525em) {
+    thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip-path: inset(50%);
+    }
+
+    .govuk-table__row,
+    .govuk-table__header,
+    .govuk-table__cell {
+      display: block;
+    }
+
+    .govuk-table__row {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--govuk-border-colour, #cecece);
+    }
+
+    .govuk-table__header,
+    .govuk-table__cell {
+      padding: 0 0 5px;
+      border: 0;
+      text-align: left;
+    }
+
+    .govuk-table__cell[data-label] {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+
+      &::before {
+        content: attr(data-label) ":";
+        flex: 0 0 7em;
+        color: var(--govuk-secondary-text-colour, #484949);
+      }
+    }
+
+    .app-compare-table__position {
+      display: inline;
+      margin-left: 5px;
+    }
+
+    .app-compare-table__chart {
+      padding-top: 5px;
+    }
+  }
+}
+
+.app-compare-table__measure {
+  width: 34%;
+}
+
+.app-compare-table__label {
+  font-weight: 400;
+}
+
+.app-compare-table__total .app-compare-table__label {
+  font-weight: 700;
+}
+
+.app-compare-table__strip {
+  width: 26%;
+  min-width: 12em;
+}
+
+.app-compare-table__period,
+.app-compare-table__position {
+  display: block;
+  margin: 5px 0 0;
+}
+
+// Every council as a mark on one line, better to the right. The council
+// being looked at is the large dot; the group it's compared with is darker.
+.app-strip {
+  display: block;
+  overflow: visible;
+}
+
+.app-strip__axis {
+  stroke: var(--govuk-border-colour, #cecece);
+  stroke-width: 2;
+}
+
+.app-strip__marks {
+  stroke: govuk.govuk-colour("black", $variant: "tint-80");
+  stroke-width: 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.app-strip__marks--group {
+  stroke: var(--govuk-secondary-text-colour, #484949);
+  stroke-width: 2;
+}
+
+.app-strip__median {
+  stroke: var(--govuk-text-colour, #0b0c0c);
+  stroke-width: 2;
+  stroke-dasharray: 3 3;
+}
+
+.app-strip__me {
+  fill: $app-me;
+  stroke: var(--govuk-body-background-colour, #ffffff);
+  stroke-width: 3;
+}
+
+.app-strip__ends {
+  display: flex;
+  justify-content: space-between;
+  @include govuk.govuk-font($size: 16);
+  color: var(--govuk-secondary-text-colour, #484949);
+}
+
+.app-summary-list__row--current {
+  .govuk-summary-list__key,
+  .govuk-summary-list__value {
+    font-weight: 700;
+  }
+}
+
+// Line charts over time
+.app-chart {
+  display: block;
+  margin-bottom: 10px;
+  overflow: visible;
+}
+
+.app-chart__grid {
+  stroke: var(--govuk-border-colour, #cecece);
+  stroke-width: 1;
+}
+
+.app-chart__tick {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  fill: var(--govuk-secondary-text-colour, #484949);
+}
+
+.app-chart__line {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+path.app-chart__line--me {
+  stroke: $app-me;
+}
+
+circle.app-chart__line--me {
+  fill: $app-me;
+}
+
+path.app-chart__line--median {
+  stroke: govuk.govuk-colour("black", $variant: "tint-80");
+  stroke-dasharray: 5 4;
+}
+
+circle.app-chart__line--median {
+  fill: govuk.govuk-colour("black", $variant: "tint-80");
+}
+
+.app-chart__key {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.app-chart__swatch {
+  display: inline-block;
+  width: 16px;
+  height: 4px;
+  margin-right: 8px;
+  vertical-align: middle;
+
+  &.app-chart__line--me {
+    background: $app-me;
+  }
+
+  &.app-chart__line--median {
+    background: govuk.govuk-colour("black", $variant: "tint-80");
+  }
+}
+
+// GOV.UK Frontend colours the current menu item in GOV.UK blue
+.app-service-navigation .govuk-service-navigation__item--active {
+  border-color: $app-brand;
+}

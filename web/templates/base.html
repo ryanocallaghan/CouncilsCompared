@@ -1,0 +1,92 @@
+{% extends "govuk_frontend_jinja/template.html" %}
+
+{% from "govuk_frontend_jinja/components/back-link/macro.html" import govukBackLink %}
+{% from "govuk_frontend_jinja/components/button/macro.html" import govukButton %}
+{% from "govuk_frontend_jinja/components/details/macro.html" import govukDetails %}
+{% from "govuk_frontend_jinja/components/generic-header/macro.html" import govukGenericHeader %}
+{% from "govuk_frontend_jinja/components/inset-text/macro.html" import govukInsetText %}
+{% from "govuk_frontend_jinja/components/phase-banner/macro.html" import govukPhaseBanner %}
+{% from "govuk_frontend_jinja/components/select/macro.html" import govukSelect %}
+{% from "govuk_frontend_jinja/components/summary-list/macro.html" import govukSummaryList %}
+{% from "govuk_frontend_jinja/components/tag/macro.html" import govukTag %}
+
+{% set serviceName = "Councils compared" %}
+{% set htmlLang = "en-GB" %}
+{% set themeColor = "#00625e" %}
+{% set assetPath = "/assets" %}
+
+{% block pageTitle %}{% block title %}{% endblock %} – {{ serviceName }}{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="/assets/main.css?v={{ asset_version }}">
+  {% set description %}{% block description %}How does your council compare? Official figures on SEND assessments, complaints, council housing, council tax, streets, homelessness and spending for every single-tier council in England.{% endblock %}{% endset %}
+  <meta name="description" content="{{ description | trim }}">
+  <link rel="canonical" href="{{ site_url }}{{ page_path }}">
+  <meta property="og:site_name" content="{{ serviceName }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ self.title() | trim }}">
+  <meta property="og:description" content="{{ description | trim }}">
+  <meta property="og:url" content="{{ site_url }}{{ page_path }}">
+  <meta name="twitter:card" content="summary">
+  {% if umami %}
+    {# Only counts visits on councilscompared.com itself, not preview builds #}
+    <script defer src="{{ umami.script }}" data-website-id="{{ umami.website_id }}" data-domains="councilscompared.com,www.councilscompared.com"></script>
+  {% endif %}
+{% endblock %}
+
+{# Not a GOV.UK service, so no crown, GOV.UK logotype or GOV.UK icons #}
+{% block headIcons %}
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+{% endblock %}
+
+{% block govukHeader %}
+  {{ govukGenericHeader({
+    "logoHtml": '<span class="app-logo__text">COUNCILS<span class="app-logo__thin"> COMPARED</span></span>',
+    "url": "/"
+  }) }}
+{% endblock %}
+
+{% block govukServiceNavigation %}
+  {% set items = [] %}
+  {% for href, text in [("/", "Councils"), ("/about/", "About the figures")] %}
+    {% set _ = items.append({"href": href, "text": text, "current": nav == href}) %}
+  {% endfor %}
+  {{ govukServiceNavigation({"navigation": items, "navigationLabel": "Menu", "classes": "app-service-navigation"}) }}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    "tag": {"text": "Beta"},
+    "html": "This is not a government service. Figures come from official published statistics. <a class=\"govuk-link\" href=\"" ~ issues_url ~ "\">Report a problem</a>"
+  }) }}
+  {% block backLink %}{% endblock %}
+{% endblock %}
+
+{% block govukFooter %}
+  <div class="govuk-footer app-footer">
+    <div class="govuk-width-container">
+      <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <h2 class="govuk-visually-hidden">Support links</h2>
+          <ul class="govuk-footer__inline-list">
+            <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="/about/">About the figures</a></li>
+            <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="/data/councils.csv">Download the figures (CSV)</a></li>
+            <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="{{ repo_url }}">Source code</a></li>
+            <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="{{ issues_url }}">Report a problem</a></li>
+          </ul>
+          <p class="govuk-body-s app-footer__independent"><strong>An independent website.</strong> Not affiliated with GOV.UK, any government department or any council.</p>
+          <p class="govuk-body-s">
+            Built with the <a class="govuk-footer__link" href="https://design-system.service.gov.uk/">GOV.UK Design System</a>.
+            Contains public sector information licensed under the
+            <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>,
+            and data from the <a class="govuk-footer__link" href="https://index.silktide.com/">Silktide Index</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block bodyEnd %}
+  <script type="module" src="/assets/app.js?v={{ asset_version }}"></script>
+{% endblock %}

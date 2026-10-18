@@ -1,0 +1,264 @@
+{
+ "sources": {
+  "population": {
+   "title": "Source population",
+   "url": "https://example.com/population",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "ehcp": {
+   "title": "Source ehcp",
+   "url": "https://example.com/ehcp",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "lgo": {
+   "title": "Source lgo",
+   "url": "https://example.com/lgo",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "lgo_decisions": {
+   "title": "Source lgo_decisions",
+   "url": "https://example.com/lgo_decisions",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "tsm": {
+   "title": "Source tsm",
+   "url": "https://example.com/tsm",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "ctax": {
+   "title": "Source ctax",
+   "url": "https://example.com/ctax",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "band_d": {
+   "title": "Source band_d",
+   "url": "https://example.com/band_d",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "fly": {
+   "title": "Source fly",
+   "url": "https://example.com/fly",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "waste": {
+   "title": "Source waste",
+   "url": "https://example.com/waste",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "homelessness": {
+   "title": "Source homelessness",
+   "url": "https://example.com/homelessness",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "silktide": {
+   "title": "Source silktide",
+   "url": "https://example.com/silktide",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "spending": {
+   "title": "Source spending",
+   "url": "https://example.com/spending",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "ofsted": {
+   "title": "Source ofsted",
+   "url": "https://example.com/ofsted",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  },
+  "neighbours": {
+   "title": "Source neighbours",
+   "url": "https://example.com/neighbours",
+   "period": "2025-26",
+   "published": "2026-07-31"
+  }
+ },
+ "councils": [
+  {
+   "code": "E09000023",
+   "name": "Lewisham",
+   "slug": "lewisham",
+   "type": "London borough",
+   "region": "London",
+   "population": 300000,
+   "households": 150000,
+   "band_d": 2000.0,
+   "values": {
+    "ehcp_20wk": 22.9,
+    "om_upheld": 14.9,
+    "ctax_collect": 91.7,
+    "tsm_overall": 50.8
+   },
+   "spend": {
+    "Children's social care": 400.0,
+    "All services excluding schools": 1400.0
+   },
+   "ofsted": {
+    "grade": "Good",
+    "inspected": "2023-12-04"
+   },
+   "neighbours": [
+    "E09000011",
+    "E09000022",
+    "E09000028"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2024": 94.8,
+     "2025": 22.9
+    }
+   }
+  },
+  {
+   "code": "E09000011",
+   "name": "Greenwich",
+   "slug": "greenwich",
+   "type": "London borough",
+   "region": "London",
+   "population": 290000,
+   "households": 145000,
+   "band_d": 2000.0,
+   "values": {
+    "ehcp_20wk": 60.0,
+    "om_upheld": 8.0,
+    "ctax_collect": 94.0,
+    "tsm_overall": 60.0
+   },
+   "spend": {
+    "Children's social care": 400.0,
+    "All services excluding schools": 1400.0
+   },
+   "ofsted": {
+    "grade": "Good",
+    "inspected": "2023-12-04"
+   },
+   "neighbours": [
+    "E09000023"
+   ],
+   "trends": {
+    "ehcp_20wk": {
+     "2024": 50.0,
+     "2025": 60.0
+    }
+   }
+  },
+  {
+   "code": "E09000022",
+   "name": "Lambeth",
+   "slug": "lambeth",
+   "type": "London borough",
+   "region": "London",
+   "population": 320000,
+   "households": 160000,
+   "band_d": 2000.0,
+   "values": {
+    "ehcp_20wk": 45.0,
+    "om_upheld": 20.0,
+    "ctax_collect": 92.0,
+    "tsm_overall": 55.0
+   },
+   "spend": {
+    "Children's social care": 400.0,
+    "All services excluding schools": 1400.0
+   },
+   "ofsted": {
+    "grade": "Outstanding",
+    "inspected": "2024-01-10"
+   },
+   "neighbours": [
+    "E09000023"
+   ],
+   "trends": {}
+  },
+  {
+   "code": "E09000028",
+   "name": "Southwark",
+   "slug": "southwark",
+   "type": "London borough",
+   "region": "London",
+   "population": 310000,
+   "households": 155000,
+   "band_d": 2000.0,
+   "values": {
+    "ehcp_20wk": 70.0,
+    "om_upheld": 6.0,
+    "ctax_collect": 93.5
+   },
+   "spend": {
+    "Children's social care": 400.0,
+    "All services excluding schools": 1400.0
+   },
+   "ofsted": {
+    "grade": "Good",
+    "inspected": "2023-12-04"
+   },
+   "neighbours": [
+    "E09000023"
+   ],
+   "trends": {}
+  },
+  {
+   "code": "E08000010",
+   "name": "Wigan",
+   "slug": "wigan",
+   "type": "Metropolitan district",
+   "region": "North West",
+   "population": 340000,
+   "households": 170000,
+   "band_d": 2000.0,
+   "values": {
+    "ehcp_20wk": 90.0,
+    "om_upheld": 3.0,
+    "ctax_collect": 96.0,
+    "tsm_overall": 80.0
+   },
+   "spend": {
+    "Children's social care": 400.0,
+    "All services excluding schools": 1400.0
+   },
+   "ofsted": {
+    "grade": "Good",
+    "inspected": "2023-12-04"
+   },
+   "neighbours": [],
+   "trends": {}
+  },
+  {
+   "code": "E06000001",
+   "name": "Hartlepool",
+   "slug": "hartlepool",
+   "type": "Unitary authority",
+   "region": "North East",
+   "population": 99000,
+   "households": 49500,
+   "band_d": 2000.0,
+   "values": {
+    "ehcp_20wk": 50.0,
+    "om_upheld": 4.0,
+    "ctax_collect": 95.0
+   },
+   "spend": {
+    "Children's social care": 400.0,
+    "All services excluding schools": 1400.0
+   },
+   "ofsted": {
+    "grade": "Requires improvement",
+    "inspected": "2022-05-01"
+   },
+   "neighbours": [],
+   "trends": {}
+  }
+ ]
+}

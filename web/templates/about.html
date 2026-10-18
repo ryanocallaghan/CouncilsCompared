@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}About the figures{% endblock %}
+{% block description %}Where the figures on Councils compared come from, how they are compared, and what to bear in mind.{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">About the figures</h1>
+    <p class="govuk-body-l">Councils compared puts official statistics about councils side by side, so you can see how yours does compared with others.</p>
+
+    <h2 class="govuk-heading-m">Which councils are included</h2>
+    <p class="govuk-body">The {{ councils | length }} councils in England that run all local services: unitary authorities, metropolitan districts and London boroughs. In areas with a county council and district councils, services are split between them, so they are not included. The City of London and the Isles of Scilly are left out because they are very small and share many services.</p>
+
+    <h2 class="govuk-heading-m">How councils are compared</h2>
+    <p class="govuk-body">For each measure, councils are put in order from best to worst, and the position shows where a council comes in the group. Councils with the same figure share a position. A council in the bottom quarter is shown in red, below the middle in yellow, and in the top half in green.</p>
+    <p class="govuk-body">You can compare a council with:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>every council included, across England</li>
+      <li>councils in the same region</li>
+      <li>councils of the same type, such as other metropolitan districts</li>
+      <li>similar councils: the Department for Education's statistical neighbours, the councils most like it on things that drive demand for services such as deprivation and population (county councils are left out of these lists)</li>
+    </ul>
+    <p class="govuk-body">Rates per resident use the ONS population estimate for {{ sources.population.period }} for every year.</p>
+
+    <h2 class="govuk-heading-m">What to bear in mind</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Councils serve very different places. A low position can reflect more demand, less money or different local choices, not only how well a council is run.</li>
+      <li>Ombudsman figures by service area count the decisions the Ombudsman publishes, which cover most but not all upheld complaints. Shares of upheld cases are only shown for councils with at least 5 cases.</li>
+      <li>Fly-tipping figures depend on how each council records incidents.</li>
+      <li>Council tax collection is the share collected in the year it was due. Councils keep collecting after that.</li>
+      <li>Homelessness figures are for a single quarter. Shares are only shown where at least 10 cases ended. Where very small numbers of families in temporary accommodation are suppressed, they are counted as none.</li>
+      <li>Councils that no longer own council homes have no council housing figures.</li>
+      <li>The website score is an automated accessibility test. It finds many problems, but not all.</li>
+    </ul>
+
+    <h2 class="govuk-heading-m">Where the figures come from</h2>
+    <p class="govuk-body">The figures are updated automatically: every week, a script checks each publication for a new edition and proposes the changes, which are checked before they go live. <a class="govuk-link" href="{{ repo_url }}">The code is public</a>.</p>
+  </div>
+  <div class="govuk-grid-column-full">
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--s govuk-visually-hidden">Sources</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Publication</th>
+          <th scope="col" class="govuk-table__header">Figures for</th>
+          <th scope="col" class="govuk-table__header">Published</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        {% for source in source_list %}
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a class="govuk-link" href="{{ source.url }}">{{ source.title }}</a></td>
+            <td class="govuk-table__cell">{{ source.period }}</td>
+            <td class="govuk-table__cell">{{ source.published | long_date }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">Contains public sector information licensed under the <a class="govuk-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>. Website scores from the <a class="govuk-link" href="https://index.silktide.com/">Silktide Index</a>.</p>
+    <p class="govuk-body">You can <a class="govuk-link" href="/data/councils.csv">download every figure as a spreadsheet (CSV)</a> or <a class="govuk-link" href="/data/councils.json">as JSON</a>.</p>
+
+    <h2 class="govuk-heading-m">Privacy</h2>
+    <p class="govuk-body">This website does not use cookies. It counts visits with <a class="govuk-link" href="https://umami.is/">Umami</a>, which records the pages viewed and the type of browser and device, but nothing that identifies you.</p>
+
+    <h2 class="govuk-heading-m">Who runs this</h2>
+    <p class="govuk-body">Councils compared is an independent website. It is not affiliated with GOV.UK, any government department, any council, or any of the organisations whose figures it uses.</p>
+    <p class="govuk-body">If a figure looks wrong, or you have an idea, <a class="govuk-link" href="{{ issues_url }}">report it on GitHub</a>.</p>
+  </div>
+</div>
+{% endblock %}

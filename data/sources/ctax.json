@@ -1,0 +1,405 @@
+{
+ "extra": {},
+ "files": [
+  "https://assets.publishing.service.gov.uk/media/6a6b2fc98319ab05f7caa211/Table_6_2025-26.ods"
+ ],
+ "id": "ctax",
+ "notes": [],
+ "period": "2025-26",
+ "published": "2026-07-31",
+ "title": "MHCLG: Collection rates for Council Tax and non-domestic rates in England, 2025 to 2026",
+ "trends": {},
+ "url": "https://www.gov.uk/government/statistics/collection-rates-for-council-tax-and-non-domestic-rates-in-england-2025-to-2026",
+ "values": {
+  "E06000001": {
+   "ctax_collect": 93.7
+  },
+  "E06000002": {
+   "ctax_collect": 92.9
+  },
+  "E06000003": {
+   "ctax_collect": 92.4
+  },
+  "E06000004": {
+   "ctax_collect": 94.7
+  },
+  "E06000005": {
+   "ctax_collect": 96.5
+  },
+  "E06000006": {
+   "ctax_collect": 94.2
+  },
+  "E06000007": {
+   "ctax_collect": 96.2
+  },
+  "E06000008": {
+   "ctax_collect": 95.3
+  },
+  "E06000009": {
+   "ctax_collect": 90.0
+  },
+  "E06000010": {
+   "ctax_collect": 91.8
+  },
+  "E06000011": {
+   "ctax_collect": 97.0
+  },
+  "E06000012": {
+   "ctax_collect": 92.0
+  },
+  "E06000013": {
+   "ctax_collect": 95.0
+  },
+  "E06000014": {
+   "ctax_collect": 97.5
+  },
+  "E06000015": {
+   "ctax_collect": 93.4
+  },
+  "E06000016": {
+   "ctax_collect": 92.7
+  },
+  "E06000017": {
+   "ctax_collect": 97.5
+  },
+  "E06000018": {
+   "ctax_collect": 91.7
+  },
+  "E06000019": {
+   "ctax_collect": 97.4
+  },
+  "E06000020": {
+   "ctax_collect": 96.9
+  },
+  "E06000021": {
+   "ctax_collect": 95.1
+  },
+  "E06000022": {
+   "ctax_collect": 96.5
+  },
+  "E06000023": {
+   "ctax_collect": 93.5
+  },
+  "E06000024": {
+   "ctax_collect": 98.0
+  },
+  "E06000025": {
+   "ctax_collect": 97.2
+  },
+  "E06000026": {
+   "ctax_collect": 95.8
+  },
+  "E06000027": {
+   "ctax_collect": 93.7
+  },
+  "E06000030": {
+   "ctax_collect": 95.4
+  },
+  "E06000031": {
+   "ctax_collect": 94.3
+  },
+  "E06000032": {
+   "ctax_collect": 96.6
+  },
+  "E06000033": {
+   "ctax_collect": 96.9
+  },
+  "E06000034": {
+   "ctax_collect": 97.3
+  },
+  "E06000035": {
+   "ctax_collect": 93.4
+  },
+  "E06000036": {
+   "ctax_collect": 97.0
+  },
+  "E06000037": {
+   "ctax_collect": 97.2
+  },
+  "E06000038": {
+   "ctax_collect": 94.8
+  },
+  "E06000039": {
+   "ctax_collect": 92.6
+  },
+  "E06000040": {
+   "ctax_collect": 96.8
+  },
+  "E06000041": {
+   "ctax_collect": 98.9
+  },
+  "E06000042": {
+   "ctax_collect": 96.5
+  },
+  "E06000043": {
+   "ctax_collect": 93.5
+  },
+  "E06000044": {
+   "ctax_collect": 91.9
+  },
+  "E06000045": {
+   "ctax_collect": 93.3
+  },
+  "E06000046": {
+   "ctax_collect": 94.6
+  },
+  "E06000047": {
+   "ctax_collect": 95.1
+  },
+  "E06000049": {
+   "ctax_collect": 97.5
+  },
+  "E06000050": {
+   "ctax_collect": 96.8
+  },
+  "E06000051": {
+   "ctax_collect": 97.4
+  },
+  "E06000052": {
+   "ctax_collect": 96.6
+  },
+  "E06000054": {
+   "ctax_collect": 97.5
+  },
+  "E06000055": {
+   "ctax_collect": 96.5
+  },
+  "E06000056": {
+   "ctax_collect": 97.5
+  },
+  "E06000057": {
+   "ctax_collect": 96.5
+  },
+  "E06000058": {
+   "ctax_collect": 94.8
+  },
+  "E06000059": {
+   "ctax_collect": 95.1
+  },
+  "E06000060": {
+   "ctax_collect": 98.1
+  },
+  "E06000061": {
+   "ctax_collect": 94.8
+  },
+  "E06000062": {
+   "ctax_collect": 96.4
+  },
+  "E06000063": {
+   "ctax_collect": 95.9
+  },
+  "E06000064": {
+   "ctax_collect": 96.5
+  },
+  "E06000065": {
+   "ctax_collect": 96.7
+  },
+  "E06000066": {
+   "ctax_collect": 95.5
+  },
+  "E08000001": {
+   "ctax_collect": 93.7
+  },
+  "E08000002": {
+   "ctax_collect": 95.3
+  },
+  "E08000003": {
+   "ctax_collect": 88.6
+  },
+  "E08000004": {
+   "ctax_collect": 93.4
+  },
+  "E08000005": {
+   "ctax_collect": 93.8
+  },
+  "E08000006": {
+   "ctax_collect": 92.5
+  },
+  "E08000007": {
+   "ctax_collect": 97.3
+  },
+  "E08000008": {
+   "ctax_collect": 92.7
+  },
+  "E08000009": {
+   "ctax_collect": 96.7
+  },
+  "E08000010": {
+   "ctax_collect": 94.9
+  },
+  "E08000011": {
+   "ctax_collect": 91.0
+  },
+  "E08000012": {
+   "ctax_collect": 86.8
+  },
+  "E08000013": {
+   "ctax_collect": 93.8
+  },
+  "E08000014": {
+   "ctax_collect": 94.4
+  },
+  "E08000015": {
+   "ctax_collect": 93.2
+  },
+  "E08000016": {
+   "ctax_collect": 96.2
+  },
+  "E08000017": {
+   "ctax_collect": 93.9
+  },
+  "E08000018": {
+   "ctax_collect": 96.7
+  },
+  "E08000019": {
+   "ctax_collect": 92.8
+  },
+  "E08000021": {
+   "ctax_collect": 96.0
+  },
+  "E08000022": {
+   "ctax_collect": 95.3
+  },
+  "E08000023": {
+   "ctax_collect": 94.2
+  },
+  "E08000024": {
+   "ctax_collect": 92.4
+  },
+  "E08000025": {
+   "ctax_collect": 90.0
+  },
+  "E08000026": {
+   "ctax_collect": 93.4
+  },
+  "E08000027": {
+   "ctax_collect": 94.9
+  },
+  "E08000028": {
+   "ctax_collect": 93.2
+  },
+  "E08000029": {
+   "ctax_collect": 97.1
+  },
+  "E08000030": {
+   "ctax_collect": 92.4
+  },
+  "E08000031": {
+   "ctax_collect": 92.2
+  },
+  "E08000032": {
+   "ctax_collect": 93.5
+  },
+  "E08000033": {
+   "ctax_collect": 95.3
+  },
+  "E08000034": {
+   "ctax_collect": 94.2
+  },
+  "E08000035": {
+   "ctax_collect": 93.8
+  },
+  "E08000036": {
+   "ctax_collect": 94.8
+  },
+  "E08000037": {
+   "ctax_collect": 94.0
+  },
+  "E09000002": {
+   "ctax_collect": 92.4
+  },
+  "E09000003": {
+   "ctax_collect": 92.8
+  },
+  "E09000004": {
+   "ctax_collect": 94.8
+  },
+  "E09000005": {
+   "ctax_collect": 91.6
+  },
+  "E09000006": {
+   "ctax_collect": 96.8
+  },
+  "E09000007": {
+   "ctax_collect": 93.0
+  },
+  "E09000008": {
+   "ctax_collect": 94.2
+  },
+  "E09000009": {
+   "ctax_collect": 95.9
+  },
+  "E09000010": {
+   "ctax_collect": 92.1
+  },
+  "E09000011": {
+   "ctax_collect": 93.2
+  },
+  "E09000012": {
+   "ctax_collect": 93.3
+  },
+  "E09000013": {
+   "ctax_collect": 92.3
+  },
+  "E09000014": {
+   "ctax_collect": 93.2
+  },
+  "E09000015": {
+   "ctax_collect": 95.6
+  },
+  "E09000016": {
+   "ctax_collect": 95.7
+  },
+  "E09000017": {
+   "ctax_collect": 96.5
+  },
+  "E09000018": {
+   "ctax_collect": 96.1
+  },
+  "E09000019": {
+   "ctax_collect": 92.9
+  },
+  "E09000020": {
+   "ctax_collect": 91.2
+  },
+  "E09000021": {
+   "ctax_collect": 98.1
+  },
+  "E09000022": {
+   "ctax_collect": 92.4
+  },
+  "E09000023": {
+   "ctax_collect": 91.7
+  },
+  "E09000024": {
+   "ctax_collect": 95.4
+  },
+  "E09000025": {
+   "ctax_collect": 92.5
+  },
+  "E09000026": {
+   "ctax_collect": 96.5
+  },
+  "E09000027": {
+   "ctax_collect": 98.1
+  },
+  "E09000028": {
+   "ctax_collect": 94.1
+  },
+  "E09000029": {
+   "ctax_collect": 97.9
+  },
+  "E09000030": {
+   "ctax_collect": 92.1
+  },
+  "E09000031": {
+   "ctax_collect": 94.8
+  },
+  "E09000032": {
+   "ctax_collect": 97.0
+  },
+  "E09000033": {
+   "ctax_collect": 93.3
+  }
+ }
+}

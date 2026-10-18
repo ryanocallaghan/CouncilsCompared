@@ -1,0 +1,82 @@
+name: Update data
+
+# Every Monday, check each source for new figures. If anything changed,
+# open (or update) a pull request with a summary, for a person to check
+# and merge. Merging it is what puts the new figures on the website.
+on:
+  schedule:
+    - cron: "47 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-data
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+
+      - name: Fetch the latest figures
+        run: |
+          python -m pipeline.update --summary summary.md
+          cat summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Check the figures
+        id: checks
+        run: |
+          if python -m pytest -q tests/test_data.py > checks.txt 2>&1; then
+            echo "result=passed" >> "$GITHUB_OUTPUT"
+          else
+            echo "result=failed" >> "$GITHUB_OUTPUT"
+          fi
+          tail -40 checks.txt
+
+      - name: Propose the changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CHECKS: ${{ steps.checks.outputs.result }}
+        run: |
+          if git diff --quiet -- data; then
+            echo "Nothing changed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git switch -c data-update
+          git add data
+          git commit -qm "Update figures"
+          git push --force origin data-update
+
+          {
+            cat summary.md
+            echo
+            if [ "$CHECKS" = "failed" ]; then
+              echo "### ⚠️ The data checks failed"
+              echo
+              echo "Some figures look wrong (a measure covers too few councils, or a percentage is out of range). Don't merge until this is fixed:"
+              echo
+              echo '```'
+              grep -E "^(FAILED|E  )" checks.txt | head -30
+              echo '```'
+            else
+              echo "The data checks passed. Cloudflare will post a preview link below: check a council page or two, then merge to publish."
+            fi
+          } > body.md
+
+          number=$(gh pr list --head data-update --state open --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh pr edit "$number" --body-file body.md
+          else
+            gh pr create --base main --head data-update --title "Update figures" --body-file body.md
+          fi

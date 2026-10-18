@@ -1,0 +1,445 @@
+"""How each council compares with a group of others, for the council pages.
+
+The figures are in data/councils.json, built by pipeline.update: one entry
+per council with its value for each measure, its spending per resident, its
+Ofsted grade, its similar councils and a few figures over time.
+
+This module ranks a council against a comparison group and lays out what a
+page draws, so the templates stay simple and the logic can be tested.
+"""
+
+import json
+import math
+import os
+from dataclasses import dataclass, field
+from datetime import date
+from functools import cache
+from statistics import median
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_FILE = os.path.join(ROOT, "data", "councils.json")
+
+# The groups a council can be compared with, in the order of the tabs.
+# "england" is the council's own page; the others are under it.
+GROUPS = ["england", "region", "type", "similar"]
+TYPE_PLURAL = {
+    "London borough": "London boroughs",
+    "Metropolitan district": "metropolitan districts",
+    "Unitary authority": "unitary authorities",
+}
+MIN_SIMILAR = 3  # fewer similar councils than this, and the group is not offered
+
+AREAS = [
+    ("send", "SEND assessments",
+     "Education, health and care plans set out support for children with special educational needs. "
+     "The law says a new plan should be issued within 20 weeks."),
+    ("complaints", "Ombudsman complaints",
+     "The Local Government and Social Care Ombudsman looks at complaints the council's own complaints "
+     "process has not resolved. Upheld means the Ombudsman found the council at fault."),
+    ("housing", "Council housing",
+     "From the tenant survey and performance figures every council landlord reports to the "
+     "Regulator of Social Housing. Only councils that still own council homes are included."),
+    ("ctax", "Council tax",
+     "How much of the year's council tax bills the council collected by 31 March."),
+    ("streets", "Streets and waste",
+     "Fly-tipping the council recorded, how often it took enforcement action, and how much household "
+     "waste was recycled."),
+    ("homeless", "Homelessness",
+     "Temporary accommodation and the outcomes of homelessness cases, from the council's statutory returns."),
+    ("digital", "Website",
+     "An automated test of the council website's accessibility."),
+]
+
+
+@dataclass(frozen=True)
+class Measure:
+    id: str
+    area: str
+    label: str
+    unit: str  # "%" or "" (a rate or count)
+    better: str  # "higher" or "lower"
+    source: str  # its id in data/councils.json "sources", which gives the period
+
+
+MEASURES = [
+    Measure("ehcp_20wk", "send", "New EHC plans issued within 20 weeks", "%", "higher", "ehcp"),
+    Measure("om_upheld", "complaints", "Upheld complaints per 100,000 residents", "", "lower", "lgo"),
+    Measure("om_received", "complaints", "Complaints to the Ombudsman per 100,000 residents", "", "lower", "lgo"),
+    Measure("om_children", "complaints", "Upheld complaints about children's services per 100,000 residents",
+            "", "lower", "lgo_decisions"),
+    Measure("om_sen", "complaints", "Upheld complaints about special educational needs per 100,000 residents",
+            "", "lower", "lgo_decisions"),
+    Measure("om_homeless", "complaints", "Upheld complaints about homelessness per 100,000 residents",
+            "", "lower", "lgo_decisions"),
+    Measure("om_remedy_before", "complaints", "Upheld cases the council had already put right", "%", "higher",
+            "lgo"),
+    Measure("om_timely", "complaints", "Ombudsman remedies delivered on time", "%", "higher", "lgo"),
+    Measure("tsm_overall", "housing", "Tenants satisfied with the overall service", "%", "higher", "tsm"),
+    Measure("tsm_maintained", "housing", "Tenants satisfied their home is well maintained", "%", "higher", "tsm"),
+    Measure("tsm_safe", "housing", "Tenants satisfied their home is safe", "%", "higher", "tsm"),
+    Measure("tsm_listens", "housing", "Tenants who say the council listens and acts", "%", "higher", "tsm"),
+    Measure("tsm_repairs", "housing", "Non-emergency repairs done within target time", "%", "higher", "tsm"),
+    Measure("tsm_decent", "housing", "Council homes failing the Decent Homes Standard", "%", "lower", "tsm"),
+    Measure("tsm_complaints", "housing", "Stage 1 housing complaints answered in time", "%", "higher", "tsm"),
+    Measure("ctax_collect", "ctax", "Council tax collected in the year it was due", "%", "higher", "ctax"),
+    Measure("fly_rate", "streets", "Fly-tipping incidents per 1,000 residents", "", "lower", "fly"),
+    Measure("fly_enforce", "streets", "Enforcement actions per 100 fly-tipping incidents", "", "higher", "fly"),
+    Measure("recycling", "streets", "Household waste reused, recycled or composted", "%", "higher", "waste"),
+    Measure("ta_rate", "homeless", "Households in temporary accommodation per 1,000 households", "", "lower",
+            "homelessness"),
+    Measure("ta_long", "homeless", "Families in temporary accommodation for 2 years or more", "%", "lower",
+            "homelessness"),
+    Measure("prevention", "homeless", "Prevention cases ending with a home secured", "%", "higher", "homelessness"),
+    Measure("relief", "homeless", "Relief cases ending with a home secured", "%", "higher", "homelessness"),
+    Measure("web_access", "digital", "Website accessibility score", "%", "higher", "silktide"),
+]
+
+SPENDING = [
+    "Children's social care", "Adult social care", "Public health", "Housing (general fund)",
+    "Environmental and regulatory", "Highways and transport", "Culture and leisure", "Planning and development",
+    "Central services", "All services excluding schools",
+]
+
+GRADES = ["Outstanding", "Good", "Requires improvement", "Inadequate"]
+
+# Where a council sits, by position in its group: the top half, the third
+# quarter, or the bottom quarter. GOV.UK tag colours.
+BANDS = {
+    "top": ("Top half", "govuk-tag--green"),
+    "middle": ("Below the middle", "govuk-tag--yellow"),
+    "bottom": ("Bottom quarter", "govuk-tag--red"),
+}
+
+
+def load():
+    """{"sources": {...}, "councils": {slug: council}, "by_code": {code: council}}."""
+    return _load(DATA_FILE)
+
+
+@cache
+def _load(path):
+    with open(path) as f:
+        data = json.load(f)
+    councils = {}
+    for council in data["councils"]:
+        if council.get("ofsted") and council["ofsted"].get("inspected"):
+            council["ofsted"]["date"] = date.fromisoformat(council["ofsted"]["inspected"])
+        councils[council["slug"]] = council
+    return {"sources": data["sources"], "councils": councils,
+            "by_code": {c["code"]: c for c in councils.values()}}
+
+
+def councils():
+    return load()["councils"]
+
+
+def sources():
+    return load()["sources"]
+
+
+def period(measure):
+    return sources().get(measure.source, {}).get("period", "")
+
+
+def groups_for(council):
+    """The groups this council can be compared with."""
+    available = []
+    for group in GROUPS:
+        if group == "type" and council["type"] == "London borough":
+            continue  # the same as its region, London
+        if group == "similar" and len(council["neighbours"]) < MIN_SIMILAR:
+            continue
+        available.append(group)
+    return available
+
+
+def group_members(council, group):
+    """The councils to compare with, including the council itself."""
+    everyone = list(councils().values())
+    if group == "region":
+        return [c for c in everyone if c["region"] == council["region"]]
+    if group == "type":
+        return [c for c in everyone if c["type"] == council["type"]]
+    if group == "similar":
+        by_code = load()["by_code"]
+        return [council] + [by_code[code] for code in council["neighbours"] if code in by_code]
+    return everyone
+
+
+def group_tab(council, group):
+    """The group's name on its tab: "All England", "London", "Metropolitan districts"."""
+    if group == "region":
+        return council["region"]
+    if group == "type":
+        plural = TYPE_PLURAL[council["type"]]
+        return plural[0].upper() + plural[1:]
+    if group == "similar":
+        return "Similar councils"
+    return "All England"
+
+
+def group_phrase(council, group):
+    """The group in a sentence: "all councils in England", "councils in London"."""
+    if group == "region":
+        return "London boroughs" if council["region"] == "London" else f"councils in {council['region']}"
+    if group == "type":
+        return f"{TYPE_PLURAL[council['type']]}"
+    if group == "similar":
+        return "similar councils"
+    return "all councils in England"
+
+
+def path(council, group="england"):
+    return f"/{council['slug']}/" if group == "england" else f"/{council['slug']}/{group}/"
+
+
+def fmt(value, unit=""):
+    """22.9 -> "22.9%", 111.2 -> "111.2", 7.0 -> "7"."""
+    if value is None:
+        return "No figure"
+    if unit == "%":
+        return f"{value:.1f}%"
+    if unit == "£":
+        return f"−£{-value:,.0f}" if value < 0 else f"£{value:,.0f}"
+    text = f"{value:.1f}"
+    return text[:-2] if text.endswith(".0") else text
+
+
+def ordinal(n):
+    """1 -> "1st", 22 -> "22nd", 13 -> "13th"."""
+    suffix = "th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    return f"{n}{suffix}"
+
+
+def lower_first(text):
+    """ "New EHC plans..." -> "new EHC plans...", leaving acronyms alone."""
+    if len(text) > 1 and text[0].isupper() and text[1].islower():
+        return text[0].lower() + text[1:]
+    return text
+
+
+def band(position, count):
+    if position > count * 0.75:
+        return "bottom"
+    if position > count / 2:
+        return "middle"
+    return "top"
+
+
+def position(value, values, better):
+    """1 for the best; ties share a position."""
+    if better == "higher":
+        return sum(1 for v in values if v > value) + 1
+    return sum(1 for v in values if v < value) + 1
+
+
+@dataclass
+class Strip:
+    """Every council as a mark on one line, better to the right.
+
+    Positions are percentages across. The other councils are drawn as short
+    vertical marks in one SVG path each (in and out of the group), which
+    keeps pages small with 130 councils on every row.
+    """
+    dots: list  # [(left %, in the group)]
+    me: float
+    median: float
+
+    def path(self, in_group):
+        return " ".join(f"M{left * 10:.0f} 7v12" for left, group in self.dots if group == in_group)
+
+
+def strip(values_by_code, me_code, group_codes, better, group_median):
+    values = list(values_by_code.values())
+    low, high = min(values), max(values)
+    span = (high - low) or 1
+
+    def left(value):
+        share = (value - low) / span
+        if better == "lower":
+            share = 1 - share
+        return round(2 + share * 96, 1)
+
+    dots = [(left(v), code in group_codes) for code, v in values_by_code.items() if code != me_code]
+    # Group members drawn last, over the rest
+    dots.sort(key=lambda dot: dot[1])
+    return Strip(dots=dots, me=left(values_by_code[me_code]), median=left(group_median))
+
+
+@dataclass
+class Row:
+    measure: Measure
+    period: str
+    value: str
+    median: str
+    position: int = None
+    count: int = 0
+    band: str = None
+    strip: Strip = None
+
+    @property
+    def band_text(self):
+        return BANDS[self.band][0] if self.band else None
+
+    @property
+    def band_class(self):
+        return BANDS[self.band][1] if self.band else None
+
+
+@dataclass
+class Comparison:
+    council: dict
+    group: str
+    tab: str
+    phrase: str
+    members: list
+    areas: list = field(default_factory=list)  # [(id, name, note, [Row])]
+    counts: dict = field(default_factory=dict)
+    compares_worst: list = field(default_factory=list)  # [str], the worst first
+    compares_best: list = field(default_factory=list)
+    spending: list = field(default_factory=list)
+    grades: list = field(default_factory=list)
+    trends: list = field(default_factory=list)
+
+
+def _summary(rows, worst=True):
+    end = "bottom" if worst else "top"
+    picked = [r for r in rows if r.band == end]
+    picked.sort(key=lambda r: r.position / r.count, reverse=worst)
+    # Each with its position and which end is best, so "6th of 6" can't be
+    # read as good on a measure where a low number is best
+    return [
+        f"{lower_first(r.measure.label)} ({ordinal(r.position)} of {r.count}; "
+        f"1st is {'highest' if r.measure.better == 'higher' else 'lowest'})"
+        for r in picked[:3]
+    ]
+
+
+def compare(council, group="england"):
+    members = group_members(council, group)
+    member_codes = {c["code"] for c in members}
+    everyone = list(councils().values())
+    result = Comparison(council=council, group=group, tab=group_tab(council, group),
+                        phrase=group_phrase(council, group), members=members)
+    rows = []
+    for area_id, area_name, note in AREAS:
+        area_rows = []
+        for m in (m for m in MEASURES if m.area == area_id):
+            group_values = [c["values"][m.id] for c in members if m.id in c["values"]]
+            value = council["values"].get(m.id)
+            row = Row(measure=m, period=period(m), value=fmt(value, m.unit),
+                      median=fmt(median(group_values), m.unit) if group_values else "No figure")
+            if value is not None and len(group_values) > 1:
+                row.position = position(value, group_values, m.better)
+                row.count = len(group_values)
+                row.band = band(row.position, row.count)
+                all_values = {c["code"]: c["values"][m.id] for c in everyone if m.id in c["values"]}
+                row.strip = strip(all_values, council["code"], member_codes, m.better, median(group_values))
+            area_rows.append(row)
+            rows.append(row)
+        result.areas.append((area_id, area_name, note, area_rows))
+    banded = [r for r in rows if r.band]
+    result.counts = {key: sum(1 for r in banded if r.band == key) for key in BANDS}
+    result.compares_worst = _summary(banded, worst=True)
+    result.compares_best = _summary(banded, worst=False)
+    result.spending = _spending(council, members, member_codes, everyone)
+    result.grades = [(grade, sum(1 for c in members if (c.get("ofsted") or {}).get("grade") == grade))
+                     for grade in GRADES]
+    result.trends = _trends(council, members)
+    return result
+
+
+def _spending(council, members, member_codes, everyone):
+    rows = []
+    for service in SPENDING:
+        value = council["spend"].get(service)
+        values = [c["spend"][service] for c in members if service in c["spend"]]
+        if value is None or not values:
+            continue
+        all_values = {c["code"]: c["spend"][service] for c in everyone if service in c["spend"]}
+        rows.append({
+            "service": service,
+            "value": fmt(value, "£"),
+            "median": fmt(median(values), "£"),
+            "rank": sum(1 for v in values if v > value) + 1,
+            "count": len(values),
+            # Not better or worse, so lower to the left and no colour
+            "strip": strip(all_values, council["code"], member_codes, "higher", median(values)),
+        })
+    return rows
+
+
+# Line charts: a fixed coordinate space, scaled by the browser
+CHART_W, CHART_H = 320, 180
+PAD_L, PAD_R, PAD_T, PAD_B = 40, 10, 10, 26
+
+
+def _nice_max(high, unit):
+    if unit == "%" and high > 50:
+        return 100, 25
+    raw = (high * 1.1 or 1) / 4
+    magnitude = 10 ** math.floor(math.log10(raw))
+    step = next(s * magnitude for s in (1, 2, 2.5, 5, 10) if s * magnitude >= raw)
+    return step * 4, step
+
+
+def line_chart(periods, series, unit):
+    """SVG coordinates for a line chart. series: [(name, {period: value}, css class)]."""
+    values = [v for _, data, _ in series for v in data.values() if v is not None]
+    if not values or not periods:
+        return None
+    top, step = _nice_max(max(values), unit)
+    width = CHART_W - PAD_L - PAD_R
+    height = CHART_H - PAD_T - PAD_B
+
+    def x(i):
+        return round(PAD_L + (i / (len(periods) - 1) if len(periods) > 1 else 0) * width, 1)
+
+    def y(v):
+        return round(PAD_T + (1 - v / top) * height, 1)
+
+    ticks = []
+    t = 0
+    while t <= top + 1e-9:
+        ticks.append({"y": y(t), "label": fmt(t, unit).replace(".0%", "%")})
+        t += step
+    # About four labels, always the last, never two crowded together
+    last_i = len(periods) - 1
+    every = max(1, -(-len(periods) // 4))
+    shown = [i for i in range(last_i) if i % every == 0 and last_i - i >= every] + [last_i]
+    labels = [{"x": x(i), "text": periods[i][2:] if len(periods[i]) > 4 else periods[i]} for i in shown]
+    lines = []
+    for name, data, css in series:
+        points = [(x(i), y(data[p])) for i, p in enumerate(periods) if data.get(p) is not None]
+        path_d = " ".join(f"{'M' if n == 0 else 'L'}{px},{py}" for n, (px, py) in enumerate(points))
+        last = next((data[p] for p in reversed(periods) if data.get(p) is not None), None)
+        lines.append({"name": name, "path": path_d, "points": points, "class": css, "last": fmt(last, unit)})
+    return {"width": CHART_W, "height": CHART_H, "left": PAD_L, "right": CHART_W - PAD_R, "ticks": ticks,
+            "labels": labels, "lines": lines}
+
+
+TRENDS = [
+    ("ehcp_20wk", "EHC plans issued within 20 weeks", "By calendar year.", "%"),
+    ("om_upheld", "Upheld Ombudsman complaints per 100,000 residents",
+     "Using the latest population estimate for every year.", ""),
+    ("recycling", "Household waste recycling rate", "Reused, recycled or composted.", "%"),
+    ("fly_rate", "Fly-tipping incidents per 1,000 residents", "As recorded by the council.", ""),
+]
+
+
+def _trends(council, members):
+    charts = []
+    for trend_id, title, note, unit in TRENDS:
+        periods = sorted({p for c in members for p in c["trends"].get(trend_id, {})})[-10:]
+        mine = council["trends"].get(trend_id, {})
+        if not mine:
+            continue
+        medians = {}
+        for p in periods:
+            values = [c["trends"][trend_id][p] for c in members if p in c["trends"].get(trend_id, {})]
+            medians[p] = round(median(values), 1) if values else None
+        chart = line_chart(periods, [(council["name"], mine, "app-chart__line--me"),
+                                     ("Median", medians, "app-chart__line--median")], unit)
+        if chart:
+            charts.append({"title": title, "note": note, "chart": chart})
+    return charts
