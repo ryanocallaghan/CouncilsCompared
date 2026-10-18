@@ -16,6 +16,9 @@ COUNCILS = DATA["councils"]
 # homes, and small numbers are left out of some shares
 MINIMUM = {m.id: 120 for m in model.MEASURES}
 MINIMUM.update({m.id: 75 for m in model.MEASURES if m.area == "housing"})
+# Counted from the Ombudsman's search, which is slow and sometimes refuses:
+# not required, so the rest of an update can still be published
+MINIMUM.update(om_children=0, om_sen=0, om_homeless=0)
 MINIMUM.update(om_remedy_before=100, om_timely=90, ta_long=100, fly_enforce=100)
 
 

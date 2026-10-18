@@ -50,7 +50,12 @@ def decisions(name, start, end):
     total = int(match.group(1)) if match else 0
     pages = -(-total // 10)
     for page in range(1, pages + 1):
-        html = first if page == 1 else search(name, start, end, page)
+        try:
+            html = first if page == 1 else search(name, start, end, page)
+        except urllib.error.HTTPError as e:
+            if e.code == 404:  # fewer pages than the count suggested
+                break
+            raise
         for category, sub, label in ITEM.findall(html):
             # The search matches names containing the text; keep exact ones
             if label.strip() == name:
