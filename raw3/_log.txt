@@ -1,0 +1,10 @@
+OK ees_api.csv 1456473 text/csv gzip
+OK ees_api_meta.json 719 application/json; charset=utf-8 None
+OK search_fly1.json 5693 application/json None
+OK search_fly2.json 5787 application/json None
+OK search_ofsted.json 4474 application/json None
+FAIL fly_guess1.json <HTTPError 404: 'Not Found'>
+FAIL fly_guess2.json <HTTPError 404: 'Not Found'>
+OK fly_deleted.json 756 application/json; charset=utf-8 None
+OK lgo_fullname.html 74224 text/html; charset=utf-8 None
+OK lgo_page8.html 70169 text/html; charset=utf-8 None
