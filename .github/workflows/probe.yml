@@ -14,10 +14,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: CC_CACHE=cache python -m pipeline.update --only fly,lgo_decisions,silktide --summary summary.md || true
+      - run: python probe4.py || true
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
-          git add -A cache data summary.md
+          git add -A probe4.txt
           git commit -qm "Pipeline run" || true
           git push
