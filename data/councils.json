@@ -24,6 +24,12 @@
    "period": "2025-26",
    "published": ""
   },
+  "lgo_decisions": {
+   "title": "Local Government and Social Care Ombudsman: published decisions",
+   "url": "https://www.lgo.org.uk/decisions",
+   "period": "2024-25 and 2025-26",
+   "published": ""
+  },
   "tsm": {
    "title": "Regulator of Social Housing: Tenant Satisfaction Measures 2024/25",
    "url": "https://www.gov.uk/government/statistics/tenant-satisfaction-measures-202425",
@@ -66,6 +72,12 @@
    "period": "2025-26",
    "published": "2026-09-17"
   },
+  "funding": {
+   "title": "MHCLG: Revenue outturn summary, 2025-26",
+   "url": "https://www.gov.uk/government/statistics/local-authority-revenue-expenditure-and-financing-england-2025-to-2026-individual-local-authority-data-outturn",
+   "period": "2025-26",
+   "published": "2026-09-17"
+  },
   "ofsted": {
    "title": "Ofsted: Local authority inspection outcomes as at 31 March 2026",
    "url": "https://www.gov.uk/government/statistics/local-authority-inspection-outcomes-as-at-31-march-2026",
@@ -77,6 +89,12 @@
    "url": "https://index.silktide.com/category/council-uk",
    "period": "October 2026",
    "published": ""
+  },
+  "area_bands": {
+   "title": "Valuation Office Agency: Council Tax: stock of properties, 2026",
+   "url": "https://www.gov.uk/government/statistics/council-tax-stock-of-properties-2026",
+   "period": "2026",
+   "published": "2026-09-24"
   }
  },
  "councils": [
@@ -97,12 +115,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 11.2,
+    "Council tax": 13.1,
+    "Government grants": 75.7
+   },
    "values": {
     "ehcp_20wk": 27.2,
     "om_received": 75.5,
     "om_remedy_before": 25.0,
     "om_timely": 53.8,
     "om_upheld": 8.4,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 76.8,
     "tsm_decent": 9.2,
     "tsm_listens": 40.2,
@@ -214,12 +240,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 6.5,
+    "Council tax": 26.5,
+    "Government grants": 67.0
+   },
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 70.3,
     "om_remedy_before": 15.2,
     "om_timely": 77.4,
     "om_upheld": 8.1,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 81.2,
     "tsm_decent": 2.9,
     "tsm_listens": 49.9,
@@ -331,10 +365,18 @@
     "parish": 8.58,
     "police": 280.04
    },
+   "funding": {
+    "Business rates": 14.1,
+    "Council tax": 22.9,
+    "Government grants": 63.0
+   },
    "values": {
     "ehcp_20wk": 98.6,
     "om_received": 41.1,
     "om_upheld": 1.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 93.0,
     "tsm_decent": 0.2,
     "tsm_listens": 62.3,
@@ -446,12 +488,20 @@
     "parish": 65.76,
     "police": 308.2
    },
+   "funding": {
+    "Business rates": 12.4,
+    "Council tax": 40.0,
+    "Government grants": 47.6
+   },
    "values": {
     "ehcp_20wk": 33.2,
     "om_received": 29.4,
     "om_remedy_before": 22.2,
     "om_timely": 85.7,
     "om_upheld": 4.5,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 1.0,
     "ctax_collect": 96.5,
     "recycling": 55.3,
     "fly_enforce": 12.9,
@@ -551,11 +601,19 @@
     "parish": 40.15,
     "police": 297.59
    },
+   "funding": {
+    "Business rates": 13.3,
+    "Council tax": 30.7,
+    "Government grants": 56.0
+   },
    "values": {
     "ehcp_20wk": 94.3,
     "om_received": 37.7,
     "om_remedy_before": 20.0,
     "om_upheld": 2.5,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 96.5,
     "recycling": 38.0,
     "fly_enforce": 60.0,
@@ -656,11 +714,19 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 12.3,
+    "Council tax": 32.9,
+    "Government grants": 54.8
+   },
    "values": {
     "ehcp_20wk": 65.9,
     "om_received": 34.2,
     "om_remedy_before": 33.3,
     "om_upheld": 2.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 94.8,
     "recycling": 46.0,
     "fly_enforce": 16.6,
@@ -763,12 +829,20 @@
     "parish": 9.73,
     "police": 244.5
    },
+   "funding": {
+    "Business rates": 18.3,
+    "Council tax": 15.1,
+    "Government grants": 66.6
+   },
    "values": {
     "ehcp_20wk": 37.1,
     "om_received": 63.5,
     "om_remedy_before": 8.0,
     "om_timely": 76.6,
     "om_upheld": 9.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 82.5,
     "tsm_decent": 71.8,
     "tsm_listens": 49.9,
@@ -880,10 +954,18 @@
     "parish": 5.18,
     "police": 292.4
    },
+   "funding": {
+    "Business rates": 15.0,
+    "Council tax": 17.0,
+    "Government grants": 68.0
+   },
    "values": {
     "ehcp_20wk": 79.9,
     "om_received": 26.9,
     "om_upheld": 1.8,
+    "om_children": 1.8,
+    "om_homeless": 0.0,
+    "om_sen": 0.6,
     "ctax_collect": 95.3,
     "recycling": 27.1,
     "fly_enforce": 128.7,
@@ -988,10 +1070,18 @@
     "parish": 0.0,
     "police": 292.4
    },
+   "funding": {
+    "Business rates": 18.8,
+    "Council tax": 22.5,
+    "Government grants": 58.7
+   },
    "values": {
     "ehcp_20wk": 55.0,
     "om_received": 41.8,
     "om_upheld": 2.8,
+    "om_children": 0.0,
+    "om_homeless": 0.7,
+    "om_sen": 0.0,
     "tsm_complaints": 98.7,
     "tsm_decent": 0.0,
     "tsm_listens": 66.1,
@@ -1103,12 +1193,20 @@
     "parish": 7.41,
     "police": 285.3
    },
+   "funding": {
+    "Business rates": 20.7,
+    "Council tax": 19.7,
+    "Government grants": 59.7
+   },
    "values": {
     "ehcp_20wk": 86.0,
     "om_received": 27.1,
     "om_remedy_before": 9.1,
     "om_timely": 14.3,
     "om_upheld": 3.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 93.7,
     "recycling": 49.4,
     "fly_enforce": 12.9,
@@ -1213,12 +1311,20 @@
     "parish": 35.59,
     "police": 322.58
    },
+   "funding": {
+    "Business rates": 9.8,
+    "Council tax": 39.1,
+    "Government grants": 51.1
+   },
    "values": {
     "ehcp_20wk": 69.0,
     "om_received": 44.8,
     "om_remedy_before": 20.0,
     "om_timely": 84.2,
     "om_upheld": 4.9,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 94.0,
     "tsm_decent": 0.1,
     "tsm_listens": 66.7,
@@ -1308,12 +1414,20 @@
     "parish": 93.75,
     "police": 298.28
    },
+   "funding": {
+    "Business rates": 10.2,
+    "Council tax": 34.4,
+    "Government grants": 55.4
+   },
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 42.4,
     "om_remedy_before": 20.0,
     "om_timely": 100.0,
     "om_upheld": 7.6,
+    "om_children": 3.0,
+    "om_homeless": 1.5,
+    "om_sen": 3.8,
     "ctax_collect": 97.0,
     "recycling": 55.7,
     "fly_enforce": 85.0,
@@ -1413,12 +1527,20 @@
     "parish": 27.68,
     "police": 278.28
    },
+   "funding": {
+    "Business rates": 14.2,
+    "Council tax": 22.8,
+    "Government grants": 63.0
+   },
    "values": {
     "ehcp_20wk": 86.5,
     "om_received": 31.9,
     "om_remedy_before": 18.5,
     "om_timely": 90.5,
     "om_upheld": 4.8,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 93.5,
     "recycling": 31.0,
     "fly_enforce": 22.6,
@@ -1523,12 +1645,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 11.2,
+    "Council tax": 19.6,
+    "Government grants": 69.2
+   },
    "values": {
     "ehcp_20wk": 69.7,
     "om_received": 80.9,
     "om_remedy_before": 18.9,
     "om_timely": 62.1,
     "om_upheld": 10.5,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 81.8,
     "tsm_decent": 4.8,
     "tsm_listens": 39.2,
@@ -1640,12 +1770,20 @@
     "parish": 0.72,
     "police": 281.91
    },
+   "funding": {
+    "Business rates": 11.3,
+    "Council tax": 26.1,
+    "Government grants": 62.7
+   },
    "values": {
     "ehcp_20wk": 57.4,
     "om_received": 56.0,
     "om_remedy_before": 21.7,
     "om_timely": 72.2,
     "om_upheld": 8.1,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 72.9,
     "tsm_decent": 2.0,
     "tsm_listens": 52.6,
@@ -1756,12 +1894,20 @@
     "parish": 0.0,
     "police": 308.2
    },
+   "funding": {
+    "Business rates": 17.4,
+    "Council tax": 28.2,
+    "Government grants": 54.4
+   },
    "values": {
     "ehcp_20wk": 6.8,
     "om_received": 51.1,
     "om_remedy_before": 34.8,
     "om_timely": 61.9,
     "om_upheld": 4.6,
+    "om_children": 0.0,
+    "om_homeless": 1.8,
+    "om_sen": 2.0,
     "tsm_complaints": 62.0,
     "tsm_decent": 7.7,
     "tsm_listens": 52.3,
@@ -1866,12 +2012,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 8.6,
+    "Council tax": 35.4,
+    "Government grants": 56.0
+   },
    "values": {
     "ehcp_20wk": 71.3,
     "om_received": 64.6,
     "om_remedy_before": 2.0,
     "om_timely": 55.1,
     "om_upheld": 14.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 96.8,
     "recycling": 50.9,
     "fly_enforce": 5.1,
@@ -1972,11 +2126,19 @@
     "parish": 101.34,
     "police": 298.28
    },
+   "funding": {
+    "Business rates": 7.9,
+    "Council tax": 39.0,
+    "Government grants": 53.2
+   },
    "values": {
     "om_received": 46.9,
     "om_remedy_before": 1.4,
     "om_timely": 93.0,
     "om_upheld": 11.8,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 98.1,
     "fly_enforce": 11.8,
     "fly_rate": 7.2,
@@ -2047,12 +2209,20 @@
     "parish": 0.0,
     "police": 285.3
    },
+   "funding": {
+    "Business rates": 18.0,
+    "Council tax": 28.7,
+    "Government grants": 53.3
+   },
    "values": {
     "ehcp_20wk": 98.1,
     "om_received": 48.7,
     "om_remedy_before": 11.1,
     "om_timely": 94.1,
     "om_upheld": 9.0,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 100.0,
     "tsm_decent": 0.5,
     "tsm_listens": 58.6,
@@ -2160,12 +2330,20 @@
     "parish": 18.19,
     "police": 278.28
    },
+   "funding": {
+    "Business rates": 13.6,
+    "Council tax": 29.0,
+    "Government grants": 57.5
+   },
    "values": {
     "ehcp_20wk": 94.1,
     "om_received": 40.8,
     "om_remedy_before": 50.0,
     "om_timely": 85.7,
     "om_upheld": 3.8,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 95.3,
     "recycling": 41.0,
     "fly_enforce": 14.1,
@@ -2267,12 +2445,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 12.8,
+    "Council tax": 20.2,
+    "Government grants": 67.0
+   },
    "values": {
     "ehcp_20wk": 73.0,
     "om_received": 105.2,
     "om_remedy_before": 7.4,
     "om_timely": 70.0,
     "om_upheld": 12.5,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 89.3,
     "tsm_decent": 6.0,
     "tsm_listens": 55.9,
@@ -2384,12 +2570,20 @@
     "parish": 164.31,
     "police": 297.59
    },
+   "funding": {
+    "Business rates": -0.0,
+    "Council tax": 39.8,
+    "Government grants": 60.2
+   },
    "values": {
     "ehcp_20wk": 56.3,
     "om_received": 37.6,
     "om_remedy_before": 23.5,
     "om_timely": 83.3,
     "om_upheld": 5.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 50.5,
     "tsm_decent": 13.8,
     "tsm_listens": 51.4,
@@ -2496,12 +2690,20 @@
     "parish": 83.39,
     "police": 295.44
    },
+   "funding": {
+    "Business rates": 8.3,
+    "Council tax": 41.7,
+    "Government grants": 50.0
+   },
    "values": {
     "ehcp_20wk": 23.9,
     "om_received": 53.6,
     "om_remedy_before": 9.1,
     "om_timely": 65.6,
     "om_upheld": 7.8,
+    "om_children": 2.8,
+    "om_homeless": 0.2,
+    "om_sen": 4.0,
     "ctax_collect": 97.5,
     "recycling": 51.6,
     "fly_enforce": 1.1,
@@ -2600,12 +2802,20 @@
     "parish": 45.01,
     "police": 295.44
    },
+   "funding": {
+    "Business rates": 6.6,
+    "Council tax": 30.3,
+    "Government grants": 63.0
+   },
    "values": {
     "ehcp_20wk": 22.1,
     "om_received": 29.1,
     "om_remedy_before": 37.5,
     "om_timely": 75.0,
     "om_upheld": 4.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 47.0,
     "tsm_decent": 0.0,
     "tsm_listens": 63.3,
@@ -2712,12 +2922,20 @@
     "parish": 201.37,
     "police": 303.2
    },
+   "funding": {
+    "Business rates": 18.8,
+    "Council tax": 37.4,
+    "Government grants": 43.8
+   },
    "values": {
     "ehcp_20wk": 34.1,
     "om_received": 48.2,
     "om_remedy_before": 8.2,
     "om_timely": 85.7,
     "om_upheld": 8.4,
+    "om_children": 2.2,
+    "om_homeless": 0.0,
+    "om_sen": 6.0,
     "tsm_complaints": 73.5,
     "tsm_decent": 17.9,
     "tsm_listens": 56.3,
@@ -2821,12 +3039,20 @@
     "parish": 122.18,
     "police": 300.74
    },
+   "funding": {
+    "Business rates": 14.5,
+    "Council tax": 25.0,
+    "Government grants": 60.5
+   },
    "values": {
     "ehcp_20wk": 77.6,
     "om_received": 31.2,
     "om_remedy_before": 23.5,
     "om_timely": 85.7,
     "om_upheld": 3.2,
+    "om_children": 0.4,
+    "om_homeless": 0.0,
+    "om_sen": 0.9,
     "ctax_collect": 95.1,
     "recycling": 36.7,
     "fly_enforce": 110.4,
@@ -2931,12 +3157,20 @@
     "parish": 0.63,
     "police": 244.5
    },
+   "funding": {
+    "Business rates": 17.3,
+    "Council tax": 22.9,
+    "Government grants": 59.8
+   },
    "values": {
     "ehcp_20wk": 37.6,
     "om_received": 40.0,
     "om_remedy_before": 22.2,
     "om_timely": 92.3,
     "om_upheld": 4.9,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 93.4,
     "recycling": 34.2,
     "fly_enforce": 122.6,
@@ -3041,12 +3275,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 11.0,
+    "Council tax": 29.8,
+    "Government grants": 59.2
+   },
    "values": {
     "ehcp_20wk": 61.2,
     "om_received": 88.5,
     "om_remedy_before": 14.3,
     "om_timely": 57.1,
     "om_upheld": 10.2,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 35.5,
     "tsm_decent": 7.2,
     "tsm_listens": 42.9,
@@ -3157,12 +3399,16 @@
     "parish": 66.6,
     "police": 338.94
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 6.7,
     "om_received": 27.3,
     "om_remedy_before": 0.0,
     "om_timely": 91.7,
     "om_upheld": 4.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 95.9,
     "recycling": 51.2,
     "fly_enforce": 84.2,
@@ -3224,11 +3470,19 @@
     "parish": 8.1,
     "police": 300.74
    },
+   "funding": {
+    "Business rates": 15.5,
+    "Council tax": 32.4,
+    "Government grants": 52.1
+   },
    "values": {
     "ehcp_20wk": 81.5,
     "om_received": 48.5,
     "om_remedy_before": 40.0,
     "om_upheld": 4.4,
+    "om_children": 0.9,
+    "om_homeless": 0.0,
+    "om_sen": 0.9,
     "tsm_complaints": 79.9,
     "tsm_decent": 0.0,
     "tsm_listens": 70.3,
@@ -3339,12 +3593,20 @@
     "parish": 0.0,
     "police": 308.6
    },
+   "funding": {
+    "Business rates": 15.2,
+    "Council tax": 21.8,
+    "Government grants": 63.0
+   },
    "values": {
     "ehcp_20wk": 52.6,
     "om_received": 32.3,
     "om_remedy_before": 6.2,
     "om_timely": 50.0,
     "om_upheld": 5.8,
+    "om_children": 0.7,
+    "om_homeless": 0.7,
+    "om_sen": 4.7,
     "tsm_complaints": 97.8,
     "tsm_decent": 0.7,
     "tsm_listens": 73.5,
@@ -3456,12 +3718,20 @@
     "parish": 42.8,
     "police": 280.04
    },
+   "funding": {
+    "Business rates": 18.1,
+    "Council tax": 23.0,
+    "Government grants": 58.9
+   },
    "values": {
     "ehcp_20wk": 83.9,
     "om_received": 27.9,
     "om_remedy_before": 0.0,
     "om_timely": 100.0,
     "om_upheld": 1.9,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 99.7,
     "tsm_decent": 5.5,
     "tsm_listens": 75.4,
@@ -3573,12 +3843,20 @@
     "parish": 139.59,
     "police": 322.58
    },
+   "funding": {
+    "Business rates": 8.5,
+    "Council tax": 44.0,
+    "Government grants": 47.5
+   },
    "values": {
     "ehcp_20wk": 78.2,
     "om_received": 46.3,
     "om_remedy_before": 11.1,
     "om_timely": 86.1,
     "om_upheld": 9.2,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 95.1,
     "recycling": 60.5,
     "fly_enforce": 82.0,
@@ -3660,12 +3938,16 @@
     "parish": 0.0,
     "police": 244.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 25.1,
     "om_received": 45.2,
     "om_remedy_before": 7.7,
     "om_timely": 81.8,
     "om_upheld": 3.9,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 74.7,
     "tsm_decent": 3.8,
     "tsm_listens": 56.9,
@@ -3764,12 +4046,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 10.2,
+    "Council tax": 18.6,
+    "Government grants": 71.2
+   },
    "values": {
     "ehcp_20wk": 52.2,
     "om_received": 86.0,
     "om_remedy_before": 10.8,
     "om_timely": 53.3,
     "om_upheld": 9.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 60.9,
     "tsm_decent": 7.1,
     "tsm_listens": 45.9,
@@ -3881,12 +4171,20 @@
     "parish": 75.6,
     "police": 313.66
    },
+   "funding": {
+    "Business rates": 11.8,
+    "Council tax": 33.2,
+    "Government grants": 55.0
+   },
    "values": {
     "ehcp_20wk": 92.9,
     "om_received": 29.4,
     "om_remedy_before": 8.3,
     "om_timely": 62.5,
     "om_upheld": 3.3,
+    "om_children": 0.6,
+    "om_homeless": 0.0,
+    "om_sen": 3.1,
     "tsm_complaints": 82.3,
     "tsm_decent": 2.8,
     "tsm_listens": 69.8,
@@ -3994,12 +4292,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 11.8,
+    "Council tax": 20.2,
+    "Government grants": 68.0
+   },
    "values": {
     "ehcp_20wk": 67.2,
     "om_received": 91.1,
     "om_remedy_before": 17.1,
     "om_timely": 51.5,
     "om_upheld": 12.4,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 95.5,
     "tsm_decent": 5.3,
     "tsm_listens": 68.9,
@@ -4111,10 +4417,18 @@
     "parish": 0.29,
     "police": 214.34
    },
+   "funding": {
+    "Business rates": 12.7,
+    "Council tax": 22.8,
+    "Government grants": 64.5
+   },
    "values": {
     "ehcp_20wk": 83.7,
     "om_received": 34.6,
     "om_upheld": 2.0,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 66.8,
     "tsm_decent": 2.6,
     "tsm_listens": 60.7,
@@ -4226,12 +4540,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 14.0,
+    "Council tax": 15.8,
+    "Government grants": 70.2
+   },
    "values": {
     "ehcp_20wk": 31.2,
     "om_received": 65.1,
     "om_remedy_before": 18.8,
     "om_timely": 63.6,
     "om_upheld": 5.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 54.4,
     "tsm_decent": 1.9,
     "tsm_listens": 55.8,
@@ -4343,12 +4665,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 18.3,
+    "Council tax": 12.1,
+    "Government grants": 69.5
+   },
    "values": {
     "ehcp_20wk": 32.8,
     "om_received": 95.8,
     "om_remedy_before": 22.6,
     "om_timely": 65.0,
     "om_upheld": 11.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 67.4,
     "tsm_decent": 9.6,
     "tsm_listens": 52.7,
@@ -4458,12 +4788,20 @@
     "parish": 8.27,
     "police": 295.44
    },
+   "funding": {
+    "Business rates": 23.1,
+    "Council tax": 18.1,
+    "Government grants": 58.8
+   },
    "values": {
     "ehcp_20wk": 94.7,
     "om_received": 34.9,
     "om_remedy_before": 33.3,
     "om_timely": 60.0,
     "om_upheld": 4.5,
+    "om_children": 1.5,
+    "om_homeless": 1.5,
+    "om_sen": 0.8,
     "ctax_collect": 94.2,
     "recycling": 36.1,
     "fly_enforce": 131.5,
@@ -4568,12 +4906,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 17.7,
+    "Council tax": 17.0,
+    "Government grants": 65.3
+   },
    "values": {
     "ehcp_20wk": 87.2,
     "om_received": 86.2,
     "om_remedy_before": 25.0,
     "om_timely": 93.3,
     "om_upheld": 10.5,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 93.3,
     "tsm_decent": 4.1,
     "tsm_listens": 62.5,
@@ -4685,12 +5031,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 14.0,
+    "Council tax": 17.6,
+    "Government grants": 68.4
+   },
    "values": {
     "ehcp_20wk": 89.6,
     "om_received": 141.2,
     "om_remedy_before": 9.8,
     "om_timely": 70.8,
     "om_upheld": 19.2,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 70.0,
     "tsm_decent": 19.5,
     "tsm_listens": 43.4,
@@ -4802,12 +5156,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 7.6,
+    "Council tax": 33.0,
+    "Government grants": 59.4
+   },
    "values": {
     "ehcp_20wk": 88.2,
     "om_received": 67.9,
     "om_remedy_before": 5.6,
     "om_timely": 63.2,
     "om_upheld": 6.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 58.4,
     "tsm_decent": 2.8,
     "tsm_listens": 41.4,
@@ -4919,10 +5281,18 @@
     "parish": 3.32,
     "police": 332.73
    },
+   "funding": {
+    "Business rates": 15.8,
+    "Council tax": 23.0,
+    "Government grants": 61.3
+   },
    "values": {
     "ehcp_20wk": 21.4,
     "om_received": 28.1,
     "om_upheld": 1.0,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 1.0,
     "ctax_collect": 93.7,
     "recycling": 27.7,
     "fly_enforce": 108.8,
@@ -5026,12 +5396,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 8.7,
+    "Council tax": 30.0,
+    "Government grants": 61.3
+   },
    "values": {
     "ehcp_20wk": 32.0,
     "om_received": 68.7,
     "om_remedy_before": 27.3,
     "om_timely": 40.0,
     "om_upheld": 7.8,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 82.6,
     "tsm_decent": 2.8,
     "tsm_listens": 32.3,
@@ -5139,12 +5517,20 @@
     "parish": 93.01,
     "police": 306.5
    },
+   "funding": {
+    "Business rates": 12.4,
+    "Council tax": 37.5,
+    "Government grants": 50.1
+   },
    "values": {
     "ehcp_20wk": 57.0,
     "om_received": 33.8,
     "om_remedy_before": 10.0,
     "om_timely": 100.0,
     "om_upheld": 5.2,
+    "om_children": 1.0,
+    "om_homeless": 2.1,
+    "om_sen": 3.1,
     "ctax_collect": 97.4,
     "recycling": 39.1,
     "fly_enforce": 137.9,
@@ -5244,12 +5630,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 12.0,
+    "Council tax": 24.0,
+    "Government grants": 64.0
+   },
    "values": {
     "ehcp_20wk": 77.6,
     "om_received": 63.1,
     "om_remedy_before": 5.0,
     "om_timely": 50.0,
     "om_upheld": 6.1,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 60.2,
     "tsm_decent": 18.2,
     "tsm_listens": 51.7,
@@ -5361,12 +5755,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 11.1,
+    "Council tax": 22.1,
+    "Government grants": 66.8
+   },
    "values": {
     "ehcp_20wk": 58.4,
     "om_received": 76.1,
     "om_remedy_before": 23.1,
     "om_timely": 71.4,
     "om_upheld": 8.7,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 42.4,
     "tsm_decent": 4.1,
     "tsm_listens": 64.7,
@@ -5478,12 +5880,20 @@
     "parish": 138.72,
     "police": 290.46
    },
+   "funding": {
+    "Business rates": 12.9,
+    "Council tax": 31.8,
+    "Government grants": 55.3
+   },
    "values": {
     "ehcp_20wk": 12.5,
     "om_received": 61.1,
     "om_remedy_before": 9.1,
     "om_timely": 77.8,
     "om_upheld": 7.8,
+    "om_children": 1.4,
+    "om_homeless": 2.1,
+    "om_sen": 7.1,
     "ctax_collect": 94.6,
     "recycling": 49.7,
     "fly_enforce": 2.3,
@@ -5586,12 +5996,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 16.2,
+    "Council tax": 15.9,
+    "Government grants": 67.9
+   },
    "values": {
     "ehcp_20wk": 85.8,
     "om_received": 97.5,
     "om_remedy_before": 22.2,
     "om_timely": 76.2,
     "om_upheld": 12.0,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_decent": 4.0,
     "tsm_listens": 59.3,
     "tsm_maintained": 68.3,
@@ -5702,12 +6120,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 14.9,
+    "Council tax": 22.8,
+    "Government grants": 62.3
+   },
    "values": {
     "ehcp_20wk": 97.9,
     "om_received": 117.3,
     "om_remedy_before": 18.2,
     "om_timely": 42.9,
     "om_upheld": 15.1,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 93.9,
     "tsm_decent": 31.8,
     "tsm_listens": 60.4,
@@ -5819,12 +6245,20 @@
     "parish": 0.0,
     "police": 313.66
    },
+   "funding": {
+    "Business rates": 19.4,
+    "Council tax": 18.9,
+    "Government grants": 61.7
+   },
    "values": {
     "ehcp_20wk": 37.4,
     "om_received": 37.7,
     "om_remedy_before": 22.2,
     "om_timely": 100.0,
     "om_upheld": 6.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 96.3,
     "tsm_decent": 10.6,
     "tsm_listens": 66.2,
@@ -5936,12 +6370,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 7.8,
+    "Council tax": 35.4,
+    "Government grants": 56.8
+   },
    "values": {
     "ehcp_20wk": 97.2,
     "om_received": 75.8,
     "om_remedy_before": 14.3,
     "om_timely": 100.0,
     "om_upheld": 8.1,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 55.9,
     "tsm_decent": 14.0,
     "tsm_listens": 50.1,
@@ -6051,12 +6493,20 @@
     "parish": 10.88,
     "police": 278.28
    },
+   "funding": {
+    "Business rates": 12.6,
+    "Council tax": 27.5,
+    "Government grants": 59.9
+   },
    "values": {
     "ehcp_20wk": 62.8,
     "om_received": 32.5,
     "om_remedy_before": 27.3,
     "om_timely": 76.9,
     "om_upheld": 4.9,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 69.6,
     "tsm_decent": 21.7,
     "tsm_listens": 49.6,
@@ -6168,12 +6618,20 @@
     "parish": 40.09,
     "police": 293.97
    },
+   "funding": {
+    "Business rates": 28.3,
+    "Council tax": 14.7,
+    "Government grants": 57.0
+   },
    "values": {
     "ehcp_20wk": 86.4,
     "om_received": 39.7,
     "om_remedy_before": 0.0,
     "om_timely": 42.9,
     "om_upheld": 4.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 91.0,
     "recycling": 26.2,
     "fly_enforce": 61.7,
@@ -6278,12 +6736,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 15.5,
+    "Council tax": 17.1,
+    "Government grants": 67.5
+   },
    "values": {
     "ehcp_20wk": 89.1,
     "om_received": 142.2,
     "om_remedy_before": 5.0,
     "om_timely": 59.6,
     "om_upheld": 19.1,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 36.3,
     "tsm_decent": 11.5,
     "tsm_listens": 44.0,
@@ -6395,12 +6861,20 @@
     "parish": 12.22,
     "police": 278.28
    },
+   "funding": {
+    "Business rates": 12.3,
+    "Council tax": 22.5,
+    "Government grants": 65.2
+   },
    "values": {
     "ehcp_20wk": 7.3,
     "om_received": 39.7,
     "om_remedy_before": 17.3,
     "om_timely": 87.5,
     "om_upheld": 6.2,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 94.7,
     "tsm_decent": 3.8,
     "tsm_listens": 54.2,
@@ -6512,11 +6986,19 @@
     "parish": 0.0,
     "police": 315.23
    },
+   "funding": {
+    "Business rates": 16.7,
+    "Council tax": 18.4,
+    "Government grants": 65.0
+   },
    "values": {
     "om_received": 53.0,
     "om_remedy_before": 0.0,
     "om_timely": 66.7,
     "om_upheld": 3.9,
+    "om_children": 0.3,
+    "om_homeless": 1.3,
+    "om_sen": 2.9,
     "tsm_complaints": 72.6,
     "tsm_decent": 0.5,
     "tsm_listens": 60.0,
@@ -6626,12 +7108,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 10.3,
+    "Council tax": 15.2,
+    "Government grants": 74.5
+   },
    "values": {
     "ehcp_20wk": 22.9,
     "om_received": 91.7,
     "om_remedy_before": 8.9,
     "om_timely": 60.5,
     "om_upheld": 14.9,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 34.2,
     "tsm_decent": 17.4,
     "tsm_listens": 43.9,
@@ -6742,12 +7232,20 @@
     "parish": 0.0,
     "police": 293.97
    },
+   "funding": {
+    "Business rates": 23.7,
+    "Council tax": 16.0,
+    "Government grants": 60.3
+   },
    "values": {
     "ehcp_20wk": 97.3,
     "om_received": 47.4,
     "om_remedy_before": 26.3,
     "om_timely": 93.3,
     "om_upheld": 3.7,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 86.8,
     "recycling": 19.2,
     "fly_enforce": 0.0,
@@ -6850,12 +7348,20 @@
     "parish": 0.0,
     "police": 297.59
    },
+   "funding": {
+    "Business rates": 11.9,
+    "Council tax": 20.2,
+    "Government grants": 67.9
+   },
    "values": {
     "ehcp_20wk": 29.1,
     "om_received": 41.9,
     "om_remedy_before": 27.3,
     "om_timely": 100.0,
     "om_upheld": 4.7,
+    "om_children": 1.7,
+    "om_homeless": 2.1,
+    "om_sen": 0.4,
     "tsm_complaints": 82.2,
     "tsm_decent": 0.8,
     "tsm_listens": 57.2,
@@ -6967,12 +7473,20 @@
     "parish": 0.0,
     "police": 285.3
    },
+   "funding": {
+    "Business rates": 28.3,
+    "Council tax": 16.2,
+    "Government grants": 55.6
+   },
    "values": {
     "ehcp_20wk": 74.2,
     "om_received": 51.0,
     "om_remedy_before": 23.5,
     "om_timely": 73.1,
     "om_upheld": 5.8,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 46.6,
     "tsm_decent": 3.3,
     "tsm_listens": 53.8,
@@ -7084,12 +7598,20 @@
     "parish": 9.26,
     "police": 285.15
    },
+   "funding": {
+    "Business rates": 13.9,
+    "Council tax": 31.9,
+    "Government grants": 54.2
+   },
    "values": {
     "ehcp_20wk": 21.4,
     "om_received": 50.2,
     "om_remedy_before": 17.4,
     "om_timely": 76.2,
     "om_upheld": 7.9,
+    "om_children": 0.0,
+    "om_homeless": 0.7,
+    "om_sen": 6.5,
     "tsm_complaints": 92.4,
     "tsm_decent": 4.8,
     "tsm_listens": 64.5,
@@ -7197,11 +7719,19 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 9.7,
+    "Council tax": 24.0,
+    "Government grants": 66.3
+   },
    "values": {
     "ehcp_20wk": 95.6,
     "om_received": 59.8,
     "om_remedy_before": 0.0,
     "om_upheld": 5.0,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 95.4,
     "recycling": 38.6,
     "fly_enforce": 63.8,
@@ -7304,10 +7834,18 @@
     "parish": 1.11,
     "police": 332.73
    },
+   "funding": {
+    "Business rates": 17.5,
+    "Council tax": 20.8,
+    "Government grants": 61.7
+   },
    "values": {
     "ehcp_20wk": 93.3,
     "om_received": 38.6,
     "om_upheld": 2.6,
+    "om_children": 3.9,
+    "om_homeless": 0.0,
+    "om_sen": 1.3,
     "ctax_collect": 92.9,
     "recycling": 23.8,
     "fly_enforce": 102.9,
@@ -7412,12 +7950,20 @@
     "parish": 136.94,
     "police": 298.28
    },
+   "funding": {
+    "Business rates": 13.0,
+    "Council tax": 29.9,
+    "Government grants": 57.1
+   },
    "values": {
     "ehcp_20wk": 11.5,
     "om_received": 61.5,
     "om_remedy_before": 5.6,
     "om_timely": 61.1,
     "om_upheld": 11.7,
+    "om_children": 3.6,
+    "om_homeless": 1.6,
+    "om_sen": 6.2,
     "tsm_complaints": 53.2,
     "tsm_decent": 6.4,
     "tsm_listens": 38.0,
@@ -7527,12 +8073,20 @@
     "parish": 1.53,
     "police": 214.34
    },
+   "funding": {
+    "Business rates": 16.2,
+    "Council tax": 20.8,
+    "Government grants": 63.0
+   },
    "values": {
     "ehcp_20wk": 21.8,
     "om_received": 31.8,
     "om_remedy_before": 11.1,
     "om_timely": 57.1,
     "om_upheld": 2.8,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 62.6,
     "tsm_decent": 11.1,
     "tsm_listens": 42.3,
@@ -7644,12 +8198,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 17.2,
+    "Council tax": 12.6,
+    "Government grants": 70.2
+   },
    "values": {
     "ehcp_20wk": 31.5,
     "om_received": 87.6,
     "om_remedy_before": 15.2,
     "om_timely": 54.8,
     "om_upheld": 8.8,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 67.6,
     "tsm_decent": 26.0,
     "tsm_listens": 63.3,
@@ -7761,12 +8323,20 @@
     "parish": 22.39,
     "police": 313.66
    },
+   "funding": {
+    "Business rates": 16.8,
+    "Council tax": 28.1,
+    "Government grants": 55.0
+   },
    "values": {
     "ehcp_20wk": 98.6,
     "om_received": 36.2,
     "om_remedy_before": 20.0,
     "om_timely": 100.0,
     "om_upheld": 6.2,
+    "om_children": 1.9,
+    "om_homeless": 0.0,
+    "om_sen": 0.6,
     "ctax_collect": 92.0,
     "recycling": 37.7,
     "fly_enforce": 29.2,
@@ -7869,10 +8439,18 @@
     "parish": 42.18,
     "police": 313.66
    },
+   "funding": {
+    "Business rates": 18.2,
+    "Council tax": 24.1,
+    "Government grants": 57.7
+   },
    "values": {
     "ehcp_20wk": 70.4,
     "om_received": 24.5,
     "om_upheld": 2.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 1.8,
     "ctax_collect": 95.0,
     "recycling": 52.0,
     "fly_enforce": 11.2,
@@ -7975,12 +8553,20 @@
     "parish": 80.3,
     "police": 335.04
    },
+   "funding": {
+    "Business rates": 17.4,
+    "Council tax": 34.4,
+    "Government grants": 48.1
+   },
    "values": {
     "ehcp_20wk": 56.5,
     "om_received": 47.2,
     "om_remedy_before": 16.0,
     "om_timely": 64.7,
     "om_upheld": 6.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 40.4,
     "tsm_decent": 14.6,
     "tsm_listens": 56.2,
@@ -8067,12 +8653,20 @@
     "parish": 132.58,
     "police": 308.2
    },
+   "funding": {
+    "Business rates": 13.6,
+    "Council tax": 41.2,
+    "Government grants": 45.2
+   },
    "values": {
     "ehcp_20wk": 96.0,
     "om_received": 37.9,
     "om_remedy_before": 14.3,
     "om_timely": 42.9,
     "om_upheld": 3.1,
+    "om_children": 0.4,
+    "om_homeless": 0.0,
+    "om_sen": 0.9,
     "ctax_collect": 98.0,
     "recycling": 58.9,
     "fly_enforce": 3.2,
@@ -8168,12 +8762,20 @@
     "parish": 0.0,
     "police": 214.34
    },
+   "funding": {
+    "Business rates": 9.9,
+    "Council tax": 22.9,
+    "Government grants": 67.2
+   },
    "values": {
     "ehcp_20wk": 26.0,
     "om_received": 35.7,
     "om_remedy_before": 37.5,
     "om_timely": 77.8,
     "om_upheld": 7.4,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 100.0,
     "tsm_decent": 2.9,
     "tsm_listens": 50.4,
@@ -8282,11 +8884,19 @@
     "parish": 55.54,
     "police": 335.86
    },
+   "funding": {
+    "Business rates": 11.0,
+    "Council tax": 39.3,
+    "Government grants": 49.6
+   },
    "values": {
     "om_received": 37.7,
     "om_remedy_before": 2.4,
     "om_timely": 89.2,
     "om_upheld": 6.4,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 68.5,
     "tsm_decent": 0.0,
     "tsm_listens": 58.0,
@@ -8362,12 +8972,20 @@
     "parish": 103.24,
     "police": 214.34
    },
+   "funding": {
+    "Business rates": 14.6,
+    "Council tax": 34.4,
+    "Government grants": 51.1
+   },
    "values": {
     "ehcp_20wk": 81.4,
     "om_received": 36.2,
     "om_remedy_before": 27.3,
     "om_timely": 77.8,
     "om_upheld": 3.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 69.0,
     "tsm_decent": 1.9,
     "tsm_listens": 52.1,
@@ -8469,11 +9087,19 @@
     "parish": 0.0,
     "police": 311.1
    },
+   "funding": {
+    "Business rates": 15.7,
+    "Council tax": 18.5,
+    "Government grants": 65.8
+   },
    "values": {
     "ehcp_20wk": 30.2,
     "om_received": 30.7,
     "om_remedy_before": 25.0,
     "om_upheld": 2.5,
+    "om_children": 0.3,
+    "om_homeless": 0.6,
+    "om_sen": 0.0,
     "tsm_complaints": 100.0,
     "tsm_decent": 0.3,
     "tsm_listens": 52.8,
@@ -8580,11 +9206,19 @@
     "parish": 6.76,
     "police": 285.3
    },
+   "funding": {
+    "Business rates": 23.5,
+    "Council tax": 21.2,
+    "Government grants": 55.3
+   },
    "values": {
     "ehcp_20wk": 76.9,
     "om_received": 32.6,
     "om_remedy_before": 33.3,
     "om_upheld": 2.4,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 100.0,
     "tsm_decent": 0.0,
     "tsm_listens": 80.1,
@@ -8696,11 +9330,19 @@
     "parish": 14.22,
     "police": 314.37
    },
+   "funding": {
+    "Business rates": 14.2,
+    "Council tax": 23.5,
+    "Government grants": 62.3
+   },
    "values": {
     "ehcp_20wk": 66.0,
     "om_received": 36.5,
     "om_remedy_before": 50.0,
     "om_upheld": 3.6,
+    "om_children": 1.3,
+    "om_homeless": 0.0,
+    "om_sen": 1.3,
     "ctax_collect": 94.3,
     "recycling": 39.6,
     "fly_enforce": 48.2,
@@ -8805,12 +9447,20 @@
     "parish": 0.0,
     "police": 303.2
    },
+   "funding": {
+    "Business rates": 15.6,
+    "Council tax": 26.9,
+    "Government grants": 57.4
+   },
    "values": {
     "ehcp_20wk": 10.2,
     "om_received": 38.3,
     "om_remedy_before": 15.4,
     "om_timely": 100.0,
     "om_upheld": 4.8,
+    "om_children": 1.1,
+    "om_homeless": 0.4,
+    "om_sen": 3.3,
     "ctax_collect": 95.8,
     "recycling": 32.9,
     "fly_enforce": 25.2,
@@ -8915,12 +9565,20 @@
     "parish": 0.0,
     "police": 290.46
    },
+   "funding": {
+    "Business rates": 14.7,
+    "Council tax": 22.7,
+    "Government grants": 62.6
+   },
    "values": {
     "ehcp_20wk": 42.9,
     "om_received": 31.2,
     "om_remedy_before": 16.7,
     "om_timely": 77.8,
     "om_upheld": 5.7,
+    "om_children": 0.9,
+    "om_homeless": 1.4,
+    "om_sen": 1.9,
     "tsm_complaints": 55.4,
     "tsm_decent": 4.5,
     "tsm_listens": 77.8,
@@ -9032,12 +9690,20 @@
     "parish": 0.0,
     "police": 298.28
    },
+   "funding": {
+    "Business rates": 12.8,
+    "Council tax": 31.6,
+    "Government grants": 55.6
+   },
    "values": {
     "ehcp_20wk": 62.5,
     "om_received": 38.6,
     "om_remedy_before": 14.3,
     "om_timely": 75.0,
     "om_upheld": 3.8,
+    "om_children": 1.6,
+    "om_homeless": 0.5,
+    "om_sen": 2.7,
     "tsm_complaints": 47.9,
     "tsm_decent": 7.8,
     "tsm_listens": 68.3,
@@ -9149,12 +9815,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 8.7,
+    "Council tax": 19.6,
+    "Government grants": 71.7
+   },
    "values": {
     "ehcp_20wk": 27.9,
     "om_received": 71.8,
     "om_remedy_before": 8.9,
     "om_timely": 73.8,
     "om_upheld": 14.0,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 76.3,
     "tsm_decent": 6.7,
     "tsm_listens": 54.7,
@@ -9264,10 +9938,18 @@
     "parish": 18.26,
     "police": 332.73
    },
+   "funding": {
+    "Business rates": 16.9,
+    "Council tax": 27.2,
+    "Government grants": 55.9
+   },
    "values": {
     "ehcp_20wk": 19.9,
     "om_received": 21.5,
     "om_upheld": 2.1,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 92.4,
     "recycling": 32.2,
     "fly_enforce": 2.2,
@@ -9370,12 +10052,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 6.9,
+    "Council tax": 36.8,
+    "Government grants": 56.3
+   },
    "values": {
     "ehcp_20wk": 96.5,
     "om_received": 45.2,
     "om_remedy_before": 14.3,
     "om_timely": 80.0,
     "om_upheld": 3.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 98.1,
     "recycling": 40.9,
     "fly_enforce": 35.5,
@@ -9478,12 +10168,20 @@
     "parish": 0.0,
     "police": 285.3
    },
+   "funding": {
+    "Business rates": 23.8,
+    "Council tax": 19.3,
+    "Government grants": 56.9
+   },
    "values": {
     "ehcp_20wk": 49.3,
     "om_received": 26.9,
     "om_remedy_before": 20.0,
     "om_timely": 80.0,
     "om_upheld": 2.1,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 93.8,
     "recycling": 48.8,
     "fly_enforce": 29.6,
@@ -9588,10 +10286,18 @@
     "parish": 61.92,
     "police": 280.04
    },
+   "funding": {
+    "Business rates": 16.7,
+    "Council tax": 24.8,
+    "Government grants": 58.5
+   },
    "values": {
     "ehcp_20wk": 79.4,
     "om_received": 23.3,
     "om_upheld": 0.7,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 78.1,
     "tsm_decent": 7.2,
     "tsm_listens": 71.5,
@@ -9703,10 +10409,18 @@
     "parish": 67.37,
     "police": 315.23
    },
+   "funding": {
+    "Business rates": 11.1,
+    "Council tax": 48.4,
+    "Government grants": 40.6
+   },
    "values": {
     "ehcp_20wk": 80.7,
     "om_received": 55.2,
     "om_upheld": 0.0,
+    "om_children": 2.4,
+    "om_homeless": 0.0,
+    "om_sen": 4.8,
     "ctax_collect": 97.5,
     "recycling": 55.7,
     "fly_enforce": 0.5,
@@ -9807,12 +10521,20 @@
     "parish": 0.0,
     "police": 285.3
    },
+   "funding": {
+    "Business rates": 23.7,
+    "Council tax": 20.5,
+    "Government grants": 55.7
+   },
    "values": {
     "ehcp_20wk": 54.9,
     "om_received": 41.1,
     "om_remedy_before": 16.7,
     "om_timely": 100.0,
     "om_upheld": 4.0,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 100.0,
     "tsm_decent": 0.0,
     "tsm_listens": 68.5,
@@ -9924,12 +10646,16 @@
     "parish": 0.0,
     "police": 244.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 29.8,
     "om_received": 48.7,
     "om_remedy_before": 13.3,
     "om_timely": 58.3,
     "om_upheld": 4.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 38.2,
     "tsm_decent": 1.1,
     "tsm_listens": 58.7,
@@ -10030,12 +10756,20 @@
     "parish": 18.49,
     "police": 293.97
    },
+   "funding": {
+    "Business rates": 18.5,
+    "Council tax": 26.7,
+    "Government grants": 54.8
+   },
    "values": {
     "ehcp_20wk": 42.9,
     "om_received": 37.2,
     "om_remedy_before": 33.3,
     "om_timely": 80.0,
     "om_upheld": 3.1,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 94.4,
     "recycling": 33.2,
     "fly_enforce": 104.5,
@@ -10139,12 +10873,20 @@
     "parish": 4.84,
     "police": 280.04
    },
+   "funding": {
+    "Business rates": 15.4,
+    "Council tax": 22.4,
+    "Government grants": 62.1
+   },
    "values": {
     "ehcp_20wk": 27.8,
     "om_received": 40.4,
     "om_remedy_before": 8.0,
     "om_timely": 64.0,
     "om_upheld": 4.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 63.7,
     "tsm_decent": 5.4,
     "tsm_listens": 59.2,
@@ -10256,12 +10998,20 @@
     "parish": 128.15,
     "police": 306.5
    },
+   "funding": {
+    "Business rates": 9.5,
+    "Council tax": 37.2,
+    "Government grants": 53.3
+   },
    "values": {
     "ehcp_20wk": 11.9,
     "om_received": 32.1,
     "om_remedy_before": 22.2,
     "om_timely": 71.4,
     "om_upheld": 2.7,
+    "om_children": 0.6,
+    "om_homeless": 0.0,
+    "om_sen": 1.2,
     "tsm_complaints": 94.2,
     "tsm_decent": 0.3,
     "tsm_listens": 74.4,
@@ -10369,12 +11119,20 @@
     "parish": 5.8,
     "police": 298.28
    },
+   "funding": {
+    "Business rates": 13.1,
+    "Council tax": 25.1,
+    "Government grants": 61.8
+   },
    "values": {
     "ehcp_20wk": 30.5,
     "om_received": 63.9,
     "om_remedy_before": 12.5,
     "om_timely": 14.3,
     "om_upheld": 9.6,
+    "om_children": 0.0,
+    "om_homeless": 1.8,
+    "om_sen": 9.6,
     "tsm_complaints": 30.0,
     "tsm_decent": 4.3,
     "tsm_listens": 37.4,
@@ -10482,12 +11240,20 @@
     "parish": 24.3,
     "police": 244.5
    },
+   "funding": {
+    "Business rates": 14.1,
+    "Council tax": 32.5,
+    "Government grants": 53.4
+   },
    "values": {
     "ehcp_20wk": 74.0,
     "om_received": 29.8,
     "om_remedy_before": 27.3,
     "om_timely": 100.0,
     "om_upheld": 5.0,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 73.6,
     "tsm_decent": 1.8,
     "tsm_listens": 67.2,
@@ -10594,11 +11360,19 @@
     "parish": 191.82,
     "police": 308.2
    },
+   "funding": {
+    "Business rates": 11.5,
+    "Council tax": 38.2,
+    "Government grants": 50.2
+   },
    "values": {
     "om_received": 49.7,
     "om_remedy_before": 5.4,
     "om_timely": 61.8,
     "om_upheld": 9.5,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 79.6,
     "tsm_decent": 2.4,
     "tsm_listens": 67.1,
@@ -10669,12 +11443,20 @@
     "parish": 119.25,
     "police": 308.2
    },
+   "funding": {
+    "Business rates": 11.8,
+    "Council tax": 35.5,
+    "Government grants": 52.8
+   },
    "values": {
     "ehcp_20wk": 56.6,
     "om_received": 26.2,
     "om_remedy_before": 0.0,
     "om_timely": 30.8,
     "om_upheld": 3.9,
+    "om_children": 0.3,
+    "om_homeless": 0.6,
+    "om_sen": 2.6,
     "ctax_collect": 97.2,
     "recycling": 56.7,
     "fly_enforce": 27.0,
@@ -10772,12 +11554,20 @@
     "parish": 0.0,
     "police": 214.34
    },
+   "funding": {
+    "Business rates": 9.2,
+    "Council tax": 19.0,
+    "Government grants": 71.9
+   },
    "values": {
     "ehcp_20wk": 92.0,
     "om_received": 45.0,
     "om_remedy_before": 14.3,
     "om_timely": 100.0,
     "om_upheld": 4.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 92.6,
     "tsm_decent": 0.0,
     "tsm_listens": 56.4,
@@ -10889,12 +11679,20 @@
     "parish": 0.0,
     "police": 290.46
    },
+   "funding": {
+    "Business rates": 12.9,
+    "Council tax": 20.8,
+    "Government grants": 66.3
+   },
    "values": {
     "ehcp_20wk": 80.0,
     "om_received": 25.1,
     "om_remedy_before": 0.0,
     "om_timely": 90.0,
     "om_upheld": 3.9,
+    "om_children": 0.8,
+    "om_homeless": 0.4,
+    "om_sen": 0.4,
     "tsm_complaints": 68.6,
     "tsm_decent": 47.8,
     "tsm_listens": 52.2,
@@ -11006,12 +11804,20 @@
     "parish": 8.87,
     "police": 275.31
    },
+   "funding": {
+    "Business rates": 13.0,
+    "Council tax": 30.3,
+    "Government grants": 56.7
+   },
    "values": {
     "ehcp_20wk": 47.0,
     "om_received": 78.3,
     "om_remedy_before": 14.3,
     "om_timely": 100.0,
     "om_upheld": 7.6,
+    "om_children": 2.7,
+    "om_homeless": 0.5,
+    "om_sen": 5.4,
     "tsm_complaints": 69.5,
     "tsm_decent": 0.4,
     "tsm_listens": 63.0,
@@ -11121,12 +11927,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 12.0,
+    "Council tax": 17.3,
+    "Government grants": 70.7
+   },
    "values": {
     "ehcp_20wk": 42.8,
     "om_received": 121.7,
     "om_remedy_before": 15.2,
     "om_timely": 73.8,
     "om_upheld": 14.7,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 27.1,
     "tsm_decent": 22.9,
     "tsm_listens": 50.6,
@@ -11238,10 +12052,18 @@
     "parish": 8.51,
     "police": 293.97
    },
+   "funding": {
+    "Business rates": 22.1,
+    "Council tax": 20.6,
+    "Government grants": 57.3
+   },
    "values": {
     "ehcp_20wk": 59.6,
     "om_received": 30.0,
     "om_upheld": 1.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 93.8,
     "recycling": 31.4,
     "fly_enforce": 122.1,
@@ -11346,12 +12168,20 @@
     "parish": 0.0,
     "police": 285.3
    },
+   "funding": {
+    "Business rates": 15.0,
+    "Council tax": 30.2,
+    "Government grants": 54.8
+   },
    "values": {
     "ehcp_20wk": 18.1,
     "om_received": 36.4,
     "om_remedy_before": 7.1,
     "om_timely": 78.6,
     "om_upheld": 4.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 99.3,
     "tsm_decent": 0.1,
     "tsm_listens": 87.5,
@@ -11458,11 +12288,19 @@
     "parish": 17.73,
     "police": 332.73
    },
+   "funding": {
+    "Business rates": 15.0,
+    "Council tax": 29.9,
+    "Government grants": 55.0
+   },
    "values": {
     "ehcp_20wk": 52.9,
     "om_received": 33.3,
     "om_remedy_before": 42.9,
     "om_upheld": 3.4,
+    "om_children": 1.0,
+    "om_homeless": 0.0,
+    "om_sen": 1.9,
     "ctax_collect": 94.7,
     "recycling": 24.5,
     "fly_enforce": 42.7,
@@ -11565,12 +12403,20 @@
     "parish": 0.0,
     "police": 302.57
    },
+   "funding": {
+    "Business rates": 18.3,
+    "Council tax": 19.5,
+    "Government grants": 62.2
+   },
    "values": {
     "ehcp_20wk": 58.7,
     "om_received": 35.6,
     "om_remedy_before": 27.3,
     "om_timely": 50.0,
     "om_upheld": 4.0,
+    "om_children": 0.4,
+    "om_homeless": 0.0,
+    "om_sen": 0.7,
     "tsm_complaints": 67.7,
     "tsm_decent": 1.5,
     "tsm_repairs": 77.9,
@@ -11678,10 +12524,18 @@
     "parish": 0.89,
     "police": 214.34
    },
+   "funding": {
+    "Business rates": 18.0,
+    "Council tax": 20.7,
+    "Government grants": 61.3
+   },
    "values": {
     "ehcp_20wk": 59.4,
     "om_received": 20.6,
     "om_upheld": 1.4,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 92.4,
     "recycling": 29.8,
     "fly_enforce": 46.5,
@@ -11786,12 +12640,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 11.2,
+    "Council tax": 29.3,
+    "Government grants": 59.6
+   },
    "values": {
     "ehcp_20wk": 96.0,
     "om_received": 47.7,
     "om_remedy_before": 0.0,
     "om_timely": 100.0,
     "om_upheld": 3.7,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 90.8,
     "tsm_decent": 1.2,
     "tsm_listens": 57.2,
@@ -11899,11 +12761,19 @@
     "parish": 176.38,
     "police": 298.27
    },
+   "funding": {
+    "Business rates": 12.2,
+    "Council tax": 36.2,
+    "Government grants": 51.6
+   },
    "values": {
     "ehcp_20wk": 11.8,
     "om_received": 46.1,
     "om_remedy_before": 33.3,
     "om_upheld": 2.4,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.4,
     "tsm_complaints": 93.7,
     "tsm_decent": 12.8,
     "tsm_listens": 41.1,
@@ -12011,12 +12881,20 @@
     "parish": 0.58,
     "police": 285.3
    },
+   "funding": {
+    "Business rates": 22.8,
+    "Council tax": 23.0,
+    "Government grants": 54.2
+   },
    "values": {
     "ehcp_20wk": 30.3,
     "om_received": 32.4,
     "om_remedy_before": 17.6,
     "om_timely": 92.9,
     "om_upheld": 7.1,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 92.7,
     "recycling": 50.0,
     "fly_enforce": 36.0,
@@ -12121,10 +12999,18 @@
     "parish": 131.13,
     "police": 306.5
    },
+   "funding": {
+    "Business rates": 13.1,
+    "Council tax": 22.5,
+    "Government grants": 64.4
+   },
    "values": {
     "ehcp_20wk": 97.3,
     "om_received": 29.1,
     "om_upheld": 2.0,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 96.9,
     "recycling": 49.2,
     "fly_enforce": 45.9,
@@ -12229,12 +13115,20 @@
     "parish": 0.0,
     "police": 275.31
    },
+   "funding": {
+    "Business rates": 18.6,
+    "Council tax": 29.3,
+    "Government grants": 52.2
+   },
    "values": {
     "ehcp_20wk": 35.4,
     "om_received": 61.1,
     "om_remedy_before": 12.5,
     "om_timely": 87.5,
     "om_upheld": 8.8,
+    "om_children": 0.0,
+    "om_homeless": 1.7,
+    "om_sen": 5.0,
     "tsm_complaints": 90.6,
     "tsm_decent": 5.6,
     "tsm_listens": 59.1,
@@ -12343,11 +13237,19 @@
     "parish": 13.26,
     "police": 303.2
    },
+   "funding": {
+    "Business rates": 13.6,
+    "Council tax": 30.8,
+    "Government grants": 55.6
+   },
    "values": {
     "ehcp_20wk": 27.1,
     "om_received": 52.3,
     "om_remedy_before": 16.7,
     "om_upheld": 4.3,
+    "om_children": 1.4,
+    "om_homeless": 0.7,
+    "om_sen": 0.7,
     "ctax_collect": 93.7,
     "recycling": 40.1,
     "fly_enforce": 3.7,
@@ -12452,12 +13354,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 15.2,
+    "Council tax": 13.9,
+    "Government grants": 70.9
+   },
    "values": {
     "ehcp_20wk": 46.0,
     "om_received": 82.6,
     "om_remedy_before": 6.5,
     "om_timely": 68.6,
     "om_upheld": 9.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 70.7,
     "tsm_decent": 20.1,
     "tsm_listens": 53.4,
@@ -12568,12 +13478,20 @@
     "parish": 1.91,
     "police": 285.3
    },
+   "funding": {
+    "Business rates": 15.7,
+    "Council tax": 25.8,
+    "Government grants": 58.5
+   },
    "values": {
     "ehcp_20wk": 47.4,
     "om_received": 41.9,
     "om_remedy_before": 11.1,
     "om_timely": 57.1,
     "om_upheld": 3.7,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 96.7,
     "recycling": 58.4,
     "fly_enforce": 196.7,
@@ -12673,11 +13591,19 @@
     "parish": 37.49,
     "police": 278.28
    },
+   "funding": {
+    "Business rates": 16.0,
+    "Council tax": 25.5,
+    "Government grants": 58.5
+   },
    "values": {
     "ehcp_20wk": 80.2,
     "om_received": 32.5,
     "om_remedy_before": 0.0,
     "om_upheld": 1.4,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 94.8,
     "recycling": 48.9,
     "fly_enforce": 21.0,
@@ -12780,12 +13706,20 @@
     "parish": 0.0,
     "police": 244.5
    },
+   "funding": {
+    "Business rates": 19.3,
+    "Council tax": 23.1,
+    "Government grants": 57.5
+   },
    "values": {
     "ehcp_20wk": 96.3,
     "om_received": 36.5,
     "om_remedy_before": 9.1,
     "om_timely": 50.0,
     "om_upheld": 3.7,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 92.4,
     "recycling": 32.3,
     "fly_enforce": 9.1,
@@ -12890,12 +13824,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 13.8,
+    "Council tax": 20.9,
+    "Government grants": 65.4
+   },
    "values": {
     "ehcp_20wk": 25.7,
     "om_received": 89.9,
     "om_remedy_before": 20.0,
     "om_timely": 74.4,
     "om_upheld": 15.9,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 88.7,
     "tsm_decent": 18.8,
     "tsm_listens": 56.2,
@@ -13007,12 +13949,20 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 15.5,
+    "Council tax": 10.6,
+    "Government grants": 73.9
+   },
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 61.5,
     "om_remedy_before": 20.0,
     "om_timely": 75.0,
     "om_upheld": 4.4,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 71.0,
     "tsm_decent": 3.6,
     "tsm_listens": 50.2,
@@ -13124,10 +14074,18 @@
     "parish": 44.58,
     "police": 295.44
    },
+   "funding": {
+    "Business rates": 9.3,
+    "Council tax": 31.0,
+    "Government grants": 59.7
+   },
    "values": {
     "ehcp_20wk": 73.6,
     "om_received": 19.0,
     "om_upheld": 0.0,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.9,
     "ctax_collect": 96.2,
     "recycling": 43.8,
     "fly_enforce": 120.6,
@@ -13228,10 +14186,18 @@
     "parish": 98.46,
     "police": 298.28
    },
+   "funding": {
+    "Business rates": 8.5,
+    "Council tax": 34.3,
+    "Government grants": 57.2
+   },
    "values": {
     "ehcp_20wk": 25.2,
     "om_received": 47.7,
     "om_upheld": 2.4,
+    "om_children": 1.2,
+    "om_homeless": 0.0,
+    "om_sen": 0.6,
     "ctax_collect": 97.2,
     "recycling": 53.4,
     "fly_enforce": 4.3,
@@ -13330,12 +14296,20 @@
     "parish": 101.83,
     "police": 335.04
    },
+   "funding": {
+    "Business rates": 12.9,
+    "Council tax": 36.2,
+    "Government grants": 50.9
+   },
    "values": {
     "ehcp_20wk": 7.9,
     "om_received": 52.5,
     "om_remedy_before": 8.9,
     "om_timely": 92.5,
     "om_upheld": 10.1,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 73.6,
     "tsm_decent": 19.2,
     "tsm_listens": 57.3,
@@ -13421,12 +14395,20 @@
     "parish": 1.3,
     "police": 0.0
    },
+   "funding": {
+    "Business rates": 11.7,
+    "Council tax": 11.7,
+    "Government grants": 76.6
+   },
    "values": {
     "ehcp_20wk": 92.9,
     "om_received": 75.8,
     "om_remedy_before": 33.3,
     "om_timely": 76.9,
     "om_upheld": 8.5,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 83.0,
     "tsm_decent": 4.5,
     "tsm_listens": 63.4,
@@ -13537,12 +14519,20 @@
     "parish": 51.18,
     "police": 338.94
    },
+   "funding": {
+    "Business rates": 12.0,
+    "Council tax": 36.0,
+    "Government grants": 52.0
+   },
    "values": {
     "ehcp_20wk": 72.0,
     "om_received": 21.6,
     "om_remedy_before": 12.5,
     "om_timely": 66.7,
     "om_upheld": 3.5,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 88.9,
     "tsm_decent": 0.0,
     "tsm_listens": 67.8,
@@ -13621,12 +14611,20 @@
     "parish": 1.14,
     "police": 285.3
    },
+   "funding": {
+    "Business rates": 19.3,
+    "Council tax": 19.0,
+    "Government grants": 61.7
+   },
    "values": {
     "ehcp_20wk": 21.9,
     "om_received": 28.2,
     "om_remedy_before": 11.1,
     "om_timely": 90.9,
     "om_upheld": 2.6,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 48.5,
     "tsm_decent": 9.2,
     "tsm_listens": 49.3,
@@ -13735,12 +14733,20 @@
     "parish": 195.41,
     "police": 298.27
    },
+   "funding": {
+    "Business rates": 2.8,
+    "Council tax": 42.0,
+    "Government grants": 55.2
+   },
    "values": {
     "ehcp_20wk": 61.6,
     "om_received": 25.5,
     "om_remedy_before": 10.5,
     "om_timely": 66.7,
     "om_upheld": 3.6,
+    "om_children": 0.4,
+    "om_homeless": 0.0,
+    "om_sen": 1.1,
     "tsm_complaints": 94.2,
     "tsm_decent": 3.6,
     "tsm_listens": 50.6,
@@ -13846,12 +14852,20 @@
     "parish": 36.4,
     "police": 298.28
    },
+   "funding": {
+    "Business rates": 5.9,
+    "Council tax": 37.8,
+    "Government grants": 56.3
+   },
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 39.4,
     "om_remedy_before": 0.0,
     "om_timely": 66.7,
     "om_upheld": 7.5,
+    "om_children": 1.3,
+    "om_homeless": 3.8,
+    "om_sen": 2.5,
     "ctax_collect": 96.8,
     "recycling": 49.1,
     "fly_enforce": 2.7,
@@ -13953,12 +14967,20 @@
     "parish": 0.0,
     "police": 293.97
    },
+   "funding": {
+    "Business rates": 20.0,
+    "Council tax": 23.0,
+    "Government grants": 57.0
+   },
    "values": {
     "ehcp_20wk": 8.2,
     "om_received": 35.2,
     "om_remedy_before": 16.7,
     "om_timely": 81.8,
     "om_upheld": 7.3,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "ctax_collect": 93.2,
     "recycling": 32.4,
     "fly_enforce": 50.9,
@@ -14062,12 +15084,20 @@
     "parish": 80.71,
     "police": 298.28
    },
+   "funding": {
+    "Business rates": 8.8,
+    "Council tax": 46.8,
+    "Government grants": 44.4
+   },
    "values": {
     "ehcp_20wk": 43.0,
     "om_received": 36.0,
     "om_remedy_before": 0.0,
     "om_timely": 93.3,
     "om_upheld": 7.9,
+    "om_children": 1.6,
+    "om_homeless": 0.0,
+    "om_sen": 7.9,
     "tsm_complaints": 66.7,
     "tsm_decent": 0.0,
     "tsm_listens": 51.0,
@@ -14177,12 +15207,20 @@
     "parish": 0.0,
     "police": 244.5
    },
+   "funding": {
+    "Business rates": 21.4,
+    "Council tax": 21.3,
+    "Government grants": 57.3
+   },
    "values": {
     "ehcp_20wk": 19.6,
     "om_received": 41.2,
     "om_remedy_before": 0.0,
     "om_timely": 100.0,
     "om_upheld": 3.2,
+    "om_children": 0.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.0,
     "tsm_complaints": 98.9,
     "tsm_decent": 4.8,
     "tsm_listens": 53.3,
@@ -14294,12 +15332,20 @@
     "parish": 17.24,
     "police": 335.86
    },
+   "funding": {
+    "Business rates": 9.9,
+    "Council tax": 33.3,
+    "Government grants": 56.8
+   },
    "values": {
     "ehcp_20wk": 98.5,
     "om_received": 20.6,
     "om_remedy_before": 12.5,
     "om_timely": 75.0,
     "om_upheld": 3.8,
+    "om_children": 1.0,
+    "om_homeless": 0.0,
+    "om_sen": 0.5,
     "tsm_complaints": 54.7,
     "tsm_decent": 2.0,
     "tsm_listens": 46.2,

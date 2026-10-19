@@ -1,0 +1,1310 @@
+{
+ "extra": {
+  "checked": "2026-10-19",
+  "counts": {
+   "E06000001": {
+    "education/special-educational-needs": 1,
+    "other-categories/leisure-and-culture": 1,
+    "planning/other": 1
+   },
+   "E06000002": {
+    "children-s-care-services/adoption": 1,
+    "children-s-care-services/child-protection": 1,
+    "children-s-care-services/fostering": 1,
+    "children-s-care-services/looked-after-children": 2,
+    "children-s-care-services/other": 1,
+    "education/alternative-provision": 1,
+    "education/special-educational-needs": 2,
+    "other-categories/other": 1
+   },
+   "E06000003": {},
+   "E06000004": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "adult-care-services/charging": 1,
+    "adult-care-services/safeguarding": 2,
+    "benefits-and-tax/council-tax": 1,
+    "children-s-care-services/other": 2,
+    "education/alternative-provision": 1,
+    "education/school-transport": 1,
+    "education/special-educational-needs": 4,
+    "environment-and-regulation/antisocial-behaviour": 1,
+    "environment-and-regulation/noise": 1
+   },
+   "E06000005": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "adult-care-services/charging": 3,
+    "adult-care-services/direct-payments": 1,
+    "adult-care-services/domiciliary-care": 1,
+    "adult-care-services/other": 1,
+    "children-s-care-services/fostering": 1,
+    "education/alternative-provision": 1,
+    "education/special-educational-needs": 1,
+    "environment-and-regulation/antisocial-behaviour": 1
+   },
+   "E06000006": {
+    "adult-care-services/assessment-and-care-plan": 2,
+    "adult-care-services/safeguarding": 1,
+    "children-s-care-services/other": 2,
+    "education/school-exclusions": 1,
+    "education/special-educational-needs": 1,
+    "environment-and-regulation/drainage": 1,
+    "housing/homelessness": 2,
+    "transport-and-highways/parking-and-other-penalties": 2
+   },
+   "E06000007": {
+    "adult-care-services/charging": 1,
+    "adult-care-services/safeguarding": 1,
+    "education/special-educational-needs": 2,
+    "environment-and-regulation/refuse-and-recycling": 1
+   },
+   "E06000008": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "adult-care-services/disabled-facilities-grants": 2,
+    "adult-care-services/residential-care": 2,
+    "children-s-care-services/friends-and-family-carers": 1,
+    "children-s-care-services/other": 2,
+    "education/special-educational-needs": 1,
+    "environment-and-regulation/other": 1
+   },
+   "E06000009": {
+    "adult-care-services/charging": 1,
+    "adult-care-services/other": 1,
+    "adult-care-services/safeguarding": 1,
+    "education/alternative-provision": 1,
+    "housing/allocations": 1,
+    "housing/homelessness": 1,
+    "other-categories/other": 1,
+    "planning/enforcement": 1
+   },
+   "E06000010": {},
+   "E06000011": {
+    "adult-care-services/assessment-and-care-plan": 6,
+    "adult-care-services/charging": 1,
+    "adult-care-services/residential-care": 1,
+    "children-s-care-services/other": 2,
+    "education/alternative-provision": 2,
+    "education/school-transport": 1,
+    "education/special-educational-needs": 11,
+    "planning/planning-applications": 1,
+    "transport-and-highways/highway-repair-and-maintenance": 1
+   },
+   "E06000012": {
+    "adult-care-services/assessment-and-care-plan": 3,
+    "adult-care-services/disabled-facilities-grants": 1,
+    "adult-care-services/domiciliary-care": 2,
+    "adult-care-services/residential-care": 1,
+    "adult-care-services/transport": 1,
+    "benefits-and-tax/housing-benefit-and-council-tax-benefit": 1,
+    "children-s-care-services/child-protection": 3,
+    "education/special-educational-needs": 1,
+    "environment-and-regulation/pollution": 1,
+    "planning/planning-applications": 1
+   },
+   "E06000013": {
+    "adult-care-services/assessment-and-care-plan": 3,
+    "adult-care-services/charging": 1,
+    "education/special-educational-needs": 3,
+    "environment-and-regulation/other": 1
+   },
+   "E06000014": {
+    "adult-care-services/assessment-and-care-plan": 2,
+    "adult-care-services/charging": 1,
+    "adult-care-services/direct-payments": 1,
+    "adult-care-services/domiciliary-care": 1,
+    "adult-care-services/other": 1,
+    "children-s-care-services/other": 2,
+    "education/special-educational-needs": 1,
+    "planning/building-control": 1,
+    "planning/enforcement": 1,
+    "planning/planning-applications": 1,
+    "transport-and-highways/highway-repair-and-maintenance": 1
+   },
+   "E06000015": {
+    "adult-care-services/assessment-and-care-plan": 3,
+    "adult-care-services/charging": 1,
+    "adult-care-services/direct-payments": 1,
+    "children-s-care-services/friends-and-family-carers": 1,
+    "children-s-care-services/other": 1,
+    "education/alternative-provision": 3,
+    "education/school-transport": 3,
+    "education/special-educational-needs": 13,
+    "housing/homelessness": 2
+   },
+   "E06000016": {
+    "adult-care-services/charging": 3,
+    "adult-care-services/disabled-facilities-grants": 1,
+    "adult-care-services/residential-care": 1,
+    "benefits-and-tax/council-tax": 1,
+    "benefits-and-tax/housing-benefit-and-council-tax-benefit": 1,
+    "children-s-care-services/other": 1,
+    "education/school-transport": 4,
+    "education/special-educational-needs": 11,
+    "housing/allocations": 4,
+    "housing/homelessness": 5,
+    "other-categories/commercial-and-contracts": 1
+   },
+   "E06000017": {
+    "children-s-care-services/other": 1,
+    "education/school-transport": 1,
+    "education/special-educational-needs": 2
+   },
+   "E06000018": {
+    "adult-care-services/assessment-and-care-plan": 4,
+    "adult-care-services/charging": 1,
+    "adult-care-services/disabled-facilities-grants": 1,
+    "children-s-care-services/other": 1,
+    "environment-and-regulation/antisocial-behaviour": 2,
+    "environment-and-regulation/cemeteries-and-crematoria": 2,
+    "environment-and-regulation/refuse-and-recycling": 1,
+    "housing/homelessness": 2,
+    "housing/private-housing": 1,
+    "planning/planning-applications": 1
+   },
+   "E06000019": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "benefits-and-tax/council-tax": 1,
+    "children-s-care-services/other": 2,
+    "education/other": 1,
+    "education/school-admissions": 1,
+    "education/special-educational-needs": 6,
+    "environment-and-regulation/antisocial-behaviour": 1,
+    "environment-and-regulation/noise": 1,
+    "housing/allocations": 1,
+    "housing/homelessness": 4,
+    "planning/planning-applications": 1
+   },
+   "E06000020": {},
+   "E06000021": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "adult-care-services/charging": 2,
+    "adult-care-services/other": 2,
+    "adult-care-services/residential-care": 1,
+    "children-s-care-services/child-protection": 1,
+    "education/school-transport": 4,
+    "education/special-educational-needs": 2,
+    "environment-and-regulation/noise": 1,
+    "environment-and-regulation/refuse-and-recycling": 1,
+    "housing/allocations": 1,
+    "transport-and-highways/highway-repair-and-maintenance": 1
+   },
+   "E06000022": {
+    "adult-care-services/assessment-and-care-plan": 3,
+    "adult-care-services/charging": 2,
+    "adult-care-services/residential-care": 1,
+    "adult-care-services/safeguarding": 1,
+    "benefits-and-tax/housing-benefit-and-council-tax-benefit": 1,
+    "education/alternative-provision": 4,
+    "education/school-transport": 1,
+    "education/special-educational-needs": 2,
+    "transport-and-highways/parking-and-other-penalties": 1
+   },
+   "E06000023": {
+    "adult-care-services/assessment-and-care-plan": 3,
+    "adult-care-services/charging": 3,
+    "adult-care-services/direct-payments": 1,
+    "adult-care-services/disabled-facilities-grants": 1,
+    "adult-care-services/domiciliary-care": 3,
+    "benefits-and-tax/council-tax": 2,
+    "benefits-and-tax/council-tax-support": 1,
+    "education/alternative-provision": 4,
+    "education/other": 1,
+    "education/special-educational-needs": 10,
+    "environment-and-regulation/antisocial-behaviour": 1,
+    "environment-and-regulation/licensing": 1,
+    "environment-and-regulation/noise": 1,
+    "environment-and-regulation/refuse-and-recycling": 5,
+    "housing/allocations": 3,
+    "housing/homelessness": 9,
+    "planning/enforcement": 2,
+    "planning/planning-applications": 2,
+    "transport-and-highways/parking-and-other-penalties": 3,
+    "transport-and-highways/traffic-management": 2
+   },
+   "E06000024": {
+    "adult-care-services/assessment-and-care-plan": 2,
+    "adult-care-services/charging": 1,
+    "benefits-and-tax/council-tax": 2,
+    "benefits-and-tax/other": 1,
+    "children-s-care-services/child-protection": 1,
+    "education/alternative-provision": 2,
+    "education/special-educational-needs": 2,
+    "environment-and-regulation/refuse-and-recycling": 1,
+    "other-categories/leisure-and-culture": 1
+   },
+   "E06000025": {
+    "adult-care-services/assessment-and-care-plan": 5,
+    "adult-care-services/charging": 1,
+    "children-s-care-services/fostering": 1,
+    "education/alternative-provision": 1,
+    "education/other": 1,
+    "education/special-educational-needs": 8,
+    "environment-and-regulation/antisocial-behaviour": 1,
+    "environment-and-regulation/trees": 1,
+    "housing/allocations": 1,
+    "housing/homelessness": 2
+   },
+   "E06000026": {
+    "adult-care-services/assessment-and-care-plan": 2,
+    "adult-care-services/charging": 1,
+    "adult-care-services/other": 1,
+    "adult-care-services/safeguarding": 3,
+    "benefits-and-tax/council-tax-support": 1,
+    "children-s-care-services/child-protection": 1,
+    "children-s-care-services/looked-after-children": 1,
+    "children-s-care-services/other": 1,
+    "education/school-transport": 1,
+    "education/special-educational-needs": 9,
+    "environment-and-regulation/antisocial-behaviour": 1,
+    "housing/allocations": 1,
+    "housing/homelessness": 1,
+    "transport-and-highways/highway-repair-and-maintenance": 1
+   },
+   "E06000027": {
+    "benefits-and-tax/council-tax": 2,
+    "children-s-care-services/looked-after-children": 1,
+    "children-s-care-services/other": 1,
+    "education/alternative-provision": 1,
+    "education/special-educational-needs": 1,
+    "housing/homelessness": 1,
+    "planning/building-control": 1,
+    "planning/enforcement": 1,
+    "planning/planning-applications": 1
+   },
+   "E06000030": {
+    "adult-care-services/charging": 2,
+    "adult-care-services/domiciliary-care": 1,
+    "adult-care-services/other": 1,
+    "education/school-admissions": 1,
+    "education/special-educational-needs": 1,
+    "environment-and-regulation/other": 1,
+    "environment-and-regulation/refuse-and-recycling": 7,
+    "housing/allocations": 1,
+    "transport-and-highways/highway-repair-and-maintenance": 1
+   },
+   "E06000031": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "adult-care-services/disabled-facilities-grants": 1,
+    "adult-care-services/domiciliary-care": 2,
+    "adult-care-services/other": 2,
+    "adult-care-services/safeguarding": 1,
+    "benefits-and-tax/council-tax": 1,
+    "children-s-care-services/child-protection": 1,
+    "children-s-care-services/fostering": 1,
+    "children-s-care-services/other": 1,
+    "education/special-educational-needs": 3
+   },
+   "E06000032": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "adult-care-services/charging": 1,
+    "adult-care-services/direct-payments": 2,
+    "adult-care-services/safeguarding": 1,
+    "benefits-and-tax/housing-benefit-and-council-tax-benefit": 1,
+    "children-s-care-services/adoption": 2,
+    "children-s-care-services/looked-after-children": 1,
+    "children-s-care-services/other": 1,
+    "education/alternative-provision": 1,
+    "education/special-educational-needs": 1,
+    "housing/homelessness": 5,
+    "other-categories/commercial-and-contracts": 1,
+    "transport-and-highways/parking-and-other-penalties": 1
+   },
+   "E06000033": {
+    "adult-care-services/other": 1,
+    "adult-care-services/residential-care": 1,
+    "children-s-care-services/disabled-children": 1,
+    "children-s-care-services/fostering": 1,
+    "children-s-care-services/other": 3,
+    "education/alternative-provision": 1,
+    "education/special-educational-needs": 10,
+    "environment-and-regulation/refuse-and-recycling": 1,
+    "housing/allocations": 2,
+    "housing/homelessness": 1,
+    "housing/private-housing": 1,
+    "transport-and-highways/parking-and-other-penalties": 1
+   },
+   "E06000034": {
+    "adult-care-services/charging": 2,
+    "benefits-and-tax/council-tax": 2,
+    "education/school-admissions": 1,
+    "education/special-educational-needs": 9,
+    "environment-and-regulation/refuse-and-recycling": 2,
+    "housing/allocations": 4,
+    "housing/homelessness": 3,
+    "planning/enforcement": 1
+   },
+   "E06000035": {
+    "adult-care-services/charging": 4,
+    "adult-care-services/residential-care": 1,
+    "benefits-and-tax/council-tax": 1,
+    "benefits-and-tax/council-tax-support": 1,
+    "education/alternative-provision": 3,
+    "education/school-transport": 1,
+    "education/special-educational-needs": 19,
+    "environment-and-regulation/antisocial-behaviour": 1,
+    "housing/allocations": 1,
+    "housing/homelessness": 2,
+    "housing/private-housing": 1,
+    "planning/enforcement": 1,
+    "transport-and-highways/parking-and-other-penalties": 1,
+    "transport-and-highways/rights-of-way": 1
+   },
+   "E06000036": {
+    "adult-care-services/safeguarding": 1,
+    "children-s-care-services/child-protection": 1,
+    "children-s-care-services/disabled-children": 1,
+    "children-s-care-services/other": 2,
+    "education/alternative-provision": 4,
+    "education/other": 1,
+    "education/school-transport": 1,
+    "education/special-educational-needs": 5,
+    "housing/allocations": 1,
+    "housing/homelessness": 2
+   },
+   "E06000037": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "adult-care-services/direct-payments": 1,
+    "benefits-and-tax/housing-benefit-and-council-tax-benefit": 1,
+    "children-s-care-services/child-protection": 1,
+    "children-s-care-services/disabled-children": 1,
+    "education/alternative-provision": 1,
+    "education/school-transport": 2,
+    "education/special-educational-needs": 1,
+    "housing/allocations": 1
+   },
+   "E06000038": {
+    "adult-care-services/assessment-and-care-plan": 3,
+    "adult-care-services/disabled-facilities-grants": 1,
+    "children-s-care-services/friends-and-family-carers": 1,
+    "children-s-care-services/other": 2,
+    "education/school-transport": 1,
+    "education/special-educational-needs": 5,
+    "housing/allocations": 1,
+    "housing/homelessness": 1,
+    "transport-and-highways/parking-and-other-penalties": 1
+   },
+   "E06000039": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "benefits-and-tax/council-tax": 1,
+    "education/special-educational-needs": 16,
+    "environment-and-regulation/antisocial-behaviour": 1,
+    "environment-and-regulation/cemeteries-and-crematoria": 1,
+    "environment-and-regulation/other": 1,
+    "housing/allocations": 1,
+    "housing/council-house-sales-and-leaseholders": 1,
+    "housing/homelessness": 3
+   },
+   "E06000040": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "adult-care-services/charging": 1,
+    "adult-care-services/direct-payments": 1,
+    "adult-care-services/safeguarding": 1,
+    "children-s-care-services/child-protection": 1,
+    "children-s-care-services/other": 1,
+    "education/alternative-provision": 2,
+    "education/school-transport": 1,
+    "education/special-educational-needs": 4,
+    "environment-and-regulation/other": 1,
+    "housing/allocations": 1,
+    "housing/homelessness": 6,
+    "other-categories/councillor-conduct-and-standards": 1,
+    "other-categories/land": 1,
+    "planning/enforcement": 2
+   },
+   "E06000041": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "adult-care-services/charging": 3,
+    "adult-care-services/residential-care": 1,
+    "benefits-and-tax/council-tax": 1,
+    "children-s-care-services/child-protection": 2,
+    "children-s-care-services/other": 1,
+    "education/alternative-provision": 1,
+    "education/school-transport": 1,
+    "education/special-educational-needs": 15,
+    "planning/enforcement": 1,
+    "planning/planning-applications": 1
+   },
+   "E06000042": {
+    "adult-care-services/charging": 2,
+    "adult-care-services/other": 1,
+    "adult-care-services/transition-from-childrens-services": 1,
+    "children-s-care-services/adoption": 1,
+    "children-s-care-services/child-protection": 3,
+    "children-s-care-services/disabled-children": 3,
+    "children-s-care-services/fostering": 1,
+    "children-s-care-services/looked-after-children": 1,
+    "children-s-care-services/other": 2,
+    "education/alternative-provision": 1,
+    "education/school-admissions": 1,
+    "education/school-transport": 1,
+    "education/special-educational-needs": 19,
+    "environment-and-regulation/other": 1,
+    "environment-and-regulation/refuse-and-recycling": 1,
+    "environment-and-regulation/trees": 1,
+    "housing/allocations": 2,
+    "housing/homelessness": 5,
+    "other-categories/councillor-conduct-and-standards": 1,
+    "planning/other": 1,
+    "transport-and-highways/traffic-management": 2
+   },
+   "E06000043": {},
+   "E06000044": {
+    "adult-care-services/charging": 3,
+    "adult-care-services/safeguarding": 1,
+    "adult-care-services/transport": 1,
+    "children-s-care-services/friends-and-family-carers": 1,
+    "children-s-care-services/other": 1,
+    "education/alternative-provision": 1,
+    "education/special-educational-needs": 4,
+    "environment-and-regulation/refuse-and-recycling": 1,
+    "housing/homelessness": 3,
+    "transport-and-highways/highway-repair-and-maintenance": 1
+   },
+   "E06000045": {
+    "adult-care-services/assessment-and-care-plan": 3,
+    "adult-care-services/charging": 4,
+    "adult-care-services/domiciliary-care": 1,
+    "adult-care-services/other": 1,
+    "adult-care-services/transition-from-childrens-services": 1,
+    "children-s-care-services/friends-and-family-carers": 2,
+    "education/special-educational-needs": 1,
+    "environment-and-regulation/licensing": 1,
+    "housing/allocations": 1,
+    "housing/homelessness": 1
+   },
+   "E06000046": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "adult-care-services/charging": 1,
+    "adult-care-services/disabled-facilities-grants": 1,
+    "adult-care-services/other": 1,
+    "children-s-care-services/other": 2,
+    "education/special-educational-needs": 10,
+    "environment-and-regulation/other": 1,
+    "housing/homelessness": 3,
+    "housing/private-housing": 1
+   },
+   "E06000047": {
+    "adult-care-services/assessment-and-care-plan": 3,
+    "adult-care-services/charging": 8,
+    "adult-care-services/domiciliary-care": 1,
+    "adult-care-services/other": 1,
+    "adult-care-services/safeguarding": 1,
+    "adult-care-services/transport": 1,
+    "children-s-care-services/looked-after-children": 1,
+    "children-s-care-services/other": 1,
+    "education/school-admissions": 1,
+    "education/special-educational-needs": 5,
+    "environment-and-regulation/refuse-and-recycling": 1,
+    "other-categories/leisure-and-culture": 1,
+    "planning/enforcement": 2
+   },
+   "E06000049": {
+    "adult-care-services/assessment-and-care-plan": 1,
+    "adult-care-services/charging": 7,
+    "adult-care-services/direct-payments": 2,
+    "adult-care-services/other": 1,
+    "adult-care-services/safeguarding": 2,
+    "children-s-care-services/child-protection": 2,
+    "children-s-care-services/disabled-children": 3,
+    "children-s-care-services/fostering": 1,
+    "children-s-care-services/looked-after-children": 2,
+    "children-s-care-services/other": 4,
+    "education/alternative-provision": 5,
+    "education/other": 1,
+    "education/school-exclusions": 1,
+    "education/special-educational-needs": 17,
+    "environment-and-regulation/drainage": 1,
+    "environment-and-regulation/licensing": 1,
+    "environment-and-regulation/refuse-and-recycling": 1,
+    "housing/homelessness": 1,
+    "planning/enforcement": 1,
+    "planning/planning-applications": 2
+   },
+   "E06000050": {},
+   "E06000051": {
+    "adult-care-services/charging": 3,
+    "adult-care-services/domiciliary-care": 1,
+    "adult-care-services/residential-care": 1,
+    "adult-care-services/safeguarding": 1,
+    "adult-care-services/transition-from-childrens-services": 1,
+    "children-s-care-services/other": 2,
+    "education/alternative-provision": 1,
+    "education/special-educational-needs": 4,
+    "planning/building-control": 1,
+    "planning/enforcement": 1,
+    "transport-and-highways/traffic-management": 1
+   },
+   "E06000052": {
+    "adult-care-services/assessment-and-care-plan": 3,
+    "adult-care-services/charging": 7,
+    "adult-care-services/direct-payments": 2,
+    "adult-care-services/domiciliary-care": 1,
+    "adult-care-services/safeguarding": 2,
+    "benefits-and-tax/council-tax": 1,
+    "children-s-care-services/other": 13,
+    "education/alternative-provision": 11,
+    "education/school-transport": 2,
+    "education/special-educational-needs": 35,
+    "environment-and-regulation/refuse-and-recycling": 4,
+    "housing/allocations": 3,
+    "housing/other": 1,
+    "housing/private-housing": 1,
+    "planning/enforcement": 2,
+    "planning/planning-applications": 1,
+    "transport-and-highways/highway-repair-and-maintenance": 1,
+    "transport-and-highways/rights-of-way": 1
+   },
+   "E06000054": {
+    "adult-care-services/assessment-and-care-plan": 4,
+    "adult-care-services/charging": 2,
+    "children-s-care-services/other": 2,
+    "education/alternative-provision": 1,
+    "education/special-educational-needs": 6,
+    "environment-and-regulation/drainage": 1,
+    "planning/enforcement": 1,
+    "planning/other": 1,
+    "planning/planning-advice": 1,
+    "planning/planning-applications": 1
+   },
+   "E06000055": {},
+   "E06000056": {},
+   "E06000057": {},
+   "E06000058": {},
+   "E06000059": {},
+   "E06000060": {},
+   "E06000061": {},
+   "E06000062": {},
+   "E06000063": {},
+   "E06000064": {},
+   "E06000065": {},
+   "E06000066": {},
+   "E08000001": {},
+   "E08000002": {},
+   "E08000003": {},
+   "E08000004": {},
+   "E08000005": {},
+   "E08000006": {},
+   "E08000007": {},
+   "E08000008": {},
+   "E08000009": {},
+   "E08000010": {},
+   "E08000011": {},
+   "E08000012": {},
+   "E08000013": {},
+   "E08000014": {},
+   "E08000015": {},
+   "E08000016": {},
+   "E08000017": {},
+   "E08000018": {},
+   "E08000019": {},
+   "E08000021": {},
+   "E08000022": {},
+   "E08000023": {},
+   "E08000024": {},
+   "E08000025": {},
+   "E08000026": {},
+   "E08000027": {},
+   "E08000028": {},
+   "E08000029": {},
+   "E08000030": {},
+   "E08000031": {},
+   "E08000032": {},
+   "E08000033": {},
+   "E08000034": {},
+   "E08000035": {},
+   "E08000036": {},
+   "E08000037": {},
+   "E09000002": {},
+   "E09000003": {},
+   "E09000004": {},
+   "E09000005": {},
+   "E09000006": {},
+   "E09000007": {},
+   "E09000008": {},
+   "E09000009": {},
+   "E09000010": {},
+   "E09000011": {},
+   "E09000012": {},
+   "E09000013": {},
+   "E09000014": {},
+   "E09000015": {},
+   "E09000016": {},
+   "E09000017": {},
+   "E09000018": {},
+   "E09000019": {},
+   "E09000020": {},
+   "E09000021": {},
+   "E09000022": {},
+   "E09000023": {},
+   "E09000024": {},
+   "E09000025": {},
+   "E09000026": {},
+   "E09000027": {},
+   "E09000028": {},
+   "E09000029": {},
+   "E09000030": {},
+   "E09000031": {},
+   "E09000032": {},
+   "E09000033": {}
+  }
+ },
+ "files": [],
+ "id": "lgo_decisions",
+ "notes": [],
+ "period": "2024-25 and 2025-26",
+ "published": "",
+ "title": "Local Government and Social Care Ombudsman: published decisions",
+ "trends": {},
+ "url": "https://www.lgo.org.uk/decisions",
+ "values": {
+  "E06000001": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 1.0
+  },
+  "E06000002": {
+   "om_children": 3.9,
+   "om_homeless": 0.0,
+   "om_sen": 1.3
+  },
+  "E06000003": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000004": {
+   "om_children": 1.0,
+   "om_homeless": 0.0,
+   "om_sen": 1.9
+  },
+  "E06000005": {
+   "om_children": 0.9,
+   "om_homeless": 0.0,
+   "om_sen": 0.9
+  },
+  "E06000006": {
+   "om_children": 1.5,
+   "om_homeless": 1.5,
+   "om_sen": 0.8
+  },
+  "E06000007": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.9
+  },
+  "E06000008": {
+   "om_children": 1.8,
+   "om_homeless": 0.0,
+   "om_sen": 0.6
+  },
+  "E06000009": {
+   "om_children": 0.0,
+   "om_homeless": 0.7,
+   "om_sen": 0.0
+  },
+  "E06000010": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000011": {
+   "om_children": 0.6,
+   "om_homeless": 0.0,
+   "om_sen": 3.1
+  },
+  "E06000012": {
+   "om_children": 1.9,
+   "om_homeless": 0.0,
+   "om_sen": 0.6
+  },
+  "E06000013": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 1.8
+  },
+  "E06000014": {
+   "om_children": 1.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.5
+  },
+  "E06000015": {
+   "om_children": 0.7,
+   "om_homeless": 0.7,
+   "om_sen": 4.7
+  },
+  "E06000016": {
+   "om_children": 0.3,
+   "om_homeless": 1.3,
+   "om_sen": 2.9
+  },
+  "E06000017": {
+   "om_children": 2.4,
+   "om_homeless": 0.0,
+   "om_sen": 4.8
+  },
+  "E06000018": {
+   "om_children": 0.3,
+   "om_homeless": 0.6,
+   "om_sen": 0.0
+  },
+  "E06000019": {
+   "om_children": 1.0,
+   "om_homeless": 2.1,
+   "om_sen": 3.1
+  },
+  "E06000020": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000021": {
+   "om_children": 0.4,
+   "om_homeless": 0.0,
+   "om_sen": 0.7
+  },
+  "E06000022": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 1.0
+  },
+  "E06000023": {
+   "om_children": 0.0,
+   "om_homeless": 1.8,
+   "om_sen": 2.0
+  },
+  "E06000024": {
+   "om_children": 0.4,
+   "om_homeless": 0.0,
+   "om_sen": 0.9
+  },
+  "E06000025": {
+   "om_children": 0.3,
+   "om_homeless": 0.6,
+   "om_sen": 2.6
+  },
+  "E06000026": {
+   "om_children": 1.1,
+   "om_homeless": 0.4,
+   "om_sen": 3.3
+  },
+  "E06000027": {
+   "om_children": 1.4,
+   "om_homeless": 0.7,
+   "om_sen": 0.7
+  },
+  "E06000030": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.4
+  },
+  "E06000031": {
+   "om_children": 1.3,
+   "om_homeless": 0.0,
+   "om_sen": 1.3
+  },
+  "E06000032": {
+   "om_children": 1.7,
+   "om_homeless": 2.1,
+   "om_sen": 0.4
+  },
+  "E06000033": {
+   "om_children": 2.7,
+   "om_homeless": 0.5,
+   "om_sen": 5.4
+  },
+  "E06000034": {
+   "om_children": 0.0,
+   "om_homeless": 1.7,
+   "om_sen": 5.0
+  },
+  "E06000035": {
+   "om_children": 0.0,
+   "om_homeless": 0.7,
+   "om_sen": 6.5
+  },
+  "E06000036": {
+   "om_children": 3.0,
+   "om_homeless": 1.5,
+   "om_sen": 3.8
+  },
+  "E06000037": {
+   "om_children": 1.2,
+   "om_homeless": 0.0,
+   "om_sen": 0.6
+  },
+  "E06000038": {
+   "om_children": 1.6,
+   "om_homeless": 0.5,
+   "om_sen": 2.7
+  },
+  "E06000039": {
+   "om_children": 0.0,
+   "om_homeless": 1.8,
+   "om_sen": 9.6
+  },
+  "E06000040": {
+   "om_children": 1.3,
+   "om_homeless": 3.8,
+   "om_sen": 2.5
+  },
+  "E06000041": {
+   "om_children": 1.6,
+   "om_homeless": 0.0,
+   "om_sen": 7.9
+  },
+  "E06000042": {
+   "om_children": 3.6,
+   "om_homeless": 1.6,
+   "om_sen": 6.2
+  },
+  "E06000043": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000044": {
+   "om_children": 0.9,
+   "om_homeless": 1.4,
+   "om_sen": 1.9
+  },
+  "E06000045": {
+   "om_children": 0.8,
+   "om_homeless": 0.4,
+   "om_sen": 0.4
+  },
+  "E06000046": {
+   "om_children": 1.4,
+   "om_homeless": 2.1,
+   "om_sen": 7.1
+  },
+  "E06000047": {
+   "om_children": 0.4,
+   "om_homeless": 0.0,
+   "om_sen": 0.9
+  },
+  "E06000049": {
+   "om_children": 2.8,
+   "om_homeless": 0.2,
+   "om_sen": 4.0
+  },
+  "E06000050": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000051": {
+   "om_children": 0.6,
+   "om_homeless": 0.0,
+   "om_sen": 1.2
+  },
+  "E06000052": {
+   "om_children": 2.2,
+   "om_homeless": 0.0,
+   "om_sen": 6.0
+  },
+  "E06000054": {
+   "om_children": 0.4,
+   "om_homeless": 0.0,
+   "om_sen": 1.1
+  },
+  "E06000055": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000056": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000057": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000058": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000059": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000060": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000061": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000062": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000063": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000064": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000065": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E06000066": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000001": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000002": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000003": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000004": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000005": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000006": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000007": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000008": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000009": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000010": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000011": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000012": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000013": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000014": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000015": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000016": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000017": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000018": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000019": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000021": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000022": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000023": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000024": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000025": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000026": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000027": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000028": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000029": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000030": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000031": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000032": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000033": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000034": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000035": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000036": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E08000037": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000002": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000003": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000004": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000005": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000006": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000007": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000008": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000009": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000010": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000011": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000012": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000013": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000014": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000015": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000016": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000017": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000018": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000019": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000020": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000021": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000022": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000023": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000024": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000025": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000026": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000027": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000028": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000029": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000030": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000031": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000032": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  },
+  "E09000033": {
+   "om_children": 0.0,
+   "om_homeless": 0.0,
+   "om_sen": 0.0
+  }
+ }
+}

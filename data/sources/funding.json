@@ -1,0 +1,650 @@
+{
+ "extra": {
+  "E06000001": {
+   "Business rates": 15.8,
+   "Council tax": 23.0,
+   "Government grants": 61.3
+  },
+  "E06000002": {
+   "Business rates": 17.5,
+   "Council tax": 20.8,
+   "Government grants": 61.7
+  },
+  "E06000003": {
+   "Business rates": 16.9,
+   "Council tax": 27.2,
+   "Government grants": 55.9
+  },
+  "E06000004": {
+   "Business rates": 15.0,
+   "Council tax": 29.9,
+   "Government grants": 55.0
+  },
+  "E06000005": {
+   "Business rates": 15.5,
+   "Council tax": 32.4,
+   "Government grants": 52.1
+  },
+  "E06000006": {
+   "Business rates": 23.1,
+   "Council tax": 18.1,
+   "Government grants": 58.8
+  },
+  "E06000007": {
+   "Business rates": 9.3,
+   "Council tax": 31.0,
+   "Government grants": 59.7
+  },
+  "E06000008": {
+   "Business rates": 15.0,
+   "Council tax": 17.0,
+   "Government grants": 68.0
+  },
+  "E06000009": {
+   "Business rates": 18.8,
+   "Council tax": 22.5,
+   "Government grants": 58.7
+  },
+  "E06000010": {
+   "Business rates": 19.4,
+   "Council tax": 18.9,
+   "Government grants": 61.7
+  },
+  "E06000011": {
+   "Business rates": 11.8,
+   "Council tax": 33.2,
+   "Government grants": 55.0
+  },
+  "E06000012": {
+   "Business rates": 16.8,
+   "Council tax": 28.1,
+   "Government grants": 55.0
+  },
+  "E06000013": {
+   "Business rates": 18.2,
+   "Council tax": 24.1,
+   "Government grants": 57.7
+  },
+  "E06000014": {
+   "Business rates": 9.9,
+   "Council tax": 33.3,
+   "Government grants": 56.8
+  },
+  "E06000015": {
+   "Business rates": 15.2,
+   "Council tax": 21.8,
+   "Government grants": 63.0
+  },
+  "E06000016": {
+   "Business rates": 16.7,
+   "Council tax": 18.4,
+   "Government grants": 65.0
+  },
+  "E06000017": {
+   "Business rates": 11.1,
+   "Council tax": 48.4,
+   "Government grants": 40.6
+  },
+  "E06000018": {
+   "Business rates": 15.7,
+   "Council tax": 18.5,
+   "Government grants": 65.8
+  },
+  "E06000019": {
+   "Business rates": 12.4,
+   "Council tax": 37.5,
+   "Government grants": 50.1
+  },
+  "E06000020": {
+   "Business rates": 13.1,
+   "Council tax": 22.5,
+   "Government grants": 64.4
+  },
+  "E06000021": {
+   "Business rates": 18.3,
+   "Council tax": 19.5,
+   "Government grants": 62.2
+  },
+  "E06000022": {
+   "Business rates": 12.4,
+   "Council tax": 40.0,
+   "Government grants": 47.6
+  },
+  "E06000023": {
+   "Business rates": 17.4,
+   "Council tax": 28.2,
+   "Government grants": 54.4
+  },
+  "E06000024": {
+   "Business rates": 13.6,
+   "Council tax": 41.2,
+   "Government grants": 45.2
+  },
+  "E06000025": {
+   "Business rates": 11.8,
+   "Council tax": 35.5,
+   "Government grants": 52.8
+  },
+  "E06000026": {
+   "Business rates": 15.6,
+   "Council tax": 26.9,
+   "Government grants": 57.4
+  },
+  "E06000027": {
+   "Business rates": 13.6,
+   "Council tax": 30.8,
+   "Government grants": 55.6
+  },
+  "E06000030": {
+   "Business rates": 12.2,
+   "Council tax": 36.2,
+   "Government grants": 51.6
+  },
+  "E06000031": {
+   "Business rates": 14.2,
+   "Council tax": 23.5,
+   "Government grants": 62.3
+  },
+  "E06000032": {
+   "Business rates": 11.9,
+   "Council tax": 20.2,
+   "Government grants": 67.9
+  },
+  "E06000033": {
+   "Business rates": 13.0,
+   "Council tax": 30.3,
+   "Government grants": 56.7
+  },
+  "E06000034": {
+   "Business rates": 18.6,
+   "Council tax": 29.3,
+   "Government grants": 52.2
+  },
+  "E06000035": {
+   "Business rates": 13.9,
+   "Council tax": 31.9,
+   "Government grants": 54.2
+  },
+  "E06000036": {
+   "Business rates": 10.2,
+   "Council tax": 34.4,
+   "Government grants": 55.4
+  },
+  "E06000037": {
+   "Business rates": 8.5,
+   "Council tax": 34.3,
+   "Government grants": 57.2
+  },
+  "E06000038": {
+   "Business rates": 12.8,
+   "Council tax": 31.6,
+   "Government grants": 55.6
+  },
+  "E06000039": {
+   "Business rates": 13.1,
+   "Council tax": 25.1,
+   "Government grants": 61.8
+  },
+  "E06000040": {
+   "Business rates": 5.9,
+   "Council tax": 37.8,
+   "Government grants": 56.3
+  },
+  "E06000041": {
+   "Business rates": 8.8,
+   "Council tax": 46.8,
+   "Government grants": 44.4
+  },
+  "E06000042": {
+   "Business rates": 13.0,
+   "Council tax": 29.9,
+   "Government grants": 57.1
+  },
+  "E06000043": {
+   "Business rates": 11.3,
+   "Council tax": 26.1,
+   "Government grants": 62.7
+  },
+  "E06000044": {
+   "Business rates": 14.7,
+   "Council tax": 22.7,
+   "Government grants": 62.6
+  },
+  "E06000045": {
+   "Business rates": 12.9,
+   "Council tax": 20.8,
+   "Government grants": 66.3
+  },
+  "E06000046": {
+   "Business rates": 12.9,
+   "Council tax": 31.8,
+   "Government grants": 55.3
+  },
+  "E06000047": {
+   "Business rates": 14.5,
+   "Council tax": 25.0,
+   "Government grants": 60.5
+  },
+  "E06000049": {
+   "Business rates": 8.3,
+   "Council tax": 41.7,
+   "Government grants": 50.0
+  },
+  "E06000050": {
+   "Business rates": 6.6,
+   "Council tax": 30.3,
+   "Government grants": 63.0
+  },
+  "E06000051": {
+   "Business rates": 9.5,
+   "Council tax": 37.2,
+   "Government grants": 53.3
+  },
+  "E06000052": {
+   "Business rates": 18.8,
+   "Council tax": 37.4,
+   "Government grants": 43.8
+  },
+  "E06000054": {
+   "Business rates": 2.8,
+   "Council tax": 42.0,
+   "Government grants": 55.2
+  },
+  "E06000055": {
+   "Business rates": 13.3,
+   "Council tax": 30.7,
+   "Government grants": 56.0
+  },
+  "E06000056": {
+   "Business rates": -0.0,
+   "Council tax": 39.8,
+   "Government grants": 60.2
+  },
+  "E06000057": {
+   "Business rates": 14.6,
+   "Council tax": 34.4,
+   "Government grants": 51.1
+  },
+  "E06000058": {
+   "Business rates": 9.8,
+   "Council tax": 39.1,
+   "Government grants": 51.1
+  },
+  "E06000059": {
+   "Business rates": 8.5,
+   "Council tax": 44.0,
+   "Government grants": 47.5
+  },
+  "E06000060": {
+   "Business rates": 7.9,
+   "Council tax": 39.0,
+   "Government grants": 53.2
+  },
+  "E06000061": {
+   "Business rates": 17.4,
+   "Council tax": 34.4,
+   "Government grants": 48.1
+  },
+  "E06000062": {
+   "Business rates": 12.9,
+   "Council tax": 36.2,
+   "Government grants": 50.9
+  },
+  "E06000064": {
+   "Business rates": 12.0,
+   "Council tax": 36.0,
+   "Government grants": 52.0
+  },
+  "E06000065": {
+   "Business rates": 11.0,
+   "Council tax": 39.3,
+   "Government grants": 49.6
+  },
+  "E06000066": {
+   "Business rates": 11.5,
+   "Council tax": 38.2,
+   "Government grants": 50.2
+  },
+  "E08000001": {
+   "Business rates": 20.7,
+   "Council tax": 19.7,
+   "Government grants": 59.7
+  },
+  "E08000002": {
+   "Business rates": 18.0,
+   "Council tax": 28.7,
+   "Government grants": 53.3
+  },
+  "E08000003": {
+   "Business rates": 28.3,
+   "Council tax": 16.2,
+   "Government grants": 55.6
+  },
+  "E08000004": {
+   "Business rates": 23.5,
+   "Council tax": 21.2,
+   "Government grants": 55.3
+  },
+  "E08000005": {
+   "Business rates": 23.8,
+   "Council tax": 19.3,
+   "Government grants": 56.9
+  },
+  "E08000006": {
+   "Business rates": 23.7,
+   "Council tax": 20.5,
+   "Government grants": 55.7
+  },
+  "E08000007": {
+   "Business rates": 15.0,
+   "Council tax": 30.2,
+   "Government grants": 54.8
+  },
+  "E08000008": {
+   "Business rates": 22.8,
+   "Council tax": 23.0,
+   "Government grants": 54.2
+  },
+  "E08000009": {
+   "Business rates": 15.7,
+   "Council tax": 25.8,
+   "Government grants": 58.5
+  },
+  "E08000010": {
+   "Business rates": 19.3,
+   "Council tax": 19.0,
+   "Government grants": 61.7
+  },
+  "E08000011": {
+   "Business rates": 28.3,
+   "Council tax": 14.7,
+   "Government grants": 57.0
+  },
+  "E08000012": {
+   "Business rates": 23.7,
+   "Council tax": 16.0,
+   "Government grants": 60.3
+  },
+  "E08000013": {
+   "Business rates": 22.1,
+   "Council tax": 20.6,
+   "Government grants": 57.3
+  },
+  "E08000014": {
+   "Business rates": 18.5,
+   "Council tax": 26.7,
+   "Government grants": 54.8
+  },
+  "E08000015": {
+   "Business rates": 20.0,
+   "Council tax": 23.0,
+   "Government grants": 57.0
+  },
+  "E08000016": {
+   "Business rates": 14.1,
+   "Council tax": 22.9,
+   "Government grants": 63.0
+  },
+  "E08000017": {
+   "Business rates": 18.1,
+   "Council tax": 23.0,
+   "Government grants": 58.9
+  },
+  "E08000018": {
+   "Business rates": 16.7,
+   "Council tax": 24.8,
+   "Government grants": 58.5
+  },
+  "E08000019": {
+   "Business rates": 15.4,
+   "Council tax": 22.4,
+   "Government grants": 62.1
+  },
+  "E08000021": {
+   "Business rates": 16.2,
+   "Council tax": 20.8,
+   "Government grants": 63.0
+  },
+  "E08000022": {
+   "Business rates": 9.9,
+   "Council tax": 22.9,
+   "Government grants": 67.2
+  },
+  "E08000023": {
+   "Business rates": 9.2,
+   "Council tax": 19.0,
+   "Government grants": 71.9
+  },
+  "E08000024": {
+   "Business rates": 18.0,
+   "Council tax": 20.7,
+   "Government grants": 61.3
+  },
+  "E08000025": {
+   "Business rates": 18.3,
+   "Council tax": 15.1,
+   "Government grants": 66.6
+  },
+  "E08000026": {
+   "Business rates": 17.3,
+   "Council tax": 22.9,
+   "Government grants": 59.8
+  },
+  "E08000029": {
+   "Business rates": 14.1,
+   "Council tax": 32.5,
+   "Government grants": 53.4
+  },
+  "E08000030": {
+   "Business rates": 19.3,
+   "Council tax": 23.1,
+   "Government grants": 57.5
+  },
+  "E08000031": {
+   "Business rates": 21.4,
+   "Council tax": 21.3,
+   "Government grants": 57.3
+  },
+  "E08000032": {
+   "Business rates": 14.2,
+   "Council tax": 22.8,
+   "Government grants": 63.0
+  },
+  "E08000033": {
+   "Business rates": 13.6,
+   "Council tax": 29.0,
+   "Government grants": 57.5
+  },
+  "E08000034": {
+   "Business rates": 12.6,
+   "Council tax": 27.5,
+   "Government grants": 59.9
+  },
+  "E08000035": {
+   "Business rates": 12.3,
+   "Council tax": 22.5,
+   "Government grants": 65.2
+  },
+  "E08000036": {
+   "Business rates": 16.0,
+   "Council tax": 25.5,
+   "Government grants": 58.5
+  },
+  "E08000037": {
+   "Business rates": 12.7,
+   "Council tax": 22.8,
+   "Government grants": 64.5
+  },
+  "E09000002": {
+   "Business rates": 11.2,
+   "Council tax": 13.1,
+   "Government grants": 75.7
+  },
+  "E09000003": {
+   "Business rates": 6.5,
+   "Council tax": 26.5,
+   "Government grants": 67.0
+  },
+  "E09000004": {
+   "Business rates": 12.3,
+   "Council tax": 32.9,
+   "Government grants": 54.8
+  },
+  "E09000005": {
+   "Business rates": 11.2,
+   "Council tax": 19.6,
+   "Government grants": 69.2
+  },
+  "E09000006": {
+   "Business rates": 8.6,
+   "Council tax": 35.4,
+   "Government grants": 56.0
+  },
+  "E09000007": {
+   "Business rates": 12.8,
+   "Council tax": 20.2,
+   "Government grants": 67.0
+  },
+  "E09000008": {
+   "Business rates": 11.0,
+   "Council tax": 29.8,
+   "Government grants": 59.2
+  },
+  "E09000009": {
+   "Business rates": 10.2,
+   "Council tax": 18.6,
+   "Government grants": 71.2
+  },
+  "E09000010": {
+   "Business rates": 11.8,
+   "Council tax": 20.2,
+   "Government grants": 68.0
+  },
+  "E09000011": {
+   "Business rates": 14.0,
+   "Council tax": 15.8,
+   "Government grants": 70.2
+  },
+  "E09000012": {
+   "Business rates": 18.3,
+   "Council tax": 12.1,
+   "Government grants": 69.5
+  },
+  "E09000013": {
+   "Business rates": 17.7,
+   "Council tax": 17.0,
+   "Government grants": 65.3
+  },
+  "E09000014": {
+   "Business rates": 14.0,
+   "Council tax": 17.6,
+   "Government grants": 68.4
+  },
+  "E09000015": {
+   "Business rates": 7.6,
+   "Council tax": 33.0,
+   "Government grants": 59.4
+  },
+  "E09000016": {
+   "Business rates": 8.7,
+   "Council tax": 30.0,
+   "Government grants": 61.3
+  },
+  "E09000017": {
+   "Business rates": 12.0,
+   "Council tax": 24.0,
+   "Government grants": 64.0
+  },
+  "E09000018": {
+   "Business rates": 11.1,
+   "Council tax": 22.1,
+   "Government grants": 66.8
+  },
+  "E09000019": {
+   "Business rates": 16.2,
+   "Council tax": 15.9,
+   "Government grants": 67.9
+  },
+  "E09000020": {
+   "Business rates": 14.9,
+   "Council tax": 22.8,
+   "Government grants": 62.3
+  },
+  "E09000021": {
+   "Business rates": 7.8,
+   "Council tax": 35.4,
+   "Government grants": 56.8
+  },
+  "E09000022": {
+   "Business rates": 15.5,
+   "Council tax": 17.1,
+   "Government grants": 67.5
+  },
+  "E09000023": {
+   "Business rates": 10.3,
+   "Council tax": 15.2,
+   "Government grants": 74.5
+  },
+  "E09000024": {
+   "Business rates": 9.7,
+   "Council tax": 24.0,
+   "Government grants": 66.3
+  },
+  "E09000025": {
+   "Business rates": 17.2,
+   "Council tax": 12.6,
+   "Government grants": 70.2
+  },
+  "E09000026": {
+   "Business rates": 8.7,
+   "Council tax": 19.6,
+   "Government grants": 71.7
+  },
+  "E09000027": {
+   "Business rates": 6.9,
+   "Council tax": 36.8,
+   "Government grants": 56.3
+  },
+  "E09000028": {
+   "Business rates": 12.0,
+   "Council tax": 17.3,
+   "Government grants": 70.7
+  },
+  "E09000029": {
+   "Business rates": 11.2,
+   "Council tax": 29.3,
+   "Government grants": 59.6
+  },
+  "E09000030": {
+   "Business rates": 15.2,
+   "Council tax": 13.9,
+   "Government grants": 70.9
+  },
+  "E09000031": {
+   "Business rates": 13.8,
+   "Council tax": 20.9,
+   "Government grants": 65.4
+  },
+  "E09000032": {
+   "Business rates": 15.5,
+   "Council tax": 10.6,
+   "Government grants": 73.9
+  },
+  "E09000033": {
+   "Business rates": 11.7,
+   "Council tax": 11.7,
+   "Government grants": 76.6
+  }
+ },
+ "files": [
+  "https://assets.publishing.service.gov.uk/media/6ab26f5dfe72ed1e2b02ee72/RS_LA_Data_2025-26_data_by_LA.ods"
+ ],
+ "id": "funding",
+ "notes": [],
+ "period": "2025-26",
+ "published": "2026-09-17",
+ "title": "MHCLG: Revenue outturn summary, 2025-26",
+ "trends": {},
+ "url": "https://www.gov.uk/government/statistics/local-authority-revenue-expenditure-and-financing-england-2025-to-2026-individual-local-authority-data-outturn",
+ "values": {}
+}
