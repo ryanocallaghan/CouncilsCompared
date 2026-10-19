@@ -5,35 +5,31 @@
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">How does your council compare?</h1>
-    <p class="govuk-body-l">See how your council does on SEND assessments, complaints, council housing, council tax, streets, homelessness and spending, compared with the rest of England, its region, or the councils most like it.</p>
-    <p class="govuk-body">Every figure comes from official statistics, updated as new editions are published. It covers the {{ all_councils | length }} councils in England that run all local services: unitary authorities, metropolitan districts and London boroughs.</p>
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">How does your council compare?</h1>
+    <p class="govuk-body-l">See how your council does on special educational needs, complaints, housing, bins, homelessness and more, and where your council tax goes.</p>
     {% include "_postcode.html" %}
-    <p class="govuk-body govuk-!-margin-top-4">Or choose a council:</p>
+    <p class="govuk-body govuk-!-margin-top-6 govuk-!-margin-bottom-2">Or choose a council:</p>
     {% with current=None, label="Council" %}{% include "_choose.html" %}{% endwith %}
   </div>
 </div>
 
-<h2 class="govuk-heading-l govuk-!-margin-top-8">Councils by region</h2>
-{% for row in regions | batch(3) %}
-  <div class="govuk-grid-row">
-    {% for region, members in row %}
-      <div class="govuk-grid-column-one-third app-region">
-        <h3 class="govuk-heading-s">{{ region }}</h3>
-        <ul class="govuk-list govuk-!-font-size-16">
-          {% for c in members %}
-            <li><a class="govuk-link" href="/{{ c.slug }}/">{{ c.name }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endfor %}
-  </div>
-{% endfor %}
-
-<div class="govuk-grid-row">
+<div class="govuk-grid-row govuk-!-margin-top-8">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-m">Not listed?</h2>
-    <p class="govuk-body">If you live in an area with a county council and a district council, services are split between the two, so they cannot be compared like for like with these councils. <a class="govuk-link" href="https://www.gov.uk/find-local-council">Find your local council on GOV.UK</a>.</p>
+    <h2 class="govuk-heading-m">All {{ all_councils | length }} councils, by region</h2>
+    <p class="govuk-body">Every council in England that runs all local services: unitary authorities, metropolitan districts and London boroughs. Figures come from official statistics, updated as new editions are published.</p>
+    {% for region, members in regions %}
+      <details class="govuk-details app-region">
+        <summary class="govuk-details__summary"><span class="govuk-details__summary-text">{{ region }} ({{ members | length }})</span></summary>
+        <div class="govuk-details__text">
+          <ul class="govuk-list app-columns">
+            {% for c in members %}<li><a class="govuk-link" href="/{{ c.slug }}/">{{ c.name }}</a></li>{% endfor %}
+          </ul>
+        </div>
+      </details>
+    {% endfor %}
+    <h2 class="govuk-heading-m govuk-!-margin-top-6">Not listed?</h2>
+    <p class="govuk-body">Where services are split between a county council and a district council, they can't be compared like for like with these councils. <a class="govuk-link" href="https://www.gov.uk/find-local-council">Find your local council on GOV.UK</a>.</p>
   </div>
 </div>
+<script type="application/ld+json">{{ structured_data | tojson }}</script>
 {% endblock %}

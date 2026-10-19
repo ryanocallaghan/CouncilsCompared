@@ -1,6 +1,6 @@
 {# Choose a council. /go (functions/go.js) sends you to its page; with
    JavaScript, app.js goes there straight away #}
-<form class="app-choose" action="/go" method="get" data-module="app-choose" novalidate>
+<form class="app-choose app-choose--plain" action="/go" method="get" data-module="app-choose" novalidate>
   {% set items = [{"value": "", "text": "Choose a council"}] if not current else [] %}
   {% for c in all_councils %}
     {% set _ = items.append({"value": c.slug, "text": c.name, "selected": current and c.slug == current.slug}) %}
