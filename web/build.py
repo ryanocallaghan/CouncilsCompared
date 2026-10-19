@@ -183,7 +183,7 @@ def build(out=DIST):
     regions_list = sorted({c["region"] for c in councils})
     types = sorted({c["type"] for c in councils})
     areas = {a: (name, note) for a, name, note in model.AREAS}
-    for m in model.MEASURES:
+    for m in (m for m in model.MEASURES if model.available(m)):
         rows = model.ranking(m)
         ranked = {c["code"] for _, c, _, _ in rows}
         page(f"/measures/{m.id.replace('_', '-')}/", "measure.html", nav="/measures/", measure=m, rows=rows,

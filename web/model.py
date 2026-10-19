@@ -152,6 +152,21 @@ def sources():
     return load()["sources"]
 
 
+MIN_COVERAGE = 0.75  # the share of councils a measure needs figures for before it is shown
+
+
+@cache
+def _coverage(path):
+    return {m.id: sum(1 for c in _load(path)["councils"].values() if m.id in c["values"]) for m in MEASURES}
+
+
+def available(measure):
+    """Whether a measure covers enough councils to rank them fairly.
+    Council housing is the exception: only councils with homes have figures."""
+    total = len(_load(DATA_FILE)["councils"])
+    return measure.area == "housing" or _coverage(DATA_FILE)[measure.id] >= MIN_COVERAGE * total
+
+
 def period(measure):
     return sources().get(measure.source, {}).get("period", "")
 
@@ -386,7 +401,7 @@ def compare(council, group="england"):
     rows = []
     for area_id, area_name, note in AREAS:
         area_rows = []
-        for m in (m for m in MEASURES if m.area == area_id):
+        for m in (m for m in MEASURES if m.area == area_id and available(m)):
             group_values = [c["values"][m.id] for c in members if m.id in c["values"]]
             value = council["values"].get(m.id)
             row = Row(measure=m, period=period(m), value=fmt(value, m.unit),

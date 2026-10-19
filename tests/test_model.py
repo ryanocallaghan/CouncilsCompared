@@ -53,7 +53,7 @@ def test_compared_with_all_england(fixture_data):
     assert rows["ehcp_20wk"].value == "22.9%" and rows["ehcp_20wk"].period == "2025-26"
     assert "fly_rate" not in rows  # no figure, so not shown
     streets = next(a for a in result.areas if a.id == "streets")
-    assert streets.rows == [] and streets.missing == 3
+    assert streets.rows == []  # no council in the fixture has these figures, so they aren't shown at all
     send = next(a for a in result.areas if a.id == "send")
     assert send.headline == "Bottom quarter"
     assert result.ranked == 4
@@ -171,3 +171,11 @@ def test_site_data_for_the_charts(fixture_data):
     assert data["councils"][0]["name"] == "Greenwich"
     assert data["measures"]["om_upheld"] == {"label": "Complaints the Ombudsman upheld, per 100,000 residents",
                                              "unit": "", "better": "lower"}
+
+
+def test_measures_covering_too_few_councils_are_hidden(fixture_data):
+    # 5 of the 6 councils have the Ombudsman figure; only 4 have tenant satisfaction,
+    # but council housing is shown anyway, as only councils with homes report it
+    assert model.available(model.measure_by_id("om_upheld"))
+    assert not model.available(model.measure_by_id("fly_rate"))
+    assert model.available(model.measure_by_id("tsm_overall"))

@@ -10,7 +10,7 @@ def test_builds_every_page(fixture_data, tmp_path):
     # (all England, region, type)
     from web import model
     # Home, about, privacy, two postcode pages, measures index and one page per measure, then the councils
-    assert count == 6 + len(model.MEASURES) + (4 * 2 + 1) + 2 * 3
+    assert count == 6 + len([m for m in model.MEASURES if model.available(m)]) + (4 * 2 + 1) + 2 * 3
     lewisham = (tmp_path / "lewisham" / "index.html").read_text()
     assert "<h1 class=\"govuk-heading-xl govuk-!-margin-bottom-4\">Lewisham</h1>" in lewisham
     assert "<title>How Lewisham Council compares – Councils compared</title>" in lewisham

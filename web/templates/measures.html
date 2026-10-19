@@ -9,7 +9,7 @@
     {% for area_id, area_name, note in model.AREAS %}
       <h2 class="govuk-heading-m govuk-!-margin-top-6">{{ area_name }}</h2>
       <ul class="govuk-list">
-        {% for m in model.MEASURES if m.area == area_id %}<li><a class="govuk-link" href="/measures/{{ m.id | replace('_', '-') }}/">{{ m.label }}</a></li>{% endfor %}
+        {% for m in model.MEASURES if m.area == area_id and model.available(m) %}<li><a class="govuk-link" href="/measures/{{ m.id | replace('_', '-') }}/">{{ m.label }}</a></li>{% endfor %}
       </ul>
     {% endfor %}
   </div>
