@@ -33,3 +33,17 @@ for (const section of document.querySelectorAll('[data-module="app-ctax"]')) {
   band.addEventListener("change", update);
   alone.addEventListener("change", update);
 }
+
+// Arriving from a postcode search: start on the most common band nearby
+for (const section of document.querySelectorAll('[data-module="app-ctax"]')) {
+  const band = new URLSearchParams(window.location.search).get("band");
+  const select = section.querySelector("#ctax-band");
+  const option = [...select.options].find((o) => o.text === `Band ${band}`);
+  if (option) {
+    select.value = option.value;
+    select.dispatchEvent(new Event("change"));
+    const note = section.querySelector(".app-ctax__suggested");
+    note.innerHTML = `<strong>Band ${band}</strong> is the most common band for homes near your postcode, so we've started there. <a class="govuk-link" href="https://www.gov.uk/council-tax-bands">Check your own band on GOV.UK</a>.`;
+    note.hidden = false;
+  }
+}

@@ -30,7 +30,7 @@
   <meta name="twitter:card" content="summary">
   {% if umami %}
     {# Only counts visits on councilscompared.com itself, not preview builds #}
-    <script defer src="{{ umami.script }}" data-website-id="{{ umami.website_id }}" data-domains="councilscompared.com,www.councilscompared.com"></script>
+    <script defer src="{{ umami.script }}" data-website-id="{{ umami.website_id }}" data-domains="councilscompared.com,www.councilscompared.com" data-exclude-search="true"></script>
   {% endif %}
 {% endblock %}
 

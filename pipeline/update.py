@@ -42,6 +42,7 @@ STEPS = [
     ("funding", "spending", "funding"),
     ("ofsted", "ofsted", "fetch"),
     ("silktide", "silktide", "fetch"),
+    ("area_bands", "area_bands", "fetch"),
 ]
 
 # Measures each source provides, in data/councils.json "values"

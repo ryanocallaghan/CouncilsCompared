@@ -136,7 +136,11 @@
     "fire": 0.0,
     "combined": 0.0
    },
-   "funding": null
+   "funding": {
+    "Council tax": 15.2,
+    "Business rates": 10.3,
+    "Government grants": 74.5
+   }
   },
   {
    "code": "E09000011",

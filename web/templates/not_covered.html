@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Your council is not covered{% endblock %}
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Your council is not covered yet</h1>
+    <p class="govuk-body">Councils compared covers the {{ all_councils | length }} councils in England that run all local services: unitary authorities, metropolitan districts and London boroughs.</p>
+    <p class="govuk-body">Your postcode is either in an area of England where services are split between a county council and a district council, or outside England. Those councils can't be compared like for like with the ones here.</p>
+    <p class="govuk-body"><a class="govuk-link" href="https://www.gov.uk/find-local-council">Find your local council on GOV.UK</a></p>
+  </div>
+</div>
+{% endblock %}

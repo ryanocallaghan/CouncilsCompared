@@ -74,3 +74,23 @@ def test_changes_describe_new_editions_and_revised_figures():
     assert "| Council tax | 2024-25 → **2025-26** | New edition |" in text
     assert "| `ctax_collect` | 1 | Aville: 95.0 → 96.5 |" in text
     assert changes(after, after) == "No figures changed."
+
+
+def test_most_common_band_in_each_neighbourhood(monkeypatch):
+    import io
+    import zipfile
+    from pipeline.sources import area_bands
+    rows = ['"geography","ba_code","ecode","area_name","band_a","band_b","band_c","band_d","band_e","band_f","band_g","band_h","band_i","all_properties"',
+            '"LAUA","5690","E09000023","Lewisham","9210","36740","48390","27920","8130","2820","1370","190","[z]","134760"']
+    rows += [f'"LSOA","N/A","E01{n:06d}","x","30","370","210","150","40","20","20","[c]","[z]","840"' for n in range(30_000)]
+    rows.append('"LSOA","N/A","E01999999","tie","100","100","0","0","0","0","0","0","[z]","200"')
+    data = io.BytesIO()
+    with zipfile.ZipFile(data, "w") as z:
+        z.writestr("CTSOP1_1/CTSOP1_1.csv", "\n".join(rows))
+    item = {"title": "Council Tax: stock of properties, 2026", "web_url": "https://www.gov.uk/x"}
+    monkeypatch.setattr(area_bands.govuk, "latest", lambda *a: (item, {"url": "u"}))
+    monkeypatch.setattr(area_bands, "get", lambda url: data.getvalue())
+    result = area_bands.fetch()
+    assert result.extra["E01000001"] == "B"
+    assert result.extra["E01999999"] == "A"  # a tie goes to the lower band
+    assert "E09000023" not in result.extra and result.period == "2026"

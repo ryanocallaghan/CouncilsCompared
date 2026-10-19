@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}We could not find that postcode{% endblock %}
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">We could not find that postcode</h1>
+    <p class="govuk-body">Check it is a full postcode in England, like SE14 6AF, and try again.</p>
+    {% include "_postcode.html" %}
+    <p class="govuk-body govuk-!-margin-top-6"><a class="govuk-link" href="/">Choose your council from a list</a></p>
+  </div>
+</div>
+{% endblock %}

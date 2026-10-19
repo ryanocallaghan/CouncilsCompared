@@ -1,0 +1,8 @@
+<form class="app-choose" action="/go" method="get" novalidate>
+  <div class="govuk-form-group">
+    <label class="govuk-label govuk-label--s" for="postcode">Your postcode</label>
+    <div class="govuk-hint" id="postcode-hint">For example, SE14 6AF. We use it to find your council and the most common council tax band near you, and don't keep it.</div>
+    <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text" autocomplete="postal-code" spellcheck="false" aria-describedby="postcode-hint">
+  </div>
+  {{ govukButton({"text": "Find my council", "classes": "govuk-!-margin-bottom-0"}) }}
+</form>

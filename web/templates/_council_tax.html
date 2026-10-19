@@ -23,6 +23,7 @@
           </div>
         </div>
       </div>
+      <p class="govuk-body app-ctax__suggested" hidden></p>
       <p class="govuk-body-l">Your bill: <strong data-band-d="{{ ct.band_d }}">{{ model.fmt(ct.band_d, "£") }}</strong> a year, about <strong data-band-d="{{ ct.band_d }}" data-per="week">{{ model.fmt_pence(ct.band_d / 52) }}</strong> a week <span class="app-ctax__band-note">(Band D)</span>.</p>
     </div>
   </div>
