@@ -205,6 +205,11 @@ def fmt(value, unit=""):
     return text[:-2] if text.endswith(".0") else text
 
 
+def fmt_pence(value):
+    """3.456 -> "£3.46", for small weekly amounts."""
+    return f"£{value:,.2f}"
+
+
 def ordinal(n):
     """1 -> "1st", 22 -> "22nd", 13 -> "13th"."""
     suffix = "th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
@@ -443,3 +448,61 @@ def _trends(council, members):
         if chart:
             charts.append({"title": title, "note": note, "chart": chart})
     return charts
+
+
+# Council tax bands as a share of Band D (they are fixed by law)
+BANDS_CT = [("A", 6 / 9), ("B", 7 / 9), ("C", 8 / 9), ("D", 1), ("E", 11 / 9), ("F", 13 / 9), ("G", 15 / 9),
+            ("H", 18 / 9)]
+
+# The council's own spending, as split on the council tax calculator
+CT_SERVICES = [
+    ("Adult social care", "Adult social care"),
+    ("Children's social care", "Children's social care"),
+    ("Housing and homelessness", "Housing (general fund)"),
+    ("Bins, streets, parks and environment", "Environmental and regulatory"),
+    ("Public health", "Public health"),
+    ("Roads and transport", "Highways and transport"),
+    ("Libraries, culture and leisure", "Culture and leisure"),
+    ("Planning and development", "Planning and development"),
+    ("Running the council", "Central services"),
+]
+
+
+def council_tax(council):
+    """What the council tax calculator shows, for a Band D bill.
+
+    The bill is split by who sets it; the council's part is then split in
+    proportion to the council's net spending on each service. Services that
+    bring in more than they cost (roads, where parking pays) are left out of
+    the split rather than shown as negative.
+    """
+    parts = council.get("band_d_parts")
+    if not parts or not council.get("band_d"):
+        return None
+    london = council["region"] == "London"
+    labels = [
+        ("council", f"{council['name']} council"),
+        ("parish", "Parish or town council (average across the area)"),
+        ("gla_or_county", "Mayor of London (GLA), including police and fire" if london else "County council"),
+        ("combined", "Combined authority (regional mayor)"),
+        ("police", "Police"),
+        ("fire", "Fire and rescue"),
+    ]
+    who = [{"key": key, "label": label, "band_d": parts[key]} for key, label in labels if parts.get(key, 0) > 0.5]
+    spend = council.get("spend", {})
+    positive = [(label, spend[key]) for label, key in CT_SERVICES if spend.get(key, 0) > 0]
+    total = sum(v for _, v in positive)
+    services = []
+    if total:
+        for label, value in sorted(positive, key=lambda s: -s[1]):
+            services.append({"label": label, "share": value / total * 100,
+                             "band_d": parts["council"] * value / total})
+    return {
+        "band_d": council["band_d"],
+        "council_band_d": parts["council"],
+        "bands": [{"band": b, "ratio": r} for b, r in BANDS_CT],
+        "who": who,
+        "services": services,
+        "left_out": [label for label, key in CT_SERVICES if key in spend and spend[key] <= 0],
+        "funding": council.get("funding"),
+    }

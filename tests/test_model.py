@@ -107,3 +107,18 @@ def test_line_chart_scales_percentages_to_100():
 def test_ofsted_grades_are_counted(fixture_data):
     result = model.compare(model.councils()["lewisham"])
     assert dict(result.grades) == {"Outstanding": 1, "Good": 4, "Requires improvement": 1, "Inadequate": 0}
+
+
+def test_council_tax_split(fixture_data):
+    ct = model.council_tax(model.councils()["lewisham"])
+    assert [p["label"] for p in ct["who"]] == ["Lewisham council", "Mayor of London (GLA), including police and fire"]
+    assert sum(p["band_d"] for p in ct["who"]) == pytest.approx(ct["band_d"])
+    # The council's part, split by its spending; roads brought in money, so are left out
+    assert [s["label"] for s in ct["services"]] == ["Children's social care", "Adult social care"]
+    assert sum(s["band_d"] for s in ct["services"]) == pytest.approx(1726.82)
+    assert ct["left_out"] == ["Roads and transport"]
+    assert dict((b["band"], b["ratio"]) for b in ct["bands"])["H"] == 2
+
+
+def test_no_council_tax_split_without_figures(fixture_data):
+    assert model.council_tax(model.councils()["greenwich"]) is None

@@ -128,7 +128,7 @@ def build(out=DIST):
         groups = model.groups_for(council)
         for group in groups:
             page(model.path(council, group), "council.html", nav="/", groups=groups,
-                 comparison=model.compare(council, group))
+                 comparison=model.compare(council, group), council_tax=model.council_tax(council))
     order = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "band_d", "fly", "waste", "homelessness",
              "silktide", "spending", "ofsted", "neighbours", "population"]
     source_list = [sources[s] for s in order if s in sources]

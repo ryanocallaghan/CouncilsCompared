@@ -1,0 +1,91 @@
+{# Where your council tax goes. Works without JavaScript as a Band D
+   table; app.js recalculates every [data-band-d] amount for the band and
+   discount chosen #}
+{% set ct = council_tax %}
+<div class="app-ctax" data-module="app-ctax">
+  <h2 class="govuk-heading-l govuk-!-margin-top-6" id="council-tax">Where your council tax goes</h2>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body">Choose your band to see what your bill in {{ b.name }} pays for in {{ sources.band_d.period }}. <a class="govuk-link" href="https://www.gov.uk/council-tax-bands">Check your council tax band on GOV.UK</a>.</p>
+      <div class="app-ctax__controls govuk-!-display-none-print" hidden>
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--s" for="ctax-band">Your band</label>
+          <select class="govuk-select" id="ctax-band" name="band">
+            {% for band in ct.bands %}
+              <option value="{{ band.ratio }}"{% if band.band == "D" %} selected{% endif %}>Band {{ band.band }}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <div class="govuk-checkboxes govuk-checkboxes--small govuk-!-margin-bottom-4">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="ctax-alone" name="alone" type="checkbox" value="0.75">
+            <label class="govuk-label govuk-checkboxes__label" for="ctax-alone">I live alone (25% single person discount)</label>
+          </div>
+        </div>
+      </div>
+      <p class="govuk-body-l">Your bill: <strong data-band-d="{{ ct.band_d }}">{{ model.fmt(ct.band_d, "£") }}</strong> a year, about <strong data-band-d="{{ ct.band_d }}" data-per="week">{{ model.fmt_pence(ct.band_d / 52) }}</strong> a week <span class="app-ctax__band-note">(Band D)</span>.</p>
+    </div>
+  </div>
+
+  <h3 class="govuk-heading-m">Who your bill goes to</h3>
+  <div class="app-ctax__bar" aria-hidden="true">
+    {% for part in ct.who %}<span class="app-ctax__segment app-ctax__segment--{{ loop.index }}" style="width: {{ (part.band_d / ct.band_d * 100) | round(2) }}%"></span>{% endfor %}
+  </div>
+  <table class="govuk-table app-ctax__table">
+    <caption class="govuk-table__caption govuk-visually-hidden">Who your council tax goes to</caption>
+    <thead class="govuk-table__head"><tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Goes to</th>
+      <th scope="col" class="govuk-table__header govuk-table__header--numeric">A year</th>
+      <th scope="col" class="govuk-table__header govuk-table__header--numeric">Share</th>
+    </tr></thead>
+    <tbody class="govuk-table__body">
+      {% for part in ct.who %}
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header app-ctax__label"><span class="app-ctax__key app-ctax__segment--{{ loop.index }}"></span>{{ part.label }}</th>
+          <td class="govuk-table__cell govuk-table__cell--numeric" data-band-d="{{ part.band_d }}">{{ model.fmt(part.band_d, "£") }}</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">{{ (part.band_d / ct.band_d * 100) | round | int }}%</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {% if ct.services %}
+  <h3 class="govuk-heading-m">What the council's share pays for</h3>
+  <p class="govuk-body app-measure-note">The council's part of your bill, <strong data-band-d="{{ ct.council_band_d }}">{{ model.fmt(ct.council_band_d, "£") }}</strong>, split in the same proportions as the council's own spending in {{ sources.spending.period }}, not counting schools.</p>
+  <table class="govuk-table app-ctax__table">
+    <caption class="govuk-table__caption govuk-visually-hidden">What the council's share of your bill pays for</caption>
+    <thead class="govuk-table__head"><tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Service</th>
+      <th scope="col" class="govuk-table__header govuk-table__header--numeric">A year</th>
+      <th scope="col" class="govuk-table__header govuk-table__header--numeric">A week</th>
+      <th scope="col" class="govuk-table__header app-ctax__bar-col"><span class="govuk-visually-hidden">Share</span></th>
+    </tr></thead>
+    <tbody class="govuk-table__body">
+      {% for s in ct.services %}
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header app-ctax__label">{{ s.label }}</th>
+          <td class="govuk-table__cell govuk-table__cell--numeric" data-band-d="{{ s.band_d }}">{{ model.fmt(s.band_d, "£") }}</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric" data-band-d="{{ s.band_d }}" data-per="week">{{ model.fmt_pence(s.band_d / 52) }}</td>
+          <td class="govuk-table__cell app-ctax__bar-col"><span class="app-ctax__fill" style="width: {{ (s.share / ct.services[0].share * 100) | round(1) }}%"></span><span class="govuk-visually-hidden">{{ s.share | round | int }}%</span></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% if ct.left_out %}
+    <p class="govuk-body-s app-secondary-text">{{ ct.left_out | join(" and ") }} brought in more than {{ "it" if ct.left_out | length == 1 else "they" }} cost, mostly from parking, so {{ "it is" if ct.left_out | length == 1 else "they are" }} not shown.</p>
+  {% endif %}
+  {% endif %}
+
+  {% if ct.funding %}
+  <h3 class="govuk-heading-m">Council tax is only part of the money</h3>
+  <p class="govuk-body app-measure-note">In {{ sources.funding.period }}, council tax paid for <strong>{{ ct.funding["Council tax"] | round | int }}%</strong> of what {{ b.name }} council spent on day-to-day services, including schools. Most government grants can only be spent on what they are given for, such as schools, housing benefit or public health.</p>
+  <div class="app-ctax__bar" aria-hidden="true">
+    {% for name, share in ct.funding.items() %}<span class="app-ctax__segment app-ctax__segment--f{{ loop.index }}" style="width: {{ share }}%"></span>{% endfor %}
+  </div>
+  <ul class="govuk-list app-ctax__legend">
+    {% for name, share in ct.funding.items() %}
+      <li><span class="app-ctax__key app-ctax__segment--f{{ loop.index }}"></span>{{ name }}: {{ share | round | int }}%</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>

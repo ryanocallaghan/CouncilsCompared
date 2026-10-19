@@ -1,5 +1,6 @@
 // GOV.UK Frontend, configured for a website that is not on GOV.UK:
 // the GDS Transport typeface is licensed for GOV.UK only, so use Arial.
+@use "sass:list";
 @use "govuk-frontend/dist/govuk" with (
   $govuk-font-family: (arial, sans-serif),
   $govuk-assets-path: "/assets/"
@@ -351,4 +352,80 @@ circle.app-chart__line--median {
 // GOV.UK Frontend colours the current menu item in GOV.UK blue
 .app-service-navigation .govuk-service-navigation__item--active {
   border-color: $app-brand;
+}
+
+// Where your council tax goes
+$app-ctax-colours: (#00625e, #28a197, #12436d, #f46a25, #801650, #a285d1);
+$app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "tint-80"));
+
+.app-ctax__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 30px;
+  align-items: flex-end;
+  max-width: 40em;
+  padding: 15px 20px 0;
+  margin-bottom: 20px;
+  background: govuk.govuk-colour("black", $variant: "tint-95");
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.app-ctax__bar {
+  display: flex;
+  height: 24px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: var(--govuk-border-colour, #cecece);
+}
+
+.app-ctax__segment {
+  display: block;
+  height: 100%;
+  border-right: 2px solid var(--govuk-body-background-colour, #ffffff);
+}
+
+@for $i from 1 through list.length($app-ctax-colours) {
+  .app-ctax__segment--#{$i} {
+    background: list.nth($app-ctax-colours, $i);
+  }
+}
+
+@for $i from 1 through list.length($app-funding-colours) {
+  .app-ctax__segment--f#{$i} {
+    background: list.nth($app-funding-colours, $i);
+  }
+}
+
+.app-ctax__key {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  vertical-align: -1px;
+}
+
+.app-ctax__label {
+  font-weight: 400;
+}
+
+.app-ctax__bar-col {
+  width: 30%;
+}
+
+.app-ctax__fill {
+  display: block;
+  height: 16px;
+  background: $app-brand;
+}
+
+.app-ctax__legend li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.app-ctax__table {
+  max-width: 50em;
 }

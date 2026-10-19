@@ -83,6 +83,12 @@
    "url": "https://example.com/neighbours",
    "period": "2025-26",
    "published": "2026-07-31"
+  },
+  "funding": {
+   "title": "Source funding",
+   "url": "https://example.com/f",
+   "period": "2025-26",
+   "published": "2026-09-17"
   }
  },
  "councils": [
@@ -94,7 +100,7 @@
    "region": "London",
    "population": 300000,
    "households": 150000,
-   "band_d": 2000.0,
+   "band_d": 2237.33,
    "values": {
     "ehcp_20wk": 22.9,
     "om_upheld": 14.9,
@@ -102,8 +108,10 @@
     "tsm_overall": 50.8
    },
    "spend": {
-    "Children's social care": 400.0,
-    "All services excluding schools": 1400.0
+    "Children's social care": 449.1,
+    "Adult social care": 422.0,
+    "Highways and transport": -5.0,
+    "All services excluding schools": 1459.8
    },
    "ofsted": {
     "grade": "Good",
@@ -119,7 +127,16 @@
      "2024": 94.8,
      "2025": 22.9
     }
-   }
+   },
+   "band_d_parts": {
+    "council": 1726.82,
+    "parish": 0.0,
+    "gla_or_county": 510.51,
+    "police": 0.0,
+    "fire": 0.0,
+    "combined": 0.0
+   },
+   "funding": null
   },
   {
    "code": "E09000011",
@@ -152,7 +169,9 @@
      "2024": 50.0,
      "2025": 60.0
     }
-   }
+   },
+   "band_d_parts": null,
+   "funding": null
   },
   {
    "code": "E09000022",
@@ -180,7 +199,9 @@
    "neighbours": [
     "E09000023"
    ],
-   "trends": {}
+   "trends": {},
+   "band_d_parts": null,
+   "funding": null
   },
   {
    "code": "E09000028",
@@ -207,7 +228,9 @@
    "neighbours": [
     "E09000023"
    ],
-   "trends": {}
+   "trends": {},
+   "band_d_parts": null,
+   "funding": null
   },
   {
    "code": "E08000010",
@@ -233,7 +256,9 @@
     "inspected": "2023-12-04"
    },
    "neighbours": [],
-   "trends": {}
+   "trends": {},
+   "band_d_parts": null,
+   "funding": null
   },
   {
    "code": "E06000001",
@@ -258,7 +283,9 @@
     "inspected": "2022-05-01"
    },
    "neighbours": [],
-   "trends": {}
+   "trends": {},
+   "band_d_parts": null,
+   "funding": null
   }
  ]
 }

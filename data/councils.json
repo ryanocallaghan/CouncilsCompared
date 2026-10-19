@@ -89,6 +89,14 @@
    "population": 238295,
    "households": 76836,
    "band_d": 2198.51,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1688.0,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 27.2,
     "om_received": 75.5,
@@ -198,6 +206,14 @@
    "population": 408087,
    "households": 156679,
    "band_d": 2132.6,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1622.09,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 70.3,
@@ -307,6 +323,14 @@
    "population": 252784,
    "households": 112070,
    "band_d": 2325.96,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1942.29,
+    "fire": 95.05,
+    "gla_or_county": 0.0,
+    "parish": 8.58,
+    "police": 280.04
+   },
    "values": {
     "ehcp_20wk": 98.6,
     "om_received": 41.1,
@@ -414,6 +438,14 @@
    "population": 200898,
    "households": 83659,
    "band_d": 2383.42,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1914.03,
+    "fire": 95.43,
+    "gla_or_county": 0.0,
+    "parish": 65.76,
+    "police": 308.2
+   },
    "values": {
     "ehcp_20wk": 33.2,
     "om_received": 29.4,
@@ -511,6 +543,14 @@
    "population": 196398,
    "households": 80598,
    "band_d": 2471.74,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2011.28,
+    "fire": 122.72,
+    "gla_or_county": 0.0,
+    "parish": 40.15,
+    "police": 297.59
+   },
    "values": {
     "ehcp_20wk": 94.3,
     "om_received": 37.7,
@@ -608,6 +648,14 @@
    "population": 257103,
    "households": 98370,
    "band_d": 2366.36,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1855.85,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 65.9,
     "om_received": 34.2,
@@ -707,6 +755,14 @@
    "population": 1176960,
    "households": 438177,
    "band_d": 2362.9,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2023.48,
+    "fire": 85.19,
+    "gla_or_county": 0.0,
+    "parish": 9.73,
+    "police": 244.5
+   },
    "values": {
     "ehcp_20wk": 37.1,
     "om_received": 63.5,
@@ -816,6 +872,14 @@
    "population": 163801,
    "households": 60192,
    "band_d": 2455.27,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2062.96,
+    "fire": 94.73,
+    "gla_or_county": 0.0,
+    "parish": 5.18,
+    "police": 292.4
+   },
    "values": {
     "ehcp_20wk": 79.9,
     "om_received": 26.9,
@@ -916,6 +980,14 @@
    "population": 143492,
    "households": 65135,
    "band_d": 2513.22,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2126.09,
+    "fire": 94.73,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 292.4
+   },
    "values": {
     "ehcp_20wk": 55.0,
     "om_received": 41.8,
@@ -1023,6 +1095,14 @@
    "population": 309732,
    "households": 122630,
    "band_d": 2399.74,
+   "band_d_parts": {
+    "combined": 153.95,
+    "council": 1953.08,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 7.41,
+    "police": 285.3
+   },
    "values": {
     "ehcp_20wk": 86.0,
     "om_received": 27.1,
@@ -1125,6 +1205,14 @@
    "population": 405829,
    "households": 179469,
    "band_d": 2435.58,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1980.46,
+    "fire": 96.95,
+    "gla_or_county": 0.0,
+    "parish": 35.59,
+    "police": 322.58
+   },
    "values": {
     "ehcp_20wk": 69.0,
     "om_received": 44.8,
@@ -1212,6 +1300,14 @@
    "population": 132145,
    "households": 53702,
    "band_d": 2264.8,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1781.46,
+    "fire": 91.31,
+    "gla_or_county": 0.0,
+    "parish": 93.75,
+    "police": 298.28
+   },
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 42.4,
@@ -1309,6 +1405,14 @@
    "population": 557758,
    "households": 220654,
    "band_d": 2360.73,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1965.28,
+    "fire": 89.49,
+    "gla_or_county": 0.0,
+    "parish": 27.68,
+    "police": 278.28
+   },
    "values": {
     "ehcp_20wk": 86.5,
     "om_received": 31.9,
@@ -1411,6 +1515,14 @@
    "population": 352201,
    "households": 122803,
    "band_d": 2235.27,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1724.76,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 69.7,
     "om_received": 80.9,
@@ -1520,6 +1632,14 @@
    "population": 284170,
    "households": 125030,
    "band_d": 2580.54,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2180.42,
+    "fire": 117.49,
+    "gla_or_county": 0.0,
+    "parish": 0.72,
+    "police": 281.91
+   },
    "values": {
     "ehcp_20wk": 57.4,
     "om_received": 56.0,
@@ -1628,6 +1748,14 @@
    "population": 495260,
    "households": 201662,
    "band_d": 2713.68,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2310.05,
+    "fire": 95.43,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 308.2
+   },
    "values": {
     "ehcp_20wk": 6.8,
     "om_received": 51.1,
@@ -1730,6 +1858,14 @@
    "population": 336048,
    "households": 138572,
    "band_d": 2140.04,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1629.53,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 71.3,
     "om_received": 64.6,
@@ -1828,6 +1964,14 @@
    "population": 584296,
    "households": 232563,
    "band_d": 2526.58,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2037.5,
+    "fire": 89.46,
+    "gla_or_county": 0.0,
+    "parish": 101.34,
+    "police": 298.28
+   },
    "values": {
     "om_received": 46.9,
     "om_remedy_before": 1.4,
@@ -1895,6 +2039,14 @@
    "population": 199271,
    "households": 82363,
    "band_d": 2555.15,
+   "band_d_parts": {
+    "combined": 153.95,
+    "council": 2115.9,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 285.3
+   },
    "values": {
     "ehcp_20wk": 98.1,
     "om_received": 48.7,
@@ -2000,6 +2152,14 @@
    "population": 210734,
    "households": 92832,
    "band_d": 2420.15,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2034.19,
+    "fire": 89.49,
+    "gla_or_county": 0.0,
+    "parish": 18.19,
+    "police": 278.28
+   },
    "values": {
     "ehcp_20wk": 94.1,
     "om_received": 40.8,
@@ -2099,6 +2259,14 @@
    "population": 216658,
    "households": 101608,
    "band_d": 2207.55,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1697.04,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 73.0,
     "om_received": 105.2,
@@ -2208,6 +2376,14 @@
    "population": 321605,
    "households": 132520,
    "band_d": 2516.16,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1931.54,
+    "fire": 122.72,
+    "gla_or_county": 0.0,
+    "parish": 164.31,
+    "police": 297.59
+   },
    "values": {
     "ehcp_20wk": 56.3,
     "om_received": 37.6,
@@ -2312,6 +2488,14 @@
    "population": 425459,
    "households": 187924,
    "band_d": 2454.87,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1975.95,
+    "fire": 100.09,
+    "gla_or_county": 0.0,
+    "parish": 83.39,
+    "police": 295.44
+   },
    "values": {
     "ehcp_20wk": 23.9,
     "om_received": 53.6,
@@ -2408,6 +2592,14 @@
    "population": 373951,
    "households": 164868,
    "band_d": 2517.33,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2076.79,
+    "fire": 100.09,
+    "gla_or_county": 0.0,
+    "parish": 45.01,
+    "police": 295.44
+   },
    "values": {
     "ehcp_20wk": 22.1,
     "om_received": 29.1,
@@ -2512,6 +2704,14 @@
    "population": 584782,
    "households": 266641,
    "band_d": 2590.93,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2086.36,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 201.37,
+    "police": 303.2
+   },
    "values": {
     "ehcp_20wk": 34.1,
     "om_received": 48.2,
@@ -2613,6 +2813,14 @@
    "population": 539146,
    "households": 245488,
    "band_d": 2622.15,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2071.11,
+    "fire": 128.12,
+    "gla_or_county": 0.0,
+    "parish": 122.18,
+    "police": 300.74
+   },
    "values": {
     "ehcp_20wk": 77.6,
     "om_received": 31.2,
@@ -2715,6 +2923,14 @@
    "population": 364766,
    "households": 147176,
    "band_d": 2516.72,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2186.4,
+    "fire": 85.19,
+    "gla_or_county": 0.0,
+    "parish": 0.63,
+    "police": 244.5
+   },
    "values": {
     "ehcp_20wk": 37.6,
     "om_received": 40.0,
@@ -2817,6 +3033,14 @@
    "population": 410085,
    "households": 158704,
    "band_d": 2599.91,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2089.4,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 61.2,
     "om_received": 88.5,
@@ -2925,6 +3149,14 @@
    "population": 282343,
    "households": 129392,
    "band_d": 2511.32,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2002.64,
+    "fire": 103.14,
+    "gla_or_county": 0.0,
+    "parish": 66.6,
+    "police": 338.94
+   },
    "values": {
     "ehcp_20wk": 6.7,
     "om_received": 27.3,
@@ -2984,6 +3216,14 @@
    "population": 113402,
    "households": 51601,
    "band_d": 2493.83,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2056.87,
+    "fire": 128.12,
+    "gla_or_county": 0.0,
+    "parish": 8.1,
+    "police": 300.74
+   },
    "values": {
     "ehcp_20wk": 81.5,
     "om_received": 48.5,
@@ -3091,6 +3331,14 @@
    "population": 275344,
    "households": 109180,
    "band_d": 2306.0,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1898.99,
+    "fire": 98.41,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 308.6
+   },
    "values": {
     "ehcp_20wk": 52.6,
     "om_received": 32.3,
@@ -3200,6 +3448,14 @@
    "population": 323016,
    "households": 138498,
    "band_d": 2167.75,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1749.86,
+    "fire": 95.05,
+    "gla_or_county": 0.0,
+    "parish": 42.8,
+    "police": 280.04
+   },
    "values": {
     "ehcp_20wk": 83.9,
     "om_received": 27.9,
@@ -3309,6 +3565,14 @@
    "population": 391036,
    "households": 179430,
    "band_d": 2765.02,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2205.9,
+    "fire": 96.95,
+    "gla_or_county": 0.0,
+    "parish": 139.59,
+    "police": 322.58
+   },
    "values": {
     "ehcp_20wk": 78.2,
     "om_received": 46.3,
@@ -3388,6 +3652,14 @@
    "population": 333941,
    "households": 140328,
    "band_d": 2144.84,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1815.15,
+    "fire": 85.19,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 244.5
+   },
    "values": {
     "ehcp_20wk": 25.1,
     "om_received": 45.2,
@@ -3484,6 +3756,14 @@
    "population": 387072,
    "households": 139747,
    "band_d": 2138.53,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1628.02,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 52.2,
     "om_received": 86.0,
@@ -3593,6 +3873,14 @@
    "population": 360334,
    "households": 161429,
    "band_d": 2466.08,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1968.9,
+    "fire": 107.92,
+    "gla_or_county": 0.0,
+    "parish": 75.6,
+    "police": 313.66
+   },
    "values": {
     "ehcp_20wk": 92.9,
     "om_received": 29.4,
@@ -3698,6 +3986,14 @@
    "population": 329400,
    "households": 122009,
    "band_d": 2267.67,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1757.16,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 67.2,
     "om_received": 91.1,
@@ -3807,6 +4103,14 @@
    "population": 202509,
    "households": 90240,
    "band_d": 2715.81,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2396.07,
+    "fire": 105.11,
+    "gla_or_county": 0.0,
+    "parish": 0.29,
+    "police": 214.34
+   },
    "values": {
     "ehcp_20wk": 83.7,
     "om_received": 34.6,
@@ -3914,6 +4218,14 @@
    "population": 301225,
    "households": 121752,
    "band_d": 2107.86,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1597.35,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 31.2,
     "om_received": 65.1,
@@ -4023,6 +4335,14 @@
    "population": 266241,
    "households": 112483,
    "band_d": 2060.3,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1549.79,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 32.8,
     "om_received": 95.8,
@@ -4130,6 +4450,14 @@
    "population": 131912,
    "households": 57910,
    "band_d": 2366.61,
+   "band_d_parts": {
+    "combined": 24.0,
+    "council": 1938.81,
+    "fire": 100.09,
+    "gla_or_county": 0.0,
+    "parish": 8.27,
+    "police": 295.44
+   },
    "values": {
     "ehcp_20wk": 94.7,
     "om_received": 34.9,
@@ -4232,6 +4560,14 @@
    "population": 190216,
    "households": 84945,
    "band_d": 1519.51,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1009.0,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 87.2,
     "om_received": 86.2,
@@ -4341,6 +4677,14 @@
    "population": 266218,
    "households": 107080,
    "band_d": 2313.78,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1803.27,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 89.6,
     "om_received": 141.2,
@@ -4450,6 +4794,14 @@
    "population": 272612,
    "households": 93134,
    "band_d": 2511.07,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2000.56,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 88.2,
     "om_received": 67.9,
@@ -4559,6 +4911,14 @@
    "population": 99656,
    "households": 42429,
    "band_d": 2560.2,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2124.69,
+    "fire": 99.46,
+    "gla_or_county": 0.0,
+    "parish": 3.32,
+    "police": 332.73
+   },
    "values": {
     "ehcp_20wk": 21.4,
     "om_received": 28.1,
@@ -4658,6 +5018,14 @@
    "population": 280787,
    "households": 104736,
    "band_d": 2424.66,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1914.15,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 32.0,
     "om_received": 68.7,
@@ -4763,6 +5131,14 @@
    "population": 192539,
    "households": 87185,
    "band_d": 2574.37,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2067.64,
+    "fire": 107.22,
+    "gla_or_county": 0.0,
+    "parish": 93.01,
+    "police": 306.5
+   },
    "values": {
     "ehcp_20wk": 57.0,
     "om_received": 33.8,
@@ -4860,6 +5236,14 @@
    "population": 326671,
    "households": 116641,
    "band_d": 2045.46,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1534.95,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 77.6,
     "om_received": 63.1,
@@ -4969,6 +5353,14 @@
    "population": 299486,
    "households": 108379,
    "band_d": 2185.56,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1675.05,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 58.4,
     "om_received": 76.1,
@@ -5078,6 +5470,14 @@
    "population": 140777,
    "households": 67240,
    "band_d": 2625.79,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2103.77,
+    "fire": 92.84,
+    "gla_or_county": 0.0,
+    "parish": 138.72,
+    "police": 290.46
+   },
    "values": {
     "ehcp_20wk": 12.5,
     "om_received": 61.1,
@@ -5178,6 +5578,14 @@
    "population": 224551,
    "households": 102912,
    "band_d": 2108.15,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1597.64,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 85.8,
     "om_received": 97.5,
@@ -5286,6 +5694,14 @@
    "population": 145734,
    "households": 71121,
    "band_d": 1666.65,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1156.14,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 97.9,
     "om_received": 117.3,
@@ -5395,6 +5811,14 @@
    "population": 273257,
    "households": 117977,
    "band_d": 2295.04,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1873.46,
+    "fire": 107.92,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 313.66
+   },
    "values": {
     "ehcp_20wk": 37.4,
     "om_received": 37.7,
@@ -5504,6 +5928,14 @@
    "population": 172761,
    "households": 68435,
    "band_d": 2609.2,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2098.69,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 97.2,
     "om_received": 75.8,
@@ -5611,6 +6043,14 @@
    "population": 445832,
    "households": 185982,
    "band_d": 2441.07,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2062.42,
+    "fire": 89.49,
+    "gla_or_county": 0.0,
+    "parish": 10.88,
+    "police": 278.28
+   },
    "values": {
     "ehcp_20wk": 62.8,
     "om_received": 32.5,
@@ -5720,6 +6160,14 @@
    "population": 163723,
    "households": 69386,
    "band_d": 2488.25,
+   "band_d_parts": {
+    "combined": 24.0,
+    "council": 2028.94,
+    "fire": 101.25,
+    "gla_or_county": 0.0,
+    "parish": 40.09,
+    "police": 293.97
+   },
    "values": {
     "ehcp_20wk": 86.4,
     "om_received": 39.7,
@@ -5822,6 +6270,14 @@
    "population": 314298,
    "households": 137502,
    "band_d": 2047.11,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1536.6,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 89.1,
     "om_received": 142.2,
@@ -5931,6 +6387,14 @@
    "population": 840550,
    "households": 357068,
    "band_d": 2283.73,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1903.74,
+    "fire": 89.49,
+    "gla_or_county": 0.0,
+    "parish": 12.22,
+    "police": 278.28
+   },
    "values": {
     "ehcp_20wk": 7.3,
     "om_received": 39.7,
@@ -6040,6 +6504,14 @@
    "population": 383116,
    "households": 135343,
    "band_d": 2528.75,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2121.87,
+    "fire": 91.65,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 315.23
+   },
    "values": {
     "om_received": 53.0,
     "om_remedy_before": 0.0,
@@ -6146,6 +6618,14 @@
    "population": 301037,
    "households": 125846,
    "band_d": 2237.33,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1726.82,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 22.9,
     "om_received": 91.7,
@@ -6254,6 +6734,14 @@
    "population": 507915,
    "households": 219378,
    "band_d": 2673.59,
+   "band_d_parts": {
+    "combined": 24.0,
+    "council": 2254.37,
+    "fire": 101.25,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 293.97
+   },
    "values": {
     "ehcp_20wk": 97.3,
     "om_received": 47.4,
@@ -6354,6 +6842,14 @@
    "population": 236380,
    "households": 82844,
    "band_d": 2439.93,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2019.62,
+    "fire": 122.72,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 297.59
+   },
    "values": {
     "ehcp_20wk": 29.1,
     "om_received": 41.9,
@@ -6463,6 +6959,14 @@
    "population": 588256,
    "households": 233427,
    "band_d": 2312.04,
+   "band_d_parts": {
+    "combined": 153.95,
+    "council": 1872.79,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 285.3
+   },
    "values": {
     "ehcp_20wk": 74.2,
     "om_received": 51.0,
@@ -6572,6 +7076,14 @@
    "population": 292697,
    "households": 115442,
    "band_d": 2328.55,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1934.33,
+    "fire": 99.81,
+    "gla_or_county": 0.0,
+    "parish": 9.26,
+    "police": 285.15
+   },
    "values": {
     "ehcp_20wk": 21.4,
     "om_received": 50.2,
@@ -6677,6 +7189,14 @@
    "population": 218891,
    "households": 83819,
    "band_d": 2146.76,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1636.25,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 95.6,
     "om_received": 59.8,
@@ -6776,6 +7296,14 @@
    "population": 152795,
    "households": 65252,
    "band_d": 2549.16,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2115.86,
+    "fire": 99.46,
+    "gla_or_county": 0.0,
+    "parish": 1.11,
+    "police": 332.73
+   },
    "values": {
     "ehcp_20wk": 93.3,
     "om_received": 38.6,
@@ -6876,6 +7404,14 @@
    "population": 308866,
    "households": 122193,
    "band_d": 2372.21,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1847.53,
+    "fire": 89.46,
+    "gla_or_county": 0.0,
+    "parish": 136.94,
+    "police": 298.28
+   },
    "values": {
     "ehcp_20wk": 11.5,
     "om_received": 61.5,
@@ -6983,6 +7519,14 @@
    "population": 320838,
    "households": 131685,
    "band_d": 2542.19,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2221.21,
+    "fire": 105.11,
+    "gla_or_county": 0.0,
+    "parish": 1.53,
+    "police": 214.34
+   },
    "values": {
     "ehcp_20wk": 21.8,
     "om_received": 31.8,
@@ -7092,6 +7636,14 @@
    "population": 376542,
    "households": 126480,
    "band_d": 1944.23,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1433.72,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 31.5,
     "om_received": 87.6,
@@ -7201,6 +7753,14 @@
    "population": 160101,
    "households": 71043,
    "band_d": 2483.85,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2039.88,
+    "fire": 107.92,
+    "gla_or_county": 0.0,
+    "parish": 22.39,
+    "police": 313.66
+   },
    "values": {
     "ehcp_20wk": 98.6,
     "om_received": 36.2,
@@ -7301,6 +7861,14 @@
    "population": 171421,
    "households": 74809,
    "band_d": 2348.46,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1884.7,
+    "fire": 107.92,
+    "gla_or_county": 0.0,
+    "parish": 42.18,
+    "police": 313.66
+   },
    "values": {
     "ehcp_20wk": 70.4,
     "om_received": 24.5,
@@ -7399,6 +7967,14 @@
    "population": 379569,
    "households": 157436,
    "band_d": 2423.96,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1918.23,
+    "fire": 90.39,
+    "gla_or_county": 0.0,
+    "parish": 80.3,
+    "police": 335.04
+   },
    "values": {
     "ehcp_20wk": 56.5,
     "om_received": 47.2,
@@ -7483,6 +8059,14 @@
    "population": 227160,
    "households": 99403,
    "band_d": 2491.22,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1955.01,
+    "fire": 95.43,
+    "gla_or_county": 0.0,
+    "parish": 132.58,
+    "police": 308.2
+   },
    "values": {
     "ehcp_20wk": 96.0,
     "om_received": 37.9,
@@ -7576,6 +8160,14 @@
    "population": 215401,
    "households": 100566,
    "band_d": 2461.77,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2142.32,
+    "fire": 105.11,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 214.34
+   },
    "values": {
     "ehcp_20wk": 26.0,
     "om_received": 35.7,
@@ -7682,6 +8274,14 @@
    "population": 639133,
    "households": 290375,
    "band_d": 2544.34,
+   "band_d_parts": {
+    "combined": 116.62,
+    "council": 2036.32,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 55.54,
+    "police": 335.86
+   },
    "values": {
     "om_received": 37.7,
     "om_remedy_before": 2.4,
@@ -7754,6 +8354,14 @@
    "population": 333975,
    "households": 155975,
    "band_d": 2596.94,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2279.36,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 103.24,
+    "police": 214.34
+   },
    "values": {
     "ehcp_20wk": 81.4,
     "om_received": 36.2,
@@ -7853,6 +8461,14 @@
    "population": 325765,
    "households": 130011,
    "band_d": 2755.39,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2342.08,
+    "fire": 102.21,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 311.1
+   },
    "values": {
     "ehcp_20wk": 30.2,
     "om_received": 30.7,
@@ -7956,6 +8572,14 @@
    "population": 251915,
    "households": 95942,
    "band_d": 2602.23,
+   "band_d_parts": {
+    "combined": 153.95,
+    "council": 2156.22,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 6.76,
+    "police": 285.3
+   },
    "values": {
     "ehcp_20wk": 76.9,
     "om_received": 32.6,
@@ -8064,6 +8688,14 @@
    "population": 224757,
    "households": 88420,
    "band_d": 2293.47,
+   "band_d_parts": {
+    "combined": 36.0,
+    "council": 1836.72,
+    "fire": 92.16,
+    "gla_or_county": 0.0,
+    "parish": 14.22,
+    "police": 314.37
+   },
    "values": {
     "ehcp_20wk": 66.0,
     "om_received": 36.5,
@@ -8165,6 +8797,14 @@
    "population": 271361,
    "households": 118422,
    "band_d": 2441.85,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2028.97,
+    "fire": 109.68,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 303.2
+   },
    "values": {
     "ehcp_20wk": 10.2,
     "om_received": 38.3,
@@ -8267,6 +8907,14 @@
    "population": 211475,
    "households": 88753,
    "band_d": 2291.71,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1908.41,
+    "fire": 92.84,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 290.46
+   },
    "values": {
     "ehcp_20wk": 42.9,
     "om_received": 31.2,
@@ -8376,6 +9024,14 @@
    "population": 183762,
    "households": 70106,
    "band_d": 2612.77,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2223.18,
+    "fire": 91.31,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 298.28
+   },
    "values": {
     "ehcp_20wk": 62.5,
     "om_received": 38.6,
@@ -8485,6 +9141,14 @@
    "population": 321829,
    "households": 107833,
    "band_d": 2294.58,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1784.07,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 27.9,
     "om_received": 71.8,
@@ -8592,6 +9256,14 @@
    "population": 139541,
    "households": 63406,
    "band_d": 2544.48,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2094.03,
+    "fire": 99.46,
+    "gla_or_county": 0.0,
+    "parish": 18.26,
+    "police": 332.73
+   },
    "values": {
     "ehcp_20wk": 19.9,
     "om_received": 21.5,
@@ -8690,6 +9362,14 @@
    "population": 196713,
    "households": 82781,
    "band_d": 2486.1,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1975.59,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 96.5,
     "om_received": 45.2,
@@ -8790,6 +9470,14 @@
    "population": 237641,
    "households": 94201,
    "band_d": 2600.83,
+   "band_d_parts": {
+    "combined": 153.95,
+    "council": 2161.58,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 285.3
+   },
    "values": {
     "ehcp_20wk": 49.3,
     "om_received": 26.9,
@@ -8892,6 +9580,14 @@
    "population": 279161,
    "households": 117123,
    "band_d": 2381.53,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1944.52,
+    "fire": 95.05,
+    "gla_or_county": 0.0,
+    "parish": 61.92,
+    "police": 280.04
+   },
    "values": {
     "ehcp_20wk": 79.4,
     "om_received": 23.3,
@@ -8999,6 +9695,14 @@
    "population": 41629,
    "households": 17547,
    "band_d": 2737.58,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2263.33,
+    "fire": 91.65,
+    "gla_or_county": 0.0,
+    "parish": 67.37,
+    "police": 315.23
+   },
    "values": {
     "ehcp_20wk": 80.7,
     "om_received": 55.2,
@@ -9095,6 +9799,14 @@
    "population": 297004,
    "households": 125654,
    "band_d": 2594.45,
+   "band_d_parts": {
+    "combined": 153.95,
+    "council": 2155.2,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 285.3
+   },
    "values": {
     "ehcp_20wk": 54.9,
     "om_received": 41.1,
@@ -9204,6 +9916,14 @@
    "population": 352918,
    "households": 133894,
    "band_d": 2244.46,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1914.77,
+    "fire": 85.19,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 244.5
+   },
    "values": {
     "ehcp_20wk": 29.8,
     "om_received": 48.7,
@@ -9302,6 +10022,14 @@
    "population": 287583,
    "households": 126549,
    "band_d": 2583.22,
+   "band_d_parts": {
+    "combined": 24.0,
+    "council": 2145.51,
+    "fire": 101.25,
+    "gla_or_county": 0.0,
+    "parish": 18.49,
+    "police": 293.97
+   },
    "values": {
     "ehcp_20wk": 42.9,
     "om_received": 37.2,
@@ -9403,6 +10131,14 @@
    "population": 579517,
    "households": 246636,
    "band_d": 2510.16,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2130.23,
+    "fire": 95.05,
+    "gla_or_county": 0.0,
+    "parish": 4.84,
+    "police": 280.04
+   },
    "values": {
     "ehcp_20wk": 27.8,
     "om_received": 40.4,
@@ -9512,6 +10248,14 @@
    "population": 333162,
    "households": 149459,
    "band_d": 2528.18,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1969.09,
+    "fire": 124.44,
+    "gla_or_county": 0.0,
+    "parish": 128.15,
+    "police": 306.5
+   },
    "values": {
     "ehcp_20wk": 11.9,
     "om_received": 32.1,
@@ -9617,6 +10361,14 @@
    "population": 167450,
    "households": 54514,
    "band_d": 2414.44,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2019.05,
+    "fire": 91.31,
+    "gla_or_county": 0.0,
+    "parish": 5.8,
+    "police": 298.28
+   },
    "values": {
     "ehcp_20wk": 30.5,
     "om_received": 63.9,
@@ -9722,6 +10474,14 @@
    "population": 221449,
    "households": 91540,
    "band_d": 2197.26,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1843.27,
+    "fire": 85.19,
+    "gla_or_county": 0.0,
+    "parish": 24.3,
+    "police": 244.5
+   },
    "values": {
     "ehcp_20wk": 74.0,
     "om_received": 29.8,
@@ -9826,6 +10586,14 @@
    "population": 590972,
    "households": 264686,
    "band_d": 2560.59,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1950.89,
+    "fire": 109.68,
+    "gla_or_county": 0.0,
+    "parish": 191.82,
+    "police": 308.2
+   },
    "values": {
     "om_received": 49.7,
     "om_remedy_before": 5.4,
@@ -9893,6 +10661,14 @@
    "population": 308787,
    "households": 127132,
    "band_d": 2550.59,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2027.71,
+    "fire": 95.43,
+    "gla_or_county": 0.0,
+    "parish": 119.25,
+    "police": 308.2
+   },
    "values": {
     "ehcp_20wk": 56.6,
     "om_received": 26.2,
@@ -9988,6 +10764,14 @@
    "population": 151255,
    "households": 69799,
    "band_d": 2434.43,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2114.98,
+    "fire": 105.11,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 214.34
+   },
    "values": {
     "ehcp_20wk": 92.0,
     "om_received": 45.0,
@@ -10097,6 +10881,14 @@
    "population": 259230,
    "households": 108363,
    "band_d": 2381.48,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1998.18,
+    "fire": 92.84,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 290.46
+   },
    "values": {
     "ehcp_20wk": 80.0,
     "om_received": 25.1,
@@ -10206,6 +10998,14 @@
    "population": 185214,
    "households": 80225,
    "band_d": 2265.17,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1888.47,
+    "fire": 92.52,
+    "gla_or_county": 0.0,
+    "parish": 8.87,
+    "police": 275.31
+   },
    "values": {
     "ehcp_20wk": 47.0,
     "om_received": 78.3,
@@ -10313,6 +11113,14 @@
    "population": 312366,
    "households": 140319,
    "band_d": 1967.26,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1456.75,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 42.8,
     "om_received": 121.7,
@@ -10422,6 +11230,14 @@
    "population": 189890,
    "households": 83700,
    "band_d": 2403.38,
+   "band_d_parts": {
+    "combined": 24.0,
+    "council": 1975.65,
+    "fire": 101.25,
+    "gla_or_county": 0.0,
+    "parish": 8.51,
+    "police": 293.97
+   },
    "values": {
     "ehcp_20wk": 59.6,
     "om_received": 30.0,
@@ -10522,6 +11338,14 @@
    "population": 304879,
    "households": 131041,
    "band_d": 2618.9,
+   "band_d_parts": {
+    "combined": 153.95,
+    "council": 2179.65,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 285.3
+   },
    "values": {
     "ehcp_20wk": 18.1,
     "om_received": 36.4,
@@ -10626,6 +11450,14 @@
    "population": 207158,
    "households": 87826,
    "band_d": 2589.83,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2139.91,
+    "fire": 99.46,
+    "gla_or_county": 0.0,
+    "parish": 17.73,
+    "police": 332.73
+   },
    "values": {
     "ehcp_20wk": 52.9,
     "om_received": 33.3,
@@ -10725,6 +11557,14 @@
    "population": 272282,
    "households": 112817,
    "band_d": 2183.12,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1783.78,
+    "fire": 96.77,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 302.57
+   },
    "values": {
     "ehcp_20wk": 58.7,
     "om_received": 35.6,
@@ -10830,6 +11670,14 @@
    "population": 287070,
    "households": 126051,
    "band_d": 2197.14,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1876.8,
+    "fire": 105.11,
+    "gla_or_county": 0.0,
+    "parish": 0.89,
+    "police": 214.34
+   },
    "values": {
     "ehcp_20wk": 59.4,
     "om_received": 20.6,
@@ -10930,6 +11778,14 @@
    "population": 213972,
    "households": 85146,
    "band_d": 2378.64,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1868.13,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 96.0,
     "om_received": 47.7,
@@ -11035,6 +11891,14 @@
    "population": 245286,
    "households": 100557,
    "band_d": 2438.1,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1866.5,
+    "fire": 96.95,
+    "gla_or_county": 0.0,
+    "parish": 176.38,
+    "police": 298.27
+   },
    "values": {
     "ehcp_20wk": 11.8,
     "om_received": 46.1,
@@ -11139,6 +12003,14 @@
    "population": 240822,
    "households": 102574,
    "band_d": 2447.21,
+   "band_d_parts": {
+    "combined": 153.95,
+    "council": 2007.38,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 0.58,
+    "police": 285.3
+   },
    "values": {
     "ehcp_20wk": 30.3,
     "om_received": 32.4,
@@ -11241,6 +12113,14 @@
    "population": 199378,
    "households": 82223,
    "band_d": 2256.26,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1694.19,
+    "fire": 124.44,
+    "gla_or_county": 0.0,
+    "parish": 131.13,
+    "police": 306.5
+   },
    "values": {
     "ehcp_20wk": 97.3,
     "om_received": 29.1,
@@ -11341,6 +12221,14 @@
    "population": 181664,
    "households": 68622,
    "band_d": 2254.68,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1886.85,
+    "fire": 92.52,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 275.31
+   },
    "values": {
     "ehcp_20wk": 35.4,
     "om_received": 61.1,
@@ -11447,6 +12335,14 @@
    "population": 139486,
    "households": 65281,
    "band_d": 2470.25,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2044.11,
+    "fire": 109.68,
+    "gla_or_county": 0.0,
+    "parish": 13.26,
+    "police": 303.2
+   },
    "values": {
     "ehcp_20wk": 27.1,
     "om_received": 52.3,
@@ -11548,6 +12444,14 @@
    "population": 334240,
    "households": 140545,
    "band_d": 1837.78,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1327.27,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 46.0,
     "om_received": 82.6,
@@ -11656,6 +12560,14 @@
    "population": 240981,
    "households": 99040,
    "band_d": 2291.7,
+   "band_d_parts": {
+    "combined": 153.95,
+    "council": 1850.54,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 1.91,
+    "police": 285.3
+   },
    "values": {
     "ehcp_20wk": 47.4,
     "om_received": 41.9,
@@ -11753,6 +12665,14 @@
    "population": 369450,
    "households": 161956,
    "band_d": 2296.89,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1891.63,
+    "fire": 89.49,
+    "gla_or_county": 0.0,
+    "parish": 37.49,
+    "police": 278.28
+   },
    "values": {
     "ehcp_20wk": 80.2,
     "om_received": 32.5,
@@ -11852,6 +12772,14 @@
    "population": 295722,
    "households": 115614,
    "band_d": 2627.48,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2297.79,
+    "fire": 85.19,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 244.5
+   },
    "values": {
     "ehcp_20wk": 96.3,
     "om_received": 36.5,
@@ -11954,6 +12882,14 @@
    "population": 283713,
    "households": 106304,
    "band_d": 2386.96,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1876.45,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 25.7,
     "om_received": 89.9,
@@ -12063,6 +12999,14 @@
    "population": 339859,
    "households": 143863,
    "band_d": 1028.21,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 517.7,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 0.0,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 61.5,
@@ -12172,6 +13116,14 @@
    "population": 215425,
    "households": 92717,
    "band_d": 2447.61,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2007.5,
+    "fire": 100.09,
+    "gla_or_county": 0.0,
+    "parish": 44.58,
+    "police": 295.44
+   },
    "values": {
     "ehcp_20wk": 73.6,
     "om_received": 19.0,
@@ -12268,6 +13220,14 @@
    "population": 165523,
    "households": 68716,
    "band_d": 2505.37,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2017.32,
+    "fire": 91.31,
+    "gla_or_county": 0.0,
+    "parish": 98.46,
+    "police": 298.28
+   },
    "values": {
     "ehcp_20wk": 25.2,
     "om_received": 47.7,
@@ -12362,6 +13322,14 @@
    "population": 444218,
    "households": 181951,
    "band_d": 2486.66,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1959.4,
+    "fire": 90.39,
+    "gla_or_county": 0.0,
+    "parish": 101.83,
+    "police": 335.04
+   },
    "values": {
     "ehcp_20wk": 7.9,
     "om_received": 52.5,
@@ -12445,6 +13413,14 @@
    "population": 212367,
    "households": 103277,
    "band_d": 1049.55,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 537.74,
+    "fire": 0.0,
+    "gla_or_county": 510.51,
+    "parish": 1.3,
+    "police": 0.0
+   },
    "values": {
     "ehcp_20wk": 92.9,
     "om_received": 75.8,
@@ -12553,6 +13529,14 @@
    "population": 231307,
    "households": 106655,
    "band_d": 2507.99,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2014.73,
+    "fire": 103.14,
+    "gla_or_county": 0.0,
+    "parish": 51.18,
+    "police": 338.94
+   },
    "values": {
     "ehcp_20wk": 72.0,
     "om_received": 21.6,
@@ -12629,6 +13613,14 @@
    "population": 347089,
    "households": 150404,
    "band_d": 2152.68,
+   "band_d_parts": {
+    "combined": 153.95,
+    "council": 1712.29,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 1.14,
+    "police": 285.3
+   },
    "values": {
     "ehcp_20wk": 21.9,
     "om_received": 28.2,
@@ -12735,6 +13727,14 @@
    "population": 526392,
    "households": 228148,
    "band_d": 2571.78,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1981.15,
+    "fire": 96.95,
+    "gla_or_county": 0.0,
+    "parish": 195.41,
+    "police": 298.27
+   },
    "values": {
     "ehcp_20wk": 61.6,
     "om_received": 25.5,
@@ -12838,6 +13838,14 @@
    "population": 159776,
    "households": 63219,
    "band_d": 1952.62,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 1526.63,
+    "fire": 91.31,
+    "gla_or_county": 0.0,
+    "parish": 36.4,
+    "police": 298.28
+   },
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 39.4,
@@ -12937,6 +13945,14 @@
    "population": 329896,
    "households": 147402,
    "band_d": 2500.59,
+   "band_d_parts": {
+    "combined": 24.0,
+    "council": 2081.37,
+    "fire": 101.25,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 293.97
+   },
    "values": {
     "ehcp_20wk": 8.2,
     "om_received": 35.2,
@@ -13038,6 +14054,14 @@
    "population": 189024,
    "households": 75483,
    "band_d": 2497.7,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2027.4,
+    "fire": 91.31,
+    "gla_or_county": 0.0,
+    "parish": 80.71,
+    "police": 298.28
+   },
    "values": {
     "ehcp_20wk": 43.0,
     "om_received": 36.0,
@@ -13145,6 +14169,14 @@
    "population": 281434,
    "households": 110112,
    "band_d": 2538.99,
+   "band_d_parts": {
+    "combined": 0.0,
+    "council": 2209.3,
+    "fire": 85.19,
+    "gla_or_county": 0.0,
+    "parish": 0.0,
+    "police": 244.5
+   },
    "values": {
     "ehcp_20wk": 19.6,
     "om_received": 41.2,
@@ -13254,6 +14286,14 @@
    "population": 209118,
    "households": 88083,
    "band_d": 2287.15,
+   "band_d_parts": {
+    "combined": 116.62,
+    "council": 1817.43,
+    "fire": 0.0,
+    "gla_or_county": 0.0,
+    "parish": 17.24,
+    "police": 335.86
+   },
    "values": {
     "ehcp_20wk": 98.5,
     "om_received": 20.6,

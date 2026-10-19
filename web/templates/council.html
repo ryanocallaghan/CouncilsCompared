@@ -50,11 +50,12 @@
     {% else %}
       <p class="govuk-body">Compared with the {{ c.members | length }} {{ c.phrase | replace("all councils in England", "councils in England") }}.</p>
     {% endif %}
+    {% set bandDHtml %}{% if b.band_d %}{{ model.fmt(b.band_d, "£") }} a year in {{ sources.band_d.period }}, including police, fire and parish charges.{% if council_tax %} <a class="govuk-link" href="{{ model.path(b) }}#council-tax">See where it goes</a>{% endif %}{% else %}No figure{% endif %}{% endset %}
     {{ govukSummaryList({
       "classes": "govuk-summary-list--no-border app-facts",
       "rows": [
         {"key": {"text": "Residents"}, "value": {"text": "{:,}".format(b.population) ~ " (" ~ sources.population.period ~ ")"}},
-        {"key": {"text": "Band D council tax"}, "value": {"text": (model.fmt(b.band_d, "£") ~ " a year in " ~ sources.band_d.period ~ ", including police, fire and parish charges") if b.band_d else "No figure"}},
+        {"key": {"text": "Band D council tax"}, "value": {"html": bandDHtml}},
       ]
     }) }}
   </div>
@@ -173,6 +174,10 @@
     </table>
   </div>
 </div>
+{% endif %}
+
+{% if c.group == "england" and council_tax %}
+  {% include "_council_tax.html" %}
 {% endif %}
 
 {# Ofsted #}
