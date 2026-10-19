@@ -27,7 +27,7 @@ SITE_URL = "https://councilscompared.com"
 REPO_URL = "https://github.com/ryanocallaghan/CouncilsCompared"
 ISSUES_URL = REPO_URL + "/issues"
 AUTHOR_URL = "https://ryanocallaghan.com"
-CONTACT_URL = "https://ryanocallaghan.com"  # the contact form on Ryan's website
+CONTACT_URL = "https://www.ryanocallaghan.com/800"  # the contact form on Ryan's website
 
 # Cookie-free analytics on the self-hosted Umami that mybin.day uses. Set
 # UMAMI_WEBSITE_ID to "" to turn it off (e.g. for a local build).
