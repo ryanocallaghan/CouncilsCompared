@@ -24,7 +24,7 @@ def test_builds_every_page(fixture_data, tmp_path):
     assert 'href="/greenwich/similar/"' in similar
     assert (tmp_path / "404.html").exists()
     assert "Where your council tax goes" in lewisham and "Council tax is only part of the money" in lewisham
-    assert "Where your council tax goes" not in similar
+    assert "Where your council tax goes" in similar  # on every comparison page
     assert json.loads((tmp_path / "data" / "councils-by-code.json").read_text())["E09000023"] == "lewisham"
     assert (tmp_path / "_headers").exists()
     assert "https://councilscompared.com/lewisham/similar/" in (tmp_path / "sitemap.xml").read_text()
