@@ -463,15 +463,21 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
   margin: 0 0 15px;
 
   div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+
+    @media (min-width: 40.0625em) {
+      display: flex;
+      gap: 0 10px;
+      margin-bottom: 5px;
+    }
   }
 
   dt {
     @include govuk.govuk-font($size: 19, $weight: bold);
-    min-width: 11em;
+
+    @media (min-width: 40.0625em) {
+      flex: 0 0 11em;
+    }
   }
 
   dd {
@@ -480,29 +486,49 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
   }
 }
 
-.app-count {
-  white-space: nowrap;
-
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-right: 5px;
-    vertical-align: 0;
-  }
+// Where the council sits: one bar split into the three bands
+.app-sits {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 8px;
 }
 
-.app-count--bottom::before {
+.app-sits__part {
+  flex-basis: 0;
+  min-width: 2.2em;
+  padding: 4px 8px;
+  @include govuk.govuk-font($size: 19, $weight: bold);
+  color: #ffffff;
+}
+
+.app-sits__part--bottom {
   background: govuk.govuk-colour("red");
 }
 
-.app-count--middle::before {
+.app-sits__part--middle {
   background: govuk.govuk-colour("yellow");
+  color: var(--govuk-text-colour, #0b0c0c);
 }
 
-.app-count--top::before {
+.app-sits__part--top {
   background: govuk.govuk-colour("green");
+}
+
+.app-sits__key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.app-sits__swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  vertical-align: -1px;
 }
 
 .app-summary__list {

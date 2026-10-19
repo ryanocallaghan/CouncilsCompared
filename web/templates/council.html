@@ -73,13 +73,15 @@
           <div><dt>Children's services</dt><dd>{{ b.ofsted.grade }} <span class="app-secondary-text">(Ofsted, {{ b.ofsted.date.strftime("%Y") }})</span></dd></div>
         {% endif %}
       </dl>
-      <p class="govuk-body app-summary__counts">
-        Of {{ c.ranked }} measures:
-        <span class="app-count app-count--bottom">{{ c.counts.bottom }} in the bottom quarter</span>,
-        <span class="app-count app-count--middle">{{ c.counts.middle }} below the middle</span>,
-        <span class="app-count app-count--top">{{ c.counts.top }} in the top half</span>
-        of {{ c.phrase }}.
-      </p>
+      <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Where {{ b.name }} sits on {{ c.ranked }} measures</h2>
+      <div class="app-sits" role="img" aria-label="{{ c.counts.bottom }} in the bottom quarter, {{ c.counts.middle }} below the middle, {{ c.counts.top }} in the top half of {{ c.phrase }}">
+        {% for key in ["bottom", "middle", "top"] %}{% if c.counts[key] %}<span class="app-sits__part app-sits__part--{{ key }}" style="flex-grow: {{ c.counts[key] }}">{{ c.counts[key] }}</span>{% endif %}{% endfor %}
+      </div>
+      <ul class="app-sits__key govuk-body-s" aria-hidden="true">
+        <li><span class="app-sits__swatch app-sits__part--bottom"></span>Bottom quarter</li>
+        <li><span class="app-sits__swatch app-sits__part--middle"></span>Below the middle</li>
+        <li><span class="app-sits__swatch app-sits__part--top"></span>Top half</li>
+      </ul>
       {% if c.compares_worst %}
         <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Compares worst on</h2>
         <ul class="govuk-list govuk-list--bullet app-summary__list app-summary__list--bottom">
