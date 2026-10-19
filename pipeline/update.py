@@ -61,7 +61,7 @@ def load(source_id):
 def save(result):
     os.makedirs(SOURCES, exist_ok=True)
     with open(os.path.join(SOURCES, f"{result.id}.json"), "w") as f:
-        json.dump(dataclasses.asdict(result), f, indent=1, sort_keys=True, ensure_ascii=False)
+        json.dump(dataclasses.asdict(result), f, indent=1, sort_keys=True, ensure_ascii=False, allow_nan=False)
         f.write("\n")
 
 
@@ -174,7 +174,7 @@ def assemble():
         "councils": councils,
     }
     with open(COUNCILS, "w") as f:
-        json.dump(data, f, indent=1, ensure_ascii=False)
+        json.dump(data, f, indent=1, ensure_ascii=False, allow_nan=False)
         f.write("\n")
     return data
 

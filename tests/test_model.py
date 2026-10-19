@@ -149,3 +149,25 @@ def test_group_menu(fixture_data):
     assert model.group_option(lewisham, "england") == "All councils in England (6)"
     assert model.group_option(lewisham, "region") == "London boroughs (4)"
     assert model.group_option(wigan, "region") == "Councils in North West (1)"
+
+
+def test_ranking_for_a_measure_page(fixture_data):
+    rows = model.ranking(model.measure_by_id("om_upheld"))
+    assert [(pos, c["name"]) for pos, c, _, _ in rows][:2] == [(1, "Wigan"), (2, "Hartlepool")]
+    assert rows[-1][1]["name"] == "Lambeth" and rows[-1][3] == 3  # bottom quarter
+
+
+def test_hexmap_colours_our_councils_and_greys_the_rest(fixture_data):
+    cells = model.hexmap(model.measure_by_id("ehcp_20wk"))["cells"]
+    ours = [c for c in cells if c["council"]]
+    assert {c["council"]["name"] for c in ours} == {"Lewisham", "Greenwich", "Lambeth", "Southwark", "Wigan",
+                                                    "Hartlepool"}
+    assert all(c["class"].startswith("app-q") for c in ours)
+    assert sum(1 for c in cells if c["class"] == "app-hex--other") > 250  # county and district areas
+
+
+def test_site_data_for_the_charts(fixture_data):
+    data = model.site_data()
+    assert data["councils"][0]["name"] == "Greenwich"
+    assert data["measures"]["om_upheld"] == {"label": "Complaints the Ombudsman upheld, per 100,000 residents",
+                                             "unit": "", "better": "lower"}

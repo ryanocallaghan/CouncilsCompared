@@ -8,7 +8,9 @@ def test_builds_every_page(fixture_data, tmp_path):
     # Home, About, and each council's pages: 4 London boroughs (all England,
     # London, and similar councils for Lewisham only), Wigan and Hartlepool
     # (all England, region, type)
-    assert count == 5 + (4 * 2 + 1) + 2 * 3  # with privacy and the two postcode search pages
+    from web import model
+    # Home, about, privacy, two postcode pages, measures index and one page per measure, then the councils
+    assert count == 6 + len(model.MEASURES) + (4 * 2 + 1) + 2 * 3
     lewisham = (tmp_path / "lewisham" / "index.html").read_text()
     assert "<h1 class=\"govuk-heading-xl govuk-!-margin-bottom-4\">Lewisham</h1>" in lewisham
     assert "<title>How Lewisham Council compares – Councils compared</title>" in lewisham
@@ -20,6 +22,9 @@ def test_builds_every_page(fixture_data, tmp_path):
     assert "Fly-tipping incidents" not in lewisham and "more measures have no figure" in lewisham
     assert "&lt;" not in lewisham  # no HTML shown as text
     assert (tmp_path / "privacy" / "index.html").exists()
+    fly = (tmp_path / "measures" / "om-upheld" / "index.html").read_text()
+    assert "Complaints the Ombudsman upheld" in fly and 'class="app-hex app-q1"' in fly
+    assert json.loads((tmp_path / "data" / "site.json").read_text())["councils"]
     similar = (tmp_path / "lewisham" / "similar" / "index.html").read_text()
     assert 'href="/greenwich/similar/"' in similar
     assert (tmp_path / "404.html").exists()

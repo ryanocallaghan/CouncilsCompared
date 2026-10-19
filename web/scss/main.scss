@@ -590,3 +590,180 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
 .app-group__button[hidden] {
   display: none;
 }
+
+// Chart tooltips and a second council
+.app-strip:focus {
+  outline: 3px solid var(--govuk-focus-colour, #ffdd00);
+  outline-offset: 2px;
+}
+
+.app-strip {
+  cursor: pointer;
+}
+
+.app-strip__hover {
+  fill: none;
+  stroke: var(--govuk-text-colour, #0b0c0c);
+  stroke-width: 2;
+  pointer-events: none;
+}
+
+.app-tip {
+  position: absolute;
+  z-index: 2;
+  bottom: calc(100% - 5px);
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  white-space: nowrap;
+  background: var(--govuk-text-colour, #0b0c0c);
+  color: #ffffff;
+  pointer-events: none;
+  @include govuk.govuk-font($size: 16);
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+$app-with: #d4351c;
+
+.app-strip__with {
+  fill: $app-with;
+  stroke: var(--govuk-body-background-colour, #ffffff);
+  stroke-width: 2;
+}
+
+path.app-chart__line--with {
+  stroke: $app-with;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.app-chart__swatch.app-chart__line--with {
+  background: $app-with;
+}
+
+.app-with {
+  margin-bottom: 30px;
+
+  &[hidden] {
+    display: none;
+  }
+
+  .govuk-select {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+.app-with__summary {
+  margin: 10px 0 0;
+  font-weight: 700;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.app-area__with {
+  flex-basis: 100%;
+  color: var(--govuk-secondary-text-colour, #484949);
+  @include govuk.govuk-font($size: 16);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background: $app-with;
+  }
+
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+// Measure pages: hexagon map and ranking
+$app-quarters: (#00625e, #66a8a3, #f2a48e, #d4351c);
+
+.app-explore__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 30px;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.app-map {
+  margin: 0 0 30px;
+}
+
+.app-map__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+}
+
+.app-hex {
+  stroke: var(--govuk-body-background-colour, #ffffff);
+  stroke-width: 1;
+}
+
+a:hover .app-hex,
+a:focus .app-hex {
+  stroke: var(--govuk-text-colour, #0b0c0c);
+  stroke-width: 2.5;
+}
+
+.app-hex--other {
+  fill: govuk.govuk-colour("black", $variant: "tint-95");
+}
+
+.app-hex--none {
+  fill: govuk.govuk-colour("black", $variant: "tint-80");
+}
+
+.app-hex--dim {
+  opacity: 0.15;
+}
+
+@for $i from 1 through list.length($app-quarters) {
+  .app-q#{$i} {
+    fill: list.nth($app-quarters, $i);
+    background: list.nth($app-quarters, $i);
+  }
+}
+
+.app-map__legend {
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin: 0 15px 5px 0;
+  }
+}
+
+.app-map__key {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  vertical-align: -1px;
+
+  &.app-hex--other {
+    background: govuk.govuk-colour("black", $variant: "tint-95");
+    outline: 1px solid var(--govuk-border-colour, #cecece);
+  }
+}
+
+.app-ranking tr[hidden] {
+  display: none;
+}

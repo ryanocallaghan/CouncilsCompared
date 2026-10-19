@@ -97,6 +97,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 27.2,
     "om_received": 75.5,
@@ -214,6 +215,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 70.3,
@@ -331,6 +333,7 @@
     "parish": 8.58,
     "police": 280.04
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 98.6,
     "om_received": 41.1,
@@ -446,6 +449,7 @@
     "parish": 65.76,
     "police": 308.2
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 33.2,
     "om_received": 29.4,
@@ -551,6 +555,7 @@
     "parish": 40.15,
     "police": 297.59
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 94.3,
     "om_received": 37.7,
@@ -656,6 +661,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 65.9,
     "om_received": 34.2,
@@ -763,6 +769,7 @@
     "parish": 9.73,
     "police": 244.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 37.1,
     "om_received": 63.5,
@@ -880,6 +887,7 @@
     "parish": 5.18,
     "police": 292.4
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 79.9,
     "om_received": 26.9,
@@ -988,6 +996,7 @@
     "parish": 0.0,
     "police": 292.4
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 55.0,
     "om_received": 41.8,
@@ -1103,6 +1112,7 @@
     "parish": 7.41,
     "police": 285.3
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 86.0,
     "om_received": 27.1,
@@ -1213,6 +1223,7 @@
     "parish": 35.59,
     "police": 322.58
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 69.0,
     "om_received": 44.8,
@@ -1308,6 +1319,7 @@
     "parish": 93.75,
     "police": 298.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 42.4,
@@ -1413,6 +1425,7 @@
     "parish": 27.68,
     "police": 278.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 86.5,
     "om_received": 31.9,
@@ -1523,6 +1536,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 69.7,
     "om_received": 80.9,
@@ -1640,6 +1654,7 @@
     "parish": 0.72,
     "police": 281.91
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 57.4,
     "om_received": 56.0,
@@ -1756,6 +1771,7 @@
     "parish": 0.0,
     "police": 308.2
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 6.8,
     "om_received": 51.1,
@@ -1866,6 +1882,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 71.3,
     "om_received": 64.6,
@@ -1972,6 +1989,7 @@
     "parish": 101.34,
     "police": 298.28
    },
+   "funding": null,
    "values": {
     "om_received": 46.9,
     "om_remedy_before": 1.4,
@@ -2047,6 +2065,7 @@
     "parish": 0.0,
     "police": 285.3
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 98.1,
     "om_received": 48.7,
@@ -2160,6 +2179,7 @@
     "parish": 18.19,
     "police": 278.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 94.1,
     "om_received": 40.8,
@@ -2267,6 +2287,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 73.0,
     "om_received": 105.2,
@@ -2384,6 +2405,7 @@
     "parish": 164.31,
     "police": 297.59
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 56.3,
     "om_received": 37.6,
@@ -2496,6 +2518,7 @@
     "parish": 83.39,
     "police": 295.44
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 23.9,
     "om_received": 53.6,
@@ -2600,6 +2623,7 @@
     "parish": 45.01,
     "police": 295.44
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 22.1,
     "om_received": 29.1,
@@ -2712,6 +2736,7 @@
     "parish": 201.37,
     "police": 303.2
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 34.1,
     "om_received": 48.2,
@@ -2821,6 +2846,7 @@
     "parish": 122.18,
     "police": 300.74
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 77.6,
     "om_received": 31.2,
@@ -2931,6 +2957,7 @@
     "parish": 0.63,
     "police": 244.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 37.6,
     "om_received": 40.0,
@@ -3041,6 +3068,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 61.2,
     "om_received": 88.5,
@@ -3157,6 +3185,7 @@
     "parish": 66.6,
     "police": 338.94
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 6.7,
     "om_received": 27.3,
@@ -3224,6 +3253,7 @@
     "parish": 8.1,
     "police": 300.74
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 81.5,
     "om_received": 48.5,
@@ -3339,6 +3369,7 @@
     "parish": 0.0,
     "police": 308.6
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 52.6,
     "om_received": 32.3,
@@ -3456,6 +3487,7 @@
     "parish": 42.8,
     "police": 280.04
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 83.9,
     "om_received": 27.9,
@@ -3573,6 +3605,7 @@
     "parish": 139.59,
     "police": 322.58
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 78.2,
     "om_received": 46.3,
@@ -3617,7 +3650,6 @@
      "2021": 70.8,
      "2022": 62.3,
      "2023": 60.2,
-     "2024": NaN,
      "2025": 78.2
     },
     "om_upheld": {
@@ -3660,6 +3692,7 @@
     "parish": 0.0,
     "police": 244.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 25.1,
     "om_received": 45.2,
@@ -3764,6 +3797,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 52.2,
     "om_received": 86.0,
@@ -3881,6 +3915,7 @@
     "parish": 75.6,
     "police": 313.66
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 92.9,
     "om_received": 29.4,
@@ -3994,6 +4029,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 67.2,
     "om_received": 91.1,
@@ -4111,6 +4147,7 @@
     "parish": 0.29,
     "police": 214.34
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 83.7,
     "om_received": 34.6,
@@ -4226,6 +4263,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 31.2,
     "om_received": 65.1,
@@ -4343,6 +4381,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 32.8,
     "om_received": 95.8,
@@ -4458,6 +4497,7 @@
     "parish": 8.27,
     "police": 295.44
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 94.7,
     "om_received": 34.9,
@@ -4568,6 +4608,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 87.2,
     "om_received": 86.2,
@@ -4685,6 +4726,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 89.6,
     "om_received": 141.2,
@@ -4802,6 +4844,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 88.2,
     "om_received": 67.9,
@@ -4919,6 +4962,7 @@
     "parish": 3.32,
     "police": 332.73
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 21.4,
     "om_received": 28.1,
@@ -5026,6 +5070,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 32.0,
     "om_received": 68.7,
@@ -5139,6 +5184,7 @@
     "parish": 93.01,
     "police": 306.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 57.0,
     "om_received": 33.8,
@@ -5244,6 +5290,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 77.6,
     "om_received": 63.1,
@@ -5361,6 +5408,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 58.4,
     "om_received": 76.1,
@@ -5478,6 +5526,7 @@
     "parish": 138.72,
     "police": 290.46
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 12.5,
     "om_received": 61.1,
@@ -5586,6 +5635,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 85.8,
     "om_received": 97.5,
@@ -5702,6 +5752,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 97.9,
     "om_received": 117.3,
@@ -5819,6 +5870,7 @@
     "parish": 0.0,
     "police": 313.66
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 37.4,
     "om_received": 37.7,
@@ -5936,6 +5988,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 97.2,
     "om_received": 75.8,
@@ -6051,6 +6104,7 @@
     "parish": 10.88,
     "police": 278.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 62.8,
     "om_received": 32.5,
@@ -6168,6 +6222,7 @@
     "parish": 40.09,
     "police": 293.97
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 86.4,
     "om_received": 39.7,
@@ -6278,6 +6333,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 89.1,
     "om_received": 142.2,
@@ -6395,6 +6451,7 @@
     "parish": 12.22,
     "police": 278.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 7.3,
     "om_received": 39.7,
@@ -6512,6 +6569,7 @@
     "parish": 0.0,
     "police": 315.23
    },
+   "funding": null,
    "values": {
     "om_received": 53.0,
     "om_remedy_before": 0.0,
@@ -6626,6 +6684,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 22.9,
     "om_received": 91.7,
@@ -6742,6 +6801,7 @@
     "parish": 0.0,
     "police": 293.97
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 97.3,
     "om_received": 47.4,
@@ -6850,6 +6910,7 @@
     "parish": 0.0,
     "police": 297.59
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 29.1,
     "om_received": 41.9,
@@ -6967,6 +7028,7 @@
     "parish": 0.0,
     "police": 285.3
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 74.2,
     "om_received": 51.0,
@@ -7084,6 +7146,7 @@
     "parish": 9.26,
     "police": 285.15
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 21.4,
     "om_received": 50.2,
@@ -7197,6 +7260,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 95.6,
     "om_received": 59.8,
@@ -7304,6 +7368,7 @@
     "parish": 1.11,
     "police": 332.73
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 93.3,
     "om_received": 38.6,
@@ -7412,6 +7477,7 @@
     "parish": 136.94,
     "police": 298.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 11.5,
     "om_received": 61.5,
@@ -7527,6 +7593,7 @@
     "parish": 1.53,
     "police": 214.34
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 21.8,
     "om_received": 31.8,
@@ -7644,6 +7711,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 31.5,
     "om_received": 87.6,
@@ -7761,6 +7829,7 @@
     "parish": 22.39,
     "police": 313.66
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 98.6,
     "om_received": 36.2,
@@ -7869,6 +7938,7 @@
     "parish": 42.18,
     "police": 313.66
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 70.4,
     "om_received": 24.5,
@@ -7975,6 +8045,7 @@
     "parish": 80.3,
     "police": 335.04
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 56.5,
     "om_received": 47.2,
@@ -8067,6 +8138,7 @@
     "parish": 132.58,
     "police": 308.2
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 96.0,
     "om_received": 37.9,
@@ -8168,6 +8240,7 @@
     "parish": 0.0,
     "police": 214.34
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 26.0,
     "om_received": 35.7,
@@ -8282,6 +8355,7 @@
     "parish": 55.54,
     "police": 335.86
    },
+   "funding": null,
    "values": {
     "om_received": 37.7,
     "om_remedy_before": 2.4,
@@ -8362,6 +8436,7 @@
     "parish": 103.24,
     "police": 214.34
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 81.4,
     "om_received": 36.2,
@@ -8469,6 +8544,7 @@
     "parish": 0.0,
     "police": 311.1
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 30.2,
     "om_received": 30.7,
@@ -8580,6 +8656,7 @@
     "parish": 6.76,
     "police": 285.3
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 76.9,
     "om_received": 32.6,
@@ -8696,6 +8773,7 @@
     "parish": 14.22,
     "police": 314.37
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 66.0,
     "om_received": 36.5,
@@ -8805,6 +8883,7 @@
     "parish": 0.0,
     "police": 303.2
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 10.2,
     "om_received": 38.3,
@@ -8915,6 +8994,7 @@
     "parish": 0.0,
     "police": 290.46
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 42.9,
     "om_received": 31.2,
@@ -9032,6 +9112,7 @@
     "parish": 0.0,
     "police": 298.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 62.5,
     "om_received": 38.6,
@@ -9149,6 +9230,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 27.9,
     "om_received": 71.8,
@@ -9264,6 +9346,7 @@
     "parish": 18.26,
     "police": 332.73
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 19.9,
     "om_received": 21.5,
@@ -9370,6 +9453,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 96.5,
     "om_received": 45.2,
@@ -9478,6 +9562,7 @@
     "parish": 0.0,
     "police": 285.3
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 49.3,
     "om_received": 26.9,
@@ -9588,6 +9673,7 @@
     "parish": 61.92,
     "police": 280.04
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 79.4,
     "om_received": 23.3,
@@ -9703,6 +9789,7 @@
     "parish": 67.37,
     "police": 315.23
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 80.7,
     "om_received": 55.2,
@@ -9807,6 +9894,7 @@
     "parish": 0.0,
     "police": 285.3
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 54.9,
     "om_received": 41.1,
@@ -9924,6 +10012,7 @@
     "parish": 0.0,
     "police": 244.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 29.8,
     "om_received": 48.7,
@@ -10030,6 +10119,7 @@
     "parish": 18.49,
     "police": 293.97
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 42.9,
     "om_received": 37.2,
@@ -10139,6 +10229,7 @@
     "parish": 4.84,
     "police": 280.04
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 27.8,
     "om_received": 40.4,
@@ -10256,6 +10347,7 @@
     "parish": 128.15,
     "police": 306.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 11.9,
     "om_received": 32.1,
@@ -10369,6 +10461,7 @@
     "parish": 5.8,
     "police": 298.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 30.5,
     "om_received": 63.9,
@@ -10482,6 +10575,7 @@
     "parish": 24.3,
     "police": 244.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 74.0,
     "om_received": 29.8,
@@ -10594,6 +10688,7 @@
     "parish": 191.82,
     "police": 308.2
    },
+   "funding": null,
    "values": {
     "om_received": 49.7,
     "om_remedy_before": 5.4,
@@ -10669,6 +10764,7 @@
     "parish": 119.25,
     "police": 308.2
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 56.6,
     "om_received": 26.2,
@@ -10772,6 +10868,7 @@
     "parish": 0.0,
     "police": 214.34
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 92.0,
     "om_received": 45.0,
@@ -10889,6 +10986,7 @@
     "parish": 0.0,
     "police": 290.46
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 80.0,
     "om_received": 25.1,
@@ -11006,6 +11104,7 @@
     "parish": 8.87,
     "police": 275.31
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 47.0,
     "om_received": 78.3,
@@ -11121,6 +11220,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 42.8,
     "om_received": 121.7,
@@ -11238,6 +11338,7 @@
     "parish": 8.51,
     "police": 293.97
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 59.6,
     "om_received": 30.0,
@@ -11346,6 +11447,7 @@
     "parish": 0.0,
     "police": 285.3
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 18.1,
     "om_received": 36.4,
@@ -11458,6 +11560,7 @@
     "parish": 17.73,
     "police": 332.73
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 52.9,
     "om_received": 33.3,
@@ -11565,6 +11668,7 @@
     "parish": 0.0,
     "police": 302.57
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 58.7,
     "om_received": 35.6,
@@ -11678,6 +11782,7 @@
     "parish": 0.89,
     "police": 214.34
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 59.4,
     "om_received": 20.6,
@@ -11786,6 +11891,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 96.0,
     "om_received": 47.7,
@@ -11899,6 +12005,7 @@
     "parish": 176.38,
     "police": 298.27
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 11.8,
     "om_received": 46.1,
@@ -12011,6 +12118,7 @@
     "parish": 0.58,
     "police": 285.3
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 30.3,
     "om_received": 32.4,
@@ -12121,6 +12229,7 @@
     "parish": 131.13,
     "police": 306.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 97.3,
     "om_received": 29.1,
@@ -12229,6 +12338,7 @@
     "parish": 0.0,
     "police": 275.31
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 35.4,
     "om_received": 61.1,
@@ -12343,6 +12453,7 @@
     "parish": 13.26,
     "police": 303.2
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 27.1,
     "om_received": 52.3,
@@ -12452,6 +12563,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 46.0,
     "om_received": 82.6,
@@ -12568,6 +12680,7 @@
     "parish": 1.91,
     "police": 285.3
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 47.4,
     "om_received": 41.9,
@@ -12673,6 +12786,7 @@
     "parish": 37.49,
     "police": 278.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 80.2,
     "om_received": 32.5,
@@ -12780,6 +12894,7 @@
     "parish": 0.0,
     "police": 244.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 96.3,
     "om_received": 36.5,
@@ -12890,6 +13005,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 25.7,
     "om_received": 89.9,
@@ -13007,6 +13123,7 @@
     "parish": 0.0,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 61.5,
@@ -13124,6 +13241,7 @@
     "parish": 44.58,
     "police": 295.44
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 73.6,
     "om_received": 19.0,
@@ -13228,6 +13346,7 @@
     "parish": 98.46,
     "police": 298.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 25.2,
     "om_received": 47.7,
@@ -13330,6 +13449,7 @@
     "parish": 101.83,
     "police": 335.04
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 7.9,
     "om_received": 52.5,
@@ -13421,6 +13541,7 @@
     "parish": 1.3,
     "police": 0.0
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 92.9,
     "om_received": 75.8,
@@ -13537,6 +13658,7 @@
     "parish": 51.18,
     "police": 338.94
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 72.0,
     "om_received": 21.6,
@@ -13621,6 +13743,7 @@
     "parish": 1.14,
     "police": 285.3
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 21.9,
     "om_received": 28.2,
@@ -13735,6 +13858,7 @@
     "parish": 195.41,
     "police": 298.27
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 61.6,
     "om_received": 25.5,
@@ -13846,6 +13970,7 @@
     "parish": 36.4,
     "police": 298.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 100.0,
     "om_received": 39.4,
@@ -13953,6 +14078,7 @@
     "parish": 0.0,
     "police": 293.97
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 8.2,
     "om_received": 35.2,
@@ -14062,6 +14188,7 @@
     "parish": 80.71,
     "police": 298.28
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 43.0,
     "om_received": 36.0,
@@ -14177,6 +14304,7 @@
     "parish": 0.0,
     "police": 244.5
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 19.6,
     "om_received": 41.2,
@@ -14294,6 +14422,7 @@
     "parish": 17.24,
     "police": 335.86
    },
+   "funding": null,
    "values": {
     "ehcp_20wk": 98.5,
     "om_received": 20.6,

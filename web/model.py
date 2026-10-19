@@ -479,7 +479,7 @@ def line_chart(periods, series, unit):
         last = next((data[p] for p in reversed(periods) if data.get(p) is not None), None)
         lines.append({"name": name, "path": path_d, "points": points, "class": css, "last": fmt(last, unit)})
     return {"width": CHART_W, "height": CHART_H, "left": PAD_L, "right": CHART_W - PAD_R, "ticks": ticks,
-            "labels": labels, "lines": lines}
+            "labels": labels, "lines": lines, "top": top, "periods": periods, "pad_t": PAD_T, "plot_h": height}
 
 
 TRENDS = [
@@ -505,7 +505,7 @@ def _trends(council, members):
         chart = line_chart(periods, [(council["name"], mine, "app-chart__line--me"),
                                      ("Median", medians, "app-chart__line--median")], unit)
         if chart:
-            charts.append({"title": title, "note": note, "chart": chart})
+            charts.append({"id": trend_id, "title": title, "note": note, "chart": chart})
     return charts
 
 
@@ -564,4 +564,86 @@ def council_tax(council):
         "services": services,
         "left_out": [label for label, key in CT_SERVICES if key in spend and spend[key] <= 0],
         "funding": council.get("funding"),
+    }
+
+
+# Measure pages: a hexagon map of England and every council ranked
+
+HEXMAP_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hexmap.json")
+# Colour by quarter of England, best first, as on the council pages
+QUARTER_CLASSES = ["app-q1", "app-q2", "app-q3", "app-q4"]
+QUARTER_NAMES = ["Top quarter", "Second quarter", "Third quarter", "Bottom quarter"]
+
+
+def measure_by_id(measure_id):
+    return next(m for m in MEASURES if m.id == measure_id)
+
+
+def ranking(measure):
+    """[(position, council, value, quarter 0-3)] for every council with a figure, best first."""
+    with_values = [c for c in councils().values() if measure.id in c["values"]]
+    values = [c["values"][measure.id] for c in with_values]
+    rows = []
+    for c in with_values:
+        pos = position(c["values"][measure.id], values, measure.better)
+        quarter = min(3, int((pos - 1) / len(values) * 4))
+        rows.append((pos, c, c["values"][measure.id], quarter))
+    rows.sort(key=lambda r: (r[0], r[1]["name"]))
+    return rows
+
+
+@cache
+def _hexes():
+    with open(HEXMAP_FILE) as f:
+        return json.load(f)
+
+
+def hexmap(measure):
+    """SVG geometry for the map: every district in England, ours coloured.
+
+    Hexagons are pointy-topped in odd-r layout (odd rows shifted right), and
+    r counts up from the south, so it is flipped to draw north at the top.
+    """
+    from pipeline.sheets import SAME_COUNCIL
+    alias = {a: b for pair in SAME_COUNCIL for a, b in (pair, pair[::-1])}
+    by_code = load()["by_code"]
+    quarter = {c["code"]: q for _, c, _, q in ranking(measure)}
+    value = {c["code"]: v for _, c, v, _ in ranking(measure)}
+    hexes = _hexes()["hexes"]
+    size = 10  # centre to corner
+    w = math.sqrt(3) * size
+    max_r = max(h["r"] for h in hexes.values())
+    corners = [(round(math.cos(math.radians(a)) * size, 2), round(math.sin(math.radians(a)) * size, 2))
+               for a in (30, 90, 150, 210, 270, 330)]
+    cells = []
+    for code, h in hexes.items():
+        council = by_code.get(code) or by_code.get(alias.get(code))
+        x = h["q"] * w + (w / 2 if h["r"] % 2 else 0) + w
+        y = (max_r - h["r"]) * size * 1.5 + size * 1.5
+        points = " ".join(f"{round(x + dx, 1)},{round(y + dy, 1)}" for dx, dy in corners)
+        if council and council["code"] in quarter:
+            q = quarter[council["code"]]
+            cells.append({"points": points, "class": QUARTER_CLASSES[q], "council": council,
+                          "label": f"{council['name']}: {fmt(value[council['code']], measure.unit)}, "
+                                   f"{QUARTER_NAMES[q].lower()}"})
+        elif council:
+            cells.append({"points": points, "class": "app-hex--none", "council": council,
+                          "label": f"{council['name']}: no figure"})
+        else:
+            cells.append({"points": points, "class": "app-hex--other", "council": None, "label": h["n"]})
+    width = max(h["q"] for h in hexes.values()) * w + w * 2.5
+    height = (max_r + 1) * size * 1.5 + size * 2
+    return {"cells": cells, "width": round(width), "height": round(height)}
+
+
+def site_data():
+    """What the charts' JavaScript needs, in one file every page shares:
+    each council's figures, so marks can be named and a second council
+    drawn on any page."""
+    everyone = sorted(councils().values(), key=lambda c: c["name"])
+    return {
+        "councils": [{"slug": c["slug"], "name": c["name"], "code": c["code"], "region": c["region"],
+                      "type": c["type"], "values": c["values"], "spend": c["spend"], "trends": c["trends"]}
+                     for c in everyone],
+        "measures": {m.id: {"label": m.label, "unit": m.unit, "better": m.better} for m in MEASURES},
     }

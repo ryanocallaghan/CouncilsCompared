@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Every measure, every council{% endblock %}
+{% block description %}Maps and rankings of every council in England on special educational needs, complaints, council housing, council tax, streets and homelessness.{% endblock %}
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Every measure, every council</h1>
+    <p class="govuk-body-l">See a map and a ranking of every council in England for each measure.</p>
+    {% for area_id, area_name, note in model.AREAS %}
+      <h2 class="govuk-heading-m govuk-!-margin-top-6">{{ area_name }}</h2>
+      <ul class="govuk-list">
+        {% for m in model.MEASURES if m.area == area_id %}<li><a class="govuk-link" href="/measures/{{ m.id | replace('_', '-') }}/">{{ m.label }}</a></li>{% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
