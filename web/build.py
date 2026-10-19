@@ -27,7 +27,7 @@ SITE_URL = "https://councilscompared.com"
 REPO_URL = "https://github.com/ryanocallaghan/CouncilsCompared"
 ISSUES_URL = REPO_URL + "/issues"
 AUTHOR_URL = "https://ryanocallaghan.com"
-CONTACT_EMAIL = "hello@councilscompared.com"
+CONTACT_URL = "https://ryanocallaghan.com"  # the contact form on Ryan's website
 
 # Cookie-free analytics on the self-hosted Umami that mybin.day uses. Set
 # UMAMI_WEBSITE_ID to "" to turn it off (e.g. for a local build).
@@ -152,7 +152,7 @@ def build(out=DIST):
     common = {
         "site_url": SITE_URL, "repo_url": REPO_URL, "issues_url": ISSUES_URL, "model": model,
         "sources": sources, "all_councils": councils, "asset_version": asset_version(),
-        "author_url": AUTHOR_URL, "contact_email": CONTACT_EMAIL,
+        "author_url": AUTHOR_URL, "contact_url": CONTACT_URL,
         "umami": {"script": UMAMI_SCRIPT, "website_id": UMAMI_WEBSITE_ID} if UMAMI_WEBSITE_ID else None,
     }
     pages = []
