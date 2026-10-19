@@ -30,7 +30,7 @@ TYPE_PLURAL = {
 MIN_SIMILAR = 3  # fewer similar councils than this, and the group is not offered
 
 AREAS = [
-    ("send", "SEND assessments",
+    ("send", "Special educational needs",
      "Education, health and care plans set out support for children with special educational needs. "
      "The law says a new plan should be issued within 20 weeks."),
     ("complaints", "Ombudsman complaints",
@@ -55,43 +55,58 @@ AREAS = [
 class Measure:
     id: str
     area: str
-    label: str
+    label: str  # in plain English
     unit: str  # "%" or "" (a rate or count)
     better: str  # "higher" or "lower"
     source: str  # its id in data/councils.json "sources", which gives the period
+    official: str = ""  # the publication's own name for it, if different
 
 
 MEASURES = [
-    Measure("ehcp_20wk", "send", "New EHC plans issued within 20 weeks", "%", "higher", "ehcp"),
-    Measure("om_upheld", "complaints", "Upheld complaints per 100,000 residents", "", "lower", "lgo"),
-    Measure("om_received", "complaints", "Complaints to the Ombudsman per 100,000 residents", "", "lower", "lgo"),
-    Measure("om_children", "complaints", "Upheld complaints about children's services per 100,000 residents",
-            "", "lower", "lgo_decisions"),
-    Measure("om_sen", "complaints", "Upheld complaints about special educational needs per 100,000 residents",
-            "", "lower", "lgo_decisions"),
-    Measure("om_homeless", "complaints", "Upheld complaints about homelessness per 100,000 residents",
-            "", "lower", "lgo_decisions"),
-    Measure("om_remedy_before", "complaints", "Upheld cases the council had already put right", "%", "higher",
+    Measure("ehcp_20wk", "send", "Special educational needs plans issued on time", "%", "higher", "ehcp",
+            "New education, health and care (EHC) plans issued within the legal limit of 20 weeks"),
+    Measure("om_upheld", "complaints", "Complaints the Ombudsman upheld, per 100,000 residents", "", "lower", "lgo"),
+    Measure("om_received", "complaints", "Complaints that reached the Ombudsman, per 100,000 residents", "", "lower",
             "lgo"),
-    Measure("om_timely", "complaints", "Ombudsman remedies delivered on time", "%", "higher", "lgo"),
-    Measure("tsm_overall", "housing", "Tenants satisfied with the overall service", "%", "higher", "tsm"),
-    Measure("tsm_maintained", "housing", "Tenants satisfied their home is well maintained", "%", "higher", "tsm"),
-    Measure("tsm_safe", "housing", "Tenants satisfied their home is safe", "%", "higher", "tsm"),
-    Measure("tsm_listens", "housing", "Tenants who say the council listens and acts", "%", "higher", "tsm"),
-    Measure("tsm_repairs", "housing", "Non-emergency repairs done within target time", "%", "higher", "tsm"),
-    Measure("tsm_decent", "housing", "Council homes failing the Decent Homes Standard", "%", "lower", "tsm"),
-    Measure("tsm_complaints", "housing", "Stage 1 housing complaints answered in time", "%", "higher", "tsm"),
+    Measure("om_children", "complaints", "Upheld complaints about children's services, per 100,000 residents",
+            "", "lower", "lgo_decisions"),
+    Measure("om_sen", "complaints", "Upheld complaints about special educational needs, per 100,000 residents",
+            "", "lower", "lgo_decisions"),
+    Measure("om_homeless", "complaints", "Upheld complaints about homelessness, per 100,000 residents",
+            "", "lower", "lgo_decisions"),
+    Measure("om_remedy_before", "complaints", "Upheld complaints the council had already put right", "%", "higher",
+            "lgo", "Upheld cases where the council provided a satisfactory remedy before the complaint reached "
+            "the Ombudsman"),
+    Measure("om_timely", "complaints", "Ombudsman's recommendations carried out on time", "%", "higher", "lgo",
+            "Compliance outcomes recorded as delivered on time"),
+    Measure("tsm_overall", "housing", "Tenants satisfied with the overall service", "%", "higher", "tsm",
+            "Tenant Satisfaction Measure TP01"),
+    Measure("tsm_maintained", "housing", "Tenants who say their home is well maintained", "%", "higher", "tsm",
+            "Tenant Satisfaction Measure TP04"),
+    Measure("tsm_safe", "housing", "Tenants who say their home is safe", "%", "higher", "tsm",
+            "Tenant Satisfaction Measure TP05"),
+    Measure("tsm_listens", "housing", "Tenants who say the council listens and acts", "%", "higher", "tsm",
+            "Tenant Satisfaction Measure TP06"),
+    Measure("tsm_repairs", "housing", "Routine repairs done on time", "%", "higher", "tsm",
+            "Non-emergency responsive repairs completed within target (RP02)"),
+    Measure("tsm_decent", "housing", "Council homes below the Decent Homes Standard", "%", "lower", "tsm",
+            "Homes that do not meet the Decent Homes Standard (RP01)"),
+    Measure("tsm_complaints", "housing", "Tenants' complaints answered on time", "%", "higher", "tsm",
+            "Stage 1 complaints responded to within the Housing Ombudsman's timescales (CH02)"),
     Measure("ctax_collect", "ctax", "Council tax collected in the year it was due", "%", "higher", "ctax"),
-    Measure("fly_rate", "streets", "Fly-tipping incidents per 1,000 residents", "", "lower", "fly"),
-    Measure("fly_enforce", "streets", "Enforcement actions per 100 fly-tipping incidents", "", "higher", "fly"),
+    Measure("fly_rate", "streets", "Fly-tipping incidents, per 1,000 residents", "", "lower", "fly"),
+    Measure("fly_enforce", "streets", "Enforcement actions, per 100 fly-tipping incidents", "", "higher", "fly"),
     Measure("recycling", "streets", "Household waste reused, recycled or composted", "%", "higher", "waste"),
-    Measure("ta_rate", "homeless", "Households in temporary accommodation per 1,000 households", "", "lower",
+    Measure("ta_rate", "homeless", "Households in temporary accommodation, per 1,000 households", "", "lower",
             "homelessness"),
     Measure("ta_long", "homeless", "Families in temporary accommodation for 2 years or more", "%", "lower",
             "homelessness"),
-    Measure("prevention", "homeless", "Prevention cases ending with a home secured", "%", "higher", "homelessness"),
-    Measure("relief", "homeless", "Relief cases ending with a home secured", "%", "higher", "homelessness"),
-    Measure("web_access", "digital", "Website accessibility score", "%", "higher", "silktide"),
+    Measure("prevention", "homeless", "People at risk of homelessness helped to keep or find a home", "%", "higher",
+            "homelessness", "Prevention duty cases ending with accommodation secured for 6 months or more"),
+    Measure("relief", "homeless", "Homeless people helped to find a home", "%", "higher", "homelessness",
+            "Relief duty cases ending with accommodation secured for 6 months or more"),
+    Measure("web_access", "digital", "Council website accessibility score", "%", "higher", "silktide",
+            "Silktide Index WCAG 2.2 AA score"),
 ]
 
 SPENDING = [
@@ -187,6 +202,18 @@ def group_phrase(council, group):
     if group == "similar":
         return "similar councils"
     return "all councils in England"
+
+
+def group_option(council, group):
+    """What the "Compared with" menu says: "All councils in England (130)"."""
+    count = len(group_members(council, group))
+    names = {"england": "All councils in England", "region": group_tab(council, "region"),
+             "type": group_tab(council, "type"), "similar": "Similar councils"}
+    if group == "region" and council["region"] == "London":
+        names["region"] = "London boroughs"
+    elif group == "region":
+        names["region"] = f"Councils in {council['region']}"
+    return f"{names[group]} ({count})"
 
 
 def path(council, group="england"):
@@ -292,16 +319,46 @@ class Row:
 
 
 @dataclass
+class Area:
+    id: str
+    name: str
+    note: str
+    rows: list  # [Row], only measures with a figure for this council
+    missing: int  # measures with no figure
+
+    @property
+    def counts(self):
+        return {key: sum(1 for r in self.rows if r.band == key) for key in BANDS}
+
+    @property
+    def headline(self):
+        """ "2 of 7 measures in the bottom quarter", the worst news first."""
+        ranked = [r for r in self.rows if r.band]
+        if not ranked:
+            return None
+        counts = self.counts
+        for key, words in [("bottom", "in the bottom quarter"), ("middle", "below the middle"),
+                           ("top", "in the top half")]:
+            if counts[key]:
+                n = len(ranked)
+                if n == 1:
+                    return f"{BANDS[key][0]}"
+                return f"{counts[key]} of {n} measures {words}"
+        return None
+
+
+@dataclass
 class Comparison:
     council: dict
     group: str
     tab: str
     phrase: str
     members: list
-    areas: list = field(default_factory=list)  # [(id, name, note, [Row])]
+    areas: list = field(default_factory=list)  # [Area]
     counts: dict = field(default_factory=dict)
     compares_worst: list = field(default_factory=list)  # [str], the worst first
     compares_best: list = field(default_factory=list)
+    ranked: int = 0  # measures with a figure and a position
     spending: list = field(default_factory=list)
     grades: list = field(default_factory=list)
     trends: list = field(default_factory=list)
@@ -342,8 +399,10 @@ def compare(council, group="england"):
                 row.strip = strip(all_values, council["code"], member_codes, m.better, median(group_values))
             area_rows.append(row)
             rows.append(row)
-        result.areas.append((area_id, area_name, note, area_rows))
+        shown = [r for r in area_rows if r.band]
+        result.areas.append(Area(area_id, area_name, note, shown, len(area_rows) - len(shown)))
     banded = [r for r in rows if r.band]
+    result.ranked = len(banded)
     result.counts = {key: sum(1 for r in banded if r.band == key) for key in BANDS}
     result.compares_worst = _summary(banded, worst=True)
     result.compares_best = _summary(banded, worst=False)

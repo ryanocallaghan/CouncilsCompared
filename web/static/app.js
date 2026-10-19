@@ -47,3 +47,14 @@ for (const section of document.querySelectorAll('[data-module="app-ctax"]')) {
     note.hidden = false;
   }
 }
+
+// "Compared with": go straight to the group's page when it changes
+for (const form of document.querySelectorAll('[data-module="app-group"]')) {
+  const button = form.querySelector(".app-group__button");
+  if (button) button.hidden = true;
+  form.elements.group.addEventListener("change", () => {
+    const slug = form.elements.council.value;
+    const group = form.elements.group.value;
+    window.location.href = group === "england" ? `/${slug}/` : `/${slug}/${group}/`;
+  });
+}

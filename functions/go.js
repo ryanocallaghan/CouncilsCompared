@@ -9,7 +9,10 @@ export async function onRequestGet({ request, env }) {
   const to = (path) => Response.redirect(new URL(path, url.origin), 302);
 
   const slug = url.searchParams.get("council") || "";
-  if (/^[a-z0-9-]+$/.test(slug)) return to(`/${slug}/`);
+  const group = url.searchParams.get("group") || "";
+  if (/^[a-z0-9-]+$/.test(slug)) {
+    return to(["region", "type", "similar"].includes(group) ? `/${slug}/${group}/` : `/${slug}/`);
+  }
 
   const postcode = (url.searchParams.get("postcode") || "").replace(/[^A-Za-z0-9]/g, "").toUpperCase();
   if (!postcode) return to("/");
