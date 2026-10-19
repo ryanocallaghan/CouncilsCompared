@@ -1,0 +1,330 @@
+https://assets.publishing.service.gov.uk/media/6ab26f5dfe72ed1e2b02ee72/RS_LA_Data_2025-26_data_by_LA.ods
+['Front_Page', 'Notes', 'LA_drop-down', 'RS_LA_Data_202526']
+RS_LA_Data_202526 header row 6
+0: E-code
+1: ONS Code
+2: Local authority
+3: Notes
+4: Class
+5: Detailed Class
+6: Certification
+7: Service Expenditure - Education services
+8: Service Expenditure - Highways and transport services
+9: Service Expenditure - Children Social Care
+10: Service Expenditure - Adult Social Care [note 2]
+11: Service Expenditure - Public Health
+12: Service Expenditure - Housing services (GFRA only)
+13: Service Expenditure - Cultural and related services
+14: Service Expenditure - Environmental and regulatory services
+15: Service Expenditure - Planning and development services
+16: Service Expenditure - Police services
+17: Service Expenditure - Fire and rescue services
+18: Service Expenditure - Central services
+19: Service Expenditure - Other services
+20: Service Expenditure - TOTAL SERVICE EXPENDITURE (total of lines 190 to 698)
+21: Housing Benefits - Housing benefits: rent allowances - mandatory payments
+22: Housing Benefits - Housing benefits: non-HRA rent rebates - mandatory payments
+23: Housing Benefits - Housing benefits: rent rebates to HRA tenants - mandatory payments
+24: Housing Benefits - Housing benefits: subsidy limitation transfers from HRA
+25: Housing Benefits - Contribution to the HRA re items shared by the whole community
+26: Precepts and Levies - Parish Precepts
+27: Precepts and Levies - Integrated Transport Authority levy
+28: Precepts and Levies - Waste Disposal Authority levy
+29: Precepts and Levies - London Pensions Fund Authority levy
+30: Precepts and Levies - Other levies
+31: Trading Accounts and Adjustments - External Trading Accounts net surplus(-)/ deficit(+)
+32: Trading Accounts and Adjustments - Internal Trading Accounts net surplus(-)/ deficit(+)
+33: Trading Accounts and Adjustments - Capital items accounted for in External Trading Accounts
+34: Trading Accounts and Adjustments - Capital items accounted for in Internal Trading Accounts
+35: Trading Accounts and Adjustments - Appropriations to(+) / from(-) Accumulated Absences Account
+36: Trading Accounts and Adjustments - Adjustments to net current expenditure
+37: Net Current Expenditure - NET CURRENT EXPENDITURE (TOTAL OF LINE 699 + LINES 711 TO 748)
+38: Non-current Expenditure and Receipts - Levy: Environment Agency flood defence
+39: Non-current Expenditure and Receipts - Capital expenditure charged to the GF Revenue Account (CERA) (exclude Public Health)
+40: Non-current Expenditure and Receipts - Capital expenditure charged to the GF Revenue Account (CERA) (Public Health)
+41: Non-current Expenditure and Receipts - Capital receipts used to finance revenue expenditure under receipts flexiblity
+42: Non-current Expenditure and Receipts - Netting off expenditure capitalised by a direction under Section 16(2)b) (-)
+43: Non-current Expenditure and Receipts - Provision for bad debts (+/-)
+44: Non-current Expenditure and Receipts - Provision for repayment of principal
+45: Non-current Expenditure and Receipts - Leasing payments
+46: Non-current Expenditure and Receipts - Interest: external payments
+47: Non-current Expenditure and Receipts - Interest: HRA item 8 payments and receipts
+48: Non-current Expenditure and Receipts - SUB-TOTAL
+49: Non-current Expenditure and Receipts - Interest and investment income (-): external receipts and dividends
+50: Non-current Expenditure and Receipts - Income from Treasury Management Activities
+51: Non-current Expenditure and Receipts - Income from non-treasury management activities, of which
+52: Non-current Expenditure and Receipts - Investment properties
+53: Non-current Expenditure and Receipts - Dividends from subsidaries
+54: Non-current Expenditure and Receipts - Dividends from equity other than subsidiaries
+55: Non-current Expenditure and Receipts - Income from joint ventures
+56: Non-current Expenditure and Receipts - Interest from capital loans
+57: Non-current Expenditure and Receipts - Interest from revenue loans
+58: Non-current Expenditure and Receipts - Income from bonds
+59: Non-current Expenditure and Receipts - Other
+60: Non-current Expenditure and Receipts - Private Finance Initiative (PFI) schemes - difference from service charge
+61: Non-current Expenditure and Receipts - Appropriations to(+)/ from(-) financial instruments adjustment account
+62: Non-current Expenditure and Receipts - Appropriations to(+)/ from(-) unequal pay back pay account
+63: Non-current Expenditure and Receipts - Specific and special grants outside AEF [RG line 799 as income]
+64: Non-current Expenditure and Receipts - Business Rates Supplement (GLA only)
+65: Non-current Expenditure and Receipts - Community Infrastructure levy
+66: Non-current Expenditure and Receipts - Carbon Reduction Commitment (CRC) transactions (expenditure) (+)
+67: Non-current Expenditure and Receipts - Carbon Reduction Commitment (CRC) transactions (income) (-)
+68: Non-current Expenditure and Receipts - Appropriations to(+)/from(-) dedicated schools grant adjustment account [note 7]
+69: Revenue Expenditure - REVENUE EXPENDITURE (TOTAL OF LINES 785 TO 797)
+70: Revenue Expenditure Financing - Local Services Support Grant (LSSG)
+71: Revenue Expenditure Financing - Specific and special grants inside AEF [RG line 699 as income]
+72: Revenue Expenditure Financing - NET REVENUE EXPENDITURE
+73: Revenue Expenditure Financing - Inter-authority transfers in respect of reorganisation
+74: Revenue Expenditure Financing - Appropriations to(+)/ from(-) schools' reserves
+75: Revenue Expenditure Financing - Appropriations to(+)/ from(-) dedicated schools grant reserves [Note 7]
+76: Revenue Expenditure Financing - Appropriations to(+)/ from(-) public health financial reserves
+77: Revenue Expenditure Financing - Appropriations to(+)/ from(-) other earmarked financial reserves
+78: Revenue Expenditure Financing - Appropriations to(+)/ from(-) unallocated financial reserves
+79: Revenue Expenditure Financing - Revenue Support Grant (-)
+80: Revenue Expenditure Financing - Police grant
+81: Revenue Expenditure Financing - Retained income from Rate Retention Scheme [Note 6]
+82: Revenue Expenditure Financing - Collection fund surplus/deficits for council tax
+83: Revenue Expenditure Financing - Other Items
+84: Revenue Expenditure Financing - COUNCIL TAX REQUIREMENT (total of lines 805 to 885)
+85: Reserves at 1 April 2025 - Estimated schools reserves level at 1 April
+86: Reserves at 1 April 2025 - Estimated dedicated schools grant adjustment account level at 1 April [Note 7]
+87: Reserves at 1 April 2025 - Estimated dedicated schools grant reserves level at 1 April [Note 7]
+88: Reserves at 1 April 2025 - Estimated public health financial reserves level at 1 April
+89: Reserves at 1 April 2025 - Estimated other earmarked financial reserves level at 1 April
+90: … sub components of 915 'other earmarked reserves' - Other earmarked reserves: contractual commitments at 1 April
+91: … sub components of 915 'other earmarked reserves' - Other earmarked reserves: planned future revenue and capital spending at 1 April
+92: … sub components of 915 'other earmarked reserves' - Other earmarked reserves: specific risks at 1 April
+93: … sub components of 915 'other earmarked reserves' - Other earmarked reserves: budget stabilisation at 1 April
+94: … sub components of 915 'other earmarked reserves' - Other earmarked reserves: other at 1 April
+95: Reserves at 31 March 2026 - Estimated schools reserves level at 31 March
+96: Reserves at 31 March 2026 - Estimated dedicated schools grant adjustment account level at 31 March [Note 7]
+97: Reserves at 31 March 2026 - Estimated dedicated schools grant reserves level at 31 March [Note 7]
+98: Reserves at 31 March 2026 - Estimated public health financial reserves level at 31 March
+99: Reserves at 31 March 2026 - Estimated other earmarked financial reserves level at 31 March
+100: Reserves at 31 March 2026 - Other earmarked reserves: contractual commitments at 31 March
+101: Reserves at 31 March 2026 - Other earmarked reserves: planned future revenue and capital spending at 31 March
+102: Reserves at 31 March 2026 - Other earmarked reserves: specific risks at 31 March
+103: Reserves at 31 March 2026 - Other earmarked reserves: budget stabilisation at 31 March
+104: Reserves at 31 March 2026 - Other earmarked reserves: other at 31 March
+105: Reserves (continued) - Estimated unallocated financial reserves level at 1 April
+106: Reserves (continued) - Estimated unallocated financial reserves level at 31 March
+107: Reserves (continued) - Prior Year Adjustments
+108: Capital Items - Depreciation
+109: Capital Items - Loss on impairment of assets
+110: Capital Items - Loss on impairment of loans to subsidiaries
+111: Capital Items - Loss on impairment of loans to other parties (exc. subsidiaries)
+112: Capital Items - Revaluations taken to surplus or deficit on the provision of services
+113: Capital Items - Gain(-) / loss(+) on fair value movements in investment properties
+114: Capital Items - Gain(-) / loss(+) on fair value movements on equity in subsidiaries, associaites and joint ventures
+115: Capital Items - Gain(-) / loss(+) on fair value movements in other investment assets
+116: Capital Items - Gain(-) / loss(+) on financial derivatives
+117: Capital Items - Credit for capital grants
+118: Capital Items - Revenue Expenditure funded from Capital by Statute (RECS)
+119: Capital Items - Total capital items
+120: Local Council Tax Support (LCTS) - Total council tax revenue foregone - pensioners
+121: Local Council Tax Support (LCTS) - Total council tax revenue foregone - working age people
+122: Local Council Tax Support (LCTS) - Total amount of council tax revenue foregone
+123: Local Council Tax Support (LCTS) - The total amount paid to local parishes [by the billing authority] with respect to their council tax support allocation
+124: Equal Pay Costs - One off equal pay costs - falling on the schools budget
+125: Equal Pay Costs - One off equal pay costs - chargeable to any other revenue account
+126: Equal Pay Costs - Confirmation completed on non-IAS19 and PFI "Off-Balance Sheet" basis
+127: Housing Revenue Account surplus / deficit - TOTAL HOUSING REVENUE ACCOUNT (HRA) INCOME
+128: Housing Revenue Account surplus / deficit - TOTAL HOUSING REVENUE ACCOUNT (HRA) EXPENDITURE
+129: Housing Revenue Account surplus / deficit - SURPLUS OR DEFICIT FOR THE YEAR ON HRA SERVICES
+130: HRA Reserves - Housing Revenue Account (HRA) Reserves at 1 April 2025
+131: HRA Reserves - Housing Revenue Account (HRA) Reserves at 31 March 2026
+132: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: income (-)
+133: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: direct costs
+134: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: attributable minimum revenue provision
+135: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: attributable interest costs
+136: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: total costs
+137: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: net income (-ve indicates net income, +ve a net cost)
+138: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: income (-)
+139: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: direct costs
+140: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: attributable minimum revenue provision
+141: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: attributable interest costs
+142: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: total costs
+143: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: net income (-ve indicates net income, +ve a net cost)
+144: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: income (-)
+145: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: direct costs
+146: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: attributable minimum revenue provision
+147: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: attributable interest costs
+148: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: total costs
+149: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: net income (-ve indicates net income, +ve a net cost)
+150: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: income (-)
+151: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: direct costs
+152: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: attributable minimum revenue provision
+153: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: attributable interest costs
+154: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: total costs
+155: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: net income (-ve indicates net income, +ve a net cost)
+156: Memorandum section on debt costs - General fund: Interest costs
+157: Memorandum section on debt costs - General fund: Finance cost of credit arrangements
+158: Memorandum section on debt costs - General fund: Revenue cost of the repayment of the principal of debt
+159: Memorandum section on debt costs - Housing Revenue Account: Interest costs
+160: Memorandum section on debt costs - Housing Revenue Account: Finance cost of credit arrangements
+161: Memorandum section on debt costs - Housing Revenue Account: Revenue cost of the repayment of the principal of debt
+ROW ["E5018", "E09000023", "Lewisham", "", "LB", "London", "N", "391228.0", "10916.0", "135210.0", "127032.0", "33343.0", "49322.0", "8947.0", "34070.0", "16898.0", "0.0", "0.0", "23717.0", "0.0", "830683.0", "93942.0", "20809.0", "16740.0", "0.0", "0.0", "0.0", "0.0", "0.0", "1263.0", "462.0", "0.0", "0.0", "0.0", "0.0", "-316.0", "678.0", "964261.0", "221.0", "6707.0", "0.0", "0.0", "0.0", "0.0", "13668.0", "8960.0", "42098.0", "-11971.0", "1023944.0", "-19555.0", "-19555.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "-782.0", "0.0", "-139552.0", "0.0", "-625.0", "0.0", "0.0", "-5517.0", "857913.0", "0.0", "-574052.0", "283861.0", "0.0", "-5936.0", "0.0", "1031.0", "12214.0", "0.0", "-35186.0", "0.0", "-103704.0", "0.0", "0.0", "152280.0", "13800.0", "-18616.0", "0.0", "2164.0", "200819.0", "0.0", "200819.0", "0.0", "0.0", "0.0", "7864.0", "-24133.0", "0.0", "3195.0", "213033.0", "0.0", "213033.0", "0.0", "0.0", "0.0", "30000.0", "30000.0", "0.0", "54709.0", "335.0", "0.0", "0.0", "3871.0", "0.0", "0.0", "0.0", "0.0", "-47465.0", "49516.0", "60966.0", "9585.86", "12128.29", "21714.15", "0.0", "0.0", "0.0", "1.0", "127542.0", "132234.0", "-4692.0", "58138.0", "53446.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "535.0", "29591.0", "27846.0", "9902.0", "2070.0", "0.0"]
+ROW ["E4210", "E08000010", "Wigan MBC", "[note 11]", "MD", "MD", "N", "367120.0", "7448.0", "101957.0", "148779.0", "34389.0", "13778.0", "23137.0", "32203.0", "9887.0", "0.0", "0.0", "24090.0", "-1630.0", "761158.0", "37502.0", "1131.0", "21414.0", "0.0", "0.0", "111.0", "24427.0", "0.0", "0.0", "5506.0", "-801.0", "300.0", "0.0", "0.0", "0.0", "0.0", "850748.0", "2820.0", "109.0", "0.0", "0.0", "0.0", "0.0", "8570.0", "20.0", "4861.0", "0.0", "867128.0", "-8945.0", "-2427.0", "-6518.0", "-1070.0", "0.0", "-588.0", "0.0", "-3888.0", "-1.0", "-798.0", "-173.0", "5134.0", "0.0", "0.0", "-67951.0", "0.0", "0.0", "0.0", "0.0", "-16194.0", "779172.0", "0.0", "-455860.91", "323311.09", "0.0", "1250.0", "0.0", "114.0", "-904.0", "1566.0", "0.0", "0.0", "-163958.0", "-457.0", "-3.0", "160918.0", "23153.0", "-9740.0", "0.0", "1271.0", "60940.0", "2156.0", "53040.0", "5744.0", "0.0", "0.0", "24403.0", "-25934.0", "0.0", "1385.0", "60036.0", "0.0", "17566.0", "11132.0", "31338.0", "0.0", "13555.0", "15121.0", "0.0", "30913.0", "20.0", "0.0", "0.0", "7828.0", "-15255.0", "0.0", "0.0", "0.0", "-47787.0", "8385.0", "-15896.0", "10921.0", "13493.0", "24414.0", "16.0", "0.0", "0.0", "1.0", "110773.0", "108297.0", "2476.0", "19501.0", "21977.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "0.0", "4805.0", "5134.0", "11838.0", "11321.0", "0.0", "3638.0"]
+RS_LA_Data_202526 header row 421
+0: E-code
+1: ONS Code
+2: Local authority
+3: Notes
+4: Class
+5: Detailed Class
+6: Certification
+7: Service Expenditure - Education services
+8: Service Expenditure - Highways and transport services
+9: Service Expenditure - Children Social Care
+10: Service Expenditure - Adult Social Care [note 2]
+11: Service Expenditure - Public Health
+12: Service Expenditure - Housing services (GFRA only)
+13: Service Expenditure - Cultural and related services
+14: Service Expenditure - Environmental and regulatory services
+15: Service Expenditure - Planning and development services
+16: Service Expenditure - Police services
+17: Service Expenditure - Fire and rescue services
+18: Service Expenditure - Central services
+19: Service Expenditure - Other services
+20: Service Expenditure - TOTAL SERVICE EXPENDITURE (total of lines 190 to 698)
+21: Housing Benefits - Housing benefits: rent allowances - mandatory payments
+22: Housing Benefits - Housing benefits: non-HRA rent rebates - mandatory payments
+23: Housing Benefits - Housing benefits: rent rebates to HRA tenants - mandatory payments
+24: Housing Benefits - Housing benefits: subsidy limitation transfers from HRA
+25: Housing Benefits - Contribution to the HRA re items shared by the whole community
+26: Precepts and Levies - Parish Precepts
+27: Precepts and Levies - Integrated Transport Authority levy
+28: Precepts and Levies - Waste Disposal Authority levy
+29: Precepts and Levies - London Pensions Fund Authority levy
+30: Precepts and Levies - Other levies
+31: Trading Accounts and Adjustments - External Trading Accounts net surplus(-)/ deficit(+)
+32: Trading Accounts and Adjustments - Internal Trading Accounts net surplus(-)/ deficit(+)
+33: Trading Accounts and Adjustments - Capital items accounted for in External Trading Accounts
+34: Trading Accounts and Adjustments - Capital items accounted for in Internal Trading Accounts
+35: Trading Accounts and Adjustments - Appropriations to(+) / from(-) Accumulated Absences Account
+36: Trading Accounts and Adjustments - Adjustments to net current expenditure
+37: Net Current Expenditure - NET CURRENT EXPENDITURE (TOTAL OF LINE 699 + LINES 711 TO 748)
+38: Non-current Expenditure and Receipts - Levy: Environment Agency flood defence
+39: Non-current Expenditure and Receipts - Capital expenditure charged to the GF Revenue Account (CERA) (exclude Public Health)
+40: Non-current Expenditure and Receipts - Capital expenditure charged to the GF Revenue Account (CERA) (Public Health)
+41: Non-current Expenditure and Receipts - Capital receipts used to finance revenue expenditure under receipts flexiblity
+42: Non-current Expenditure and Receipts - Netting off expenditure capitalised by a direction under Section 16(2)b) (-)
+43: Non-current Expenditure and Receipts - Provision for bad debts (+/-)
+44: Non-current Expenditure and Receipts - Provision for repayment of principal
+45: Non-current Expenditure and Receipts - Leasing payments
+46: Non-current Expenditure and Receipts - Interest: external payments
+47: Non-current Expenditure and Receipts - Interest: HRA item 8 payments and receipts
+48: Non-current Expenditure and Receipts - SUB-TOTAL
+49: Non-current Expenditure and Receipts - Interest and investment income (-): external receipts and dividends
+50: Non-current Expenditure and Receipts - Income from Treasury Management Activities
+51: Non-current Expenditure and Receipts - Income from non-treasury management activities, of which
+52: Non-current Expenditure and Receipts - Investment properties
+53: Non-current Expenditure and Receipts - Dividends from subsidaries
+54: Non-current Expenditure and Receipts - Dividends from equity other than subsidiaries
+55: Non-current Expenditure and Receipts - Income from joint ventures
+56: Non-current Expenditure and Receipts - Interest from capital loans
+57: Non-current Expenditure and Receipts - Interest from revenue loans
+58: Non-current Expenditure and Receipts - Income from bonds
+59: Non-current Expenditure and Receipts - Other
+60: Non-current Expenditure and Receipts - Private Finance Initiative (PFI) schemes - difference from service charge
+61: Non-current Expenditure and Receipts - Appropriations to(+)/ from(-) financial instruments adjustment account
+62: Non-current Expenditure and Receipts - Appropriations to(+)/ from(-) unequal pay back pay account
+63: Non-current Expenditure and Receipts - Specific and special grants outside AEF [RG line 799 as income]
+64: Non-current Expenditure and Receipts - Business Rates Supplement (GLA only)
+65: Non-current Expenditure and Receipts - Community Infrastructure levy
+66: Non-current Expenditure and Receipts - Carbon Reduction Commitment (CRC) transactions (expenditure) (+)
+67: Non-current Expenditure and Receipts - Carbon Reduction Commitment (CRC) transactions (income) (-)
+68: Non-current Expenditure and Receipts - Appropriations to(+)/from(-) dedicated schools grant adjustment account [note 7]
+69: Revenue Expenditure - REVENUE EXPENDITURE (TOTAL OF LINES 785 TO 797)
+70: Revenue Expenditure Financing - Local Services Support Grant (LSSG)
+71: Revenue Expenditure Financing - Specific and special grants inside AEF [RG line 699 as income]
+72: Revenue Expenditure Financing - NET REVENUE EXPENDITURE
+73: Revenue Expenditure Financing - Inter-authority transfers in respect of reorganisation
+74: Revenue Expenditure Financing - Appropriations to(+)/ from(-) schools' reserves
+75: Revenue Expenditure Financing - Appropriations to(+)/ from(-) dedicated schools grant reserves [Note 7]
+76: Revenue Expenditure Financing - Appropriations to(+)/ from(-) public health financial reserves
+77: Revenue Expenditure Financing - Appropriations to(+)/ from(-) other earmarked financial reserves
+78: Revenue Expenditure Financing - Appropriations to(+)/ from(-) unallocated financial reserves
+79: Revenue Expenditure Financing - Revenue Support Grant (-)
+80: Revenue Expenditure Financing - Police grant
+81: Revenue Expenditure Financing - Retained income from Rate Retention Scheme [Note 6]
+82: Revenue Expenditure Financing - Collection fund surplus/deficits for council tax
+83: Revenue Expenditure Financing - Other Items
+84: Revenue Expenditure Financing - COUNCIL TAX REQUIREMENT (total of lines 805 to 885)
+85: Reserves at 1 April 2025 - Estimated schools reserves level at 1 April
+86: Reserves at 1 April 2025 - Estimated dedicated schools grant adjustment account level at 1 April [Note 7]
+87: Reserves at 1 April 2025 - Estimated dedicated schools grant reserves level at 1 April [Note 7]
+88: Reserves at 1 April 2025 - Estimated public health financial reserves level at 1 April
+89: Reserves at 1 April 2025 - Estimated other earmarked financial reserves level at 1 April
+90: … sub components of 915 'other earmarked reserves' - Other earmarked reserves: contractual commitments at 1 April
+91: … sub components of 915 'other earmarked reserves' - Other earmarked reserves: planned future revenue and capital spending at 1 April
+92: … sub components of 915 'other earmarked reserves' - Other earmarked reserves: specific risks at 1 April
+93: … sub components of 915 'other earmarked reserves' - Other earmarked reserves: budget stabilisation at 1 April
+94: … sub components of 915 'other earmarked reserves' - Other earmarked reserves: other at 1 April
+95: Reserves at 31 March 2026 - Estimated schools reserves level at 31 March
+96: Reserves at 31 March 2026 - Estimated dedicated schools grant adjustment account level at 31 March [Note 7]
+97: Reserves at 31 March 2026 - Estimated dedicated schools grant reserves level at 31 March [Note 7]
+98: Reserves at 31 March 2026 - Estimated public health financial reserves level at 31 March
+99: Reserves at 31 March 2026 - Estimated other earmarked financial reserves level at 31 March
+100: Reserves at 31 March 2026 - Other earmarked reserves: contractual commitments at 31 March
+101: Reserves at 31 March 2026 - Other earmarked reserves: planned future revenue and capital spending at 31 March
+102: Reserves at 31 March 2026 - Other earmarked reserves: specific risks at 31 March
+103: Reserves at 31 March 2026 - Other earmarked reserves: budget stabilisation at 31 March
+104: Reserves at 31 March 2026 - Other earmarked reserves: other at 31 March
+105: Reserves (continued) - Estimated unallocated financial reserves level at 1 April
+106: Reserves (continued) - Estimated unallocated financial reserves level at 31 March
+107: Reserves (continued) - Prior Year Adjustments
+108: Capital Items - Depreciation
+109: Capital Items - Loss on impairment of assets
+110: Capital Items - Loss on impairment of loans to subsidiaries
+111: Capital Items - Loss on impairment of loans to other parties (exc. subsidiaries)
+112: Capital Items - Revaluations taken to surplus or deficit on the provision of services
+113: Capital Items - Gain(-) / loss(+) on fair value movements in investment properties
+114: Capital Items - Gain(-) / loss(+) on fair value movements on equity in subsidiaries, associaites and joint ventures
+115: Capital Items - Gain(-) / loss(+) on fair value movements in other investment assets
+116: Capital Items - Gain(-) / loss(+) on financial derivatives
+117: Capital Items - Credit for capital grants
+118: Capital Items - Revenue Expenditure funded from Capital by Statute (RECS)
+119: Capital Items - Total capital items
+120: Local Council Tax Support (LCTS) - Total council tax revenue foregone - pensioners
+121: Local Council Tax Support (LCTS) - Total council tax revenue foregone - working age people
+122: Local Council Tax Support (LCTS) - Total amount of council tax revenue foregone
+123: Local Council Tax Support (LCTS) - The total amount paid to local parishes [by the billing authority] with respect to their council tax support allocation
+124: Equal Pay Costs - One off equal pay costs - falling on the schools budget
+125: Equal Pay Costs - One off equal pay costs - chargeable to any other revenue account
+126: Equal Pay Costs - Confirmation completed on non-IAS19 and PFI "Off-Balance Sheet" basis
+127: Housing Revenue Account surplus / deficit - TOTAL HOUSING REVENUE ACCOUNT (HRA) INCOME
+128: Housing Revenue Account surplus / deficit - TOTAL HOUSING REVENUE ACCOUNT (HRA) EXPENDITURE
+129: Housing Revenue Account surplus / deficit - SURPLUS OR DEFICIT FOR THE YEAR ON HRA SERVICES
+130: HRA Reserves - Housing Revenue Account (HRA) Reserves at 1 April 2025
+131: HRA Reserves - Housing Revenue Account (HRA) Reserves at 31 March 2026
+132: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: income (-)
+133: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: direct costs
+134: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: attributable minimum revenue provision
+135: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: attributable interest costs
+136: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: total costs
+137: Memorandum section on investment properties that are wholly locally authority owned - Investment properties: net income (-ve indicates net income, +ve a net cost)
+138: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: income (-)
+139: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: direct costs
+140: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: attributable minimum revenue provision
+141: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: attributable interest costs
+142: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: total costs
+143: Memorandum section on investment properties that are wholly locally authority owned - Investment properties within LA boundary: net income (-ve indicates net income, +ve a net cost)
+144: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: income (-)
+145: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: direct costs
+146: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: attributable minimum revenue provision
+147: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: attributable interest costs
+148: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: total costs
+149: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside boundary but within LEP area: net income (-ve indicates net income, +ve a net cost)
+150: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: income (-)
+151: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: direct costs
+152: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: attributable minimum revenue provision
+153: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: attributable interest costs
+154: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: total costs
+155: Memorandum section on investment properties that are wholly locally authority owned - Investment properties outside LEP area: net income (-ve indicates net income, +ve a net cost)
+156: Memorandum section on debt costs - General fund: Interest costs
+157: Memorandum section on debt costs - General fund: Finance cost of credit arrangements
+158: Memorandum section on debt costs - General fund: Revenue cost of the repayment of the principal of debt
+159: Memorandum section on debt costs - Housing Revenue Account: Interest costs
+160: Memorandum section on debt costs - Housing Revenue Account: Finance cost of credit arrangements
+161: Memorandum section on debt costs - Housing Revenue Account: Revenue cost of the repayment of the principal of debt
