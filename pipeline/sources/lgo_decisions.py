@@ -71,17 +71,21 @@ def fetch(context):
     result = Result(id=ID, title="Local Government and Social Care Ombudsman: published decisions",
                     url=PAGE, period=period, extra={"checked": time.strftime("%Y-%m-%d"), "counts": {}})
     not_found = []
+    upheld = {code: v.get("om_upheld", 0) for code, v in context["results"]["lgo"].values.items()}
     for code, name in sorted(context["results"]["lgo"].extra["names"].items()):
         counts = decisions(name, start, end)
-        if counts is None:
+        # The search sometimes returns nothing for a council the annual
+        # figures say had upheld complaints: a failed search, not a zero
+        if not counts and upheld.get(code, 0) > 0:
             not_found.append(name)
-            counts = Counter()
+            continue
+        counts = counts or Counter()
         result.extra["counts"][code] = {f"{c}/{s}": n for (c, s), n in sorted(counts.items())}
         for measure, matches in MEASURES.items():
             n = sum(v for (c, s), v in counts.items() if matches(c, s))
             result.set(code, measure, n / population[code] * 100_000)
     if len(not_found) > len(population) / 4:
-        raise RuntimeError(f"The decision search found nothing for {len(not_found)} councils: has it changed?")
+        raise RuntimeError(f"The decision search failed for {len(not_found)} councils: has it changed?")
     if not_found:
-        result.notes.append(f"No upheld decisions found for: {', '.join(not_found)}")
+        result.notes.append(f"The decision search failed for: {', '.join(not_found)}")
     return result

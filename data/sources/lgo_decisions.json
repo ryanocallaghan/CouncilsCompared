@@ -17,7 +17,6 @@
     "education/special-educational-needs": 2,
     "other-categories/other": 1
    },
-   "E06000003": {},
    "E06000004": {
     "adult-care-services/assessment-and-care-plan": 1,
     "adult-care-services/charging": 1,
@@ -76,7 +75,6 @@
     "other-categories/other": 1,
     "planning/enforcement": 1
    },
-   "E06000010": {},
    "E06000011": {
     "adult-care-services/assessment-and-care-plan": 6,
     "adult-care-services/charging": 1,
@@ -173,7 +171,6 @@
     "housing/homelessness": 4,
     "planning/planning-applications": 1
    },
-   "E06000020": {},
    "E06000021": {
     "adult-care-services/assessment-and-care-plan": 1,
     "adult-care-services/charging": 2,
@@ -446,7 +443,6 @@
     "planning/other": 1,
     "transport-and-highways/traffic-management": 2
    },
-   "E06000043": {},
    "E06000044": {
     "adult-care-services/charging": 3,
     "adult-care-services/safeguarding": 1,
@@ -519,7 +515,6 @@
     "planning/enforcement": 1,
     "planning/planning-applications": 2
    },
-   "E06000050": {},
    "E06000051": {
     "adult-care-services/charging": 3,
     "adult-care-services/domiciliary-care": 1,
@@ -564,87 +559,7 @@
     "planning/other": 1,
     "planning/planning-advice": 1,
     "planning/planning-applications": 1
-   },
-   "E06000055": {},
-   "E06000056": {},
-   "E06000057": {},
-   "E06000058": {},
-   "E06000059": {},
-   "E06000060": {},
-   "E06000061": {},
-   "E06000062": {},
-   "E06000063": {},
-   "E06000064": {},
-   "E06000065": {},
-   "E06000066": {},
-   "E08000001": {},
-   "E08000002": {},
-   "E08000003": {},
-   "E08000004": {},
-   "E08000005": {},
-   "E08000006": {},
-   "E08000007": {},
-   "E08000008": {},
-   "E08000009": {},
-   "E08000010": {},
-   "E08000011": {},
-   "E08000012": {},
-   "E08000013": {},
-   "E08000014": {},
-   "E08000015": {},
-   "E08000016": {},
-   "E08000017": {},
-   "E08000018": {},
-   "E08000019": {},
-   "E08000021": {},
-   "E08000022": {},
-   "E08000023": {},
-   "E08000024": {},
-   "E08000025": {},
-   "E08000026": {},
-   "E08000027": {},
-   "E08000028": {},
-   "E08000029": {},
-   "E08000030": {},
-   "E08000031": {},
-   "E08000032": {},
-   "E08000033": {},
-   "E08000034": {},
-   "E08000035": {},
-   "E08000036": {},
-   "E08000037": {},
-   "E09000002": {},
-   "E09000003": {},
-   "E09000004": {},
-   "E09000005": {},
-   "E09000006": {},
-   "E09000007": {},
-   "E09000008": {},
-   "E09000009": {},
-   "E09000010": {},
-   "E09000011": {},
-   "E09000012": {},
-   "E09000013": {},
-   "E09000014": {},
-   "E09000015": {},
-   "E09000016": {},
-   "E09000017": {},
-   "E09000018": {},
-   "E09000019": {},
-   "E09000020": {},
-   "E09000021": {},
-   "E09000022": {},
-   "E09000023": {},
-   "E09000024": {},
-   "E09000025": {},
-   "E09000026": {},
-   "E09000027": {},
-   "E09000028": {},
-   "E09000029": {},
-   "E09000030": {},
-   "E09000031": {},
-   "E09000032": {},
-   "E09000033": {}
+   }
   }
  },
  "files": [],
@@ -665,11 +580,6 @@
    "om_children": 3.9,
    "om_homeless": 0.0,
    "om_sen": 1.3
-  },
-  "E06000003": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
   },
   "E06000004": {
    "om_children": 1.0,
@@ -699,11 +609,6 @@
   "E06000009": {
    "om_children": 0.0,
    "om_homeless": 0.7,
-   "om_sen": 0.0
-  },
-  "E06000010": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
    "om_sen": 0.0
   },
   "E06000011": {
@@ -750,11 +655,6 @@
    "om_children": 1.0,
    "om_homeless": 2.1,
    "om_sen": 3.1
-  },
-  "E06000020": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
   },
   "E06000021": {
    "om_children": 0.4,
@@ -856,11 +756,6 @@
    "om_homeless": 1.6,
    "om_sen": 6.2
   },
-  "E06000043": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
   "E06000044": {
    "om_children": 0.9,
    "om_homeless": 1.4,
@@ -886,11 +781,6 @@
    "om_homeless": 0.2,
    "om_sen": 4.0
   },
-  "E06000050": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
   "E06000051": {
    "om_children": 0.6,
    "om_homeless": 0.0,
@@ -905,406 +795,6 @@
    "om_children": 0.4,
    "om_homeless": 0.0,
    "om_sen": 1.1
-  },
-  "E06000055": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E06000056": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E06000057": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E06000058": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E06000059": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E06000060": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E06000061": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E06000062": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E06000063": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E06000064": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E06000065": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E06000066": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000001": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000002": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000003": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000004": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000005": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000006": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000007": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000008": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000009": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000010": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000011": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000012": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000013": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000014": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000015": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000016": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000017": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000018": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000019": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000021": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000022": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000023": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000024": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000025": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000026": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000027": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000028": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000029": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000030": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000031": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000032": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000033": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000034": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000035": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000036": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E08000037": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000002": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000003": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000004": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000005": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000006": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000007": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000008": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000009": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000010": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000011": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000012": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000013": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000014": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000015": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000016": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000017": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000018": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000019": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000020": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000021": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000022": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000023": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000024": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000025": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000026": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000027": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000028": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000029": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000030": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000031": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000032": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
-  },
-  "E09000033": {
-   "om_children": 0.0,
-   "om_homeless": 0.0,
-   "om_sen": 0.0
   }
  }
 }

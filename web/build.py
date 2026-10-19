@@ -26,6 +26,8 @@ DIST = os.path.join(model.ROOT, "dist")
 SITE_URL = "https://councilscompared.com"
 REPO_URL = "https://github.com/ryanocallaghan/CouncilsCompared"
 ISSUES_URL = REPO_URL + "/issues"
+AUTHOR_URL = "https://ryanocallaghan.com"
+CONTACT_EMAIL = "hello@councilscompared.com"
 
 # Cookie-free analytics on the self-hosted Umami that mybin.day uses. Set
 # UMAMI_WEBSITE_ID to "" to turn it off (e.g. for a local build).
@@ -129,6 +131,19 @@ def write_lookups(out, councils):
             json.dump(shard, f, separators=(",", ":"))
 
 
+def structured_data(council, group):
+    """Breadcrumbs for search results: Councils compared > Lewisham."""
+    crumbs = [("Councils compared", "/"), (council["name"], model.path(council))]
+    if group != "england":
+        crumbs.append((model.group_tab(council, group), model.path(council, group)))
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{"@type": "ListItem", "position": i, "name": name, "item": SITE_URL + path}
+                            for i, (name, path) in enumerate(crumbs, 1)],
+    }
+
+
 def build(out=DIST):
     data = model.load()
     councils = sorted(data["councils"].values(), key=lambda c: c["name"])
@@ -137,6 +152,7 @@ def build(out=DIST):
     common = {
         "site_url": SITE_URL, "repo_url": REPO_URL, "issues_url": ISSUES_URL, "model": model,
         "sources": sources, "all_councils": councils, "asset_version": asset_version(),
+        "author_url": AUTHOR_URL, "contact_email": CONTACT_EMAIL,
         "umami": {"script": UMAMI_SCRIPT, "website_id": UMAMI_WEBSITE_ID} if UMAMI_WEBSITE_ID else None,
     }
     pages = []
@@ -149,16 +165,33 @@ def build(out=DIST):
     regions = {}
     for c in councils:
         regions.setdefault(c["region"], []).append(c)
-    page("/", "index.html", nav="/", regions=sorted(regions.items()))
+    page("/", "index.html", nav="/", regions=sorted(regions.items()), structured_data={
+        "@context": "https://schema.org", "@type": "WebSite", "name": "Councils compared", "url": SITE_URL + "/",
+        "description": "How every single-tier council in England compares, from official statistics.",
+        "author": {"@type": "Person", "name": "Ryan O'Callaghan", "url": AUTHOR_URL},
+    })
     for council in councils:
         groups = model.groups_for(council)
         for group in groups:
             page(model.path(council, group), "council.html", nav="/", groups=groups,
-                 comparison=model.compare(council, group), council_tax=model.council_tax(council))
+                 comparison=model.compare(council, group), council_tax=model.council_tax(council),
+                 structured_data=structured_data(council, group))
     order = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "band_d", "fly", "waste", "homelessness",
              "silktide", "spending", "ofsted", "neighbours", "population"]
     source_list = [sources[s] for s in order if s in sources]
+    page("/measures/", "measures.html", nav="/measures/")
+    regions_list = sorted({c["region"] for c in councils})
+    types = sorted({c["type"] for c in councils})
+    areas = {a: (name, note) for a, name, note in model.AREAS}
+    for m in (m for m in model.MEASURES if model.available(m)):
+        rows = model.ranking(m)
+        ranked = {c["code"] for _, c, _, _ in rows}
+        page(f"/measures/{m.id.replace('_', '-')}/", "measure.html", nav="/measures/", measure=m, rows=rows,
+             map=model.hexmap(m), period=model.period(m), source=sources.get(m.source, {}),
+             area_name=areas[m.area][0], note=areas[m.area][1], regions=regions_list, types=types,
+             missing=[c for c in councils if c["code"] not in ranked])
     page("/about/", "about.html", nav="/about/", councils=councils, source_list=source_list)
+    page("/privacy/", "privacy.html", today="19 October 2026")
     page("404.html", "404.html")
     page("/postcode-not-found/", "postcode_not_found.html")
     page("/not-covered/", "not_covered.html")
@@ -168,6 +201,8 @@ def build(out=DIST):
     with open(os.path.join(out, "data", "councils.csv"), "w", newline="") as f:
         f.write(csv_text(councils))
     write_lookups(out, councils)
+    with open(os.path.join(out, "data", "site.json"), "w") as f:
+        json.dump(model.site_data(), f, separators=(",", ":"), ensure_ascii=False, allow_nan=False)
     with open(os.path.join(out, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         for path in pages:

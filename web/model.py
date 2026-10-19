@@ -30,7 +30,7 @@ TYPE_PLURAL = {
 MIN_SIMILAR = 3  # fewer similar councils than this, and the group is not offered
 
 AREAS = [
-    ("send", "SEND assessments",
+    ("send", "Special educational needs",
      "Education, health and care plans set out support for children with special educational needs. "
      "The law says a new plan should be issued within 20 weeks."),
     ("complaints", "Ombudsman complaints",
@@ -55,43 +55,58 @@ AREAS = [
 class Measure:
     id: str
     area: str
-    label: str
+    label: str  # in plain English
     unit: str  # "%" or "" (a rate or count)
     better: str  # "higher" or "lower"
     source: str  # its id in data/councils.json "sources", which gives the period
+    official: str = ""  # the publication's own name for it, if different
 
 
 MEASURES = [
-    Measure("ehcp_20wk", "send", "New EHC plans issued within 20 weeks", "%", "higher", "ehcp"),
-    Measure("om_upheld", "complaints", "Upheld complaints per 100,000 residents", "", "lower", "lgo"),
-    Measure("om_received", "complaints", "Complaints to the Ombudsman per 100,000 residents", "", "lower", "lgo"),
-    Measure("om_children", "complaints", "Upheld complaints about children's services per 100,000 residents",
-            "", "lower", "lgo_decisions"),
-    Measure("om_sen", "complaints", "Upheld complaints about special educational needs per 100,000 residents",
-            "", "lower", "lgo_decisions"),
-    Measure("om_homeless", "complaints", "Upheld complaints about homelessness per 100,000 residents",
-            "", "lower", "lgo_decisions"),
-    Measure("om_remedy_before", "complaints", "Upheld cases the council had already put right", "%", "higher",
+    Measure("ehcp_20wk", "send", "Special educational needs plans issued on time", "%", "higher", "ehcp",
+            "New education, health and care (EHC) plans issued within the legal limit of 20 weeks"),
+    Measure("om_upheld", "complaints", "Complaints the Ombudsman upheld, per 100,000 residents", "", "lower", "lgo"),
+    Measure("om_received", "complaints", "Complaints that reached the Ombudsman, per 100,000 residents", "", "lower",
             "lgo"),
-    Measure("om_timely", "complaints", "Ombudsman remedies delivered on time", "%", "higher", "lgo"),
-    Measure("tsm_overall", "housing", "Tenants satisfied with the overall service", "%", "higher", "tsm"),
-    Measure("tsm_maintained", "housing", "Tenants satisfied their home is well maintained", "%", "higher", "tsm"),
-    Measure("tsm_safe", "housing", "Tenants satisfied their home is safe", "%", "higher", "tsm"),
-    Measure("tsm_listens", "housing", "Tenants who say the council listens and acts", "%", "higher", "tsm"),
-    Measure("tsm_repairs", "housing", "Non-emergency repairs done within target time", "%", "higher", "tsm"),
-    Measure("tsm_decent", "housing", "Council homes failing the Decent Homes Standard", "%", "lower", "tsm"),
-    Measure("tsm_complaints", "housing", "Stage 1 housing complaints answered in time", "%", "higher", "tsm"),
+    Measure("om_children", "complaints", "Upheld complaints about children's services, per 100,000 residents",
+            "", "lower", "lgo_decisions"),
+    Measure("om_sen", "complaints", "Upheld complaints about special educational needs, per 100,000 residents",
+            "", "lower", "lgo_decisions"),
+    Measure("om_homeless", "complaints", "Upheld complaints about homelessness, per 100,000 residents",
+            "", "lower", "lgo_decisions"),
+    Measure("om_remedy_before", "complaints", "Upheld complaints the council had already put right", "%", "higher",
+            "lgo", "Upheld cases where the council provided a satisfactory remedy before the complaint reached "
+            "the Ombudsman"),
+    Measure("om_timely", "complaints", "Ombudsman's recommendations carried out on time", "%", "higher", "lgo",
+            "Compliance outcomes recorded as delivered on time"),
+    Measure("tsm_overall", "housing", "Tenants satisfied with the overall service", "%", "higher", "tsm",
+            "Tenant Satisfaction Measure TP01"),
+    Measure("tsm_maintained", "housing", "Tenants who say their home is well maintained", "%", "higher", "tsm",
+            "Tenant Satisfaction Measure TP04"),
+    Measure("tsm_safe", "housing", "Tenants who say their home is safe", "%", "higher", "tsm",
+            "Tenant Satisfaction Measure TP05"),
+    Measure("tsm_listens", "housing", "Tenants who say the council listens and acts", "%", "higher", "tsm",
+            "Tenant Satisfaction Measure TP06"),
+    Measure("tsm_repairs", "housing", "Routine repairs done on time", "%", "higher", "tsm",
+            "Non-emergency responsive repairs completed within target (RP02)"),
+    Measure("tsm_decent", "housing", "Council homes below the Decent Homes Standard", "%", "lower", "tsm",
+            "Homes that do not meet the Decent Homes Standard (RP01)"),
+    Measure("tsm_complaints", "housing", "Tenants' complaints answered on time", "%", "higher", "tsm",
+            "Stage 1 complaints responded to within the Housing Ombudsman's timescales (CH02)"),
     Measure("ctax_collect", "ctax", "Council tax collected in the year it was due", "%", "higher", "ctax"),
-    Measure("fly_rate", "streets", "Fly-tipping incidents per 1,000 residents", "", "lower", "fly"),
-    Measure("fly_enforce", "streets", "Enforcement actions per 100 fly-tipping incidents", "", "higher", "fly"),
+    Measure("fly_rate", "streets", "Fly-tipping incidents, per 1,000 residents", "", "lower", "fly"),
+    Measure("fly_enforce", "streets", "Enforcement actions, per 100 fly-tipping incidents", "", "higher", "fly"),
     Measure("recycling", "streets", "Household waste reused, recycled or composted", "%", "higher", "waste"),
-    Measure("ta_rate", "homeless", "Households in temporary accommodation per 1,000 households", "", "lower",
+    Measure("ta_rate", "homeless", "Households in temporary accommodation, per 1,000 households", "", "lower",
             "homelessness"),
     Measure("ta_long", "homeless", "Families in temporary accommodation for 2 years or more", "%", "lower",
             "homelessness"),
-    Measure("prevention", "homeless", "Prevention cases ending with a home secured", "%", "higher", "homelessness"),
-    Measure("relief", "homeless", "Relief cases ending with a home secured", "%", "higher", "homelessness"),
-    Measure("web_access", "digital", "Website accessibility score", "%", "higher", "silktide"),
+    Measure("prevention", "homeless", "People at risk of homelessness helped to keep or find a home", "%", "higher",
+            "homelessness", "Prevention duty cases ending with accommodation secured for 6 months or more"),
+    Measure("relief", "homeless", "Homeless people helped to find a home", "%", "higher", "homelessness",
+            "Relief duty cases ending with accommodation secured for 6 months or more"),
+    Measure("web_access", "digital", "Council website accessibility score", "%", "higher", "silktide",
+            "Silktide Index WCAG 2.2 AA score"),
 ]
 
 SPENDING = [
@@ -135,6 +150,21 @@ def councils():
 
 def sources():
     return load()["sources"]
+
+
+MIN_COVERAGE = 0.75  # the share of councils a measure needs figures for before it is shown
+
+
+@cache
+def _coverage(path):
+    return {m.id: sum(1 for c in _load(path)["councils"].values() if m.id in c["values"]) for m in MEASURES}
+
+
+def available(measure):
+    """Whether a measure covers enough councils to rank them fairly.
+    Council housing is the exception: only councils with homes have figures."""
+    total = len(_load(DATA_FILE)["councils"])
+    return measure.area == "housing" or _coverage(DATA_FILE)[measure.id] >= MIN_COVERAGE * total
 
 
 def period(measure):
@@ -187,6 +217,18 @@ def group_phrase(council, group):
     if group == "similar":
         return "similar councils"
     return "all councils in England"
+
+
+def group_option(council, group):
+    """What the "Compared with" menu says: "All councils in England (130)"."""
+    count = len(group_members(council, group))
+    names = {"england": "All councils in England", "region": group_tab(council, "region"),
+             "type": group_tab(council, "type"), "similar": "Similar councils"}
+    if group == "region" and council["region"] == "London":
+        names["region"] = "London boroughs"
+    elif group == "region":
+        names["region"] = f"Councils in {council['region']}"
+    return f"{names[group]} ({count})"
 
 
 def path(council, group="england"):
@@ -292,16 +334,46 @@ class Row:
 
 
 @dataclass
+class Area:
+    id: str
+    name: str
+    note: str
+    rows: list  # [Row], only measures with a figure for this council
+    missing: int  # measures with no figure
+
+    @property
+    def counts(self):
+        return {key: sum(1 for r in self.rows if r.band == key) for key in BANDS}
+
+    @property
+    def headline(self):
+        """ "2 of 7 measures in the bottom quarter", the worst news first."""
+        ranked = [r for r in self.rows if r.band]
+        if not ranked:
+            return None
+        counts = self.counts
+        for key, words in [("bottom", "in the bottom quarter"), ("middle", "below the middle"),
+                           ("top", "in the top half")]:
+            if counts[key]:
+                n = len(ranked)
+                if n == 1:
+                    return f"{BANDS[key][0]}"
+                return f"{counts[key]} of {n} measures {words}"
+        return None
+
+
+@dataclass
 class Comparison:
     council: dict
     group: str
     tab: str
     phrase: str
     members: list
-    areas: list = field(default_factory=list)  # [(id, name, note, [Row])]
+    areas: list = field(default_factory=list)  # [Area]
     counts: dict = field(default_factory=dict)
     compares_worst: list = field(default_factory=list)  # [str], the worst first
     compares_best: list = field(default_factory=list)
+    ranked: int = 0  # measures with a figure and a position
     spending: list = field(default_factory=list)
     grades: list = field(default_factory=list)
     trends: list = field(default_factory=list)
@@ -329,7 +401,7 @@ def compare(council, group="england"):
     rows = []
     for area_id, area_name, note in AREAS:
         area_rows = []
-        for m in (m for m in MEASURES if m.area == area_id):
+        for m in (m for m in MEASURES if m.area == area_id and available(m)):
             group_values = [c["values"][m.id] for c in members if m.id in c["values"]]
             value = council["values"].get(m.id)
             row = Row(measure=m, period=period(m), value=fmt(value, m.unit),
@@ -342,8 +414,10 @@ def compare(council, group="england"):
                 row.strip = strip(all_values, council["code"], member_codes, m.better, median(group_values))
             area_rows.append(row)
             rows.append(row)
-        result.areas.append((area_id, area_name, note, area_rows))
+        shown = [r for r in area_rows if r.band]
+        result.areas.append(Area(area_id, area_name, note, shown, len(area_rows) - len(shown)))
     banded = [r for r in rows if r.band]
+    result.ranked = len(banded)
     result.counts = {key: sum(1 for r in banded if r.band == key) for key in BANDS}
     result.compares_worst = _summary(banded, worst=True)
     result.compares_best = _summary(banded, worst=False)
@@ -420,7 +494,7 @@ def line_chart(periods, series, unit):
         last = next((data[p] for p in reversed(periods) if data.get(p) is not None), None)
         lines.append({"name": name, "path": path_d, "points": points, "class": css, "last": fmt(last, unit)})
     return {"width": CHART_W, "height": CHART_H, "left": PAD_L, "right": CHART_W - PAD_R, "ticks": ticks,
-            "labels": labels, "lines": lines}
+            "labels": labels, "lines": lines, "top": top, "periods": periods, "pad_t": PAD_T, "plot_h": height}
 
 
 TRENDS = [
@@ -446,7 +520,7 @@ def _trends(council, members):
         chart = line_chart(periods, [(council["name"], mine, "app-chart__line--me"),
                                      ("Median", medians, "app-chart__line--median")], unit)
         if chart:
-            charts.append({"title": title, "note": note, "chart": chart})
+            charts.append({"id": trend_id, "title": title, "note": note, "chart": chart})
     return charts
 
 
@@ -505,4 +579,86 @@ def council_tax(council):
         "services": services,
         "left_out": [label for label, key in CT_SERVICES if key in spend and spend[key] <= 0],
         "funding": council.get("funding"),
+    }
+
+
+# Measure pages: a hexagon map of England and every council ranked
+
+HEXMAP_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hexmap.json")
+# Colour by quarter of England, best first, as on the council pages
+QUARTER_CLASSES = ["app-q1", "app-q2", "app-q3", "app-q4"]
+QUARTER_NAMES = ["Top quarter", "Second quarter", "Third quarter", "Bottom quarter"]
+
+
+def measure_by_id(measure_id):
+    return next(m for m in MEASURES if m.id == measure_id)
+
+
+def ranking(measure):
+    """[(position, council, value, quarter 0-3)] for every council with a figure, best first."""
+    with_values = [c for c in councils().values() if measure.id in c["values"]]
+    values = [c["values"][measure.id] for c in with_values]
+    rows = []
+    for c in with_values:
+        pos = position(c["values"][measure.id], values, measure.better)
+        quarter = min(3, int((pos - 1) / len(values) * 4))
+        rows.append((pos, c, c["values"][measure.id], quarter))
+    rows.sort(key=lambda r: (r[0], r[1]["name"]))
+    return rows
+
+
+@cache
+def _hexes():
+    with open(HEXMAP_FILE) as f:
+        return json.load(f)
+
+
+def hexmap(measure):
+    """SVG geometry for the map: every district in England, ours coloured.
+
+    Hexagons are pointy-topped in odd-r layout (odd rows shifted right), and
+    r counts up from the south, so it is flipped to draw north at the top.
+    """
+    from pipeline.sheets import SAME_COUNCIL
+    alias = {a: b for pair in SAME_COUNCIL for a, b in (pair, pair[::-1])}
+    by_code = load()["by_code"]
+    quarter = {c["code"]: q for _, c, _, q in ranking(measure)}
+    value = {c["code"]: v for _, c, v, _ in ranking(measure)}
+    hexes = _hexes()["hexes"]
+    size = 10  # centre to corner
+    w = math.sqrt(3) * size
+    max_r = max(h["r"] for h in hexes.values())
+    corners = [(round(math.cos(math.radians(a)) * size, 2), round(math.sin(math.radians(a)) * size, 2))
+               for a in (30, 90, 150, 210, 270, 330)]
+    cells = []
+    for code, h in hexes.items():
+        council = by_code.get(code) or by_code.get(alias.get(code))
+        x = h["q"] * w + (w / 2 if h["r"] % 2 else 0) + w
+        y = (max_r - h["r"]) * size * 1.5 + size * 1.5
+        points = " ".join(f"{round(x + dx, 1)},{round(y + dy, 1)}" for dx, dy in corners)
+        if council and council["code"] in quarter:
+            q = quarter[council["code"]]
+            cells.append({"points": points, "class": QUARTER_CLASSES[q], "council": council,
+                          "label": f"{council['name']}: {fmt(value[council['code']], measure.unit)}, "
+                                   f"{QUARTER_NAMES[q].lower()}"})
+        elif council:
+            cells.append({"points": points, "class": "app-hex--none", "council": council,
+                          "label": f"{council['name']}: no figure"})
+        else:
+            cells.append({"points": points, "class": "app-hex--other", "council": None, "label": h["n"]})
+    width = max(h["q"] for h in hexes.values()) * w + w * 2.5
+    height = (max_r + 1) * size * 1.5 + size * 2
+    return {"cells": cells, "width": round(width), "height": round(height)}
+
+
+def site_data():
+    """What the charts' JavaScript needs, in one file every page shares:
+    each council's figures, so marks can be named and a second council
+    drawn on any page."""
+    everyone = sorted(councils().values(), key=lambda c: c["name"])
+    return {
+        "councils": [{"slug": c["slug"], "name": c["name"], "code": c["code"], "region": c["region"],
+                      "type": c["type"], "values": c["values"], "spend": c["spend"], "trends": c["trends"]}
+                     for c in everyone],
+        "measures": {m.id: {"label": m.label, "unit": m.unit, "better": m.better} for m in MEASURES},
     }

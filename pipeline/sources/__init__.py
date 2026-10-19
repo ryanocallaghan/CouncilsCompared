@@ -1,6 +1,11 @@
 """One module per publication. Each has ID, TITLE and fetch(context) -> Result."""
 
+import math
 from dataclasses import dataclass, field
+
+
+def _missing(value):
+    return value is None or (isinstance(value, float) and math.isnan(value))
 
 
 @dataclass
@@ -17,12 +22,12 @@ class Result:
     notes: list = field(default_factory=list)  # warnings for the update summary
 
     def set(self, code, measure, value, places=1):
-        if value is None:
+        if _missing(value):
             return
         self.values.setdefault(code, {})[measure] = round(value, places) if places is not None else value
 
     def trend(self, code, trend, period, value, places=1):
-        if value is None:
+        if _missing(value):
             return
         self.trends.setdefault(code, {}).setdefault(trend, {})[period] = round(value, places)
 

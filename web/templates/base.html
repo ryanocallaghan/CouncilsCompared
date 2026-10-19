@@ -27,7 +27,10 @@
   <meta property="og:title" content="{{ self.title() | trim }}">
   <meta property="og:description" content="{{ description | trim }}">
   <meta property="og:url" content="{{ site_url }}{{ page_path }}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="{{ site_url }}/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   {% if umami %}
     {# Only counts visits on councilscompared.com itself, not preview builds #}
     <script defer src="{{ umami.script }}" data-website-id="{{ umami.website_id }}" data-domains="councilscompared.com,www.councilscompared.com" data-exclude-search="true"></script>
@@ -48,7 +51,7 @@
 
 {% block govukServiceNavigation %}
   {% set items = [] %}
-  {% for href, text in [("/", "Councils"), ("/about/", "About the figures")] %}
+  {% for href, text in [("/", "Councils"), ("/measures/", "Measures"), ("/about/", "About")] %}
     {% set _ = items.append({"href": href, "text": text, "current": nav == href}) %}
   {% endfor %}
   {{ govukServiceNavigation({"navigation": items, "navigationLabel": "Menu", "classes": "app-service-navigation"}) }}
@@ -70,11 +73,12 @@
           <h2 class="govuk-visually-hidden">Support links</h2>
           <ul class="govuk-footer__inline-list">
             <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="/about/">About the figures</a></li>
+            <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="/privacy/">Privacy</a></li>
             <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="/data/councils.csv">Download the figures (CSV)</a></li>
             <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="{{ repo_url }}">Source code</a></li>
             <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="{{ issues_url }}">Report a problem</a></li>
           </ul>
-          <p class="govuk-body-s app-footer__independent"><strong>An independent website.</strong> Not affiliated with GOV.UK, any government department or any council.</p>
+          <p class="govuk-body-s app-footer__independent"><strong>An independent website</strong> made by <a class="govuk-footer__link" href="{{ author_url }}">Ryan O'Callaghan</a>. Not affiliated with GOV.UK, any government department or any council.</p>
           <p class="govuk-body-s">
             Built with the <a class="govuk-footer__link" href="https://design-system.service.gov.uk/">GOV.UK Design System</a>.
             Contains public sector information licensed under the

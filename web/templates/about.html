@@ -61,12 +61,10 @@
     <p class="govuk-body">Contains public sector information licensed under the <a class="govuk-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>. Website scores from the <a class="govuk-link" href="https://index.silktide.com/">Silktide Index</a>.</p>
     <p class="govuk-body">You can <a class="govuk-link" href="/data/councils.csv">download every figure as a spreadsheet (CSV)</a> or <a class="govuk-link" href="/data/councils.json">as JSON</a>.</p>
 
-    <h2 class="govuk-heading-m">Privacy</h2>
-    <p class="govuk-body">This website does not use cookies. It counts visits with <a class="govuk-link" href="https://umami.is/">Umami</a>, which records the pages viewed and the type of browser and device, but nothing that identifies you. If you search by postcode, it is sent to <a class="govuk-link" href="https://postcodes.io/">postcodes.io</a> to find your council and neighbourhood, and is not stored or recorded.</p>
-
-    <h2 class="govuk-heading-m">Who runs this</h2>
-    <p class="govuk-body">Councils compared is an independent website. It is not affiliated with GOV.UK, any government department, any council, or any of the organisations whose figures it uses.</p>
-    <p class="govuk-body">If a figure looks wrong, or you have an idea, <a class="govuk-link" href="{{ issues_url }}">report it on GitHub</a>.</p>
+    <h2 class="govuk-heading-m" id="who">Who made this</h2>
+    <p class="govuk-body">Councils compared was made by <a class="govuk-link" href="{{ author_url }}">Ryan O'Callaghan</a>, independently and in a personal capacity. It is not made on behalf of, funded by or connected with any council, any government department, or any of the organisations whose figures it uses, including any he works or has worked for.</p>
+    <p class="govuk-body">Every figure comes from a published source and the code is public, so anyone can check how it was put together.</p>
+    <p class="govuk-body">If a figure looks wrong, or you have an idea, email <a class="govuk-link" href="mailto:{{ contact_email }}">{{ contact_email }}</a> or <a class="govuk-link" href="{{ issues_url }}">report it on GitHub</a>.</p>
   </div>
 </div>
 {% endblock %}

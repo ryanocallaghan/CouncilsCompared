@@ -8,17 +8,28 @@ def test_builds_every_page(fixture_data, tmp_path):
     # Home, About, and each council's pages: 4 London boroughs (all England,
     # London, and similar councils for Lewisham only), Wigan and Hartlepool
     # (all England, region, type)
-    assert count == 4 + (4 * 2 + 1) + 2 * 3  # with the two postcode search pages
+    from web import model
+    # Home, about, privacy, two postcode pages, measures index and one page per measure, then the councils
+    assert count == 6 + len([m for m in model.MEASURES if model.available(m)]) + (4 * 2 + 1) + 2 * 3
     lewisham = (tmp_path / "lewisham" / "index.html").read_text()
-    assert "Lewisham compared with all councils in England" in lewisham
+    assert "<h1 class=\"govuk-heading-xl govuk-!-margin-bottom-4\">Lewisham</h1>" in lewisham
+    assert "<title>How Lewisham Council compares – Councils compared</title>" in lewisham
+    assert '"@type": "BreadcrumbList"' in lewisham
+    assert "Ryan O'Callaghan" in lewisham
     assert "This is not a government service" in lewisham
-    assert "compares worst with all councils in England on:" in lewisham
-    assert "&lt;p" not in lewisham  # the summary is HTML, not escaped
+    assert "Compares worst on" in lewisham
+    # Measures with no figure are left out, and counted instead
+    assert "Fly-tipping incidents" not in lewisham and "more measures have no figure" in lewisham
+    assert "&lt;" not in lewisham  # no HTML shown as text
+    assert (tmp_path / "privacy" / "index.html").exists()
+    fly = (tmp_path / "measures" / "om-upheld" / "index.html").read_text()
+    assert "Complaints the Ombudsman upheld" in fly and 'class="app-hex app-q1"' in fly
+    assert json.loads((tmp_path / "data" / "site.json").read_text())["councils"]
     similar = (tmp_path / "lewisham" / "similar" / "index.html").read_text()
     assert 'href="/greenwich/similar/"' in similar
     assert (tmp_path / "404.html").exists()
     assert "Where your council tax goes" in lewisham and "Council tax is only part of the money" in lewisham
-    assert "Where your council tax goes" not in similar
+    assert "Where your council tax goes" in similar  # on every comparison page
     assert json.loads((tmp_path / "data" / "councils-by-code.json").read_text())["E09000023"] == "lewisham"
     assert (tmp_path / "_headers").exists()
     assert "https://councilscompared.com/lewisham/similar/" in (tmp_path / "sitemap.xml").read_text()
