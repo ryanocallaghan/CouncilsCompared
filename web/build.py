@@ -179,6 +179,17 @@ def build(out=DIST):
     order = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "band_d", "fly", "waste", "homelessness",
              "silktide", "spending", "ofsted", "neighbours", "population"]
     source_list = [sources[s] for s in order if s in sources]
+    page("/measures/", "measures.html", nav="/measures/")
+    regions_list = sorted({c["region"] for c in councils})
+    types = sorted({c["type"] for c in councils})
+    areas = {a: (name, note) for a, name, note in model.AREAS}
+    for m in model.MEASURES:
+        rows = model.ranking(m)
+        ranked = {c["code"] for _, c, _, _ in rows}
+        page(f"/measures/{m.id.replace('_', '-')}/", "measure.html", nav="/measures/", measure=m, rows=rows,
+             map=model.hexmap(m), period=model.period(m), source=sources.get(m.source, {}),
+             area_name=areas[m.area][0], note=areas[m.area][1], regions=regions_list, types=types,
+             missing=[c for c in councils if c["code"] not in ranked])
     page("/about/", "about.html", nav="/about/", councils=councils, source_list=source_list)
     page("/privacy/", "privacy.html", today="19 October 2026")
     page("404.html", "404.html")
@@ -190,6 +201,8 @@ def build(out=DIST):
     with open(os.path.join(out, "data", "councils.csv"), "w", newline="") as f:
         f.write(csv_text(councils))
     write_lookups(out, councils)
+    with open(os.path.join(out, "data", "site.json"), "w") as f:
+        json.dump(model.site_data(), f, separators=(",", ":"), ensure_ascii=False, allow_nan=False)
     with open(os.path.join(out, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         for path in pages:

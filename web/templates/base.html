@@ -51,7 +51,7 @@
 
 {% block govukServiceNavigation %}
   {% set items = [] %}
-  {% for href, text in [("/", "Councils"), ("/about/", "About")] %}
+  {% for href, text in [("/", "Councils"), ("/measures/", "Measures"), ("/about/", "About")] %}
     {% set _ = items.append({"href": href, "text": text, "current": nav == href}) %}
   {% endfor %}
   {{ govukServiceNavigation({"navigation": items, "navigationLabel": "Menu", "classes": "app-service-navigation"}) }}

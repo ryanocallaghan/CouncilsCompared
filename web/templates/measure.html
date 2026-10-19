@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% set m = measure %}
+{% block title %}{{ m.label }}: every council in England compared{% endblock %}
+{% block description %}{{ m.label }}, for every council in England that runs all local services, ranked and mapped from official statistics ({{ period }}).{% endblock %}
+{% block backLink %}{{ govukBackLink({"text": "All measures", "href": "/measures/"}) }}{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">{{ area_name }}</span>
+    <h1 class="govuk-heading-xl">{{ m.label }}</h1>
+    <p class="govuk-body-s app-secondary-text">{% if m.official %}{{ m.official }}. {% endif %}{{ period }}. {{ "Higher" if m.better == "higher" else "Lower" }} is better. Source: <a class="govuk-link" href="{{ source.url }}">{{ source.title }}</a>.</p>
+  </div>
+</div>
+
+<div class="app-explore" data-module="app-explore">
+  <form class="app-explore__filters" hidden>
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-label--s" for="filter-region">Region</label>
+      <select class="govuk-select" id="filter-region">
+        <option value="">All of England</option>
+        {% for region in regions %}<option>{{ region }}</option>{% endfor %}
+      </select>
+    </div>
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-label--s" for="filter-type">Type of council</label>
+      <select class="govuk-select" id="filter-type">
+        <option value="">All types</option>
+        {% for type in types %}<option>{{ type }}</option>{% endfor %}
+      </select>
+    </div>
+  </form>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <figure class="app-map">
+        <svg class="app-map__svg" viewBox="0 0 {{ map.width }} {{ map.height }}" role="img" aria-label="Map of England with each council as a hexagon, coloured by {{ m.label | lower }}. The same figures are in the table." focusable="false">
+          {% for cell in map.cells %}
+            {% if cell.council %}<a href="/{{ cell.council.slug }}/" data-slug="{{ cell.council.slug }}" data-region="{{ cell.council.region }}" data-type="{{ cell.council.type }}" aria-label="{{ cell.label }}"><polygon class="app-hex {{ cell.class }}" points="{{ cell.points }}"><title>{{ cell.label }}</title></polygon></a>{% else %}<polygon class="app-hex {{ cell.class }}" points="{{ cell.points }}"><title>{{ cell.label }}: not covered</title></polygon>{% endif %}
+          {% endfor %}
+        </svg>
+        <figcaption>
+          <ul class="app-map__legend govuk-body-s">
+            {% for name in model.QUARTER_NAMES %}<li><span class="app-map__key {{ model.QUARTER_CLASSES[loop.index0] }}"></span>{{ name }}</li>{% endfor %}
+            <li><span class="app-map__key app-hex--other"></span>Not covered (county and district areas)</li>
+          </ul>
+          <p class="govuk-body-s app-secondary-text">Each council is the same size, so London is easy to see. Map layout by <a class="govuk-link" href="https://github.com/odileeds/hexmaps">Open Innovations</a>.</p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <table class="govuk-table app-ranking">
+        <caption class="govuk-table__caption govuk-table__caption--m">Every council, {{ "highest" if m.better == "higher" else "lowest" }} first</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Position</th>
+            <th scope="col" class="govuk-table__header">Council</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Figure</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          {% for pos, c, value, q in rows %}
+            <tr class="govuk-table__row" data-region="{{ c.region }}" data-type="{{ c.type }}">
+              <td class="govuk-table__cell govuk-table__cell--numeric">{{ pos }}</td>
+              <td class="govuk-table__cell"><span class="app-map__key {{ model.QUARTER_CLASSES[q] }}"></span><a class="govuk-link" href="/{{ c.slug }}/">{{ c.name }}</a></td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(value, m.unit) }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% if missing %}<p class="govuk-body-s app-secondary-text">No figure for: {{ missing | map(attribute="name") | join(", ") }}.</p>{% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}
