@@ -53,3 +53,47 @@ def fetch(context):
         if sheets.num(row[total]) is not None and sheets.num(row[education]) is not None:
             result.set(code, TOTAL, (sheets.num(row[total]) - sheets.num(row[education])) * per_head)
     return result
+
+
+FUNDING = {
+    "council_tax": r"COUNCIL TAX REQUIREMENT",
+    "business_rates": r"Retained income from Rate Retention Scheme",
+    "general_grant": r"Revenue Support Grant",
+    "grants_inside": r"Specific and special grants inside AEF",
+    "grants_outside": r"Specific and special grants outside AEF",
+}
+
+
+def funding(context):
+    """Where each council's day-to-day money comes from (the RS return).
+
+    Grants are shown as one: most are for specific things (schools, housing
+    benefit, public health), so councils can't spend them on anything else.
+    """
+    item, attachment = govuk.latest(COLLECTION, r"individual local authority data\s*-\s*outturn", r"\(RS\)")
+    rows = sheets.sheet(sheets.workbook(get(attachment["url"])), r"^RS_LA_Data")
+    head = sheets.header_row(rows, r"^ONS Code$")
+    header = rows[head]
+    ons = sheets.column(header, r"^ONS Code$")
+    cols = {name: sheets.column(header, pattern) for name, pattern in FUNDING.items()}
+    year = govuk.years_in(item["title"])
+    period = f"{year - 1}-{str(year)[2:]}"
+    result = Result(id="funding", title=f"MHCLG: Revenue outturn summary, {period}", url=item["web_url"],
+                    period=period, published=govuk.published(item), files=[attachment["url"]])
+    for row in rows[head + 1:]:
+        code = sheets.code(row[ons])
+        if code not in context["population"]:
+            continue
+        v = {name: sheets.num(row[col]) for name, col in cols.items()}
+        if None in v.values():
+            continue
+        # Income is recorded as negative, except the council tax requirement
+        parts = {
+            "Council tax": v["council_tax"],
+            "Business rates": -v["business_rates"],
+            "Government grants": -(v["grants_inside"] + v["grants_outside"] + v["general_grant"]),
+        }
+        total = sum(parts.values())
+        if total > 0 and all(p >= 0 for p in parts.values()):
+            result.extra[code] = {name: round(p / total * 100, 1) for name, p in parts.items()}
+    return result

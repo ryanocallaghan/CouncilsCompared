@@ -34,6 +34,16 @@ def band_d(context):
     header = rows[head]
     ons = sheets.column(header, r"^ONS Code$")
     area = sheets.column(header, r"council tax for area of the billing authority including both local and major")
+    # Who the Band D bill goes to: the council (with and without parish and
+    # other local precepts), and the major preceptors
+    parts = {
+        "with_local": sheets.column(header, r"^8\. Average .*including Adult Social Care precept and local precepts.*current year"),
+        "council": sheets.column(header, r"^9\. Average .*excluding local precepts.*current year"),
+        "gla_or_county": sheets.column(header, r"major precepting authorities.*\(county or GLA\)"),
+        "police": sheets.column(header, r"major precepting authorities.*\(police\)"),
+        "fire": sheets.column(header, r"major precepting authorities.*\(fire\)"),
+        "combined": sheets.column(header, r"major precepting authorities.*\(combined authority\)"),
+    }
     year = govuk.years_in(item["title"])
     result = Result(id="band_d", title=f"MHCLG: {item['title']}", url=item["web_url"],
                     period=f"{year - 1}-{str(year)[2:]}", published=govuk.published(item),
@@ -42,4 +52,13 @@ def band_d(context):
         code = sheets.code(row[ons])
         if code in context["population"]:
             result.set(code, "band_d", sheets.num(row[area]), places=2)
+            values = {name: sheets.num(row[col]) or 0.0 for name, col in parts.items()}
+            result.extra[code] = {
+                "council": round(values["council"], 2),
+                "parish": round(values["with_local"] - values["council"], 2),
+                "gla_or_county": round(values["gla_or_county"], 2),
+                "police": round(values["police"], 2),
+                "fire": round(values["fire"], 2),
+                "combined": round(values["combined"], 2),
+            }
     return result

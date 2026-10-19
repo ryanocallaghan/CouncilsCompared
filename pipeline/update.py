@@ -39,8 +39,10 @@ STEPS = [
     ("fly", "fly", "fetch"),
     ("homelessness", "homelessness", "fetch"),
     ("spending", "spending", "fetch"),
+    ("funding", "spending", "funding"),
     ("ofsted", "ofsted", "fetch"),
     ("silktide", "silktide", "fetch"),
+    ("area_bands", "area_bands", "fetch"),
 ]
 
 # Measures each source provides, in data/councils.json "values"
@@ -138,6 +140,8 @@ def assemble():
             "population": population.values[code]["population"],
             "households": households.get(code),
             "band_d": None,
+            "band_d_parts": None,
+            "funding": None,
             "values": {},
             "spend": {},
             "ofsted": None,
@@ -149,8 +153,11 @@ def assemble():
                 council["values"].update(sources[source_id].values.get(code, {}))
         if sources["band_d"]:
             council["band_d"] = sources["band_d"].values.get(code, {}).get("band_d")
+            council["band_d_parts"] = sources["band_d"].extra.get(code)
         if sources["spending"]:
             council["spend"] = sources["spending"].values.get(code, {})
+        if sources["funding"]:
+            council["funding"] = sources["funding"].extra.get(code)
         if sources["ofsted"]:
             council["ofsted"] = sources["ofsted"].extra.get(code)
         if sources["neighbours"]:

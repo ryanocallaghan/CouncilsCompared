@@ -1,5 +1,1046 @@
 {
- "extra": {},
+ "extra": {
+  "E06000001": {
+   "combined": 0.0,
+   "council": 2124.69,
+   "fire": 99.46,
+   "gla_or_county": 0.0,
+   "parish": 3.32,
+   "police": 332.73
+  },
+  "E06000002": {
+   "combined": 0.0,
+   "council": 2115.86,
+   "fire": 99.46,
+   "gla_or_county": 0.0,
+   "parish": 1.11,
+   "police": 332.73
+  },
+  "E06000003": {
+   "combined": 0.0,
+   "council": 2094.03,
+   "fire": 99.46,
+   "gla_or_county": 0.0,
+   "parish": 18.26,
+   "police": 332.73
+  },
+  "E06000004": {
+   "combined": 0.0,
+   "council": 2139.91,
+   "fire": 99.46,
+   "gla_or_county": 0.0,
+   "parish": 17.73,
+   "police": 332.73
+  },
+  "E06000005": {
+   "combined": 0.0,
+   "council": 2056.87,
+   "fire": 128.12,
+   "gla_or_county": 0.0,
+   "parish": 8.1,
+   "police": 300.74
+  },
+  "E06000006": {
+   "combined": 24.0,
+   "council": 1938.81,
+   "fire": 100.09,
+   "gla_or_county": 0.0,
+   "parish": 8.27,
+   "police": 295.44
+  },
+  "E06000007": {
+   "combined": 0.0,
+   "council": 2007.5,
+   "fire": 100.09,
+   "gla_or_county": 0.0,
+   "parish": 44.58,
+   "police": 295.44
+  },
+  "E06000008": {
+   "combined": 0.0,
+   "council": 2062.96,
+   "fire": 94.73,
+   "gla_or_county": 0.0,
+   "parish": 5.18,
+   "police": 292.4
+  },
+  "E06000009": {
+   "combined": 0.0,
+   "council": 2126.09,
+   "fire": 94.73,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 292.4
+  },
+  "E06000010": {
+   "combined": 0.0,
+   "council": 1873.46,
+   "fire": 107.92,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 313.66
+  },
+  "E06000011": {
+   "combined": 0.0,
+   "council": 1968.9,
+   "fire": 107.92,
+   "gla_or_county": 0.0,
+   "parish": 75.6,
+   "police": 313.66
+  },
+  "E06000012": {
+   "combined": 0.0,
+   "council": 2039.88,
+   "fire": 107.92,
+   "gla_or_county": 0.0,
+   "parish": 22.39,
+   "police": 313.66
+  },
+  "E06000013": {
+   "combined": 0.0,
+   "council": 1884.7,
+   "fire": 107.92,
+   "gla_or_county": 0.0,
+   "parish": 42.18,
+   "police": 313.66
+  },
+  "E06000014": {
+   "combined": 116.62,
+   "council": 1817.43,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 17.24,
+   "police": 335.86
+  },
+  "E06000015": {
+   "combined": 0.0,
+   "council": 1898.99,
+   "fire": 98.41,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 308.6
+  },
+  "E06000016": {
+   "combined": 0.0,
+   "council": 2121.87,
+   "fire": 91.65,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 315.23
+  },
+  "E06000017": {
+   "combined": 0.0,
+   "council": 2263.33,
+   "fire": 91.65,
+   "gla_or_county": 0.0,
+   "parish": 67.37,
+   "police": 315.23
+  },
+  "E06000018": {
+   "combined": 0.0,
+   "council": 2342.08,
+   "fire": 102.21,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 311.1
+  },
+  "E06000019": {
+   "combined": 0.0,
+   "council": 2067.64,
+   "fire": 107.22,
+   "gla_or_county": 0.0,
+   "parish": 93.01,
+   "police": 306.5
+  },
+  "E06000020": {
+   "combined": 0.0,
+   "council": 1694.19,
+   "fire": 124.44,
+   "gla_or_county": 0.0,
+   "parish": 131.13,
+   "police": 306.5
+  },
+  "E06000021": {
+   "combined": 0.0,
+   "council": 1783.78,
+   "fire": 96.77,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 302.57
+  },
+  "E06000022": {
+   "combined": 0.0,
+   "council": 1914.03,
+   "fire": 95.43,
+   "gla_or_county": 0.0,
+   "parish": 65.76,
+   "police": 308.2
+  },
+  "E06000023": {
+   "combined": 0.0,
+   "council": 2310.05,
+   "fire": 95.43,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 308.2
+  },
+  "E06000024": {
+   "combined": 0.0,
+   "council": 1955.01,
+   "fire": 95.43,
+   "gla_or_county": 0.0,
+   "parish": 132.58,
+   "police": 308.2
+  },
+  "E06000025": {
+   "combined": 0.0,
+   "council": 2027.71,
+   "fire": 95.43,
+   "gla_or_county": 0.0,
+   "parish": 119.25,
+   "police": 308.2
+  },
+  "E06000026": {
+   "combined": 0.0,
+   "council": 2028.97,
+   "fire": 109.68,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 303.2
+  },
+  "E06000027": {
+   "combined": 0.0,
+   "council": 2044.11,
+   "fire": 109.68,
+   "gla_or_county": 0.0,
+   "parish": 13.26,
+   "police": 303.2
+  },
+  "E06000030": {
+   "combined": 0.0,
+   "council": 1866.5,
+   "fire": 96.95,
+   "gla_or_county": 0.0,
+   "parish": 176.38,
+   "police": 298.27
+  },
+  "E06000031": {
+   "combined": 36.0,
+   "council": 1836.72,
+   "fire": 92.16,
+   "gla_or_county": 0.0,
+   "parish": 14.22,
+   "police": 314.37
+  },
+  "E06000032": {
+   "combined": 0.0,
+   "council": 2019.62,
+   "fire": 122.72,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 297.59
+  },
+  "E06000033": {
+   "combined": 0.0,
+   "council": 1888.47,
+   "fire": 92.52,
+   "gla_or_county": 0.0,
+   "parish": 8.87,
+   "police": 275.31
+  },
+  "E06000034": {
+   "combined": 0.0,
+   "council": 1886.85,
+   "fire": 92.52,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 275.31
+  },
+  "E06000035": {
+   "combined": 0.0,
+   "council": 1934.33,
+   "fire": 99.81,
+   "gla_or_county": 0.0,
+   "parish": 9.26,
+   "police": 285.15
+  },
+  "E06000036": {
+   "combined": 0.0,
+   "council": 1781.46,
+   "fire": 91.31,
+   "gla_or_county": 0.0,
+   "parish": 93.75,
+   "police": 298.28
+  },
+  "E06000037": {
+   "combined": 0.0,
+   "council": 2017.32,
+   "fire": 91.31,
+   "gla_or_county": 0.0,
+   "parish": 98.46,
+   "police": 298.28
+  },
+  "E06000038": {
+   "combined": 0.0,
+   "council": 2223.18,
+   "fire": 91.31,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 298.28
+  },
+  "E06000039": {
+   "combined": 0.0,
+   "council": 2019.05,
+   "fire": 91.31,
+   "gla_or_county": 0.0,
+   "parish": 5.8,
+   "police": 298.28
+  },
+  "E06000040": {
+   "combined": 0.0,
+   "council": 1526.63,
+   "fire": 91.31,
+   "gla_or_county": 0.0,
+   "parish": 36.4,
+   "police": 298.28
+  },
+  "E06000041": {
+   "combined": 0.0,
+   "council": 2027.4,
+   "fire": 91.31,
+   "gla_or_county": 0.0,
+   "parish": 80.71,
+   "police": 298.28
+  },
+  "E06000042": {
+   "combined": 0.0,
+   "council": 1847.53,
+   "fire": 89.46,
+   "gla_or_county": 0.0,
+   "parish": 136.94,
+   "police": 298.28
+  },
+  "E06000043": {
+   "combined": 0.0,
+   "council": 2180.42,
+   "fire": 117.49,
+   "gla_or_county": 0.0,
+   "parish": 0.72,
+   "police": 281.91
+  },
+  "E06000044": {
+   "combined": 0.0,
+   "council": 1908.41,
+   "fire": 92.84,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 290.46
+  },
+  "E06000045": {
+   "combined": 0.0,
+   "council": 1998.18,
+   "fire": 92.84,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 290.46
+  },
+  "E06000046": {
+   "combined": 0.0,
+   "council": 2103.77,
+   "fire": 92.84,
+   "gla_or_county": 0.0,
+   "parish": 138.72,
+   "police": 290.46
+  },
+  "E06000047": {
+   "combined": 0.0,
+   "council": 2071.11,
+   "fire": 128.12,
+   "gla_or_county": 0.0,
+   "parish": 122.18,
+   "police": 300.74
+  },
+  "E06000049": {
+   "combined": 0.0,
+   "council": 1975.95,
+   "fire": 100.09,
+   "gla_or_county": 0.0,
+   "parish": 83.39,
+   "police": 295.44
+  },
+  "E06000050": {
+   "combined": 0.0,
+   "council": 2076.79,
+   "fire": 100.09,
+   "gla_or_county": 0.0,
+   "parish": 45.01,
+   "police": 295.44
+  },
+  "E06000051": {
+   "combined": 0.0,
+   "council": 1969.09,
+   "fire": 124.44,
+   "gla_or_county": 0.0,
+   "parish": 128.15,
+   "police": 306.5
+  },
+  "E06000052": {
+   "combined": 0.0,
+   "council": 2086.36,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 201.37,
+   "police": 303.2
+  },
+  "E06000054": {
+   "combined": 0.0,
+   "council": 1981.15,
+   "fire": 96.95,
+   "gla_or_county": 0.0,
+   "parish": 195.41,
+   "police": 298.27
+  },
+  "E06000055": {
+   "combined": 0.0,
+   "council": 2011.28,
+   "fire": 122.72,
+   "gla_or_county": 0.0,
+   "parish": 40.15,
+   "police": 297.59
+  },
+  "E06000056": {
+   "combined": 0.0,
+   "council": 1931.54,
+   "fire": 122.72,
+   "gla_or_county": 0.0,
+   "parish": 164.31,
+   "police": 297.59
+  },
+  "E06000057": {
+   "combined": 0.0,
+   "council": 2279.36,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 103.24,
+   "police": 214.34
+  },
+  "E06000058": {
+   "combined": 0.0,
+   "council": 1980.46,
+   "fire": 96.95,
+   "gla_or_county": 0.0,
+   "parish": 35.59,
+   "police": 322.58
+  },
+  "E06000059": {
+   "combined": 0.0,
+   "council": 2205.9,
+   "fire": 96.95,
+   "gla_or_county": 0.0,
+   "parish": 139.59,
+   "police": 322.58
+  },
+  "E06000060": {
+   "combined": 0.0,
+   "council": 2037.5,
+   "fire": 89.46,
+   "gla_or_county": 0.0,
+   "parish": 101.34,
+   "police": 298.28
+  },
+  "E06000061": {
+   "combined": 0.0,
+   "council": 1918.23,
+   "fire": 90.39,
+   "gla_or_county": 0.0,
+   "parish": 80.3,
+   "police": 335.04
+  },
+  "E06000062": {
+   "combined": 0.0,
+   "council": 1959.4,
+   "fire": 90.39,
+   "gla_or_county": 0.0,
+   "parish": 101.83,
+   "police": 335.04
+  },
+  "E06000063": {
+   "combined": 0.0,
+   "council": 2002.64,
+   "fire": 103.14,
+   "gla_or_county": 0.0,
+   "parish": 66.6,
+   "police": 338.94
+  },
+  "E06000064": {
+   "combined": 0.0,
+   "council": 2014.73,
+   "fire": 103.14,
+   "gla_or_county": 0.0,
+   "parish": 51.18,
+   "police": 338.94
+  },
+  "E06000065": {
+   "combined": 116.62,
+   "council": 2036.32,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 55.54,
+   "police": 335.86
+  },
+  "E06000066": {
+   "combined": 0.0,
+   "council": 1950.89,
+   "fire": 109.68,
+   "gla_or_county": 0.0,
+   "parish": 191.82,
+   "police": 308.2
+  },
+  "E08000001": {
+   "combined": 153.95,
+   "council": 1953.08,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 7.41,
+   "police": 285.3
+  },
+  "E08000002": {
+   "combined": 153.95,
+   "council": 2115.9,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 285.3
+  },
+  "E08000003": {
+   "combined": 153.95,
+   "council": 1872.79,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 285.3
+  },
+  "E08000004": {
+   "combined": 153.95,
+   "council": 2156.22,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 6.76,
+   "police": 285.3
+  },
+  "E08000005": {
+   "combined": 153.95,
+   "council": 2161.58,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 285.3
+  },
+  "E08000006": {
+   "combined": 153.95,
+   "council": 2155.2,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 285.3
+  },
+  "E08000007": {
+   "combined": 153.95,
+   "council": 2179.65,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 285.3
+  },
+  "E08000008": {
+   "combined": 153.95,
+   "council": 2007.38,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 0.58,
+   "police": 285.3
+  },
+  "E08000009": {
+   "combined": 153.95,
+   "council": 1850.54,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 1.91,
+   "police": 285.3
+  },
+  "E08000010": {
+   "combined": 153.95,
+   "council": 1712.29,
+   "fire": 0.0,
+   "gla_or_county": 0.0,
+   "parish": 1.14,
+   "police": 285.3
+  },
+  "E08000011": {
+   "combined": 24.0,
+   "council": 2028.94,
+   "fire": 101.25,
+   "gla_or_county": 0.0,
+   "parish": 40.09,
+   "police": 293.97
+  },
+  "E08000012": {
+   "combined": 24.0,
+   "council": 2254.37,
+   "fire": 101.25,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 293.97
+  },
+  "E08000013": {
+   "combined": 24.0,
+   "council": 1975.65,
+   "fire": 101.25,
+   "gla_or_county": 0.0,
+   "parish": 8.51,
+   "police": 293.97
+  },
+  "E08000014": {
+   "combined": 24.0,
+   "council": 2145.51,
+   "fire": 101.25,
+   "gla_or_county": 0.0,
+   "parish": 18.49,
+   "police": 293.97
+  },
+  "E08000015": {
+   "combined": 24.0,
+   "council": 2081.37,
+   "fire": 101.25,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 293.97
+  },
+  "E08000016": {
+   "combined": 0.0,
+   "council": 1942.29,
+   "fire": 95.05,
+   "gla_or_county": 0.0,
+   "parish": 8.58,
+   "police": 280.04
+  },
+  "E08000017": {
+   "combined": 0.0,
+   "council": 1749.86,
+   "fire": 95.05,
+   "gla_or_county": 0.0,
+   "parish": 42.8,
+   "police": 280.04
+  },
+  "E08000018": {
+   "combined": 0.0,
+   "council": 1944.52,
+   "fire": 95.05,
+   "gla_or_county": 0.0,
+   "parish": 61.92,
+   "police": 280.04
+  },
+  "E08000019": {
+   "combined": 0.0,
+   "council": 2130.23,
+   "fire": 95.05,
+   "gla_or_county": 0.0,
+   "parish": 4.84,
+   "police": 280.04
+  },
+  "E08000021": {
+   "combined": 0.0,
+   "council": 2221.21,
+   "fire": 105.11,
+   "gla_or_county": 0.0,
+   "parish": 1.53,
+   "police": 214.34
+  },
+  "E08000022": {
+   "combined": 0.0,
+   "council": 2142.32,
+   "fire": 105.11,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 214.34
+  },
+  "E08000023": {
+   "combined": 0.0,
+   "council": 2114.98,
+   "fire": 105.11,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 214.34
+  },
+  "E08000024": {
+   "combined": 0.0,
+   "council": 1876.8,
+   "fire": 105.11,
+   "gla_or_county": 0.0,
+   "parish": 0.89,
+   "police": 214.34
+  },
+  "E08000025": {
+   "combined": 0.0,
+   "council": 2023.48,
+   "fire": 85.19,
+   "gla_or_county": 0.0,
+   "parish": 9.73,
+   "police": 244.5
+  },
+  "E08000026": {
+   "combined": 0.0,
+   "council": 2186.4,
+   "fire": 85.19,
+   "gla_or_county": 0.0,
+   "parish": 0.63,
+   "police": 244.5
+  },
+  "E08000027": {
+   "combined": 0.0,
+   "council": 1815.15,
+   "fire": 85.19,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 244.5
+  },
+  "E08000028": {
+   "combined": 0.0,
+   "council": 1914.77,
+   "fire": 85.19,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 244.5
+  },
+  "E08000029": {
+   "combined": 0.0,
+   "council": 1843.27,
+   "fire": 85.19,
+   "gla_or_county": 0.0,
+   "parish": 24.3,
+   "police": 244.5
+  },
+  "E08000030": {
+   "combined": 0.0,
+   "council": 2297.79,
+   "fire": 85.19,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 244.5
+  },
+  "E08000031": {
+   "combined": 0.0,
+   "council": 2209.3,
+   "fire": 85.19,
+   "gla_or_county": 0.0,
+   "parish": 0.0,
+   "police": 244.5
+  },
+  "E08000032": {
+   "combined": 0.0,
+   "council": 1965.28,
+   "fire": 89.49,
+   "gla_or_county": 0.0,
+   "parish": 27.68,
+   "police": 278.28
+  },
+  "E08000033": {
+   "combined": 0.0,
+   "council": 2034.19,
+   "fire": 89.49,
+   "gla_or_county": 0.0,
+   "parish": 18.19,
+   "police": 278.28
+  },
+  "E08000034": {
+   "combined": 0.0,
+   "council": 2062.42,
+   "fire": 89.49,
+   "gla_or_county": 0.0,
+   "parish": 10.88,
+   "police": 278.28
+  },
+  "E08000035": {
+   "combined": 0.0,
+   "council": 1903.74,
+   "fire": 89.49,
+   "gla_or_county": 0.0,
+   "parish": 12.22,
+   "police": 278.28
+  },
+  "E08000036": {
+   "combined": 0.0,
+   "council": 1891.63,
+   "fire": 89.49,
+   "gla_or_county": 0.0,
+   "parish": 37.49,
+   "police": 278.28
+  },
+  "E08000037": {
+   "combined": 0.0,
+   "council": 2396.07,
+   "fire": 105.11,
+   "gla_or_county": 0.0,
+   "parish": 0.29,
+   "police": 214.34
+  },
+  "E09000002": {
+   "combined": 0.0,
+   "council": 1688.0,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000003": {
+   "combined": 0.0,
+   "council": 1622.09,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000004": {
+   "combined": 0.0,
+   "council": 1855.85,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000005": {
+   "combined": 0.0,
+   "council": 1724.76,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000006": {
+   "combined": 0.0,
+   "council": 1629.53,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000007": {
+   "combined": 0.0,
+   "council": 1697.04,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000008": {
+   "combined": 0.0,
+   "council": 2089.4,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000009": {
+   "combined": 0.0,
+   "council": 1628.02,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000010": {
+   "combined": 0.0,
+   "council": 1757.16,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000011": {
+   "combined": 0.0,
+   "council": 1597.35,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000012": {
+   "combined": 0.0,
+   "council": 1549.79,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000013": {
+   "combined": 0.0,
+   "council": 1009.0,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000014": {
+   "combined": 0.0,
+   "council": 1803.27,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000015": {
+   "combined": 0.0,
+   "council": 2000.56,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000016": {
+   "combined": 0.0,
+   "council": 1914.15,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000017": {
+   "combined": 0.0,
+   "council": 1534.95,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000018": {
+   "combined": 0.0,
+   "council": 1675.05,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000019": {
+   "combined": 0.0,
+   "council": 1597.64,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000020": {
+   "combined": 0.0,
+   "council": 1156.14,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000021": {
+   "combined": 0.0,
+   "council": 2098.69,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000022": {
+   "combined": 0.0,
+   "council": 1536.6,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000023": {
+   "combined": 0.0,
+   "council": 1726.82,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000024": {
+   "combined": 0.0,
+   "council": 1636.25,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000025": {
+   "combined": 0.0,
+   "council": 1433.72,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000026": {
+   "combined": 0.0,
+   "council": 1784.07,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000027": {
+   "combined": 0.0,
+   "council": 1975.59,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000028": {
+   "combined": 0.0,
+   "council": 1456.75,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000029": {
+   "combined": 0.0,
+   "council": 1868.13,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000030": {
+   "combined": 0.0,
+   "council": 1327.27,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000031": {
+   "combined": 0.0,
+   "council": 1876.45,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000032": {
+   "combined": 0.0,
+   "council": 517.7,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 0.0,
+   "police": 0.0
+  },
+  "E09000033": {
+   "combined": 0.0,
+   "council": 537.74,
+   "fire": 0.0,
+   "gla_or_county": 510.51,
+   "parish": 1.3,
+   "police": 0.0
+  }
+ },
  "files": [
   "https://assets.publishing.service.gov.uk/media/6a02eeeccd2e0e8b5b20b449/Table_10_2026-27.ods"
  ],

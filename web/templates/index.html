@@ -8,7 +8,9 @@
     <h1 class="govuk-heading-xl">How does your council compare?</h1>
     <p class="govuk-body-l">See how your council does on SEND assessments, complaints, council housing, council tax, streets, homelessness and spending, compared with the rest of England, its region, or the councils most like it.</p>
     <p class="govuk-body">Every figure comes from official statistics, updated as new editions are published. It covers the {{ all_councils | length }} councils in England that run all local services: unitary authorities, metropolitan districts and London boroughs.</p>
-    {% with current=None, label="Your council" %}{% include "_choose.html" %}{% endwith %}
+    {% include "_postcode.html" %}
+    <p class="govuk-body govuk-!-margin-top-4">Or choose a council:</p>
+    {% with current=None, label="Council" %}{% include "_choose.html" %}{% endwith %}
   </div>
 </div>
 

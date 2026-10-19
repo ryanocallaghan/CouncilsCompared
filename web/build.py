@@ -103,6 +103,32 @@ def csv_text(councils):
     return out.getvalue()
 
 
+def write_lookups(out, councils):
+    """For the postcode search (functions/go.js): ONS code -> page, and the
+    most common council tax band in each neighbourhood, split into small
+    files by the start of the neighbourhood code."""
+    from pipeline.sheets import SAME_COUNCIL
+    pages = {c["code"]: c["slug"] for c in councils}
+    for old, new in SAME_COUNCIL:
+        for a, b in ((old, new), (new, old)):
+            if a in pages:
+                pages.setdefault(b, pages[a])
+    with open(os.path.join(out, "data", "councils-by-code.json"), "w") as f:
+        json.dump(pages, f, separators=(",", ":"))
+    path = os.path.join(model.ROOT, "data", "sources", "area_bands.json")
+    if not os.path.exists(path):
+        return
+    with open(path) as f:
+        bands = json.load(f)["extra"]
+    shards = {}
+    for area, band in bands.items():
+        shards.setdefault(area[:6], {})[area] = band
+    os.makedirs(os.path.join(out, "data", "bands"), exist_ok=True)
+    for prefix, shard in shards.items():
+        with open(os.path.join(out, "data", "bands", f"{prefix}.json"), "w") as f:
+            json.dump(shard, f, separators=(",", ":"))
+
+
 def build(out=DIST):
     data = model.load()
     councils = sorted(data["councils"].values(), key=lambda c: c["name"])
@@ -128,17 +154,20 @@ def build(out=DIST):
         groups = model.groups_for(council)
         for group in groups:
             page(model.path(council, group), "council.html", nav="/", groups=groups,
-                 comparison=model.compare(council, group))
+                 comparison=model.compare(council, group), council_tax=model.council_tax(council))
     order = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "band_d", "fly", "waste", "homelessness",
              "silktide", "spending", "ofsted", "neighbours", "population"]
     source_list = [sources[s] for s in order if s in sources]
     page("/about/", "about.html", nav="/about/", councils=councils, source_list=source_list)
     page("404.html", "404.html")
+    page("/postcode-not-found/", "postcode_not_found.html")
+    page("/not-covered/", "not_covered.html")
 
     os.makedirs(os.path.join(out, "data"), exist_ok=True)
     shutil.copy(model.DATA_FILE, os.path.join(out, "data", "councils.json"))
     with open(os.path.join(out, "data", "councils.csv"), "w", newline="") as f:
         f.write(csv_text(councils))
+    write_lookups(out, councils)
     with open(os.path.join(out, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         for path in pages:

@@ -8,7 +8,7 @@ def test_builds_every_page(fixture_data, tmp_path):
     # Home, About, and each council's pages: 4 London boroughs (all England,
     # London, and similar councils for Lewisham only), Wigan and Hartlepool
     # (all England, region, type)
-    assert count == 2 + (4 * 2 + 1) + 2 * 3
+    assert count == 4 + (4 * 2 + 1) + 2 * 3  # with the two postcode search pages
     lewisham = (tmp_path / "lewisham" / "index.html").read_text()
     assert "Lewisham compared with all councils in England" in lewisham
     assert "This is not a government service" in lewisham
@@ -17,6 +17,9 @@ def test_builds_every_page(fixture_data, tmp_path):
     similar = (tmp_path / "lewisham" / "similar" / "index.html").read_text()
     assert 'href="/greenwich/similar/"' in similar
     assert (tmp_path / "404.html").exists()
+    assert "Where your council tax goes" in lewisham and "Council tax is only part of the money" in lewisham
+    assert "Where your council tax goes" not in similar
+    assert json.loads((tmp_path / "data" / "councils-by-code.json").read_text())["E09000023"] == "lewisham"
     assert (tmp_path / "_headers").exists()
     assert "https://councilscompared.com/lewisham/similar/" in (tmp_path / "sitemap.xml").read_text()
     assert json.loads((tmp_path / "data" / "councils.json").read_text())["councils"]
