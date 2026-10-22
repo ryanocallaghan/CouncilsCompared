@@ -151,6 +151,26 @@ def test_group_menu(fixture_data):
     assert model.group_option(wigan, "region") == "Councils in North West (1)"
 
 
+def test_key_figures_stand_on_their_own(fixture_data):
+    # Each sentence names the council, year, position and which end is best,
+    # so it still makes sense quoted alone
+    figures = model.key_figures(model.compare(model.councils()["lambeth"]))
+    assert figures[1] == ("In 2025-26, Lambeth was 6th of 6 among all councils in England for complaints the "
+                          "Ombudsman upheld, per 100,000 residents (1st is lowest), at 20 against a median of 7.")
+
+
+def test_measure_summary(fixture_data):
+    m = model.measure_by_id("om_upheld")
+    assert model.measure_summary(m, model.ranking(m)) == (
+        "In 2025-26, the highest figure was Lambeth’s (20) and the lowest Wigan’s (3). "
+        "The median across 6 councils in England was 7.")
+
+
+def test_updated_is_the_newest_publication(fixture_data):
+    assert model.updated() == "2026-09-17"
+    assert model.updated({"ctax"}) == "2026-07-31"
+
+
 def test_ranking_for_a_measure_page(fixture_data):
     rows = model.ranking(model.measure_by_id("om_upheld"))
     assert [(pos, c["name"]) for pos, c, _, _ in rows][:2] == [(1, "Wigan"), (2, "Hartlepool")]
