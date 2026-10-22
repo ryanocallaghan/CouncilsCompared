@@ -284,3 +284,15 @@ def test_coverage(fixture_data, monkeypatch):
     assert model.coverage() == "every single-tier council in England"
     monkeypatch.setattr(model, "PUBLISHED", ["England", "Scotland"])
     assert model.coverage() == "every single-tier council in England and every council in Scotland"
+
+
+def test_scotland_has_one_hub(fixture_data, monkeypatch):
+    monkeypatch.setattr(model, "PUBLISHED", ["England", "Scotland"])
+    assert model.hubs()[-1] == ("nation", "Scotland")
+    assert model.hub_path("nation", "Scotland") == "/scotland/"
+    scotland = model.hub("nation", "Scotland")
+    assert scotland["title"] == "Councils in Scotland" and len(scotland["members"]) == 4
+    measures = {item["measure"].id: item for item in scotland["measures"]}
+    # Scotland's own measures, with their own periods, and none of England's
+    assert measures["literacy"]["period"] == "2024-25" and "ehcp_20wk" not in measures
+    assert scotland["rows"][0]["path"] == "/city-of-edinburgh/"

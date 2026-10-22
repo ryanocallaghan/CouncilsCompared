@@ -37,6 +37,7 @@
           <ul class="govuk-list app-columns">
             {% for c in members %}<li><a class="govuk-link" href="/{{ c.slug }}/">{{ c.name }}</a></li>{% endfor %}
           </ul>
+          <p class="govuk-body"><a class="govuk-link" href="{{ model.hub_path('nation', nation) }}">Compare the {{ members | length }} councils in {{ nation }} with each other</a></p>
         </div>
       </details>
     {% endfor %}

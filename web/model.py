@@ -815,15 +815,19 @@ def slugify(text):
 
 def hubs():
     """[(group, value)] for every hub page: each region of England, then each
-    type of council apart from London boroughs, which are the same as London."""
+    type of council apart from London boroughs, which are the same as London,
+    then each other nation, which has no regions and one type of council."""
     everyone = in_nation("England")
     return ([("region", r) for r in sorted({c["region"] for c in everyone})]
-            + [("type", t) for t in sorted({c["type"] for c in everyone}) if t != "London borough"])
+            + [("type", t) for t in sorted({c["type"] for c in everyone}) if t != "London borough"]
+            + [("nation", n) for n in nations() if n != "England"])
 
 
 def hub_path(group, value):
     if group == "region":
         return f"/regions/{slugify(value)}/"
+    if group == "nation":
+        return f"/{slugify(value)}/"
     return f"/types/{slugify(TYPE_PLURAL[value])}/"
 
 
@@ -837,8 +841,9 @@ def hub_for(council, group):
 def hub(group, value):
     """What a hub page shows: each council's spread of positions within the
     group, and every measure ranked within it."""
-    members = sorted((c for c in in_nation("England") if c[group] == value), key=lambda c: c["name"])
-    phrase = group_phrase(members[0], group)
+    nation = value if group == "nation" else "England"
+    members = sorted((c for c in in_nation(nation) if c[group] == value), key=lambda c: c["name"])
+    phrase = f"councils in {nation}" if group == "nation" else group_phrase(members[0], group)
     rows = []
     for c in members:
         comparison = compare(c, group)
@@ -846,13 +851,13 @@ def hub(group, value):
                      "path": path(c, group if group in groups_for(c) else "nation")})
     measures = []
     for m in MEASURES:
-        if not available(m):
+        if not available(m, nation):
             continue
         ranked = ranking(m, members=members)
         if len(ranked) > 1:
-            measures.append({"measure": m, "rows": ranked, "period": period(m),
+            measures.append({"measure": m, "rows": ranked, "period": period(m, nation),
                              "median": fmt(median(v for _, _, v, _ in ranked), m.unit)})
-    return {"group": group, "value": value, "members": members, "phrase": phrase,
+    return {"group": group, "value": value, "nation": nation, "members": members, "phrase": phrase,
             "title": phrase[0].upper() + phrase[1:], "rows": rows, "measures": measures}
 
 
