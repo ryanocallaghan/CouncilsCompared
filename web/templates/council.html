@@ -4,7 +4,7 @@
 {% set b = c.council %}
 
 {% block title %}{% if c.group == "nation" %}How {{ b.name }} Council compares{% else %}{{ b.name }} Council compared with {{ c.phrase }}{% endif %}{% endblock %}
-{% block description %}How {{ b.name }} Council compares with {{ c.phrase }} on special educational needs, complaints, council housing, council tax, streets, homelessness and spending, from official statistics. See where your council tax goes.{% endblock %}
+{% block description %}How {{ b.name }} Council compares with {{ c.phrase }} on {% if b.nation == "England" %}special educational needs, complaints, council housing, council tax, streets, homelessness and spending{% else %}schools, adult social care, complaints, council housing, council tax, streets, homelessness and spending{% endif %}, from official statistics. See where your council tax goes.{% endblock %}
 
 {% block backLink %}
   {{ govukBackLink({"text": "All councils", "href": "/"}) }}
@@ -195,12 +195,12 @@
 <section class="app-area" id="spending" aria-labelledby="spending-title">
   <div class="app-area__header">
     <h3 class="govuk-heading-m govuk-!-margin-bottom-1" id="spending-title">What the council spends</h3>
-    <p class="govuk-body govuk-!-margin-bottom-0 app-area__headline">{{ c.spending[-1].value }} per resident in {{ sources.spending.period }}, not counting schools. The median is {{ c.spending[-1].median }}.</p>
+    <p class="govuk-body govuk-!-margin-bottom-0 app-area__headline">{{ c.spending[-1].value }} per resident in {{ sources[model.nation_source('spending', b.nation)].period }}, not counting schools. The median is {{ c.spending[-1].median }}.</p>
   </div>
   <details class="govuk-details app-area__details">
     <summary class="govuk-details__summary"><span class="govuk-details__summary-text">Spending by service</span></summary>
     <div class="govuk-details__text app-area__more">
-      <p class="govuk-body app-measure-note">Net spending per resident, after fees, charges and specific grants. Spending more is not better or worse on its own. Negative highways figures come from parking income.</p>
+      <p class="govuk-body app-measure-note">Net spending per resident, after fees, charges and specific grants. Spending more is not better or worse on its own. Negative highways figures come from parking income.{% if b.nation == "Scotland" %} Social work covers adults and children, including the council’s payments to its health and social care partnership (Integration Joint Board). Public health is run by the NHS in Scotland.{% endif %}</p>
       <table class="govuk-table app-compare-table">
         <caption class="govuk-table__caption govuk-visually-hidden">Spending per resident: {{ b.name }} compared with {{ c.phrase }}</caption>
         <thead class="govuk-table__head">

@@ -37,6 +37,10 @@ If a source fails (a site is down, or a spreadsheet changes shape), its previous
 | Ofsted local authority inspection outcomes | GOV.UK Content API (collection) | children's services grade |
 | Silktide Index | the index's pages | website accessibility score |
 | Improvement Service: Local Government Benchmarking Framework (Scotland) | the Spatial Hub's open data API | schools, adult social care, council housing, council tax collection, streets and waste, family groups |
+| Scottish Public Services Ombudsman: statistics (Scotland) | the newest year's page | complaints received |
+| Scottish Government: Homelessness in Scotland (Scotland) | the newest edition in the gov.scot collection | temporary accommodation, time spent in it, settled homes |
+| Scottish Government: Scottish Local Government Finance Statistics (Scotland) | the newest edition in the gov.scot collection | spending per resident |
+| Scottish Government: Council Tax by band (Scotland) | the newest file on the council tax datasets page | Band D council tax |
 
 ### Scotland
 

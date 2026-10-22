@@ -268,7 +268,7 @@ def build(out=DIST):
     page("/", "index.html", nav="/", lastmod=updated, regions=sorted(regions.items()), other_nations=other_nations,
          structured_data={
         "@context": "https://schema.org", "@type": "WebSite", "name": "Councils compared", "url": SITE_URL + "/",
-        "description": "How every single-tier council in England compares, from official statistics.",
+        "description": f"How {model.coverage()} compares, from official statistics.",
         "author": AUTHOR, "publisher": AUTHOR,
     })
     for council in councils:
@@ -281,9 +281,11 @@ def build(out=DIST):
                  council_tax=model.council_tax(council),
                  structured_data=structured_data(council, group, council_updated))
     order = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "band_d", "fly", "waste", "homelessness",
-             "silktide", "spending", "ofsted", "neighbours", "lgbf", "population"]
-    # Scotland's source only once Scotland is on the site
-    source_list = [sources[s] for s in order if s in sources and (s != "lgbf" or "Scotland" in model.nations())]
+             "silktide", "spending", "ofsted", "neighbours", "lgbf", "spso", "scot_homelessness", "scot_band_d",
+             "scot_spending", "population"]
+    # A nation's sources only once the nation is on the site
+    used = set().union(*(model.nation_sources(n) for n in model.nations()))
+    source_list = [sources[s] for s in order if s in sources and s in used]
     page("/measures/", "measures.html", nav="/measures/")
     regions_list = sorted({c["region"] for c in councils if c["nation"] == "England"})
     types = sorted({c["type"] for c in councils if c["nation"] == "England"})
@@ -305,17 +307,23 @@ def build(out=DIST):
                  area_name=areas[m.area][0], note=model.area_note(m.area, nation), regions=regions_list,
                  types=types,
                  missing=[c for c in model.in_nation(nation) if c["code"] not in ranked])
-    band_d_source = sources.get("band_d", {})
-    band_d_updated = model.updated({"band_d"})
-    band_d_rows = model.band_d_ranking()
-    if band_d_rows:
-        page("/council-tax/", "band_d.html", nav="/measures/", lastmod=band_d_updated or None, rows=band_d_rows,
-             summary=model.band_d_summary(band_d_rows), source=band_d_source, updated=band_d_updated,
-             regions=regions_list, types=types,
+    for nation in model.nations():
+        band_d_id = model.nation_source("band_d", nation)
+        band_d_source = sources.get(band_d_id, {})
+        band_d_updated = model.updated({band_d_id})
+        band_d_rows = model.band_d_ranking(nation)
+        if not band_d_rows:
+            continue
+        band_d_path = model.band_d_path(nation)
+        page(band_d_path, "band_d.html", nav="/measures/", lastmod=band_d_updated or None, rows=band_d_rows,
+             nation=nation, summary=model.band_d_summary(band_d_rows, nation), source=band_d_source,
+             updated=band_d_updated, regions=regions_list, types=types,
              structured_data=dataset(f"Council tax Band D {band_d_source.get('period', '')}".strip(),
                                      "The yearly bill for a Band D home, including police, fire and parish "
-                                     "charges.", "/council-tax/", band_d_source.get("period", ""),
-                                     band_d_source, band_d_updated))
+                                     "charges." if nation == "England" else "The yearly bill for a Band D "
+                                     "home, not including water and sewerage charges.", band_d_path,
+                                     band_d_source.get("period", ""), band_d_source, band_d_updated,
+                                     nation=nation))
     for group, value in model.hubs():
         hub = model.hub(group, value)
         hub_path = model.hub_path(group, value)

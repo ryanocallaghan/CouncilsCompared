@@ -6,7 +6,7 @@
   <h2 class="govuk-heading-l govuk-!-margin-top-6" id="council-tax">Where your council tax goes</h2>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <p class="govuk-body">Choose your band to see what your bill in {{ b.name }} pays for in {{ sources.band_d.period }}. <a class="govuk-link" href="https://www.gov.uk/council-tax-bands">Check your council tax band on GOV.UK</a>.</p>
+      <p class="govuk-body">Choose your band to see what your bill in {{ b.name }} pays for in {{ ct.period }}. <a class="govuk-link" href="{{ ct.check[0] }}">{{ ct.check[1] }}</a>.</p>
       <div class="app-ctax__controls govuk-!-display-none-print" hidden>
         <div class="govuk-form-group">
           <label class="govuk-label govuk-label--s" for="ctax-band">Your band</label>
@@ -49,10 +49,11 @@
       {% endfor %}
     </tbody>
   </table>
+  {% if ct.note %}<p class="govuk-body-s app-secondary-text">{{ ct.note }}</p>{% endif %}
 
   {% if ct.services %}
   <h3 class="govuk-heading-m">What the council's share pays for</h3>
-  <p class="govuk-body app-measure-note">The council's part of your bill, <strong data-band-d="{{ ct.council_band_d }}">{{ model.fmt(ct.council_band_d, "£") }}</strong>, split in the same proportions as the council's own spending in {{ sources.spending.period }}, not counting schools.</p>
+  <p class="govuk-body app-measure-note">The council's part of your bill, <strong data-band-d="{{ ct.council_band_d }}">{{ model.fmt(ct.council_band_d, "£") }}</strong>, split in the same proportions as the council's own spending in {{ ct.spend_period }}, not counting schools.</p>
   <table class="govuk-table app-ctax__table">
     <caption class="govuk-table__caption govuk-visually-hidden">What the council's share of your bill pays for</caption>
     <thead class="govuk-table__head"><tr class="govuk-table__row">

@@ -82,6 +82,9 @@ def test_builds_scotland_when_published(fixture_data, tmp_path, monkeypatch):
     assert not (tmp_path / "measures" / "literacy" / "index.html").exists()  # no English page
     assert 'href="/measures/literacy/scotland/"' in (tmp_path / "measures" / "index.html").read_text()
     assert "S12000049" in (tmp_path / "data" / "councils-by-code.json").read_text()
+    band_d = (tmp_path / "council-tax" / "scotland" / "index.html").read_text()
+    assert "every council in Scotland ranked" in band_d and "Scottish Water" in band_d
+    assert "Scottish Assessors" in glasgow and "Social work and social care" in glasgow
 
 
 def test_scotland_not_built_by_default(fixture_data, tmp_path):

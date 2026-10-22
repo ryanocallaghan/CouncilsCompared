@@ -19,7 +19,7 @@
 
 {% block head %}
   <link rel="stylesheet" href="/assets/main.css?v={{ asset_version }}">
-  {% set description %}{% block description %}How does your council compare? Official figures on SEND assessments, complaints, council housing, council tax, streets, homelessness and spending for every single-tier council in England.{% endblock %}{% endset %}
+  {% set description %}{% block description %}How does your council compare? Official figures on SEND assessments, complaints, council housing, council tax, streets, homelessness and spending for {{ model.coverage() }}.{% endblock %}{% endset %}
   <meta name="description" content="{{ description | trim }}">
   <link rel="canonical" href="{{ site_url }}{{ page_path }}">
   <meta property="og:site_name" content="{{ serviceName }}">

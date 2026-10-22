@@ -256,3 +256,31 @@ def test_scottish_councils_are_compared_with_each_other(fixture_data, monkeypatc
     assert "glasgow-city" not in [c["slug"] for c in model.group_members(model.councils()["lewisham"], "nation")]
     assert model.period(model.measure_by_id("ctax_collect"), "Scotland") == "2025-26"
     assert model.measure_by_id("ctax_collect").source_for("Scotland") == "lgbf"
+
+
+def test_scottish_council_tax(fixture_data, monkeypatch):
+    monkeypatch.setattr(model, "PUBLISHED", ["England", "Scotland"])
+    ct = model.council_tax(model.councils()["glasgow-city"])
+    ratios = {b["band"]: b["ratio"] for b in ct["bands"]}
+    # Scotland's bands E to H are higher than England's
+    assert ratios["A"] == pytest.approx(240 / 360) and ratios["H"] == pytest.approx(882 / 360)
+    # All of it goes to the council: no police, fire or parish charges
+    assert [p["label"] for p in ct["who"]] == ["Glasgow City council"]
+    assert (ct["period"], ct["spend_period"]) == ("2026-27", "2024-25")
+    assert ct["check"][0] == "https://www.saa.gov.uk/" and "Scottish Water" in ct["note"]
+    assert [s["label"] for s in ct["services"]] == ["Social work and social care", "Housing and homelessness"]
+
+
+def test_band_d_ranking_is_within_a_nation(fixture_data, monkeypatch):
+    monkeypatch.setattr(model, "PUBLISHED", ["England", "Scotland"])
+    rows = model.band_d_ranking("Scotland")
+    assert [(pos, c["name"]) for pos, c, _, _ in rows] == [(1, "City of Edinburgh"), (2, "Glasgow City")]
+    assert model.band_d_path("Scotland") == "/council-tax/scotland/"
+    assert model.band_d_summary(rows, "Scotland").endswith("The median across 2 councils in Scotland was £1,666.")
+    assert "Glasgow City" not in [c["name"] for _, c, _, _ in model.band_d_ranking()]
+
+
+def test_coverage(fixture_data, monkeypatch):
+    assert model.coverage() == "every single-tier council in England"
+    monkeypatch.setattr(model, "PUBLISHED", ["England", "Scotland"])
+    assert model.coverage() == "every single-tier council in England and every council in Scotland"

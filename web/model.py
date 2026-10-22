@@ -71,6 +71,13 @@ AREA_NOTES = {
         "that still own council homes are included.",
     ("Scotland", "ctax"):
         "How much of the council tax due for the year the council received by the end of the year.",
+    ("Scotland", "complaints"):
+        "The Scottish Public Services Ombudsman looks at complaints the council's own complaints process has "
+        "not resolved. Few go on to a full investigation in Scotland, so the number of complaints that reached "
+        "the Ombudsman is compared.",
+    ("Scotland", "homeless"):
+        "Temporary accommodation and what happened to homeless households, from the council's returns to the "
+        "Scottish Government.",
     ("Scotland", "streets"):
         "Inspections of how clean streets are, how much household waste was recycled, and how satisfied "
         "people are with bin collections and street cleaning. Satisfaction comes from the Scottish Household "
@@ -103,7 +110,7 @@ MEASURES = [
             "New education, health and care (EHC) plans issued within the legal limit of 20 weeks"),
     Measure("om_upheld", "complaints", "Complaints the Ombudsman upheld, per 100,000 residents", "", "lower", "lgo"),
     Measure("om_received", "complaints", "Complaints that reached the Ombudsman, per 100,000 residents", "", "lower",
-            "lgo"),
+            "lgo", nations=("England", "Scotland"), other_sources=(("Scotland", "spso"),)),
     Measure("om_children", "complaints", "Upheld complaints about children's services, per 100,000 residents",
             "", "lower", "lgo_decisions"),
     Measure("om_sen", "complaints", "Upheld complaints about special educational needs, per 100,000 residents",
@@ -136,7 +143,7 @@ MEASURES = [
     Measure("recycling", "streets", "Household waste reused, recycled or composted", "%", "higher", "waste",
             nations=("England", "Scotland"), other_sources=(("Scotland", "lgbf"),)),
     Measure("ta_rate", "homeless", "Households in temporary accommodation, per 1,000 households", "", "lower",
-            "homelessness"),
+            "homelessness", nations=("England", "Scotland"), other_sources=(("Scotland", "scot_homelessness"),)),
     Measure("ta_long", "homeless", "Families in temporary accommodation for 2 years or more", "%", "lower",
             "homelessness"),
     Measure("prevention", "homeless", "People at risk of homelessness helped to keep or find a home", "%", "higher",
@@ -168,6 +175,12 @@ MEASURES = [
             "higher", "lgbf", nations=("Scotland",)),
     Measure("repair_days", "housing", "Days to complete a non-emergency repair", "", "lower", "lgbf",
             "Average number of days taken to complete non-emergency repairs", nations=("Scotland",)),
+    Measure("ta_days", "homeless", "Days households spent in temporary accommodation, on average", "", "lower",
+            "scot_homelessness", "Average total time spent in temporary accommodation, for cases that closed",
+            nations=("Scotland",)),
+    Measure("settled", "homeless", "Homeless households who found a settled home", "%", "higher",
+            "scot_homelessness", "Unintentionally homeless households securing settled accommodation (known "
+            "outcomes where contact was maintained)", nations=("Scotland",)),
     Measure("street_clean", "streets", "Street cleanliness score", "%", "higher", "lgbf", nations=("Scotland",)),
     Measure("bins_satisfied", "streets", "Adults satisfied with bin collections", "%", "higher", "lgbf",
             "Adults satisfied with refuse collection (three-year average)", nations=("Scotland",)),
@@ -176,7 +189,7 @@ MEASURES = [
 ]
 
 SPENDING = [
-    "Children's social care", "Adult social care", "Public health", "Housing (general fund)",
+    "Children's social care", "Adult social care", "Social work and social care", "Public health", "Housing (general fund)",
     "Environmental and regulatory", "Highways and transport", "Culture and leisure", "Planning and development",
     "Central services", "All services excluding schools",
 ]
@@ -227,6 +240,12 @@ def nations():
     """The nations with councils, England first."""
     present = {c["nation"] for c in councils().values()}
     return [n for n in NATIONS.values() if n in present]
+
+
+def coverage():
+    """The councils on the site, in words: "every single-tier council in England"."""
+    return " and ".join(["every single-tier council in England"]
+                        + [f"every council in {n}" for n in nations() if n != "England"])
 
 
 def in_nation(nation):
@@ -550,14 +569,24 @@ def measure_summary(measure, rows, nation="England"):
             f"{nation} was {middle}.")
 
 
-# Sources England's pages use beyond its measures' own
-ENGLAND_ONLY = {"band_d", "spending", "funding", "ofsted", "neighbours", "area_bands"}
+# Sources each nation's pages use beyond its measures' own
+PAGE_SOURCES = {
+    "England": {"band_d", "spending", "funding", "ofsted", "neighbours", "area_bands"},
+    "Scotland": {"scot_band_d", "scot_spending"},
+}
+# Where a nation's council tax and spending figures come from, if not England's sources
+NATION_SOURCES = {("Scotland", "band_d"): "scot_band_d", ("Scotland", "spending"): "scot_spending"}
+
+
+def nation_source(source_id, nation="England"):
+    """The source that gives a nation's figures of this kind: "spending" -> "scot_spending"."""
+    return NATION_SOURCES.get((nation, source_id), source_id)
 
 
 def nation_sources(nation):
     """The sources a nation's pages use."""
     used = {m.source_for(nation) for m in MEASURES if nation in m.nations} | {"population"}
-    return used | ENGLAND_ONLY if nation == "England" else used
+    return used | PAGE_SOURCES.get(nation, set())
 
 
 def updated(source_ids=None):
@@ -644,6 +673,7 @@ TRENDS = [
      "Using the latest population estimate for every year.", ""),
     ("recycling", "Household waste recycling rate", "Reused, recycled or composted.", "%"),
     ("fly_rate", "Fly-tipping incidents per 1,000 residents", "As recorded by the council.", ""),
+    ("ta_days", "Average days in temporary accommodation", "For homelessness cases that closed in each year.", ""),
 ]
 
 
@@ -665,14 +695,30 @@ def _trends(council, members):
     return charts
 
 
-# Council tax bands as a share of Band D (they are fixed by law)
-BANDS_CT = [("A", 6 / 9), ("B", 7 / 9), ("C", 8 / 9), ("D", 1), ("E", 11 / 9), ("F", 13 / 9), ("G", 15 / 9),
-            ("H", 18 / 9)]
+# Council tax bands as a share of Band D (they are fixed by law). Scotland
+# raised bands E to H in 2017.
+BANDS_CT = {
+    "England": [("A", 6 / 9), ("B", 7 / 9), ("C", 8 / 9), ("D", 1), ("E", 11 / 9), ("F", 13 / 9), ("G", 15 / 9),
+                ("H", 18 / 9)],
+    "Scotland": [("A", 240 / 360), ("B", 280 / 360), ("C", 320 / 360), ("D", 1), ("E", 473 / 360),
+                 ("F", 585 / 360), ("G", 705 / 360), ("H", 882 / 360)],
+}
+# Where to find your band
+BAND_CHECK = {
+    "England": ("https://www.gov.uk/council-tax-bands", "Check your council tax band on GOV.UK"),
+    "Scotland": ("https://www.saa.gov.uk/", "Check your council tax band with the Scottish Assessors"),
+}
+# What else is on the bill
+BILL_NOTES = {
+    "Scotland": "Scottish Water’s water and sewerage charges are added to council tax bills too, and are not "
+                "included here.",
+}
 
 # The council's own spending, as split on the council tax calculator
 CT_SERVICES = [
     ("Adult social care", "Adult social care"),
     ("Children's social care", "Children's social care"),
+    ("Social work and social care", "Social work and social care"),
     ("Housing and homelessness", "Housing (general fund)"),
     ("Bins, streets, parks and environment", "Environmental and regulatory"),
     ("Public health", "Public health"),
@@ -704,6 +750,7 @@ def council_tax(council):
         ("fire", "Fire and rescue"),
     ]
     who = [{"key": key, "label": label, "band_d": parts[key]} for key, label in labels if parts.get(key, 0) > 0.5]
+    nation = council["nation"]
     spend = council.get("spend", {})
     positive = [(label, spend[key]) for label, key in CT_SERVICES if spend.get(key, 0) > 0]
     total = sum(v for _, v in positive)
@@ -715,7 +762,11 @@ def council_tax(council):
     return {
         "band_d": council["band_d"],
         "council_band_d": parts["council"],
-        "bands": [{"band": b, "ratio": r} for b, r in BANDS_CT],
+        "bands": [{"band": b, "ratio": r} for b, r in BANDS_CT[nation]],
+        "period": sources().get(nation_source("band_d", nation), {}).get("period", ""),
+        "spend_period": sources().get(nation_source("spending", nation), {}).get("period", ""),
+        "check": BAND_CHECK[nation],
+        "note": BILL_NOTES.get(nation),
         "who": who,
         "services": services,
         "left_out": [label for label, key in CT_SERVICES if key in spend and spend[key] <= 0],
@@ -807,10 +858,10 @@ def hub(group, value):
 
 # The council tax page: every council's Band D bill
 
-def band_d_ranking():
-    """[(position, council, Band D, the council's own part)], lowest first.
-    England only: bands and bills are set differently in Scotland and Wales."""
-    with_values = [c for c in in_nation("England") if c.get("band_d")]
+def band_d_ranking(nation="England"):
+    """[(position, council, Band D, the council's own part)], lowest first,
+    within a nation: bands and bills are set differently in each."""
+    with_values = [c for c in in_nation(nation) if c.get("band_d")]
     values = [c["band_d"] for c in with_values]
     rows = [(position(c["band_d"], values, "lower"), c, c["band_d"], (c.get("band_d_parts") or {}).get("council"))
             for c in with_values]
@@ -818,14 +869,18 @@ def band_d_ranking():
     return rows
 
 
-def band_d_summary(rows):
+def band_d_path(nation="England"):
+    return "/council-tax/" if nation == "England" else f"/council-tax/{slugify(nation)}/"
+
+
+def band_d_summary(rows, nation="England"):
     if len(rows) < 2:
         return None
     low, high = rows[0], rows[-1]
-    when = sources().get("band_d", {}).get("period", "")
+    when = sources().get(nation_source("band_d", nation), {}).get("period", "")
     return (f"{'In ' + when + ', ' if when else ''}the highest Band D council tax was {high[1]['name']}’s "
             f"({fmt(high[2], '£')} a year) and the lowest {low[1]['name']}’s ({fmt(low[2], '£')}). "
-            f"The median across {len(rows)} councils in England was {fmt(median(r[2] for r in rows), '£')}.")
+            f"The median across {len(rows)} councils in {nation} was {fmt(median(r[2] for r in rows), '£')}.")
 
 
 @cache
