@@ -16,6 +16,8 @@ tests/      unit tests, and checks on the data itself
 
 Every Monday the [Update data](.github/workflows/update-data.yml) workflow runs `python -m pipeline.update`. If any figures changed, it opens a pull request (or updates the open one) describing what changed, with the result of the data checks. Cloudflare Pages builds a preview of the pull request; merging it publishes the new figures.
 
+When new figures or pages reach `main`, the [Tell search engines](.github/workflows/indexnow.yml) workflow sends every page in the sitemap to [IndexNow](https://www.indexnow.org/) (Bing, Yandex and others), so they fetch the pages again soon.
+
 If a source fails (a site is down, or a spreadsheet changes shape), its previous figures are kept and the pull request says which one failed, so the others still update.
 
 ### Sources

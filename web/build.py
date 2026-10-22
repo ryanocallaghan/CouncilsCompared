@@ -30,6 +30,8 @@ ISSUES_URL = REPO_URL + "/issues"
 AUTHOR_URL = "https://ryanocallaghan.com"
 AUTHOR = {"@type": "Person", "name": "Ryan O'Callaghan", "url": AUTHOR_URL,
           "sameAs": [AUTHOR_URL, "https://github.com/ryanocallaghan"]}
+# Published at /<key>.txt so IndexNow knows submissions come from us (web/indexnow.py)
+INDEXNOW_KEY = "b49469e07ca9739c5c5e4e3bfaa95e14"
 OGL_URL = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
 CONTACT_URL = "https://www.ryanocallaghan.com/800"  # the contact form on Ryan's website
 
@@ -334,6 +336,8 @@ def build(out=DIST):
                 f"Sitemap: {SITE_URL}/sitemap.xml\n")
     with open(os.path.join(out, "llms.txt"), "w") as f:
         f.write(llms_txt(councils))
+    with open(os.path.join(out, f"{INDEXNOW_KEY}.txt"), "w") as f:
+        f.write(INDEXNOW_KEY)
     for name in os.listdir(os.path.join(HERE, "static")):
         target = os.path.join(out, name if name.startswith("_") else os.path.join("assets", name))
         os.makedirs(os.path.dirname(target), exist_ok=True)

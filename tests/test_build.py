@@ -42,6 +42,7 @@ def test_builds_every_page(fixture_data, tmp_path):
     assert "<lastmod>2026-09-17</lastmod>" in (tmp_path / "sitemap.xml").read_text()
     assert "Content-Signal: search=yes, ai-input=yes" in (tmp_path / "robots.txt").read_text()
     assert "/data/councils.csv" in (tmp_path / "llms.txt").read_text()
+    assert (tmp_path / f"{build.INDEXNOW_KEY}.txt").read_text() == build.INDEXNOW_KEY
     london = (tmp_path / "regions" / "london" / "index.html").read_text()
     assert "<title>London boroughs compared" in london and 'href="/lewisham/region/"' in london
     assert 'href="/regions/london/"' in lewisham and 'href="/types/metropolitan-districts/"' in (
@@ -58,3 +59,10 @@ def test_analytics_can_be_turned_off(fixture_data, tmp_path, monkeypatch):
     monkeypatch.setattr(build, "UMAMI_WEBSITE_ID", "abc")
     build.build(str(tmp_path))
     assert 'data-website-id="abc"' in (tmp_path / "index.html").read_text()
+
+
+def test_indexnow_sends_every_page_in_the_sitemap(fixture_data, tmp_path):
+    from web import indexnow
+    build.build(str(tmp_path))
+    pages = indexnow.urls(tmp_path / "sitemap.xml")
+    assert "https://councilscompared.com/" in pages and "https://councilscompared.com/lewisham/similar/" in pages
