@@ -176,15 +176,15 @@ def temporal_coverage(period):
     return None
 
 
-def dataset(measure, path, period, source, updated):
-    """A measure page as a dataset, for Google Dataset Search."""
+def dataset(name, description, path, period, source, updated, ogl=True):
+    """A ranking page as a dataset, for Google Dataset Search."""
     data = {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": f"{measure.label}: every council in England",
-        "description": f"{measure.label}, for every council in England that runs all local services "
+        "name": f"{name}: every council in England",
+        "description": f"{name}, for every council in England that runs all local services "
                        f"(unitary authorities, metropolitan districts and London boroughs), ranked, "
-                       f"from official statistics. {'Higher' if measure.better == 'higher' else 'Lower'} is better.",
+                       f"from official statistics. {description}",
         "url": SITE_URL + path,
         "creator": AUTHOR,
         "spatialCoverage": {"@type": "Place", "name": "England"},
@@ -196,7 +196,7 @@ def dataset(measure, path, period, source, updated):
     }
     if source.get("url"):
         data["isBasedOn"] = source["url"]
-    if measure.source != "silktide":  # the Silktide Index is not under the OGL
+    if ogl:
         data["license"] = OGL_URL
     if temporal_coverage(period):
         data["temporalCoverage"] = temporal_coverage(period)
@@ -282,10 +282,33 @@ def build(out=DIST):
         measure_updated = model.updated({m.source})
         page(path, "measure.html", nav="/measures/", lastmod=measure_updated or None, measure=m, rows=rows,
              summary=model.measure_summary(m, rows), updated=measure_updated,
-             structured_data=dataset(m, path, model.period(m), source, measure_updated),
+             structured_data=dataset(m.label, f"{'Higher' if m.better == 'higher' else 'Lower'} is better.", path,
+                                     model.period(m), source, measure_updated,
+                                     ogl=m.source != "silktide"),  # the Silktide Index is not under the OGL
              map=model.hexmap(m), period=model.period(m), source=source,
              area_name=areas[m.area][0], note=areas[m.area][1], regions=regions_list, types=types,
              missing=[c for c in councils if c["code"] not in ranked])
+    band_d_source = sources.get("band_d", {})
+    band_d_updated = model.updated({"band_d"})
+    band_d_rows = model.band_d_ranking()
+    if band_d_rows:
+        page("/council-tax/", "band_d.html", nav="/measures/", lastmod=band_d_updated or None, rows=band_d_rows,
+             summary=model.band_d_summary(band_d_rows), source=band_d_source, updated=band_d_updated,
+             regions=regions_list, types=types,
+             structured_data=dataset(f"Council tax Band D {band_d_source.get('period', '')}".strip(),
+                                     "The yearly bill for a Band D home, including police, fire and parish "
+                                     "charges.", "/council-tax/", band_d_source.get("period", ""),
+                                     band_d_source, band_d_updated))
+    for group, value in model.hubs():
+        hub = model.hub(group, value)
+        hub_path = model.hub_path(group, value)
+        page(hub_path, "hub.html", nav="/", lastmod=updated, hub=hub, updated=updated, structured_data={
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{"@type": "ListItem", "position": i, "name": name, "item": SITE_URL + p}
+                                for i, (name, p) in enumerate([("Councils compared", "/"),
+                                                               (f"{hub['title']} compared", hub_path)], 1)],
+        })
     page("/about/", "about.html", nav="/about/", councils=councils, source_list=source_list)
     page("/privacy/", "privacy.html", today="19 October 2026")
     page("404.html", "404.html")

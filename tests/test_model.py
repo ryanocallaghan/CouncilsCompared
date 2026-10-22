@@ -171,6 +171,22 @@ def test_updated_is_the_newest_publication(fixture_data):
     assert model.updated({"ctax"}) == "2026-07-31"
 
 
+def test_band_d_lowest_first(fixture_data):
+    rows = model.band_d_ranking()
+    assert rows[0][0] == 1 and rows[-1][:1] == (6,) and rows[-1][1]["name"] == "Lewisham"
+
+
+def test_hubs(fixture_data):
+    # London boroughs are the same as London, so have no separate type hub
+    assert model.hubs() == [("region", "London"), ("region", "North East"), ("region", "North West"),
+                            ("type", "Metropolitan district"), ("type", "Unitary authority")]
+    assert model.hub_path("type", "Unitary authority") == "/types/unitary-authorities/"
+    assert model.hub_for(model.councils()["lewisham"], "type") == "/regions/london/"
+    london = model.hub("region", "London")
+    assert london["title"] == "London boroughs"
+    assert [r["path"] for r in london["rows"]][0] == "/greenwich/region/"
+
+
 def test_ranking_for_a_measure_page(fixture_data):
     rows = model.ranking(model.measure_by_id("om_upheld"))
     assert [(pos, c["name"]) for pos, c, _, _ in rows][:2] == [(1, "Wigan"), (2, "Hartlepool")]

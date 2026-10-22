@@ -10,6 +10,7 @@
       <h2 class="govuk-heading-m govuk-!-margin-top-6">{{ area_name }}</h2>
       <ul class="govuk-list">
         {% for m in model.MEASURES if m.area == area_id and model.available(m) %}<li><a class="govuk-link" href="/measures/{{ m.id | replace('_', '-') }}/">{{ m.label }}</a></li>{% endfor %}
+        {% if area_id == "ctax" %}<li><a class="govuk-link" href="/council-tax/">Band D council tax</a></li>{% endif %}
       </ul>
     {% endfor %}
   </div>

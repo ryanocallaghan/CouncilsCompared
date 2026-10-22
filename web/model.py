@@ -631,9 +631,10 @@ def measure_by_id(measure_id):
     return next(m for m in MEASURES if m.id == measure_id)
 
 
-def ranking(measure):
-    """[(position, council, value, quarter 0-3)] for every council with a figure, best first."""
-    with_values = [c for c in councils().values() if measure.id in c["values"]]
+def ranking(measure, members=None):
+    """[(position, council, value, quarter 0-3)] for every council (or every
+    one of members) with a figure, best first."""
+    with_values = [c for c in members or councils().values() if measure.id in c["values"]]
     values = [c["values"][measure.id] for c in with_values]
     rows = []
     for c in with_values:
@@ -642,6 +643,78 @@ def ranking(measure):
         rows.append((pos, c, c["values"][measure.id], quarter))
     rows.sort(key=lambda r: (r[0], r[1]["name"]))
     return rows
+
+
+# Hub pages: every council in a region, or of a type, side by side
+
+def slugify(text):
+    import re
+    return re.sub(r"[^a-z0-9]+", "-", text.lower().replace("&", "and").replace("'", "")).strip("-")
+
+
+def hubs():
+    """[(group, value)] for every hub page: each region, then each type of
+    council apart from London boroughs, which are the same as London."""
+    everyone = councils().values()
+    return ([("region", r) for r in sorted({c["region"] for c in everyone})]
+            + [("type", t) for t in sorted({c["type"] for c in everyone}) if t != "London borough"])
+
+
+def hub_path(group, value):
+    if group == "region":
+        return f"/regions/{slugify(value)}/"
+    return f"/types/{slugify(TYPE_PLURAL[value])}/"
+
+
+def hub_for(council, group):
+    """The hub page a council's region or type links to, if there is one."""
+    if group == "type" and council["type"] == "London borough":
+        return hub_path("region", "London")
+    return hub_path(group, council[group])
+
+
+def hub(group, value):
+    """What a hub page shows: each council's spread of positions within the
+    group, and every measure ranked within it."""
+    members = sorted((c for c in councils().values() if c[group] == value), key=lambda c: c["name"])
+    phrase = group_phrase(members[0], group)
+    rows = []
+    for c in members:
+        comparison = compare(c, group)
+        rows.append({"council": c, "counts": comparison.counts, "ranked": comparison.ranked,
+                     "path": path(c, group if group in groups_for(c) else "england")})
+    measures = []
+    for m in MEASURES:
+        if not available(m):
+            continue
+        ranked = ranking(m, members)
+        if len(ranked) > 1:
+            measures.append({"measure": m, "rows": ranked, "period": period(m),
+                             "median": fmt(median(v for _, _, v, _ in ranked), m.unit)})
+    return {"group": group, "value": value, "members": members, "phrase": phrase,
+            "title": phrase[0].upper() + phrase[1:], "rows": rows, "measures": measures}
+
+
+# The council tax page: every council's Band D bill
+
+def band_d_ranking():
+    """[(position, council, Band D, the council's own part)], lowest first."""
+    with_values = [c for c in councils().values() if c.get("band_d")]
+    values = [c["band_d"] for c in with_values]
+    rows = [(position(c["band_d"], values, "lower"), c, c["band_d"], (c.get("band_d_parts") or {}).get("council"))
+            for c in with_values]
+    rows.sort(key=lambda r: (r[0], r[1]["name"]))
+    return rows
+
+
+def band_d_summary(rows):
+    if len(rows) < 2:
+        return None
+    low, high = rows[0], rows[-1]
+    when = sources().get("band_d", {}).get("period", "")
+    return (f"{'In ' + when + ', ' if when else ''}the highest Band D council tax was {high[1]['name']}’s "
+            f"({fmt(high[2], '£')} a year) and the lowest {low[1]['name']}’s ({fmt(low[2], '£')}). "
+            f"The median across {len(rows)} councils in England was {fmt(median(r[2] for r in rows), '£')}.")
 
 
 @cache

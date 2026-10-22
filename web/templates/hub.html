@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}{{ hub.title }} compared{% endblock %}
+{% block description %}How the {{ hub.members | length }} {{ hub.phrase }} compare with each other on special educational needs, complaints, council housing, council tax, streets and homelessness, from official statistics.{% endblock %}
+{% block backLink %}{{ govukBackLink({"text": "All councils", "href": "/"}) }}{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">{{ hub.title }} compared</h1>
+    <p class="govuk-body-l">How the {{ hub.members | length }} {{ hub.phrase }} compare with each other, on official statistics.</p>
+    <p class="govuk-body">{{ hub.members | council_links(hub.group) }}.</p>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-6">Where each council sits</h2>
+    <p class="govuk-body">How many measures each council is in the top half, below the middle, or in the bottom quarter of {{ hub.phrase }}. Councils serve very different places, so a low position can reflect more need or less money, not only how well a council is run.</p>
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Council</th>
+          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Top half</th>
+          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Below the middle</th>
+          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Bottom quarter</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        {% for row in hub.rows %}
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a class="govuk-link" href="{{ row.path }}">{{ row.council.name }}</a></td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">{{ row.counts.top }}</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">{{ row.counts.middle }}</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric">{{ row.counts.bottom }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-6">Each measure</h2>
+    {% for area_id, area_name, note in model.AREAS %}
+      {% set area_measures = hub.measures | selectattr("measure.area", "equalto", area_id) | list %}
+      {% if area_measures %}
+        <h3 class="govuk-heading-s govuk-!-margin-top-6">{{ area_name }}</h3>
+        {% for item in area_measures %}
+          {% set m = item.measure %}
+          {% set best = item.rows[0] %}
+          {% set worst = item.rows[-1] %}
+          <details class="govuk-details">
+            <summary class="govuk-details__summary"><span class="govuk-details__summary-text">{{ m.label }}</span></summary>
+            <div class="govuk-details__text">
+              <p class="govuk-body">{% if item.period %}In {{ item.period }}, {% endif %}{{ best[1].name }} was 1st of {{ item.rows | length }} {{ hub.phrase }} ({{ model.fmt(best[2], m.unit) }}) and {{ worst[1].name }} was last ({{ model.fmt(worst[2], m.unit) }}). The median was {{ item.median }}. {{ "Higher" if m.better == "higher" else "Lower" }} is better.</p>
+              <table class="govuk-table">
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Position</th>
+                    <th scope="col" class="govuk-table__header">Council</th>
+                    <th scope="col" class="govuk-table__header govuk-table__header--numeric">Figure</th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  {% for pos, c, value, q in item.rows %}
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell govuk-table__cell--numeric">{{ pos }}</td>
+                      <td class="govuk-table__cell"><span class="app-map__key {{ model.QUARTER_CLASSES[q] }}"></span>{{ c.name }}</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(value, m.unit) }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+              <p class="govuk-body"><a class="govuk-link" href="/measures/{{ m.id | replace('_', '-') }}/">Every council in England on this measure</a></p>
+            </div>
+          </details>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    <p class="govuk-body-s app-secondary-text">Last updated {{ updated | long_date }}. <a class="govuk-link" href="/about/">About the figures</a></p>
+  </div>
+</div>
+<script type="application/ld+json">{{ structured_data | tojson }}</script>
+{% endblock %}
