@@ -5,7 +5,7 @@
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl">Page not found</h1>
     <p class="govuk-body">If you typed the web address, check it is correct.</p>
-    <p class="govuk-body">This website covers the councils in England that run all local services. <a class="govuk-link" href="/">Find a council</a>.</p>
+    <p class="govuk-body">This website covers the councils in England that run all local services{% for n in model.nations() if n != "England" %} and every council in {{ n }}{% endfor %}. <a class="govuk-link" href="/">Find a council</a>.</p>
   </div>
 </div>
 {% endblock %}

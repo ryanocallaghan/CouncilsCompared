@@ -11,7 +11,7 @@
     <h2 class="govuk-heading-m">Which councils are included</h2>
     <p class="govuk-body">The {{ councils | length }} councils in England that run all local services: unitary authorities, metropolitan districts and London boroughs. In areas with a county council and district councils, services are split between them, so they are not included. The City of London and the Isles of Scilly are left out because they are very small and share many services.</p>
     {% if "Scotland" in model.nations() %}
-      <p class="govuk-body">All 32 councils in Scotland are included too. Councils in Scotland run different services from councils in England, and the statistics are collected differently, so Scottish councils are only compared with each other. Most of their figures come from the Local Government Benchmarking Framework, which every Scottish council reports to.</p>
+      <p class="govuk-body">All 32 councils in Scotland are included too. Councils in Scotland run different services from councils in England, and the statistics are collected differently, so Scottish councils are only compared with each other. Most of their figures come from the Local Government Benchmarking Framework, which every Scottish council reports to. Complaints come from the Scottish Public Services Ombudsman, and homelessness, spending and council tax from the Scottish Government. In Scotland all of the council tax goes to the council, and water and sewerage charges are added to the bill for Scottish Water.</p>
     {% endif %}
 
     <h2 class="govuk-heading-m">How councils are compared</h2>

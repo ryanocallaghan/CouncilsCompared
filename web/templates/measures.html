@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}Every measure, every council{% endblock %}
-{% block description %}Maps and rankings of every council in England on special educational needs, complaints, council housing, council tax, streets and homelessness.{% endblock %}
+{% block description %}Maps and rankings of {{ model.coverage() }} on special educational needs, complaints, council housing, council tax, streets and homelessness.{% endblock %}
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
@@ -16,7 +16,7 @@
       <h{{ level }} class="govuk-heading-m govuk-!-margin-top-6">{{ area_name }}</h{{ level }}>
       <ul class="govuk-list">
         {% for m in shown %}<li><a class="govuk-link" href="{{ model.measure_path(m, nation) }}">{{ m.label }}</a></li>{% endfor %}
-        {% if area_id == "ctax" and nation == "England" %}<li><a class="govuk-link" href="/council-tax/">Band D council tax</a></li>{% endif %}
+        {% if area_id == "ctax" and model.band_d_ranking(nation) %}<li><a class="govuk-link" href="{{ model.band_d_path(nation) }}">Band D council tax</a></li>{% endif %}
       </ul>
       {% endif %}
     {% endfor %}

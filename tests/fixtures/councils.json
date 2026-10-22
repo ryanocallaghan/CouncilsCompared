@@ -99,6 +99,18 @@
     "literacy": "2024-25",
     "ctax_collect": "2025-26"
    }
+  },
+  "scot_band_d": {
+   "title": "Scottish Government: Council Tax by band, 2026-27",
+   "url": "https://www.gov.scot/publications/council-tax-datasets/",
+   "period": "2026-27",
+   "published": "2026-03-31"
+  },
+  "scot_spending": {
+   "title": "Scottish Government: Scottish Local Government Finance Statistics, 2024-25",
+   "url": "https://www.gov.scot/publications/scottish-local-government-finance-statistics-2024-25/",
+   "period": "2024-25",
+   "published": "2026-02-05"
   }
  },
  "councils": [
@@ -310,14 +322,20 @@
    "nation": "Scotland",
    "population": 654000,
    "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "band_d": 1706.0,
+   "band_d_parts": {
+    "council": 1706.0
+   },
    "funding": null,
    "values": {
     "literacy": 68.5,
     "ctax_collect": 93.0
    },
-   "spend": {},
+   "spend": {
+    "Social work and social care": 931.4,
+    "Housing (general fund)": 48.8,
+    "All services excluding schools": 1496.0
+   },
    "ofsted": null,
    "neighbours": [
     "S12000036",
@@ -335,14 +353,19 @@
    "nation": "Scotland",
    "population": 531000,
    "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "band_d": 1626.05,
+   "band_d_parts": {
+    "council": 1626.05
+   },
    "funding": null,
    "values": {
     "literacy": 76.0,
     "ctax_collect": 96.5
    },
-   "spend": {},
+   "spend": {
+    "Social work and social care": 848.2,
+    "All services excluding schools": 1241.8
+   },
    "ofsted": null,
    "neighbours": [
     "S12000049",

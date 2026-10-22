@@ -1,0 +1,335 @@
+{
+ "extra": {},
+ "files": [
+  "https://www.gov.scot/binaries/content/documents/govscot/publications/statistics/2026/02/scottish-local-government-finance-statistics-2024-25/documents/la-level---net-revenue-expenditure-by-subservice/la-level---net-revenue-expenditure-by-subservice/govscot%3Adocument/Scottish%2BLocal%2BGovernment%2BFinance%2BStatistics%2B%2528SLGFS%2529%2B2024-25%2B-%2BLA%2BLevel%2B-%2BNet%2BRevenue%2BExpenditure%2Bby%2BSubservice%2B-%2B2026-01-09.xlsx"
+ ],
+ "id": "scot_spending",
+ "notes": [],
+ "period": "2024-25",
+ "published": "2026-02-05",
+ "title": "Scottish Government: Scottish Local Government Finance Statistics, 2024-25",
+ "trends": {},
+ "url": "https://www.gov.scot/publications/scottish-local-government-finance-statistics-2024-25/",
+ "values": {
+  "S12000005": {
+   "All services excluding schools": 1406.2,
+   "Central services": 114.6,
+   "Culture and leisure": 81.2,
+   "Environmental and regulatory": 118.0,
+   "Highways and transport": 66.1,
+   "Housing (general fund)": 28.2,
+   "Planning and development": 21.2,
+   "Social work and social care": 977.0
+  },
+  "S12000006": {
+   "All services excluding schools": 1608.7,
+   "Central services": 113.9,
+   "Culture and leisure": 122.9,
+   "Environmental and regulatory": 157.8,
+   "Highways and transport": 119.5,
+   "Housing (general fund)": 97.1,
+   "Planning and development": 27.2,
+   "Social work and social care": 970.3
+  },
+  "S12000008": {
+   "All services excluding schools": 1345.4,
+   "Central services": 2.8,
+   "Culture and leisure": 81.8,
+   "Environmental and regulatory": 131.9,
+   "Highways and transport": 88.6,
+   "Housing (general fund)": 45.5,
+   "Planning and development": 31.6,
+   "Social work and social care": 963.1
+  },
+  "S12000010": {
+   "All services excluding schools": 1312.1,
+   "Central services": 34.8,
+   "Culture and leisure": 155.5,
+   "Environmental and regulatory": 119.0,
+   "Highways and transport": 63.9,
+   "Housing (general fund)": 61.7,
+   "Planning and development": 42.2,
+   "Social work and social care": 835.0
+  },
+  "S12000011": {
+   "All services excluding schools": 1200.9,
+   "Central services": 29.1,
+   "Culture and leisure": 115.0,
+   "Environmental and regulatory": 121.2,
+   "Highways and transport": 88.5,
+   "Housing (general fund)": 61.6,
+   "Planning and development": 34.7,
+   "Social work and social care": 750.7
+  },
+  "S12000013": {
+   "All services excluding schools": 2327.9,
+   "Central services": 219.7,
+   "Culture and leisure": 152.5,
+   "Environmental and regulatory": 259.8,
+   "Highways and transport": 309.4,
+   "Housing (general fund)": 116.6,
+   "Planning and development": -6.6,
+   "Social work and social care": 1282.8
+  },
+  "S12000014": {
+   "All services excluding schools": 1337.9,
+   "Central services": 98.0,
+   "Culture and leisure": 105.1,
+   "Environmental and regulatory": 108.4,
+   "Highways and transport": 57.4,
+   "Housing (general fund)": 52.5,
+   "Planning and development": 36.1,
+   "Social work and social care": 880.3
+  },
+  "S12000017": {
+   "All services excluding schools": 1464.8,
+   "Central services": 44.2,
+   "Culture and leisure": 90.9,
+   "Environmental and regulatory": 174.1,
+   "Highways and transport": 180.9,
+   "Housing (general fund)": 86.5,
+   "Planning and development": -0.4,
+   "Social work and social care": 905.7
+  },
+  "S12000018": {
+   "All services excluding schools": 1513.3,
+   "Central services": 138.5,
+   "Culture and leisure": 104.4,
+   "Environmental and regulatory": 132.6,
+   "Highways and transport": 62.2,
+   "Housing (general fund)": 147.6,
+   "Planning and development": 78.1,
+   "Social work and social care": 850.3
+  },
+  "S12000019": {
+   "All services excluding schools": 1313.0,
+   "Central services": 57.2,
+   "Culture and leisure": 94.6,
+   "Environmental and regulatory": 113.6,
+   "Highways and transport": 70.6,
+   "Housing (general fund)": 101.4,
+   "Planning and development": 29.0,
+   "Social work and social care": 846.8
+  },
+  "S12000020": {
+   "All services excluding schools": 1355.7,
+   "Central services": 77.4,
+   "Culture and leisure": 78.1,
+   "Environmental and regulatory": 115.0,
+   "Highways and transport": 91.1,
+   "Housing (general fund)": 22.4,
+   "Planning and development": -6.1,
+   "Social work and social care": 978.5
+  },
+  "S12000021": {
+   "All services excluding schools": 1599.8,
+   "Central services": 88.9,
+   "Culture and leisure": 122.4,
+   "Environmental and regulatory": 141.9,
+   "Highways and transport": 95.9,
+   "Housing (general fund)": 73.6,
+   "Planning and development": 55.5,
+   "Social work and social care": 1021.2
+  },
+  "S12000023": {
+   "All services excluding schools": 2710.1,
+   "Central services": 364.2,
+   "Culture and leisure": 248.6,
+   "Environmental and regulatory": 208.9,
+   "Highways and transport": 431.7,
+   "Housing (general fund)": 67.5,
+   "Planning and development": 233.9,
+   "Social work and social care": 1501.8
+  },
+  "S12000026": {
+   "All services excluding schools": 1529.7,
+   "Central services": 57.3,
+   "Culture and leisure": 117.4,
+   "Environmental and regulatory": 153.7,
+   "Highways and transport": 132.1,
+   "Housing (general fund)": 58.9,
+   "Planning and development": 23.9,
+   "Social work and social care": 986.3
+  },
+  "S12000027": {
+   "All services excluding schools": 2836.3,
+   "Central services": 311.1,
+   "Culture and leisure": 237.5,
+   "Environmental and regulatory": 225.7,
+   "Highways and transport": 435.9,
+   "Housing (general fund)": 103.2,
+   "Planning and development": 48.8,
+   "Social work and social care": 1990.7
+  },
+  "S12000028": {
+   "All services excluding schools": 1536.8,
+   "Central services": 73.2,
+   "Culture and leisure": 124.8,
+   "Environmental and regulatory": 158.6,
+   "Highways and transport": 95.9,
+   "Housing (general fund)": 45.0,
+   "Planning and development": 87.7,
+   "Social work and social care": 951.6
+  },
+  "S12000029": {
+   "All services excluding schools": 1152.3,
+   "Central services": 31.7,
+   "Culture and leisure": 91.0,
+   "Environmental and regulatory": 168.4,
+   "Highways and transport": 77.7,
+   "Housing (general fund)": 48.7,
+   "Planning and development": 7.1,
+   "Social work and social care": 727.6
+  },
+  "S12000030": {
+   "All services excluding schools": 1413.8,
+   "Central services": 115.9,
+   "Culture and leisure": 123.0,
+   "Environmental and regulatory": 191.2,
+   "Highways and transport": 128.9,
+   "Housing (general fund)": 95.7,
+   "Planning and development": 55.9,
+   "Social work and social care": 703.2
+  },
+  "S12000033": {
+   "All services excluding schools": 1151.3,
+   "Central services": 99.8,
+   "Culture and leisure": 95.4,
+   "Environmental and regulatory": 139.1,
+   "Highways and transport": 16.3,
+   "Housing (general fund)": 62.3,
+   "Planning and development": 34.0,
+   "Social work and social care": 824.1
+  },
+  "S12000034": {
+   "All services excluding schools": 1283.0,
+   "Central services": 40.0,
+   "Culture and leisure": 95.6,
+   "Environmental and regulatory": 118.8,
+   "Highways and transport": 96.5,
+   "Housing (general fund)": 32.0,
+   "Planning and development": 25.9,
+   "Social work and social care": 871.0
+  },
+  "S12000035": {
+   "All services excluding schools": 1722.9,
+   "Central services": 107.0,
+   "Culture and leisure": 100.6,
+   "Environmental and regulatory": 241.6,
+   "Highways and transport": 176.8,
+   "Housing (general fund)": 71.2,
+   "Planning and development": 56.6,
+   "Social work and social care": 976.4
+  },
+  "S12000036": {
+   "All services excluding schools": 1241.8,
+   "Central services": 82.2,
+   "Culture and leisure": 84.8,
+   "Environmental and regulatory": 124.2,
+   "Highways and transport": -0.9,
+   "Housing (general fund)": 92.6,
+   "Planning and development": 8.8,
+   "Social work and social care": 850.1
+  },
+  "S12000038": {
+   "All services excluding schools": 1262.9,
+   "Central services": 93.0,
+   "Culture and leisure": 128.0,
+   "Environmental and regulatory": 138.9,
+   "Highways and transport": 74.0,
+   "Housing (general fund)": 44.6,
+   "Planning and development": 41.2,
+   "Social work and social care": 743.1
+  },
+  "S12000039": {
+   "All services excluding schools": 1492.9,
+   "Central services": 75.0,
+   "Culture and leisure": 145.7,
+   "Environmental and regulatory": 123.2,
+   "Highways and transport": 56.6,
+   "Housing (general fund)": 51.7,
+   "Planning and development": -10.7,
+   "Social work and social care": 1051.3
+  },
+  "S12000040": {
+   "All services excluding schools": 1149.7,
+   "Central services": 78.6,
+   "Culture and leisure": 68.6,
+   "Environmental and regulatory": 122.1,
+   "Highways and transport": 79.4,
+   "Housing (general fund)": 44.1,
+   "Planning and development": 30.1,
+   "Social work and social care": 736.1
+  },
+  "S12000041": {
+   "All services excluding schools": 1467.6,
+   "Central services": 167.3,
+   "Culture and leisure": 83.2,
+   "Environmental and regulatory": 139.4,
+   "Highways and transport": 124.1,
+   "Housing (general fund)": 13.5,
+   "Planning and development": 23.9,
+   "Social work and social care": 915.9
+  },
+  "S12000042": {
+   "All services excluding schools": 1558.9,
+   "Central services": 116.9,
+   "Culture and leisure": 172.6,
+   "Environmental and regulatory": 117.2,
+   "Highways and transport": 29.2,
+   "Housing (general fund)": 42.4,
+   "Planning and development": 27.1,
+   "Social work and social care": 1053.5
+  },
+  "S12000045": {
+   "All services excluding schools": 1183.6,
+   "Central services": 92.1,
+   "Culture and leisure": 97.1,
+   "Environmental and regulatory": 116.1,
+   "Highways and transport": 77.8,
+   "Housing (general fund)": 26.8,
+   "Planning and development": 67.6,
+   "Social work and social care": 706.1
+  },
+  "S12000047": {
+   "All services excluding schools": 1454.6,
+   "Central services": 42.3,
+   "Culture and leisure": 151.0,
+   "Environmental and regulatory": 135.0,
+   "Highways and transport": 107.2,
+   "Housing (general fund)": 56.3,
+   "Planning and development": 37.1,
+   "Social work and social care": 924.7
+  },
+  "S12000048": {
+   "All services excluding schools": 1437.1,
+   "Central services": 121.9,
+   "Culture and leisure": 120.7,
+   "Environmental and regulatory": 156.1,
+   "Highways and transport": 88.9,
+   "Housing (general fund)": 76.3,
+   "Planning and development": 68.2,
+   "Social work and social care": 804.4
+  },
+  "S12000049": {
+   "All services excluding schools": 1496.0,
+   "Central services": 49.4,
+   "Culture and leisure": 175.6,
+   "Environmental and regulatory": 176.5,
+   "Highways and transport": 34.9,
+   "Housing (general fund)": 48.8,
+   "Planning and development": 79.5,
+   "Social work and social care": 931.4
+  },
+  "S12000050": {
+   "All services excluding schools": 1215.7,
+   "Central services": 39.3,
+   "Culture and leisure": 110.1,
+   "Environmental and regulatory": 126.7,
+   "Highways and transport": 87.9,
+   "Housing (general fund)": 34.0,
+   "Planning and development": 44.8,
+   "Social work and social care": 773.0
+  }
+ }
+}

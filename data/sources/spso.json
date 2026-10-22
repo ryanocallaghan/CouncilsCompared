@@ -1,0 +1,111 @@
+{
+ "extra": {},
+ "files": [
+  "https://www.spso.org.uk/sites/spso/files/statistics/ComplaintsReceivedBySubjectAndAuthority2025-26.xlsx"
+ ],
+ "id": "spso",
+ "notes": [],
+ "period": "2025-26",
+ "published": "",
+ "title": "Scottish Public Services Ombudsman: statistics, 2025-26",
+ "trends": {},
+ "url": "https://www.spso.org.uk/statistics-2025-26",
+ "values": {
+  "S12000005": {
+   "om_received": 44.6
+  },
+  "S12000006": {
+   "om_received": 26.8
+  },
+  "S12000008": {
+   "om_received": 29.7
+  },
+  "S12000010": {
+   "om_received": 34.3
+  },
+  "S12000011": {
+   "om_received": 36.1
+  },
+  "S12000013": {
+   "om_received": 19.4
+  },
+  "S12000014": {
+   "om_received": 58.0
+  },
+  "S12000017": {
+   "om_received": 45.5
+  },
+  "S12000018": {
+   "om_received": 21.6
+  },
+  "S12000019": {
+   "om_received": 62.8
+  },
+  "S12000020": {
+   "om_received": 41.2
+  },
+  "S12000021": {
+   "om_received": 37.4
+  },
+  "S12000023": {
+   "om_received": 45.6
+  },
+  "S12000026": {
+   "om_received": 37.7
+  },
+  "S12000027": {
+   "om_received": 66.1
+  },
+  "S12000028": {
+   "om_received": 37.4
+  },
+  "S12000029": {
+   "om_received": 29.0
+  },
+  "S12000030": {
+   "om_received": 40.4
+  },
+  "S12000033": {
+   "om_received": 43.9
+  },
+  "S12000034": {
+   "om_received": 35.5
+  },
+  "S12000035": {
+   "om_received": 40.1
+  },
+  "S12000036": {
+   "om_received": 37.6
+  },
+  "S12000038": {
+   "om_received": 49.7
+  },
+  "S12000039": {
+   "om_received": 53.2
+  },
+  "S12000040": {
+   "om_received": 42.2
+  },
+  "S12000041": {
+   "om_received": 29.7
+  },
+  "S12000042": {
+   "om_received": 26.3
+  },
+  "S12000045": {
+   "om_received": 42.9
+  },
+  "S12000047": {
+   "om_received": 37.4
+  },
+  "S12000048": {
+   "om_received": 53.6
+  },
+  "S12000049": {
+   "om_received": 20.9
+  },
+  "S12000050": {
+   "om_received": 38.1
+  }
+ }
+}

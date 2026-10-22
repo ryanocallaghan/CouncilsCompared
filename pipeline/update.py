@@ -44,12 +44,20 @@ STEPS = [
     ("silktide", "silktide", "fetch"),
     ("area_bands", "area_bands", "fetch"),
     ("lgbf", "lgbf", "fetch"),
+    ("spso", "spso", "fetch"),
+    ("scot_homelessness", "scot_homelessness", "fetch"),
+    ("scot_spending", "scot_spending", "fetch"),
+    ("scot_band_d", "scot_ctax", "fetch"),
 ]
 
 # Measures each source provides, in data/councils.json "values"
-VALUE_SOURCES = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "waste", "fly", "homelessness", "silktide", "lgbf"]
+VALUE_SOURCES = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "waste", "fly", "homelessness", "silktide", "lgbf",
+                 "spso", "scot_homelessness"]
 # Trends each source provides; a council only has figures in one source per trend
-TRENDS = {"ehcp_20wk": ["ehcp"], "om_upheld": ["lgo"], "recycling": ["waste", "lgbf"], "fly_rate": ["fly"]}
+TRENDS = {"ehcp_20wk": ["ehcp"], "om_upheld": ["lgo"], "recycling": ["waste", "lgbf"], "fly_rate": ["fly"],
+          "ta_days": ["scot_homelessness"]}
+# Where Scotland's figures come from, for the parts of a council's page that aren't measures
+SCOTLAND = {"homelessness": "scot_homelessness", "band_d": "scot_band_d", "spending": "scot_spending"}
 
 
 def load(source_id):
@@ -133,9 +141,13 @@ def assemble():
     """data/councils.json from data/sources/*.json."""
     population = load("population")
     sources = {s: load(s) for s, _, _ in STEPS}
-    households = (sources["homelessness"].extra.get("households", {}) if sources["homelessness"] else {})
     councils = []
     for code, extra in sorted(population.extra.items(), key=lambda item: item[1]["name"]):
+        def source(source_id):
+            if code.startswith("S"):
+                source_id = SCOTLAND.get(source_id, source_id)
+            return sources.get(source_id)
+        households = source("homelessness").extra.get("households", {}) if source("homelessness") else {}
         council = {
             "code": code,
             "name": extra["name"],
@@ -157,11 +169,11 @@ def assemble():
         for source_id in VALUE_SOURCES:
             if sources[source_id]:
                 council["values"].update(sources[source_id].values.get(code, {}))
-        if sources["band_d"]:
-            council["band_d"] = sources["band_d"].values.get(code, {}).get("band_d")
-            council["band_d_parts"] = sources["band_d"].extra.get(code)
-        if sources["spending"]:
-            council["spend"] = sources["spending"].values.get(code, {})
+        if source("band_d"):
+            council["band_d"] = source("band_d").values.get(code, {}).get("band_d")
+            council["band_d_parts"] = source("band_d").extra.get(code)
+        if source("spending"):
+            council["spend"] = source("spending").values.get(code, {})
         if sources["funding"]:
             council["funding"] = sources["funding"].extra.get(code)
         if sources["ofsted"]:

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}Council tax Band D {{ source.period }}: every council in England ranked{% endblock %}
-{% block description %}Band D council tax for {{ source.period }} for every council in England that runs all local services, lowest first, including police, fire and parish charges. See where your council tax goes.{% endblock %}
+{% block title %}Council tax Band D {{ source.period }}: every council in {{ nation }} ranked{% endblock %}
+{% block description %}Band D council tax for {{ source.period }} for {% if nation == "England" %}every council in England that runs all local services, lowest first, including police, fire and parish charges{% else %}every council in {{ nation }}, lowest first{% endif %}. See where your council tax goes.{% endblock %}
 {% block backLink %}{{ govukBackLink({"text": "All measures", "href": "/measures/"}) }}{% endblock %}
 
 {% block content %}
@@ -8,14 +8,23 @@
   <div class="govuk-grid-column-two-thirds">
     <span class="govuk-caption-l">Council tax</span>
     <h1 class="govuk-heading-xl">Council tax Band D, {{ source.period }}</h1>
+    {% if nation == "England" %}
     <p class="govuk-body-l">What a Band D home pays in a year, for every council in England that runs all local services, lowest first.</p>
+    {% else %}
+    <p class="govuk-body-l">What a Band D home pays in a year, for every council in {{ nation }}, lowest first.</p>
+    {% endif %}
     {% if summary %}<p class="govuk-body">{{ summary }}</p>{% endif %}
+    {% if nation == "England" %}
     <p class="govuk-body">The bill includes the council’s own charge and, where they apply, the police, fire and rescue, Mayor of London or combined authority charges, and the average parish or town council charge. Most homes are not in Band D: on each council’s page you can see the bill for every band, and where the money goes.</p>
+    {% else %}
+    <p class="govuk-body">In {{ nation }} all of the council tax goes to the council: there are no police, fire or parish charges. Scottish Water’s water and sewerage charges are added to the bill too, and are not included here. Most homes are not in Band D: on each council’s page you can see the bill for every band, and where the money goes.</p>
+    {% endif %}
     <p class="govuk-body-s app-secondary-text">Source: <a class="govuk-link" href="{{ source.url }}">{{ source.title }}</a>.{% if updated %} Last updated {{ updated | long_date }}.{% endif %}</p>
   </div>
 </div>
 
 <div class="app-explore" data-module="app-explore">
+  {% if nation == "England" %}
   <form class="app-explore__filters" hidden>
     <div class="govuk-form-group">
       <label class="govuk-label govuk-label--s" for="filter-region">Region</label>
@@ -32,6 +41,7 @@
       </select>
     </div>
   </form>
+  {% endif %}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
@@ -42,7 +52,9 @@
             <th scope="col" class="govuk-table__header govuk-table__header--numeric">Position</th>
             <th scope="col" class="govuk-table__header">Council</th>
             <th scope="col" class="govuk-table__header govuk-table__header--numeric">Band D bill</th>
+            {% if nation == "England" %}
             <th scope="col" class="govuk-table__header govuk-table__header--numeric">Council’s own charge</th>
+            {% endif %}
           </tr>
         </thead>
         <tbody class="govuk-table__body">
@@ -51,7 +63,9 @@
               <td class="govuk-table__cell govuk-table__cell--numeric">{{ pos }}</td>
               <td class="govuk-table__cell"><a class="govuk-link" href="/{{ c.slug }}/#council-tax">{{ c.name }}</a></td>
               <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(value, "£") }}</td>
+              {% if nation == "England" %}
               <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(own, "£") if own else "No figure" }}</td>
+              {% endif %}
             </tr>
           {% endfor %}
         </tbody>

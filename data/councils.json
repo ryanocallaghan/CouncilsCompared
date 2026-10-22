@@ -117,6 +117,30 @@
     "street_clean": "2025-26",
     "streets_satisfied": "2024-25"
    }
+  },
+  "spso": {
+   "title": "Scottish Public Services Ombudsman: statistics, 2025-26",
+   "url": "https://www.spso.org.uk/statistics-2025-26",
+   "period": "2025-26",
+   "published": ""
+  },
+  "scot_homelessness": {
+   "title": "Scottish Government: Homelessness in Scotland, 2025-26",
+   "url": "https://www.gov.scot/publications/homelessness-in-scotland-2025-26/",
+   "period": "2025-26",
+   "published": "2026-09-22"
+  },
+  "scot_spending": {
+   "title": "Scottish Government: Scottish Local Government Finance Statistics, 2024-25",
+   "url": "https://www.gov.scot/publications/scottish-local-government-finance-statistics-2024-25/",
+   "period": "2024-25",
+   "published": "2026-02-05"
+  },
+  "scot_band_d": {
+   "title": "Scottish Government: Council Tax by band, 2026-27",
+   "url": "https://www.gov.scot/publications/council-tax-datasets/",
+   "period": "2026-27",
+   "published": "2026-03-31"
   }
  },
  "councils": [
@@ -128,9 +152,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 230180,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 113057,
+   "band_d": 1747.54,
+   "band_d_parts": {
+    "council": 1747.54
+   },
    "funding": null,
    "values": {
     "web_access": 72.3,
@@ -147,9 +173,22 @@
     "recycling": 43.1,
     "repair_days": 7.4,
     "street_clean": 91.5,
-    "streets_satisfied": 56.3
+    "streets_satisfied": 56.3,
+    "om_received": 43.9,
+    "settled": 84.9,
+    "ta_days": 103.0,
+    "ta_rate": 4.1
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1151.3,
+    "Central services": 99.8,
+    "Culture and leisure": 95.4,
+    "Environmental and regulatory": 139.1,
+    "Highways and transport": 16.3,
+    "Housing (general fund)": 62.3,
+    "Planning and development": 34.0,
+    "Social work and social care": 824.1
+   },
    "ofsted": null,
    "neighbours": [
     "S12000011",
@@ -177,6 +216,13 @@
      "2022-23": 41.8,
      "2023-24": 41.8,
      "2024-25": 43.1
+    },
+    "ta_days": {
+     "2021-22": 106.0,
+     "2022-23": 107.0,
+     "2023-24": 130.0,
+     "2024-25": 119.0,
+     "2025-26": 103.0
     }
    }
   },
@@ -188,9 +234,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 264640,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 118212,
+   "band_d": 1686.04,
+   "band_d_parts": {
+    "council": 1686.04
+   },
    "funding": null,
    "values": {
     "web_access": 94.5,
@@ -207,9 +255,22 @@
     "recycling": 44.7,
     "repair_days": 7.4,
     "street_clean": 96.7,
-    "streets_satisfied": 60.7
+    "streets_satisfied": 60.7,
+    "om_received": 35.5,
+    "settled": 88.6,
+    "ta_days": 73.0,
+    "ta_rate": 1.1
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1283.0,
+    "Central services": 40.0,
+    "Culture and leisure": 95.6,
+    "Environmental and regulatory": 118.8,
+    "Highways and transport": 96.5,
+    "Housing (general fund)": 32.0,
+    "Planning and development": 25.9,
+    "Social work and social care": 871.0
+   },
    "ofsted": null,
    "neighbours": [
     "S12000011",
@@ -237,6 +298,13 @@
      "2022-23": 40.2,
      "2023-24": 43.0,
      "2024-25": 44.7
+    },
+    "ta_days": {
+     "2021-22": 105.0,
+     "2022-23": 89.0,
+     "2023-24": 75.0,
+     "2024-25": 66.0,
+     "2025-26": 73.0
     }
    }
   },
@@ -248,9 +316,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 114610,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 55268,
+   "band_d": 1598.65,
+   "band_d_parts": {
+    "council": 1598.65
+   },
    "funding": null,
    "values": {
     "web_access": 92.4,
@@ -267,9 +337,22 @@
     "recycling": 53.3,
     "repair_days": 12.9,
     "street_clean": 96.0,
-    "streets_satisfied": 57.3
+    "streets_satisfied": 57.3,
+    "om_received": 29.7,
+    "settled": 84.6,
+    "ta_days": 167.0,
+    "ta_rate": 2.0
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1467.6,
+    "Central services": 167.3,
+    "Culture and leisure": 83.2,
+    "Environmental and regulatory": 139.4,
+    "Highways and transport": 124.1,
+    "Housing (general fund)": 13.5,
+    "Planning and development": 23.9,
+    "Social work and social care": 915.9
+   },
    "ofsted": null,
    "neighbours": [
     "S12000010",
@@ -297,6 +380,13 @@
      "2022-23": 51.7,
      "2023-24": 52.1,
      "2024-25": 53.3
+    },
+    "ta_days": {
+     "2021-22": 148.0,
+     "2022-23": 171.0,
+     "2023-24": 191.0,
+     "2024-25": 204.0,
+     "2025-26": 167.0
     }
    }
   },
@@ -308,9 +398,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 87310,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 42778,
+   "band_d": 1783.33,
+   "band_d_parts": {
+    "council": 1783.33
+   },
    "funding": null,
    "values": {
     "web_access": 98.4,
@@ -325,9 +417,22 @@
     "numeracy": 79.9,
     "recycling": 42.5,
     "street_clean": 93.7,
-    "streets_satisfied": 66.0
+    "streets_satisfied": 66.0,
+    "om_received": 40.1,
+    "settled": 82.4,
+    "ta_days": 261.0,
+    "ta_rate": 2.8
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1722.9,
+    "Central services": 107.0,
+    "Culture and leisure": 100.6,
+    "Environmental and regulatory": 241.6,
+    "Highways and transport": 176.8,
+    "Housing (general fund)": 71.2,
+    "Planning and development": 56.6,
+    "Social work and social care": 976.4
+   },
    "ofsted": null,
    "neighbours": [
     "S12000010",
@@ -355,6 +460,13 @@
      "2022-23": 40.8,
      "2023-24": 40.7,
      "2024-25": 42.5
+    },
+    "ta_days": {
+     "2021-22": 202.0,
+     "2022-23": 226.0,
+     "2023-24": 222.0,
+     "2024-25": 212.0,
+     "2025-26": 261.0
     }
    }
   },
@@ -3143,9 +3255,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 531370,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 247435,
+   "band_d": 1626.05,
+   "band_d_parts": {
+    "council": 1626.05
+   },
    "funding": null,
    "values": {
     "web_access": 98.5,
@@ -3162,9 +3276,22 @@
     "recycling": 37.5,
     "repair_days": 11.8,
     "street_clean": 92.8,
-    "streets_satisfied": 62.7
+    "streets_satisfied": 62.7,
+    "om_received": 37.6,
+    "settled": 84.4,
+    "ta_days": 517.0,
+    "ta_rate": 21.8
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1241.8,
+    "Central services": 82.2,
+    "Culture and leisure": 84.8,
+    "Environmental and regulatory": 124.2,
+    "Highways and transport": -0.9,
+    "Housing (general fund)": 92.6,
+    "Planning and development": 8.8,
+    "Social work and social care": 850.1
+   },
    "ofsted": null,
    "neighbours": [
     "S12000011",
@@ -3192,6 +3319,13 @@
      "2022-23": 37.1,
      "2023-24": 38.0,
      "2024-25": 37.5
+    },
+    "ta_days": {
+     "2021-22": 469.0,
+     "2022-23": 448.0,
+     "2023-24": 502.0,
+     "2024-25": 537.0,
+     "2025-26": 517.0
     }
    }
   },
@@ -3203,9 +3337,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 51610,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 24474,
+   "band_d": 1683.67,
+   "band_d_parts": {
+    "council": 1683.67
+   },
    "funding": null,
    "values": {
     "web_access": 49.8,
@@ -3222,9 +3358,22 @@
     "recycling": 57.2,
     "repair_days": 11.2,
     "street_clean": 84.7,
-    "streets_satisfied": 64.3
+    "streets_satisfied": 64.3,
+    "om_received": 44.6,
+    "settled": 74.6,
+    "ta_days": 179.0,
+    "ta_rate": 6.5
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1406.2,
+    "Central services": 114.6,
+    "Culture and leisure": 81.2,
+    "Environmental and regulatory": 118.0,
+    "Highways and transport": 66.1,
+    "Housing (general fund)": 28.2,
+    "Planning and development": 21.2,
+    "Social work and social care": 977.0
+   },
    "ofsted": null,
    "neighbours": [
     "S12000006",
@@ -3252,6 +3401,13 @@
      "2022-23": 51.2,
      "2023-24": 52.0,
      "2024-25": 57.2
+    },
+    "ta_days": {
+     "2021-22": 153.0,
+     "2022-23": 177.0,
+     "2023-24": 160.0,
+     "2024-25": 189.0,
+     "2025-26": 179.0
     }
    }
   },
@@ -4378,9 +4534,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 145490,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 71326,
+   "band_d": 1578.65,
+   "band_d_parts": {
+    "council": 1578.65
+   },
    "funding": null,
    "values": {
     "web_access": 92.9,
@@ -4395,9 +4553,22 @@
     "numeracy": 77.8,
     "recycling": 43.2,
     "street_clean": 98.4,
-    "streets_satisfied": 36.0
+    "streets_satisfied": 36.0,
+    "om_received": 26.8,
+    "settled": 82.9,
+    "ta_days": 143.0,
+    "ta_rate": 3.3
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1608.7,
+    "Central services": 113.9,
+    "Culture and leisure": 122.9,
+    "Environmental and regulatory": 157.8,
+    "Highways and transport": 119.5,
+    "Housing (general fund)": 97.1,
+    "Planning and development": 27.2,
+    "Social work and social care": 970.3
+   },
    "ofsted": null,
    "neighbours": [
     "S12000005",
@@ -4425,6 +4596,13 @@
      "2022-23": 45.1,
      "2023-24": 41.2,
      "2024-25": 43.2
+    },
+    "ta_days": {
+     "2021-22": 109.0,
+     "2022-23": 118.0,
+     "2023-24": 144.0,
+     "2024-25": 133.0,
+     "2025-26": 143.0
     }
    }
   },
@@ -4436,9 +4614,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 148390,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 71645,
+   "band_d": 1729.69,
+   "band_d_parts": {
+    "council": 1729.69
+   },
    "funding": null,
    "values": {
     "web_access": 75.0,
@@ -4455,9 +4635,22 @@
     "recycling": 35.1,
     "repair_days": 10.6,
     "street_clean": 86.2,
-    "streets_satisfied": 49.7
+    "streets_satisfied": 49.7,
+    "om_received": 26.3,
+    "settled": 83.0,
+    "ta_days": 175.0,
+    "ta_rate": 6.1
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1558.9,
+    "Central services": 116.9,
+    "Culture and leisure": 172.6,
+    "Environmental and regulatory": 117.2,
+    "Highways and transport": 29.2,
+    "Housing (general fund)": 42.4,
+    "Planning and development": 27.1,
+    "Social work and social care": 1053.5
+   },
    "ofsted": null,
    "neighbours": [
     "S12000008",
@@ -4485,6 +4678,13 @@
      "2022-23": 35.6,
      "2023-24": 36.6,
      "2024-25": 35.1
+    },
+    "ta_days": {
+     "2021-22": 203.0,
+     "2022-23": 199.0,
+     "2023-24": 189.0,
+     "2024-25": 191.0,
+     "2025-26": 175.0
     }
    }
   },
@@ -4619,9 +4819,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 121350,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 56480,
+   "band_d": 1717.28,
+   "band_d_parts": {
+    "council": 1717.28
+   },
    "funding": null,
    "values": {
     "web_access": 99.8,
@@ -4638,9 +4840,22 @@
     "recycling": 49.2,
     "repair_days": 7.9,
     "street_clean": 92.0,
-    "streets_satisfied": 47.3
+    "streets_satisfied": 47.3,
+    "om_received": 29.7,
+    "settled": 78.9,
+    "ta_days": 126.0,
+    "ta_rate": 1.6
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1345.4,
+    "Central services": 2.8,
+    "Culture and leisure": 81.8,
+    "Environmental and regulatory": 131.9,
+    "Highways and transport": 88.6,
+    "Housing (general fund)": 45.5,
+    "Planning and development": 31.6,
+    "Social work and social care": 963.1
+   },
    "ofsted": null,
    "neighbours": [
     "S12000013",
@@ -4668,6 +4883,13 @@
      "2022-23": 48.5,
      "2023-24": 51.5,
      "2024-25": 49.2
+    },
+    "ta_days": {
+     "2021-22": 119.0,
+     "2022-23": 132.0,
+     "2023-24": 141.0,
+     "2024-25": 130.0,
+     "2025-26": 126.0
     }
    }
   },
@@ -4679,9 +4901,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 109550,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 46931,
+   "band_d": 1751.67,
+   "band_d_parts": {
+    "council": 1751.67
+   },
    "funding": null,
    "values": {
     "web_access": 84.9,
@@ -4698,9 +4922,22 @@
     "recycling": 54.3,
     "repair_days": 11.3,
     "street_clean": 90.9,
-    "streets_satisfied": 52.7
+    "streets_satisfied": 52.7,
+    "om_received": 42.9,
+    "settled": 80.0,
+    "ta_days": 413.0,
+    "ta_rate": 2.9
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1183.6,
+    "Central services": 92.1,
+    "Culture and leisure": 97.1,
+    "Environmental and regulatory": 116.1,
+    "Highways and transport": 77.8,
+    "Housing (general fund)": 26.8,
+    "Planning and development": 67.6,
+    "Social work and social care": 706.1
+   },
    "ofsted": null,
    "neighbours": [
     "S12000011",
@@ -4728,6 +4965,13 @@
      "2022-23": 48.6,
      "2023-24": 46.0,
      "2024-25": 54.3
+    },
+    "ta_days": {
+     "2021-22": 359.0,
+     "2022-23": 255.0,
+     "2023-24": 261.0,
+     "2024-25": 286.0,
+     "2025-26": 413.0
     }
    }
   },
@@ -4739,9 +4983,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 116460,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 51575,
+   "band_d": 1697.62,
+   "band_d_parts": {
+    "council": 1697.62
+   },
    "funding": null,
    "values": {
     "web_access": 53.9,
@@ -4758,9 +5004,22 @@
     "recycling": 55.3,
     "repair_days": 8.6,
     "street_clean": 91.0,
-    "streets_satisfied": 73.3
+    "streets_satisfied": 73.3,
+    "om_received": 34.3,
+    "settled": 87.1,
+    "ta_days": 334.0,
+    "ta_rate": 5.6
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1312.1,
+    "Central services": 34.8,
+    "Culture and leisure": 155.5,
+    "Environmental and regulatory": 119.0,
+    "Highways and transport": 63.9,
+    "Housing (general fund)": 61.7,
+    "Planning and development": 42.2,
+    "Social work and social care": 835.0
+   },
    "ofsted": null,
    "neighbours": [
     "S12000017",
@@ -4788,6 +5047,13 @@
      "2022-23": 53.1,
      "2023-24": 53.1,
      "2024-25": 55.3
+    },
+    "ta_days": {
+     "2021-22": 388.0,
+     "2022-23": 425.0,
+     "2023-24": 349.0,
+     "2024-25": 355.0,
+     "2025-26": 334.0
     }
    }
   },
@@ -4799,9 +5065,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 99840,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 40781,
+   "band_d": 1620.15,
+   "band_d_parts": {
+    "council": 1620.15
+   },
    "funding": null,
    "values": {
     "web_access": 97.1,
@@ -4818,9 +5086,22 @@
     "recycling": 50.9,
     "repair_days": 10.9,
     "street_clean": 95.3,
-    "streets_satisfied": 62.7
+    "streets_satisfied": 62.7,
+    "om_received": 36.1,
+    "settled": 80.0,
+    "ta_days": 224.0,
+    "ta_rate": 4.1
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1200.9,
+    "Central services": 29.1,
+    "Culture and leisure": 115.0,
+    "Environmental and regulatory": 121.2,
+    "Highways and transport": 88.5,
+    "Housing (general fund)": 61.6,
+    "Planning and development": 34.7,
+    "Social work and social care": 750.7
+   },
    "ofsted": null,
    "neighbours": [
     "S12000023",
@@ -4848,6 +5129,13 @@
      "2022-23": 56.0,
      "2023-24": 58.2,
      "2024-25": 50.9
+    },
+    "ta_days": {
+     "2021-22": 151.0,
+     "2022-23": 192.0,
+     "2023-24": 119.0,
+     "2024-25": 223.0,
+     "2025-26": 224.0
     }
    }
   },
@@ -5104,9 +5392,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 160230,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 73471,
+   "band_d": 1715.09,
+   "band_d_parts": {
+    "council": 1715.09
+   },
    "funding": null,
    "values": {
     "web_access": 91.0,
@@ -5123,9 +5413,22 @@
     "recycling": 51.5,
     "repair_days": 10.4,
     "street_clean": 90.3,
-    "streets_satisfied": 52.3
+    "streets_satisfied": 52.3,
+    "om_received": 58.0,
+    "settled": 81.9,
+    "ta_days": 225.0,
+    "ta_rate": 6.0
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1337.9,
+    "Central services": 98.0,
+    "Culture and leisure": 105.1,
+    "Environmental and regulatory": 108.4,
+    "Highways and transport": 57.4,
+    "Housing (general fund)": 52.5,
+    "Planning and development": 36.1,
+    "Social work and social care": 880.3
+   },
    "ofsted": null,
    "neighbours": [
     "S12000005",
@@ -5153,6 +5456,13 @@
      "2022-23": 51.4,
      "2023-24": 50.9,
      "2024-25": 51.5
+    },
+    "ta_days": {
+     "2021-22": 223.0,
+     "2022-23": 204.0,
+     "2023-24": 235.0,
+     "2024-25": 236.0,
+     "2025-26": 225.0
     }
    }
   },
@@ -5164,9 +5474,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 373990,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 173024,
+   "band_d": 1573.7,
+   "band_d_parts": {
+    "council": 1573.7
+   },
    "funding": null,
    "values": {
     "web_access": 97.2,
@@ -5183,9 +5495,22 @@
     "recycling": 44.5,
     "repair_days": 6.2,
     "street_clean": 96.1,
-    "streets_satisfied": 65.7
+    "streets_satisfied": 65.7,
+    "om_received": 37.4,
+    "settled": 85.7,
+    "ta_days": 263.0,
+    "ta_rate": 6.2
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1454.6,
+    "Central services": 42.3,
+    "Culture and leisure": 151.0,
+    "Environmental and regulatory": 135.0,
+    "Highways and transport": 107.2,
+    "Housing (general fund)": 56.3,
+    "Planning and development": 37.1,
+    "Social work and social care": 924.7
+   },
    "ofsted": null,
    "neighbours": [
     "S12000005",
@@ -5213,6 +5538,13 @@
      "2022-23": 45.7,
      "2023-24": 45.9,
      "2024-25": 44.5
+    },
+    "ta_days": {
+     "2021-22": 217.0,
+     "2022-23": 260.0,
+     "2023-24": 265.0,
+     "2024-25": 250.0,
+     "2025-26": 263.0
     }
    }
   },
@@ -5345,9 +5677,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 654330,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 300114,
+   "band_d": 1706.0,
+   "band_d_parts": {
+    "council": 1706.0
+   },
    "funding": null,
    "values": {
     "web_access": 86.4,
@@ -5362,9 +5696,22 @@
     "numeracy": 75.3,
     "recycling": 30.6,
     "street_clean": 82.3,
-    "streets_satisfied": 37.3
+    "streets_satisfied": 37.3,
+    "om_received": 20.9,
+    "settled": 79.2,
+    "ta_days": 303.0,
+    "ta_rate": 16.3
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1496.0,
+    "Central services": 49.4,
+    "Culture and leisure": 175.6,
+    "Environmental and regulatory": 176.5,
+    "Highways and transport": 34.9,
+    "Housing (general fund)": 48.8,
+    "Planning and development": 79.5,
+    "Social work and social care": 931.4
+   },
    "ofsted": null,
    "neighbours": [
     "S12000008",
@@ -5392,6 +5739,13 @@
      "2022-23": 27.6,
      "2023-24": 27.2,
      "2024-25": 30.6
+    },
+    "ta_days": {
+     "2021-22": 193.0,
+     "2022-23": 217.0,
+     "2023-24": 232.0,
+     "2024-25": 276.0,
+     "2025-26": 303.0
     }
    }
   },
@@ -6484,9 +6838,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 237260,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 114817,
+   "band_d": 1633.99,
+   "band_d_parts": {
+    "council": 1633.99
+   },
    "funding": null,
    "values": {
     "web_access": 99.2,
@@ -6503,9 +6859,22 @@
     "recycling": 42.5,
     "repair_days": 8.0,
     "street_clean": 95.3,
-    "streets_satisfied": 62.0
+    "streets_satisfied": 62.0,
+    "om_received": 45.5,
+    "settled": 86.1,
+    "ta_days": 244.0,
+    "ta_rate": 4.0
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1464.8,
+    "Central services": 44.2,
+    "Culture and leisure": 90.9,
+    "Environmental and regulatory": 174.1,
+    "Highways and transport": 180.9,
+    "Housing (general fund)": 86.5,
+    "Planning and development": -0.4,
+    "Social work and social care": 905.7
+   },
    "ofsted": null,
    "neighbours": [
     "S12000010",
@@ -6533,6 +6902,13 @@
      "2022-23": 37.2,
      "2023-24": 36.0,
      "2024-25": 42.5
+    },
+    "ta_days": {
+     "2021-22": 346.0,
+     "2022-23": 296.0,
+     "2023-24": 237.0,
+     "2024-25": 248.0,
+     "2025-26": 244.0
     }
    }
   },
@@ -6790,9 +7166,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 78550,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 37703,
+   "band_d": 1673.85,
+   "band_d_parts": {
+    "council": 1673.85
+   },
    "funding": null,
    "values": {
     "web_access": 93.8,
@@ -6807,9 +7185,22 @@
     "numeracy": 82.3,
     "recycling": 50.3,
     "street_clean": 89.8,
-    "streets_satisfied": 72.3
+    "streets_satisfied": 72.3,
+    "om_received": 21.6,
+    "settled": 75.0,
+    "ta_days": 131.0,
+    "ta_rate": 1.7
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1513.3,
+    "Central services": 138.5,
+    "Culture and leisure": 104.4,
+    "Environmental and regulatory": 132.6,
+    "Highways and transport": 62.2,
+    "Housing (general fund)": 147.6,
+    "Planning and development": 78.1,
+    "Social work and social care": 850.3
+   },
    "ofsted": null,
    "neighbours": [
     "S12000008",
@@ -6837,6 +7228,13 @@
      "2022-23": 46.8,
      "2023-24": 46.9,
      "2024-25": 50.3
+    },
+    "ta_days": {
+     "2021-22": 143.0,
+     "2022-23": 148.0,
+     "2023-24": 142.0,
+     "2024-25": 144.0,
+     "2025-26": 131.0
     }
    }
   },
@@ -8899,9 +9297,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 100390,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 43412,
+   "band_d": 1816.16,
+   "band_d_parts": {
+    "council": 1816.16
+   },
    "funding": null,
    "values": {
     "web_access": 96.1,
@@ -8918,9 +9318,22 @@
     "recycling": 48.1,
     "repair_days": 36.5,
     "street_clean": 91.7,
-    "streets_satisfied": 63.7
+    "streets_satisfied": 63.7,
+    "om_received": 62.8,
+    "settled": 88.1,
+    "ta_days": 339.0,
+    "ta_rate": 8.2
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1313.0,
+    "Central services": 57.2,
+    "Culture and leisure": 94.6,
+    "Environmental and regulatory": 113.6,
+    "Highways and transport": 70.6,
+    "Housing (general fund)": 101.4,
+    "Planning and development": 29.0,
+    "Social work and social care": 846.8
+   },
    "ofsted": null,
    "neighbours": [
     "S12000010",
@@ -8948,6 +9361,13 @@
      "2022-23": 47.2,
      "2023-24": 47.9,
      "2024-25": 48.1
+    },
+    "ta_days": {
+     "2021-22": 510.0,
+     "2022-23": 442.0,
+     "2023-24": 318.0,
+     "2024-25": 337.0,
+     "2025-26": 339.0
     }
    }
   },
@@ -9083,9 +9503,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 94730,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 44699,
+   "band_d": 1731.14,
+   "band_d_parts": {
+    "council": 1731.14
+   },
    "funding": null,
    "values": {
     "web_access": 59.6,
@@ -9101,9 +9523,22 @@
     "numeracy": 76.9,
     "recycling": 56.7,
     "repair_days": 10.0,
-    "streets_satisfied": 55.0
+    "streets_satisfied": 55.0,
+    "om_received": 41.2,
+    "settled": 89.9,
+    "ta_days": 129.0,
+    "ta_rate": 2.2
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1355.7,
+    "Central services": 77.4,
+    "Culture and leisure": 78.1,
+    "Environmental and regulatory": 115.0,
+    "Highways and transport": 91.1,
+    "Housing (general fund)": 22.4,
+    "Planning and development": -6.1,
+    "Social work and social care": 978.5
+   },
    "ofsted": null,
    "neighbours": [
     "S12000010",
@@ -9131,6 +9566,13 @@
      "2022-23": 57.8,
      "2023-24": 56.2,
      "2024-25": 56.7
+    },
+    "ta_days": {
+     "2021-22": 136.0,
+     "2022-23": 100.0,
+     "2023-24": 121.0,
+     "2024-25": 117.0,
+     "2025-26": 129.0
     }
    }
   },
@@ -9142,9 +9584,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 25770,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 12926,
+   "band_d": 1505.5,
+   "band_d_parts": {
+    "council": 1505.5
+   },
    "funding": null,
    "values": {
     "web_access": 95.4,
@@ -9159,9 +9603,22 @@
     "numeracy": 81.0,
     "recycling": 40.3,
     "street_clean": 95.3,
-    "streets_satisfied": 52.3
+    "streets_satisfied": 52.3,
+    "om_received": 19.4,
+    "settled": 76.5,
+    "ta_days": 191.0,
+    "ta_rate": 4.1
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 2327.9,
+    "Central services": 219.7,
+    "Culture and leisure": 152.5,
+    "Environmental and regulatory": 259.8,
+    "Highways and transport": 309.4,
+    "Housing (general fund)": 116.6,
+    "Planning and development": -6.6,
+    "Social work and social care": 1282.8
+   },
    "ofsted": null,
    "neighbours": [
     "S12000008",
@@ -9189,6 +9646,13 @@
      "2022-23": 31.8,
      "2023-24": 35.1,
      "2024-25": 40.3
+    },
+    "ta_days": {
+     "2021-22": 309.0,
+     "2022-23": 252.0,
+     "2023-24": 252.0,
+     "2024-25": 236.0,
+     "2025-26": 191.0
     }
    }
   },
@@ -9446,9 +9910,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 133660,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 65535,
+   "band_d": 1685.84,
+   "band_d_parts": {
+    "council": 1685.84
+   },
    "funding": null,
    "values": {
     "web_access": 75.1,
@@ -9465,9 +9931,22 @@
     "recycling": 53.0,
     "repair_days": 8.5,
     "street_clean": 89.6,
-    "streets_satisfied": 67.0
+    "streets_satisfied": 67.0,
+    "om_received": 37.4,
+    "settled": 75.4,
+    "ta_days": 153.0,
+    "ta_rate": 4.3
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1599.8,
+    "Central services": 88.9,
+    "Culture and leisure": 122.4,
+    "Environmental and regulatory": 141.9,
+    "Highways and transport": 95.9,
+    "Housing (general fund)": 73.6,
+    "Planning and development": 55.5,
+    "Social work and social care": 1021.2
+   },
    "ofsted": null,
    "neighbours": [
     "S12000008",
@@ -9495,6 +9974,13 @@
      "2022-23": 55.3,
      "2023-24": 56.1,
      "2024-25": 53.0
+    },
+    "ta_days": {
+     "2021-22": 118.0,
+     "2022-23": 133.0,
+     "2023-24": 116.0,
+     "2024-25": 153.0,
+     "2025-26": 153.0
     }
    }
   },
@@ -9623,9 +10109,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 343930,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 153883,
+   "band_d": 1554.56,
+   "band_d_parts": {
+    "council": 1554.56
+   },
    "funding": null,
    "values": {
     "web_access": 91.9,
@@ -9642,9 +10130,22 @@
     "recycling": 47.9,
     "repair_days": 6.8,
     "street_clean": 87.9,
-    "streets_satisfied": 52.7
+    "streets_satisfied": 52.7,
+    "om_received": 38.1,
+    "settled": 89.0,
+    "ta_days": 142.0,
+    "ta_rate": 4.1
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1215.7,
+    "Central services": 39.3,
+    "Culture and leisure": 110.1,
+    "Environmental and regulatory": 126.7,
+    "Highways and transport": 87.9,
+    "Housing (general fund)": 34.0,
+    "Planning and development": 44.8,
+    "Social work and social care": 773.0
+   },
    "ofsted": null,
    "neighbours": [
     "S12000008",
@@ -9672,6 +10173,13 @@
      "2022-23": 43.0,
      "2023-24": 46.7,
      "2024-25": 47.9
+    },
+    "ta_days": {
+     "2021-22": 130.0,
+     "2022-23": 145.0,
+     "2023-24": 132.0,
+     "2024-25": 138.0,
+     "2025-26": 142.0
     }
    }
   },
@@ -10567,9 +11075,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 21920,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 10973,
+   "band_d": 1669.07,
+   "band_d_parts": {
+    "council": 1669.07
+   },
    "funding": null,
    "values": {
     "web_access": 90.5,
@@ -10586,9 +11096,22 @@
     "recycling": 21.1,
     "repair_days": 14.6,
     "street_clean": 97.4,
-    "streets_satisfied": 65.7
+    "streets_satisfied": 65.7,
+    "om_received": 45.6,
+    "settled": 100.0,
+    "ta_days": 353.0,
+    "ta_rate": 7.7
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 2710.1,
+    "Central services": 364.2,
+    "Culture and leisure": 248.6,
+    "Environmental and regulatory": 208.9,
+    "Highways and transport": 431.7,
+    "Housing (general fund)": 67.5,
+    "Planning and development": 233.9,
+    "Social work and social care": 1501.8
+   },
    "ofsted": null,
    "neighbours": [
     "S12000011",
@@ -10616,6 +11139,13 @@
      "2022-23": 23.3,
      "2023-24": 21.4,
      "2024-25": 21.1
+    },
+    "ta_days": {
+     "2021-22": 202.0,
+     "2022-23": 198.0,
+     "2023-24": 202.0,
+     "2024-25": 304.0,
+     "2025-26": 353.0
     }
    }
   },
@@ -10627,9 +11157,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 154930,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 72120,
+   "band_d": 1673.84,
+   "band_d_parts": {
+    "council": 1673.84
+   },
    "funding": null,
    "values": {
     "web_access": 92.8,
@@ -10646,9 +11178,22 @@
     "recycling": 50.9,
     "repair_days": 8.3,
     "street_clean": 88.1,
-    "streets_satisfied": 67.7
+    "streets_satisfied": 67.7,
+    "om_received": 53.6,
+    "settled": 86.7,
+    "ta_days": 80.0,
+    "ta_rate": 1.2
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1437.1,
+    "Central services": 121.9,
+    "Culture and leisure": 120.7,
+    "Environmental and regulatory": 156.1,
+    "Highways and transport": 88.9,
+    "Housing (general fund)": 76.3,
+    "Planning and development": 68.2,
+    "Social work and social care": 804.4
+   },
    "ofsted": null,
    "neighbours": [
     "S12000011",
@@ -10676,6 +11221,13 @@
      "2022-23": 49.3,
      "2023-24": 51.7,
      "2024-25": 50.9
+    },
+    "ta_days": {
+     "2021-22": 60.0,
+     "2022-23": 72.0,
+     "2023-24": 73.0,
+     "2024-25": 82.0,
+     "2025-26": 80.0
     }
    }
   },
@@ -11409,9 +11961,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 189270,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 88551,
+   "band_d": 1690.56,
+   "band_d_parts": {
+    "council": 1690.56
+   },
    "funding": null,
    "values": {
     "web_access": 92.3,
@@ -11428,9 +11982,22 @@
     "recycling": 42.8,
     "repair_days": 5.5,
     "street_clean": 93.5,
-    "streets_satisfied": 48.7
+    "streets_satisfied": 48.7,
+    "om_received": 49.7,
+    "settled": 78.4,
+    "ta_days": 153.0,
+    "ta_rate": 3.3
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1262.9,
+    "Central services": 93.0,
+    "Culture and leisure": 128.0,
+    "Environmental and regulatory": 138.9,
+    "Highways and transport": 74.0,
+    "Housing (general fund)": 44.6,
+    "Planning and development": 41.2,
+    "Social work and social care": 743.1
+   },
    "ofsted": null,
    "neighbours": [
     "S12000005",
@@ -11458,6 +12025,13 @@
      "2022-23": 53.7,
      "2023-24": 44.0,
      "2024-25": 42.8
+    },
+    "ta_days": {
+     "2021-22": 115.0,
+     "2022-23": 122.0,
+     "2023-24": 113.0,
+     "2024-25": 131.0,
+     "2025-26": 153.0
     }
    }
   },
@@ -12164,9 +12738,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 116800,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 56421,
+   "band_d": 1618.52,
+   "band_d_parts": {
+    "council": 1618.52
+   },
    "funding": null,
    "values": {
     "web_access": 99.2,
@@ -12181,9 +12757,22 @@
     "numeracy": 79.8,
     "recycling": 53.2,
     "street_clean": 97.2,
-    "streets_satisfied": 65.7
+    "streets_satisfied": 65.7,
+    "om_received": 37.7,
+    "settled": 90.5,
+    "ta_days": 178.0,
+    "ta_rate": 2.6
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1529.7,
+    "Central services": 57.3,
+    "Culture and leisure": 117.4,
+    "Environmental and regulatory": 153.7,
+    "Highways and transport": 132.1,
+    "Housing (general fund)": 58.9,
+    "Planning and development": 23.9,
+    "Social work and social care": 986.3
+   },
    "ofsted": null,
    "neighbours": [
     "S12000010",
@@ -12211,6 +12800,13 @@
      "2022-23": 57.3,
      "2023-24": 57.9,
      "2024-25": 53.2
+    },
+    "ta_days": {
+     "2021-22": 162.0,
+     "2022-23": 172.0,
+     "2023-24": 172.0,
+     "2024-25": 218.0,
+     "2025-26": 178.0
     }
    }
   },
@@ -12460,9 +13056,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 22710,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 10820,
+   "band_d": 1487.9,
+   "band_d_parts": {
+    "council": 1487.9
+   },
    "funding": null,
    "values": {
     "web_access": 95.6,
@@ -12479,9 +13077,22 @@
     "recycling": 20.5,
     "repair_days": 7.9,
     "street_clean": 99.6,
-    "streets_satisfied": 75.7
+    "streets_satisfied": 75.7,
+    "om_received": 66.1,
+    "settled": 75.0,
+    "ta_days": 333.0,
+    "ta_rate": 9.8
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 2836.3,
+    "Central services": 311.1,
+    "Culture and leisure": 237.5,
+    "Environmental and regulatory": 225.7,
+    "Highways and transport": 435.9,
+    "Housing (general fund)": 103.2,
+    "Planning and development": 48.8,
+    "Social work and social care": 1990.7
+   },
    "ofsted": null,
    "neighbours": [
     "S12000011",
@@ -12509,6 +13120,13 @@
      "2022-23": 20.7,
      "2023-24": 20.7,
      "2024-25": 20.5
+    },
+    "ta_days": {
+     "2021-22": 399.0,
+     "2022-23": 350.0,
+     "2023-24": 353.0,
+     "2024-25": 354.0,
+     "2025-26": 333.0
     }
    }
   },
@@ -12963,9 +13581,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 112280,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 53403,
+   "band_d": 1694.96,
+   "band_d_parts": {
+    "council": 1694.96
+   },
    "funding": null,
    "values": {
     "web_access": 94.8,
@@ -12982,9 +13602,22 @@
     "recycling": 53.3,
     "repair_days": 7.8,
     "street_clean": 90.8,
-    "streets_satisfied": 46.3
+    "streets_satisfied": 46.3,
+    "om_received": 37.4,
+    "settled": 81.7,
+    "ta_days": 156.0,
+    "ta_rate": 4.7
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1536.8,
+    "Central services": 73.2,
+    "Culture and leisure": 124.8,
+    "Environmental and regulatory": 158.6,
+    "Highways and transport": 95.9,
+    "Housing (general fund)": 45.0,
+    "Planning and development": 87.7,
+    "Social work and social care": 951.6
+   },
    "ofsted": null,
    "neighbours": [
     "S12000005",
@@ -13012,6 +13645,13 @@
      "2022-23": 54.3,
      "2023-24": 54.7,
      "2024-25": 53.3
+    },
+    "ta_days": {
+     "2021-22": 165.0,
+     "2022-23": 161.0,
+     "2023-24": 151.0,
+     "2024-25": 170.0,
+     "2025-26": 156.0
     }
    }
   },
@@ -13135,9 +13775,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 334330,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 152030,
+   "band_d": 1468.47,
+   "band_d_parts": {
+    "council": 1468.47
+   },
    "funding": null,
    "values": {
     "web_access": 96.5,
@@ -13154,9 +13796,22 @@
     "recycling": 40.7,
     "repair_days": 12.6,
     "street_clean": 94.0,
-    "streets_satisfied": 57.3
+    "streets_satisfied": 57.3,
+    "om_received": 29.0,
+    "settled": 79.3,
+    "ta_days": 218.0,
+    "ta_rate": 4.8
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1152.3,
+    "Central services": 31.7,
+    "Culture and leisure": 91.0,
+    "Environmental and regulatory": 168.4,
+    "Highways and transport": 77.7,
+    "Housing (general fund)": 48.7,
+    "Planning and development": 7.1,
+    "Social work and social care": 727.6
+   },
    "ofsted": null,
    "neighbours": [
     "S12000005",
@@ -13184,6 +13839,13 @@
      "2022-23": 41.1,
      "2023-24": 41.0,
      "2024-25": 40.7
+    },
+    "ta_days": {
+     "2021-22": 186.0,
+     "2022-23": 186.0,
+     "2023-24": 186.0,
+     "2024-25": 210.0,
+     "2025-26": 218.0
     }
    }
   },
@@ -13805,9 +14467,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 94040,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 41302,
+   "band_d": 1752.87,
+   "band_d_parts": {
+    "council": 1752.87
+   },
    "funding": null,
    "values": {
     "web_access": 85.9,
@@ -13824,9 +14488,22 @@
     "recycling": 53.2,
     "repair_days": 6.7,
     "street_clean": 86.4,
-    "streets_satisfied": 65.3
+    "streets_satisfied": 65.3,
+    "om_received": 40.4,
+    "settled": 79.8,
+    "ta_days": 270.0,
+    "ta_rate": 7.4
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1413.8,
+    "Central services": 115.9,
+    "Culture and leisure": 123.0,
+    "Environmental and regulatory": 191.2,
+    "Highways and transport": 128.9,
+    "Housing (general fund)": 95.7,
+    "Planning and development": 55.9,
+    "Social work and social care": 703.2
+   },
    "ofsted": null,
    "neighbours": [
     "S12000010",
@@ -13854,6 +14531,13 @@
      "2022-23": 51.4,
      "2023-24": 51.6,
      "2024-25": 53.2
+    },
+    "ta_days": {
+     "2021-22": 292.0,
+     "2022-23": 335.0,
+     "2023-24": 317.0,
+     "2024-25": 311.0,
+     "2025-26": 270.0
     }
    }
   },
@@ -15978,9 +16662,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 88340,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 43256,
+   "band_d": 1681.53,
+   "band_d_parts": {
+    "council": 1681.53
+   },
    "funding": null,
    "values": {
     "web_access": 99.3,
@@ -15997,9 +16683,22 @@
     "recycling": 38.2,
     "repair_days": 10.9,
     "street_clean": 92.5,
-    "streets_satisfied": 63.3
+    "streets_satisfied": 63.3,
+    "om_received": 53.2,
+    "settled": 81.1,
+    "ta_days": 135.0,
+    "ta_rate": 6.5
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1492.9,
+    "Central services": 75.0,
+    "Culture and leisure": 145.7,
+    "Environmental and regulatory": 123.2,
+    "Highways and transport": 56.6,
+    "Housing (general fund)": 51.7,
+    "Planning and development": -10.7,
+    "Social work and social care": 1051.3
+   },
    "ofsted": null,
    "neighbours": [
     "S12000008",
@@ -16027,6 +16726,13 @@
      "2022-23": 38.8,
      "2023-24": 36.2,
      "2024-25": 38.2
+    },
+    "ta_days": {
+     "2021-22": 189.0,
+     "2022-23": 177.0,
+     "2023-24": 175.0,
+     "2024-25": 155.0,
+     "2025-26": 135.0
     }
    }
   },
@@ -16038,9 +16744,11 @@
    "region": "Scotland",
    "nation": "Scotland",
    "population": 187240,
-   "households": null,
-   "band_d": null,
-   "band_d_parts": null,
+   "households": 82377,
+   "band_d": 1627.59,
+   "band_d_parts": {
+    "council": 1627.59
+   },
    "funding": null,
    "values": {
     "web_access": 92.3,
@@ -16057,9 +16765,22 @@
     "recycling": 49.3,
     "repair_days": 6.6,
     "street_clean": 88.4,
-    "streets_satisfied": 67.0
+    "streets_satisfied": 67.0,
+    "om_received": 42.2,
+    "settled": 80.7,
+    "ta_days": 310.0,
+    "ta_rate": 7.8
    },
-   "spend": {},
+   "spend": {
+    "All services excluding schools": 1149.7,
+    "Central services": 78.6,
+    "Culture and leisure": 68.6,
+    "Environmental and regulatory": 122.1,
+    "Highways and transport": 79.4,
+    "Housing (general fund)": 44.1,
+    "Planning and development": 30.1,
+    "Social work and social care": 736.1
+   },
    "ofsted": null,
    "neighbours": [
     "S12000005",
@@ -16087,6 +16808,13 @@
      "2022-23": 45.9,
      "2023-24": 50.8,
      "2024-25": 49.3
+    },
+    "ta_days": {
+     "2021-22": 257.0,
+     "2022-23": 304.0,
+     "2023-24": 295.0,
+     "2024-25": 287.0,
+     "2025-26": 310.0
     }
    }
   },

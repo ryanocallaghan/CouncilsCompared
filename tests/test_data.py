@@ -65,6 +65,8 @@ def test_every_source_says_what_period_it_covers():
 
 
 def test_spending_and_ofsted():
-    assert sum(1 for c in COUNCILS if c["spend"]) >= 120
+    assert sum(1 for c in COUNCILS if c["spend"] and nation_of(c) == "England") >= 120
+    assert sum(1 for c in COUNCILS if c["spend"] and nation_of(c) == "Scotland") == 32
+    assert sum(1 for c in COUNCILS if c["band_d"] and nation_of(c) == "Scotland") == 32
     assert sum(1 for c in COUNCILS if c["ofsted"]) >= 120
     assert all(c["ofsted"]["grade"] in model.GRADES for c in COUNCILS if c["ofsted"])
