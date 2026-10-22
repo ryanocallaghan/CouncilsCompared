@@ -30,6 +30,8 @@ ISSUES_URL = REPO_URL + "/issues"
 AUTHOR_URL = "https://ryanocallaghan.com"
 AUTHOR = {"@type": "Person", "name": "Ryan O'Callaghan", "url": AUTHOR_URL,
           "sameAs": [AUTHOR_URL, "https://github.com/ryanocallaghan"]}
+# Published at /<key>.txt so IndexNow knows submissions come from us (web/indexnow.py)
+INDEXNOW_KEY = "b49469e07ca9739c5c5e4e3bfaa95e14"
 OGL_URL = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
 CONTACT_URL = "https://www.ryanocallaghan.com/800"  # the contact form on Ryan's website
 
@@ -50,7 +52,7 @@ def sentence_join(items):
     return Markup(", ").join(items[:-1]) + Markup(" and ") + items[-1]
 
 
-def council_links(councils, group="england"):
+def council_links(councils, group="nation"):
     return sentence_join(Markup('<a class="govuk-link" href="{}">{}</a>').format(model.path(c, group), c["name"])
                          for c in councils)
 
@@ -140,7 +142,7 @@ def structured_data(council, group, updated):
     the page as one about the council, so search engines and AI answers
     know which council the figures are for."""
     crumbs = [("Councils compared", "/"), (council["name"], model.path(council))]
-    if group != "england":
+    if group != "nation":
         crumbs.append((model.group_tab(council, group), model.path(council, group)))
     page = {
         "@type": "WebPage",
@@ -176,18 +178,24 @@ def temporal_coverage(period):
     return None
 
 
-def dataset(measure, path, period, source, updated):
-    """A measure page as a dataset, for Google Dataset Search."""
+def every_council(nation):
+    """Which councils a ranking covers, in words."""
+    if nation == "England":
+        return ("every council in England that runs all local services (unitary authorities, metropolitan "
+                "districts and London boroughs)")
+    return f"every council in {nation}"
+
+
+def dataset(name, description, path, period, source, updated, ogl=True, nation="England"):
+    """A ranking page as a dataset, for Google Dataset Search."""
     data = {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": f"{measure.label}: every council in England",
-        "description": f"{measure.label}, for every council in England that runs all local services "
-                       f"(unitary authorities, metropolitan districts and London boroughs), ranked, "
-                       f"from official statistics. {'Higher' if measure.better == 'higher' else 'Lower'} is better.",
+        "name": f"{name}: every council in {nation}",
+        "description": f"{name}, for {every_council(nation)}, ranked, from official statistics. {description}",
         "url": SITE_URL + path,
         "creator": AUTHOR,
-        "spatialCoverage": {"@type": "Place", "name": "England"},
+        "spatialCoverage": {"@type": "Place", "name": nation},
         "distribution": [
             {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": SITE_URL + "/data/councils.csv"},
             {"@type": "DataDownload", "encodingFormat": "application/json",
@@ -196,7 +204,7 @@ def dataset(measure, path, period, source, updated):
     }
     if source.get("url"):
         data["isBasedOn"] = source["url"]
-    if measure.source != "silktide":  # the Silktide Index is not under the OGL
+    if ogl:
         data["license"] = OGL_URL
     if temporal_coverage(period):
         data["temporalCoverage"] = temporal_coverage(period)
@@ -274,18 +282,42 @@ def build(out=DIST):
     regions_list = sorted({c["region"] for c in councils})
     types = sorted({c["type"] for c in councils})
     areas = {a: (name, note) for a, name, note in model.AREAS}
-    for m in (m for m in model.MEASURES if model.available(m)):
-        rows = model.ranking(m)
-        ranked = {c["code"] for _, c, _, _ in rows}
-        path = f"/measures/{m.id.replace('_', '-')}/"
-        source = sources.get(m.source, {})
-        measure_updated = model.updated({m.source})
-        page(path, "measure.html", nav="/measures/", lastmod=measure_updated or None, measure=m, rows=rows,
-             summary=model.measure_summary(m, rows), updated=measure_updated,
-             structured_data=dataset(m, path, model.period(m), source, measure_updated),
-             map=model.hexmap(m), period=model.period(m), source=source,
-             area_name=areas[m.area][0], note=areas[m.area][1], regions=regions_list, types=types,
-             missing=[c for c in councils if c["code"] not in ranked])
+    for nation in model.nations():
+        for m in (m for m in model.MEASURES if model.available(m, nation)):
+            rows = model.ranking(m, nation)
+            ranked = {c["code"] for _, c, _, _ in rows}
+            path = model.measure_path(m, nation)
+            source = sources.get(m.source, {})
+            measure_updated = model.updated({m.source})
+            page(path, "measure.html", nav="/measures/", lastmod=measure_updated or None, measure=m, rows=rows,
+                 nation=nation, summary=model.measure_summary(m, rows, nation), updated=measure_updated,
+                 structured_data=dataset(m.label, f"{'Higher' if m.better == 'higher' else 'Lower'} is better.",
+                                         path, model.period(m), source, measure_updated, nation=nation,
+                                         ogl=m.source != "silktide"),  # the Silktide Index is not under the OGL
+                 map=model.hexmap(m, nation), period=model.period(m), source=source,
+                 area_name=areas[m.area][0], note=areas[m.area][1], regions=regions_list, types=types,
+                 missing=[c for c in model.in_nation(nation) if c["code"] not in ranked])
+    band_d_source = sources.get("band_d", {})
+    band_d_updated = model.updated({"band_d"})
+    band_d_rows = model.band_d_ranking()
+    if band_d_rows:
+        page("/council-tax/", "band_d.html", nav="/measures/", lastmod=band_d_updated or None, rows=band_d_rows,
+             summary=model.band_d_summary(band_d_rows), source=band_d_source, updated=band_d_updated,
+             regions=regions_list, types=types,
+             structured_data=dataset(f"Council tax Band D {band_d_source.get('period', '')}".strip(),
+                                     "The yearly bill for a Band D home, including police, fire and parish "
+                                     "charges.", "/council-tax/", band_d_source.get("period", ""),
+                                     band_d_source, band_d_updated))
+    for group, value in model.hubs():
+        hub = model.hub(group, value)
+        hub_path = model.hub_path(group, value)
+        page(hub_path, "hub.html", nav="/", lastmod=updated, hub=hub, updated=updated, structured_data={
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{"@type": "ListItem", "position": i, "name": name, "item": SITE_URL + p}
+                                for i, (name, p) in enumerate([("Councils compared", "/"),
+                                                               (f"{hub['title']} compared", hub_path)], 1)],
+        })
     page("/about/", "about.html", nav="/about/", councils=councils, source_list=source_list)
     page("/privacy/", "privacy.html", today="19 October 2026")
     page("404.html", "404.html")
@@ -311,6 +343,8 @@ def build(out=DIST):
                 f"Sitemap: {SITE_URL}/sitemap.xml\n")
     with open(os.path.join(out, "llms.txt"), "w") as f:
         f.write(llms_txt(councils))
+    with open(os.path.join(out, f"{INDEXNOW_KEY}.txt"), "w") as f:
+        f.write(INDEXNOW_KEY)
     for name in os.listdir(os.path.join(HERE, "static")):
         target = os.path.join(out, name if name.startswith("_") else os.path.join("assets", name))
         os.makedirs(os.path.dirname(target), exist_ok=True)

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Council tax Band D {{ source.period }}: every council in England ranked{% endblock %}
+{% block description %}Band D council tax for {{ source.period }} for every council in England that runs all local services, lowest first, including police, fire and parish charges. See where your council tax goes.{% endblock %}
+{% block backLink %}{{ govukBackLink({"text": "All measures", "href": "/measures/"}) }}{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">Council tax</span>
+    <h1 class="govuk-heading-xl">Council tax Band D, {{ source.period }}</h1>
+    <p class="govuk-body-l">What a Band D home pays in a year, for every council in England that runs all local services, lowest first.</p>
+    {% if summary %}<p class="govuk-body">{{ summary }}</p>{% endif %}
+    <p class="govuk-body">The bill includes the council’s own charge and, where they apply, the police, fire and rescue, Mayor of London or combined authority charges, and the average parish or town council charge. Most homes are not in Band D: on each council’s page you can see the bill for every band, and where the money goes.</p>
+    <p class="govuk-body-s app-secondary-text">Source: <a class="govuk-link" href="{{ source.url }}">{{ source.title }}</a>.{% if updated %} Last updated {{ updated | long_date }}.{% endif %}</p>
+  </div>
+</div>
+
+<div class="app-explore" data-module="app-explore">
+  <form class="app-explore__filters" hidden>
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-label--s" for="filter-region">Region</label>
+      <select class="govuk-select" id="filter-region">
+        <option value="">All of England</option>
+        {% for region in regions %}<option>{{ region }}</option>{% endfor %}
+      </select>
+    </div>
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-label--s" for="filter-type">Type of council</label>
+      <select class="govuk-select" id="filter-type">
+        <option value="">All types</option>
+        {% for type in types %}<option>{{ type }}</option>{% endfor %}
+      </select>
+    </div>
+  </form>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Every council, lowest first</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Position</th>
+            <th scope="col" class="govuk-table__header">Council</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Band D bill</th>
+            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Council’s own charge</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          {% for pos, c, value, own in rows %}
+            <tr class="govuk-table__row" data-region="{{ c.region }}" data-type="{{ c.type }}">
+              <td class="govuk-table__cell govuk-table__cell--numeric">{{ pos }}</td>
+              <td class="govuk-table__cell"><a class="govuk-link" href="/{{ c.slug }}/#council-tax">{{ c.name }}</a></td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(value, "£") }}</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(own, "£") if own else "No figure" }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <p class="govuk-body-s app-secondary-text">Councils raise very different shares of their money from council tax, so a low bill does not mean a council spends less.</p>
+    </div>
+  </div>
+</div>
+<script type="application/ld+json">{{ structured_data | tojson }}</script>
+{% endblock %}

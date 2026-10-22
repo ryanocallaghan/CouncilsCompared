@@ -81,7 +81,7 @@ def test_region_and_type_groups(fixture_data):
 
 def test_london_boroughs_have_no_separate_type_page(fixture_data):
     # For a London borough its region and its type are the same group
-    assert model.groups_for(model.councils()["lewisham"]) == ["england", "region", "similar"]
+    assert model.groups_for(model.councils()["lewisham"]) == ["nation", "region", "similar"]
 
 
 def test_similar_councils_need_enough_neighbours(fixture_data):
@@ -146,7 +146,7 @@ def test_no_council_tax_split_without_figures(fixture_data):
 
 def test_group_menu(fixture_data):
     lewisham, wigan = model.councils()["lewisham"], model.councils()["wigan"]
-    assert model.group_option(lewisham, "england") == "All councils in England (6)"
+    assert model.group_option(lewisham, "nation") == "All councils in England (6)"
     assert model.group_option(lewisham, "region") == "London boroughs (4)"
     assert model.group_option(wigan, "region") == "Councils in North West (1)"
 
@@ -169,6 +169,22 @@ def test_measure_summary(fixture_data):
 def test_updated_is_the_newest_publication(fixture_data):
     assert model.updated() == "2026-09-17"
     assert model.updated({"ctax"}) == "2026-07-31"
+
+
+def test_band_d_lowest_first(fixture_data):
+    rows = model.band_d_ranking()
+    assert rows[0][0] == 1 and rows[-1][:1] == (6,) and rows[-1][1]["name"] == "Lewisham"
+
+
+def test_hubs(fixture_data):
+    # London boroughs are the same as London, so have no separate type hub
+    assert model.hubs() == [("region", "London"), ("region", "North East"), ("region", "North West"),
+                            ("type", "Metropolitan district"), ("type", "Unitary authority")]
+    assert model.hub_path("type", "Unitary authority") == "/types/unitary-authorities/"
+    assert model.hub_for(model.councils()["lewisham"], "type") == "/regions/london/"
+    london = model.hub("region", "London")
+    assert london["title"] == "London boroughs"
+    assert [r["path"] for r in london["rows"]][0] == "/greenwich/region/"
 
 
 def test_ranking_for_a_measure_page(fixture_data):
@@ -199,3 +215,20 @@ def test_measures_covering_too_few_councils_are_hidden(fixture_data):
     assert model.available(model.measure_by_id("om_upheld"))
     assert not model.available(model.measure_by_id("fly_rate"))
     assert model.available(model.measure_by_id("tsm_overall"))
+
+
+def test_councils_are_compared_within_their_nation(fixture_data):
+    lewisham = model.councils()["lewisham"]
+    assert lewisham["nation"] == "England"  # from the ONS code, when the data has no nation
+    assert model.nations() == ["England"]
+    assert model.group_tab(lewisham, "nation") == "All England"
+    glasgow = {"code": "S12000049", "name": "Glasgow City", "slug": "glasgow-city", "nation": "Scotland",
+               "region": "Scotland", "type": "Council area", "neighbours": []}
+    # No regions or types in Scotland, and no similar councils without a list of them
+    assert model.groups_for(glasgow) == ["nation"]
+    assert model.group_phrase(glasgow, "nation") == "all councils in Scotland"
+    assert model.path(glasgow) == "/glasgow-city/"
+    upheld = model.measure_by_id("om_upheld")
+    assert not model.available(upheld, "Scotland")  # an English measure
+    assert model.measure_path(upheld) == "/measures/om-upheld/"
+    assert model.measure_path(upheld, "Scotland") == "/measures/om-upheld/scotland/"
