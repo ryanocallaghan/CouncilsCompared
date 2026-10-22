@@ -10,6 +10,9 @@
 
     <h2 class="govuk-heading-m">Which councils are included</h2>
     <p class="govuk-body">The {{ councils | length }} councils in England that run all local services: unitary authorities, metropolitan districts and London boroughs. In areas with a county council and district councils, services are split between them, so they are not included. The City of London and the Isles of Scilly are left out because they are very small and share many services.</p>
+    {% if "Scotland" in model.nations() %}
+      <p class="govuk-body">All 32 councils in Scotland are included too. Councils in Scotland run different services from councils in England, and the statistics are collected differently, so Scottish councils are only compared with each other. Most of their figures come from the Local Government Benchmarking Framework, which every Scottish council reports to.</p>
+    {% endif %}
 
     <h2 class="govuk-heading-m">How councils are compared</h2>
     <p class="govuk-body">For each measure, councils are put in order from best to worst, and the position shows where a council comes in the group. Councils with the same figure share a position. A council in the bottom quarter is shown in red, below the middle in yellow, and in the top half in green.</p>
@@ -20,6 +23,9 @@
       <li>councils of the same type, such as other metropolitan districts</li>
       <li>similar councils: the Department for Education's statistical neighbours, the councils most like it on things that drive demand for services such as deprivation and population (county councils are left out of these lists)</li>
     </ul>
+    {% if "Scotland" in model.nations() %}
+      <p class="govuk-body">A Scottish council is compared with every council in Scotland, and with the other councils in its family group: the Local Government Benchmarking Framework puts councils in groups of eight by how deprived they are.</p>
+    {% endif %}
     <p class="govuk-body">Rates per resident use the ONS population estimate for {{ sources.population.period }} for every year.</p>
 
     <h2 class="govuk-heading-m">What to bear in mind</h2>
@@ -31,6 +37,10 @@
       <li>Homelessness figures are for a single quarter. Shares are only shown where at least 10 cases ended. Where very small numbers of families in temporary accommodation are suppressed, they are counted as none.</li>
       <li>Councils that no longer own council homes have no council housing figures.</li>
       <li>The website score is an automated accessibility test. It finds many problems, but not all.</li>
+      {% if "Scotland" in model.nations() %}
+        <li>In Scotland, satisfaction with bin collections and street cleaning comes from the Scottish Household Survey. The samples in each council are small, so the figures are averages over three years.</li>
+        <li>Scottish figures cover different years: each measure shows the year its figures are for.</li>
+      {% endif %}
     </ul>
 
     <h2 class="govuk-heading-m">Where the figures come from</h2>

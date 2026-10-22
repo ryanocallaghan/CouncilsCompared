@@ -5,13 +5,21 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl">Every measure, every council</h1>
-    <p class="govuk-body-l">See a map and a ranking of every council in England for each measure.</p>
+    <p class="govuk-body-l">See a map and a ranking of every council{% if model.nations() | length == 1 %} in England{% else %}, in each nation,{% endif %} for each measure.</p>
+    {% for nation in model.nations() %}
+    {% if model.nations() | length > 1 %}<h2 class="govuk-heading-l govuk-!-margin-top-8">{{ nation }}</h2>{% endif %}
     {% for area_id, area_name, note in model.AREAS %}
-      <h2 class="govuk-heading-m govuk-!-margin-top-6">{{ area_name }}</h2>
+      {% set shown = [] %}
+      {% for m in model.MEASURES if m.area == area_id and model.available(m, nation) %}{% set _ = shown.append(m) %}{% endfor %}
+      {% if shown %}
+      {% set level = 3 if model.nations() | length > 1 else 2 %}
+      <h{{ level }} class="govuk-heading-m govuk-!-margin-top-6">{{ area_name }}</h{{ level }}>
       <ul class="govuk-list">
-        {% for m in model.MEASURES if m.area == area_id and model.available(m) %}<li><a class="govuk-link" href="/measures/{{ m.id | replace('_', '-') }}/">{{ m.label }}</a></li>{% endfor %}
-        {% if area_id == "ctax" %}<li><a class="govuk-link" href="/council-tax/">Band D council tax</a></li>{% endif %}
+        {% for m in shown %}<li><a class="govuk-link" href="{{ model.measure_path(m, nation) }}">{{ m.label }}</a></li>{% endfor %}
+        {% if area_id == "ctax" and nation == "England" %}<li><a class="govuk-link" href="/council-tax/">Band D council tax</a></li>{% endif %}
       </ul>
+      {% endif %}
+    {% endfor %}
     {% endfor %}
   </div>
 </div>

@@ -89,6 +89,16 @@
    "url": "https://example.com/f",
    "period": "2025-26",
    "published": "2026-09-17"
+  },
+  "lgbf": {
+   "title": "Source lgbf",
+   "url": "https://example.com/lgbf",
+   "period": "2025-26",
+   "published": "2026-10-16",
+   "periods": {
+    "literacy": "2024-25",
+    "ctax_collect": "2025-26"
+   }
   }
  },
  "councils": [
@@ -290,6 +300,106 @@
    "trends": {},
    "band_d_parts": null,
    "funding": null
+  },
+  {
+   "code": "S12000049",
+   "name": "Glasgow City",
+   "slug": "glasgow-city",
+   "type": "Council area",
+   "region": "Scotland",
+   "nation": "Scotland",
+   "population": 654000,
+   "households": null,
+   "band_d": null,
+   "band_d_parts": null,
+   "funding": null,
+   "values": {
+    "literacy": 68.5,
+    "ctax_collect": 93.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "S12000036",
+    "S12000042",
+    "S12000011"
+   ],
+   "trends": {}
+  },
+  {
+   "code": "S12000036",
+   "name": "City of Edinburgh",
+   "slug": "city-of-edinburgh",
+   "type": "Council area",
+   "region": "Scotland",
+   "nation": "Scotland",
+   "population": 531000,
+   "households": null,
+   "band_d": null,
+   "band_d_parts": null,
+   "funding": null,
+   "values": {
+    "literacy": 76.0,
+    "ctax_collect": 96.5
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "S12000049",
+    "S12000042",
+    "S12000011"
+   ],
+   "trends": {}
+  },
+  {
+   "code": "S12000042",
+   "name": "Dundee City",
+   "slug": "dundee-city",
+   "type": "Council area",
+   "region": "Scotland",
+   "nation": "Scotland",
+   "population": 148000,
+   "households": null,
+   "band_d": null,
+   "band_d_parts": null,
+   "funding": null,
+   "values": {
+    "literacy": 70.1,
+    "ctax_collect": 95.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "S12000049",
+    "S12000036",
+    "S12000011"
+   ],
+   "trends": {}
+  },
+  {
+   "code": "S12000011",
+   "name": "East Renfrewshire",
+   "slug": "east-renfrewshire",
+   "type": "Council area",
+   "region": "Scotland",
+   "nation": "Scotland",
+   "population": 100000,
+   "households": null,
+   "band_d": null,
+   "band_d_parts": null,
+   "funding": null,
+   "values": {
+    "literacy": 89.0,
+    "ctax_collect": 98.0
+   },
+   "spend": {},
+   "ofsted": null,
+   "neighbours": [
+    "S12000049",
+    "S12000036",
+    "S12000042"
+   ],
+   "trends": {}
   }
  ]
 }

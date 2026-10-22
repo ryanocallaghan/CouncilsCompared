@@ -232,3 +232,27 @@ def test_councils_are_compared_within_their_nation(fixture_data):
     assert not model.available(upheld, "Scotland")  # an English measure
     assert model.measure_path(upheld) == "/measures/om-upheld/"
     assert model.measure_path(upheld, "Scotland") == "/measures/om-upheld/scotland/"
+
+
+def test_scotland_is_hidden_until_published(fixture_data):
+    assert "glasgow-city" not in model.councils()
+    assert model.nations() == ["England"]
+
+
+def test_scottish_councils_are_compared_with_each_other(fixture_data, monkeypatch):
+    monkeypatch.setattr(model, "PUBLISHED", ["England", "Scotland"])
+    assert model.nations() == ["England", "Scotland"]
+    glasgow = model.councils()["glasgow-city"]
+    assert model.groups_for(glasgow) == ["nation", "similar"]
+    result = model.compare(glasgow)
+    assert len(result.members) == 4 and result.phrase == "all councils in Scotland"
+    rows = {r.measure.id: r for area in result.areas for r in area.rows}
+    # Each measure's own period, from the LGBF, and ranked only among Scottish councils
+    assert (rows["literacy"].position, rows["literacy"].count, rows["literacy"].period) == (4, 4, "2024-25")
+    assert rows["ctax_collect"].count == 4
+    # England's areas without Scottish measures are left out, and Scotland's added
+    areas = [a.id for a in result.areas]
+    assert "send" not in areas and "schools" in areas
+    assert "glasgow-city" not in [c["slug"] for c in model.group_members(model.councils()["lewisham"], "nation")]
+    assert model.period(model.measure_by_id("ctax_collect"), "Scotland") == "2025-26"
+    assert model.measure_by_id("ctax_collect").source_for("Scotland") == "lgbf"

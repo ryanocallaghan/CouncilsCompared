@@ -25,10 +25,15 @@ DATA_FILE = os.path.join(ROOT, "data", "councils.json")
 # others in the same nation: services and statistics differ between them.
 GROUPS = ["nation", "region", "type", "similar"]
 NATIONS = {"E": "England", "S": "Scotland", "W": "Wales"}  # by the first letter of the ONS code
+# The nations on the site. A nation's figures can be in the data before its
+# pages are ready: set CC_NATIONS=England,Scotland to build them anyway (as
+# Cloudflare does for previews).
+PUBLISHED = [n.strip() for n in os.environ.get("CC_NATIONS", "England").split(",") if n.strip()]
 TYPE_PLURAL = {
     "London borough": "London boroughs",
     "Metropolitan district": "metropolitan districts",
     "Unitary authority": "unitary authorities",
+    "Council area": "councils",
 }
 MIN_SIMILAR = 3  # fewer similar councils than this, and the group is not offered
 
@@ -36,6 +41,12 @@ AREAS = [
     ("send", "Special educational needs",
      "Education, health and care plans set out support for children with special educational needs. "
      "The law says a new plan should be issued within 20 weeks."),
+    ("schools", "Schools",
+     "Primary pupils reaching the expected level for their stage (P1, P4 and P7), school attendance, and "
+     "school leavers going on to work, study or training."),
+    ("care", "Adult social care",
+     "Adults who get care at home, inspections of care services, and how long older people stay in hospital "
+     "once they are ready to leave."),
     ("complaints", "Ombudsman complaints",
      "The Local Government and Social Care Ombudsman looks at complaints the council's own complaints "
      "process has not resolved. Upheld means the Ombudsman found the council at fault."),
@@ -53,6 +64,23 @@ AREAS = [
      "An automated test of the council website's accessibility."),
 ]
 
+# Where a nation's figures need a different explanation from England's
+AREA_NOTES = {
+    ("Scotland", "housing"):
+        "From the figures every council landlord reports to the Scottish Housing Regulator. Only councils "
+        "that still own council homes are included.",
+    ("Scotland", "ctax"):
+        "How much of the council tax due for the year the council received by the end of the year.",
+    ("Scotland", "streets"):
+        "Inspections of how clean streets are, how much household waste was recycled, and how satisfied "
+        "people are with bin collections and street cleaning. Satisfaction comes from the Scottish Household "
+        "Survey, averaged over three years because the samples in each council are small.",
+}
+
+
+def area_note(area_id, nation="England"):
+    return AREA_NOTES.get((nation, area_id)) or next(note for a, _, note in AREAS if a == area_id)
+
 
 @dataclass(frozen=True)
 class Measure:
@@ -64,6 +92,10 @@ class Measure:
     source: str  # its id in data/councils.json "sources", which gives the period
     official: str = ""  # the publication's own name for it, if different
     nations: tuple = ("England",)  # where it is published; ranked within each separately
+    other_sources: tuple = ()  # ((nation, source id),) where a nation's figures come from another source
+
+    def source_for(self, nation="England"):
+        return dict(self.other_sources).get(nation, self.source)
 
 
 MEASURES = [
@@ -97,10 +129,12 @@ MEASURES = [
             "Homes that do not meet the Decent Homes Standard (RP01)"),
     Measure("tsm_complaints", "housing", "Tenants' complaints answered on time", "%", "higher", "tsm",
             "Stage 1 complaints responded to within the Housing Ombudsman's timescales (CH02)"),
-    Measure("ctax_collect", "ctax", "Council tax collected in the year it was due", "%", "higher", "ctax"),
+    Measure("ctax_collect", "ctax", "Council tax collected in the year it was due", "%", "higher", "ctax",
+            nations=("England", "Scotland"), other_sources=(("Scotland", "lgbf"),)),
     Measure("fly_rate", "streets", "Fly-tipping incidents, per 1,000 residents", "", "lower", "fly"),
     Measure("fly_enforce", "streets", "Enforcement actions, per 100 fly-tipping incidents", "", "higher", "fly"),
-    Measure("recycling", "streets", "Household waste reused, recycled or composted", "%", "higher", "waste"),
+    Measure("recycling", "streets", "Household waste reused, recycled or composted", "%", "higher", "waste",
+            nations=("England", "Scotland"), other_sources=(("Scotland", "lgbf"),)),
     Measure("ta_rate", "homeless", "Households in temporary accommodation, per 1,000 households", "", "lower",
             "homelessness"),
     Measure("ta_long", "homeless", "Families in temporary accommodation for 2 years or more", "%", "lower",
@@ -110,7 +144,35 @@ MEASURES = [
     Measure("relief", "homeless", "Homeless people helped to find a home", "%", "higher", "homelessness",
             "Relief duty cases ending with accommodation secured for 6 months or more"),
     Measure("web_access", "digital", "Council website accessibility score", "%", "higher", "silktide",
-            "Silktide Index WCAG 2.2 AA score"),
+            "Silktide Index WCAG 2.2 AA score", nations=("England", "Scotland")),
+    # Scotland, from the Local Government Benchmarking Framework
+    Measure("literacy", "schools", "Primary pupils at the expected level in literacy", "%", "higher", "lgbf",
+            "Pupils in P1, P4 and P7 achieving the expected Curriculum for Excellence level in literacy",
+            nations=("Scotland",)),
+    Measure("numeracy", "schools", "Primary pupils at the expected level in numeracy", "%", "higher", "lgbf",
+            "Pupils in P1, P4 and P7 achieving the expected Curriculum for Excellence level in numeracy",
+            nations=("Scotland",)),
+    Measure("attendance", "schools", "School attendance", "%", "higher", "lgbf",
+            "School attendance rate (per 100 pupils)", nations=("Scotland",)),
+    Measure("destinations", "schools", "School leavers going on to work, study or training", "%", "higher",
+            "lgbf", "Pupils entering positive destinations", nations=("Scotland",)),
+    Measure("care_impact", "care", "Adults cared for at home who say it improves their quality of life", "%",
+            "higher", "lgbf", "Adults supported at home who agree that their services and support had an "
+            "impact in improving or maintaining their quality of life", nations=("Scotland",)),
+    Measure("care_graded", "care", "Adult care services graded good or better", "%", "higher", "lgbf",
+            nations=("Scotland",)),
+    Measure("delayed_discharge", "care",
+            "Days older people spend in hospital when ready to leave, per 1,000 people aged 75 or over", "",
+            "lower", "lgbf", nations=("Scotland",)),
+    Measure("housing_quality", "housing", "Council homes meeting the Scottish Housing Quality Standard", "%",
+            "higher", "lgbf", nations=("Scotland",)),
+    Measure("repair_days", "housing", "Days to complete a non-emergency repair", "", "lower", "lgbf",
+            "Average number of days taken to complete non-emergency repairs", nations=("Scotland",)),
+    Measure("street_clean", "streets", "Street cleanliness score", "%", "higher", "lgbf", nations=("Scotland",)),
+    Measure("bins_satisfied", "streets", "Adults satisfied with bin collections", "%", "higher", "lgbf",
+            "Adults satisfied with refuse collection (three-year average)", nations=("Scotland",)),
+    Measure("streets_satisfied", "streets", "Adults satisfied with street cleaning", "%", "higher", "lgbf",
+            "Adults satisfied with street cleaning (three-year average)", nations=("Scotland",)),
 ]
 
 SPENDING = [
@@ -132,11 +194,11 @@ BANDS = {
 
 def load():
     """{"sources": {...}, "councils": {slug: council}, "by_code": {code: council}}."""
-    return _load(DATA_FILE)
+    return _load(DATA_FILE, tuple(PUBLISHED))
 
 
 @cache
-def _load(path):
+def _load(path, published=("England",)):
     with open(path) as f:
         data = json.load(f)
     councils = {}
@@ -144,7 +206,8 @@ def _load(path):
         if council.get("ofsted") and council["ofsted"].get("inspected"):
             council["ofsted"]["date"] = date.fromisoformat(council["ofsted"]["inspected"])
         council.setdefault("nation", NATIONS[council["code"][0]])
-        councils[council["slug"]] = council
+        if council["nation"] in published:
+            councils[council["slug"]] = council
     return {"sources": data["sources"], "councils": councils,
             "by_code": {c["code"]: c for c in councils.values()}}
 
@@ -171,8 +234,9 @@ def in_nation(nation):
 
 
 @cache
-def _coverage(path, nation):
-    return {m.id: sum(1 for c in _load(path)["councils"].values() if c["nation"] == nation and m.id in c["values"])
+def _coverage(path, published, nation):
+    return {m.id: sum(1 for c in _load(path, published)["councils"].values()
+                      if c["nation"] == nation and m.id in c["values"])
             for m in MEASURES}
 
 
@@ -182,12 +246,15 @@ def available(measure, nation="England"):
     figures."""
     if nation not in measure.nations:
         return False
-    total = sum(1 for c in _load(DATA_FILE)["councils"].values() if c["nation"] == nation)
-    return measure.area == "housing" or _coverage(DATA_FILE, nation)[measure.id] >= MIN_COVERAGE * total
+    total = sum(1 for c in councils().values() if c["nation"] == nation)
+    return measure.area == "housing" or _coverage(DATA_FILE, tuple(PUBLISHED), nation)[measure.id] >= MIN_COVERAGE * total
 
 
-def period(measure):
-    return sources().get(measure.source, {}).get("period", "")
+def period(measure, nation="England"):
+    """The period a measure's figures cover, in a nation: the source's own
+    period for each measure if it has them, or the source's period."""
+    source = sources().get(measure.source_for(nation), {})
+    return source.get("periods", {}).get(measure.id) or source.get("period", "")
 
 
 def groups_for(council):
@@ -425,7 +492,7 @@ def compare(council, group="nation"):
         for m in (m for m in MEASURES if m.area == area_id and available(m, council["nation"])):
             group_values = [c["values"][m.id] for c in members if m.id in c["values"]]
             value = council["values"].get(m.id)
-            row = Row(measure=m, period=period(m), value=fmt(value, m.unit),
+            row = Row(measure=m, period=period(m, council["nation"]), value=fmt(value, m.unit),
                       median=fmt(median(group_values), m.unit) if group_values else "No figure")
             if value is not None and len(group_values) > 1:
                 row.position = position(value, group_values, m.better)
@@ -435,8 +502,11 @@ def compare(council, group="nation"):
                 row.strip = strip(all_values, council["code"], member_codes, m.better, median(group_values))
             area_rows.append(row)
             rows.append(row)
+        if not any(m.area == area_id and council["nation"] in m.nations for m in MEASURES):
+            continue  # an area with no measures in the council's nation, such as schools in England
         shown = [r for r in area_rows if r.band]
-        result.areas.append(Area(area_id, area_name, note, shown, len(area_rows) - len(shown)))
+        result.areas.append(Area(area_id, area_name, area_note(area_id, council["nation"]), shown,
+                                 len(area_rows) - len(shown)))
     banded = [r for r in rows if r.band]
     result.ranked = len(banded)
     result.counts = {key: sum(1 for r in banded if r.band == key) for key in BANDS}
@@ -474,15 +544,28 @@ def measure_summary(measure, rows, nation="England"):
     by_value = sorted(rows, key=lambda r: (r[2], r[1]["name"]))
     low, high = by_value[0], by_value[-1]
     middle = fmt(median(r[2] for r in rows), measure.unit)
-    when = f"In {period(measure)}, " if period(measure) else ""
+    when = f"In {period(measure, nation)}, " if period(measure, nation) else ""
     return (f"{when}the highest figure was {high[1]['name']}’s ({fmt(high[2], measure.unit)}) and the lowest "
             f"{low[1]['name']}’s ({fmt(low[2], measure.unit)}). The median across {len(rows)} councils in "
             f"{nation} was {middle}.")
 
 
+# Sources England's pages use beyond its measures' own
+ENGLAND_ONLY = {"band_d", "spending", "funding", "ofsted", "neighbours", "area_bands"}
+
+
+def nation_sources(nation):
+    """The sources a nation's pages use."""
+    used = {m.source_for(nation) for m in MEASURES if nation in m.nations} | {"population"}
+    return used | ENGLAND_ONLY if nation == "England" else used
+
+
 def updated(source_ids=None):
-    """The date the newest of these sources (or of all of them) was published."""
-    dates = [s.get("published") for key, s in sources().items() if source_ids is None or key in source_ids]
+    """The date the newest of these sources (or of every source the site's
+    nations use) was published."""
+    if source_ids is None:
+        source_ids = set().union(*(nation_sources(n) for n in nations()))
+    dates = [s.get("published") for key, s in sources().items() if key in source_ids]
     return max((d for d in dates if d), default="")
 
 
@@ -752,8 +835,8 @@ def _hexes():
 
 
 def hexmap(measure, nation="England"):
-    """SVG geometry for the map: every district in the map, the nation's
-    councils coloured.
+    """SVG geometry for the map: every district in the nation, its councils
+    coloured (in England, county and district areas are grey).
 
     Hexagons are pointy-topped in odd-r layout (odd rows shifted right), and
     r counts up from the south, so it is flipped to draw north at the top.
@@ -764,18 +847,17 @@ def hexmap(measure, nation="England"):
     ranked = ranking(measure, nation)
     quarter = {c["code"]: q for _, c, _, q in ranked}
     value = {c["code"]: v for _, c, v, _ in ranked}
-    hexes = _hexes()["hexes"]
+    hexes = {code: h for code, h in _hexes()["hexes"].items() if NATIONS.get(code[0]) == nation}
     size = 10  # centre to corner
     w = math.sqrt(3) * size
-    max_r = max(h["r"] for h in hexes.values())
+    min_q = min(h["q"] for h in hexes.values())
+    min_r, max_r = min(h["r"] for h in hexes.values()), max(h["r"] for h in hexes.values())
     corners = [(round(math.cos(math.radians(a)) * size, 2), round(math.sin(math.radians(a)) * size, 2))
                for a in (30, 90, 150, 210, 270, 330)]
     cells = []
     for code, h in hexes.items():
         council = by_code.get(code) or by_code.get(alias.get(code))
-        if council and council["nation"] != nation:
-            council = None
-        x = h["q"] * w + (w / 2 if h["r"] % 2 else 0) + w
+        x = (h["q"] - min_q) * w + (w / 2 if h["r"] % 2 else 0) + w
         y = (max_r - h["r"]) * size * 1.5 + size * 1.5
         points = " ".join(f"{round(x + dx, 1)},{round(y + dy, 1)}" for dx, dy in corners)
         if council and council["code"] in quarter:
@@ -788,8 +870,8 @@ def hexmap(measure, nation="England"):
                           "label": f"{council['name']}: no figure"})
         else:
             cells.append({"points": points, "class": "app-hex--other", "council": None, "label": h["n"]})
-    width = max(h["q"] for h in hexes.values()) * w + w * 2.5
-    height = (max_r + 1) * size * 1.5 + size * 2
+    width = (max(h["q"] for h in hexes.values()) - min_q) * w + w * 2.5
+    height = (max_r - min_r + 1) * size * 1.5 + size * 2
     return {"cells": cells, "width": round(width), "height": round(height)}
 
 

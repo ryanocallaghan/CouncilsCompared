@@ -1,9 +1,10 @@
-"""ONS mid-year population estimates, which also say what kind of council each is.
+"""ONS mid-year population estimates for the UK, which also say what kind of council each is.
 
-The councils compared are every single-tier council in England: unitary
-authorities, metropolitan districts and London boroughs. The City of London
-and the Isles of Scilly are left out: with a few thousand residents each, and
-services shared with neighbours, they are not comparable.
+The councils compared are every single-tier council in England (unitary
+authorities, metropolitan districts and London boroughs) and every council in
+Scotland. The City of London and the Isles of Scilly are left out: with a few
+thousand residents each, and services shared with neighbours, they are not
+comparable.
 """
 
 import re
@@ -14,9 +15,14 @@ from pipeline.sources import Result
 
 ID = "population"
 PAGE = ("https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/"
-        "datasets/estimatesofthepopulationforenglandandwales")
-TYPES = {"Unitary Authority": "Unitary authority", "Metropolitan District": "Metropolitan district",
-         "London Borough": "London borough"}
+        "datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland")
+# By the first letter of the ONS code, as Welsh councils are also "Unitary Authority"
+TYPES = {
+    "E": {"Unitary Authority": "Unitary authority", "Metropolitan District": "Metropolitan district",
+          "London Borough": "London borough"},
+    "S": {"Council Area": "Council area"},
+}
+EXPECTED = {"E": (120, 140), "S": (32, 32)}  # how many councils of each nation
 LEFT_OUT = {"E09000001", "E06000053"}  # City of London, Isles of Scilly
 
 # ONS's lookups of local authority districts to regions, as an ArcGIS API
@@ -30,7 +36,7 @@ def display_name(name):
 
 def latest_file():
     page = get_text(PAGE)
-    links = re.findall(r'href="(/file\?uri=[^"]+/mye(\d\d)tablesew\.xlsx)"', page)
+    links = re.findall(r'href="(/file\?uri=[^"]+/mye(\d\d)tablesuk\.xlsx)"', page)
     if not links:
         raise RuntimeError("No mid-year estimates file on the ONS page")
     path, year = max(links, key=lambda link: int(link[1]))
@@ -66,15 +72,18 @@ def fetch(context=None):
                     files=[url, region_source])
     for row in rows[head + 1:]:
         code = sheets.code(row[0])
-        kind = TYPES.get(sheets.text(row[col_type]))
+        kind = TYPES.get((code or " ")[0], {}).get(sheets.text(row[col_type]))
         if not code or not kind or code in LEFT_OUT:
             continue
         name = sheets.text(row[col_name])
         result.values[code] = {"population": int(sheets.num(row[col_all]))}
-        region = region_of.get(code) or region_of.get(sheets._ALIASES.get(code))
+        region = ("Scotland" if code.startswith("S")
+                  else region_of.get(code) or region_of.get(sheets._ALIASES.get(code)))
         result.extra[code] = {"name": display_name(name), "ons_name": name, "type": kind, "region": region}
         if not region:
             result.notes.append(f"No region for {name} ({code})")
-    if not 120 <= len(result.values) <= 140:
-        raise RuntimeError(f"Expected about 130 single-tier councils, found {len(result.values)}")
+    for nation, (low, high) in EXPECTED.items():
+        found = sum(1 for code in result.values if code.startswith(nation))
+        if not low <= found <= high:
+            raise RuntimeError(f"Expected {low} to {high} councils with {nation} codes, found {found}")
     return result

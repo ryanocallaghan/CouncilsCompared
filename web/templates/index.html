@@ -15,8 +15,9 @@
 
 <div class="govuk-grid-row govuk-!-margin-top-8">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-m">All {{ all_councils | length }} councils, by region</h2>
-    <p class="govuk-body">Every council in England that runs all local services: unitary authorities, metropolitan districts and London boroughs. Figures come from official statistics, updated as new editions are published.</p>
+    <h2 class="govuk-heading-m">All {{ all_councils | length }} councils{% if not other_nations %}, by region{% endif %}</h2>
+    <p class="govuk-body">Every council in England that runs all local services: unitary authorities, metropolitan districts and London boroughs{% for nation, members in other_nations %}{{ " and" if loop.last else "," }} every council in {{ nation }}{% endfor %}.{% if other_nations %} Each council is compared with others in the same nation.{% endif %} Figures come from official statistics, updated as new editions are published.</p>
+    {% if other_nations %}<h3 class="govuk-heading-s">England, by region</h3>{% endif %}
     {% for region, members in regions %}
       <details class="govuk-details app-region">
         <summary class="govuk-details__summary"><span class="govuk-details__summary-text">{{ region }} ({{ members | length }})</span></summary>
@@ -25,6 +26,17 @@
             {% for c in members %}<li><a class="govuk-link" href="/{{ c.slug }}/">{{ c.name }}</a></li>{% endfor %}
           </ul>
           <p class="govuk-body"><a class="govuk-link" href="{{ model.hub_path('region', region) }}">Compare the {{ members | length }} {{ "London boroughs" if region == "London" else "councils in " ~ region }} with each other</a></p>
+        </div>
+      </details>
+    {% endfor %}
+    {% for nation, members in other_nations %}
+      <h3 class="govuk-heading-s govuk-!-margin-top-6">{{ nation }}</h3>
+      <details class="govuk-details app-region">
+        <summary class="govuk-details__summary"><span class="govuk-details__summary-text">{{ nation }} ({{ members | length }})</span></summary>
+        <div class="govuk-details__text">
+          <ul class="govuk-list app-columns">
+            {% for c in members %}<li><a class="govuk-link" href="/{{ c.slug }}/">{{ c.name }}</a></li>{% endfor %}
+          </ul>
         </div>
       </details>
     {% endfor %}

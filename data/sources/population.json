@@ -779,10 +779,202 @@
    "ons_name": "Westminster",
    "region": "London",
    "type": "London borough"
+  },
+  "S12000005": {
+   "name": "Clackmannanshire",
+   "ons_name": "Clackmannanshire",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000006": {
+   "name": "Dumfries and Galloway",
+   "ons_name": "Dumfries and Galloway",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000008": {
+   "name": "East Ayrshire",
+   "ons_name": "East Ayrshire",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000010": {
+   "name": "East Lothian",
+   "ons_name": "East Lothian",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000011": {
+   "name": "East Renfrewshire",
+   "ons_name": "East Renfrewshire",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000013": {
+   "name": "Na h-Eileanan Siar",
+   "ons_name": "Na h-Eileanan Siar",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000014": {
+   "name": "Falkirk",
+   "ons_name": "Falkirk",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000017": {
+   "name": "Highland",
+   "ons_name": "Highland",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000018": {
+   "name": "Inverclyde",
+   "ons_name": "Inverclyde",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000019": {
+   "name": "Midlothian",
+   "ons_name": "Midlothian",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000020": {
+   "name": "Moray",
+   "ons_name": "Moray",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000021": {
+   "name": "North Ayrshire",
+   "ons_name": "North Ayrshire",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000023": {
+   "name": "Orkney Islands",
+   "ons_name": "Orkney Islands",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000026": {
+   "name": "Scottish Borders",
+   "ons_name": "Scottish Borders",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000027": {
+   "name": "Shetland Islands",
+   "ons_name": "Shetland Islands",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000028": {
+   "name": "South Ayrshire",
+   "ons_name": "South Ayrshire",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000029": {
+   "name": "South Lanarkshire",
+   "ons_name": "South Lanarkshire",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000030": {
+   "name": "Stirling",
+   "ons_name": "Stirling",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000033": {
+   "name": "Aberdeen City",
+   "ons_name": "Aberdeen City",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000034": {
+   "name": "Aberdeenshire",
+   "ons_name": "Aberdeenshire",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000035": {
+   "name": "Argyll and Bute",
+   "ons_name": "Argyll and Bute",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000036": {
+   "name": "City of Edinburgh",
+   "ons_name": "City of Edinburgh",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000038": {
+   "name": "Renfrewshire",
+   "ons_name": "Renfrewshire",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000039": {
+   "name": "West Dunbartonshire",
+   "ons_name": "West Dunbartonshire",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000040": {
+   "name": "West Lothian",
+   "ons_name": "West Lothian",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000041": {
+   "name": "Angus",
+   "ons_name": "Angus",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000042": {
+   "name": "Dundee City",
+   "ons_name": "Dundee City",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000045": {
+   "name": "East Dunbartonshire",
+   "ons_name": "East Dunbartonshire",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000047": {
+   "name": "Fife",
+   "ons_name": "Fife",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000048": {
+   "name": "Perth and Kinross",
+   "ons_name": "Perth and Kinross",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000049": {
+   "name": "Glasgow City",
+   "ons_name": "Glasgow City",
+   "region": "Scotland",
+   "type": "Council area"
+  },
+  "S12000050": {
+   "name": "North Lanarkshire",
+   "ons_name": "North Lanarkshire",
+   "region": "Scotland",
+   "type": "Council area"
   }
  },
  "files": [
-  "https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales/mid20252023localauthorityboundaries/mye25tablesew.xlsx",
+  "https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland/mid2025/mye25tablesuk.xlsx",
   "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/LAD25_RGN25_EN_LU_v2"
  ],
  "id": "population",
@@ -791,7 +983,7 @@
  "published": "",
  "title": "ONS: Population estimates, mid-2025",
  "trends": {},
- "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales",
+ "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationestimatesforukenglandandwalesscotlandandnorthernireland",
  "values": {
   "E06000001": {
    "population": 99656
@@ -1182,6 +1374,102 @@
   },
   "E09000033": {
    "population": 212367
+  },
+  "S12000005": {
+   "population": 51610
+  },
+  "S12000006": {
+   "population": 145490
+  },
+  "S12000008": {
+   "population": 121350
+  },
+  "S12000010": {
+   "population": 116460
+  },
+  "S12000011": {
+   "population": 99840
+  },
+  "S12000013": {
+   "population": 25770
+  },
+  "S12000014": {
+   "population": 160230
+  },
+  "S12000017": {
+   "population": 237260
+  },
+  "S12000018": {
+   "population": 78550
+  },
+  "S12000019": {
+   "population": 100390
+  },
+  "S12000020": {
+   "population": 94730
+  },
+  "S12000021": {
+   "population": 133660
+  },
+  "S12000023": {
+   "population": 21920
+  },
+  "S12000026": {
+   "population": 116800
+  },
+  "S12000027": {
+   "population": 22710
+  },
+  "S12000028": {
+   "population": 112280
+  },
+  "S12000029": {
+   "population": 334330
+  },
+  "S12000030": {
+   "population": 94040
+  },
+  "S12000033": {
+   "population": 230180
+  },
+  "S12000034": {
+   "population": 264640
+  },
+  "S12000035": {
+   "population": 87310
+  },
+  "S12000036": {
+   "population": 531370
+  },
+  "S12000038": {
+   "population": 189270
+  },
+  "S12000039": {
+   "population": 88340
+  },
+  "S12000040": {
+   "population": 187240
+  },
+  "S12000041": {
+   "population": 114610
+  },
+  "S12000042": {
+   "population": 148390
+  },
+  "S12000045": {
+   "population": 109550
+  },
+  "S12000047": {
+   "population": 373990
+  },
+  "S12000048": {
+   "population": 154930
+  },
+  "S12000049": {
+   "population": 654330
+  },
+  "S12000050": {
+   "population": 343930
   }
  }
 }
