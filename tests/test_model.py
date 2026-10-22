@@ -81,7 +81,7 @@ def test_region_and_type_groups(fixture_data):
 
 def test_london_boroughs_have_no_separate_type_page(fixture_data):
     # For a London borough its region and its type are the same group
-    assert model.groups_for(model.councils()["lewisham"]) == ["england", "region", "similar"]
+    assert model.groups_for(model.councils()["lewisham"]) == ["nation", "region", "similar"]
 
 
 def test_similar_councils_need_enough_neighbours(fixture_data):
@@ -146,7 +146,7 @@ def test_no_council_tax_split_without_figures(fixture_data):
 
 def test_group_menu(fixture_data):
     lewisham, wigan = model.councils()["lewisham"], model.councils()["wigan"]
-    assert model.group_option(lewisham, "england") == "All councils in England (6)"
+    assert model.group_option(lewisham, "nation") == "All councils in England (6)"
     assert model.group_option(lewisham, "region") == "London boroughs (4)"
     assert model.group_option(wigan, "region") == "Councils in North West (1)"
 
@@ -215,3 +215,20 @@ def test_measures_covering_too_few_councils_are_hidden(fixture_data):
     assert model.available(model.measure_by_id("om_upheld"))
     assert not model.available(model.measure_by_id("fly_rate"))
     assert model.available(model.measure_by_id("tsm_overall"))
+
+
+def test_councils_are_compared_within_their_nation(fixture_data):
+    lewisham = model.councils()["lewisham"]
+    assert lewisham["nation"] == "England"  # from the ONS code, when the data has no nation
+    assert model.nations() == ["England"]
+    assert model.group_tab(lewisham, "nation") == "All England"
+    glasgow = {"code": "S12000049", "name": "Glasgow City", "slug": "glasgow-city", "nation": "Scotland",
+               "region": "Scotland", "type": "Council area", "neighbours": []}
+    # No regions or types in Scotland, and no similar councils without a list of them
+    assert model.groups_for(glasgow) == ["nation"]
+    assert model.group_phrase(glasgow, "nation") == "all councils in Scotland"
+    assert model.path(glasgow) == "/glasgow-city/"
+    upheld = model.measure_by_id("om_upheld")
+    assert not model.available(upheld, "Scotland")  # an English measure
+    assert model.measure_path(upheld) == "/measures/om-upheld/"
+    assert model.measure_path(upheld, "Scotland") == "/measures/om-upheld/scotland/"

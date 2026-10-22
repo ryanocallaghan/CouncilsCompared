@@ -20,8 +20,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE = os.path.join(ROOT, "data", "councils.json")
 
 # The groups a council can be compared with, in the order of the tabs.
-# "england" is the council's own page; the others are under it.
-GROUPS = ["england", "region", "type", "similar"]
+# "nation" (every council in England, Scotland or Wales) is the council's
+# own page; the others are under it. Councils are only ever compared with
+# others in the same nation: services and statistics differ between them.
+GROUPS = ["nation", "region", "type", "similar"]
+NATIONS = {"E": "England", "S": "Scotland", "W": "Wales"}  # by the first letter of the ONS code
 TYPE_PLURAL = {
     "London borough": "London boroughs",
     "Metropolitan district": "metropolitan districts",
@@ -60,6 +63,7 @@ class Measure:
     better: str  # "higher" or "lower"
     source: str  # its id in data/councils.json "sources", which gives the period
     official: str = ""  # the publication's own name for it, if different
+    nations: tuple = ("England",)  # where it is published; ranked within each separately
 
 
 MEASURES = [
@@ -139,6 +143,7 @@ def _load(path):
     for council in data["councils"]:
         if council.get("ofsted") and council["ofsted"].get("inspected"):
             council["ofsted"]["date"] = date.fromisoformat(council["ofsted"]["inspected"])
+        council.setdefault("nation", NATIONS[council["code"][0]])
         councils[council["slug"]] = council
     return {"sources": data["sources"], "councils": councils,
             "by_code": {c["code"]: c for c in councils.values()}}
@@ -155,16 +160,30 @@ def sources():
 MIN_COVERAGE = 0.75  # the share of councils a measure needs figures for before it is shown
 
 
+def nations():
+    """The nations with councils, England first."""
+    present = {c["nation"] for c in councils().values()}
+    return [n for n in NATIONS.values() if n in present]
+
+
+def in_nation(nation):
+    return [c for c in councils().values() if c["nation"] == nation]
+
+
 @cache
-def _coverage(path):
-    return {m.id: sum(1 for c in _load(path)["councils"].values() if m.id in c["values"]) for m in MEASURES}
+def _coverage(path, nation):
+    return {m.id: sum(1 for c in _load(path)["councils"].values() if c["nation"] == nation and m.id in c["values"])
+            for m in MEASURES}
 
 
-def available(measure):
-    """Whether a measure covers enough councils to rank them fairly.
-    Council housing is the exception: only councils with homes have figures."""
-    total = len(_load(DATA_FILE)["councils"])
-    return measure.area == "housing" or _coverage(DATA_FILE)[measure.id] >= MIN_COVERAGE * total
+def available(measure, nation="England"):
+    """Whether a measure covers enough of a nation's councils to rank them
+    fairly. Council housing is the exception: only councils with homes have
+    figures."""
+    if nation not in measure.nations:
+        return False
+    total = sum(1 for c in _load(DATA_FILE)["councils"].values() if c["nation"] == nation)
+    return measure.area == "housing" or _coverage(DATA_FILE, nation)[measure.id] >= MIN_COVERAGE * total
 
 
 def period(measure):
@@ -175,6 +194,8 @@ def groups_for(council):
     """The groups this council can be compared with."""
     available = []
     for group in GROUPS:
+        if group in ("region", "type") and council["nation"] != "England":
+            continue  # Scotland and Wales have no regions, and one type of council each
         if group == "type" and council["type"] == "London borough":
             continue  # the same as its region, London
         if group == "similar" and len(council["neighbours"]) < MIN_SIMILAR:
@@ -185,7 +206,7 @@ def groups_for(council):
 
 def group_members(council, group):
     """The councils to compare with, including the council itself."""
-    everyone = list(councils().values())
+    everyone = in_nation(council["nation"])
     if group == "region":
         return [c for c in everyone if c["region"] == council["region"]]
     if group == "type":
@@ -205,7 +226,7 @@ def group_tab(council, group):
         return plural[0].upper() + plural[1:]
     if group == "similar":
         return "Similar councils"
-    return "All England"
+    return f"All {council['nation']}"
 
 
 def group_phrase(council, group):
@@ -216,13 +237,13 @@ def group_phrase(council, group):
         return f"{TYPE_PLURAL[council['type']]}"
     if group == "similar":
         return "similar councils"
-    return "all councils in England"
+    return f"all councils in {council['nation']}"
 
 
 def group_option(council, group):
     """What the "Compared with" menu says: "All councils in England (130)"."""
     count = len(group_members(council, group))
-    names = {"england": "All councils in England", "region": group_tab(council, "region"),
+    names = {"nation": f"All councils in {council['nation']}", "region": group_tab(council, "region"),
              "type": group_tab(council, "type"), "similar": "Similar councils"}
     if group == "region" and council["region"] == "London":
         names["region"] = "London boroughs"
@@ -231,8 +252,8 @@ def group_option(council, group):
     return f"{names[group]} ({count})"
 
 
-def path(council, group="england"):
-    return f"/{council['slug']}/" if group == "england" else f"/{council['slug']}/{group}/"
+def path(council, group="nation"):
+    return f"/{council['slug']}/" if group == "nation" else f"/{council['slug']}/{group}/"
 
 
 def fmt(value, unit=""):
@@ -392,16 +413,16 @@ def _summary(rows, worst=True):
     ]
 
 
-def compare(council, group="england"):
+def compare(council, group="nation"):
     members = group_members(council, group)
     member_codes = {c["code"] for c in members}
-    everyone = list(councils().values())
+    everyone = in_nation(council["nation"])  # the marks on each chart
     result = Comparison(council=council, group=group, tab=group_tab(council, group),
                         phrase=group_phrase(council, group), members=members)
     rows = []
     for area_id, area_name, note in AREAS:
         area_rows = []
-        for m in (m for m in MEASURES if m.area == area_id and available(m)):
+        for m in (m for m in MEASURES if m.area == area_id and available(m, council["nation"])):
             group_values = [c["values"][m.id] for c in members if m.id in c["values"]]
             value = council["values"].get(m.id)
             row = Row(measure=m, period=period(m), value=fmt(value, m.unit),
@@ -446,7 +467,7 @@ def key_figures(comparison):
     return sentences
 
 
-def measure_summary(measure, rows):
+def measure_summary(measure, rows, nation="England"):
     """The highest, the lowest and the median on a measure page, in a sentence."""
     if len(rows) < 2:
         return None
@@ -456,7 +477,7 @@ def measure_summary(measure, rows):
     when = f"In {period(measure)}, " if period(measure) else ""
     return (f"{when}the highest figure was {high[1]['name']}’s ({fmt(high[2], measure.unit)}) and the lowest "
             f"{low[1]['name']}’s ({fmt(low[2], measure.unit)}). The median across {len(rows)} councils in "
-            f"England was {middle}.")
+            f"{nation} was {middle}.")
 
 
 def updated(source_ids=None):
@@ -631,10 +652,16 @@ def measure_by_id(measure_id):
     return next(m for m in MEASURES if m.id == measure_id)
 
 
-def ranking(measure, members=None):
-    """[(position, council, value, quarter 0-3)] for every council (or every
-    one of members) with a figure, best first."""
-    with_values = [c for c in members or councils().values() if measure.id in c["values"]]
+def measure_path(measure, nation="England"):
+    """England's measure pages are at /measures/<id>/, the others under them."""
+    base = f"/measures/{measure.id.replace('_', '-')}/"
+    return base if nation == "England" else f"{base}{slugify(nation)}/"
+
+
+def ranking(measure, nation="England", members=None):
+    """[(position, council, value, quarter 0-3)] for every council in the
+    nation (or every one of members) with a figure, best first."""
+    with_values = [c for c in members or in_nation(nation) if measure.id in c["values"]]
     values = [c["values"][measure.id] for c in with_values]
     rows = []
     for c in with_values:
@@ -653,9 +680,9 @@ def slugify(text):
 
 
 def hubs():
-    """[(group, value)] for every hub page: each region, then each type of
-    council apart from London boroughs, which are the same as London."""
-    everyone = councils().values()
+    """[(group, value)] for every hub page: each region of England, then each
+    type of council apart from London boroughs, which are the same as London."""
+    everyone = in_nation("England")
     return ([("region", r) for r in sorted({c["region"] for c in everyone})]
             + [("type", t) for t in sorted({c["type"] for c in everyone}) if t != "London borough"])
 
@@ -676,18 +703,18 @@ def hub_for(council, group):
 def hub(group, value):
     """What a hub page shows: each council's spread of positions within the
     group, and every measure ranked within it."""
-    members = sorted((c for c in councils().values() if c[group] == value), key=lambda c: c["name"])
+    members = sorted((c for c in in_nation("England") if c[group] == value), key=lambda c: c["name"])
     phrase = group_phrase(members[0], group)
     rows = []
     for c in members:
         comparison = compare(c, group)
         rows.append({"council": c, "counts": comparison.counts, "ranked": comparison.ranked,
-                     "path": path(c, group if group in groups_for(c) else "england")})
+                     "path": path(c, group if group in groups_for(c) else "nation")})
     measures = []
     for m in MEASURES:
         if not available(m):
             continue
-        ranked = ranking(m, members)
+        ranked = ranking(m, members=members)
         if len(ranked) > 1:
             measures.append({"measure": m, "rows": ranked, "period": period(m),
                              "median": fmt(median(v for _, _, v, _ in ranked), m.unit)})
@@ -698,8 +725,9 @@ def hub(group, value):
 # The council tax page: every council's Band D bill
 
 def band_d_ranking():
-    """[(position, council, Band D, the council's own part)], lowest first."""
-    with_values = [c for c in councils().values() if c.get("band_d")]
+    """[(position, council, Band D, the council's own part)], lowest first.
+    England only: bands and bills are set differently in Scotland and Wales."""
+    with_values = [c for c in in_nation("England") if c.get("band_d")]
     values = [c["band_d"] for c in with_values]
     rows = [(position(c["band_d"], values, "lower"), c, c["band_d"], (c.get("band_d_parts") or {}).get("council"))
             for c in with_values]
@@ -723,8 +751,9 @@ def _hexes():
         return json.load(f)
 
 
-def hexmap(measure):
-    """SVG geometry for the map: every district in England, ours coloured.
+def hexmap(measure, nation="England"):
+    """SVG geometry for the map: every district in the map, the nation's
+    councils coloured.
 
     Hexagons are pointy-topped in odd-r layout (odd rows shifted right), and
     r counts up from the south, so it is flipped to draw north at the top.
@@ -732,8 +761,9 @@ def hexmap(measure):
     from pipeline.sheets import SAME_COUNCIL
     alias = {a: b for pair in SAME_COUNCIL for a, b in (pair, pair[::-1])}
     by_code = load()["by_code"]
-    quarter = {c["code"]: q for _, c, _, q in ranking(measure)}
-    value = {c["code"]: v for _, c, v, _ in ranking(measure)}
+    ranked = ranking(measure, nation)
+    quarter = {c["code"]: q for _, c, _, q in ranked}
+    value = {c["code"]: v for _, c, v, _ in ranked}
     hexes = _hexes()["hexes"]
     size = 10  # centre to corner
     w = math.sqrt(3) * size
@@ -743,6 +773,8 @@ def hexmap(measure):
     cells = []
     for code, h in hexes.items():
         council = by_code.get(code) or by_code.get(alias.get(code))
+        if council and council["nation"] != nation:
+            council = None
         x = h["q"] * w + (w / 2 if h["r"] % 2 else 0) + w
         y = (max_r - h["r"]) * size * 1.5 + size * 1.5
         points = " ".join(f"{round(x + dx, 1)},{round(y + dy, 1)}" for dx, dy in corners)
@@ -768,7 +800,7 @@ def site_data():
     everyone = sorted(councils().values(), key=lambda c: c["name"])
     return {
         "councils": [{"slug": c["slug"], "name": c["name"], "code": c["code"], "region": c["region"],
-                      "type": c["type"], "values": c["values"], "spend": c["spend"], "trends": c["trends"]}
+                      "nation": c["nation"], "type": c["type"], "values": c["values"], "spend": c["spend"], "trends": c["trends"]}
                      for c in everyone],
         "measures": {m.id: {"label": m.label, "unit": m.unit, "better": m.better} for m in MEASURES},
     }

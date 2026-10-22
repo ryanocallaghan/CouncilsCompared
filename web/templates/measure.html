@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% set m = measure %}
-{% block title %}{{ m.label }}: every council in England ranked{% if period %} ({{ period }}){% endif %}{% endblock %}
-{% block description %}{{ m.label }}, for every council in England that runs all local services, ranked and mapped from official statistics ({{ period }}).{% endblock %}
+{% block title %}{{ m.label }}: every council in {{ nation }} ranked{% if period %} ({{ period }}){% endif %}{% endblock %}
+{% block description %}{{ m.label }}, for every council in {{ nation }}{% if nation == "England" %} that runs all local services{% endif %}, ranked and mapped from official statistics ({{ period }}).{% endblock %}
 {% block backLink %}{{ govukBackLink({"text": "All measures", "href": "/measures/"}) }}{% endblock %}
 
 {% block content %}
@@ -16,6 +16,7 @@
 </div>
 
 <div class="app-explore" data-module="app-explore">
+  {% if nation == "England" %}
   <form class="app-explore__filters" hidden>
     <div class="govuk-form-group">
       <label class="govuk-label govuk-label--s" for="filter-region">Region</label>
@@ -32,11 +33,12 @@
       </select>
     </div>
   </form>
+  {% endif %}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-half">
       <figure class="app-map">
-        <svg class="app-map__svg" viewBox="0 0 {{ map.width }} {{ map.height }}" role="img" aria-label="Map of England with each council as a hexagon, coloured by {{ m.label | lower }}. The same figures are in the table." focusable="false">
+        <svg class="app-map__svg" viewBox="0 0 {{ map.width }} {{ map.height }}" role="img" aria-label="Map of {{ nation }} with each council as a hexagon, coloured by {{ m.label | lower }}. The same figures are in the table." focusable="false">
           {% for cell in map.cells %}
             {% if cell.council %}<a href="/{{ cell.council.slug }}/" data-slug="{{ cell.council.slug }}" data-region="{{ cell.council.region }}" data-type="{{ cell.council.type }}" aria-label="{{ cell.label }}"><polygon class="app-hex {{ cell.class }}" points="{{ cell.points }}"><title>{{ cell.label }}</title></polygon></a>{% else %}<polygon class="app-hex {{ cell.class }}" points="{{ cell.points }}"><title>{{ cell.label }}: not covered</title></polygon>{% endif %}
           {% endfor %}
@@ -44,7 +46,7 @@
         <figcaption>
           <ul class="app-map__legend govuk-body-s">
             {% for name in model.QUARTER_NAMES %}<li><span class="app-map__key {{ model.QUARTER_CLASSES[loop.index0] }}"></span>{{ name }}</li>{% endfor %}
-            <li><span class="app-map__key app-hex--other"></span>Not covered (county and district areas)</li>
+            <li><span class="app-map__key app-hex--other"></span>{% if nation == "England" %}Not covered (county and district areas){% else %}Elsewhere in the UK{% endif %}</li>
           </ul>
           <p class="govuk-body-s app-secondary-text">Each council is the same size, so London is easy to see. Map layout by <a class="govuk-link" href="https://github.com/odileeds/hexmaps">Open Innovations</a>.</p>
         </figcaption>

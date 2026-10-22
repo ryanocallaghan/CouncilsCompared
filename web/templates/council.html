@@ -3,14 +3,14 @@
 {% set c = comparison %}
 {% set b = c.council %}
 
-{% block title %}{% if c.group == "england" %}How {{ b.name }} Council compares{% else %}{{ b.name }} Council compared with {{ c.phrase }}{% endif %}{% endblock %}
+{% block title %}{% if c.group == "nation" %}How {{ b.name }} Council compares{% else %}{{ b.name }} Council compared with {{ c.phrase }}{% endif %}{% endblock %}
 {% block description %}How {{ b.name }} Council compares with {{ c.phrase }} on special educational needs, complaints, council housing, council tax, streets, homelessness and spending, from official statistics. See where your council tax goes.{% endblock %}
 
 {% block backLink %}
   {{ govukBackLink({"text": "All councils", "href": "/"}) }}
 {% endblock %}
 
-{# A row of marks, one per council in England, better to the right #}
+{# A row of marks, one per council in the nation, better to the right #}
 {% macro stripChart(s, label, ends=("Worse", "Better"), measure="", spend="") %}
   <svg class="app-strip" width="100%" height="26" role="img" aria-label="{{ label }}" focusable="false" data-measure="{{ measure }}" data-spend="{{ spend }}">
     <line class="app-strip__axis" x1="1%" x2="99%" y1="13" y2="13"></line>
@@ -123,7 +123,7 @@
 {% endif %}
 
 <h2 class="govuk-heading-l govuk-!-margin-top-8">How the council does</h2>
-<p class="govuk-body app-measure-note">Each measure ranks {{ b.name }} among {{ c.phrase }}. Open a section for the figures, and a chart of where every council in England sits.</p>
+<p class="govuk-body app-measure-note">Each measure ranks {{ b.name }} among {{ c.phrase }}. Open a section for the figures, and a chart of where every council in {{ b.nation }} sits.</p>
 
 {% for area in c.areas %}
 <section class="app-area" id="{{ area.id }}" aria-labelledby="{{ area.id }}-title">
@@ -135,7 +135,7 @@
     <ul class="app-area__measures">
       {% for r in area.rows %}
         <li class="app-area__measure">
-          <a class="app-area__label govuk-link" href="/measures/{{ r.measure.id | replace('_', '-') }}/">{{ r.measure.label }}</a>
+          <a class="app-area__label govuk-link" href="{{ model.measure_path(r.measure, b.nation) }}">{{ r.measure.label }}</a>
           <span class="app-area__value"><strong>{{ r.value }}</strong> {{ govukTag({"text": r.band_text, "classes": r.band_class ~ " app-area__tag"}) }}</span>
           <span class="app-area__with" data-measure="{{ r.measure.id }}" hidden></span>
         </li>
@@ -153,7 +153,7 @@
               <th scope="col" class="govuk-table__header govuk-table__header--numeric">{{ b.name }}</th>
               <th scope="col" class="govuk-table__header govuk-table__header--numeric">Median</th>
               <th scope="col" class="govuk-table__header">Position</th>
-              <th scope="col" class="govuk-table__header app-compare-table__strip">Across England</th>
+              <th scope="col" class="govuk-table__header app-compare-table__strip">Across {{ b.nation }}</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
@@ -205,7 +205,7 @@
             <th scope="col" class="govuk-table__header govuk-table__header--numeric">{{ b.name }}</th>
             <th scope="col" class="govuk-table__header govuk-table__header--numeric">Median</th>
             <th scope="col" class="govuk-table__header">Rank, highest first</th>
-            <th scope="col" class="govuk-table__header app-compare-table__strip">Across England</th>
+            <th scope="col" class="govuk-table__header app-compare-table__strip">Across {{ b.nation }}</th>
           </tr>
         </thead>
         <tbody class="govuk-table__body">
@@ -238,7 +238,7 @@
         {% for grade, count in c.grades %}
           <div class="govuk-summary-list__row{% if grade == b.ofsted.grade %} app-summary-list__row--current{% endif %}">
             <dt class="govuk-summary-list__key">{{ grade }}</dt>
-            <dd class="govuk-summary-list__value">{{ count }} of the {{ c.members | length }} {{ c.phrase | replace("all councils in England", "councils in England") }}{% if grade == b.ofsted.grade %}, including {{ b.name }}{% endif %}</dd>
+            <dd class="govuk-summary-list__value">{{ count }} of the {{ c.members | length }} {{ c.phrase | replace("all councils in ", "councils in ") }}{% if grade == b.ofsted.grade %}, including {{ b.name }}{% endif %}</dd>
           </div>
         {% endfor %}
       </dl>
@@ -285,7 +285,7 @@
   <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
     {% set howToRead %}
       <p class="govuk-body">Position 1 is the best in the group. The bottom quarter is shown in red, below the middle in yellow and the top half in green. Councils with the same figure share a position.</p>
-      <p class="govuk-body">In each chart, every mark is a council in England and the large dot is {{ b.name }}. Councils in the group you are comparing with are darker. The dashed line is the group's median.</p>
+      <p class="govuk-body">In each chart, every mark is a council in {{ b.nation }} and the large dot is {{ b.name }}. Councils in the group you are comparing with are darker. The dashed line is the group's median.</p>
       <p class="govuk-body"><a class="govuk-link" href="/about/">How the figures are put together</a></p>
     {% endset %}
     {{ govukDetails({"summaryText": "How to read these figures", "html": howToRead}) }}
