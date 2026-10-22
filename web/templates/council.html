@@ -27,7 +27,7 @@
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <span class="govuk-caption-l">{% if b.type == "London borough" %}{{ b.type }}{% else %}<a class="govuk-link govuk-link--muted" href="{{ model.hub_for(b, 'type') }}">{{ b.type }}</a>{% endif %}, <a class="govuk-link govuk-link--muted" href="{{ model.hub_for(b, 'region') }}">{{ b.region }}</a></span>
+    <span class="govuk-caption-l">{% if b.nation != "England" %}{{ b.nation }}{% else %}{% if b.type == "London borough" %}{{ b.type }}{% else %}<a class="govuk-link govuk-link--muted" href="{{ model.hub_for(b, 'type') }}">{{ b.type }}</a>{% endif %}, <a class="govuk-link govuk-link--muted" href="{{ model.hub_for(b, 'region') }}">{{ b.region }}</a>{% endif %}</span>
     <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">{{ b.name }}</h1>
     <p class="govuk-body-l">How {{ b.name }} Council compares with {{ c.phrase }}, on {{ c.ranked }} measures from official statistics.</p>
 
@@ -49,13 +49,17 @@
         <label class="govuk-label govuk-label--s" for="with">Compare with another council</label>
         <select class="govuk-select" id="with" name="with">
           <option value="">None</option>
-          {% for other in all_councils if other.slug != b.slug %}<option value="{{ other.slug }}">{{ other.name }}</option>{% endfor %}
+          {% for other in all_councils if other.slug != b.slug and other.nation == b.nation %}<option value="{{ other.slug }}">{{ other.name }}</option>{% endfor %}
         </select>
       </div>
       <p class="govuk-body app-with__summary" aria-live="polite"></p>
     </form>
     {% if c.group == "similar" %}
-      <p class="govuk-body">The councils most like {{ b.name }} on the things that drive demand for services, such as deprivation and population, from the Department for Education's statistical neighbours: {{ c.members[1:] | council_links("similar") }}.</p>
+      {% if b.nation == "Scotland" %}
+        <p class="govuk-body">The councils in the same family group as {{ b.name }} in the Local Government Benchmarking Framework, which groups Scottish councils by how deprived they are: {{ c.members[1:] | council_links("similar") }}.</p>
+      {% else %}
+        <p class="govuk-body">The councils most like {{ b.name }} on the things that drive demand for services, such as deprivation and population, from the Department for Education's statistical neighbours: {{ c.members[1:] | council_links("similar") }}.</p>
+      {% endif %}
     {% endif %}
   </div>
 </div>

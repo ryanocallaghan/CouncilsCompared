@@ -86,7 +86,7 @@ def fetch(context):
         if (sheets.num(row[cases]) or 0) >= 5 and sheets.num(row[timely]) is not None:
             result.set(code, "om_timely", sheets.num(row[timely]) * 100)
 
-    missing = set(population) - set(names)
+    missing = {code for code in population if code.startswith("E")} - set(names)  # England only
     if missing:
         result.notes.append(f"No Ombudsman figures for {len(missing)} councils: {sorted(missing)}")
     result.extra = {"names": names, "latest": latest}

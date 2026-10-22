@@ -9,7 +9,7 @@ import re
 
 from python_calamine import CalamineWorkbook
 
-CODE = re.compile(r"E0[6-9]\d{6}")
+CODE = re.compile(r"(E0[6-9]|S12|W06)\d{6}")  # English single-tier councils, Scottish and Welsh councils
 
 # Councils whose code changed with a boundary change but are the same
 # council: publications switch to the new code at different times

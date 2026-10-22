@@ -36,6 +36,11 @@ If a source fails (a site is down, or a spreadsheet changes shape), its previous
 | MHCLG revenue outturn (RSX) | GOV.UK Content API (collection) | spending per resident |
 | Ofsted local authority inspection outcomes | GOV.UK Content API (collection) | children's services grade |
 | Silktide Index | the index's pages | website accessibility score |
+| Improvement Service: Local Government Benchmarking Framework (Scotland) | the Spatial Hub's open data API | schools, adult social care, council housing, council tax collection, streets and waste, family groups |
+
+### Scotland
+
+Scottish councils are compared only with each other, on their own measures. Their figures are in the data, but the pages are only built when `CC_NATIONS` includes Scotland (`CC_NATIONS=England,Scotland npm run build`). Set that on Cloudflare's preview environment to see Scotland in pull request previews before it goes live.
 
 Columns are found by their headings and rows by ONS code, so new editions usually work without changes. Councils named rather than coded (the Ombudsman, the regulator, Silktide) are matched by name in `pipeline/names.py`.
 

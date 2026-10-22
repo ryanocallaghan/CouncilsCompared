@@ -43,11 +43,13 @@ STEPS = [
     ("ofsted", "ofsted", "fetch"),
     ("silktide", "silktide", "fetch"),
     ("area_bands", "area_bands", "fetch"),
+    ("lgbf", "lgbf", "fetch"),
 ]
 
 # Measures each source provides, in data/councils.json "values"
-VALUE_SOURCES = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "waste", "fly", "homelessness", "silktide"]
-TRENDS = {"ehcp_20wk": "ehcp", "om_upheld": "lgo", "recycling": "waste", "fly_rate": "fly"}
+VALUE_SOURCES = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "waste", "fly", "homelessness", "silktide", "lgbf"]
+# Trends each source provides; a council only has figures in one source per trend
+TRENDS = {"ehcp_20wk": ["ehcp"], "om_upheld": ["lgo"], "recycling": ["waste", "lgbf"], "fly_rate": ["fly"]}
 
 
 def load(source_id):
@@ -166,14 +168,18 @@ def assemble():
             council["ofsted"] = sources["ofsted"].extra.get(code)
         if sources["neighbours"]:
             council["neighbours"] = sources["neighbours"].extra.get(code, [])
-        for trend, source_id in TRENDS.items():
-            if sources[source_id]:
-                series = sources[source_id].trends.get(code, {}).get(trend)
+        if sources["lgbf"] and code.startswith("S"):  # the LGBF family group
+            council["neighbours"] = sources["lgbf"].extra["neighbours"].get(code, [])
+        for trend, source_ids in TRENDS.items():
+            for source_id in source_ids:
+                series = sources[source_id].trends.get(code, {}).get(trend) if sources[source_id] else None
                 if series:
                     council["trends"][trend] = dict(sorted(series.items()))
         councils.append(council)
     data = {
-        "sources": {s: {"title": r.title, "url": r.url, "period": r.period, "published": r.published}
+        "sources": {s: {"title": r.title, "url": r.url, "period": r.period, "published": r.published,
+                        # Where measures from one source cover different years
+                        **({"periods": r.extra["periods"]} if "periods" in r.extra else {})}
                     for s, r in sources.items() if r},
         "councils": councils,
     }

@@ -262,8 +262,11 @@ def build(out=DIST):
 
     regions = {}
     for c in councils:
-        regions.setdefault(c["region"], []).append(c)
-    page("/", "index.html", nav="/", lastmod=updated, regions=sorted(regions.items()), structured_data={
+        if c["nation"] == "England":
+            regions.setdefault(c["region"], []).append(c)
+    other_nations = [(n, [c for c in councils if c["nation"] == n]) for n in model.nations() if n != "England"]
+    page("/", "index.html", nav="/", lastmod=updated, regions=sorted(regions.items()), other_nations=other_nations,
+         structured_data={
         "@context": "https://schema.org", "@type": "WebSite", "name": "Councils compared", "url": SITE_URL + "/",
         "description": "How every single-tier council in England compares, from official statistics.",
         "author": AUTHOR, "publisher": AUTHOR,
@@ -272,30 +275,35 @@ def build(out=DIST):
         groups = model.groups_for(council)
         for group in groups:
             comparison = model.compare(council, group)
-            page(model.path(council, group), "council.html", nav="/", lastmod=updated, groups=groups,
-                 comparison=comparison, key_figures=model.key_figures(comparison), updated=updated,
-                 council_tax=model.council_tax(council), structured_data=structured_data(council, group, updated))
+            council_updated = model.updated(model.nation_sources(council["nation"]))
+            page(model.path(council, group), "council.html", nav="/", lastmod=council_updated, groups=groups,
+                 comparison=comparison, key_figures=model.key_figures(comparison), updated=council_updated,
+                 council_tax=model.council_tax(council),
+                 structured_data=structured_data(council, group, council_updated))
     order = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "band_d", "fly", "waste", "homelessness",
-             "silktide", "spending", "ofsted", "neighbours", "population"]
-    source_list = [sources[s] for s in order if s in sources]
+             "silktide", "spending", "ofsted", "neighbours", "lgbf", "population"]
+    # Scotland's source only once Scotland is on the site
+    source_list = [sources[s] for s in order if s in sources and (s != "lgbf" or "Scotland" in model.nations())]
     page("/measures/", "measures.html", nav="/measures/")
-    regions_list = sorted({c["region"] for c in councils})
-    types = sorted({c["type"] for c in councils})
+    regions_list = sorted({c["region"] for c in councils if c["nation"] == "England"})
+    types = sorted({c["type"] for c in councils if c["nation"] == "England"})
     areas = {a: (name, note) for a, name, note in model.AREAS}
     for nation in model.nations():
         for m in (m for m in model.MEASURES if model.available(m, nation)):
             rows = model.ranking(m, nation)
             ranked = {c["code"] for _, c, _, _ in rows}
             path = model.measure_path(m, nation)
-            source = sources.get(m.source, {})
-            measure_updated = model.updated({m.source})
+            source_id = m.source_for(nation)
+            source = sources.get(source_id, {})
+            measure_updated = model.updated({source_id})
             page(path, "measure.html", nav="/measures/", lastmod=measure_updated or None, measure=m, rows=rows,
                  nation=nation, summary=model.measure_summary(m, rows, nation), updated=measure_updated,
                  structured_data=dataset(m.label, f"{'Higher' if m.better == 'higher' else 'Lower'} is better.",
-                                         path, model.period(m), source, measure_updated, nation=nation,
-                                         ogl=m.source != "silktide"),  # the Silktide Index is not under the OGL
-                 map=model.hexmap(m, nation), period=model.period(m), source=source,
-                 area_name=areas[m.area][0], note=areas[m.area][1], regions=regions_list, types=types,
+                                         path, model.period(m, nation), source, measure_updated, nation=nation,
+                                         ogl=source_id != "silktide"),  # the Silktide Index is not under the OGL
+                 map=model.hexmap(m, nation), period=model.period(m, nation), source=source,
+                 area_name=areas[m.area][0], note=model.area_note(m.area, nation), regions=regions_list,
+                 types=types,
                  missing=[c for c in model.in_nation(nation) if c["code"] not in ranked])
     band_d_source = sources.get("band_d", {})
     band_d_updated = model.updated({"band_d"})

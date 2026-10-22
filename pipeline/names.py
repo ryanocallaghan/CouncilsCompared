@@ -51,6 +51,13 @@ ALIASES = {
     "westminster": "westminster",
     "cityofwestminster": "westminster",
     "cityoflondon": "cityoflondon",
+    # Scotland
+    "edinburgh": "cityofedinburgh",
+    "eileansiar": "naheileanansiar",
+    "comhairlenaneileansiar": "naheileanansiar",
+    "westernisles": "naheileanansiar",
+    "orkney": "orkneyislands",
+    "shetland": "shetlandislands",
 }
 
 

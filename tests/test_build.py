@@ -66,3 +66,25 @@ def test_indexnow_sends_every_page_in_the_sitemap(fixture_data, tmp_path):
     build.build(str(tmp_path))
     pages = indexnow.urls(tmp_path / "sitemap.xml")
     assert "https://councilscompared.com/" in pages and "https://councilscompared.com/lewisham/similar/" in pages
+
+
+def test_builds_scotland_when_published(fixture_data, tmp_path, monkeypatch):
+    from web import model
+    monkeypatch.setattr(model, "PUBLISHED", ["England", "Scotland"])
+    build.build(str(tmp_path))
+    glasgow = (tmp_path / "glasgow-city" / "index.html").read_text()
+    assert "All councils in Scotland (4)" in glasgow and "Local Government Benchmarking Framework" in (
+        tmp_path / "glasgow-city" / "similar" / "index.html").read_text()
+    assert ">Lewisham</option>" not in glasgow  # only councils in the same nation to compare with
+    literacy = (tmp_path / "measures" / "literacy" / "scotland" / "index.html").read_text()
+    assert "every council in Scotland ranked (2024-25)" in literacy
+    assert (tmp_path / "measures" / "ctax-collect" / "scotland" / "index.html").exists()
+    assert not (tmp_path / "measures" / "literacy" / "index.html").exists()  # no English page
+    assert 'href="/measures/literacy/scotland/"' in (tmp_path / "measures" / "index.html").read_text()
+    assert "S12000049" in (tmp_path / "data" / "councils-by-code.json").read_text()
+
+
+def test_scotland_not_built_by_default(fixture_data, tmp_path):
+    build.build(str(tmp_path))
+    assert not (tmp_path / "glasgow-city").exists()
+    assert "S12000049" not in (tmp_path / "data" / "councils-by-code.json").read_text()
