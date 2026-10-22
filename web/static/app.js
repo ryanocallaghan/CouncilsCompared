@@ -57,7 +57,7 @@ for (const form of document.querySelectorAll('[data-module="app-group"]')) {
     const group = form.elements.group.value;
     const other = new URLSearchParams(window.location.search).get("with");
     const query = other ? `?with=${encodeURIComponent(other)}` : "";
-    window.location.href = (group === "england" ? `/${slug}/` : `/${slug}/${group}/`) + query;
+    window.location.href = (group === "nation" ? `/${slug}/` : `/${slug}/${group}/`) + query;
   });
 }
 
@@ -276,6 +276,7 @@ for (const form of document.querySelectorAll('[data-module="app-with"]')) {
 // Measure pages: filter the map and table by region and type of council
 for (const explore of document.querySelectorAll('[data-module="app-explore"]')) {
   const filters = explore.querySelector(".app-explore__filters");
+  if (!filters) continue; // only England's pages have regions and types to filter by
   filters.hidden = false;
   const region = explore.querySelector("#filter-region");
   const type = explore.querySelector("#filter-type");

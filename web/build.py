@@ -52,7 +52,7 @@ def sentence_join(items):
     return Markup(", ").join(items[:-1]) + Markup(" and ") + items[-1]
 
 
-def council_links(councils, group="england"):
+def council_links(councils, group="nation"):
     return sentence_join(Markup('<a class="govuk-link" href="{}">{}</a>').format(model.path(c, group), c["name"])
                          for c in councils)
 
@@ -142,7 +142,7 @@ def structured_data(council, group, updated):
     the page as one about the council, so search engines and AI answers
     know which council the figures are for."""
     crumbs = [("Councils compared", "/"), (council["name"], model.path(council))]
-    if group != "england":
+    if group != "nation":
         crumbs.append((model.group_tab(council, group), model.path(council, group)))
     page = {
         "@type": "WebPage",
@@ -178,18 +178,24 @@ def temporal_coverage(period):
     return None
 
 
-def dataset(name, description, path, period, source, updated, ogl=True):
+def every_council(nation):
+    """Which councils a ranking covers, in words."""
+    if nation == "England":
+        return ("every council in England that runs all local services (unitary authorities, metropolitan "
+                "districts and London boroughs)")
+    return f"every council in {nation}"
+
+
+def dataset(name, description, path, period, source, updated, ogl=True, nation="England"):
     """A ranking page as a dataset, for Google Dataset Search."""
     data = {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": f"{name}: every council in England",
-        "description": f"{name}, for every council in England that runs all local services "
-                       f"(unitary authorities, metropolitan districts and London boroughs), ranked, "
-                       f"from official statistics. {description}",
+        "name": f"{name}: every council in {nation}",
+        "description": f"{name}, for {every_council(nation)}, ranked, from official statistics. {description}",
         "url": SITE_URL + path,
         "creator": AUTHOR,
-        "spatialCoverage": {"@type": "Place", "name": "England"},
+        "spatialCoverage": {"@type": "Place", "name": nation},
         "distribution": [
             {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": SITE_URL + "/data/councils.csv"},
             {"@type": "DataDownload", "encodingFormat": "application/json",
@@ -276,20 +282,21 @@ def build(out=DIST):
     regions_list = sorted({c["region"] for c in councils})
     types = sorted({c["type"] for c in councils})
     areas = {a: (name, note) for a, name, note in model.AREAS}
-    for m in (m for m in model.MEASURES if model.available(m)):
-        rows = model.ranking(m)
-        ranked = {c["code"] for _, c, _, _ in rows}
-        path = f"/measures/{m.id.replace('_', '-')}/"
-        source = sources.get(m.source, {})
-        measure_updated = model.updated({m.source})
-        page(path, "measure.html", nav="/measures/", lastmod=measure_updated or None, measure=m, rows=rows,
-             summary=model.measure_summary(m, rows), updated=measure_updated,
-             structured_data=dataset(m.label, f"{'Higher' if m.better == 'higher' else 'Lower'} is better.", path,
-                                     model.period(m), source, measure_updated,
-                                     ogl=m.source != "silktide"),  # the Silktide Index is not under the OGL
-             map=model.hexmap(m), period=model.period(m), source=source,
-             area_name=areas[m.area][0], note=areas[m.area][1], regions=regions_list, types=types,
-             missing=[c for c in councils if c["code"] not in ranked])
+    for nation in model.nations():
+        for m in (m for m in model.MEASURES if model.available(m, nation)):
+            rows = model.ranking(m, nation)
+            ranked = {c["code"] for _, c, _, _ in rows}
+            path = model.measure_path(m, nation)
+            source = sources.get(m.source, {})
+            measure_updated = model.updated({m.source})
+            page(path, "measure.html", nav="/measures/", lastmod=measure_updated or None, measure=m, rows=rows,
+                 nation=nation, summary=model.measure_summary(m, rows, nation), updated=measure_updated,
+                 structured_data=dataset(m.label, f"{'Higher' if m.better == 'higher' else 'Lower'} is better.",
+                                         path, model.period(m), source, measure_updated, nation=nation,
+                                         ogl=m.source != "silktide"),  # the Silktide Index is not under the OGL
+                 map=model.hexmap(m, nation), period=model.period(m), source=source,
+                 area_name=areas[m.area][0], note=areas[m.area][1], regions=regions_list, types=types,
+                 missing=[c for c in model.in_nation(nation) if c["code"] not in ranked])
     band_d_source = sources.get("band_d", {})
     band_d_updated = model.updated({"band_d"})
     band_d_rows = model.band_d_ranking()

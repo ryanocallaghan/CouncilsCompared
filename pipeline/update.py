@@ -119,6 +119,9 @@ def run(only=None):
     return status
 
 
+NATIONS = {"E": "England", "S": "Scotland", "W": "Wales"}  # by the first letter of the ONS code
+
+
 def slugify(name):
     import re
     return re.sub(r"[^a-z0-9]+", "-", name.lower().replace("&", "and").replace("'", "")).strip("-")
@@ -137,6 +140,7 @@ def assemble():
             "slug": slugify(extra["name"]),
             "type": extra["type"],
             "region": extra["region"],
+            "nation": NATIONS[code[0]],
             "population": population.values[code]["population"],
             "households": households.get(code),
             "band_d": None,
