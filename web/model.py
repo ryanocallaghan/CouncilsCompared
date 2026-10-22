@@ -428,6 +428,43 @@ def compare(council, group="england"):
     return result
 
 
+def key_figures(comparison):
+    """One sentence for each area, on its first measure with a position:
+    each stands on its own, so it can be quoted with the council, figure,
+    year and position together."""
+    name = comparison.council["name"]
+    sentences = []
+    for area in comparison.areas:
+        r = next((r for r in area.rows if r.band), None)
+        if not r:
+            continue
+        end = "highest" if r.measure.better == "higher" else "lowest"
+        when = f"In {r.period}, " if r.period else ""
+        sentences.append(f"{when}{name} was {ordinal(r.position)} of {r.count} among {comparison.phrase} "
+                         f"for {lower_first(r.measure.label)} (1st is {end}), at {r.value} against a median "
+                         f"of {r.median}.")
+    return sentences
+
+
+def measure_summary(measure, rows):
+    """The highest, the lowest and the median on a measure page, in a sentence."""
+    if len(rows) < 2:
+        return None
+    by_value = sorted(rows, key=lambda r: (r[2], r[1]["name"]))
+    low, high = by_value[0], by_value[-1]
+    middle = fmt(median(r[2] for r in rows), measure.unit)
+    when = f"In {period(measure)}, " if period(measure) else ""
+    return (f"{when}the highest figure was {high[1]['name']}’s ({fmt(high[2], measure.unit)}) and the lowest "
+            f"{low[1]['name']}’s ({fmt(low[2], measure.unit)}). The median across {len(rows)} councils in "
+            f"England was {middle}.")
+
+
+def updated(source_ids=None):
+    """The date the newest of these sources (or of all of them) was published."""
+    dates = [s.get("published") for key, s in sources().items() if source_ids is None or key in source_ids]
+    return max((d for d in dates if d), default="")
+
+
 def _spending(council, members, member_codes, everyone):
     rows = []
     for service in SPENDING:

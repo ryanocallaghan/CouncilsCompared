@@ -12,6 +12,7 @@ import hashlib
 import io
 import json
 import os
+import re
 import shutil
 import sys
 from datetime import date
@@ -27,6 +28,9 @@ SITE_URL = "https://councilscompared.com"
 REPO_URL = "https://github.com/ryanocallaghan/CouncilsCompared"
 ISSUES_URL = REPO_URL + "/issues"
 AUTHOR_URL = "https://ryanocallaghan.com"
+AUTHOR = {"@type": "Person", "name": "Ryan O'Callaghan", "url": AUTHOR_URL,
+          "sameAs": [AUTHOR_URL, "https://github.com/ryanocallaghan"]}
+OGL_URL = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
 CONTACT_URL = "https://www.ryanocallaghan.com/800"  # the contact form on Ryan's website
 
 # Cookie-free analytics on the self-hosted Umami that mybin.day uses. Set
@@ -131,17 +135,102 @@ def write_lookups(out, councils):
             json.dump(shard, f, separators=(",", ":"))
 
 
-def structured_data(council, group):
-    """Breadcrumbs for search results: Councils compared > Lewisham."""
+def structured_data(council, group, updated):
+    """Breadcrumbs for search results (Councils compared > Lewisham), and
+    the page as one about the council, so search engines and AI answers
+    know which council the figures are for."""
     crumbs = [("Councils compared", "/"), (council["name"], model.path(council))]
     if group != "england":
         crumbs.append((model.group_tab(council, group), model.path(council, group)))
+    page = {
+        "@type": "WebPage",
+        "url": SITE_URL + model.path(council, group),
+        "about": {
+            "@type": "GovernmentOrganization",
+            "name": f"{council['name']} Council",
+            "areaServed": {"@type": "AdministrativeArea", "name": council["name"], "identifier": council["code"]},
+        },
+        "author": AUTHOR,
+    }
+    if updated:
+        page["dateModified"] = updated
     return {
         "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{"@type": "ListItem", "position": i, "name": name, "item": SITE_URL + path}
-                            for i, (name, path) in enumerate(crumbs, 1)],
+        "@graph": [page, {
+            "@type": "BreadcrumbList",
+            "itemListElement": [{"@type": "ListItem", "position": i, "name": name, "item": SITE_URL + path}
+                                for i, (name, path) in enumerate(crumbs, 1)],
+        }],
     }
+
+
+def temporal_coverage(period):
+    """ "2024-25" -> "2024/2025", "2025" -> "2025"; None for anything else
+    ("January to March 2026"), which schema.org can't express simply."""
+    if re.fullmatch(r"\d{4}", period):
+        return period
+    match = re.fullmatch(r"(\d{4})-(\d{2})", period)
+    if match:
+        start = int(match[1])
+        return f"{start}/{start + 1}"
+    return None
+
+
+def dataset(measure, path, period, source, updated):
+    """A measure page as a dataset, for Google Dataset Search."""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": f"{measure.label}: every council in England",
+        "description": f"{measure.label}, for every council in England that runs all local services "
+                       f"(unitary authorities, metropolitan districts and London boroughs), ranked, "
+                       f"from official statistics. {'Higher' if measure.better == 'higher' else 'Lower'} is better.",
+        "url": SITE_URL + path,
+        "creator": AUTHOR,
+        "spatialCoverage": {"@type": "Place", "name": "England"},
+        "distribution": [
+            {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": SITE_URL + "/data/councils.csv"},
+            {"@type": "DataDownload", "encodingFormat": "application/json",
+             "contentUrl": SITE_URL + "/data/councils.json"},
+        ],
+    }
+    if source.get("url"):
+        data["isBasedOn"] = source["url"]
+    if measure.source != "silktide":  # the Silktide Index is not under the OGL
+        data["license"] = OGL_URL
+    if temporal_coverage(period):
+        data["temporalCoverage"] = temporal_coverage(period)
+    if updated:
+        data["dateModified"] = updated
+    return data
+
+
+def llms_txt(councils):
+    """A plain summary for AI tools: what the site is and where the figures are."""
+    measures = "\n".join(f"- [{m.label}]({SITE_URL}/measures/{m.id.replace('_', '-')}/)"
+                         for m in model.MEASURES if model.available(m))
+    return f"""# Councils compared
+
+> How each of the {len(councils)} single-tier councils in England (unitary authorities, metropolitan districts and London boroughs) compares with the rest of England, its region, councils of the same type and similar councils, using official published statistics. An independent website by Ryan O'Callaghan, not affiliated with any government department or council.
+
+Each council has a page at {SITE_URL}/<council>/ (for example {SITE_URL}/lewisham/), with pages under it comparing it with its region (/region/), councils of the same type (/type/) and similar councils (/similar/). A position of 1st is the best in the group. Figures are updated weekly as new editions are published.
+
+## About
+
+- [About the figures]({SITE_URL}/about/): which councils are included, how they are compared, what to bear in mind, and every source
+- [All measures]({SITE_URL}/measures/)
+
+## Measures
+
+{measures}
+
+## Data
+
+- [Every figure for every council (CSV)]({SITE_URL}/data/councils.csv)
+- [Every figure for every council (JSON)]({SITE_URL}/data/councils.json)
+
+Contains public sector information licensed under the Open Government Licence v3.0, and data from the Silktide Index.
+"""
 
 
 def build(out=DIST):
@@ -155,27 +244,29 @@ def build(out=DIST):
         "author_url": AUTHOR_URL, "contact_url": CONTACT_URL,
         "umami": {"script": UMAMI_SCRIPT, "website_id": UMAMI_WEBSITE_ID} if UMAMI_WEBSITE_ID else None,
     }
-    pages = []
+    pages = []  # [(path, last modified)]
+    updated = model.updated()
 
-    def page(path, template, nav=None, **context):
+    def page(path, template, nav=None, lastmod=None, **context):
         write(out, path, env.get_template(template).render(page_path=path, nav=nav, **common, **context))
         if path.endswith("/"):
-            pages.append(path)
+            pages.append((path, lastmod))
 
     regions = {}
     for c in councils:
         regions.setdefault(c["region"], []).append(c)
-    page("/", "index.html", nav="/", regions=sorted(regions.items()), structured_data={
+    page("/", "index.html", nav="/", lastmod=updated, regions=sorted(regions.items()), structured_data={
         "@context": "https://schema.org", "@type": "WebSite", "name": "Councils compared", "url": SITE_URL + "/",
         "description": "How every single-tier council in England compares, from official statistics.",
-        "author": {"@type": "Person", "name": "Ryan O'Callaghan", "url": AUTHOR_URL},
+        "author": AUTHOR, "publisher": AUTHOR,
     })
     for council in councils:
         groups = model.groups_for(council)
         for group in groups:
-            page(model.path(council, group), "council.html", nav="/", groups=groups,
-                 comparison=model.compare(council, group), council_tax=model.council_tax(council),
-                 structured_data=structured_data(council, group))
+            comparison = model.compare(council, group)
+            page(model.path(council, group), "council.html", nav="/", lastmod=updated, groups=groups,
+                 comparison=comparison, key_figures=model.key_figures(comparison), updated=updated,
+                 council_tax=model.council_tax(council), structured_data=structured_data(council, group, updated))
     order = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "band_d", "fly", "waste", "homelessness",
              "silktide", "spending", "ofsted", "neighbours", "population"]
     source_list = [sources[s] for s in order if s in sources]
@@ -186,8 +277,13 @@ def build(out=DIST):
     for m in (m for m in model.MEASURES if model.available(m)):
         rows = model.ranking(m)
         ranked = {c["code"] for _, c, _, _ in rows}
-        page(f"/measures/{m.id.replace('_', '-')}/", "measure.html", nav="/measures/", measure=m, rows=rows,
-             map=model.hexmap(m), period=model.period(m), source=sources.get(m.source, {}),
+        path = f"/measures/{m.id.replace('_', '-')}/"
+        source = sources.get(m.source, {})
+        measure_updated = model.updated({m.source})
+        page(path, "measure.html", nav="/measures/", lastmod=measure_updated or None, measure=m, rows=rows,
+             summary=model.measure_summary(m, rows), updated=measure_updated,
+             structured_data=dataset(m, path, model.period(m), source, measure_updated),
+             map=model.hexmap(m), period=model.period(m), source=source,
              area_name=areas[m.area][0], note=areas[m.area][1], regions=regions_list, types=types,
              missing=[c for c in councils if c["code"] not in ranked])
     page("/about/", "about.html", nav="/about/", councils=councils, source_list=source_list)
@@ -205,11 +301,16 @@ def build(out=DIST):
         json.dump(model.site_data(), f, separators=(",", ":"), ensure_ascii=False, allow_nan=False)
     with open(os.path.join(out, "sitemap.xml"), "w") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-        for path in pages:
-            f.write(f"  <url><loc>{escape(SITE_URL + path)}</loc></url>\n")
+        for path, lastmod in pages:
+            when = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
+            f.write(f"  <url><loc>{escape(SITE_URL + path)}</loc>{when}</url>\n")
         f.write("</urlset>\n")
     with open(os.path.join(out, "robots.txt"), "w") as f:
-        f.write(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
+        # Content-Signal: search engines and AI answers may use the pages (contentsignals.org)
+        f.write(f"User-agent: *\nContent-Signal: search=yes, ai-input=yes\nAllow: /\n"
+                f"Sitemap: {SITE_URL}/sitemap.xml\n")
+    with open(os.path.join(out, "llms.txt"), "w") as f:
+        f.write(llms_txt(councils))
     for name in os.listdir(os.path.join(HERE, "static")):
         target = os.path.join(out, name if name.startswith("_") else os.path.join("assets", name))
         os.makedirs(os.path.dirname(target), exist_ok=True)

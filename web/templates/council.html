@@ -97,6 +97,14 @@
       <p class="govuk-body-s app-secondary-text govuk-!-margin-bottom-0">Councils serve very different places, so a low position can reflect more need or less money, not only how well a council is run. <a class="govuk-link" href="/about/">About the figures</a></p>
     </div>
 
+    {% if key_figures %}
+      <h2 class="govuk-heading-m govuk-!-margin-top-6" id="key-figures">Key figures</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        {% for sentence in key_figures %}<li>{{ sentence }}</li>{% endfor %}
+      </ul>
+      <p class="govuk-body-s app-secondary-text">Last updated {{ updated | long_date }}. Sources are listed on <a class="govuk-link" href="/about/">About the figures</a>.</p>
+    {% endif %}
+
     <nav class="app-contents" aria-labelledby="contents-title">
       <h2 class="govuk-heading-s govuk-!-margin-bottom-2" id="contents-title">On this page</h2>
       <ol class="govuk-list app-contents__list">

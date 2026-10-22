@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% set m = measure %}
-{% block title %}{{ m.label }}: every council in England compared{% endblock %}
+{% block title %}{{ m.label }}: every council in England ranked{% if period %} ({{ period }}){% endif %}{% endblock %}
 {% block description %}{{ m.label }}, for every council in England that runs all local services, ranked and mapped from official statistics ({{ period }}).{% endblock %}
 {% block backLink %}{{ govukBackLink({"text": "All measures", "href": "/measures/"}) }}{% endblock %}
 
@@ -10,6 +10,8 @@
     <span class="govuk-caption-l">{{ area_name }}</span>
     <h1 class="govuk-heading-xl">{{ m.label }}</h1>
     <p class="govuk-body-s app-secondary-text">{% if m.official %}{{ m.official }}. {% endif %}{{ period }}. {{ "Higher" if m.better == "higher" else "Lower" }} is better. Source: <a class="govuk-link" href="{{ source.url }}">{{ source.title }}</a>.</p>
+    {% if summary %}<p class="govuk-body">{{ summary }}</p>{% endif %}
+    {% if updated %}<p class="govuk-body-s app-secondary-text">Last updated {{ updated | long_date }}.</p>{% endif %}
   </div>
 </div>
 
@@ -72,4 +74,5 @@
     </div>
   </div>
 </div>
+<script type="application/ld+json">{{ structured_data | tojson }}</script>
 {% endblock %}

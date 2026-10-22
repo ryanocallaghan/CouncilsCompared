@@ -34,6 +34,13 @@ def test_builds_every_page(fixture_data, tmp_path):
     assert (tmp_path / "_headers").exists()
     assert "https://councilscompared.com/lewisham/similar/" in (tmp_path / "sitemap.xml").read_text()
     assert json.loads((tmp_path / "data" / "councils.json").read_text())["councils"]
+    # For search engines and AI answers
+    assert "Key figures" in lewisham and "Last updated 17 September 2026" in lewisham
+    assert '"@type": "GovernmentOrganization"' in lewisham
+    assert '"@type": "Dataset"' in fly and "<title>Complaints the Ombudsman upheld, per 100,000 residents: every council in England ranked (2025-26)" in fly
+    assert "<lastmod>2026-09-17</lastmod>" in (tmp_path / "sitemap.xml").read_text()
+    assert "Content-Signal: search=yes, ai-input=yes" in (tmp_path / "robots.txt").read_text()
+    assert "/data/councils.csv" in (tmp_path / "llms.txt").read_text()
     assert (tmp_path / "data" / "councils.csv").read_text().startswith("ons_code,council,")
 
 
