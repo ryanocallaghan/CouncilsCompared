@@ -27,7 +27,7 @@
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <span class="govuk-caption-l">{% if b.nation != "England" %}{{ b.nation }}{% else %}{% if b.type == "London borough" %}{{ b.type }}{% else %}<a class="govuk-link govuk-link--muted" href="{{ model.hub_for(b, 'type') }}">{{ b.type }}</a>{% endif %}, <a class="govuk-link govuk-link--muted" href="{{ model.hub_for(b, 'region') }}">{{ b.region }}</a>{% endif %}</span>
+    <span class="govuk-caption-l">{% if b.nation != "England" %}<a class="govuk-link govuk-link--muted" href="{{ model.hub_path('nation', b.nation) }}">{{ b.nation }}</a>{% else %}{% if b.type == "London borough" %}{{ b.type }}{% else %}<a class="govuk-link govuk-link--muted" href="{{ model.hub_for(b, 'type') }}">{{ b.type }}</a>{% endif %}, <a class="govuk-link govuk-link--muted" href="{{ model.hub_for(b, 'region') }}">{{ b.region }}</a>{% endif %}</span>
     <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">{{ b.name }}</h1>
     <p class="govuk-body-l">How {{ b.name }} Council compares with {{ c.phrase }}, on {{ c.ranked }} measures from official statistics.</p>
 

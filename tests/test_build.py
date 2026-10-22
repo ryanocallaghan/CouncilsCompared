@@ -91,3 +91,15 @@ def test_scotland_not_built_by_default(fixture_data, tmp_path):
     build.build(str(tmp_path))
     assert not (tmp_path / "glasgow-city").exists()
     assert "S12000049" not in (tmp_path / "data" / "councils-by-code.json").read_text()
+
+
+def test_scotland_hub_only_when_published(fixture_data, tmp_path, monkeypatch):
+    from web import model
+    build.build(str(tmp_path / "en"))
+    assert not (tmp_path / "en" / "scotland").exists()
+    monkeypatch.setattr(model, "PUBLISHED", ["England", "Scotland"])
+    build.build(str(tmp_path / "uk"))
+    hub = (tmp_path / "uk" / "scotland" / "index.html").read_text()
+    assert "Councils in Scotland compared" in hub and 'href="/measures/literacy/scotland/"' in hub
+    assert 'href="/scotland/"' in (tmp_path / "uk" / "index.html").read_text()
+    assert 'href="/scotland/"' in (tmp_path / "uk" / "glasgow-city" / "index.html").read_text()

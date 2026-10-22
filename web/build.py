@@ -327,7 +327,8 @@ def build(out=DIST):
     for group, value in model.hubs():
         hub = model.hub(group, value)
         hub_path = model.hub_path(group, value)
-        page(hub_path, "hub.html", nav="/", lastmod=updated, hub=hub, updated=updated, structured_data={
+        hub_updated = model.updated(model.nation_sources(hub["nation"]))
+        page(hub_path, "hub.html", nav="/", lastmod=hub_updated, hub=hub, updated=hub_updated, structured_data={
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [{"@type": "ListItem", "position": i, "name": name, "item": SITE_URL + p}

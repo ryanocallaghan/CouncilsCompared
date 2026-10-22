@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}{{ hub.title }} compared{% endblock %}
-{% block description %}How the {{ hub.members | length }} {{ hub.phrase }} compare with each other on special educational needs, complaints, council housing, council tax, streets and homelessness, from official statistics.{% endblock %}
+{% block description %}How the {{ hub.members | length }} {{ hub.phrase }} compare with each other on {% if hub.nation == "England" %}special educational needs, complaints, council housing, council tax, streets and homelessness{% else %}schools, adult social care, complaints, council housing, council tax, streets and homelessness{% endif %}, from official statistics.{% endblock %}
 {% block backLink %}{{ govukBackLink({"text": "All councils", "href": "/"}) }}{% endblock %}
 
 {% block content %}
@@ -9,6 +9,9 @@
     <h1 class="govuk-heading-xl">{{ hub.title }} compared</h1>
     <p class="govuk-body-l">How the {{ hub.members | length }} {{ hub.phrase }} compare with each other, on official statistics.</p>
     <p class="govuk-body">{{ hub.members | council_links(hub.group) }}.</p>
+    {% if hub.group == "nation" %}
+    <p class="govuk-body">Councils in {{ hub.nation }} run different services from councils elsewhere in the UK, and the statistics are collected differently, so they are only compared with each other.{% if model.band_d_ranking(hub.nation) %} See also <a class="govuk-link" href="{{ model.band_d_path(hub.nation) }}">Band D council tax for every council in {{ hub.nation }}</a>.{% endif %}</p>
+    {% endif %}
 
     <h2 class="govuk-heading-m govuk-!-margin-top-6">Where each council sits</h2>
     <p class="govuk-body">How many measures each council is in the top half, below the middle, or in the bottom quarter of {{ hub.phrase }}. Councils serve very different places, so a low position can reflect more need or less money, not only how well a council is run.</p>
@@ -64,7 +67,7 @@
                   {% endfor %}
                 </tbody>
               </table>
-              <p class="govuk-body"><a class="govuk-link" href="/measures/{{ m.id | replace('_', '-') }}/">Every council in England on this measure</a></p>
+              <p class="govuk-body"><a class="govuk-link" href="{{ model.measure_path(m, hub.nation) }}">{% if hub.group == "nation" %}Map of every council in {{ hub.nation }} on this measure{% else %}Every council in {{ hub.nation }} on this measure{% endif %}</a></p>
             </div>
           </details>
         {% endfor %}
