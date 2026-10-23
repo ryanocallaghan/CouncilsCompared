@@ -89,6 +89,13 @@ def asset_version():
     return digest.hexdigest()[:10]
 
 
+def image_version():
+    """Changes when the share image does: assets are cached for a year, and
+    link previews keep an image for as long as its address stays the same."""
+    with open(os.path.join(HERE, "static", "og.png"), "rb") as f:
+        return hashlib.sha1(f.read()).hexdigest()[:10]
+
+
 def write(out, path, text):
     target = os.path.join(out, path.strip("/"), "index.html") if path.endswith("/") else os.path.join(out, path)
     os.makedirs(os.path.dirname(target), exist_ok=True)
@@ -249,6 +256,7 @@ def build(out=DIST):
     common = {
         "site_url": SITE_URL, "repo_url": REPO_URL, "issues_url": ISSUES_URL, "model": model,
         "sources": sources, "all_councils": councils, "asset_version": asset_version(),
+        "image_version": image_version(),
         "author_url": AUTHOR_URL, "contact_url": CONTACT_URL,
         "umami": {"script": UMAMI_SCRIPT, "website_id": UMAMI_WEBSITE_ID} if UMAMI_WEBSITE_ID else None,
     }
