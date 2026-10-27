@@ -11,6 +11,29 @@
     <p class="govuk-body govuk-!-margin-top-6 govuk-!-margin-bottom-2">Or choose a council:</p>
     {% with current=None, label="Council" %}{% include "_choose.html" %}{% endwith %}
   </div>
+  <div class="govuk-grid-column-one-third">
+    <aside class="app-aside" aria-labelledby="explore-title">
+      <h2 class="govuk-heading-s" id="explore-title">Compare every council</h2>
+      <ul class="govuk-list">
+        <li><a class="govuk-link" href="/council-tax/">Band D council tax for every council</a></li>
+        <li><a class="govuk-link" href="{{ model.hub_path('region', 'London') }}">London boroughs compared</a></li>
+        <li><a class="govuk-link" href="{{ model.hub_path('type', 'Metropolitan district') }}">Metropolitan districts compared</a></li>
+        <li><a class="govuk-link" href="{{ model.hub_path('type', 'Unitary authority') }}">Unitary authorities compared</a></li>
+        {% for nation, members in other_nations %}<li><a class="govuk-link" href="{{ model.hub_path('nation', nation) }}">Councils in {{ nation }} compared</a></li>{% endfor %}
+        <li><a class="govuk-link" href="/measures/">Every measure, every council</a></li>
+      </ul>
+      {% set updates = model.recent_updates() %}
+      {% if updates %}
+        <h2 class="govuk-heading-s govuk-!-margin-top-6" id="latest-title">Latest figures</h2>
+        <ul class="govuk-list app-updates">
+          {% for u in updates %}
+            <li><a class="govuk-link" href="{{ model.measure_path(u.measure, u.nation) }}">{{ u.measure.label }}</a>{% if u.nation != "England" %} ({{ u.nation }}){% endif %}
+              <span class="govuk-body-s app-secondary-text app-updates__date">{{ u.period }}, published {{ u.date | long_date }}</span></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </aside>
+  </div>
 </div>
 
 <div class="govuk-grid-row govuk-!-margin-top-8">
@@ -41,7 +64,6 @@
         </div>
       </details>
     {% endfor %}
-    <p class="govuk-body govuk-!-margin-top-4">Or compare <a class="govuk-link" href="{{ model.hub_path('type', 'Metropolitan district') }}">metropolitan districts</a> or <a class="govuk-link" href="{{ model.hub_path('type', 'Unitary authority') }}">unitary authorities</a> with each other, or see <a class="govuk-link" href="/council-tax/">Band D council tax for every council</a>.</p>
     <h2 class="govuk-heading-m govuk-!-margin-top-6">Not listed?</h2>
     <p class="govuk-body">Where services are split between a county council and a district council, they can't be compared like for like with these councils. <a class="govuk-link" href="https://www.gov.uk/find-local-council">Find your local council on GOV.UK</a>.</p>
   </div>

@@ -8,34 +8,38 @@
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl">{{ hub.title }} compared</h1>
     <p class="govuk-body-l">How the {{ hub.members | length }} {{ hub.phrase }} compare with each other, on official statistics.</p>
-    <p class="govuk-body">{{ hub.members | council_links(hub.group) }}.</p>
     {% if hub.group == "nation" %}
     <p class="govuk-body">Councils in {{ hub.nation }} run different services from councils elsewhere in the UK, and the statistics are collected differently, so they are only compared with each other.{% if model.band_d_ranking(hub.nation) %} See also <a class="govuk-link" href="{{ model.band_d_path(hub.nation) }}">Band D council tax for every council in {{ hub.nation }}</a>.{% endif %}</p>
     {% endif %}
 
     <h2 class="govuk-heading-m govuk-!-margin-top-6">Where each council sits</h2>
-    <p class="govuk-body">How many measures each council is in the top half, below the middle, or in the bottom quarter of {{ hub.phrase }}. Councils serve very different places, so a low position can reflect more need or less money, not only how well a council is run.</p>
-    <table class="govuk-table">
-      <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-          <th scope="col" class="govuk-table__header">Council</th>
-          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Top half</th>
-          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Below the middle</th>
-          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Bottom quarter</th>
-        </tr>
-      </thead>
-      <tbody class="govuk-table__body">
-        {% for row in hub.rows %}
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell"><a class="govuk-link" href="{{ row.path }}">{{ row.council.name }}</a></td>
-            <td class="govuk-table__cell govuk-table__cell--numeric">{{ row.counts.top }}</td>
-            <td class="govuk-table__cell govuk-table__cell--numeric">{{ row.counts.middle }}</td>
-            <td class="govuk-table__cell govuk-table__cell--numeric">{{ row.counts.bottom }}</td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-
+    <p class="govuk-body">How many measures each council is in each quarter of {{ hub.phrase }}, from the top quarter to the bottom. Councils serve very different places, so a low position can reflect more need or less money, not only how well a council is run.</p>
+  </div>
+</div>
+<table class="govuk-table app-hub-table" data-module="app-sortable">
+  <caption class="govuk-table__caption govuk-visually-hidden">How many measures each of the {{ hub.members | length }} {{ hub.phrase }} is in each quarter</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header" aria-sort="ascending"><button type="button" class="app-sort" data-sort="name" hidden>Council</button><span class="app-sort__plain">Council</span></th>
+      <th scope="col" class="govuk-table__header app-hub-table__bar"><span class="govuk-visually-hidden">Chart</span></th>
+      {% for key in model.QUARTERS %}
+        <th scope="col" class="govuk-table__header govuk-table__header--numeric"><button type="button" class="app-sort" data-sort="{{ key }}" hidden><span class="app-map__key {{ model.BANDS[key][1] }}"></span>{{ model.BANDS[key][0] }}</button><span class="app-sort__plain"><span class="app-map__key {{ model.BANDS[key][1] }}"></span>{{ model.BANDS[key][0] }}</span></th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    {% for row in hub.rows %}
+      <tr class="govuk-table__row" data-name="{{ row.council.name }}"{% for key in model.QUARTERS %} data-{{ key }}="{{ row.counts[key] }}"{% endfor %}>
+        <th scope="row" class="govuk-table__header app-hub-table__name"><a class="govuk-link" href="{{ row.path }}">{{ row.council.name }}</a></th>
+        <td class="govuk-table__cell app-hub-table__bar" aria-hidden="true"><span class="app-sits app-sits--small">{% for key in model.QUARTERS %}{% if row.counts[key] %}<span class="app-sits__part {{ model.BANDS[key][1] }}" style="flex-grow: {{ row.counts[key] }}"></span>{% endif %}{% endfor %}</span></td>
+        {% for key in model.QUARTERS %}<td class="govuk-table__cell govuk-table__cell--numeric" data-label="{{ model.BANDS[key][0] }}">{{ row.counts[key] }}</td>{% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<p class="govuk-body-s app-secondary-text app-sort__hint" hidden>Select a column heading to sort by it.</p>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
     <h2 class="govuk-heading-m govuk-!-margin-top-6">Each measure</h2>
     {% for area_id, area_name, note in model.AREAS %}
       {% set area_measures = hub.measures | selectattr("measure.area", "equalto", area_id) | list %}

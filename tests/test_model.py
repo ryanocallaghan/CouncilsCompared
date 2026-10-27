@@ -16,11 +16,34 @@ def test_ties_share_a_position():
     assert model.position(50, [50, 50, 40], "higher") == 1
 
 
-@pytest.mark.parametrize("position, count, expected", [(1, 32, "top"), (16, 32, "top"), (17, 32, "middle"),
-                                                       (24, 32, "middle"), (25, 32, "bottom"), (6, 6, "bottom"),
-                                                       (5, 6, "bottom"), (4, 6, "middle"), (3, 6, "top")])
+@pytest.mark.parametrize("position, count, expected", [(1, 32, "top"), (8, 32, "top"), (9, 32, "second"),
+                                                       (16, 32, "second"), (17, 32, "third"), (24, 32, "third"),
+                                                       (25, 32, "bottom"), (6, 6, "bottom"), (5, 6, "bottom"),
+                                                       (4, 6, "third"), (3, 6, "second"), (1, 6, "top")])
 def test_bands(position, count, expected):
     assert model.band(position, count) == expected
+
+
+def test_maps_and_council_pages_use_the_same_quarters(fixture_data):
+    m = model.measure_by_id("ehcp_20wk")
+    for pos, c, value, q in model.ranking(m):
+        assert model.QUARTERS[q] == model.band(pos, len(model.ranking(m)))
+
+
+def test_a_figure_and_its_median_never_look_the_same_when_they_arent():
+    assert model.fmt_pair(0.9, 0.95) == ("0.90", "0.95")
+    assert model.fmt_pair(0.9, 0.9) == ("0.9", "0.9")
+    assert model.fmt_pair(22.9, 59.0, "%") == ("22.9%", "59.0%")
+    assert model.fmt_pair(5, None) == ("5", "No figure")
+
+
+def test_a_section_all_in_one_quarter_says_so_once():
+    rows = [model.Row(measure=None, period="", value="", median="", band="bottom") for _ in range(3)]
+    area = model.Area("housing", "Council housing", "", rows, 0)
+    assert area.uniform == "bottom" and area.headline == "All 3 measures in the bottom quarter"
+    rows[0].band = "third"
+    assert area.uniform is None and area.headline == "2 of 3 measures in the bottom quarter"
+    assert model.Area("send", "SEND", "", rows[:1], 0).headline is None  # its tag says it
 
 
 @pytest.mark.parametrize("value, unit, expected", [(22.9, "%", "22.9%"), (7.0, "", "7"), (111.25, "", "111.2"),
@@ -55,7 +78,7 @@ def test_compared_with_all_england(fixture_data):
     streets = next(a for a in result.areas if a.id == "streets")
     assert streets.rows == []  # no council in the fixture has these figures, so they aren't shown at all
     send = next(a for a in result.areas if a.id == "send")
-    assert send.headline == "Bottom quarter"
+    assert send.headline is None and send.rows[0].band_text == "Bottom quarter"
     assert result.ranked == 4
     assert result.phrase == "all councils in England"
     assert len(result.members) == 6
@@ -65,9 +88,9 @@ def test_the_summary_says_which_end_is_best(fixture_data):
     # "Furthest behind on upheld complaints" was once read as good news:
     # for measures where lower is better, say so
     lambeth = model.compare(model.councils()["lambeth"])
-    assert lambeth.compares_worst[0] == "complaints the Ombudsman upheld, per 100,000 residents (6th of 6; 1st is lowest)"
+    assert lambeth.compares_worst[0] == "Complaints the Ombudsman upheld, per 100,000 residents (6th of 6; 1st is lowest)"
     lewisham = model.compare(model.councils()["lewisham"])
-    assert lewisham.compares_worst[0] == "special educational needs plans issued on time (6th of 6; 1st is highest)"
+    assert lewisham.compares_worst[0] == "Special educational needs plans issued on time (6th of 6; 1st is highest)"
 
 
 def test_region_and_type_groups(fixture_data):
