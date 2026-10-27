@@ -66,12 +66,14 @@
           {% for pos, c, value, q in rows %}
             <tr class="govuk-table__row" data-region="{{ c.region }}" data-type="{{ c.type }}">
               <td class="govuk-table__cell govuk-table__cell--numeric">{{ pos }}</td>
-              <td class="govuk-table__cell"><span class="app-map__key {{ model.QUARTER_CLASSES[q] }}"></span><a class="govuk-link" href="/{{ c.slug }}/">{{ c.name }}</a></td>
+              <td class="govuk-table__cell"><span class="app-map__key {{ model.QUARTER_CLASSES[q] }}"></span><a class="govuk-link" href="/{{ c.slug }}/">{{ c.name }}</a>{% if model.caveat(c, m.id) %}<sup>†</sup>{% endif %}</td>
               <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(value, m.unit) }}</td>
             </tr>
           {% endfor %}
         </tbody>
       </table>
+      {% set caveats = rows | map(attribute=1) | select("caveated", m.id) | list %}
+      {% if caveats %}<p class="govuk-body-s app-secondary-text">† {{ caveats | map(attribute="name") | sort | join(", ") }}: {{ model.caveat(caveats[0], m.id) }}</p>{% endif %}
       {% if missing %}<p class="govuk-body-s app-secondary-text">No figure for: {{ missing | map(attribute="name") | join(", ") }}.</p>{% endif %}
     </div>
   </div>

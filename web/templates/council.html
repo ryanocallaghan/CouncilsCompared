@@ -166,6 +166,7 @@
                 <th scope="row" class="govuk-table__header app-compare-table__label">
                   {{ r.measure.label }}
                   <span class="govuk-body-s app-secondary-text app-compare-table__period">{% if r.measure.official %}{{ r.measure.official }}. {% endif %}{{ r.period }}</span>
+                  {% if r.caveat %}<span class="govuk-body-s app-secondary-text app-compare-table__period">{{ r.caveat }}</span>{% endif %}
                 </th>
                 <td class="govuk-table__cell govuk-table__cell--numeric" data-label="{{ b.name }}"><strong>{{ r.value }}</strong></td>
                 <td class="govuk-table__cell govuk-table__cell--numeric" data-label="Median">{{ r.median }}</td>
@@ -177,6 +178,39 @@
             {% endfor %}
           </tbody>
         </table>
+      </div>
+    </details>
+  {% endif %}
+  {% if area.id == "streets" and c.fly %}
+    {% set fly = c.fly %}
+    <details class="govuk-details app-area__details">
+      <summary class="govuk-details__summary"><span class="govuk-details__summary-text">Fly-tipping in detail</span></summary>
+      <div class="govuk-details__text app-area__more">
+        <p class="govuk-body app-measure-note">{{ b.name }} recorded {{ "{:,}".format(fly.incidents) }} fly-tips in {{ sources.fly.period }}{% if fly.large is not none %}. {{ fly.large }}% were a small van load or bigger, against a median of {{ fly.large_median }}% among {{ c.phrase }}{% endif %}. These figures aren't ranked: councils record sizes in different ways, and most prosecute nobody in a year.</p>
+        <div class="govuk-grid-row">
+          {% for title, items in [("Where they were found", fly.land), ("What was dumped", fly.waste)] if items %}
+            <div class="govuk-grid-column-one-half">
+              <h4 class="govuk-heading-s">{{ title }}</h4>
+              <dl class="govuk-summary-list govuk-summary-list--no-border">
+                {% for label, n in items %}
+                  <div class="govuk-summary-list__row"><dt class="govuk-summary-list__key">{{ label }}</dt><dd class="govuk-summary-list__value">{{ "{:,}".format(n) }}</dd></div>
+                {% endfor %}
+              </dl>
+            </div>
+          {% endfor %}
+        </div>
+        {% if fly.actions %}
+          <h4 class="govuk-heading-s">What the council did</h4>
+          <dl class="govuk-summary-list govuk-summary-list--no-border">
+            {% for label, n in fly.actions %}
+              <div class="govuk-summary-list__row"><dt class="govuk-summary-list__key">{{ label }}</dt><dd class="govuk-summary-list__value">{{ "{:,}".format(n) }}{% if label == "Fines issued by courts" and fly.court_fines %} <span class="app-secondary-text">({{ model.fmt(fly.court_fines, "£") }} in total)</span>{% endif %}</dd></div>
+            {% endfor %}
+          </dl>
+        {% endif %}
+        {% if fly.fpn_amount %}
+          <p class="govuk-body">{{ b.name | possessive }} fixed penalty for fly-tipping is {{ model.fmt(fly.fpn_amount, "£") }}{% if fly.fpn_early %}, or {{ model.fmt(fly.fpn_early, "£") }} if paid early{% endif %}.</p>
+        {% endif %}
+        <p class="govuk-body-s app-secondary-text">From <a class="govuk-link" href="{{ sources.fly.url }}">{{ sources.fly.title | replace("Defra: ", "Defra's ") }}</a>. Defra doesn't publish how much fly-tipped waste weighed or what it cost to clear.</p>
       </div>
     </details>
   {% endif %}

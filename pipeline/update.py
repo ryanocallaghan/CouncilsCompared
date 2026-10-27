@@ -55,7 +55,7 @@ VALUE_SOURCES = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "waste", "fly", 
                  "spso", "scot_homelessness"]
 # Trends each source provides; a council only has figures in one source per trend
 TRENDS = {"ehcp_20wk": ["ehcp"], "om_upheld": ["lgo"], "recycling": ["waste", "lgbf"], "fly_rate": ["fly"],
-          "ta_days": ["scot_homelessness"]}
+          "fly_fpn": ["fly"], "ta_days": ["scot_homelessness"]}
 # Where Scotland's figures come from, for the parts of a council's page that aren't measures
 SCOTLAND = {"homelessness": "scot_homelessness", "band_d": "scot_band_d", "spending": "scot_spending"}
 
@@ -163,6 +163,7 @@ def assemble():
             "values": {},
             "spend": {},
             "ofsted": None,
+            "fly": None,
             "bnb_families": None,
             "neighbours": [],
             "trends": {},
@@ -179,6 +180,8 @@ def assemble():
             council["spend"] = source("spending").values.get(code, {})
         if sources["funding"]:
             council["funding"] = sources["funding"].extra.get(code)
+        if sources["fly"]:
+            council["fly"] = sources["fly"].extra.get("detail", {}).get(code)
         if sources["ofsted"]:
             council["ofsted"] = sources["ofsted"].extra.get(code)
         if sources["neighbours"]:
