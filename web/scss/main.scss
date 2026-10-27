@@ -115,42 +115,6 @@ $app-me: #00625e;
   }
 }
 
-// Headline counts with a colour rule above each, matching the tag colours
-.app-stats--compare {
-  margin-bottom: 20px;
-}
-
-.app-stats__item {
-  margin-bottom: 15px;
-  padding-top: 10px;
-  border-top: 5px solid var(--govuk-border-colour, #cecece);
-}
-
-.app-stats__item--bottom {
-  border-top-color: govuk.govuk-colour("red");
-}
-
-.app-stats__item--middle {
-  border-top-color: govuk.govuk-colour("yellow");
-}
-
-.app-stats__item--top {
-  border-top-color: govuk.govuk-colour("green");
-}
-
-.app-inset--bottom {
-  border-left-color: govuk.govuk-colour("red");
-}
-
-.app-inset--top {
-  border-left-color: govuk.govuk-colour("green");
-}
-
-.app-inset--bottom .govuk-list,
-.app-inset--top .govuk-list {
-  margin-bottom: 0;
-}
-
 .app-measure-note {
   max-width: 40em;
 }
@@ -432,15 +396,6 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
 
 // Council page: "Compared with" menu
 .app-group {
-  margin-bottom: 30px;
-
-  .govuk-form-group {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px 15px;
-  }
-
   .govuk-label {
     margin-bottom: 0;
   }
@@ -452,6 +407,39 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
 }
 
 // The summary at the top of a council page
+.app-summary__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 30px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--govuk-border-colour, #cecece);
+
+  > form {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .govuk-form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .govuk-select {
+    max-width: 100%;
+  }
+}
+
+.app-summary__ends {
+  @media (min-width: 40.0625em) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+  }
+}
+
 .app-summary {
   margin-bottom: 30px;
   padding: 20px;
@@ -486,7 +474,7 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
   }
 }
 
-// Where the council sits: one bar split into the three bands
+// Where the council sits: one bar split into quarters, coloured as on the maps
 .app-sits {
   display: flex;
   gap: 2px;
@@ -498,20 +486,6 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
   min-width: 2.2em;
   padding: 4px 8px;
   @include govuk.govuk-font($size: 19, $weight: bold);
-  color: #ffffff;
-}
-
-.app-sits__part--bottom {
-  background: govuk.govuk-colour("red");
-}
-
-.app-sits__part--middle {
-  background: govuk.govuk-colour("yellow");
-  color: var(--govuk-text-colour, #0b0c0c);
-}
-
-.app-sits__part--top {
-  background: govuk.govuk-colour("green");
 }
 
 .app-sits__key {
@@ -535,15 +509,50 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
   margin-bottom: 20px;
 }
 
+// On this page: after the summary on phones and tablets, and down the
+// right-hand side on wider screens, where it stays in view
 .app-contents {
   margin-bottom: 30px;
 }
 
-.app-contents__list li {
-  margin-bottom: 5px;
+.app-contents--side {
+  display: none;
+}
 
-  &::before {
-    content: "— ";
+@media (min-width: 48.0625em) {
+  // Columns as tall as the page, so the side contents can stick
+  .app-with-contents {
+    display: flex;
+
+    > [class*="govuk-grid-column"] {
+      float: none;
+    }
+  }
+
+  .app-contents--inline {
+    display: none;
+  }
+
+  .app-contents--side {
+    display: block;
+    position: sticky;
+    top: 20px;
+    margin-top: 45px;
+    padding-top: 10px;
+    border-top: 5px solid $app-brand;
+  }
+}
+
+.app-contents__list > li {
+  margin-bottom: 5px;
+}
+
+.app-contents__sub {
+  margin: 5px 0 10px 15px;
+  @include govuk.govuk-font($size: 16);
+
+  li {
+    margin-bottom: 3px;
   }
 }
 
@@ -567,33 +576,87 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
   margin: 0 0 15px;
   padding: 0;
   list-style: none;
-  max-width: 48em;
 }
 
+// Each measure on one line: what it is, where every council sits, the
+// council's figure against the median, and its quarter. On phones the
+// small chart is left out (it's in the full table).
 .app-area__measure {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 5px 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 5px 15px;
+  align-items: center;
   padding: 8px 0;
   border-bottom: 1px solid var(--govuk-border-colour, #cecece);
   @include govuk.govuk-font($size: 19);
+
+  @media (min-width: 40.0625em) {
+    grid-template-columns: minmax(0, 1fr) 120px max-content 135px;
+  }
 }
 
 .app-area__label {
-  flex: 1 1 18em;
+  grid-column: 1 / -1;
+
+  @media (min-width: 40.0625em) {
+    grid-column: auto;
+  }
+}
+
+.app-area__strip {
+  display: none;
+
+  @media (min-width: 40.0625em) {
+    display: block;
+    position: relative;
+  }
 }
 
 .app-area__value {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
   white-space: nowrap;
+  line-height: 1.2;
+
+  @media (min-width: 40.0625em) {
+    text-align: right;
+  }
+}
+
+.app-area__median {
+  color: var(--govuk-secondary-text-colour, #484949);
+  @include govuk.govuk-font($size: 16);
 }
 
 .app-area__tag {
-  min-width: 9em;
+  justify-self: stretch;
   text-align: center;
+
+  @media (max-width: 40.0525em) {
+    justify-self: end;
+    min-width: 9em;
+  }
+}
+
+.app-area__with {
+  grid-column: 1 / -1;
+}
+
+// A quarter, as a label: the map colours, with text that reads on each
+.app-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  @include govuk.govuk-font($size: 16, $weight: bold);
+}
+
+.app-q1,
+.app-q4 {
+  color: #ffffff;
+}
+
+.app-q2,
+.app-q3 {
+  color: var(--govuk-text-colour, #0b0c0c);
 }
 
 .app-area__details {
@@ -651,7 +714,7 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
   }
 }
 
-$app-with: #d4351c;
+$app-with: #4c2c92; // GOV.UK purple: not one of the quarter colours
 
 .app-strip__with {
   fill: $app-with;
@@ -670,8 +733,6 @@ path.app-chart__line--with {
 }
 
 .app-with {
-  margin-bottom: 30px;
-
   &[hidden] {
     display: none;
   }
@@ -683,7 +744,7 @@ path.app-chart__line--with {
 }
 
 .app-with__summary {
-  margin: 10px 0 0;
+  margin: -5px 0 20px;
   font-weight: 700;
 
   &:empty {
@@ -792,4 +853,158 @@ a:focus .app-hex {
 
 .app-ranking tr[hidden] {
   display: none;
+}
+
+// Counts that aren't ranked, as bars
+.app-bars {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  @include govuk.govuk-font($size: 16);
+
+  th,
+  td {
+    padding: 4px 10px 4px 0;
+    vertical-align: middle;
+  }
+}
+
+.app-bars__label {
+  width: 45%;
+  font-weight: 400;
+  text-align: left;
+}
+
+.app-bars__value {
+  width: 4.5em;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.app-bars__bar span {
+  display: block;
+  min-width: 2px;
+  height: 12px;
+  background: $app-brand;
+}
+
+.app-bars__pair {
+  @media (min-width: 40.0625em) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+  }
+}
+
+// Measure pages: one council picked out on the map and in the table
+.app-highlight[hidden] {
+  display: none;
+}
+
+.app-ranking tr.app-highlighted {
+  background: govuk.govuk-colour("yellow", $variant: "tint-50");
+  font-weight: 700;
+}
+
+a.app-highlighted .app-hex {
+  stroke: var(--govuk-text-colour, #0b0c0c);
+  stroke-width: 3;
+}
+
+// The list of measures, each with its best, worst and median
+.app-measure-list__item {
+  margin-bottom: 15px;
+}
+
+.app-measure-list__overview {
+  display: block;
+  margin-top: 2px;
+}
+
+// Home page: ways in beside the search
+.app-aside {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 5px solid $app-brand;
+
+  @media (min-width: 40.0625em) {
+    margin-top: 0;
+  }
+}
+
+.app-updates li {
+  margin-bottom: 10px;
+}
+
+.app-updates__date {
+  display: block;
+}
+
+// Hub pages: each council's measures by quarter, sortable
+.app-hub-table__bar {
+  width: 30%;
+
+  @media (max-width: 40.0525em) {
+    display: none;
+  }
+}
+
+.app-hub-table__name {
+  font-weight: 400;
+}
+
+.app-sits--small {
+  display: flex;
+  gap: 1px;
+  margin: 0;
+
+  .app-sits__part {
+    min-width: 2px;
+    height: 14px;
+    padding: 0;
+  }
+}
+
+.app-sort {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--govuk-link-colour, #1d70b8);
+  font: inherit;
+  font-weight: 700;
+  text-align: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:focus {
+    outline: 3px solid transparent;
+    background: var(--govuk-focus-colour, #ffdd00);
+    box-shadow: 0 -2px var(--govuk-focus-colour, #ffdd00), 0 4px var(--govuk-focus-text-colour, #0b0c0c);
+    color: var(--govuk-focus-text-colour, #0b0c0c);
+    text-decoration: none;
+  }
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.app-sortable--on .app-sort__plain {
+  display: none;
+}
+
+.app-sortable--on th[aria-sort] .app-sort::after {
+  content: " ▼";
+  text-decoration: none;
+}
+
+.app-sortable--on th[aria-sort="ascending"] .app-sort::after {
+  content: " ▲";
+}
+
+// Where your council tax goes: on phones the bars are left out
+.app-ctax__bar-col {
+  @media (max-width: 40.0525em) {
+    display: none;
+  }
 }

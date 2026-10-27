@@ -147,9 +147,13 @@ function hide(strip) {
 }
 
 for (const strip of strips) {
-  strip.setAttribute("tabindex", "0");
-  strip.setAttribute("focusable", "true");
-  strip.setAttribute("aria-description", "Use the left and right arrow keys to go through each council, and Enter to open one.");
+  // The small charts on each measure's line repeat the full table's, which
+  // are the ones to reach by keyboard
+  if (!strip.classList.contains("app-strip--mini")) {
+    strip.setAttribute("tabindex", "0");
+    strip.setAttribute("focusable", "true");
+    strip.setAttribute("aria-description", "Use the left and right arrow keys to go through each council, and Enter to open one.");
+  }
   let points = null;
   let index = -1;
   const ready = async () => (points ??= positions(await loadSite(), strip));
@@ -193,7 +197,7 @@ for (const strip of strips) {
 for (const form of document.querySelectorAll('[data-module="app-with"]')) {
   form.hidden = false;
   const select = form.elements.with;
-  const summary = form.querySelector(".app-with__summary");
+  const summary = document.querySelector(".app-with__summary");
 
   const render = async () => {
     const slug = select.value;
@@ -218,7 +222,7 @@ for (const form of document.querySelectorAll('[data-module="app-with"]')) {
       dot.setAttribute("class", "app-strip__with");
       dot.setAttribute("cx", `${point.left}%`);
       dot.setAttribute("cy", "13");
-      dot.setAttribute("r", "7");
+      dot.setAttribute("r", strip.classList.contains("app-strip--mini") ? "5" : "7");
       strip.querySelector(".app-strip__me").before(dot);
     }
 
@@ -287,4 +291,65 @@ for (const explore of document.querySelectorAll('[data-module="app-explore"]')) 
   };
   region.addEventListener("change", apply);
   type.addEventListener("change", apply);
+}
+
+// Measure pages: highlight one council on the map and in the table. It comes
+// from the link on a council page (#lewisham), or the last council looked at.
+const remember = (slug) => {
+  try {
+    localStorage.setItem("council", slug);
+  } catch {}
+};
+const remembered = () => {
+  try {
+    return localStorage.getItem("council");
+  } catch {
+    return null;
+  }
+};
+if (me) remember(me);
+
+for (const form of document.querySelectorAll('[data-module="app-highlight"]')) {
+  const explore = document.querySelector('[data-module="app-explore"]');
+  const select = form.elements.highlight;
+  const has = (slug) => slug && [...select.options].some((o) => o.value === slug);
+  form.hidden = false;
+  const apply = (scroll) => {
+    const slug = select.value;
+    for (const el of explore.querySelectorAll(".app-highlighted")) el.classList.remove("app-highlighted");
+    if (!slug) return;
+    remember(slug);
+    const row = explore.querySelector(`tr[data-slug="${slug}"]`);
+    row?.classList.add("app-highlighted");
+    explore.querySelector(`a[data-slug="${slug}"]`)?.classList.add("app-highlighted");
+    if (scroll && row) row.scrollIntoView({ block: "center" });
+  };
+  select.addEventListener("change", () => apply(true));
+  const fromLink = decodeURIComponent(window.location.hash.slice(1));
+  const initial = has(fromLink) ? fromLink : has(remembered()) ? remembered() : "";
+  if (initial) {
+    select.value = initial;
+    apply(false);
+  }
+}
+
+// Hub pages: sort the table of where each council sits
+for (const table of document.querySelectorAll('[data-module="app-sortable"]')) {
+  const body = table.tBodies[0];
+  table.classList.add("app-sortable--on");
+  const hint = table.nextElementSibling;
+  if (hint?.classList.contains("app-sort__hint")) hint.hidden = false;
+  for (const button of table.querySelectorAll("button[data-sort]")) {
+    button.hidden = false;
+    button.addEventListener("click", () => {
+      const key = button.dataset.sort;
+      const rows = [...body.rows].sort((a, b) =>
+        key === "name"
+          ? a.dataset.name.localeCompare(b.dataset.name)
+          : Number(b.dataset[key]) - Number(a.dataset[key]) || a.dataset.name.localeCompare(b.dataset.name));
+      body.append(...rows);
+      for (const th of table.querySelectorAll("th[aria-sort]")) th.removeAttribute("aria-sort");
+      button.closest("th").setAttribute("aria-sort", key === "name" ? "ascending" : "descending");
+    });
+  }
 }

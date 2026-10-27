@@ -14,8 +14,14 @@
       {% if shown %}
       {% set level = 3 if model.nations() | length > 1 else 2 %}
       <h{{ level }} class="govuk-heading-m govuk-!-margin-top-6">{{ area_name }}</h{{ level }}>
-      <ul class="govuk-list">
-        {% for m in shown %}<li><a class="govuk-link" href="{{ model.measure_path(m, nation) }}">{{ m.label }}</a></li>{% endfor %}
+      <ul class="govuk-list app-measure-list">
+        {% for m in shown %}
+          {% set o = model.measure_overview(m, nation) %}
+          <li class="app-measure-list__item">
+            <a class="govuk-link" href="{{ model.measure_path(m, nation) }}">{{ m.label }}</a>
+            {% if o %}<span class="govuk-body-s app-secondary-text app-measure-list__overview">{{ model.period(m, nation) }}. Best: {{ o.best[0] }} ({{ o.best[1] }}). Worst: {{ o.worst[0] }} ({{ o.worst[1] }}). Median {{ o.median }}.</span>{% endif %}
+          </li>
+        {% endfor %}
         {% if area_id == "ctax" and model.band_d_ranking(nation) %}<li><a class="govuk-link" href="{{ model.band_d_path(nation) }}">Band D council tax</a></li>{% endif %}
       </ul>
       {% endif %}

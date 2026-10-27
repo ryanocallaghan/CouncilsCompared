@@ -203,13 +203,15 @@ SPENDING = [
 
 GRADES = ["Outstanding", "Good", "Requires improvement", "Inadequate"]
 
-# Where a council sits, by position in its group: the top half, the third
-# quarter, or the bottom quarter. GOV.UK tag colours.
+# Where a council sits, by position in its group: which quarter, best first.
+# The same names and colours on council pages, hub pages and measure maps.
 BANDS = {
-    "top": ("Top half", "govuk-tag--green"),
-    "middle": ("Below the middle", "govuk-tag--yellow"),
-    "bottom": ("Bottom quarter", "govuk-tag--red"),
+    "top": ("Top quarter", "app-q1"),
+    "second": ("Second quarter", "app-q2"),
+    "third": ("Third quarter", "app-q3"),
+    "bottom": ("Bottom quarter", "app-q4"),
 }
+QUARTERS = list(BANDS)  # best first
 
 
 def load():
@@ -349,16 +351,25 @@ def path(council, group="nation"):
     return f"/{council['slug']}/" if group == "nation" else f"/{council['slug']}/{group}/"
 
 
-def fmt(value, unit=""):
+def fmt(value, unit="", places=1):
     """22.9 -> "22.9%", 111.2 -> "111.2", 7.0 -> "7"."""
     if value is None:
         return "No figure"
     if unit == "%":
-        return f"{value:.1f}%"
+        return f"{value:.{places}f}%"
     if unit == "£":
         return f"−£{-value:,.0f}" if value < 0 else f"£{value:,.0f}"
-    text = f"{value:.1f}"
+    text = f"{value:.{places}f}"
     return text[:-2] if text.endswith(".0") else text
+
+
+def fmt_pair(value, other, unit=""):
+    """A figure and the median it's compared with, with one more decimal
+    place when they'd otherwise look the same but aren't: 0.9 against 0.95
+    shouldn't read as "0.9 against 0.9"."""
+    if value is not None and other is not None and value != other and fmt(value, unit) == fmt(other, unit):
+        return fmt(value, unit, 2), fmt(other, unit, 2)
+    return fmt(value, unit), fmt(other, unit)
 
 
 def fmt_pence(value):
@@ -379,12 +390,16 @@ def lower_first(text):
     return text
 
 
+def quarter(position, count):
+    """0 for the top quarter of a group to 3 for the bottom; ties share a position."""
+    for q in (3, 2, 1):
+        if position > count * q / 4:
+            return q
+    return 0
+
+
 def band(position, count):
-    if position > count * 0.75:
-        return "bottom"
-    if position > count / 2:
-        return "middle"
-    return "top"
+    return QUARTERS[quarter(position, count)]
 
 
 def position(value, values, better):
@@ -461,19 +476,25 @@ class Area:
         return {key: sum(1 for r in self.rows if r.band == key) for key in BANDS}
 
     @property
+    def uniform(self):
+        """The band every measure is in, when there are several and they're all
+        in the same one: then the headline says so and the rows don't repeat it."""
+        bands = {r.band for r in self.rows if r.band}
+        return bands.pop() if len(bands) == 1 and len(self.rows) > 1 else None
+
+    @property
     def headline(self):
-        """ "2 of 7 measures in the bottom quarter", the worst news first."""
+        """ "2 of 7 measures in the bottom quarter", the worst news first. None
+        for a single measure, whose tag says it."""
         ranked = [r for r in self.rows if r.band]
-        if not ranked:
+        if len(ranked) < 2:
             return None
+        if self.uniform:
+            return f"All {len(ranked)} measures in the {BANDS[self.uniform][0].lower()}"
         counts = self.counts
-        for key, words in [("bottom", "in the bottom quarter"), ("middle", "below the middle"),
-                           ("top", "in the top half")]:
+        for key in reversed(QUARTERS):
             if counts[key]:
-                n = len(ranked)
-                if n == 1:
-                    return f"{BANDS[key][0]}"
-                return f"{counts[key]} of {n} measures {words}"
+                return f"{counts[key]} of {len(ranked)} measures in the {BANDS[key][0].lower()}"
         return None
 
 
@@ -496,13 +517,14 @@ class Comparison:
 
 
 def _summary(rows, worst=True):
-    end = "bottom" if worst else "top"
-    picked = [r for r in rows if r.band == end]
+    # The bottom (or top) quarter, or the next quarter in if there's nothing there
+    ends = ["bottom", "third"] if worst else ["top", "second"]
+    picked = next(([r for r in rows if r.band == end] for end in ends if any(r.band == end for r in rows)), [])
     picked.sort(key=lambda r: r.position / r.count, reverse=worst)
     # Each with its position and which end is best, so "6th of 6" can't be
     # read as good on a measure where a low number is best
     return [
-        f"{lower_first(r.measure.label)} ({ordinal(r.position)} of {r.count}; "
+        f"{r.measure.label} ({ordinal(r.position)} of {r.count}; "
         f"1st is {'highest' if r.measure.better == 'higher' else 'lowest'})"
         for r in picked[:3]
     ]
@@ -520,8 +542,8 @@ def compare(council, group="nation"):
         for m in (m for m in MEASURES if m.area == area_id and available(m, council["nation"])):
             group_values = [c["values"][m.id] for c in members if m.id in c["values"]]
             value = council["values"].get(m.id)
-            row = Row(measure=m, period=period(m, council["nation"]), value=fmt(value, m.unit),
-                      median=fmt(median(group_values), m.unit) if group_values else "No figure",
+            shown_value, shown_median = fmt_pair(value, median(group_values) if group_values else None, m.unit)
+            row = Row(measure=m, period=period(m, council["nation"]), value=shown_value, median=shown_median,
                       caveat=caveat(council, m.id))
             if value is not None and len(group_values) > 1:
                 row.position = position(value, group_values, m.better)
@@ -809,9 +831,9 @@ def council_tax(council):
 # Measure pages: a hexagon map of England and every council ranked
 
 HEXMAP_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hexmap.json")
-# Colour by quarter of England, best first, as on the council pages
-QUARTER_CLASSES = ["app-q1", "app-q2", "app-q3", "app-q4"]
-QUARTER_NAMES = ["Top quarter", "Second quarter", "Third quarter", "Bottom quarter"]
+# Colour by quarter of the nation, best first, as on the council pages
+QUARTER_CLASSES = [cls for _, cls in BANDS.values()]
+QUARTER_NAMES = [name for name, _ in BANDS.values()]
 
 
 def measure_by_id(measure_id):
@@ -832,10 +854,38 @@ def ranking(measure, nation="England", members=None):
     rows = []
     for c in with_values:
         pos = position(c["values"][measure.id], values, measure.better)
-        quarter = min(3, int((pos - 1) / len(values) * 4))
-        rows.append((pos, c, c["values"][measure.id], quarter))
+        rows.append((pos, c, c["values"][measure.id], quarter(pos, len(values))))
     rows.sort(key=lambda r: (r[0], r[1]["name"]))
     return rows
+
+
+def measure_overview(measure, nation="England"):
+    """The best and worst councils and the median on a measure, for the list
+    of measures: {"best": (names, figure), "worst": ..., "median": figure}."""
+    ranked = ranking(measure, nation)
+    if len(ranked) < 2:
+        return None
+    def end(value):
+        """ "Rutland" or, when others share the figure, "Rutland and 12 others"."""
+        tied = sorted(c["name"] for _, c, v, _ in ranked if v == value)
+        name = tied[0] if len(tied) == 1 else f"{tied[0]} and {len(tied) - 1} other{'s' if len(tied) > 2 else ''}"
+        return name, fmt(value, measure.unit)
+    return {"best": end(ranked[0][2]), "worst": end(ranked[-1][2]),
+            "median": fmt(median(v for _, _, v, _ in ranked), measure.unit)}
+
+
+def recent_updates(n=4):
+    """The newest figures on the site, for the home page: [{"date", "measure",
+    "nation", "period"}], one measure per source, newest first."""
+    found = []
+    for source_id, source in sources().items():
+        nation = next((nat for nat in nations() if source_id in nation_sources(nat)), None)
+        measure = next((m for m in MEASURES if nation and m.source_for(nation) == source_id and available(m, nation)),
+                       None)
+        if measure and source.get("published"):
+            found.append({"date": source["published"], "measure": measure, "nation": nation,
+                          "period": period(measure, nation)})
+    return sorted(found, key=lambda u: u["date"], reverse=True)[:n]
 
 
 # Hub pages: every council in a region, or of a type, side by side
@@ -937,7 +987,7 @@ def hexmap(measure, nation="England"):
     alias = {a: b for pair in SAME_COUNCIL for a, b in (pair, pair[::-1])}
     by_code = load()["by_code"]
     ranked = ranking(measure, nation)
-    quarter = {c["code"]: q for _, c, _, q in ranked}
+    quarter_of = {c["code"]: q for _, c, _, q in ranked}
     value = {c["code"]: v for _, c, v, _ in ranked}
     hexes = {code: h for code, h in _hexes()["hexes"].items() if NATIONS.get(code[0]) == nation}
     size = 10  # centre to corner
@@ -952,8 +1002,8 @@ def hexmap(measure, nation="England"):
         x = (h["q"] - min_q) * w + (w / 2 if h["r"] % 2 else 0) + w
         y = (max_r - h["r"]) * size * 1.5 + size * 1.5
         points = " ".join(f"{round(x + dx, 1)},{round(y + dy, 1)}" for dx, dy in corners)
-        if council and council["code"] in quarter:
-            q = quarter[council["code"]]
+        if council and council["code"] in quarter_of:
+            q = quarter_of[council["code"]]
             cells.append({"points": points, "class": QUARTER_CLASSES[q], "council": council,
                           "label": f"{council['name']}: {fmt(value[council['code']], measure.unit)}, "
                                    f"{QUARTER_NAMES[q].lower()}"})
