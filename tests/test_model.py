@@ -296,3 +296,18 @@ def test_scotland_has_one_hub(fixture_data, monkeypatch):
     # Scotland's own measures, with their own periods, and none of England's
     assert measures["literacy"]["period"] == "2024-25" and "ehcp_20wk" not in measures
     assert scotland["rows"][0]["path"] == "/city-of-edinburgh/"
+
+
+def test_fly_tipping_counted_only_from_public_reports_is_flagged():
+    council = {"fly": {"basis": "public"}}
+    assert "reported by the public" in model.caveat(council, "fly_rate")
+    assert model.caveat(council, "fly_fpn") is None
+    assert model.caveat({"fly": {"basis": "all"}}, "fly_rate") is None
+    assert model.caveat({}, "fly_rate") is None
+
+
+def test_fly_tipping_detail_compares_size_with_the_group():
+    members = [{"fly": {"large": n}} for n in (10, 50, 70)] + [{"fly": None}]
+    detail = model.fly_detail(members[0], members)
+    assert detail["large"] == 10 and detail["large_median"] == 50
+    assert model.fly_detail({"fly": None}, members) is None

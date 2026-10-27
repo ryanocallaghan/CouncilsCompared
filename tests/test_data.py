@@ -45,6 +45,14 @@ def test_each_measure_covers_most_councils(measure, nation):
     assert covered >= MINIMUM[measure, nation], f"{measure} in {nation}: only {covered} councils"
 
 
+def test_fly_tipping_detail():
+    england = [c for c in COUNCILS if nation_of(c) == "England"]
+    assert sum(1 for c in england if c.get("fly")) >= 120
+    for c in england:
+        if c.get("fly"):
+            assert c["fly"]["basis"] in ("all", "public") and c["fly"]["incidents"] > 0, c["name"]
+
+
 def test_measures_only_appear_in_their_nations():
     nations = {m.id: m.nations for m in model.MEASURES}
     for c in COUNCILS:

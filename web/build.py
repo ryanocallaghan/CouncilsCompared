@@ -76,6 +76,7 @@ def environment():
     )
     env.filters.update(possessive=possessive, sentence_join=sentence_join, council_links=council_links,
                        long_date=long_date)
+    env.tests["caveated"] = lambda council, measure_id: bool(model.caveat(council, measure_id))
     return env
 
 
