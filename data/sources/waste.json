@@ -2239,388 +2239,516 @@
  "url": "https://www.gov.uk/government/statistical-data-sets/env18-local-authority-collected-waste-annual-results-tables",
  "values": {
   "E06000001": {
-   "recycling": 27.7
+   "recycling": 27.7,
+   "residual_waste": 583.0
   },
   "E06000002": {
-   "recycling": 23.8
+   "recycling": 23.8,
+   "residual_waste": 714.0
   },
   "E06000003": {
-   "recycling": 32.2
+   "recycling": 32.2,
+   "residual_waste": 584.0
   },
   "E06000004": {
-   "recycling": 24.5
+   "recycling": 24.5,
+   "residual_waste": 699.0
   },
   "E06000005": {
-   "recycling": 30.8
+   "recycling": 30.8,
+   "residual_waste": 595.0
   },
   "E06000006": {
-   "recycling": 36.1
+   "recycling": 36.1,
+   "residual_waste": 596.0
   },
   "E06000007": {
-   "recycling": 43.8
+   "recycling": 43.8,
+   "residual_waste": 501.0
   },
   "E06000008": {
-   "recycling": 27.1
+   "recycling": 27.1,
+   "residual_waste": 622.0
   },
   "E06000009": {
-   "recycling": 44.0
+   "recycling": 44.0,
+   "residual_waste": 485.0
   },
   "E06000010": {
-   "recycling": 46.5
+   "recycling": 46.5,
+   "residual_waste": 459.0
   },
   "E06000011": {
-   "recycling": 60.2
+   "recycling": 60.2,
+   "residual_waste": 392.0
   },
   "E06000012": {
-   "recycling": 37.7
+   "recycling": 37.7,
+   "residual_waste": 570.0
   },
   "E06000013": {
-   "recycling": 52.0
+   "recycling": 52.0,
+   "residual_waste": 515.0
   },
   "E06000014": {
-   "recycling": 41.7
+   "recycling": 41.7,
+   "residual_waste": 511.0
   },
   "E06000015": {
-   "recycling": 40.5
+   "recycling": 40.5,
+   "residual_waste": 518.0
   },
   "E06000016": {
-   "recycling": 41.7
+   "recycling": 41.7,
+   "residual_waste": 505.0
   },
   "E06000017": {
-   "recycling": 55.7
+   "recycling": 55.7,
+   "residual_waste": 471.0
   },
   "E06000018": {
-   "recycling": 26.7
+   "recycling": 26.7,
+   "residual_waste": 573.0
   },
   "E06000019": {
-   "recycling": 39.1
+   "recycling": 39.1,
+   "residual_waste": 479.0
   },
   "E06000020": {
-   "recycling": 49.2
+   "recycling": 49.2,
+   "residual_waste": 529.0
   },
   "E06000021": {
-   "recycling": 37.0
+   "recycling": 37.0,
+   "residual_waste": 540.0
   },
   "E06000022": {
-   "recycling": 55.3
+   "recycling": 55.3,
+   "residual_waste": 369.0
   },
   "E06000024": {
-   "recycling": 58.9
+   "recycling": 58.9,
+   "residual_waste": 380.0
   },
   "E06000025": {
-   "recycling": 56.7
+   "recycling": 56.7,
+   "residual_waste": 398.0
   },
   "E06000026": {
-   "recycling": 32.9
+   "recycling": 32.9,
+   "residual_waste": 552.0
   },
   "E06000027": {
-   "recycling": 40.1
+   "recycling": 40.1,
+   "residual_waste": 504.0
   },
   "E06000030": {
-   "recycling": 33.8
+   "recycling": 33.8,
+   "residual_waste": 579.0
   },
   "E06000031": {
-   "recycling": 39.6
+   "recycling": 39.6,
+   "residual_waste": 567.0
   },
   "E06000032": {
-   "recycling": 27.7
+   "recycling": 27.7,
+   "residual_waste": 670.0
   },
   "E06000033": {
-   "recycling": 41.8
+   "recycling": 41.8,
+   "residual_waste": 498.0
   },
   "E06000034": {
-   "recycling": 30.0
+   "recycling": 30.0,
+   "residual_waste": 683.0
   },
   "E06000035": {
-   "recycling": 37.6
+   "recycling": 37.6,
+   "residual_waste": 589.0
   },
   "E06000036": {
-   "recycling": 55.7
+   "recycling": 55.7,
+   "residual_waste": 397.0
   },
   "E06000037": {
-   "recycling": 53.4
+   "recycling": 53.4,
+   "residual_waste": 466.0
   },
   "E06000038": {
-   "recycling": 49.8
+   "recycling": 49.8,
+   "residual_waste": 363.0
   },
   "E06000039": {
-   "recycling": 24.9
+   "recycling": 24.9,
+   "residual_waste": 620.0
   },
   "E06000040": {
-   "recycling": 49.1
+   "recycling": 49.1,
+   "residual_waste": 481.0
   },
   "E06000041": {
-   "recycling": 55.4
+   "recycling": 55.4,
+   "residual_waste": 405.0
   },
   "E06000042": {
-   "recycling": 60.2
+   "recycling": 60.2,
+   "residual_waste": 367.0
   },
   "E06000043": {
-   "recycling": 27.4
+   "recycling": 27.4,
+   "residual_waste": 556.0
   },
   "E06000044": {
-   "recycling": 27.9
+   "recycling": 27.9,
+   "residual_waste": 533.0
   },
   "E06000045": {
-   "recycling": 29.6
+   "recycling": 29.6,
+   "residual_waste": 564.0
   },
   "E06000046": {
-   "recycling": 49.7
+   "recycling": 49.7,
+   "residual_waste": 430.0
   },
   "E06000047": {
-   "recycling": 36.7
+   "recycling": 36.7,
+   "residual_waste": 571.0
   },
   "E06000049": {
-   "recycling": 51.6
+   "recycling": 51.6,
+   "residual_waste": 482.0
   },
   "E06000050": {
-   "recycling": 59.1
+   "recycling": 59.1,
+   "residual_waste": 399.0
   },
   "E06000051": {
-   "recycling": 54.0
+   "recycling": 54.0,
+   "residual_waste": 497.0
   },
   "E06000052": {
-   "recycling": 37.7
+   "recycling": 37.7,
+   "residual_waste": 588.0
   },
   "E06000054": {
-   "recycling": 43.7
+   "recycling": 43.7,
+   "residual_waste": 514.0
   },
   "E06000055": {
-   "recycling": 38.0
+   "recycling": 38.0,
+   "residual_waste": 590.0
   },
   "E06000056": {
-   "recycling": 46.0
+   "recycling": 46.0,
+   "residual_waste": 546.0
   },
   "E06000057": {
-   "recycling": 34.9
+   "recycling": 34.9,
+   "residual_waste": 604.0
   },
   "E06000058": {
-   "recycling": 46.2
+   "recycling": 46.2,
+   "residual_waste": 465.0
   },
   "E06000059": {
-   "recycling": 60.5
+   "recycling": 60.5,
+   "residual_waste": 363.0
   },
   "E06000061": {
-   "recycling": 47.5
+   "recycling": 47.5,
+   "residual_waste": 487.0
   },
   "E06000062": {
-   "recycling": 46.6
+   "recycling": 46.6,
+   "residual_waste": 521.0
   },
   "E06000063": {
-   "recycling": 51.2
+   "recycling": 51.2,
+   "residual_waste": 454.0
   },
   "E06000064": {
-   "recycling": 52.9
+   "recycling": 52.9,
+   "residual_waste": 424.0
   },
   "E06000065": {
-   "recycling": 42.8
+   "recycling": 42.8,
+   "residual_waste": 539.0
   },
   "E06000066": {
-   "recycling": 56.0
+   "recycling": 56.0,
+   "residual_waste": 421.0
   },
   "E08000001": {
-   "recycling": 49.4
+   "recycling": 49.4,
+   "residual_waste": 352.0
   },
   "E08000002": {
-   "recycling": 51.5
+   "recycling": 51.5,
+   "residual_waste": 351.0
   },
   "E08000003": {
-   "recycling": 39.6
+   "recycling": 39.6,
+   "residual_waste": 396.0
   },
   "E08000004": {
-   "recycling": 45.5
+   "recycling": 45.5,
+   "residual_waste": 395.0
   },
   "E08000005": {
-   "recycling": 48.8
+   "recycling": 48.8,
+   "residual_waste": 376.0
   },
   "E08000006": {
-   "recycling": 47.3
+   "recycling": 47.3,
+   "residual_waste": 311.0
   },
   "E08000007": {
-   "recycling": 60.0
+   "recycling": 60.0,
+   "residual_waste": 294.0
   },
   "E08000008": {
-   "recycling": 50.0
+   "recycling": 50.0,
+   "residual_waste": 339.0
   },
   "E08000009": {
-   "recycling": 58.4
+   "recycling": 58.4,
+   "residual_waste": 310.0
   },
   "E08000010": {
-   "recycling": 51.5
+   "recycling": 51.5,
+   "residual_waste": 426.0
   },
   "E08000011": {
-   "recycling": 26.2
+   "recycling": 26.2,
+   "residual_waste": 612.0
   },
   "E08000012": {
-   "recycling": 19.2
+   "recycling": 19.2,
+   "residual_waste": 581.0
   },
   "E08000013": {
-   "recycling": 31.4
+   "recycling": 31.4,
+   "residual_waste": 516.0
   },
   "E08000014": {
-   "recycling": 33.2
+   "recycling": 33.2,
+   "residual_waste": 550.0
   },
   "E08000015": {
-   "recycling": 32.4
+   "recycling": 32.4,
+   "residual_waste": 532.0
   },
   "E08000016": {
-   "recycling": 45.6
+   "recycling": 45.6,
+   "residual_waste": 481.0
   },
   "E08000017": {
-   "recycling": 45.3
+   "recycling": 45.3,
+   "residual_waste": 530.0
   },
   "E08000018": {
-   "recycling": 44.9
+   "recycling": 44.9,
+   "residual_waste": 480.0
   },
   "E08000019": {
-   "recycling": 31.9
+   "recycling": 31.9,
+   "residual_waste": 482.0
   },
   "E08000021": {
-   "recycling": 25.8
+   "recycling": 25.8,
+   "residual_waste": 577.0
   },
   "E08000022": {
-   "recycling": 34.0
+   "recycling": 34.0,
+   "residual_waste": 548.0
   },
   "E08000023": {
-   "recycling": 31.4
+   "recycling": 31.4,
+   "residual_waste": 571.0
   },
   "E08000024": {
-   "recycling": 29.8
+   "recycling": 29.8,
+   "residual_waste": 613.0
   },
   "E08000025": {
-   "recycling": 22.7
+   "recycling": 22.7,
+   "residual_waste": 653.0
   },
   "E08000026": {
-   "recycling": 34.2
+   "recycling": 34.2,
+   "residual_waste": 528.0
   },
   "E08000027": {
-   "recycling": 37.5
+   "recycling": 37.5,
+   "residual_waste": 520.0
   },
   "E08000028": {
-   "recycling": 26.8
+   "recycling": 26.8,
+   "residual_waste": 656.0
   },
   "E08000029": {
-   "recycling": 42.9
+   "recycling": 42.9,
+   "residual_waste": 544.0
   },
   "E08000030": {
-   "recycling": 32.3
+   "recycling": 32.3,
+   "residual_waste": 635.0
   },
   "E08000031": {
-   "recycling": 37.2
+   "recycling": 37.2,
+   "residual_waste": 513.0
   },
   "E08000032": {
-   "recycling": 31.0
+   "recycling": 31.0,
+   "residual_waste": 593.0
   },
   "E08000033": {
-   "recycling": 41.0
+   "recycling": 41.0,
+   "residual_waste": 490.0
   },
   "E08000034": {
-   "recycling": 25.8
+   "recycling": 25.8,
+   "residual_waste": 612.0
   },
   "E08000035": {
-   "recycling": 35.3
+   "recycling": 35.3,
+   "residual_waste": 530.0
   },
   "E08000036": {
-   "recycling": 48.9
+   "recycling": 48.9,
+   "residual_waste": 483.0
   },
   "E08000037": {
-   "recycling": 31.3
+   "recycling": 31.3,
+   "residual_waste": 624.0
   },
   "E09000002": {
-   "recycling": 32.6
+   "recycling": 32.6,
+   "residual_waste": 684.0
   },
   "E09000003": {
-   "recycling": 28.7
+   "recycling": 28.7,
+   "residual_waste": 643.0
   },
   "E09000004": {
-   "recycling": 46.0
+   "recycling": 46.0,
+   "residual_waste": 441.0
   },
   "E09000005": {
-   "recycling": 28.2
+   "recycling": 28.2,
+   "residual_waste": 434.0
   },
   "E09000006": {
-   "recycling": 50.9
+   "recycling": 50.9,
+   "residual_waste": 416.0
   },
   "E09000007": {
-   "recycling": 29.1
+   "recycling": 29.1,
+   "residual_waste": 345.0
   },
   "E09000008": {
-   "recycling": 39.8
+   "recycling": 39.8,
+   "residual_waste": 464.0
   },
   "E09000009": {
-   "recycling": 49.5
+   "recycling": 49.5,
+   "residual_waste": 276.0
   },
   "E09000010": {
-   "recycling": 33.0
+   "recycling": 33.0,
+   "residual_waste": 546.0
   },
   "E09000011": {
-   "recycling": 33.0
+   "recycling": 33.0,
+   "residual_waste": 531.0
   },
   "E09000012": {
-   "recycling": 25.9
+   "recycling": 25.9,
+   "residual_waste": 506.0
   },
   "E09000013": {
-   "recycling": 27.6
+   "recycling": 27.6,
+   "residual_waste": 324.0
   },
   "E09000014": {
-   "recycling": 28.5
+   "recycling": 28.5,
+   "residual_waste": 519.0
   },
   "E09000015": {
-   "recycling": 31.5
+   "recycling": 31.5,
+   "residual_waste": 632.0
   },
   "E09000016": {
-   "recycling": 37.3
+   "recycling": 37.3,
+   "residual_waste": 596.0
   },
   "E09000017": {
-   "recycling": 37.3
+   "recycling": 37.3,
+   "residual_waste": 540.0
   },
   "E09000018": {
-   "recycling": 36.9
+   "recycling": 36.9,
+   "residual_waste": 514.0
   },
   "E09000019": {
-   "recycling": 30.3
+   "recycling": 30.3,
+   "residual_waste": 331.0
   },
   "E09000020": {
-   "recycling": 22.2
+   "recycling": 22.2,
+   "residual_waste": 399.0
   },
   "E09000021": {
-   "recycling": 44.1
+   "recycling": 44.1,
+   "residual_waste": 442.0
   },
   "E09000022": {
-   "recycling": 31.5
+   "recycling": 31.5,
+   "residual_waste": 300.0
   },
   "E09000023": {
-   "recycling": 26.8
+   "recycling": 26.8,
+   "residual_waste": 519.0
   },
   "E09000024": {
-   "recycling": 38.6
+   "recycling": 38.6,
+   "residual_waste": 489.0
   },
   "E09000025": {
-   "recycling": 26.4
+   "recycling": 26.4,
+   "residual_waste": 679.0
   },
   "E09000026": {
-   "recycling": 30.2
+   "recycling": 30.2,
+   "residual_waste": 668.0
   },
   "E09000027": {
-   "recycling": 40.9
+   "recycling": 40.9,
+   "residual_waste": 509.0
   },
   "E09000028": {
-   "recycling": 32.8
+   "recycling": 32.8,
+   "residual_waste": 476.0
   },
   "E09000029": {
-   "recycling": 41.0
+   "recycling": 41.0,
+   "residual_waste": 468.0
   },
   "E09000030": {
-   "recycling": 15.8
+   "recycling": 15.8,
+   "residual_waste": 536.0
   },
   "E09000031": {
-   "recycling": 32.8
+   "recycling": 32.8,
+   "residual_waste": 568.0
   },
   "E09000032": {
-   "recycling": 22.8
+   "recycling": 22.8,
+   "residual_waste": 457.0
   },
   "E09000033": {
-   "recycling": 22.4
+   "recycling": 22.4,
+   "residual_waste": 492.0
   }
  }
 }

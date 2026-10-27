@@ -45,12 +45,19 @@ def fetch(context):
     header, rows = table(book, "TA1")
     rate = sheets.column(header, r"^Households in TA Total \(per thousand\)")
     households = sheets.column(header, r"^Households in area")
+    # The law says families shouldn't be in a B&B for more than 6 weeks.
+    # Shown on the council page, not ranked: most councils have none.
+    bnb = sheets.column(header, r"^Households in B&Bs.*With children and resident more than 6 weeks$")
     for row in rows:
         code = sheets.code(row[0])
         if code in population:
             result.set(code, "ta_rate", sheets.num(row[rate]))
             if sheets.num(row[households]):
                 result.extra.setdefault("households", {})[code] = round(sheets.num(row[households]) * 1000)
+            if sheets.text(row[bnb]) == "[c]":  # suppressed: a small number
+                result.extra.setdefault("bnb_families", {})[code] = "few"
+            elif sheets.num(row[bnb]) is not None:
+                result.extra.setdefault("bnb_families", {})[code] = int(sheets.num(row[bnb]))
 
     header, rows = table(book, "TA4c")
     total = sheets.column(header, r"^Households in TA Total")

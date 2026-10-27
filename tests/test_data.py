@@ -45,6 +45,13 @@ def test_each_measure_covers_most_councils(measure, nation):
     assert covered >= MINIMUM[measure, nation], f"{measure} in {nation}: only {covered} councils"
 
 
+def test_families_in_bed_and_breakfasts():
+    england = [c for c in COUNCILS if nation_of(c) == "England"]
+    assert sum(1 for c in england if c.get("bnb_families") is not None) >= 120
+    for c in england:
+        assert c.get("bnb_families") in (None, "few") or c["bnb_families"] >= 0, c["name"]
+
+
 def test_measures_only_appear_in_their_nations():
     nations = {m.id: m.nations for m in model.MEASURES}
     for c in COUNCILS:
