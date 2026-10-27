@@ -1,4 +1,5 @@
-"""Council tax: how much of the year's bills councils collected, and what Band D costs."""
+"""Council tax: how much of the year's council tax and business rates bills
+councils collected, and what Band D costs."""
 
 import re
 
@@ -11,19 +12,22 @@ COLLECTION = "/government/collections/council-tax-statistics"
 
 def collection_rates(context):
     item, attachment = govuk.latest(COLLECTION, r"^Collection rates for Council Tax", r"^Table 6\b")
-    rows = sheets.sheet(sheets.workbook(get(attachment["url"])), r"^Table_6a")
-    head = sheets.header_row(rows, r"^ONS Code$")
-    header = rows[head]
-    ons = sheets.column(header, r"^ONS Code$")
-    rate = sheets.column(header, r"as a percentage", last=True)
-    match = re.search(r"(\d{4}-\d\d)", sheets.text(header[rate]))
-    result = Result(id="ctax", title=f"MHCLG: {item['title']}", url=item["web_url"],
-                    period=match.group(1) if match else str(govuk.years_in(item["title"])),
+    book = sheets.workbook(get(attachment["url"]))
+    result = Result(id="ctax", title=f"MHCLG: {item['title']}", url=item["web_url"], period="",
                     published=govuk.published(item), files=[attachment["url"]])
-    for row in rows[head + 1:]:
-        code = sheets.code(row[ons])
-        if code in context["population"]:
-            result.set(code, "ctax_collect", sheets.num(row[rate]))
+    # Council tax on Table 6a, business rates (non-domestic rates) on 6b
+    for sheet, measure in [(r"^Table_6a", "ctax_collect"), (r"^Table_6b", "nndr_collect")]:
+        rows = sheets.sheet(book, sheet)
+        head = sheets.header_row(rows, r"^ONS Code$")
+        header = rows[head]
+        ons = sheets.column(header, r"^ONS Code$")
+        rate = sheets.column(header, r"as a percentage", last=True)
+        match = re.search(r"(\d{4}-\d\d)", sheets.text(header[rate]))
+        result.period = match.group(1) if match else str(govuk.years_in(item["title"]))
+        for row in rows[head + 1:]:
+            code = sheets.code(row[ons])
+            if code in context["population"]:
+                result.set(code, measure, sheets.num(row[rate]))
     return result
 
 

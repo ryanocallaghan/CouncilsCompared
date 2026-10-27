@@ -191,6 +191,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000011",
     "S12000023",
@@ -274,6 +275,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000011",
     "S12000023",
@@ -357,6 +359,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000010",
     "S12000017",
@@ -438,6 +441,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000010",
     "S12000017",
@@ -511,7 +515,9 @@
     "tsm_repairs": 89.8,
     "tsm_safe": 55.1,
     "ctax_collect": 92.4,
+    "nndr_collect": 96.5,
     "recycling": 32.6,
+    "residual_waste": 684.0,
     "fly_enforce": 2.1,
     "fly_fpn": 2.1,
     "fly_rate": 32.0,
@@ -627,6 +633,7 @@
      ]
     ]
    },
+   "bnb_families": 18,
    "neighbours": [
     "E09000010",
     "E06000032",
@@ -734,7 +741,9 @@
     "tsm_repairs": 59.0,
     "tsm_safe": 65.6,
     "ctax_collect": 92.8,
+    "nndr_collect": 93.7,
     "recycling": 28.7,
+    "residual_waste": 643.0,
     "fly_enforce": 12.8,
     "fly_fpn": 2.8,
     "fly_rate": 17.0,
@@ -842,6 +851,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000031",
     "E06000038",
@@ -947,7 +957,9 @@
     "tsm_repairs": 85.7,
     "tsm_safe": 71.5,
     "ctax_collect": 96.2,
+    "nndr_collect": 97.9,
     "recycling": 45.6,
+    "residual_waste": 481.0,
     "fly_enforce": 21.4,
     "fly_fpn": 0.2,
     "fly_rate": 21.4,
@@ -1063,6 +1075,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000018",
     "E08000036",
@@ -1166,7 +1179,9 @@
     "om_homeless": 0.0,
     "om_sen": 1.0,
     "ctax_collect": 96.5,
+    "nndr_collect": 93.4,
     "recycling": 55.3,
+    "residual_waste": 369.0,
     "fly_enforce": 12.9,
     "fly_fpn": 5.9,
     "fly_rate": 10.2,
@@ -1282,6 +1297,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000014",
     "E08000009",
@@ -1376,7 +1392,9 @@
     "om_remedy_before": 20.0,
     "om_upheld": 2.5,
     "ctax_collect": 96.5,
+    "nndr_collect": 98.4,
     "recycling": 38.0,
+    "residual_waste": 590.0,
     "fly_enforce": 60.0,
     "fly_fpn": 3.8,
     "fly_rate": 10.1,
@@ -1492,6 +1510,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000004",
     "E06000042",
@@ -1587,7 +1606,9 @@
     "om_remedy_before": 33.3,
     "om_upheld": 2.3,
     "ctax_collect": 94.8,
+    "nndr_collect": 96.9,
     "recycling": 46.0,
+    "residual_waste": 441.0,
     "fly_enforce": 16.6,
     "fly_fpn": 1.5,
     "fly_rate": 14.7,
@@ -1703,6 +1724,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E09000016",
     "E06000055",
@@ -1808,7 +1830,9 @@
     "tsm_repairs": 82.6,
     "tsm_safe": 64.1,
     "ctax_collect": 90.0,
+    "nndr_collect": 93.4,
     "recycling": 22.7,
+    "residual_waste": 653.0,
     "fly_enforce": 9.9,
     "fly_fpn": 0.3,
     "fly_rate": 21.0,
@@ -1924,6 +1948,7 @@
      ]
     ]
    },
+   "bnb_families": 419,
    "neighbours": [
     "E06000018",
     "E08000003",
@@ -2025,7 +2050,9 @@
     "om_homeless": 0.0,
     "om_sen": 0.6,
     "ctax_collect": 95.3,
+    "nndr_collect": 97.3,
     "recycling": 27.1,
+    "residual_waste": 622.0,
     "fly_enforce": 128.7,
     "fly_fpn": 3.2,
     "fly_rate": 23.4,
@@ -2141,6 +2168,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E08000032",
     "E08000004",
@@ -2249,7 +2277,9 @@
     "tsm_repairs": 92.3,
     "tsm_safe": 79.0,
     "ctax_collect": 90.0,
+    "nndr_collect": 94.1,
     "recycling": 44.0,
+    "residual_waste": 485.0,
     "fly_enforce": 71.7,
     "fly_fpn": 0.7,
     "fly_rate": 35.2,
@@ -2365,6 +2395,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000001",
     "E06000002",
@@ -2465,7 +2496,9 @@
     "om_timely": 14.3,
     "om_upheld": 3.6,
     "ctax_collect": 93.7,
+    "nndr_collect": 95.9,
     "recycling": 49.4,
+    "residual_waste": 352.0,
     "fly_enforce": 12.9,
     "fly_fpn": 1.1,
     "fly_rate": 24.4,
@@ -2581,6 +2614,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000005",
     "E06000015",
@@ -2688,7 +2722,9 @@
     "tsm_repairs": 83.1,
     "tsm_safe": 80.4,
     "ctax_collect": 94.8,
+    "nndr_collect": 96.8,
     "recycling": 46.2,
+    "residual_waste": 465.0,
     "fly_enforce": 1.4,
     "fly_fpn": 1.3,
     "fly_rate": 12.2,
@@ -2788,6 +2824,7 @@
      ]
     ]
    },
+   "bnb_families": 1,
    "neighbours": [
     "E06000055",
     "E06000033",
@@ -2868,7 +2905,9 @@
     "om_homeless": 1.5,
     "om_sen": 3.8,
     "ctax_collect": 97.0,
+    "nndr_collect": 98.9,
     "recycling": 55.7,
+    "residual_waste": 397.0,
     "fly_enforce": 85.0,
     "fly_fpn": 0.0,
     "fly_rate": 4.6,
@@ -2980,6 +3019,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000060",
     "E06000037",
@@ -3075,7 +3115,9 @@
     "om_timely": 90.5,
     "om_upheld": 4.8,
     "ctax_collect": 93.5,
+    "nndr_collect": 95.3,
     "recycling": 31.0,
+    "residual_waste": 593.0,
     "fly_enforce": 22.6,
     "fly_fpn": 0.3,
     "fly_rate": 35.3,
@@ -3191,6 +3233,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000008",
     "E08000025",
@@ -3298,7 +3341,9 @@
     "tsm_repairs": 77.9,
     "tsm_safe": 61.9,
     "ctax_collect": 91.6,
+    "nndr_collect": 94.1,
     "recycling": 28.2,
+    "residual_waste": 434.0,
     "fly_enforce": 138.2,
     "fly_fpn": 22.0,
     "fly_rate": 46.4,
@@ -3414,6 +3459,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000009",
     "E09000025",
@@ -3521,7 +3567,9 @@
     "tsm_repairs": 47.2,
     "tsm_safe": 69.3,
     "ctax_collect": 93.5,
+    "nndr_collect": 92.0,
     "recycling": 27.4,
+    "residual_waste": 556.0,
     "fly_enforce": 30.9,
     "fly_fpn": 24.0,
     "fly_rate": 5.7,
@@ -3637,6 +3685,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000023",
     "E06000033",
@@ -3746,6 +3795,7 @@
     "tsm_repairs": 89.9,
     "tsm_safe": 70.3,
     "ctax_collect": 93.5,
+    "nndr_collect": 96.8,
     "fly_enforce": 21.9,
     "fly_fpn": 0.6,
     "fly_rate": 20.7,
@@ -3857,6 +3907,7 @@
      ]
     ]
    },
+   "bnb_families": null,
    "neighbours": [
     "E06000043",
     "E08000035",
@@ -3955,7 +4006,9 @@
     "om_timely": 55.1,
     "om_upheld": 14.6,
     "ctax_collect": 96.8,
+    "nndr_collect": 97.3,
     "recycling": 50.9,
+    "residual_waste": 416.0,
     "fly_enforce": 5.1,
     "fly_fpn": 0.2,
     "fly_rate": 20.8,
@@ -4071,6 +4124,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E08000009",
     "E06000060",
@@ -4166,6 +4220,7 @@
     "om_timely": 93.0,
     "om_upheld": 11.8,
     "ctax_collect": 98.1,
+    "nndr_collect": 98.8,
     "fly_enforce": 11.8,
     "fly_fpn": 0.8,
     "fly_rate": 7.2,
@@ -4281,6 +4336,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000037",
     "E06000036",
@@ -4353,7 +4409,9 @@
     "tsm_repairs": 78.8,
     "tsm_safe": 69.5,
     "ctax_collect": 95.3,
+    "nndr_collect": 96.9,
     "recycling": 51.5,
+    "residual_waste": 351.0,
     "fly_enforce": 24.3,
     "fly_fpn": 1.0,
     "fly_rate": 16.2,
@@ -4469,6 +4527,7 @@
      ]
     ]
    },
+   "bnb_families": 6,
    "neighbours": [
     "E06000052",
     "E08000022",
@@ -4565,7 +4624,9 @@
     "om_timely": 85.7,
     "om_upheld": 3.8,
     "ctax_collect": 95.3,
+    "nndr_collect": 98.3,
     "recycling": 41.0,
+    "residual_waste": 490.0,
     "fly_enforce": 14.1,
     "fly_fpn": 1.7,
     "fly_rate": 5.4,
@@ -4681,6 +4742,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000058",
     "E06000046",
@@ -4785,7 +4847,9 @@
     "tsm_repairs": 84.5,
     "tsm_safe": 77.2,
     "ctax_collect": 93.0,
+    "nndr_collect": 95.8,
     "recycling": 29.1,
+    "residual_waste": 345.0,
     "fly_enforce": 104.7,
     "fly_fpn": 2.9,
     "fly_rate": 167.2,
@@ -4897,6 +4961,7 @@
      ]
     ]
    },
+   "bnb_families": 2,
    "neighbours": [
     "E09000019",
     "E09000033",
@@ -5004,7 +5069,9 @@
     "tsm_repairs": 59.8,
     "tsm_safe": 65.2,
     "ctax_collect": 97.5,
+    "nndr_collect": 98.8,
     "recycling": 46.0,
+    "residual_waste": 546.0,
     "fly_enforce": 101.0,
     "fly_fpn": 0.7,
     "fly_rate": 9.4,
@@ -5120,6 +5187,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E06000060",
     "E06000025",
@@ -5218,7 +5286,9 @@
     "om_homeless": 0.2,
     "om_sen": 4.0,
     "ctax_collect": 97.5,
+    "nndr_collect": 97.9,
     "recycling": 51.6,
+    "residual_waste": 482.0,
     "fly_enforce": 1.1,
     "fly_fpn": 0.5,
     "fly_rate": 8.9,
@@ -5334,6 +5404,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000065",
     "E06000007",
@@ -5435,7 +5506,9 @@
     "tsm_repairs": 75.6,
     "tsm_safe": 77.1,
     "ctax_collect": 96.8,
+    "nndr_collect": 97.4,
     "recycling": 59.1,
+    "residual_waste": 399.0,
     "fly_enforce": 41.3,
     "fly_fpn": 0.7,
     "fly_rate": 10.7,
@@ -5551,6 +5624,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000029",
     "E08000007",
@@ -5663,6 +5737,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000011",
     "S12000023",
@@ -5746,6 +5821,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000006",
     "S12000014",
@@ -5822,7 +5898,9 @@
     "tsm_repairs": 60.7,
     "tsm_safe": 74.0,
     "ctax_collect": 96.6,
+    "nndr_collect": 96.8,
     "recycling": 37.7,
+    "residual_waste": 588.0,
     "fly_enforce": 37.0,
     "fly_fpn": 0.1,
     "fly_rate": 6.7,
@@ -5938,6 +6016,7 @@
      ]
     ]
    },
+   "bnb_families": 2,
    "neighbours": [
     "E08000002",
     "E06000057"
@@ -6033,7 +6112,9 @@
     "om_homeless": 0.0,
     "om_sen": 0.9,
     "ctax_collect": 95.1,
+    "nndr_collect": 97.2,
     "recycling": 36.7,
+    "residual_waste": 571.0,
     "fly_enforce": 110.4,
     "fly_fpn": 1.0,
     "fly_rate": 9.8,
@@ -6149,6 +6230,7 @@
      ]
     ]
    },
+   "bnb_families": 2,
    "neighbours": [
     "E06000006",
     "E08000015",
@@ -6249,7 +6331,9 @@
     "om_timely": 92.3,
     "om_upheld": 4.9,
     "ctax_collect": 93.4,
+    "nndr_collect": 93.2,
     "recycling": 34.2,
+    "residual_waste": 528.0,
     "fly_enforce": 122.6,
     "fly_fpn": 1.8,
     "fly_rate": 19.7,
@@ -6365,6 +6449,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000015",
     "E06000045",
@@ -6472,7 +6557,9 @@
     "tsm_repairs": 90.6,
     "tsm_safe": 62.2,
     "ctax_collect": 94.2,
+    "nndr_collect": 93.7,
     "recycling": 39.8,
+    "residual_waste": 464.0,
     "fly_enforce": 0.3,
     "fly_fpn": 0.0,
     "fly_rate": 129.9,
@@ -6588,6 +6675,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000023",
     "E09000031",
@@ -6683,7 +6771,9 @@
     "om_timely": 91.7,
     "om_upheld": 4.3,
     "ctax_collect": 95.9,
+    "nndr_collect": 96.8,
     "recycling": 51.2,
+    "residual_waste": 454.0,
     "fly_enforce": 84.2,
     "fly_fpn": 2.9,
     "fly_rate": 12.0,
@@ -6788,6 +6878,7 @@
      ]
     ]
    },
+   "bnb_families": 1,
    "neighbours": [
     "E06000064",
     "E06000019",
@@ -6860,7 +6951,9 @@
     "tsm_repairs": 78.4,
     "tsm_safe": 84.6,
     "ctax_collect": 96.5,
+    "nndr_collect": 98.4,
     "recycling": 30.8,
+    "residual_waste": 595.0,
     "fly_enforce": 11.5,
     "fly_fpn": 0.3,
     "fly_rate": 33.9,
@@ -6976,6 +7069,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000037",
     "E06000004",
@@ -7085,7 +7179,9 @@
     "tsm_repairs": 85.9,
     "tsm_safe": 86.2,
     "ctax_collect": 93.4,
+    "nndr_collect": 95.8,
     "recycling": 40.5,
+    "residual_waste": 518.0,
     "fly_enforce": 18.5,
     "fly_fpn": 0.5,
     "fly_rate": 23.5,
@@ -7201,6 +7297,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000026",
     "E08000001",
@@ -7308,7 +7405,9 @@
     "tsm_repairs": 68.7,
     "tsm_safe": 86.3,
     "ctax_collect": 93.9,
+    "nndr_collect": 96.9,
     "recycling": 45.3,
+    "residual_waste": 530.0,
     "fly_enforce": 264.2,
     "fly_fpn": 3.1,
     "fly_rate": 6.0,
@@ -7424,6 +7523,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000018",
     "E08000016",
@@ -7524,7 +7624,9 @@
     "om_timely": 86.1,
     "om_upheld": 9.2,
     "ctax_collect": 95.1,
+    "nndr_collect": 95.5,
     "recycling": 60.5,
+    "residual_waste": 363.0,
     "fly_enforce": 82.0,
     "fly_fpn": 1.6,
     "fly_rate": 3.6,
@@ -7640,6 +7742,7 @@
      ]
     ]
    },
+   "bnb_families": 2,
    "neighbours": [
     "E06000066",
     "E06000051",
@@ -7718,7 +7821,9 @@
     "tsm_repairs": 96.8,
     "tsm_safe": 75.8,
     "ctax_collect": 94.9,
+    "nndr_collect": 95.0,
     "recycling": 37.5,
+    "residual_waste": 520.0,
     "fly_enforce": 16.3,
     "fly_fpn": 1.5,
     "fly_rate": 9.9,
@@ -7823,6 +7928,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E08000036",
     "E06000020",
@@ -7936,6 +8042,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000005",
     "S12000014",
@@ -8019,6 +8126,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000008",
     "S12000013",
@@ -8092,7 +8200,9 @@
     "tsm_repairs": 82.6,
     "tsm_safe": 66.4,
     "ctax_collect": 95.9,
+    "nndr_collect": 95.4,
     "recycling": 49.5,
+    "residual_waste": 276.0,
     "fly_enforce": 21.5,
     "fly_fpn": 8.1,
     "fly_rate": 65.6,
@@ -8208,6 +8318,7 @@
      ]
     ]
    },
+   "bnb_families": 41,
    "neighbours": [
     "E09000018",
     "E09000026",
@@ -8325,6 +8436,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000013",
     "S12000018",
@@ -8408,6 +8520,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000011",
     "S12000023",
@@ -8491,6 +8604,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000017",
     "S12000019",
@@ -8574,6 +8688,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000023",
     "S12000027",
@@ -8650,7 +8765,9 @@
     "tsm_repairs": 99.0,
     "tsm_safe": 87.0,
     "ctax_collect": 97.0,
+    "nndr_collect": 97.9,
     "recycling": 60.2,
+    "residual_waste": 392.0,
     "fly_enforce": 51.1,
     "fly_fpn": 1.5,
     "fly_rate": 3.0,
@@ -8766,6 +8883,7 @@
      ]
     ]
    },
+   "bnb_families": 1,
    "neighbours": [
     "E06000051",
     "E06000065",
@@ -8869,7 +8987,9 @@
     "tsm_repairs": 87.5,
     "tsm_safe": 82.9,
     "ctax_collect": 92.1,
+    "nndr_collect": 96.9,
     "recycling": 33.0,
+    "residual_waste": 546.0,
     "fly_enforce": 136.8,
     "fly_fpn": 5.0,
     "fly_rate": 28.0,
@@ -8985,6 +9105,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000002",
     "E09000014",
@@ -9102,6 +9223,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000005",
     "S12000006",
@@ -9185,6 +9307,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000005",
     "S12000006",
@@ -9256,7 +9379,9 @@
     "tsm_repairs": 82.5,
     "tsm_safe": 73.6,
     "ctax_collect": 94.0,
+    "nndr_collect": 94.5,
     "recycling": 31.3,
+    "residual_waste": 624.0,
     "fly_enforce": 11.2,
     "fly_fpn": 0.2,
     "fly_rate": 25.8,
@@ -9368,6 +9493,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000005",
     "E08000008",
@@ -9483,6 +9609,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000008",
     "S12000013",
@@ -9556,7 +9683,9 @@
     "tsm_repairs": 67.2,
     "tsm_safe": 74.6,
     "ctax_collect": 93.2,
+    "nndr_collect": 98.1,
     "recycling": 33.0,
+    "residual_waste": 531.0,
     "fly_enforce": 10.0,
     "fly_fpn": 0.6,
     "fly_rate": 55.2,
@@ -9672,6 +9801,7 @@
      ]
     ]
    },
+   "bnb_families": 4,
    "neighbours": [
     "E09000023",
     "E09000022",
@@ -9779,7 +9909,9 @@
     "tsm_repairs": 88.6,
     "tsm_safe": 62.6,
     "ctax_collect": 93.3,
+    "nndr_collect": 92.1,
     "recycling": 25.9,
+    "residual_waste": 506.0,
     "fly_enforce": 8.2,
     "fly_fpn": 0.1,
     "fly_rate": 116.6,
@@ -9891,6 +10023,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000028",
     "E09000019",
@@ -9991,7 +10124,9 @@
     "om_homeless": 1.5,
     "om_sen": 0.8,
     "ctax_collect": 94.2,
+    "nndr_collect": 97.4,
     "recycling": 36.1,
+    "residual_waste": 596.0,
     "fly_enforce": 131.5,
     "fly_fpn": 1.5,
     "fly_rate": 3.6,
@@ -10103,6 +10238,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000013",
     "E06000047",
@@ -10210,7 +10346,9 @@
     "tsm_repairs": 86.2,
     "tsm_safe": 73.3,
     "ctax_collect": 92.3,
+    "nndr_collect": 92.4,
     "recycling": 27.6,
+    "residual_waste": 324.0,
     "fly_enforce": 109.8,
     "fly_fpn": 1.7,
     "fly_rate": 42.5,
@@ -10322,6 +10460,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000022",
     "E09000020",
@@ -10429,7 +10568,9 @@
     "tsm_repairs": 61.9,
     "tsm_safe": 58.3,
     "ctax_collect": 93.2,
+    "nndr_collect": 93.1,
     "recycling": 28.5,
+    "residual_waste": 519.0,
     "fly_enforce": 14.1,
     "fly_fpn": 3.3,
     "fly_rate": 63.5,
@@ -10545,6 +10686,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000031",
     "E09000009",
@@ -10652,7 +10794,9 @@
     "tsm_repairs": 47.6,
     "tsm_safe": 65.2,
     "ctax_collect": 95.6,
+    "nndr_collect": 93.8,
     "recycling": 31.5,
+    "residual_waste": 632.0,
     "fly_enforce": 19.8,
     "fly_fpn": 9.0,
     "fly_rate": 51.1,
@@ -10747,6 +10891,7 @@
      ]
     ]
    },
+   "bnb_families": 1,
    "neighbours": [
     "E09000026",
     "E09000017",
@@ -10848,7 +10993,9 @@
     "om_homeless": 0.0,
     "om_sen": 1.0,
     "ctax_collect": 93.7,
+    "nndr_collect": 98.4,
     "recycling": 27.7,
+    "residual_waste": 583.0,
     "fly_enforce": 108.8,
     "fly_fpn": 5.3,
     "fly_rate": 31.9,
@@ -10963,6 +11110,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000003",
     "E08000024",
@@ -11070,7 +11218,9 @@
     "tsm_repairs": 95.0,
     "tsm_safe": 51.7,
     "ctax_collect": 95.7,
+    "nndr_collect": 98.5,
     "recycling": 37.3,
+    "residual_waste": 596.0,
     "fly_enforce": 149.2,
     "fly_fpn": 4.5,
     "fly_rate": 16.1,
@@ -11186,6 +11336,7 @@
      ]
     ]
    },
+   "bnb_families": 11,
    "neighbours": [
     "E09000004",
     "E06000055",
@@ -11285,7 +11436,9 @@
     "om_homeless": 2.1,
     "om_sen": 3.1,
     "ctax_collect": 97.4,
+    "nndr_collect": 97.0,
     "recycling": 39.1,
+    "residual_waste": 479.0,
     "fly_enforce": 137.9,
     "fly_fpn": 1.4,
     "fly_rate": 3.7,
@@ -11401,6 +11554,7 @@
      ]
     ]
    },
+   "bnb_families": 5,
    "neighbours": [
     "E06000064",
     "E06000051",
@@ -11513,6 +11667,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000010",
     "S12000019",
@@ -11586,7 +11741,9 @@
     "tsm_repairs": 85.7,
     "tsm_safe": 74.1,
     "ctax_collect": 96.5,
+    "nndr_collect": 97.2,
     "recycling": 37.3,
+    "residual_waste": 540.0,
     "fly_enforce": 2.4,
     "fly_fpn": 0.3,
     "fly_rate": 30.1,
@@ -11702,6 +11859,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000018",
     "E09000026",
@@ -11809,7 +11967,9 @@
     "tsm_repairs": 75.4,
     "tsm_safe": 72.7,
     "ctax_collect": 96.1,
+    "nndr_collect": 95.4,
     "recycling": 36.9,
+    "residual_waste": 514.0,
     "fly_enforce": 1.5,
     "fly_fpn": 0.0,
     "fly_rate": 84.1,
@@ -11917,6 +12077,7 @@
      ]
     ]
    },
+   "bnb_families": 1,
    "neighbours": [
     "E09000009",
     "E09000017",
@@ -12032,6 +12193,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000008",
     "S12000013",
@@ -12101,7 +12263,9 @@
     "om_homeless": 2.1,
     "om_sen": 7.1,
     "ctax_collect": 94.6,
+    "nndr_collect": 94.7,
     "recycling": 49.7,
+    "residual_waste": 430.0,
     "fly_enforce": 2.3,
     "fly_fpn": 0.4,
     "fly_rate": 5.9,
@@ -12209,6 +12373,7 @@
      ]
     ]
    },
+   "bnb_families": 2,
    "neighbours": [
     "E08000008",
     "E06000052",
@@ -12313,7 +12478,9 @@
     "tsm_repairs": 76.4,
     "tsm_safe": 71.3,
     "ctax_collect": 92.9,
+    "nndr_collect": 96.1,
     "recycling": 30.3,
+    "residual_waste": 331.0,
     "fly_enforce": 123.1,
     "fly_fpn": 8.1,
     "fly_rate": 14.8,
@@ -12429,6 +12596,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E09000007",
     "E09000028",
@@ -12536,7 +12704,9 @@
     "tsm_repairs": 85.1,
     "tsm_safe": 66.2,
     "ctax_collect": 91.2,
+    "nndr_collect": 94.7,
     "recycling": 22.2,
+    "residual_waste": 399.0,
     "fly_enforce": 129.6,
     "fly_fpn": 1.3,
     "fly_rate": 52.2,
@@ -12640,6 +12810,7 @@
      ]
     ]
    },
+   "bnb_families": 4,
    "neighbours": [
     "E09000013",
     "E09000007",
@@ -12747,7 +12918,9 @@
     "tsm_repairs": 67.7,
     "tsm_safe": 79.3,
     "ctax_collect": 91.8,
+    "nndr_collect": 95.0,
     "recycling": 46.5,
+    "residual_waste": 459.0,
     "fly_enforce": 57.3,
     "fly_fpn": 1.2,
     "fly_rate": 50.0,
@@ -12863,6 +13036,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000028",
     "E08000031",
@@ -12970,7 +13144,9 @@
     "tsm_repairs": 95.1,
     "tsm_safe": 69.7,
     "ctax_collect": 98.1,
+    "nndr_collect": 97.3,
     "recycling": 44.1,
+    "residual_waste": 442.0,
     "fly_enforce": 57.5,
     "fly_fpn": 0.5,
     "fly_rate": 13.8,
@@ -13082,6 +13258,7 @@
      ]
     ]
    },
+   "bnb_families": 16,
    "neighbours": [
     "E09000029",
     "E09000024",
@@ -13187,7 +13364,9 @@
     "tsm_repairs": 84.2,
     "tsm_safe": 66.1,
     "ctax_collect": 94.2,
+    "nndr_collect": 95.4,
     "recycling": 25.8,
+    "residual_waste": 612.0,
     "fly_enforce": 15.7,
     "fly_fpn": 0.5,
     "fly_rate": 22.7,
@@ -13303,6 +13482,7 @@
      ]
     ]
    },
+   "bnb_families": 4,
    "neighbours": [
     "E08000019",
     "E08000008",
@@ -13403,7 +13583,9 @@
     "om_timely": 42.9,
     "om_upheld": 4.3,
     "ctax_collect": 91.0,
+    "nndr_collect": 96.9,
     "recycling": 26.2,
+    "residual_waste": 612.0,
     "fly_enforce": 61.7,
     "fly_fpn": 0.5,
     "fly_rate": 13.4,
@@ -13519,6 +13701,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000013",
     "E06000006",
@@ -13626,7 +13809,9 @@
     "tsm_repairs": 85.4,
     "tsm_safe": 61.7,
     "ctax_collect": 92.4,
+    "nndr_collect": 96.2,
     "recycling": 31.5,
+    "residual_waste": 300.0,
     "fly_enforce": 39.8,
     "fly_fpn": 4.4,
     "fly_rate": 67.5,
@@ -13742,6 +13927,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E09000028",
     "E09000023",
@@ -13849,7 +14035,9 @@
     "tsm_repairs": 93.1,
     "tsm_safe": 71.8,
     "ctax_collect": 93.8,
+    "nndr_collect": 96.7,
     "recycling": 35.3,
+    "residual_waste": 530.0,
     "fly_enforce": 105.9,
     "fly_fpn": 0.4,
     "fly_rate": 16.6,
@@ -13965,6 +14153,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000044",
     "E06000033",
@@ -14074,7 +14263,9 @@
     "tsm_repairs": 73.2,
     "tsm_safe": 78.3,
     "ctax_collect": 92.7,
+    "nndr_collect": 95.4,
     "recycling": 41.7,
+    "residual_waste": 505.0,
     "fly_enforce": 262.5,
     "fly_fpn": 1.4,
     "fly_rate": 18.2,
@@ -14190,6 +14381,7 @@
      ]
     ]
    },
+   "bnb_families": 5,
    "neighbours": [
     "E06000032",
     "E06000039",
@@ -14295,7 +14487,9 @@
     "tsm_repairs": 68.9,
     "tsm_safe": 61.4,
     "ctax_collect": 91.7,
+    "nndr_collect": 96.4,
     "recycling": 26.8,
+    "residual_waste": 519.0,
     "fly_enforce": 9.5,
     "fly_fpn": 0.9,
     "fly_rate": 111.2,
@@ -14411,6 +14605,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E09000022",
     "E09000028",
@@ -14510,7 +14705,9 @@
     "om_timely": 93.3,
     "om_upheld": 3.7,
     "ctax_collect": 86.8,
+    "nndr_collect": 97.1,
     "recycling": 19.2,
+    "residual_waste": 581.0,
     "fly_enforce": 0.0,
     "fly_fpn": 0.0,
     "fly_rate": 40.0,
@@ -14612,6 +14809,7 @@
      ]
     ]
    },
+   "bnb_families": 3,
    "neighbours": [
     "E06000009",
     "E06000001",
@@ -14722,7 +14920,9 @@
     "tsm_repairs": 83.3,
     "tsm_safe": 73.9,
     "ctax_collect": 96.6,
+    "nndr_collect": 96.9,
     "recycling": 27.7,
+    "residual_waste": 670.0,
     "fly_enforce": 2.2,
     "fly_fpn": 0.5,
     "fly_rate": 49.1,
@@ -14838,6 +15038,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000039",
     "E06000031",
@@ -14945,7 +15146,9 @@
     "tsm_repairs": 64.2,
     "tsm_safe": 65.3,
     "ctax_collect": 88.6,
+    "nndr_collect": 96.8,
     "recycling": 39.6,
+    "residual_waste": 396.0,
     "fly_enforce": 70.9,
     "fly_fpn": 0.3,
     "fly_rate": 25.4,
@@ -15053,6 +15256,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000018",
     "E08000025",
@@ -15163,7 +15367,9 @@
     "tsm_repairs": 96.0,
     "tsm_safe": 76.2,
     "ctax_collect": 93.4,
+    "nndr_collect": 97.1,
     "recycling": 37.6,
+    "residual_waste": 589.0,
     "fly_enforce": 41.5,
     "fly_fpn": 1.2,
     "fly_rate": 21.4,
@@ -15279,6 +15485,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000030",
     "E08000027",
@@ -15374,7 +15581,9 @@
     "om_remedy_before": 0.0,
     "om_upheld": 5.0,
     "ctax_collect": 95.4,
+    "nndr_collect": 97.2,
     "recycling": 38.6,
+    "residual_waste": 489.0,
     "fly_enforce": 63.8,
     "fly_fpn": 3.6,
     "fly_rate": 68.0,
@@ -15490,6 +15699,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000029",
     "E09000021",
@@ -15589,7 +15799,9 @@
     "om_homeless": 0.0,
     "om_sen": 1.3,
     "ctax_collect": 92.9,
+    "nndr_collect": 95.5,
     "recycling": 23.8,
+    "residual_waste": 714.0,
     "fly_enforce": 102.9,
     "fly_fpn": 0.7,
     "fly_rate": 18.0,
@@ -15705,6 +15917,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000009",
     "E06000001",
@@ -15822,6 +16035,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000010",
     "S12000017",
@@ -15898,7 +16112,9 @@
     "tsm_repairs": 99.7,
     "tsm_safe": 55.5,
     "ctax_collect": 96.5,
+    "nndr_collect": 97.6,
     "recycling": 60.2,
+    "residual_waste": 367.0,
     "fly_enforce": 66.3,
     "fly_fpn": 1.4,
     "fly_rate": 13.8,
@@ -16014,6 +16230,7 @@
      ]
     ]
    },
+   "bnb_families": 5,
    "neighbours": [
     "E06000055",
     "E09000004",
@@ -16128,6 +16345,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000010",
     "S12000017",
@@ -16209,6 +16427,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000008",
     "S12000018",
@@ -16282,7 +16501,9 @@
     "tsm_repairs": 89.7,
     "tsm_safe": 61.9,
     "ctax_collect": 96.0,
+    "nndr_collect": 97.6,
     "recycling": 25.8,
+    "residual_waste": 577.0,
     "fly_enforce": 19.3,
     "fly_fpn": 0.5,
     "fly_rate": 52.1,
@@ -16398,6 +16619,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E08000006",
     "E08000019",
@@ -16505,7 +16727,9 @@
     "tsm_repairs": 83.8,
     "tsm_safe": 77.4,
     "ctax_collect": 92.5,
+    "nndr_collect": 98.4,
     "recycling": 26.4,
+    "residual_waste": 679.0,
     "fly_enforce": 97.9,
     "fly_fpn": 4.6,
     "fly_rate": 70.4,
@@ -16621,6 +16845,7 @@
      ]
     ]
    },
+   "bnb_families": 6,
    "neighbours": [
     "E09000005",
     "E09000002",
@@ -16738,6 +16963,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000008",
     "S12000013",
@@ -16807,7 +17033,9 @@
     "om_homeless": 0.0,
     "om_sen": 0.6,
     "ctax_collect": 92.0,
+    "nndr_collect": 95.3,
     "recycling": 37.7,
+    "residual_waste": 570.0,
     "fly_enforce": 29.2,
     "fly_fpn": 0.1,
     "fly_rate": 13.3,
@@ -16917,6 +17145,7 @@
      ]
     ]
    },
+   "bnb_families": null,
    "neighbours": [
     "E08000017",
     "E06000021",
@@ -17034,6 +17263,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000008",
     "S12000013",
@@ -17101,7 +17331,9 @@
     "om_homeless": 0.0,
     "om_sen": 1.8,
     "ctax_collect": 95.0,
+    "nndr_collect": 97.6,
     "recycling": 52.0,
+    "residual_waste": 515.0,
     "fly_enforce": 11.2,
     "fly_fpn": 0.1,
     "fly_rate": 7.4,
@@ -17217,6 +17449,7 @@
      ]
     ]
    },
+   "bnb_families": 12,
    "neighbours": [
     "E08000036",
     "E08000017",
@@ -17322,7 +17555,9 @@
     "tsm_repairs": 59.9,
     "tsm_safe": 74.6,
     "ctax_collect": 94.8,
+    "nndr_collect": 97.5,
     "recycling": 47.5,
+    "residual_waste": 487.0,
     "fly_enforce": 110.1,
     "fly_fpn": 0.8,
     "fly_rate": 15.3,
@@ -17438,6 +17673,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000030",
     "E06000062",
@@ -17513,7 +17749,9 @@
     "om_homeless": 0.0,
     "om_sen": 0.9,
     "ctax_collect": 98.0,
+    "nndr_collect": 96.9,
     "recycling": 58.9,
+    "residual_waste": 380.0,
     "fly_enforce": 3.2,
     "fly_fpn": 0.0,
     "fly_rate": 9.8,
@@ -17629,6 +17867,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000054",
     "E06000025"
@@ -17727,7 +17966,9 @@
     "tsm_repairs": 94.3,
     "tsm_safe": 73.5,
     "ctax_collect": 95.3,
+    "nndr_collect": 97.1,
     "recycling": 34.0,
+    "residual_waste": 548.0,
     "fly_enforce": 1.4,
     "fly_fpn": 0.5,
     "fly_rate": 18.0,
@@ -17843,6 +18084,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000002",
     "E06000004",
@@ -17946,7 +18188,9 @@
     "tsm_repairs": 68.8,
     "tsm_safe": 82.1,
     "ctax_collect": 96.7,
+    "nndr_collect": 96.8,
     "recycling": 42.8,
+    "residual_waste": 539.0,
     "fly_enforce": 69.5,
     "fly_fpn": 1.2,
     "fly_rate": 5.2,
@@ -18062,6 +18306,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000051",
     "E06000049",
@@ -18128,7 +18373,9 @@
     "tsm_repairs": 99.3,
     "tsm_safe": 69.2,
     "ctax_collect": 96.5,
+    "nndr_collect": 96.9,
     "recycling": 34.9,
+    "residual_waste": 604.0,
     "fly_enforce": 25.5,
     "fly_fpn": 1.0,
     "fly_rate": 10.8,
@@ -18244,6 +18491,7 @@
      ]
     ]
    },
+   "bnb_families": 1,
    "neighbours": [
     "E06000052",
     "E06000047",
@@ -18343,7 +18591,9 @@
     "tsm_repairs": 83.3,
     "tsm_safe": 75.3,
     "ctax_collect": 91.7,
+    "nndr_collect": 94.4,
     "recycling": 26.7,
+    "residual_waste": 573.0,
     "fly_enforce": 36.3,
     "fly_fpn": 1.0,
     "fly_rate": 80.2,
@@ -18434,6 +18684,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000025",
     "E08000003",
@@ -18535,7 +18786,9 @@
     "tsm_repairs": 100.0,
     "tsm_safe": 91.1,
     "ctax_collect": 93.4,
+    "nndr_collect": 94.8,
     "recycling": 45.5,
+    "residual_waste": 395.0,
     "fly_enforce": 81.2,
     "fly_fpn": 2.4,
     "fly_rate": 23.7,
@@ -18651,6 +18904,7 @@
      ]
     ]
    },
+   "bnb_families": 1,
    "neighbours": [
     "E06000008",
     "E08000001",
@@ -18768,6 +19022,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000011",
     "S12000027",
@@ -18851,6 +19106,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000011",
     "S12000023",
@@ -18919,7 +19175,9 @@
     "om_homeless": 0.0,
     "om_sen": 1.3,
     "ctax_collect": 94.3,
+    "nndr_collect": 98.2,
     "recycling": 39.6,
+    "residual_waste": 567.0,
     "fly_enforce": 48.2,
     "fly_fpn": 1.7,
     "fly_rate": 46.6,
@@ -19035,6 +19293,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000026",
     "E06000015",
@@ -19138,7 +19397,9 @@
     "om_homeless": 0.4,
     "om_sen": 3.3,
     "ctax_collect": 95.8,
+    "nndr_collect": 96.3,
     "recycling": 32.9,
+    "residual_waste": 552.0,
     "fly_enforce": 25.2,
     "fly_fpn": 1.9,
     "fly_rate": 19.8,
@@ -19238,6 +19499,7 @@
      ]
     ]
    },
+   "bnb_families": 7,
    "neighbours": [
     "E08000008",
     "E06000027",
@@ -19348,7 +19610,9 @@
     "tsm_repairs": 84.7,
     "tsm_safe": 83.5,
     "ctax_collect": 91.9,
+    "nndr_collect": 94.3,
     "recycling": 27.9,
+    "residual_waste": 533.0,
     "fly_enforce": 125.8,
     "fly_fpn": 4.1,
     "fly_rate": 4.4,
@@ -19464,6 +19728,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000019",
     "E08000035",
@@ -19574,7 +19839,9 @@
     "tsm_repairs": 82.1,
     "tsm_safe": 80.7,
     "ctax_collect": 94.8,
+    "nndr_collect": 95.5,
     "recycling": 49.8,
+    "residual_waste": 363.0,
     "fly_enforce": 67.5,
     "fly_fpn": 8.1,
     "fly_rate": 12.1,
@@ -19690,6 +19957,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000042",
     "E09000003",
@@ -19797,7 +20065,9 @@
     "tsm_repairs": 93.4,
     "tsm_safe": 71.6,
     "ctax_collect": 96.5,
+    "nndr_collect": 94.7,
     "recycling": 30.2,
+    "residual_waste": 668.0,
     "fly_enforce": 130.3,
     "fly_fpn": 5.2,
     "fly_rate": 25.4,
@@ -19913,6 +20183,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000015",
     "E09000017",
@@ -20008,7 +20279,9 @@
     "om_received": 21.5,
     "om_upheld": 2.1,
     "ctax_collect": 92.4,
+    "nndr_collect": 97.8,
     "recycling": 32.2,
+    "residual_waste": 584.0,
     "fly_enforce": 2.2,
     "fly_fpn": 0.9,
     "fly_rate": 38.1,
@@ -20122,6 +20395,7 @@
      ]
     ]
    },
+   "bnb_families": null,
    "neighbours": [
     "E08000024",
     "E08000023",
@@ -20239,6 +20513,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000005",
     "S12000006",
@@ -20305,7 +20580,9 @@
     "om_timely": 80.0,
     "om_upheld": 3.6,
     "ctax_collect": 98.1,
+    "nndr_collect": 98.0,
     "recycling": 40.9,
+    "residual_waste": 509.0,
     "fly_enforce": 35.5,
     "fly_fpn": 0.2,
     "fly_rate": 28.5,
@@ -20417,6 +20694,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000040",
     "E09000021",
@@ -20515,7 +20793,9 @@
     "om_timely": 80.0,
     "om_upheld": 2.1,
     "ctax_collect": 93.8,
+    "nndr_collect": 96.1,
     "recycling": 48.8,
+    "residual_waste": 376.0,
     "fly_enforce": 29.6,
     "fly_fpn": 0.1,
     "fly_rate": 22.3,
@@ -20631,6 +20911,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000030",
     "E08000008",
@@ -20736,7 +21017,9 @@
     "tsm_repairs": 96.7,
     "tsm_safe": 81.0,
     "ctax_collect": 96.7,
+    "nndr_collect": 95.8,
     "recycling": 44.9,
+    "residual_waste": 480.0,
     "fly_enforce": 91.8,
     "fly_fpn": 6.6,
     "fly_rate": 18.6,
@@ -20852,6 +21135,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000016",
     "E08000008",
@@ -20953,7 +21237,9 @@
     "om_homeless": 0.0,
     "om_sen": 4.8,
     "ctax_collect": 97.5,
+    "nndr_collect": 97.8,
     "recycling": 55.7,
+    "residual_waste": 471.0,
     "fly_enforce": 0.5,
     "fly_fpn": 0.5,
     "fly_rate": 5.2,
@@ -21060,6 +21346,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000054",
     "E06000065",
@@ -21164,7 +21451,9 @@
     "tsm_repairs": 98.7,
     "tsm_safe": 74.7,
     "ctax_collect": 92.5,
+    "nndr_collect": 96.2,
     "recycling": 47.3,
+    "residual_waste": 311.0,
     "fly_enforce": 66.9,
     "fly_fpn": 0.2,
     "fly_rate": 25.6,
@@ -21280,6 +21569,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000019",
     "E08000005",
@@ -21383,7 +21673,9 @@
     "tsm_repairs": 75.7,
     "tsm_safe": 75.0,
     "ctax_collect": 93.2,
+    "nndr_collect": 94.7,
     "recycling": 26.8,
+    "residual_waste": 656.0,
     "fly_enforce": 4.3,
     "fly_fpn": 0.2,
     "fly_rate": 35.5,
@@ -21488,6 +21780,7 @@
      ]
     ]
    },
+   "bnb_families": 52,
    "neighbours": [
     "E08000031",
     "E06000010",
@@ -21603,6 +21896,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000010",
     "S12000017",
@@ -21669,7 +21963,9 @@
     "om_timely": 80.0,
     "om_upheld": 3.1,
     "ctax_collect": 94.4,
+    "nndr_collect": 97.6,
     "recycling": 33.2,
+    "residual_waste": 550.0,
     "fly_enforce": 104.5,
     "fly_fpn": 0.8,
     "fly_rate": 14.3,
@@ -21785,6 +22081,7 @@
      ]
     ]
    },
+   "bnb_families": 1,
    "neighbours": [
     "E08000015",
     "E08000013",
@@ -21891,7 +22188,9 @@
     "tsm_repairs": 70.9,
     "tsm_safe": 75.4,
     "ctax_collect": 92.8,
+    "nndr_collect": 95.2,
     "recycling": 31.9,
+    "residual_waste": 482.0,
     "fly_enforce": 15.3,
     "fly_fpn": 0.7,
     "fly_rate": 21.1,
@@ -22007,6 +22306,7 @@
      ]
     ]
    },
+   "bnb_families": 8,
    "neighbours": [
     "E08000034",
     "E06000044",
@@ -22124,6 +22424,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000011",
     "S12000023",
@@ -22200,7 +22501,9 @@
     "tsm_repairs": 85.6,
     "tsm_safe": 89.0,
     "ctax_collect": 97.4,
+    "nndr_collect": 98.5,
     "recycling": 54.0,
+    "residual_waste": 497.0,
     "fly_enforce": 64.6,
     "fly_fpn": 0.2,
     "fly_rate": 5.2,
@@ -22316,6 +22619,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000065",
     "E06000066",
@@ -22422,7 +22726,9 @@
     "tsm_repairs": 80.3,
     "tsm_safe": 58.7,
     "ctax_collect": 92.6,
+    "nndr_collect": 93.7,
     "recycling": 24.9,
+    "residual_waste": 620.0,
     "fly_enforce": 15.9,
     "fly_fpn": 2.3,
     "fly_rate": 16.7,
@@ -22534,6 +22840,7 @@
      ]
     ]
    },
+   "bnb_families": null,
    "neighbours": [
     "E09000018",
     "E09000017",
@@ -22641,7 +22948,9 @@
     "tsm_repairs": 81.6,
     "tsm_safe": 80.1,
     "ctax_collect": 97.1,
+    "nndr_collect": 97.6,
     "recycling": 42.9,
+    "residual_waste": 544.0,
     "fly_enforce": 5.5,
     "fly_fpn": 0.0,
     "fly_rate": 18.1,
@@ -22757,6 +23066,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E08000007",
     "E06000050",
@@ -22858,7 +23168,9 @@
     "tsm_repairs": 89.8,
     "tsm_safe": 82.5,
     "ctax_collect": 95.5,
+    "nndr_collect": 95.4,
     "recycling": 56.0,
+    "residual_waste": 421.0,
     "fly_enforce": 0.7,
     "fly_fpn": 0.3,
     "fly_rate": 4.8,
@@ -22974,6 +23286,7 @@
      ]
     ]
    },
+   "bnb_families": 2,
    "neighbours": [
     "E06000059",
     "E06000051"
@@ -23045,6 +23358,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000005",
     "S12000006",
@@ -23114,7 +23428,9 @@
     "om_homeless": 0.6,
     "om_sen": 2.6,
     "ctax_collect": 97.2,
+    "nndr_collect": 98.6,
     "recycling": 56.7,
+    "residual_waste": 398.0,
     "fly_enforce": 27.0,
     "fly_fpn": 0.8,
     "fly_rate": 7.1,
@@ -23230,6 +23546,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000056",
     "E06000024",
@@ -23340,6 +23657,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000005",
     "S12000006",
@@ -23413,7 +23731,9 @@
     "tsm_repairs": 91.9,
     "tsm_safe": 71.5,
     "ctax_collect": 94.2,
+    "nndr_collect": 98.0,
     "recycling": 31.4,
+    "residual_waste": 571.0,
     "fly_enforce": 38.0,
     "fly_fpn": 0.3,
     "fly_rate": 22.8,
@@ -23529,6 +23849,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000024",
     "E06000003",
@@ -23639,7 +23960,9 @@
     "tsm_repairs": 58.3,
     "tsm_safe": 69.5,
     "ctax_collect": 93.3,
+    "nndr_collect": 96.3,
     "recycling": 29.6,
+    "residual_waste": 564.0,
     "fly_enforce": 1.0,
     "fly_fpn": 0.2,
     "fly_rate": 47.1,
@@ -23755,6 +24078,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000026",
     "E06000015",
@@ -23865,7 +24189,9 @@
     "tsm_repairs": 66.8,
     "tsm_safe": 77.3,
     "ctax_collect": 96.9,
+    "nndr_collect": 98.0,
     "recycling": 41.8,
+    "residual_waste": 498.0,
     "fly_enforce": 5.9,
     "fly_fpn": 0.0,
     "fly_rate": 12.0,
@@ -23981,6 +24307,7 @@
      ]
     ]
    },
+   "bnb_families": 2,
    "neighbours": [
     "E06000058",
     "E08000035",
@@ -24086,7 +24413,9 @@
     "tsm_repairs": 80.0,
     "tsm_safe": 68.2,
     "ctax_collect": 94.1,
+    "nndr_collect": 99.5,
     "recycling": 32.8,
+    "residual_waste": 476.0,
     "fly_enforce": 23.0,
     "fly_fpn": 1.8,
     "fly_rate": 59.3,
@@ -24198,6 +24527,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000022",
     "E09000023",
@@ -24296,7 +24626,9 @@
     "om_received": 30.0,
     "om_upheld": 1.6,
     "ctax_collect": 93.8,
+    "nndr_collect": 98.0,
     "recycling": 31.4,
+    "residual_waste": 516.0,
     "fly_enforce": 122.1,
     "fly_fpn": 0.0,
     "fly_rate": 7.2,
@@ -24412,6 +24744,7 @@
      ]
     ]
    },
+   "bnb_families": 1,
    "neighbours": [
     "E06000006",
     "E08000014",
@@ -24529,6 +24862,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000010",
     "S12000017",
@@ -24602,7 +24936,9 @@
     "tsm_repairs": 76.8,
     "tsm_safe": 90.9,
     "ctax_collect": 97.3,
+    "nndr_collect": 96.9,
     "recycling": 60.0,
+    "residual_waste": 294.0,
     "fly_enforce": 50.3,
     "fly_fpn": 0.1,
     "fly_rate": 12.3,
@@ -24718,6 +25054,7 @@
      ]
     ]
    },
+   "bnb_families": 25,
    "neighbours": [
     "E08000029",
     "E08000009",
@@ -24815,7 +25152,9 @@
     "om_homeless": 0.0,
     "om_sen": 1.9,
     "ctax_collect": 94.7,
+    "nndr_collect": 98.6,
     "recycling": 24.5,
+    "residual_waste": 699.0,
     "fly_enforce": 42.7,
     "fly_fpn": 0.0,
     "fly_rate": 11.7,
@@ -24930,6 +25269,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000005",
     "E08000027",
@@ -25035,7 +25375,9 @@
     "tsm_decent": 1.5,
     "tsm_repairs": 77.9,
     "ctax_collect": 95.1,
+    "nndr_collect": 96.2,
     "recycling": 37.0,
+    "residual_waste": 540.0,
     "fly_enforce": 87.2,
     "fly_fpn": 27.2,
     "fly_rate": 21.6,
@@ -25151,6 +25493,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000030",
     "E08000005",
@@ -25249,7 +25592,9 @@
     "om_received": 20.6,
     "om_upheld": 1.4,
     "ctax_collect": 92.4,
+    "nndr_collect": 97.2,
     "recycling": 29.8,
+    "residual_waste": 613.0,
     "fly_enforce": 46.5,
     "fly_fpn": 0.5,
     "fly_rate": 33.0,
@@ -25365,6 +25710,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000003",
     "E08000023",
@@ -25472,7 +25818,9 @@
     "tsm_repairs": 74.9,
     "tsm_safe": 73.3,
     "ctax_collect": 97.9,
+    "nndr_collect": 98.0,
     "recycling": 41.0,
+    "residual_waste": 468.0,
     "fly_enforce": 11.9,
     "fly_fpn": 2.9,
     "fly_rate": 18.1,
@@ -25584,6 +25932,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000024",
     "E06000042",
@@ -25689,7 +26038,9 @@
     "tsm_repairs": 80.3,
     "tsm_safe": 60.2,
     "ctax_collect": 95.4,
+    "nndr_collect": 96.9,
     "recycling": 33.8,
+    "residual_waste": 579.0,
     "fly_enforce": 17.5,
     "fly_fpn": 0.7,
     "fly_rate": 15.3,
@@ -25805,6 +26156,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000035",
     "E06000061",
@@ -25901,7 +26253,9 @@
     "om_timely": 92.9,
     "om_upheld": 7.1,
     "ctax_collect": 92.7,
+    "nndr_collect": 96.4,
     "recycling": 50.0,
+    "residual_waste": 339.0,
     "fly_enforce": 36.0,
     "fly_fpn": 7.4,
     "fly_rate": 13.3,
@@ -26013,6 +26367,7 @@
      ]
     ]
    },
+   "bnb_families": 6,
    "neighbours": [
     "E08000018",
     "E08000037",
@@ -26111,7 +26466,9 @@
     "om_received": 29.1,
     "om_upheld": 2.0,
     "ctax_collect": 96.9,
+    "nndr_collect": 97.2,
     "recycling": 49.2,
+    "residual_waste": 529.0,
     "fly_enforce": 45.9,
     "fly_fpn": 1.0,
     "fly_rate": 29.1,
@@ -26227,6 +26584,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E08000036",
     "E08000018",
@@ -26337,7 +26695,9 @@
     "tsm_repairs": 96.3,
     "tsm_safe": 73.4,
     "ctax_collect": 97.3,
+    "nndr_collect": 98.7,
     "recycling": 30.0,
+    "residual_waste": 683.0,
     "fly_enforce": 71.7,
     "fly_fpn": 6.2,
     "fly_rate": 16.7,
@@ -26445,6 +26805,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E06000030",
     "E09000004",
@@ -26544,7 +26905,9 @@
     "om_homeless": 0.7,
     "om_sen": 0.7,
     "ctax_collect": 93.7,
+    "nndr_collect": 96.7,
     "recycling": 40.1,
+    "residual_waste": 504.0,
     "fly_enforce": 3.7,
     "fly_fpn": 3.7,
     "fly_rate": 11.2,
@@ -26660,6 +27023,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000008",
     "E08000024",
@@ -26767,7 +27131,9 @@
     "tsm_repairs": 75.6,
     "tsm_safe": 67.7,
     "ctax_collect": 92.1,
+    "nndr_collect": 97.1,
     "recycling": 15.8,
+    "residual_waste": 536.0,
     "fly_enforce": 225.5,
     "fly_fpn": 7.1,
     "fly_rate": 18.0,
@@ -26883,6 +27249,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000012",
     "E09000019",
@@ -26982,7 +27349,9 @@
     "om_timely": 57.1,
     "om_upheld": 3.7,
     "ctax_collect": 96.7,
+    "nndr_collect": 97.9,
     "recycling": 58.4,
+    "residual_waste": 310.0,
     "fly_enforce": 196.7,
     "fly_fpn": 0.8,
     "fly_rate": 9.7,
@@ -27094,6 +27463,7 @@
      ]
     ]
    },
+   "bnb_families": 20,
    "neighbours": [
     "E08000007",
     "E06000060",
@@ -27188,7 +27558,9 @@
     "om_remedy_before": 0.0,
     "om_upheld": 1.4,
     "ctax_collect": 94.8,
+    "nndr_collect": 96.1,
     "recycling": 48.9,
+    "residual_waste": 483.0,
     "fly_enforce": 21.0,
     "fly_fpn": 0.3,
     "fly_rate": 18.8,
@@ -27304,6 +27676,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000027",
     "E08000016",
@@ -27402,7 +27775,9 @@
     "om_timely": 50.0,
     "om_upheld": 3.7,
     "ctax_collect": 92.4,
+    "nndr_collect": 95.7,
     "recycling": 32.3,
+    "residual_waste": 635.0,
     "fly_enforce": 9.1,
     "fly_fpn": 0.3,
     "fly_rate": 22.3,
@@ -27518,6 +27893,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000005",
     "E06000021",
@@ -27625,7 +28001,9 @@
     "tsm_repairs": 78.8,
     "tsm_safe": 68.6,
     "ctax_collect": 94.8,
+    "nndr_collect": 94.5,
     "recycling": 32.8,
+    "residual_waste": 568.0,
     "fly_enforce": 63.6,
     "fly_fpn": 2.9,
     "fly_rate": 36.1,
@@ -27733,6 +28111,7 @@
      ]
     ]
    },
+   "bnb_families": 5,
    "neighbours": [
     "E09000026",
     "E09000003",
@@ -27840,7 +28219,9 @@
     "tsm_repairs": 81.4,
     "tsm_safe": 69.5,
     "ctax_collect": 97.0,
+    "nndr_collect": 97.1,
     "recycling": 22.8,
+    "residual_waste": 457.0,
     "fly_enforce": 240.7,
     "fly_fpn": 7.2,
     "fly_rate": 16.4,
@@ -27940,6 +28321,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E09000013",
     "E09000021",
@@ -28041,7 +28423,9 @@
     "om_homeless": 0.0,
     "om_sen": 0.9,
     "ctax_collect": 96.2,
+    "nndr_collect": 93.9,
     "recycling": 43.8,
+    "residual_waste": 501.0,
     "fly_enforce": 120.6,
     "fly_fpn": 0.6,
     "fly_rate": 10.3,
@@ -28157,6 +28541,7 @@
      ]
     ]
    },
+   "bnb_families": 2,
    "neighbours": [
     "E06000049",
     "E06000011",
@@ -28254,7 +28639,9 @@
     "om_homeless": 0.0,
     "om_sen": 0.6,
     "ctax_collect": 97.2,
+    "nndr_collect": 96.9,
     "recycling": 53.4,
+    "residual_waste": 466.0,
     "fly_enforce": 4.3,
     "fly_fpn": 0.8,
     "fly_rate": 6.3,
@@ -28370,6 +28757,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000060",
     "E06000036",
@@ -28481,6 +28869,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000008",
     "S12000013",
@@ -28564,6 +28953,7 @@
    },
    "ofsted": null,
    "fly": null,
+   "bnb_families": null,
    "neighbours": [
     "S12000005",
     "S12000006",
@@ -28637,7 +29027,9 @@
     "tsm_repairs": 93.0,
     "tsm_safe": 72.6,
     "ctax_collect": 96.4,
+    "nndr_collect": 98.3,
     "recycling": 46.6,
+    "residual_waste": 521.0,
     "fly_enforce": 24.1,
     "fly_fpn": 0.1,
     "fly_rate": 48.0,
@@ -28753,6 +29145,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000055",
     "E06000061",
@@ -28831,7 +29224,9 @@
     "tsm_repairs": 83.5,
     "tsm_safe": 70.5,
     "ctax_collect": 93.3,
+    "nndr_collect": 97.7,
     "recycling": 22.4,
+    "residual_waste": 492.0,
     "fly_enforce": 39.7,
     "fly_fpn": 5.8,
     "fly_rate": 94.4,
@@ -28947,6 +29342,7 @@
      ]
     ]
    },
+   "bnb_families": 211,
    "neighbours": [
     "E09000007",
     "E09000019",
@@ -29053,7 +29449,9 @@
     "tsm_repairs": 82.0,
     "tsm_safe": 79.3,
     "ctax_collect": 96.5,
+    "nndr_collect": 96.2,
     "recycling": 52.9,
+    "residual_waste": 424.0,
     "fly_enforce": 35.0,
     "fly_fpn": 0.1,
     "fly_rate": 6.7,
@@ -29169,6 +29567,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E06000019",
     "E06000063",
@@ -29238,7 +29637,9 @@
     "tsm_repairs": 82.5,
     "tsm_safe": 66.4,
     "ctax_collect": 94.9,
+    "nndr_collect": 97.5,
     "recycling": 51.5,
+    "residual_waste": 426.0,
     "fly_enforce": 129.5,
     "fly_fpn": 2.0,
     "fly_rate": 9.0,
@@ -29354,6 +29755,7 @@
      ]
     ]
    },
+   "bnb_families": 0,
    "neighbours": [
     "E08000014",
     "E06000007",
@@ -29461,7 +29863,9 @@
     "tsm_repairs": 84.2,
     "tsm_safe": 68.9,
     "ctax_collect": 97.5,
+    "nndr_collect": 97.4,
     "recycling": 43.7,
+    "residual_waste": 514.0,
     "fly_enforce": 109.1,
     "fly_fpn": 2.1,
     "fly_rate": 5.7,
@@ -29577,6 +29981,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E06000024",
     "E06000049",
@@ -29674,7 +30079,9 @@
     "om_homeless": 3.8,
     "om_sen": 2.5,
     "ctax_collect": 96.8,
+    "nndr_collect": 96.1,
     "recycling": 49.1,
+    "residual_waste": 481.0,
     "fly_enforce": 2.7,
     "fly_fpn": 2.7,
     "fly_rate": 5.7,
@@ -29790,6 +30197,7 @@
      ]
     ]
    },
+   "bnb_families": 2,
    "neighbours": [
     "E06000060",
     "E06000041",
@@ -29887,7 +30295,9 @@
     "om_timely": 81.8,
     "om_upheld": 7.3,
     "ctax_collect": 93.2,
+    "nndr_collect": 93.8,
     "recycling": 32.4,
+    "residual_waste": 532.0,
     "fly_enforce": 50.9,
     "fly_fpn": 0.0,
     "fly_rate": 24.2,
@@ -30003,6 +30413,7 @@
      ]
     ]
    },
+   "bnb_families": 6,
    "neighbours": [
     "E06000047",
     "E08000014",
@@ -30112,7 +30523,9 @@
     "tsm_repairs": 86.1,
     "tsm_safe": 68.6,
     "ctax_collect": 98.9,
+    "nndr_collect": 97.7,
     "recycling": 55.4,
+    "residual_waste": 405.0,
     "fly_enforce": 82.7,
     "fly_fpn": 4.2,
     "fly_rate": 11.0,
@@ -30220,6 +30633,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E06000040",
     "E06000060",
@@ -30325,7 +30739,9 @@
     "tsm_repairs": 95.4,
     "tsm_safe": 71.8,
     "ctax_collect": 92.2,
+    "nndr_collect": 97.0,
     "recycling": 37.2,
+    "residual_waste": 513.0,
     "fly_enforce": 64.6,
     "fly_fpn": 1.6,
     "fly_rate": 11.9,
@@ -30425,6 +30841,7 @@
      ]
     ]
    },
+   "bnb_families": 1,
    "neighbours": [
     "E08000028",
     "E06000021",
@@ -30535,7 +30952,9 @@
     "tsm_repairs": 81.5,
     "tsm_safe": 63.5,
     "ctax_collect": 97.5,
+    "nndr_collect": 98.4,
     "recycling": 41.7,
+    "residual_waste": 511.0,
     "fly_enforce": 127.9,
     "fly_fpn": 0.7,
     "fly_rate": 11.0,
@@ -30651,6 +31070,7 @@
      ]
     ]
    },
+   "bnb_families": "few",
    "neighbours": [
     "E06000022",
     "E06000024",

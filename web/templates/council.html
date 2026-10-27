@@ -214,6 +214,11 @@
       </div>
     </details>
   {% endif %}
+  {% if area.id == "homeless" and b.bnb_families %}
+    <div class="govuk-inset-text govuk-!-margin-top-2">
+      In the latest figures ({{ sources.homelessness.period }}), {% if b.bnb_families == "few" %}a small number of families{% else %}{{ b.bnb_families }} {{ "family" if b.bnb_families == 1 else "families" }}{% endif %} with children had been in bed and breakfast accommodation arranged by {{ b.name }} for more than 6 weeks. The law says families should only be in a B&amp;B in an emergency, and for no longer than 6 weeks.{% if b.bnb_families == "few" %} The exact number isn't published because it is small.{% endif %}
+    </div>
+  {% endif %}
   {% if area.missing and not area.rows and area.id == "housing" %}
     <p class="govuk-body app-secondary-text">{{ b.name }} Council no longer owns council homes, so there are no council housing figures.</p>
   {% elif area.missing and not area.rows %}

@@ -164,6 +164,7 @@ def assemble():
             "spend": {},
             "ofsted": None,
             "fly": None,
+            "bnb_families": None,
             "neighbours": [],
             "trends": {},
         }
@@ -173,6 +174,8 @@ def assemble():
         if source("band_d"):
             council["band_d"] = source("band_d").values.get(code, {}).get("band_d")
             council["band_d_parts"] = source("band_d").extra.get(code)
+        if sources["homelessness"] and code.startswith("E"):
+            council["bnb_families"] = sources["homelessness"].extra.get("bnb_families", {}).get(code)
         if source("spending"):
             council["spend"] = source("spending").values.get(code, {})
         if sources["funding"]:

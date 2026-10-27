@@ -1,4 +1,10 @@
-"""Household waste recycling rates, from Defra's ENV18 tables."""
+"""Household waste recycled and household waste left over, from Defra's
+ENV18 tables.
+
+Waste sent to landfill isn't used: councils in joint waste disposal
+authorities (most of London, Greater Manchester and Merseyside) have no
+figure of their own.
+"""
 
 import re
 
@@ -27,6 +33,8 @@ def fetch(context):
     year_col = sheets.column(header, r"^(Financial )?Year$")
     ons = sheets.column(header, r"^ONS code$")
     rate = sheets.column(header, r"^Percentage of household waste sent for reuse, recycling or composting")
+    residual = sheets.column(header, r"^Residual household waste per household")
+    latest_rows = {}
     result = Result(id=ID, title="Defra: Local authority collected waste (ENV18)", url=item["web_url"],
                     period="", published=item.get("public_updated_at", "")[:10], files=[attachment["url"]])
     for row in rows[head + 1:]:
@@ -36,8 +44,13 @@ def fetch(context):
         if code in context["population"] and value is not None and re.fullmatch(r"\d{4}-\d\d", year):
             # Some editions give a share (0.268), others a percentage (26.8)
             result.trend(code, "recycling", year, value * 100 if value <= 1 else value)
+        if code in context["population"] and re.fullmatch(r"\d{4}-\d\d", year):
+            latest_rows[code, year] = row
     latest = max(p for t in result.trends.values() for p in t["recycling"])
     result.period = latest
     for code, trends in result.trends.items():
         result.set(code, "recycling", trends["recycling"].get(latest))
+        row = latest_rows.get((code, latest))
+        if row:
+            result.set(code, "residual_waste", sheets.num(row[residual]), places=0)
     return result
