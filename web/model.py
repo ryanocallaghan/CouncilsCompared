@@ -56,8 +56,8 @@ AREAS = [
     ("ctax", "Council tax",
      "How much of the year's council tax bills the council collected by 31 March."),
     ("streets", "Streets and waste",
-     "Fly-tipping the council recorded, how often it took enforcement action, and how much household "
-     "waste was recycled."),
+     "Fly-tipping the council recorded, how often it took enforcement action or issued a fixed penalty "
+     "notice (an on-the-spot fine), and how much household waste was recycled."),
     ("homeless", "Homelessness",
      "Temporary accommodation and the outcomes of homelessness cases, from the council's statutory returns."),
     ("digital", "Website",
@@ -140,6 +140,8 @@ MEASURES = [
             nations=("England", "Scotland"), other_sources=(("Scotland", "lgbf"),)),
     Measure("fly_rate", "streets", "Fly-tipping incidents, per 1,000 residents", "", "lower", "fly"),
     Measure("fly_enforce", "streets", "Enforcement actions, per 100 fly-tipping incidents", "", "higher", "fly"),
+    Measure("fly_fpn", "streets", "Fixed penalty notices, per 100 fly-tipping incidents", "", "higher", "fly",
+            "Fixed penalty notices for fly-tipping and for breaches of household duty of care"),
     Measure("recycling", "streets", "Household waste reused, recycled or composted", "%", "higher", "waste",
             nations=("England", "Scotland"), other_sources=(("Scotland", "lgbf"),)),
     Measure("ta_rate", "homeless", "Households in temporary accommodation, per 1,000 households", "", "lower",
@@ -430,6 +432,7 @@ class Row:
     count: int = 0
     band: str = None
     strip: Strip = None
+    caveat: str = None
 
     @property
     def band_text(self):
@@ -484,6 +487,7 @@ class Comparison:
     spending: list = field(default_factory=list)
     grades: list = field(default_factory=list)
     trends: list = field(default_factory=list)
+    fly: dict = None
 
 
 def _summary(rows, worst=True):
@@ -512,7 +516,8 @@ def compare(council, group="nation"):
             group_values = [c["values"][m.id] for c in members if m.id in c["values"]]
             value = council["values"].get(m.id)
             row = Row(measure=m, period=period(m, council["nation"]), value=fmt(value, m.unit),
-                      median=fmt(median(group_values), m.unit) if group_values else "No figure")
+                      median=fmt(median(group_values), m.unit) if group_values else "No figure",
+                      caveat=caveat(council, m.id))
             if value is not None and len(group_values) > 1:
                 row.position = position(value, group_values, m.better)
                 row.count = len(group_values)
@@ -535,7 +540,27 @@ def compare(council, group="nation"):
     result.grades = [(grade, sum(1 for c in members if (c.get("ofsted") or {}).get("grade") == grade))
                      for grade in GRADES]
     result.trends = _trends(council, members)
+    result.fly = fly_detail(council, members)
     return result
+
+
+def caveat(council, measure_id):
+    """Why a council's figure on a measure isn't quite like the others', if it isn't."""
+    if measure_id == "fly_rate" and (council.get("fly") or {}).get("basis") == "public":
+        return ("Counts only fly-tips reported by the public, not those council staff find, so it may look lower "
+                "than councils that count both.")
+    return None
+
+
+def fly_detail(council, members):
+    """Where fly-tips were found, what was dumped and what the council did
+    about them, for the council page. Not ranked: most councils prosecute
+    nobody in a year, and sizes are recorded differently."""
+    fly = council.get("fly")
+    if not fly:
+        return None
+    large = [c["fly"]["large"] for c in members if (c.get("fly") or {}).get("large") is not None]
+    return {**fly, "large_median": round(median(large)) if large else None}
 
 
 def key_figures(comparison):
@@ -673,6 +698,8 @@ TRENDS = [
      "Using the latest population estimate for every year.", ""),
     ("recycling", "Household waste recycling rate", "Reused, recycled or composted.", "%"),
     ("fly_rate", "Fly-tipping incidents per 1,000 residents", "As recorded by the council.", ""),
+    ("fly_fpn", "Fixed penalty notices per 100 fly-tipping incidents",
+     "For fly-tipping and household duty of care. Councils could fine fly-tippers on the spot from May 2016.", ""),
     ("ta_days", "Average days in temporary accommodation", "For homelessness cases that closed in each year.", ""),
 ]
 
