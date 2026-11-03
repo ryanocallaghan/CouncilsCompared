@@ -61,8 +61,9 @@ AREAS = [
      "for the bin."),
     ("homeless", "Homelessness",
      "Temporary accommodation and the outcomes of homelessness cases, from the council's statutory returns."),
-    ("digital", "Website",
-     "An automated test of the council website's accessibility."),
+    ("digital", "Online services",
+     "Whether GOV.UK's links to the council's pages for its core services work, and an automated test of the "
+     "council website's accessibility."),
     ("openness", "Openness",
      "Whether the council publishes the information it should, in a form other people can use. Planning data "
      "is what MHCLG's Planning Data platform collects from each council: conservation areas, Article 4 "
@@ -166,6 +167,9 @@ MEASURES = [
             "Silktide Index WCAG 2.2 AA score", nations=("England", "Scotland"),
             note="Silktide ranks every UK council together, including county and district councils and those in "
                  "the other nations, so its positions are different from the ones here. The scores are the same."),
+    Measure("links_working", "digital", "Core services GOV.UK can link straight to", "%", "higher", "local_links",
+            "GOV.UK's links to the council's pages for its core services that worked when GOV.UK last checked",
+            nations=("England", "Scotland")),
     Measure("planning_data", "openness", "Planning datasets the council publishes", "%", "higher", "planning_data",
             "Of 8 datasets the Planning Data platform asks councils for, those it collects from at least one "
             "working source"),
@@ -401,7 +405,8 @@ def lower_first(text):
 
 
 def quarter(position, count):
-    """0 for the top quarter of a group to 3 for the bottom; ties share a position."""
+    """0 for the top quarter of a group to 3 for the bottom, from a position
+    that may be the middle of a tie (see middle)."""
     for q in (3, 2, 1):
         if position > count * q / 4:
             return q
@@ -417,6 +422,20 @@ def position(value, values, better):
     if better == "higher":
         return sum(1 for v in values if v > value) + 1
     return sum(1 for v in values if v < value) + 1
+
+
+def middle(value, values, better):
+    """The middle of the positions a tie covers, for its quarter: when 57 of
+    130 councils share the lowest figure, they cover 74th to 130th, so their
+    quarter is the bottom one, not the third one 74th would put them in."""
+    return position(value, values, better) + (values.count(value) - 1) / 2
+
+
+def place(position_, tied, count):
+    """ "38th of 130", or for a tie "joint 74th to 130th of 130"."""
+    if tied > 1:
+        return f"joint {ordinal(position_)} to {ordinal(position_ + tied - 1)} of {count}"
+    return f"{ordinal(position_)} of {count}"
 
 
 @dataclass
@@ -460,6 +479,7 @@ class Row:
     median: str
     position: int = None
     count: int = 0
+    tied: int = 1  # councils with the same figure, this one included
     band: str = None
     strip: Strip = None
     caveat: str = None
@@ -531,11 +551,11 @@ def _summary(rows, worst=True):
     # The bottom (or top) quarter, or the next quarter in if there's nothing there
     ends = ["bottom", "third"] if worst else ["top", "second"]
     picked = next(([r for r in rows if r.band == end] for end in ends if any(r.band == end for r in rows)), [])
-    picked.sort(key=lambda r: r.position / r.count, reverse=worst)
+    picked.sort(key=lambda r: (r.position + (r.tied - 1) / 2) / r.count, reverse=worst)
     # Each with its position and which end is best, so "6th of 6" can't be
     # read as good on a measure where a low number is best
     return [
-        f"{r.measure.label} ({ordinal(r.position)} of {r.count}; "
+        f"{r.measure.label} ({place(r.position, r.tied, r.count)}; "
         f"1st is {'highest' if r.measure.better == 'higher' else 'lowest'})"
         for r in picked[:3]
     ]
@@ -559,7 +579,8 @@ def compare(council, group="nation"):
             if value is not None and len(group_values) > 1:
                 row.position = position(value, group_values, m.better)
                 row.count = len(group_values)
-                row.band = band(row.position, row.count)
+                row.tied = group_values.count(value)
+                row.band = band(middle(value, group_values, m.better), row.count)
                 all_values = {c["code"]: c["values"][m.id] for c in everyone if m.id in c["values"]}
                 row.strip = strip(all_values, council["code"], member_codes, m.better, median(group_values))
             area_rows.append(row)
@@ -622,7 +643,7 @@ def key_figures(comparison):
             continue
         end = "highest" if r.measure.better == "higher" else "lowest"
         when = f"In {r.period}, " if r.period else ""
-        sentences.append(f"{when}{name} was {ordinal(r.position)} of {r.count} among {comparison.phrase} "
+        sentences.append(f"{when}{name} was {place(r.position, r.tied, r.count)} among {comparison.phrase} "
                          f"for {lower_first(r.measure.label)} (1st is {end}), at {r.value} against a median "
                          f"of {r.median}.")
     return sentences
@@ -873,8 +894,9 @@ def ranking(measure, nation="England", members=None):
     values = [c["values"][measure.id] for c in with_values]
     rows = []
     for c in with_values:
-        pos = position(c["values"][measure.id], values, measure.better)
-        rows.append((pos, c, c["values"][measure.id], quarter(pos, len(values))))
+        value = c["values"][measure.id]
+        pos = position(value, values, measure.better)
+        rows.append((pos, c, value, quarter(middle(value, values, measure.better), len(values))))
     rows.sort(key=lambda r: (r[0], r[1]["name"]))
     return rows
 

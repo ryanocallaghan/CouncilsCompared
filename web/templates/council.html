@@ -198,9 +198,9 @@
                 </th>
                 <td class="govuk-table__cell govuk-table__cell--numeric" data-label="{{ b.name }}"><strong>{{ r.value }}</strong></td>
                 <td class="govuk-table__cell govuk-table__cell--numeric" data-label="Median">{{ r.median }}</td>
-                <td class="govuk-table__cell" data-label="Position">{{ model.ordinal(r.position) }} of {{ r.count }}</td>
+                <td class="govuk-table__cell" data-label="Position">{{ model.place(r.position, r.tied, r.count) }}</td>
                 <td class="govuk-table__cell app-compare-table__chart">
-                  {{ stripChart(r.strip, b.name ~ ": " ~ r.value ~ ". Median " ~ r.median ~ ". " ~ model.ordinal(r.position) ~ " of " ~ r.count ~ ".", measure=r.measure.id) }}
+                  {{ stripChart(r.strip, b.name ~ ": " ~ r.value ~ ". Median " ~ r.median ~ ". " ~ model.place(r.position, r.tied, r.count) | capitalize ~ ".", measure=r.measure.id) }}
                 </td>
               </tr>
             {% endfor %}
@@ -243,6 +243,13 @@
   {% if area.id == "homeless" and b.bnb_families %}
     <div class="govuk-inset-text govuk-!-margin-top-2">
       In the latest figures ({{ sources.homelessness.period }}), {% if b.bnb_families == "few" %}a small number of families{% else %}{{ b.bnb_families }} {{ "family" if b.bnb_families == 1 else "families" }}{% endif %} with children had been in bed and breakfast accommodation arranged by {{ b.name }} for more than 6 weeks. The law says families should only be in a B&amp;B in an emergency, and for no longer than 6 weeks.{% if b.bnb_families == "few" %} The exact number isn't published because it is small.{% endif %}
+    </div>
+  {% endif %}
+  {% if area.id == "digital" and b.links and (b.links.broken or b.links.missing) %}
+    <div class="govuk-inset-text govuk-!-margin-top-2">
+      Of the {{ b.links.services }} core services GOV.UK checked in {{ sources.local_links.period }}:
+      {% if b.links.broken %}the link to {{ b.name | possessive }} page didn't work for {{ b.links.broken | map("lower") | sentence_join }}.{% endif %}
+      {% if b.links.missing %}GOV.UK has no link for {{ b.links.missing | map("lower") | sentence_join }}, so it can only send people to the council's homepage.{% endif %}
     </div>
   {% endif %}
   {% if area.id == "openness" and b.planning and b.planning.missing %}

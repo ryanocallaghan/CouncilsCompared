@@ -90,6 +90,12 @@
    "period": "October 2026",
    "published": ""
   },
+  "local_links": {
+   "title": "GOV.UK Local Links Manager",
+   "url": "https://www.gov.uk/find-local-council",
+   "period": "November 2026",
+   "published": "2026-11-03"
+  },
   "planning_data": {
    "title": "Planning Data: data provided by each planning authority",
    "url": "https://www.planning.data.gov.uk/",
@@ -166,6 +172,7 @@
    "funding": null,
    "values": {
     "web_access": 72.31,
+    "links_working": 56.2,
     "attendance": 92.4,
     "bins_satisfied": 79.3,
     "care_graded": 78.2,
@@ -196,6 +203,19 @@
     "Social work and social care": 824.1
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Housing benefit",
+     "Reporting fly-tipping",
+     "Reporting a road problem",
+     "Blue badges",
+     "Primary school places",
+     "Secondary school places",
+     "School term dates"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -257,6 +277,7 @@
    "funding": null,
    "values": {
     "web_access": 94.53,
+    "links_working": 87.5,
     "attendance": 92.8,
     "bins_satisfied": 73.7,
     "care_graded": 80.6,
@@ -287,6 +308,14 @@
     "Social work and social care": 871.0
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Reporting fly-tipping",
+     "School term dates"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -348,6 +377,7 @@
    "funding": null,
    "values": {
     "web_access": 92.39,
+    "links_working": 100.0,
     "attendance": 91.5,
     "bins_satisfied": 87.7,
     "care_graded": 68.0,
@@ -378,6 +408,11 @@
     "Social work and social care": 915.9
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -439,6 +474,7 @@
    "funding": null,
    "values": {
     "web_access": 98.38,
+    "links_working": 100.0,
     "attendance": 90.7,
     "bins_satisfied": 76.3,
     "care_graded": 76.5,
@@ -467,6 +503,11 @@
     "Social work and social care": 976.4
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -560,6 +601,7 @@
     "ta_long": 60.8,
     "ta_rate": 13.1,
     "web_access": 84.64,
+    "links_working": 70.0,
     "planning_data": 62.5
    },
    "spend": {
@@ -577,6 +619,18 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2023-07-10"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting a road problem",
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -800,6 +854,7 @@
     "ta_long": 49.2,
     "ta_rate": 19.3,
     "web_access": 88.69,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -817,6 +872,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-06-10"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -1026,6 +1086,7 @@
     "ta_long": 0.0,
     "ta_rate": 0.5,
     "web_access": 92.96,
+    "links_working": 95.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -1043,6 +1104,13 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-09-11"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bulky waste collections"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -1267,6 +1335,7 @@
     "ta_long": 0.0,
     "ta_rate": 1.0,
     "web_access": 80.94,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -1284,6 +1353,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-06-09"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -1499,6 +1573,7 @@
     "ta_long": 22.4,
     "ta_rate": 11.6,
     "web_access": 90.11,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -1516,6 +1591,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2025-07-14"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": false,
@@ -1732,6 +1812,7 @@
     "ta_long": 76.2,
     "ta_rate": 2.8,
     "web_access": 74.6,
+    "links_working": 100.0,
     "planning_data": 37.5
    },
    "spend": {
@@ -1749,6 +1830,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2023-02-06"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -1972,6 +2058,7 @@
     "ta_long": 31.6,
     "ta_rate": 11.9,
     "web_access": 96.62,
+    "links_working": 100.0,
     "planning_data": 75.0
    },
    "spend": {
@@ -1989,6 +2076,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-02-20"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -2205,6 +2297,7 @@
     "ta_long": 0.0,
     "ta_rate": 0.6,
     "web_access": 96.56,
+    "links_working": 85.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -2222,6 +2315,16 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-03-03"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bulky waste collections",
+     "Libraries"
+    ],
+    "missing": [
+     "Reporting fly-tipping"
+    ]
    },
    "planning": {
     "brownfield": true,
@@ -2451,6 +2554,7 @@
     "ta_long": 0.0,
     "ta_rate": 2.0,
     "web_access": 83.68,
+    "links_working": 100.0,
     "planning_data": 62.5
    },
    "spend": {
@@ -2468,6 +2572,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2022-12-05"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -2684,6 +2793,7 @@
     "ta_long": 2.1,
     "ta_rate": 1.7,
     "web_access": 96.07,
+    "links_working": 85.0,
     "planning_data": 12.5
    },
    "spend": {
@@ -2701,6 +2811,15 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-09-11"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -2928,6 +3047,7 @@
     "ta_long": 15.4,
     "ta_rate": 2.7,
     "web_access": 96.54,
+    "links_working": 100.0,
     "planning_data": 12.5
    },
    "spend": {
@@ -2945,6 +3065,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-12-02"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -3129,6 +3254,7 @@
     "ta_long": 20.6,
     "ta_rate": 3.0,
     "web_access": 99.63,
+    "links_working": 95.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -3146,6 +3272,13 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-12-08"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": [
+     "Reporting fly-tipping"
+    ]
    },
    "planning": {
     "brownfield": false,
@@ -3358,6 +3491,7 @@
     "ta_long": 3.4,
     "ta_rate": 2.6,
     "web_access": 92.92,
+    "links_working": 95.0,
     "planning_data": 50.0
    },
    "spend": {
@@ -3375,6 +3509,13 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2026-01-12"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -3599,6 +3740,7 @@
     "ta_long": 51.2,
     "ta_rate": 19.9,
     "web_access": 96.43,
+    "links_working": 90.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -3616,6 +3758,14 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-02-20"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bulky waste collections",
+     "Secondary school places"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -3835,6 +3985,7 @@
     "ta_long": 63.0,
     "ta_rate": 16.2,
     "web_access": 98.57,
+    "links_working": 80.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -3852,6 +4003,16 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-03-11"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting a road problem",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -4076,6 +4237,7 @@
     "fly_fpn": 0.6,
     "fly_rate": 20.7,
     "web_access": 85.33,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -4093,6 +4255,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2023-01-16"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -4303,6 +4470,7 @@
     "ta_long": 58.7,
     "ta_rate": 11.7,
     "web_access": 98.12,
+    "links_working": 80.0,
     "planning_data": 37.5
    },
    "spend": {
@@ -4320,6 +4488,16 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2023-11-13"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Primary school places",
+     "Secondary school places",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -4531,6 +4709,7 @@
     "ta_long": 5.1,
     "ta_rate": 1.6,
     "web_access": 98.83,
+    "links_working": 100.0,
     "planning_data": 62.5
    },
    "spend": {
@@ -4548,6 +4727,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2025-01-27"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -4736,6 +4920,7 @@
     "ta_long": 8.9,
     "ta_rate": 2.9,
     "web_access": 94.4,
+    "links_working": 95.0,
     "planning_data": 37.5
    },
    "spend": {
@@ -4753,6 +4938,13 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2025-06-09"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": [
+     "Bulky waste collections"
+    ]
    },
    "planning": {
     "brownfield": true,
@@ -4967,6 +5159,7 @@
     "ta_long": 0.0,
     "ta_rate": 1.2,
     "web_access": 62.58,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -4984,6 +5177,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-02-19"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -5200,6 +5398,7 @@
     "ta_long": 40.0,
     "ta_rate": 13.3,
     "web_access": 92.99,
+    "links_working": 85.0,
     "planning_data": 62.5
    },
    "spend": {
@@ -5217,6 +5416,15 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-03-03"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Parking permits",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -5436,6 +5644,7 @@
     "ta_long": 15.4,
     "ta_rate": 1.8,
     "web_access": 89.49,
+    "links_working": 65.0,
     "planning_data": 75.0
    },
    "spend": {
@@ -5453,6 +5662,19 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-03-10"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bulky waste collections",
+     "Reporting fly-tipping",
+     "Reporting a road problem",
+     "Parking permits",
+     "Blue badges",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -5666,6 +5888,7 @@
     "ta_long": 0.0,
     "ta_rate": 0.3,
     "web_access": 95.27,
+    "links_working": 90.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -5683,6 +5906,14 @@
    "ofsted": {
     "grade": "Inadequate",
     "inspected": "2024-02-26"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Reporting a road problem",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -5905,6 +6136,7 @@
     "ta_long": 0.0,
     "ta_rate": 0.6,
     "web_access": 99.18,
+    "links_working": 75.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -5922,6 +6154,17 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2024-07-15"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bulky waste collections",
+     "Reporting a road problem",
+     "Primary school places",
+     "Secondary school places",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -6113,6 +6356,7 @@
    "funding": null,
    "values": {
     "web_access": 98.49,
+    "links_working": 93.8,
     "attendance": 92.1,
     "bins_satisfied": 77.7,
     "care_graded": 84.6,
@@ -6143,6 +6387,13 @@
     "Social work and social care": 850.1
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Reporting a road problem"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -6204,6 +6455,7 @@
    "funding": null,
    "values": {
     "web_access": 49.84,
+    "links_working": 93.8,
     "attendance": 91.2,
     "bins_satisfied": 66.7,
     "care_graded": 89.0,
@@ -6234,6 +6486,13 @@
     "Social work and social care": 977.0
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Registering to vote"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -6330,6 +6589,7 @@
     "ta_long": 16.7,
     "ta_rate": 3.3,
     "web_access": 92.55,
+    "links_working": 100.0,
     "planning_data": 12.5
    },
    "spend": {
@@ -6347,6 +6607,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-07-01"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -6562,6 +6827,7 @@
     "ta_long": 3.8,
     "ta_rate": 0.5,
     "web_access": 94.79,
+    "links_working": 100.0,
     "planning_data": 12.5
    },
    "spend": {
@@ -6579,6 +6845,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-03-24"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -6799,6 +7070,7 @@
     "ta_long": 14.0,
     "ta_rate": 7.2,
     "web_access": 91.2,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -6816,6 +7088,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2026-03-09"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -7035,6 +7312,7 @@
     "ta_long": 63.4,
     "ta_rate": 20.4,
     "web_access": 89.24,
+    "links_working": 85.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -7052,6 +7330,16 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-10-14"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": [
+     "Bulky waste collections"
+    ]
    },
    "planning": {
     "brownfield": true,
@@ -7268,12 +7556,38 @@
     "ta_long": 4.0,
     "ta_rate": 0.7,
     "web_access": 94.24,
+    "links_working": 5.0,
     "planning_data": 0.0
    },
    "spend": {},
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-10-07"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": [
+     "Paying council tax",
+     "Council tax discounts",
+     "Council tax support",
+     "Housing benefit",
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting fly-tipping",
+     "Reporting a road problem",
+     "Parking permits",
+     "Blue badges",
+     "Older people's bus passes",
+     "Primary school places",
+     "Secondary school places",
+     "Free school meals",
+     "Applying for council housing",
+     "Help if you're homeless",
+     "Libraries",
+     "Registering to vote",
+     "Making a complaint"
+    ]
    },
    "planning": {
     "brownfield": false,
@@ -7467,6 +7781,7 @@
     "ta_long": 5.6,
     "ta_rate": 1.5,
     "web_access": 81.55,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -7484,6 +7799,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2026-02-09"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -7714,6 +8034,7 @@
     "ta_long": 14.2,
     "ta_rate": 4.9,
     "web_access": 95.6,
+    "links_working": 80.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -7731,6 +8052,16 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-05-19"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bulky waste collections",
+     "Secondary school places",
+     "School term dates",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": false,
@@ -7959,6 +8290,7 @@
     "ta_long": 0.0,
     "ta_rate": 0.9,
     "web_access": 97.6,
+    "links_working": 100.0,
     "planning_data": 62.5
    },
    "spend": {
@@ -7976,6 +8308,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-01-20"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -8192,6 +8529,7 @@
     "ta_long": 3.4,
     "ta_rate": 1.1,
     "web_access": 93.97,
+    "links_working": 100.0,
     "planning_data": 50.0
    },
    "spend": {
@@ -8209,6 +8547,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-03-17"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -8404,12 +8747,18 @@
     "ta_long": 0.0,
     "ta_rate": 0.2,
     "web_access": 93.25,
+    "links_working": 100.0,
     "planning_data": 12.5
    },
    "spend": {},
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2022-10-31"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -8603,6 +8952,7 @@
    "funding": null,
    "values": {
     "web_access": 92.86,
+    "links_working": 100.0,
     "attendance": 90.7,
     "bins_satisfied": 85.7,
     "care_graded": 82.7,
@@ -8631,6 +8981,11 @@
     "Social work and social care": 970.3
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -8692,6 +9047,7 @@
    "funding": null,
    "values": {
     "web_access": 74.98,
+    "links_working": 87.5,
     "attendance": 89.6,
     "bins_satisfied": 74.3,
     "care_graded": 76.7,
@@ -8722,6 +9078,14 @@
     "Social work and social care": 1053.5
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -8815,6 +9179,7 @@
     "ta_long": 77.7,
     "ta_rate": 21.2,
     "web_access": 83.93,
+    "links_working": 70.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -8832,6 +9197,18 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-04-22"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Reporting fly-tipping",
+     "Reporting a road problem",
+     "Older people's bus passes",
+     "Primary school places",
+     "Secondary school places",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -9028,6 +9405,7 @@
    "funding": null,
    "values": {
     "web_access": 99.77,
+    "links_working": 93.8,
     "attendance": 89.1,
     "bins_satisfied": 76.7,
     "care_graded": 76.6,
@@ -9058,6 +9436,13 @@
     "Social work and social care": 963.1
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Reporting fly-tipping"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -9119,6 +9504,7 @@
    "funding": null,
    "values": {
     "web_access": 84.94,
+    "links_working": 100.0,
     "attendance": 92.9,
     "bins_satisfied": 87.7,
     "care_graded": 87.7,
@@ -9149,6 +9535,11 @@
     "Social work and social care": 706.1
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -9210,6 +9601,7 @@
    "funding": null,
    "values": {
     "web_access": 53.88,
+    "links_working": 81.2,
     "attendance": 92.3,
     "bins_satisfied": 79.0,
     "care_graded": 83.2,
@@ -9240,6 +9632,15 @@
     "Social work and social care": 835.0
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Reporting fly-tipping",
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": null,
    "fly": null,
@@ -9297,6 +9698,7 @@
    "funding": null,
    "values": {
     "web_access": 97.09,
+    "links_working": 100.0,
     "attendance": 93.6,
     "bins_satisfied": 80.3,
     "care_graded": 96.2,
@@ -9327,6 +9729,11 @@
     "Social work and social care": 750.7
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -9423,6 +9830,7 @@
     "ta_long": 8.5,
     "ta_rate": 1.8,
     "web_access": 77.58,
+    "links_working": 90.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -9440,6 +9848,14 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-01-30"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -9655,6 +10071,7 @@
     "ta_long": 63.7,
     "ta_rate": 25.3,
     "web_access": 89.98,
+    "links_working": 95.0,
     "planning_data": 25.0
    },
    "spend": {
@@ -9672,6 +10089,13 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-07-22"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Making a complaint"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -9866,6 +10290,7 @@
    "funding": null,
    "values": {
     "web_access": 91.02,
+    "links_working": 56.2,
     "attendance": 91.6,
     "bins_satisfied": 65.3,
     "care_graded": 88.1,
@@ -9896,6 +10321,19 @@
     "Social work and social care": 880.3
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Housing benefit",
+     "Reporting fly-tipping",
+     "Reporting a road problem",
+     "Primary school places",
+     "Secondary school places",
+     "Libraries",
+     "Registering to vote"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -9957,6 +10395,7 @@
    "funding": null,
    "values": {
     "web_access": 97.2,
+    "links_working": 93.8,
     "attendance": 90.2,
     "bins_satisfied": 85.3,
     "care_graded": 80.1,
@@ -9987,6 +10426,13 @@
     "Social work and social care": 924.7
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Registering to vote"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -10078,6 +10524,7 @@
     "ta_long": 0.0,
     "ta_rate": 1.4,
     "web_access": 93.36,
+    "links_working": 100.0,
     "planning_data": 87.5
    },
    "spend": {
@@ -10095,6 +10542,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-12-02"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -10280,6 +10732,7 @@
    "funding": null,
    "values": {
     "web_access": 86.42,
+    "links_working": 100.0,
     "attendance": 89.2,
     "bins_satisfied": 60.3,
     "care_graded": 90.4,
@@ -10308,6 +10761,11 @@
     "Social work and social care": 931.4
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": null,
    "fly": null,
@@ -10397,6 +10855,7 @@
     "ta_long": 45.5,
     "ta_rate": 15.5,
     "web_access": 82.52,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -10414,6 +10873,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-06-03"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -10642,6 +11106,7 @@
     "ta_long": 61.9,
     "ta_rate": 32.8,
     "web_access": 88.32,
+    "links_working": 100.0,
     "planning_data": 37.5
    },
    "spend": {
@@ -10659,6 +11124,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-07-01"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -10873,6 +11343,7 @@
     "ta_long": 0.0,
     "ta_rate": 2.1,
     "web_access": 82.49,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -10890,6 +11361,11 @@
    "ofsted": {
     "grade": "Inadequate",
     "inspected": "2024-05-13"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -11105,6 +11581,7 @@
     "ta_long": 62.6,
     "ta_rate": 17.1,
     "web_access": 87.46,
+    "links_working": 100.0,
     "planning_data": 12.5
    },
    "spend": {
@@ -11122,6 +11599,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-03-11"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -11345,6 +11827,7 @@
     "ta_long": 69.0,
     "ta_rate": 25.3,
     "web_access": 83.28,
+    "links_working": 95.0,
     "planning_data": 62.5
    },
    "spend": {
@@ -11362,6 +11845,13 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2026-01-12"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Council tax discounts"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": false,
@@ -11585,6 +12075,7 @@
     "ta_long": 52.3,
     "ta_rate": 15.9,
     "web_access": 99.38,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -11602,6 +12093,11 @@
    "ofsted": {
     "grade": "Inadequate",
     "inspected": "2025-01-20"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -11802,6 +12298,7 @@
     "relief": 50.7,
     "ta_rate": 0.4,
     "web_access": 98.76,
+    "links_working": 75.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -11819,6 +12316,17 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-03-18"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bulky waste collections",
+     "Reporting a road problem",
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": false,
@@ -12047,6 +12555,7 @@
     "ta_long": 63.0,
     "ta_rate": 12.6,
     "web_access": 91.46,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -12064,6 +12573,11 @@
    "ofsted": {
     "grade": "Inadequate",
     "inspected": "2023-12-11"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": false,
@@ -12284,6 +12798,7 @@
     "ta_long": 13.6,
     "ta_rate": 2.2,
     "web_access": 87.99,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -12301,6 +12816,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-11-10"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -12492,6 +13012,7 @@
    "funding": null,
    "values": {
     "web_access": 99.22,
+    "links_working": 81.2,
     "attendance": 90.1,
     "bins_satisfied": 87.0,
     "care_graded": 82.9,
@@ -12522,6 +13043,15 @@
     "Social work and social care": 905.7
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Primary school places",
+     "Secondary school places",
+     "Registering to vote"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -12615,6 +13145,7 @@
     "ta_long": 42.9,
     "ta_rate": 13.5,
     "web_access": 96.69,
+    "links_working": 85.0,
     "planning_data": 75.0
    },
    "spend": {
@@ -12632,6 +13163,16 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2023-10-02"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bulky waste collections",
+     "Registering to vote"
+    ],
+    "missing": [
+     "Reporting fly-tipping"
+    ]
    },
    "planning": {
     "brownfield": true,
@@ -12850,6 +13391,7 @@
     "ta_long": 14.1,
     "ta_rate": 4.8,
     "web_access": 86.71,
+    "links_working": 100.0,
     "planning_data": 50.0
    },
    "spend": {
@@ -12867,6 +13409,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-10-16"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -13051,6 +13598,7 @@
    "funding": null,
    "values": {
     "web_access": 93.78,
+    "links_working": 87.5,
     "attendance": 91.6,
     "bins_satisfied": 88.3,
     "care_graded": 80.2,
@@ -13079,6 +13627,14 @@
     "Social work and social care": 850.3
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Primary school places",
+     "Registering to vote"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -13168,6 +13724,7 @@
     "ta_long": 48.3,
     "ta_rate": 3.8,
     "web_access": 96.92,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -13185,6 +13742,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-10-30"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -13402,6 +13964,7 @@
     "ta_long": 41.1,
     "ta_rate": 19.7,
     "web_access": 91.45,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -13419,6 +13982,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-12-02"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -13647,6 +14215,7 @@
     "ta_long": 82.0,
     "ta_rate": 25.4,
     "web_access": 91.63,
+    "links_working": 85.0,
     "planning_data": 87.5
    },
    "spend": {
@@ -13664,6 +14233,15 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-11-11"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Secondary school places",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": false,
@@ -13873,6 +14451,7 @@
     "ta_long": 0.8,
     "ta_rate": 1.9,
     "web_access": 98.06,
+    "links_working": 95.0,
     "planning_data": 37.5
    },
    "spend": {
@@ -13890,6 +14469,13 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2026-03-02"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": [
+     "Reporting fly-tipping"
+    ]
    },
    "planning": {
     "brownfield": true,
@@ -14115,6 +14701,7 @@
     "ta_long": 72.3,
     "ta_rate": 12.4,
     "web_access": 83.62,
+    "links_working": 90.0,
     "planning_data": 75.0
    },
    "spend": {
@@ -14132,6 +14719,14 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-12-02"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Bulky waste collections"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -14348,6 +14943,7 @@
     "ta_long": 21.6,
     "ta_rate": 1.9,
     "web_access": 91.54,
+    "links_working": 95.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -14365,6 +14961,13 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-07-08"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Reporting a road problem"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -14586,6 +15189,7 @@
     "ta_long": 0.0,
     "ta_rate": 1.4,
     "web_access": 80.79,
+    "links_working": 85.0,
     "planning_data": 37.5
    },
    "spend": {
@@ -14603,6 +15207,15 @@
    "ofsted": {
     "grade": "Inadequate",
     "inspected": "2024-11-18"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Blue badges",
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -14828,6 +15441,7 @@
     "ta_long": 73.1,
     "ta_rate": 30.9,
     "web_access": 66.68,
+    "links_working": 100.0,
     "planning_data": 75.0
    },
    "spend": {
@@ -14845,6 +15459,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2026-01-12"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -15067,6 +15686,7 @@
     "ta_long": 0.2,
     "ta_rate": 2.1,
     "web_access": 83.95,
+    "links_working": 85.0,
     "planning_data": 87.5
    },
    "spend": {
@@ -15084,6 +15704,15 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-06-30"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Reporting a road problem",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -15307,6 +15936,7 @@
     "ta_long": 3.7,
     "ta_rate": 8.6,
     "web_access": 97.72,
+    "links_working": 85.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -15324,6 +15954,15 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2024-09-23"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Reporting fly-tipping",
+     "Reporting a road problem"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -15541,6 +16180,7 @@
     "ta_long": 67.6,
     "ta_rate": 18.4,
     "web_access": 92.68,
+    "links_working": 90.0,
     "planning_data": 62.5
    },
    "spend": {
@@ -15558,6 +16198,14 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-12-04"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Reporting a road problem",
+     "Older people's bus passes"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -15771,6 +16419,7 @@
     "ta_long": 4.1,
     "ta_rate": 8.4,
     "web_access": 98.96,
+    "links_working": 90.0,
     "planning_data": 75.0
    },
    "spend": {
@@ -15788,6 +16437,14 @@
    "ofsted": {
     "grade": "Inadequate",
     "inspected": "2023-03-13"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Reporting a road problem",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -16001,6 +16658,7 @@
     "ta_long": 65.2,
     "ta_rate": 11.0,
     "web_access": 73.13,
+    "links_working": 100.0,
     "planning_data": 50.0
    },
    "spend": {
@@ -16018,6 +16676,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2026-01-19"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -16242,6 +16905,7 @@
     "ta_long": 52.6,
     "ta_rate": 11.9,
     "web_access": 95.23,
+    "links_working": 85.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -16259,6 +16923,15 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-09-22"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Reporting a road problem",
+     "School term dates",
+     "Making a complaint"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -16482,6 +17155,7 @@
     "ta_long": 14.6,
     "ta_rate": 5.4,
     "web_access": 92.76,
+    "links_working": 100.0,
     "planning_data": 62.5
    },
    "spend": {
@@ -16499,6 +17173,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-07-17"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -16710,6 +17389,7 @@
     "ta_long": 44.5,
     "ta_rate": 8.6,
     "web_access": 98.96,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -16727,6 +17407,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-07-14"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -16947,6 +17632,7 @@
     "ta_long": 0.0,
     "ta_rate": 1.5,
     "web_access": 95.29,
+    "links_working": 100.0,
     "planning_data": 25.0
    },
    "spend": {
@@ -16964,6 +17650,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2023-03-13"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -17158,6 +17849,7 @@
    "funding": null,
    "values": {
     "web_access": 96.09,
+    "links_working": 100.0,
     "attendance": 91.5,
     "bins_satisfied": 88.0,
     "care_graded": 78.5,
@@ -17188,6 +17880,11 @@
     "Social work and social care": 846.8
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -17284,6 +17981,7 @@
     "ta_long": 45.8,
     "ta_rate": 8.4,
     "web_access": 87.42,
+    "links_working": 85.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -17301,6 +17999,16 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-10-28"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bulky waste collections",
+     "Registering to vote"
+    ],
+    "missing": [
+     "Reporting a road problem"
+    ]
    },
    "planning": {
     "brownfield": true,
@@ -17486,6 +18194,7 @@
    "funding": null,
    "values": {
     "web_access": 59.62,
+    "links_working": 87.5,
     "attendance": 91.2,
     "bins_satisfied": 75.3,
     "care_graded": 86.2,
@@ -17515,6 +18224,14 @@
     "Social work and social care": 978.5
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Bin collections",
+     "Secondary school places"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -17576,6 +18293,7 @@
    "funding": null,
    "values": {
     "web_access": 95.36,
+    "links_working": 62.5,
     "attendance": 91.9,
     "bins_satisfied": 79.3,
     "care_graded": 85.7,
@@ -17604,6 +18322,19 @@
     "Social work and social care": 1282.8
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Reporting fly-tipping",
+     "Primary school places",
+     "Secondary school places",
+     "School term dates",
+     "Registering to vote"
+    ],
+    "missing": [
+     "Bin collections"
+    ]
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -17697,6 +18428,7 @@
     "ta_long": 3.6,
     "ta_rate": 1.6,
     "web_access": 80.18,
+    "links_working": 70.0,
     "planning_data": 75.0
    },
    "spend": {
@@ -17714,6 +18446,19 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-05-12"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting a road problem",
+     "Secondary school places",
+     "Registering to vote"
+    ],
+    "missing": [
+     "Reporting fly-tipping"
+    ]
    },
    "planning": {
     "brownfield": true,
@@ -17936,6 +18681,7 @@
     "ta_long": 65.0,
     "ta_rate": 59.8,
     "web_access": 97.04,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -17953,6 +18699,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-11-10"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -18149,6 +18900,7 @@
    "funding": null,
    "values": {
     "web_access": 75.06,
+    "links_working": 62.5,
     "attendance": 89.6,
     "bins_satisfied": 85.0,
     "care_graded": 87.8,
@@ -18179,6 +18931,18 @@
     "Social work and social care": 1021.2
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Housing benefit",
+     "Bin collections",
+     "Reporting fly-tipping",
+     "Primary school places",
+     "Secondary school places",
+     "School term dates"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -18266,6 +19030,7 @@
     "prevention": 48.2,
     "relief": 41.9,
     "web_access": 82.0,
+    "links_working": 80.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -18283,6 +19048,16 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-07-14"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Reporting a road problem",
+     "Older people's bus passes",
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -18475,6 +19250,7 @@
    "funding": null,
    "values": {
     "web_access": 91.89,
+    "links_working": 100.0,
     "attendance": 89.9,
     "bins_satisfied": 76.3,
     "care_graded": 87.6,
@@ -18505,6 +19281,11 @@
     "Social work and social care": 773.0
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -18592,6 +19373,7 @@
     "ta_long": 10.5,
     "ta_rate": 1.4,
     "web_access": 69.1,
+    "links_working": 65.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -18609,6 +19391,19 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2026-03-16"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Paying council tax",
+     "Council tax discounts",
+     "Council tax support",
+     "Reporting a road problem",
+     "Applying for council housing",
+     "Libraries",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -18822,6 +19617,7 @@
     "ta_long": 17.6,
     "ta_rate": 1.6,
     "web_access": 99.79,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -18839,6 +19635,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2022-10-03"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -19035,6 +19836,7 @@
     "ta_long": 12.5,
     "ta_rate": 0.8,
     "web_access": 93.52,
+    "links_working": 85.0,
     "planning_data": 87.5
    },
    "spend": {
@@ -19052,6 +19854,15 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2023-03-13"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Primary school places",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -19264,6 +20075,7 @@
     "ta_long": 25.0,
     "ta_rate": 0.7,
     "web_access": 81.79,
+    "links_working": 75.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -19281,6 +20093,17 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-11-11"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bulky waste collections",
+     "Primary school places",
+     "Secondary school places",
+     "School term dates"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -19496,6 +20319,7 @@
     "ta_long": 3.7,
     "ta_rate": 0.9,
     "web_access": 96.62,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -19513,6 +20337,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2023-07-03"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": false,
@@ -19700,6 +20529,7 @@
     "ta_long": 0.0,
     "ta_rate": 0.5,
     "web_access": 88.86,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -19717,6 +20547,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-05-20"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -19928,6 +20763,7 @@
     "ta_long": 10.8,
     "ta_rate": 5.3,
     "web_access": 97.17,
+    "links_working": 90.0,
     "planning_data": 12.5
    },
    "spend": {
@@ -19945,6 +20781,14 @@
    "ofsted": {
     "grade": "Inadequate",
     "inspected": "2022-07-11"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bulky waste collections",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -20141,6 +20985,7 @@
     "ta_long": 26.1,
     "ta_rate": 5.0,
     "web_access": 95.2,
+    "links_working": 90.0,
     "planning_data": 25.0
    },
    "spend": {
@@ -20158,6 +21003,14 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-05-13"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bin collections"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -20352,6 +21205,7 @@
    "funding": null,
    "values": {
     "web_access": 90.53,
+    "links_working": 43.8,
     "attendance": 91.9,
     "bins_satisfied": 78.7,
     "care_graded": 71.1,
@@ -20382,6 +21236,21 @@
     "Social work and social care": 1501.8
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Housing benefit",
+     "Bin collections",
+     "Reporting fly-tipping",
+     "Blue badges",
+     "Primary school places",
+     "Secondary school places",
+     "School term dates",
+     "Libraries",
+     "Registering to vote"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -20443,6 +21312,7 @@
    "funding": null,
    "values": {
     "web_access": 92.76,
+    "links_working": 100.0,
     "attendance": 90.8,
     "bins_satisfied": 81.0,
     "care_graded": 81.4,
@@ -20473,6 +21343,11 @@
     "Social work and social care": 804.4
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -20561,6 +21436,7 @@
     "ta_long": 16.8,
     "ta_rate": 3.7,
     "web_access": 98.09,
+    "links_working": 75.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -20578,6 +21454,17 @@
    "ofsted": {
     "grade": "Inadequate",
     "inspected": "2023-11-27"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting a road problem",
+     "Secondary school places",
+     "School term dates"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": false,
@@ -20793,6 +21680,7 @@
     "ta_long": 7.9,
     "ta_rate": 2.9,
     "web_access": 96.76,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -20810,6 +21698,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2024-01-22"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -21016,6 +21909,7 @@
     "ta_long": 2.5,
     "ta_rate": 6.9,
     "web_access": 92.8,
+    "links_working": 60.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -21033,6 +21927,20 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-05-15"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting fly-tipping",
+     "Parking permits",
+     "Older people's bus passes",
+     "School term dates",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -21264,6 +22172,7 @@
     "ta_long": 18.8,
     "ta_rate": 6.2,
     "web_access": 90.15,
+    "links_working": 95.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -21281,6 +22190,13 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2024-04-22"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -21509,6 +22425,7 @@
     "ta_long": 64.8,
     "ta_rate": 26.1,
     "web_access": 88.75,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -21526,6 +22443,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-06-10"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -21740,6 +22662,7 @@
     "prevention": 90.0,
     "relief": 81.5,
     "web_access": 82.86,
+    "links_working": 85.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -21757,6 +22680,15 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-12-01"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Bulky waste collections",
+     "Primary school places"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -21953,6 +22885,7 @@
    "funding": null,
    "values": {
     "web_access": 92.31,
+    "links_working": 81.2,
     "attendance": 91.0,
     "bins_satisfied": 75.3,
     "care_graded": 78.9,
@@ -21983,6 +22916,15 @@
     "Social work and social care": 743.1
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Reporting fly-tipping",
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -22069,6 +23011,7 @@
     "ta_long": 31.8,
     "ta_rate": 8.3,
     "web_access": 91.74,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -22086,6 +23029,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-06-30"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -22301,6 +23249,7 @@
     "ta_long": 4.7,
     "ta_rate": 3.3,
     "web_access": 99.27,
+    "links_working": 100.0,
     "planning_data": 62.5
    },
    "spend": {
@@ -22318,6 +23267,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2023-01-23"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -22539,6 +23493,7 @@
     "ta_long": 0.0,
     "ta_rate": 1.5,
     "web_access": 84.79,
+    "links_working": 90.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -22556,6 +23511,14 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-11-03"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "School term dates"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -22777,6 +23740,7 @@
     "relief": 37.5,
     "ta_rate": 1.4,
     "web_access": 85.24,
+    "links_working": 85.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -22794,6 +23758,15 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-04-15"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting fly-tipping"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -23011,6 +23984,7 @@
     "ta_long": 19.8,
     "ta_rate": 6.7,
     "web_access": 92.44,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -23028,6 +24002,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-11-06"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -23243,12 +24222,20 @@
     "ta_long": 1.0,
     "ta_rate": 1.7,
     "web_access": 94.82,
+    "links_working": 95.0,
     "planning_data": 100.0
    },
    "spend": {},
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-10-13"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -23436,6 +24423,7 @@
    "funding": null,
    "values": {
     "web_access": 99.18,
+    "links_working": 100.0,
     "attendance": 92.1,
     "bins_satisfied": 86.7,
     "care_graded": 87.0,
@@ -23464,6 +24452,11 @@
     "Social work and social care": 986.3
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -23550,6 +24543,7 @@
     "ta_long": 1.8,
     "ta_rate": 1.6,
     "web_access": 72.15,
+    "links_working": 65.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -23567,6 +24561,19 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-06-23"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting a road problem",
+     "Primary school places",
+     "Secondary school places",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -23785,6 +24792,7 @@
     "ta_long": 4.2,
     "ta_rate": 2.8,
     "web_access": 98.89,
+    "links_working": 90.0,
     "planning_data": 12.5
    },
    "spend": {
@@ -23802,6 +24810,14 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-09-11"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Parking permits"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -23997,6 +25013,7 @@
    "funding": null,
    "values": {
     "web_access": 95.59,
+    "links_working": 81.2,
     "attendance": 91.5,
     "bins_satisfied": 90.3,
     "care_graded": 76.6,
@@ -24027,6 +25044,15 @@
     "Social work and social care": 1990.7
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Housing benefit",
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -24123,6 +25149,7 @@
     "ta_long": 5.1,
     "ta_rate": 1.7,
     "web_access": 73.56,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -24140,6 +25167,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-06-23"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -24363,6 +25395,7 @@
     "fly_fpn": 2.3,
     "fly_rate": 16.7,
     "web_access": 99.69,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -24380,6 +25413,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2023-01-23"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -24608,6 +25646,7 @@
     "ta_long": 19.8,
     "ta_rate": 2.2,
     "web_access": 93.1,
+    "links_working": 90.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -24625,6 +25664,14 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-11-03"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -24847,6 +25894,7 @@
     "ta_long": 7.7,
     "ta_rate": 1.2,
     "web_access": 96.35,
+    "links_working": 50.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -24864,6 +25912,23 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2022-07-18"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Reporting a road problem"
+    ],
+    "missing": [
+     "Paying council tax",
+     "Council tax discounts",
+     "Council tax support",
+     "Housing benefit",
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting fly-tipping",
+     "Help if you're homeless",
+     "Registering to vote"
+    ]
    },
    "planning": {
     "brownfield": false,
@@ -25014,6 +26079,7 @@
    "funding": null,
    "values": {
     "web_access": 94.77,
+    "links_working": 100.0,
     "attendance": 91.2,
     "bins_satisfied": 85.3,
     "care_graded": 84.0,
@@ -25044,6 +26110,11 @@
     "Social work and social care": 951.6
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -25133,6 +26204,7 @@
     "ta_long": 4.2,
     "ta_rate": 2.0,
     "web_access": 81.89,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -25150,6 +26222,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-06-03"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -25330,6 +26407,7 @@
    "funding": null,
    "values": {
     "web_access": 96.5,
+    "links_working": 100.0,
     "attendance": 91.1,
     "bins_satisfied": 85.3,
     "care_graded": 86.0,
@@ -25360,6 +26438,11 @@
     "Social work and social care": 727.6
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -25453,6 +26536,7 @@
     "ta_long": 18.2,
     "ta_rate": 0.6,
     "web_access": 64.89,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -25470,6 +26554,11 @@
    "ofsted": {
     "grade": "Inadequate",
     "inspected": "2022-12-05"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -25701,6 +26790,7 @@
     "ta_long": 27.5,
     "ta_rate": 3.8,
     "web_access": 86.42,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -25718,6 +26808,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-06-05"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -25940,6 +27035,7 @@
     "ta_long": 26.4,
     "ta_rate": 5.3,
     "web_access": 99.07,
+    "links_working": 100.0,
     "planning_data": 12.5
    },
    "spend": {
@@ -25957,6 +27053,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-10-14"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": false,
@@ -26182,6 +27283,7 @@
     "ta_long": 70.1,
     "ta_rate": 29.9,
     "web_access": 73.0,
+    "links_working": 70.0,
     "planning_data": 62.5
    },
    "spend": {
@@ -26199,6 +27301,18 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2026-03-09"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting fly-tipping",
+     "Reporting a road problem",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -26409,6 +27523,7 @@
     "ta_long": 0.0,
     "ta_rate": 0.5,
     "web_access": 84.64,
+    "links_working": 75.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -26426,6 +27541,17 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2023-07-10"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bin collections",
+     "Bulky waste collections",
+     "School term dates",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -26622,6 +27748,7 @@
    "funding": null,
    "values": {
     "web_access": 85.88,
+    "links_working": 68.8,
     "attendance": 92.4,
     "bins_satisfied": 64.0,
     "care_graded": 87.5,
@@ -26652,6 +27779,17 @@
     "Social work and social care": 703.2
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Housing benefit",
+     "Bin collections",
+     "Primary school places",
+     "Secondary school places",
+     "School term dates"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -26745,6 +27883,7 @@
     "ta_long": 0.8,
     "ta_rate": 1.6,
     "web_access": 93.95,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -26762,6 +27901,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2025-05-12"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -26970,6 +28114,7 @@
     "relief": 67.3,
     "ta_rate": 0.6,
     "web_access": 81.21,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -26987,6 +28132,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2023-03-06"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -27213,6 +28363,7 @@
     "ta_long": 0.0,
     "ta_rate": 0.7,
     "web_access": 78.67,
+    "links_working": 70.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -27230,6 +28381,18 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2025-05-12"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting a road problem",
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -27440,6 +28603,7 @@
     "ta_long": 6.7,
     "ta_rate": 1.3,
     "web_access": 92.14,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -27457,6 +28621,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-01-27"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -27685,6 +28854,7 @@
     "ta_long": 53.9,
     "ta_rate": 12.9,
     "web_access": 93.3,
+    "links_working": 95.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -27702,6 +28872,13 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-06-16"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": false,
@@ -27924,6 +29101,7 @@
     "ta_long": 17.1,
     "ta_rate": 3.5,
     "web_access": 93.88,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -27941,6 +29119,11 @@
    "ofsted": {
     "grade": "Inadequate",
     "inspected": "2023-07-17"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -28158,6 +29341,7 @@
     "ta_long": 1.4,
     "ta_rate": 3.8,
     "web_access": 84.45,
+    "links_working": 85.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -28175,6 +29359,15 @@
    "ofsted": {
     "grade": "Inadequate",
     "inspected": "2023-12-04"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Reporting a road problem",
+     "Blue badges",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -28390,6 +29583,7 @@
     "ta_long": 8.8,
     "ta_rate": 0.8,
     "web_access": 96.16,
+    "links_working": 90.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -28407,6 +29601,14 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-04-29"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bulky waste collections"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -28638,6 +29840,7 @@
     "ta_long": 27.2,
     "ta_rate": 9.4,
     "web_access": 74.25,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -28655,6 +29858,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-09-16"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -28867,6 +30075,7 @@
     "ta_long": 0.0,
     "ta_rate": 2.6,
     "web_access": 93.27,
+    "links_working": 95.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -28884,6 +30093,13 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2026-01-12"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Reporting a road problem"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -29103,6 +30319,7 @@
     "ta_long": 69.6,
     "ta_rate": 22.0,
     "web_access": 91.64,
+    "links_working": 95.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -29120,6 +30337,13 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-11-11"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bulky waste collections"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -29331,6 +30555,7 @@
     "ta_long": 11.7,
     "ta_rate": 2.7,
     "web_access": 87.8,
+    "links_working": 65.0,
     "planning_data": 12.5
    },
    "spend": {
@@ -29348,6 +30573,19 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2022-11-21"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting fly-tipping",
+     "Reporting a road problem",
+     "Parking permits",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": false,
@@ -29558,6 +30796,7 @@
     "ta_long": 0.0,
     "ta_rate": 1.5,
     "web_access": 98.37,
+    "links_working": 65.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -29575,6 +30814,20 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-03-24"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Housing benefit",
+     "Bin collections",
+     "Bulky waste collections",
+     "Primary school places",
+     "Secondary school places",
+     "School term dates"
+    ],
+    "missing": [
+     "Reporting a road problem"
+    ]
    },
    "planning": {
     "brownfield": true,
@@ -29794,6 +31047,7 @@
     "ta_long": 6.5,
     "ta_rate": 1.0,
     "web_access": 81.2,
+    "links_working": 85.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -29811,6 +31065,15 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-05-12"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Reporting a road problem",
+     "Registering to vote"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -30039,6 +31302,7 @@
     "ta_long": 42.8,
     "ta_rate": 14.5,
     "web_access": 95.63,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -30056,6 +31320,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-07-08"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -30267,6 +31536,7 @@
     "ta_long": 55.7,
     "ta_rate": 30.0,
     "web_access": 78.37,
+    "links_working": 95.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -30284,6 +31554,13 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2026-03-02"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -30490,6 +31767,7 @@
     "ta_long": 4.5,
     "ta_rate": 2.1,
     "web_access": 85.18,
+    "links_working": 90.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -30507,6 +31785,14 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-06-10"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -30725,6 +32011,7 @@
     "ta_long": 25.0,
     "ta_rate": 2.3,
     "web_access": 90.63,
+    "links_working": 100.0,
     "planning_data": 62.5
    },
    "spend": {
@@ -30742,6 +32029,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-09-15"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -30927,6 +32219,7 @@
    "funding": null,
    "values": {
     "web_access": 99.33,
+    "links_working": 87.5,
     "attendance": 90.5,
     "bins_satisfied": 86.0,
     "care_graded": 84.2,
@@ -30957,6 +32250,14 @@
     "Social work and social care": 1051.3
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Bin collections",
+     "Making a complaint"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -31018,6 +32319,7 @@
    "funding": null,
    "values": {
     "web_access": 92.29,
+    "links_working": 93.8,
     "attendance": 90.6,
     "bins_satisfied": 77.7,
     "care_graded": 84.9,
@@ -31048,6 +32350,13 @@
     "Social work and social care": 736.1
    },
    "ofsted": null,
+   "links": {
+    "services": 16,
+    "broken": [
+     "Secondary school places"
+    ],
+    "missing": []
+   },
    "planning": null,
    "silktide": {
     "of": 391,
@@ -31141,6 +32450,7 @@
     "ta_long": 10.2,
     "ta_rate": 3.7,
     "web_access": 99.44,
+    "links_working": 95.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -31158,6 +32468,13 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2022-10-03"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Making a complaint"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -31357,6 +32674,7 @@
     "ta_long": 73.3,
     "ta_rate": 48.6,
     "web_access": 92.7,
+    "links_working": 90.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -31374,6 +32692,14 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2024-11-11"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bin collections",
+     "Reporting a road problem"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -31592,6 +32918,7 @@
     "ta_long": 0.0,
     "ta_rate": 0.6,
     "web_access": 95.6,
+    "links_working": 10.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -31609,6 +32936,30 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-04-22"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": [
+     "Paying council tax",
+     "Council tax discounts",
+     "Council tax support",
+     "Housing benefit",
+     "Bin collections",
+     "Bulky waste collections",
+     "Reporting fly-tipping",
+     "Reporting a road problem",
+     "Parking permits",
+     "Blue badges",
+     "Older people's bus passes",
+     "Primary school places",
+     "Secondary school places",
+     "Free school meals",
+     "Help if you're homeless",
+     "Libraries",
+     "Registering to vote",
+     "Making a complaint"
+    ]
    },
    "planning": {
     "brownfield": true,
@@ -31799,6 +33150,7 @@
     "ta_long": 0.0,
     "ta_rate": 1.7,
     "web_access": 98.29,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -31816,6 +33168,11 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2025-10-06"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -32044,6 +33401,7 @@
     "ta_long": 2.0,
     "ta_rate": 0.4,
     "web_access": 95.32,
+    "links_working": 100.0,
     "planning_data": 50.0
    },
    "spend": {
@@ -32061,6 +33419,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2023-09-25"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -32275,6 +33638,7 @@
     "ta_long": 20.0,
     "ta_rate": 4.0,
     "web_access": 92.86,
+    "links_working": 85.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -32292,6 +33656,15 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2024-10-07"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Bulky waste collections",
+     "Primary school places",
+     "Secondary school places"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -32510,6 +33883,7 @@
     "ta_long": 0.0,
     "ta_rate": 1.3,
     "web_access": 81.18,
+    "links_working": 100.0,
     "planning_data": 100.0
    },
    "spend": {
@@ -32527,6 +33901,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2023-09-18"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -32748,6 +34127,7 @@
     "ta_long": 0.0,
     "ta_rate": 1.1,
     "web_access": 80.12,
+    "links_working": 100.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -32765,6 +34145,11 @@
    "ofsted": {
     "grade": "Requires improvement",
     "inspected": "2023-03-06"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -32983,6 +34368,7 @@
     "ta_long": 1.5,
     "ta_rate": 2.2,
     "web_access": 76.23,
+    "links_working": 95.0,
     "planning_data": 0.0
    },
    "spend": {
@@ -33000,6 +34386,13 @@
    "ofsted": {
     "grade": "Good",
     "inspected": "2026-01-26"
+   },
+   "links": {
+    "services": 20,
+    "broken": [
+     "Reporting a road problem"
+    ],
+    "missing": []
    },
    "planning": {
     "brownfield": true,
@@ -33215,6 +34608,7 @@
     "ta_long": 0.0,
     "ta_rate": 0.7,
     "web_access": 95.28,
+    "links_working": 100.0,
     "planning_data": 37.5
    },
    "spend": {
@@ -33232,6 +34626,11 @@
    "ofsted": {
     "grade": "Outstanding",
     "inspected": "2025-02-24"
+   },
+   "links": {
+    "services": 20,
+    "broken": [],
+    "missing": []
    },
    "planning": {
     "brownfield": true,

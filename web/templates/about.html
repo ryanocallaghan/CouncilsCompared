@@ -15,7 +15,7 @@
     {% endif %}
 
     <h2 class="govuk-heading-m">How councils are compared</h2>
-    <p class="govuk-body">For each measure, councils are put in order from best to worst, and the position shows where a council comes in the group. Councils with the same figure share a position. Each council is then put in a quarter of the group, from the top quarter (dark green) to the bottom quarter (red), the same colours as on the maps.</p>
+    <p class="govuk-body">For each measure, councils are put in order from best to worst, and the position shows where a council comes in the group. Councils with the same figure share a position. Each council is then put in a quarter of the group, from the top quarter (dark green) to the bottom quarter (red), the same colours as on the maps. Where councils share a figure, their quarter is the one the middle of their shared positions falls in: if the bottom 40 councils all have the same figure, they are in the bottom quarter, not split across two.</p>
     <p class="govuk-body">You can compare a council with:</p>
     <ul class="govuk-list govuk-list--bullet">
       <li>every council included, across England</li>
@@ -37,6 +37,7 @@
       <li>Homelessness figures are for a single quarter. Shares are only shown where at least 10 cases ended. Where very small numbers of families in temporary accommodation are suppressed, they are counted as none. Families kept in bed and breakfast accommodation for more than 6 weeks are shown on each council's page but not ranked.</li>
       <li>Councils that no longer own council homes have no council housing figures.</li>
       <li>The website score is an automated accessibility test. It finds many problems, but not all.</li>
+      <li>GOV.UK sends people to their council's page for each service (paying council tax, bin collections, school places and so on) using links it keeps for every council, and checks those links regularly. Councils are compared on 20 services almost every council has a link for (16 in Scotland). A link that works but redirects counts as working. Some council websites block GOV.UK's checker, so where GOV.UK marks a link broken, we try it once ourselves, and it counts as working if the page loads. Where GOV.UK has no link for a service, it can only send people to the council's homepage, so that counts as not working.</li>
       <li>Planning data counts 8 datasets MHCLG's Planning Data platform asks councils to publish in a standard form, such as conservation areas and tree preservation orders. Every council is counted on all 8, although the platform doesn't yet ask every council for all of them. A council may publish the same information on its own website in another form.</li>
       {% if "Scotland" in model.nations() %}
         <li>In Scotland, satisfaction with bin collections and street cleaning comes from the Scottish Household Survey. The samples in each council are small, so the figures are averages over three years.</li>

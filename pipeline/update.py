@@ -42,6 +42,7 @@ STEPS = [
     ("funding", "spending", "funding"),
     ("ofsted", "ofsted", "fetch"),
     ("silktide", "silktide", "fetch"),
+    ("local_links", "local_links", "fetch"),
     ("planning_data", "planning_data", "fetch"),
     ("area_bands", "area_bands", "fetch"),
     ("lgbf", "lgbf", "fetch"),
@@ -53,7 +54,7 @@ STEPS = [
 
 # Measures each source provides, in data/councils.json "values"
 VALUE_SOURCES = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "waste", "fly", "homelessness", "silktide",
-                 "planning_data", "lgbf",
+                 "local_links", "planning_data", "lgbf",
                  "spso", "scot_homelessness"]
 # Trends each source provides; a council only has figures in one source per trend
 TRENDS = {"ehcp_20wk": ["ehcp"], "om_upheld": ["lgo"], "recycling": ["waste", "lgbf"], "fly_rate": ["fly"],
@@ -165,6 +166,7 @@ def assemble():
             "values": {},
             "spend": {},
             "ofsted": None,
+            "links": None,
             "planning": None,
             "silktide": None,
             "fly": None,
@@ -188,6 +190,9 @@ def assemble():
             council["fly"] = sources["fly"].extra.get("detail", {}).get(code)
         if sources["ofsted"]:
             council["ofsted"] = sources["ofsted"].extra.get(code)
+        if sources["local_links"] and sources["local_links"].extra.get(code):
+            links = sources["local_links"].extra[code]
+            council["links"] = {k: links[k] for k in ("services", "broken", "missing")}
         if sources["planning_data"]:
             council["planning"] = sources["planning_data"].extra.get(code)
         if sources["silktide"]:
