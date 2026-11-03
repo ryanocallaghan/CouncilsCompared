@@ -1,34 +1,29 @@
-// Choosing a council goes straight to its page. Without JavaScript the form
-// is sent to /go (functions/go.js), which redirects there instead.
-for (const form of document.querySelectorAll('[data-module="app-choose"]')) {
-  form.addEventListener("submit", (event) => {
-    const slug = form.elements.council.value;
-    if (/^[a-z0-9-]+$/.test(slug)) {
-      event.preventDefault();
-      window.location.href = `/${slug}/`;
-    }
-  });
-}
-
-// Where your council tax goes: every [data-band-d] amount is a Band D
-// figure, recalculated for the band chosen and the single person discount
+// Your council tax: every [data-band-d] amount on the page, including the
+// bill in the summary, is a Band D figure, recalculated for the band chosen
+// and the single person discount
 const money = (value, pence) =>
   "£" + value.toLocaleString("en-GB", { minimumFractionDigits: pence ? 2 : 0, maximumFractionDigits: pence ? 2 : 0 });
+
+const nearby = new URLSearchParams(window.location.search).get("band"); // from a postcode search
 
 for (const section of document.querySelectorAll('[data-module="app-ctax"]')) {
   const controls = section.querySelector(".app-ctax__controls");
   const band = section.querySelector("#ctax-band");
   const alone = section.querySelector("#ctax-alone");
-  const note = section.querySelector(".app-ctax__band-note");
   controls.hidden = false;
   const update = () => {
     const factor = Number(band.value) * (alone.checked ? 0.75 : 1);
-    for (const el of section.querySelectorAll("[data-band-d]")) {
+    for (const el of document.querySelectorAll("[data-band-d]")) {
       const yearly = Number(el.dataset.bandD) * factor;
       el.textContent = el.dataset.per === "week" ? money(yearly / 52, yearly / 52 < 10) : money(yearly);
     }
     const label = band.options[band.selectedIndex].text;
-    note.textContent = `(${label}${alone.checked ? ", with the single person discount" : ""})`;
+    const discount = alone.checked ? ", with the single person discount" : "";
+    for (const note of document.querySelectorAll(".app-ctax__band-note")) {
+      // The summary says where the band came from, until it's changed
+      const near = note.dataset.near && label === `Band ${nearby}` && !alone.checked;
+      note.textContent = `(${label}${near ? ", the most common near your postcode" : discount})`;
+    }
   };
   band.addEventListener("change", update);
   alone.addEventListener("change", update);
@@ -36,10 +31,10 @@ for (const section of document.querySelectorAll('[data-module="app-ctax"]')) {
 
 // Arriving from a postcode search: start on the most common band nearby
 for (const section of document.querySelectorAll('[data-module="app-ctax"]')) {
-  const band = new URLSearchParams(window.location.search).get("band");
   const select = section.querySelector("#ctax-band");
-  const option = [...select.options].find((o) => o.text === `Band ${band}`);
+  const option = [...select.options].find((o) => o.text === `Band ${nearby}`);
   if (option) {
+    const band = nearby;
     select.value = option.value;
     select.dispatchEvent(new Event("change"));
     const note = section.querySelector(".app-ctax__suggested");
@@ -55,8 +50,11 @@ for (const form of document.querySelectorAll('[data-module="app-group"]')) {
   form.elements.group.addEventListener("change", () => {
     const slug = form.elements.council.value;
     const group = form.elements.group.value;
-    const other = new URLSearchParams(window.location.search).get("with");
-    const query = other ? `?with=${encodeURIComponent(other)}` : "";
+    // Keep the council shown alongside and the band from a postcode search
+    const search = new URLSearchParams(window.location.search);
+    const kept = new URLSearchParams();
+    for (const key of ["with", "band"]) if (search.get(key)) kept.set(key, search.get(key));
+    const query = kept.size ? `?${kept}` : "";
     window.location.href = (group === "nation" ? `/${slug}/` : `/${slug}/${group}/`) + query;
   });
 }
