@@ -9,9 +9,9 @@ def test_builds_every_page(fixture_data, tmp_path):
     # London, and similar councils for Lewisham only), Wigan and Hartlepool
     # (all England, region, type)
     from web import model
-    # Home, about, privacy, two postcode pages, measures index and one page per measure, then the councils,
+    # Home, about, privacy, three search pages, measures index and one page per measure, then the councils,
     # then the council tax page and the hubs: 3 regions, and metropolitan districts and unitary authorities
-    assert count == 6 + len([m for m in model.MEASURES if model.available(m)]) + (4 * 2 + 1) + 2 * 3 + 1 + 3 + 2
+    assert count == 7 + len([m for m in model.MEASURES if model.available(m)]) + (4 * 2 + 1) + 2 * 3 + 1 + 3 + 2
     lewisham = (tmp_path / "lewisham" / "index.html").read_text()
     assert "<h1 class=\"govuk-heading-xl govuk-!-margin-bottom-4\">Lewisham</h1>" in lewisham
     assert "<title>How Lewisham Council compares – Councils compared</title>" in lewisham
@@ -29,8 +29,10 @@ def test_builds_every_page(fixture_data, tmp_path):
     similar = (tmp_path / "lewisham" / "similar" / "index.html").read_text()
     assert 'href="/greenwich/similar/"' in similar
     assert (tmp_path / "404.html").exists()
-    assert "Where your council tax goes" in lewisham and "Council tax is only part of the money" in lewisham
-    assert "Where your council tax goes" in similar  # on every comparison page
+    assert 'id="money"' in lewisham and "Council tax is only part of the money" in lewisham
+    assert "Your council tax</dt>" in lewisham  # the bill, at the top
+    assert lewisham.index('id="ofsted"') < lewisham.index('id="money"') < lewisham.index('id="spending"')
+    assert 'id="council-tax"' in similar  # on every comparison page, still at its old address
     assert json.loads((tmp_path / "data" / "councils-by-code.json").read_text())["E09000023"] == "lewisham"
     assert (tmp_path / "_headers").exists()
     assert "https://councilscompared.com/lewisham/similar/" in (tmp_path / "sitemap.xml").read_text()
@@ -103,3 +105,14 @@ def test_scotland_hub_only_when_published(fixture_data, tmp_path, monkeypatch):
     assert "Councils in Scotland compared" in hub and 'href="/measures/literacy/scotland/"' in hub
     assert 'href="/scotland/"' in (tmp_path / "uk" / "index.html").read_text()
     assert 'href="/scotland/"' in (tmp_path / "uk" / "glasgow-city" / "index.html").read_text()
+
+
+def test_finding_a_council_by_name(tmp_path):
+    import json
+    build.build(str(tmp_path))
+    with open(tmp_path / "data" / "council-names.json") as f:
+        names = json.load(f)
+    lewisham = next(n for n in names if n[0] == "lewisham")
+    assert lewisham[1] == "Lewisham"
+    # The page go.js fills with the closest names
+    assert "<!--suggestions-->" in (tmp_path / "council-not-found" / "index.html").read_text()

@@ -48,11 +48,17 @@
       <li><a class="govuk-link" href="#how-it-does">How the council does</a>
         <ol class="govuk-list app-contents__sub">
           {% for area in c.areas %}<li><a class="govuk-link" href="#{{ area.id }}">{{ area.name }}</a></li>{% endfor %}
+          {% if b.ofsted %}<li><a class="govuk-link" href="#ofsted">Children's services inspection</a></li>{% endif %}
         </ol>
       </li>
-      {% if council_tax %}<li><a class="govuk-link" href="#council-tax">Where your council tax goes</a></li>{% endif %}
-      {% if c.spending %}<li><a class="govuk-link" href="#spending">What the council spends</a></li>{% endif %}
-      {% if b.ofsted %}<li><a class="govuk-link" href="#ofsted">Children's services inspection</a></li>{% endif %}
+      {% if council_tax or c.spending %}
+        <li><a class="govuk-link" href="#money">Money</a>
+          <ol class="govuk-list app-contents__sub">
+            {% if council_tax %}<li><a class="govuk-link" href="#council-tax">Your council tax</a></li>{% endif %}
+            {% if c.spending %}<li><a class="govuk-link" href="#spending">What the council spends</a></li>{% endif %}
+          </ol>
+        </li>
+      {% endif %}
       {% if c.trends %}<li><a class="govuk-link" href="#over-time">Over time</a></li>{% endif %}
       {% if key_figures %}<li><a class="govuk-link" href="#key-figures">Key figures</a></li>{% endif %}
     </ol>
@@ -69,6 +75,19 @@
 
 {# Summary #}
 <div class="app-summary">
+  <dl class="app-summary__facts app-summary__facts--first">
+    <div><dt>Residents</dt><dd>{{ "{:,}".format(b.population) }}</dd></div>
+    {% if b.band_d %}
+      {% if council_tax %}
+        <div class="app-summary__bill"><dt>Your council tax</dt><dd><strong data-band-d="{{ council_tax.band_d }}">{{ model.fmt(council_tax.band_d, "£") }}</strong> a year <span class="app-ctax__band-note" data-near="true">(Band D)</span> <a class="govuk-link" href="#council-tax">Change your band and see what it pays for</a></dd></div>
+      {% else %}
+        <div><dt>Band D council tax</dt><dd>{{ model.fmt(b.band_d, "£") }} a year</dd></div>
+      {% endif %}
+    {% endif %}
+    {% if b.ofsted %}
+      <div><dt>Children's services</dt><dd>{{ b.ofsted.grade }} <span class="app-secondary-text">(Ofsted, {{ b.ofsted.date.strftime("%Y") }})</span></dd></div>
+    {% endif %}
+  </dl>
   <div class="app-summary__controls">
     {# Compared with: a form without JavaScript; app.js goes straight to the group's page #}
     <form class="app-group" action="/go" method="get" data-module="app-group">
@@ -102,15 +121,6 @@
     {% endif %}
   {% endif %}
 
-  <dl class="app-summary__facts">
-    <div><dt>Residents</dt><dd>{{ "{:,}".format(b.population) }}</dd></div>
-    {% if b.band_d %}
-      <div><dt>Band D council tax</dt><dd>{{ model.fmt(b.band_d, "£") }} a year{% if council_tax %} <a class="govuk-link" href="#council-tax">See where it goes</a>{% endif %}</dd></div>
-    {% endif %}
-    {% if b.ofsted %}
-      <div><dt>Children's services</dt><dd>{{ b.ofsted.grade }} <span class="app-secondary-text">(Ofsted, {{ b.ofsted.date.strftime("%Y") }})</span></dd></div>
-    {% endif %}
-  </dl>
   <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Where {{ b.name }} sits on {{ c.ranked }} measures</h2>
   <div class="app-sits" role="img" aria-label="{% for key in model.QUARTERS | reverse %}{{ c.counts[key] }} in the {{ model.BANDS[key][0] | lower }}{% if not loop.last %}, {% endif %}{% endfor %} of {{ c.phrase }}">
     {% for key in model.QUARTERS | reverse %}{% if c.counts[key] %}<span class="app-sits__part {{ model.BANDS[key][1] }}" style="flex-grow: {{ c.counts[key] }}">{{ c.counts[key] }}</span>{% endif %}{% endfor %}
@@ -245,6 +255,31 @@
 </section>
 {% endfor %}
 
+{% if b.ofsted %}
+<section class="app-area" id="ofsted" aria-labelledby="ofsted-title">
+  <div class="app-area__header">
+    <h3 class="govuk-heading-m govuk-!-margin-bottom-1" id="ofsted-title">Children's services inspection</h3>
+    <p class="govuk-body govuk-!-margin-bottom-0 app-area__headline">Ofsted rated {{ b.name | possessive }} children's services <strong>{{ b.ofsted.grade | lower }}</strong> in {{ b.ofsted.date.strftime("%B %Y") }}.</p>
+  </div>
+  <details class="govuk-details app-area__details">
+    <summary class="govuk-details__summary"><span class="govuk-details__summary-text">How other councils were rated</span></summary>
+    <div class="govuk-details__text app-area__more">
+      <dl class="govuk-summary-list">
+        {% for grade, count in c.grades %}
+          <div class="govuk-summary-list__row{% if grade == b.ofsted.grade %} app-summary-list__row--current{% endif %}">
+            <dt class="govuk-summary-list__key">{{ grade }}</dt>
+            <dd class="govuk-summary-list__value">{{ count }} of the {{ c.members | length }} {{ c.phrase | replace("all councils in ", "councils in ") }}{% if grade == b.ofsted.grade %}, including {{ b.name }}{% endif %}</dd>
+          </div>
+        {% endfor %}
+      </dl>
+    </div>
+  </details>
+</section>
+{% endif %}
+
+{% if council_tax or c.spending %}
+<h2 class="govuk-heading-l govuk-!-margin-top-8" id="money">Money</h2>
+{% endif %}
 {% if council_tax %}
   {% include "_council_tax.html" %}
 {% endif %}
@@ -253,7 +288,7 @@
 {% if c.spending %}
 <section class="app-area govuk-!-margin-top-6" id="spending" aria-labelledby="spending-title">
   <div class="app-area__header">
-    <h2 class="govuk-heading-m govuk-!-margin-bottom-1" id="spending-title">What the council spends</h2>
+    <h3 class="govuk-heading-m govuk-!-margin-bottom-1" id="spending-title">What the council spends</h3>
     <p class="govuk-body govuk-!-margin-bottom-0 app-area__headline">{{ c.spending[-1].value }} per resident in {{ sources[model.nation_source('spending', b.nation)].period }}, not counting schools. The median is {{ c.spending[-1].median }}.</p>
   </div>
   <details class="govuk-details app-area__details">
@@ -288,27 +323,6 @@
 </section>
 {% endif %}
 
-{% if b.ofsted %}
-<section class="app-area" id="ofsted" aria-labelledby="ofsted-title">
-  <div class="app-area__header">
-    <h2 class="govuk-heading-m govuk-!-margin-bottom-1" id="ofsted-title">Children's services inspection</h2>
-    <p class="govuk-body govuk-!-margin-bottom-0 app-area__headline">Ofsted rated {{ b.name | possessive }} children's services <strong>{{ b.ofsted.grade | lower }}</strong> in {{ b.ofsted.date.strftime("%B %Y") }}.</p>
-  </div>
-  <details class="govuk-details app-area__details">
-    <summary class="govuk-details__summary"><span class="govuk-details__summary-text">How other councils were rated</span></summary>
-    <div class="govuk-details__text app-area__more">
-      <dl class="govuk-summary-list">
-        {% for grade, count in c.grades %}
-          <div class="govuk-summary-list__row{% if grade == b.ofsted.grade %} app-summary-list__row--current{% endif %}">
-            <dt class="govuk-summary-list__key">{{ grade }}</dt>
-            <dd class="govuk-summary-list__value">{{ count }} of the {{ c.members | length }} {{ c.phrase | replace("all councils in ", "councils in ") }}{% if grade == b.ofsted.grade %}, including {{ b.name }}{% endif %}</dd>
-          </div>
-        {% endfor %}
-      </dl>
-    </div>
-  </details>
-</section>
-{% endif %}
 
 {% if c.trends %}
 <h2 class="govuk-heading-l govuk-!-margin-top-8" id="over-time">Over time</h2>
