@@ -1,6 +1,7 @@
 # Plan: council websites, digital services and compliance
 
-Status: proposal, not started. Written November 2026.
+Status: proposal, not started. Written 2 November 2026; sources checked 3
+November 2026 (see "What the sources hold").
 
 ## Why
 
@@ -9,10 +10,10 @@ score. Residents judge a council by how easy it is to do things online, and
 much of what a council is legally obliged to publish lives on its website. This
 plan adds measures for three questions:
 
-1. **Can I do it online?** Whether a council's core services have a working
-   online page, and how many of its service links are broken.
-2. **Does it follow the rules?** Accessibility statement, transparency data,
-   planning data, contract notices, cookies.
+1. **Can I do it online?** Whether the links GOV.UK gives to a council's core
+   services work.
+2. **Does it follow the rules?** Planning data, the brownfield land register,
+   contract notices, the accessibility statement, transparency data, cookies.
 3. **Is it run safely?** Email and web security basics.
 
 ## Principles
@@ -26,96 +27,145 @@ plan adds measures for three questions:
 - **Explainable in one sentence.** Each measure gets a label anyone could
   understand and a line on the methodology page saying exactly how it is
   worked out. Anything that can't be explained like that is left out.
-- **Fair to councils.** Check the same pages in the same way for every
+- **Fair to councils.** Check the same things in the same way for every
   council, record when, and keep the evidence (URL, status, the text matched)
   so any council that disputes a result can see why.
-- **Polite.** One request a second for each site, our existing user agent, and
-  never anything that needs a login or submits a form.
+- **Polite.** Our existing user agent, a pause between requests, and never
+  anything that needs a login, submits a form or gets past a bot challenge.
+
+## What the sources hold
+
+Checked by hand on 3 November 2026.
+
+**Local Links Manager (GOV.UK)** works, with no key.
+
+- `https://local-links-manager.publishing.service.gov.uk/data/links_to_services_provided_by_local_authorities.csv`
+  (7.6 MB): one row per council and service, with columns `Authority Name`,
+  `GSS`, `Description`, `LGSL`, `LGIL`, `URL`, `Title`, `Supported by GOV.UK`.
+  It covers 385 councils in England, Scotland and Wales. Rows have the **GSS
+  code**, so no name matching is needed. A single-tier council has about 176
+  links (median). It does **not** include the link checker's result.
+- `/api/link?authority_slug=<slug>&lgsl=<code>` gives one link with its
+  `status` (`ok`, `caution` or `broken`, as seen so far). For example, Leeds's
+  "check your bin day" link is `broken` and Croydon's missed-bin link is
+  `caution`. Services the council has no link for come back empty.
+- `/api/local-authority?authority_slug=<slug>` gives `homepage_url`, `gss`,
+  `tier` and `country_name`. It needs the slug, not the GSS code.
+- There is no bulk export of link statuses: guessed paths for one return 403.
+
+**Planning Data (MHCLG)** works, with no key. The performance database on
+`datasette.planning.data.gov.uk` has a `provision_summary` table, one row per
+organisation and dataset, with `provision_reason` (statutory, expected,
+encouraged and so on), `active_endpoint_count` and `error_endpoint_count`.
+`/performance/provision_summary.csv?_stream=on&_size=max` downloads all 8,185
+rows. Organisations map to GSS codes through `www.planning.data.gov.uk/organisation.json`
+(`statistical-geography`).
+
+- Eight datasets are "expected" from 102 single-tier councils: trees, tree
+  preservation orders and zones, Article 4 directions and their areas,
+  conservation areas and their documents, and listed building outlines. The
+  share of them each council provides ranges widely, from 0% at the 20th
+  percentile to 100% at the 80th, so it is a good measure.
+- The brownfield land register is statutory for 134 councils, and 118 provide
+  it. The newer plan datasets (local plan, timetable and others) are
+  statutory, but few councils provide them yet, so they are left out for now.
+
+**Find a Tender** and **Contracts Finder** both answer their OCDS APIs with no
+key (`/api/1.0/ocdsReleasePackages`, `/Published/Notices/OCDS/Search`).
+
+**WhatDoTheyKnow** returns a Cloudflare "Just a moment..." challenge to
+scripts, for its pages and its JSON. That rules out fetching it. If FOI
+timeliness is wanted, ask mySociety for a data extract or permission. It is
+taken out of phase 1.
+
+**DMARC** records vary as hoped. In a sample of five councils, Hackney is
+`p=reject`; Leeds `p=quarantine; sp=reject`; Cornwall `p=quarantine; pct=75`;
+Croydon's is a CNAME to a DMARC provider. Most councils send reports to NCSC's
+Mail Check service (`dmarc-rua@dmarc.service.gov.uk`).
 
 ## Measures
 
 `better` is the direction used for ranking. "Check" means a pass/fail result
-rather than a number to rank. Checks are shown differently (see Presentation).
+rather than a number to rank. Checks are shown differently (see Site changes).
 
 ### Phase 1: published sources
 
-| id | Label | Kind | Source |
-|---|---|---|---|
-| `online_services` | Core services with a page on the council's website | %, higher | Local Links Manager |
-| `broken_links` | Council service links GOV.UK found broken | %, lower | Local Links Manager |
-| `planning_data` | Required planning datasets the council provides | %, higher | Planning Data platform |
-| `foi_late` | Freedom of information requests answered late | %, lower | WhatDoTheyKnow |
+| id | Label | Kind | Source | Nations |
+|---|---|---|---|---|
+| `links_working` | Links to the council's core services that work | %, higher | Local Links Manager | England, Scotland (Wales when it launches) |
+| `planning_data` | Planning datasets the council provides | %, higher | Planning Data | England |
+| `brownfield` | Publishes its brownfield land register as data | check | Planning Data | England |
 
-**Local Links Manager** (GOV.UK). GOV.UK's "find your local council" service
-pages link to each council's page for each standard service (LGSL code, with
-interaction type: apply, pay, report, find out). Local Links Manager holds
-these links and regularly checks them. From it:
+**`links_working`.** A fixed list of about 20 services that almost every
+single-tier council has a link for. From the CSV, the most common ones are
+school term dates, fostering, applying for council housing, free school meals,
+primary and secondary school places, council tax (paying, discounts, the annual
+bill), business rate relief, housing benefit, mutual exchange, and bins.
+Coverage alone doesn't separate councils: nearly all have a link for each. What
+does is whether the link **works**. So the measure is the share of those links
+whose status is `ok`. `caution` is counted as not working; to be confirmed once
+we know what the checker means by it.
 
-- `online_services`: of a fixed list of about 20 core services that every
-  single-tier council provides (pay council tax, bin collection day, report a
-  missed bin, report fly-tipping, apply for a parking permit, apply for a
-  school place, report a pothole, apply for housing, register a birth, and so
-  on), the share with a link that works.
-- `broken_links`: of all the council's links in Local Links Manager, the
-  share GOV.UK's checker marks as broken.
-- `extra.homepage`: the council's homepage. Phase 3 needs it, and nothing
-  else gives us an official list.
-- `extra.links`: the service URLs, for the task checks in phase 3.
+- The CSV gives the URL and LGSL code for each council's links. The `/api/link`
+  call gives the status: about 20 calls per council, about 2,600 in all. At one
+  a second that takes 45 minutes, so this source runs monthly
+  (`MAX_AGE_DAYS = 28`, as `lgo_decisions` does).
+- The slug for each council comes from the GOV.UK API, once, and is kept in
+  `extra.slugs`, along with each council's homepage (`extra.homepage`, used
+  by phase 3) and the service URLs (`extra.links`).
+- Choose the service list from the CSV by coverage, and check it by hand
+  against the services a resident would actually look for. It lives in the
+  module with the LGSL codes, so it is easy to review. Leave out any service a
+  council doesn't run (for example where waste goes to a joint authority).
 
-The fixed service list goes in the module with the LGSL codes, so it is easy
-to review. Only services every single-tier council in England provides are
-included, so councils aren't penalised for services they don't run.
+**`planning_data`.** The share of the eight datasets listed above that the
+council provides through at least one working endpoint. Count all eight for
+every single-tier council, whatever the `provision_reason`, so 29 councils
+aren't left out because they aren't in the "expected" cohort. Say so on the
+methodology page. Where a national park or development corporation is the
+planning authority for part of a council's area, the council is still
+measured on its own data.
 
-**Planning Data platform** (planning.data.gov.uk, MHCLG). Tracks which
-planning authorities provide the datasets they are required to (brownfield
-land, conservation areas, Article 4 directions, tree preservation orders,
-listed building outlines and others) and how good that data is.
-`planning_data` is the share of the required datasets the council provides.
-The list of datasets comes from the platform rather than being typed out, so
-it follows any change in the requirements. Check how the platform deals with
-national parks and development corporations, which take planning powers in
-part of some councils.
-
-**WhatDoTheyKnow** (mySociety). Holds the public FOI requests sent through it
-to each council, with their status. `foi_late` is the share answered after the
-legal 20 working days, over the last two full years, for councils with at
-least 50 requests in that time. It isn't official and only covers requests
-made through WhatDoTheyKnow, which the label and methodology must say. It is
-included because it is the only consistent, public view of FOI performance
-across every council. If mySociety's terms or rate limits rule out a weekly
-fetch, fetch it monthly (`MAX_AGE_DAYS = 30`, as `lgo_decisions` does).
+**`brownfield`.** Whether the council provides the `brownfield-land` dataset
+through a working endpoint. It has been a legal requirement since 2017.
 
 ### Phase 2: more published sources
 
 | id | Label | Kind | Source |
 |---|---|---|---|
-| `contracts_published` | Contracts awarded with a published notice within 30 days | %, higher | Find a Tender (OCDS) |
+| `contracts_published` | Contracts awarded with a notice published within 30 days | %, higher | Find a Tender (OCDS) |
 | `accounts_audited` | Latest accounts audited by the deadline | check | MHCLG / PSAA |
 | `ico_action` | ICO enforcement or reprimand in the last three years | check | ICO |
 | `local_digital` | Has signed the Local Digital Declaration | check | MHCLG Local Digital |
 
 These need more care in matching and explaining, so they come after phase 1
 has shipped. `contracts_published` needs a careful definition: Find a Tender
-replaced Contracts Finder under the Procurement Act 2023 (from February 2025),
-so the measure should only start from then. `ico_action` and the accounts
-deadline are rare events, so they are shown as a flag on the council's page
-rather than ranked.
+replaced Contracts Finder for new procurements under the Procurement Act 2023
+(from 24 February 2025), so the measure should only start from then. Buyers in
+OCDS are named, not coded, so they need matching through `pipeline/names.py`.
+`ico_action` and the accounts deadline are rare events, so they are shown as a
+flag on the council's page rather than ranked. The sources for
+`accounts_audited`, `ico_action` and `local_digital` haven't been checked yet.
+
+FOI timeliness (from WhatDoTheyKnow) goes here only if mySociety provides the
+data (see "What the sources hold").
 
 ### Phase 3: our own checks
 
-One new source, `website`, which visits each council's site. These are labelled
-"Our checks" on the site, not published statistics.
+One new source, `website`, which visits each council's site from the homepage
+in Local Links Manager. These are labelled "Our checks" on the site, not
+published statistics.
 
 | id | Label | Kind | How |
 |---|---|---|---|
-| `a11y_statement` | Has an accessibility statement reviewed in the last year | check | Find the statement (footer link, then `/accessibility`), read its status and "last reviewed" date |
+| `dmarc` | Email protected against spoofing (DMARC set to quarantine or reject, for all mail) | check | DNS TXT lookup of `_dmarc.<domain>`, following CNAMEs; `pct` below 100 doesn't pass |
+| `https` | Website uses HTTPS everywhere (HSTS) | check | `Strict-Transport-Security` header on the homepage |
+| `security_txt` | Says how to report a security problem | check | `/.well-known/security.txt` |
+| `a11y_statement` | Has an accessibility statement reviewed in the last year | check | Find the statement (footer link, then `/accessibility`), read its "last reviewed" date |
 | `a11y_status` | What the accessibility statement says | text | "fully", "partially" or "not compliant", from the GDS template wording |
 | `spend_data_age` | Months since the newest published spending over £500 | number, lower | Find the transparency page, find the newest spending file by its name and date |
 | `trackers_before_consent` | Tracking cookies set before you agree to them | check | Load the homepage in Playwright with no interaction, and list the third-party cookies and requests to known trackers |
 | `reject_cookies` | Can reject cookies as easily as accept them | check | A reject button on the first layer of the banner |
-| `dmarc` | Email protected against spoofing (DMARC set to quarantine or reject) | check | DNS TXT lookup of `_dmarc.<domain>` |
-| `https` | Website uses HTTPS everywhere (HSTS) | check | `Strict-Transport-Security` header on the homepage |
-| `security_txt` | Says how to report a security problem | check | `/.well-known/security.txt` |
 | `online_tasks` | Top tasks you can complete online | %, higher | For the 10 top tasks, whether the page from Local Links Manager leads to an online form or payment rather than only a phone number or PDF |
 
 What we also record, but don't rank: the CMS, the forms platform and the
@@ -127,11 +177,11 @@ Before it ships, check a sample of 20 councils by hand and agree the rules.
 
 ## Pipeline changes
 
-- `pipeline/sources/local_links.py`, `planning_data.py`, `foi.py`
-  (phase 1); `contracts.py`, `accounts.py`, `ico.py`, `local_digital.py`
-  (phase 2); `website.py` (phase 3). Each added to `STEPS`, and those with
-  measures to `VALUE_SOURCES`, in `pipeline/update.py`.
-- `website.py` needs the homepage from `local_links`, so it runs after it and
+- `pipeline/sources/local_links.py` and `planning_data.py` (phase 1);
+  `contracts.py`, `accounts.py`, `ico.py`, `local_digital.py` (phase 2);
+  `website.py` (phase 3). Each added to `STEPS`, and those with measures to
+  `VALUE_SOURCES`, in `pipeline/update.py`.
+- `website.py` needs the homepages from `local_links`, so it runs after it and
   reads `context["results"]["local_links"]`.
 - Checks are stored as `True`/`False` in `values`, with the evidence in
   `extra[code][measure]` (URL checked, date, what was found), so a council's
@@ -140,31 +190,44 @@ Before it ships, check a sample of 20 councils by hand and agree the rules.
   `website.py`; install it in the workflow with
   `pip install playwright && playwright install chromium`.
 - `website.py` takes about 130 councils × ~15 requests at one a second, which
-  is roughly 35 minutes. Give it `MAX_AGE_DAYS = 28` so it runs monthly rather
-  than every week, and raise the workflow's `timeout-minutes` to 90.
-- Councils named rather than coded (WhatDoTheyKnow, Local Digital) are matched
-  through `pipeline/names.py`; add aliases there as needed.
+  is roughly 35 minutes. Give it `MAX_AGE_DAYS = 28`, and stagger it from
+  `local_links` (also monthly, 45 minutes) so they don't both run in the same
+  week. Raise the workflow's `timeout-minutes` to 90 if they ever do.
+- Local Links Manager and Planning Data give GSS codes, so they need no name
+  matching. OCDS buyers and the Local Digital list do; add aliases to
+  `pipeline/names.py` as needed.
 
 ## Site changes
 
 - `web/model.py`: new `Measure`s in the `digital` area. Rename the area from
-  "Website" to "Online services and openness" (wording to decide), and rewrite
-  its description to cover the new measures.
+  "Website" to something covering more than the website (to decide), and
+  rewrite its description to cover the new measures.
 - Measures support a `kind` of `"check"`. Checks aren't ranked: the council's
   page shows a tick or cross with a short reason, and the measure page shows
   how many councils pass, with a list of those that don't.
 - A small "Our checks" tag on every measure from `website.py`, linking to the
   methodology section.
 - `web/templates/about.html`: a methodology section for each new source, and
-  credits (WhatDoTheyKnow, Find a Tender, ICO) in the footer next to Silktide.
-- Scotland: Local Links Manager and Planning Data cover England only. Phase 3
-  checks work for Scottish councils too, so give those measures
-  `nations=("England", "Scotland")`.
+  credits in the footer next to Silktide. Local Links Manager and Planning
+  Data are both under the Open Government Licence.
+
+## Other nations and two-tier England
+
+- Local Links Manager covers England, Scotland and Wales, so `links_working`
+  is ready for Wales when it launches, and for two-tier England (the CSV and
+  API give each council's `tier`; county and district councils provide
+  different services, so each tier needs its own service list).
+- Planning Data is England only. Scottish and Welsh councils get no planning
+  measures.
+- Phase 3 checks work for every council, so give those measures every nation
+  that's live.
 
 ## Tests
 
 - `tests/test_pipeline.py`: a parser test for each new source against a small
-  saved response in `tests/fixtures/`, as for the existing sources.
+  saved response in `tests/fixtures/` (a few rows of the links CSV, a few
+  `/api/link` responses including `broken` and `caution`, a few rows of
+  `provision_summary`).
 - `tests/test_data.py`: each new measure covers most councils
   (the existing `test_each_measure_covers_most_councils`); percentages are
   0–100; checks are booleans; every check has its evidence; `spend_data_age`
@@ -174,44 +237,49 @@ Before it ships, check a sample of 20 councils by hand and agree the rules.
 
 ## Order of work
 
-Each step is one pull request that can be merged on its own.
+Each step is one pull request, opened against `main` and mergeable on its
+own. Where one needs another merged first, its description says so.
 
-1. `local_links` source and the two measures. Methodology text.
-2. Support for check measures in `web/model.py` and the templates (no new
-   data yet; tested with the fixture).
-3. `planning_data` source.
-4. `foi` source.
-5. `website` source, part one: DMARC, HTTPS, security.txt, accessibility
+1. `local_links` source and `links_working`. Methodology text.
+2. `planning_data` source and `planning_data`.
+3. Support for check measures in `web/model.py` and the templates, then the
+   `brownfield` check.
+4. `website` source, part one: DMARC, HTTPS, security.txt, accessibility
    statement. No browser needed.
-6. `website` source, part two: Playwright cookie checks and the transparency
+5. `website` source, part two: Playwright cookie checks and the transparency
    spending check.
-7. Phase 2 sources, one pull request each.
-8. `online_tasks`, after the hand check of 20 councils.
+6. Phase 2 sources, one pull request each.
+7. `online_tasks`, after the hand check of 20 councils.
 
 ## Risks
 
-- **Endpoints and terms not yet checked.** This plan was written in an
-  environment without access to the sources, so the exact API routes, fields
-  and terms of use for Local Links Manager, Planning Data, WhatDoTheyKnow and
-  Find a Tender need confirming before each step starts. If one can't be used,
-  drop its measure rather than scraping around a restriction.
+- **What `caution` means.** Local Links Manager's checker marks some links
+  `caution` (Croydon's missed-bin link, which redirects). Find out what it
+  covers before counting it as not working; otherwise count only `broken`.
+- **The link checker is GOV.UK's, not ours.** If GOV.UK stops checking, or
+  checks less often, the measure goes stale. Record the date of each run and
+  warn in the update summary if statuses stop changing.
+- **Planning Data is still being built.** Datasets move between "expected" and
+  "statutory", and the performance database's tables may change. Find
+  columns by name, and fail the source (keeping the previous figures) if one
+  goes missing.
 - **Bot protection.** Some council sites sit behind Cloudflare or similar and
-  may block the checker. Record "couldn't check" rather than a fail, and list
-  those councils in the update summary.
+  may block the phase 3 checker. Record "couldn't check" rather than a fail,
+  and list those councils in the update summary.
 - **False fails.** Statements and spending files live in different places on
   each site. Each fail keeps its evidence and URL, and the first full run is
   reviewed by hand before it is published.
 - **Councils disputing results.** Add a "Think this is wrong?" link on check
   measures, pointing to an email address or a GitHub issue template.
 - **Measures that reward box-ticking.** Prefer measures residents would notice
-  (services online, links that work, FOI answered on time) over ones that only
-  test paperwork, and keep check measures out of any overall ranking.
+  (links that work, services online) over ones that only test paperwork, and
+  keep check measures out of any overall ranking.
 
 ## Decisions needed
 
 1. Are you happy to publish our own checks (phase 3) alongside official
    statistics, labelled "Our checks"? If not, stop after phase 2.
-2. Is WhatDoTheyKnow acceptable as a source, given it isn't official?
+2. Should we ask mySociety for WhatDoTheyKnow data, or leave FOI out?
 3. What should the area be called once it covers more than the website?
-4. Should check measures appear in the "how this council compares" summary
-   at the top of the council page, or only in the area itself?
+4. Should check measures appear in the summary at the top of the council
+   page, or only in the area itself?
