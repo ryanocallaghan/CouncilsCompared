@@ -106,7 +106,7 @@
    "title": "Improvement Service: Local Government Benchmarking Framework",
    "url": "https://data.spatialhub.scot/dataset/local_government_benchmarking_framework-is",
    "period": "2025-26",
-   "published": "2026-10-16",
+   "published": "2026-10-30",
    "periods": {
     "attendance": "2024-25",
     "bins_satisfied": "2024-25",
@@ -118,7 +118,7 @@
     "housing_quality": "2025-26",
     "literacy": "2024-25",
     "numeracy": "2024-25",
-    "recycling": "2024-25",
+    "recycling": "2025-26",
     "repair_days": "2025-26",
     "street_clean": "2025-26",
     "streets_satisfied": "2024-25"
@@ -146,7 +146,7 @@
    "title": "Scottish Government: Council Tax by band, 2026-27",
    "url": "https://www.gov.scot/publications/council-tax-datasets/",
    "period": "2026-27",
-   "published": "2026-03-31"
+   "published": "2026-10-27"
   }
  },
  "councils": [
@@ -165,7 +165,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 72.3,
+    "web_access": 72.31,
     "attendance": 92.4,
     "bins_satisfied": 79.3,
     "care_graded": 78.2,
@@ -176,7 +176,7 @@
     "housing_quality": 95.8,
     "literacy": 71.2,
     "numeracy": 78.3,
-    "recycling": 43.1,
+    "recycling": 40.6,
     "repair_days": 7.4,
     "street_clean": 91.5,
     "streets_satisfied": 56.3,
@@ -197,6 +197,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 359,
+    "url": "https://index.silktide.com/website/aberdeen-city-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -224,7 +229,8 @@
      "2021-22": 46.8,
      "2022-23": 41.8,
      "2023-24": 41.8,
-     "2024-25": 43.1
+     "2024-25": 43.1,
+     "2025-26": 40.6
     },
     "ta_days": {
      "2021-22": 106.0,
@@ -250,7 +256,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 94.5,
+    "web_access": 94.53,
     "attendance": 92.8,
     "bins_satisfied": 73.7,
     "care_graded": 80.6,
@@ -282,6 +288,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 148,
+    "url": "https://index.silktide.com/website/aberdeenshire-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -309,7 +320,8 @@
      "2021-22": 41.1,
      "2022-23": 40.2,
      "2023-24": 43.0,
-     "2024-25": 44.7
+     "2024-25": 44.7,
+     "2025-26": 44.7
     },
     "ta_days": {
      "2021-22": 105.0,
@@ -335,7 +347,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 92.4,
+    "web_access": 92.39,
     "attendance": 91.5,
     "bins_satisfied": 87.7,
     "care_graded": 68.0,
@@ -346,7 +358,7 @@
     "housing_quality": 91.5,
     "literacy": 78.8,
     "numeracy": 83.4,
-    "recycling": 53.3,
+    "recycling": 50.4,
     "repair_days": 12.9,
     "street_clean": 96.0,
     "streets_satisfied": 57.3,
@@ -367,6 +379,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 197,
+    "url": "https://index.silktide.com/website/angus-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -394,7 +411,8 @@
      "2021-22": 54.7,
      "2022-23": 51.7,
      "2023-24": 52.1,
-     "2024-25": 53.3
+     "2024-25": 53.3,
+     "2025-26": 50.4
     },
     "ta_days": {
      "2021-22": 148.0,
@@ -420,7 +438,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 98.4,
+    "web_access": 98.38,
     "attendance": 90.7,
     "bins_satisfied": 76.3,
     "care_graded": 76.5,
@@ -430,7 +448,7 @@
     "destinations": 94.8,
     "literacy": 72.5,
     "numeracy": 79.9,
-    "recycling": 42.5,
+    "recycling": 42.6,
     "street_clean": 93.7,
     "streets_satisfied": 66.0,
     "om_received": 40.1,
@@ -450,6 +468,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 51,
+    "url": "https://index.silktide.com/website/argyll-bute-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -477,7 +500,8 @@
      "2021-22": 39.3,
      "2022-23": 40.8,
      "2023-24": 40.7,
-     "2024-25": 42.5
+     "2024-25": 42.5,
+     "2025-26": 42.6
     },
     "ta_days": {
      "2021-22": 202.0,
@@ -535,7 +559,7 @@
     "relief": 51.0,
     "ta_long": 60.8,
     "ta_rate": 13.1,
-    "web_access": 84.6,
+    "web_access": 84.64,
     "planning_data": 62.5
    },
    "spend": {
@@ -561,6 +585,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 282,
+    "url": "https://index.silktide.com/website/london-borough-of-barking-dagenham-council"
    },
    "fly": {
     "actions": [
@@ -770,7 +799,7 @@
     "relief": 32.3,
     "ta_long": 49.2,
     "ta_rate": 19.3,
-    "web_access": 88.7,
+    "web_access": 88.69,
     "planning_data": 100.0
    },
    "spend": {
@@ -792,6 +821,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 243,
+    "url": "https://index.silktide.com/website/london-borough-of-barnet-council"
    },
    "fly": {
     "actions": [
@@ -991,7 +1025,7 @@
     "relief": 72.4,
     "ta_long": 0.0,
     "ta_rate": 0.5,
-    "web_access": 93.0,
+    "web_access": 92.96,
     "planning_data": 0.0
    },
    "spend": {
@@ -1022,6 +1056,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 179,
+    "url": "https://index.silktide.com/website/barnsley-borough-council"
    },
    "fly": {
     "actions": [
@@ -1227,7 +1266,7 @@
     "relief": 17.7,
     "ta_long": 0.0,
     "ta_rate": 1.0,
-    "web_access": 80.9,
+    "web_access": 80.94,
     "planning_data": 0.0
    },
    "spend": {
@@ -1258,6 +1297,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 317,
+    "url": "https://index.silktide.com/website/bath-north-east-somerset-council"
    },
    "fly": {
     "actions": [
@@ -1454,7 +1498,7 @@
     "relief": 36.9,
     "ta_long": 22.4,
     "ta_rate": 11.6,
-    "web_access": 90.1,
+    "web_access": 90.11,
     "planning_data": 0.0
    },
    "spend": {
@@ -1485,6 +1529,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 228,
+    "url": "https://index.silktide.com/website/bedford-borough-council"
    },
    "fly": {
     "actions": [
@@ -1711,6 +1760,11 @@
      "Protected trees"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 351,
+    "url": "https://index.silktide.com/website/london-borough-of-bexley-council"
+   },
    "fly": {
     "actions": [
      [
@@ -1917,7 +1971,7 @@
     "relief": 22.0,
     "ta_long": 31.6,
     "ta_rate": 11.9,
-    "web_access": 96.6,
+    "web_access": 96.62,
     "planning_data": 75.0
    },
    "spend": {
@@ -1942,6 +1996,11 @@
      "Tree preservation orders",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 87,
+    "url": "https://index.silktide.com/website/birmingham-city-council"
    },
    "fly": {
     "actions": [
@@ -2145,7 +2204,7 @@
     "relief": 71.3,
     "ta_long": 0.0,
     "ta_rate": 0.6,
-    "web_access": 96.6,
+    "web_access": 96.56,
     "planning_data": 0.0
    },
    "spend": {
@@ -2176,6 +2235,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 90,
+    "url": "https://index.silktide.com/website/blackburn-with-darwen-borough-council"
    },
    "fly": {
     "actions": [
@@ -2386,7 +2450,7 @@
     "relief": 43.5,
     "ta_long": 0.0,
     "ta_rate": 2.0,
-    "web_access": 83.7,
+    "web_access": 83.68,
     "planning_data": 62.5
    },
    "spend": {
@@ -2412,6 +2476,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 290,
+    "url": "https://index.silktide.com/website/blackpool-council"
    },
    "fly": {
     "actions": [
@@ -2614,7 +2683,7 @@
     "relief": 26.0,
     "ta_long": 2.1,
     "ta_rate": 1.7,
-    "web_access": 96.1,
+    "web_access": 96.07,
     "planning_data": 12.5
    },
    "spend": {
@@ -2644,6 +2713,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 105,
+    "url": "https://index.silktide.com/website/bolton-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -2853,7 +2927,7 @@
     "relief": 46.7,
     "ta_long": 15.4,
     "ta_rate": 2.7,
-    "web_access": 96.5,
+    "web_access": 96.54,
     "planning_data": 12.5
    },
    "spend": {
@@ -2883,6 +2957,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 91,
+    "url": "https://index.silktide.com/website/bcp-council"
    },
    "fly": {
     "actions": [
@@ -3049,7 +3128,7 @@
     "relief": 23.2,
     "ta_long": 20.6,
     "ta_rate": 3.0,
-    "web_access": 99.6,
+    "web_access": 99.63,
     "planning_data": 0.0
    },
    "spend": {
@@ -3080,6 +3159,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 15,
+    "url": "https://index.silktide.com/website/bracknell-forest-council"
    },
    "fly": {
     "actions": [
@@ -3273,7 +3357,7 @@
     "relief": 41.4,
     "ta_long": 3.4,
     "ta_rate": 2.6,
-    "web_access": 92.9,
+    "web_access": 92.92,
     "planning_data": 50.0
    },
    "spend": {
@@ -3300,6 +3384,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 180,
+    "url": "https://index.silktide.com/website/bradford-metropolitan-council"
    },
    "fly": {
     "actions": [
@@ -3509,7 +3598,7 @@
     "relief": 32.6,
     "ta_long": 51.2,
     "ta_rate": 19.9,
-    "web_access": 96.4,
+    "web_access": 96.43,
     "planning_data": 100.0
    },
    "spend": {
@@ -3531,6 +3620,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 97,
+    "url": "https://index.silktide.com/website/london-borough-of-brent-council"
    },
    "fly": {
     "actions": [
@@ -3740,7 +3834,7 @@
     "relief": 16.2,
     "ta_long": 63.0,
     "ta_rate": 16.2,
-    "web_access": 98.6,
+    "web_access": 98.57,
     "planning_data": 0.0
    },
    "spend": {
@@ -3771,6 +3865,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 44,
+    "url": "https://index.silktide.com/website/brighton-and-hove-city-council"
    },
    "fly": {
     "actions": [
@@ -3976,7 +4075,7 @@
     "fly_enforce": 21.9,
     "fly_fpn": 0.6,
     "fly_rate": 20.7,
-    "web_access": 85.3,
+    "web_access": 85.33,
     "planning_data": 100.0
    },
    "spend": {
@@ -3998,6 +4097,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 274,
+    "url": "https://index.silktide.com/website/bristol-city-council"
    },
    "fly": {
     "actions": [
@@ -4198,7 +4302,7 @@
     "relief": 36.6,
     "ta_long": 58.7,
     "ta_rate": 11.7,
-    "web_access": 98.1,
+    "web_access": 98.12,
     "planning_data": 37.5
    },
    "spend": {
@@ -4226,6 +4330,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 56,
+    "url": "https://index.silktide.com/website/london-borough-of-bromley-council"
    },
    "fly": {
     "actions": [
@@ -4421,7 +4530,7 @@
     "relief": 20.6,
     "ta_long": 5.1,
     "ta_rate": 1.6,
-    "web_access": 98.8,
+    "web_access": 98.83,
     "planning_data": 62.5
    },
    "spend": {
@@ -4447,6 +4556,11 @@
      "Article 4 directions",
      "Tree preservation orders"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 36,
+    "url": "https://index.silktide.com/website/buckinghamshire-council"
    },
    "fly": {
     "actions": [
@@ -4650,6 +4764,11 @@
      "Protected trees"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 151,
+    "url": "https://index.silktide.com/website/bury-metropolitan-borough-council"
+   },
    "fly": {
     "actions": [
      [
@@ -4847,7 +4966,7 @@
     "relief": 38.8,
     "ta_long": 0.0,
     "ta_rate": 1.2,
-    "web_access": 62.6,
+    "web_access": 62.58,
     "planning_data": 100.0
    },
    "spend": {
@@ -4869,6 +4988,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 378,
+    "url": "https://index.silktide.com/website/calderdale-council"
    },
    "fly": {
     "actions": [
@@ -5075,7 +5199,7 @@
     "relief": 31.6,
     "ta_long": 40.0,
     "ta_rate": 13.3,
-    "web_access": 93.0,
+    "web_access": 92.99,
     "planning_data": 62.5
    },
    "spend": {
@@ -5101,6 +5225,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 178,
+    "url": "https://index.silktide.com/website/london-borough-of-camden-council"
    },
    "fly": {
     "actions": [
@@ -5306,7 +5435,7 @@
     "relief": 38.0,
     "ta_long": 15.4,
     "ta_rate": 1.8,
-    "web_access": 89.5,
+    "web_access": 89.49,
     "planning_data": 75.0
    },
    "spend": {
@@ -5331,6 +5460,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 234,
+    "url": "https://index.silktide.com/website/central-bedfordshire-council"
    },
    "fly": {
     "actions": [
@@ -5531,7 +5665,7 @@
     "relief": 58.3,
     "ta_long": 0.0,
     "ta_rate": 0.3,
-    "web_access": 95.3,
+    "web_access": 95.27,
     "planning_data": 0.0
    },
    "spend": {
@@ -5562,6 +5696,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 131,
+    "url": "https://index.silktide.com/website/cheshire-east-council"
    },
    "fly": {
     "actions": [
@@ -5765,7 +5904,7 @@
     "relief": 33.6,
     "ta_long": 0.0,
     "ta_rate": 0.6,
-    "web_access": 99.2,
+    "web_access": 99.18,
     "planning_data": 0.0
    },
    "spend": {
@@ -5796,6 +5935,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 28,
+    "url": "https://index.silktide.com/website/cheshire-west-and-chester-council"
    },
    "fly": {
     "actions": [
@@ -5968,7 +6112,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 98.5,
+    "web_access": 98.49,
     "attendance": 92.1,
     "bins_satisfied": 77.7,
     "care_graded": 84.6,
@@ -5979,7 +6123,7 @@
     "housing_quality": 75.7,
     "literacy": 80.4,
     "numeracy": 84.3,
-    "recycling": 37.5,
+    "recycling": 35.8,
     "repair_days": 11.8,
     "street_clean": 92.8,
     "streets_satisfied": 62.7,
@@ -6000,6 +6144,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 48,
+    "url": "https://index.silktide.com/website/city-of-edinburgh-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -6027,7 +6176,8 @@
      "2021-22": 39.9,
      "2022-23": 37.1,
      "2023-24": 38.0,
-     "2024-25": 37.5
+     "2024-25": 37.5,
+     "2025-26": 35.8
     },
     "ta_days": {
      "2021-22": 469.0,
@@ -6053,7 +6203,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 49.8,
+    "web_access": 49.84,
     "attendance": 91.2,
     "bins_satisfied": 66.7,
     "care_graded": 89.0,
@@ -6064,7 +6214,7 @@
     "housing_quality": 87.0,
     "literacy": 72.2,
     "numeracy": 75.3,
-    "recycling": 57.2,
+    "recycling": 56.5,
     "repair_days": 11.2,
     "street_clean": 84.7,
     "streets_satisfied": 64.3,
@@ -6085,6 +6235,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 384,
+    "url": "https://index.silktide.com/website/clackmannanshire-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -6112,7 +6267,8 @@
      "2021-22": 50.0,
      "2022-23": 51.2,
      "2023-24": 52.0,
-     "2024-25": 57.2
+     "2024-25": 57.2,
+     "2025-26": 56.5
     },
     "ta_days": {
      "2021-22": 153.0,
@@ -6173,7 +6329,7 @@
     "relief": 37.4,
     "ta_long": 16.7,
     "ta_rate": 3.3,
-    "web_access": 92.5,
+    "web_access": 92.55,
     "planning_data": 12.5
    },
    "spend": {
@@ -6203,6 +6359,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 194,
+    "url": "https://index.silktide.com/website/cornwall-council"
    },
    "fly": {
     "actions": [
@@ -6400,7 +6561,7 @@
     "relief": 33.4,
     "ta_long": 3.8,
     "ta_rate": 0.5,
-    "web_access": 94.8,
+    "web_access": 94.79,
     "planning_data": 12.5
    },
    "spend": {
@@ -6430,6 +6591,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 142,
+    "url": "https://index.silktide.com/website/durham-county-council"
    },
    "fly": {
     "actions": [
@@ -6655,6 +6821,11 @@
     "brownfield": true,
     "missing": []
    },
+   "silktide": {
+    "of": 391,
+    "rank": 215,
+    "url": "https://index.silktide.com/website/coventry-city-council"
+   },
    "fly": {
     "actions": [
      [
@@ -6863,7 +7034,7 @@
     "relief": 17.6,
     "ta_long": 63.4,
     "ta_rate": 20.4,
-    "web_access": 89.2,
+    "web_access": 89.24,
     "planning_data": 0.0
    },
    "spend": {
@@ -6894,6 +7065,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 235,
+    "url": "https://index.silktide.com/website/london-borough-of-croydon-council"
    },
    "fly": {
     "actions": [
@@ -7091,7 +7267,7 @@
     "relief": 35.8,
     "ta_long": 4.0,
     "ta_rate": 0.7,
-    "web_access": 94.2,
+    "web_access": 94.24,
     "planning_data": 0.0
    },
    "spend": {},
@@ -7111,6 +7287,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 152,
+    "url": "https://index.silktide.com/website/cumberland-council"
    },
    "fly": {
     "actions": [
@@ -7285,7 +7466,7 @@
     "relief": 45.7,
     "ta_long": 5.6,
     "ta_rate": 1.5,
-    "web_access": 81.5,
+    "web_access": 81.55,
     "planning_data": 0.0
    },
    "spend": {
@@ -7316,6 +7497,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 312,
+    "url": "https://index.silktide.com/website/darlington-borough-council"
    },
    "fly": {
     "actions": [
@@ -7559,6 +7745,11 @@
      "Protected trees"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 119,
+    "url": "https://index.silktide.com/website/derby-city-council"
+   },
    "fly": {
     "actions": [
      [
@@ -7794,6 +7985,11 @@
      "Tree preservation orders"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 67,
+    "url": "https://index.silktide.com/website/doncaster-metropolitan-borough-council"
+   },
    "fly": {
     "actions": [
      [
@@ -7995,7 +8191,7 @@
     "relief": 37.9,
     "ta_long": 3.4,
     "ta_rate": 1.1,
-    "web_access": 94.0,
+    "web_access": 93.97,
     "planning_data": 50.0
    },
    "spend": {
@@ -8022,6 +8218,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 156,
+    "url": "https://index.silktide.com/website/dorset-county-council"
    },
    "fly": {
     "actions": [
@@ -8202,7 +8403,7 @@
     "relief": 52.4,
     "ta_long": 0.0,
     "ta_rate": 0.2,
-    "web_access": 93.2,
+    "web_access": 93.25,
     "planning_data": 12.5
    },
    "spend": {},
@@ -8221,6 +8422,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 174,
+    "url": "https://index.silktide.com/website/dudley-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -8396,7 +8602,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 92.9,
+    "web_access": 92.86,
     "attendance": 90.7,
     "bins_satisfied": 85.7,
     "care_graded": 82.7,
@@ -8406,7 +8612,7 @@
     "destinations": 95.9,
     "literacy": 72.1,
     "numeracy": 77.8,
-    "recycling": 43.2,
+    "recycling": 42.5,
     "street_clean": 98.4,
     "streets_satisfied": 36.0,
     "om_received": 26.8,
@@ -8426,6 +8632,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 185,
+    "url": "https://index.silktide.com/website/dumfries-and-galloway-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -8453,7 +8664,8 @@
      "2021-22": 39.8,
      "2022-23": 45.1,
      "2023-24": 41.2,
-     "2024-25": 43.2
+     "2024-25": 43.2,
+     "2025-26": 42.5
     },
     "ta_days": {
      "2021-22": 109.0,
@@ -8479,7 +8691,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 75.0,
+    "web_access": 74.98,
     "attendance": 89.6,
     "bins_satisfied": 74.3,
     "care_graded": 76.7,
@@ -8490,7 +8702,7 @@
     "housing_quality": 84.8,
     "literacy": 73.9,
     "numeracy": 79.6,
-    "recycling": 35.1,
+    "recycling": 34.1,
     "repair_days": 10.6,
     "street_clean": 86.2,
     "streets_satisfied": 49.7,
@@ -8511,6 +8723,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 349,
+    "url": "https://index.silktide.com/website/dundee-city-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -8538,7 +8755,8 @@
      "2021-22": 32.6,
      "2022-23": 35.6,
      "2023-24": 36.6,
-     "2024-25": 35.1
+     "2024-25": 35.1,
+     "2025-26": 34.1
     },
     "ta_days": {
      "2021-22": 203.0,
@@ -8596,7 +8814,7 @@
     "relief": 37.4,
     "ta_long": 77.7,
     "ta_rate": 21.2,
-    "web_access": 83.9,
+    "web_access": 83.93,
     "planning_data": 0.0
    },
    "spend": {
@@ -8627,6 +8845,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 289,
+    "url": "https://index.silktide.com/website/london-borough-of-ealing-council"
    },
    "fly": {
     "actions": [
@@ -8804,7 +9027,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 99.8,
+    "web_access": 99.77,
     "attendance": 89.1,
     "bins_satisfied": 76.7,
     "care_graded": 76.6,
@@ -8815,7 +9038,7 @@
     "housing_quality": 98.7,
     "literacy": 77.0,
     "numeracy": 81.5,
-    "recycling": 49.2,
+    "recycling": 48.7,
     "repair_days": 7.9,
     "street_clean": 92.0,
     "streets_satisfied": 47.3,
@@ -8836,6 +9059,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 11,
+    "url": "https://index.silktide.com/website/east-ayrshire-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -8863,7 +9091,8 @@
      "2021-22": 48.5,
      "2022-23": 48.5,
      "2023-24": 51.5,
-     "2024-25": 49.2
+     "2024-25": 49.2,
+     "2025-26": 48.7
     },
     "ta_days": {
      "2021-22": 119.0,
@@ -8889,7 +9118,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 84.9,
+    "web_access": 84.94,
     "attendance": 92.9,
     "bins_satisfied": 87.7,
     "care_graded": 87.7,
@@ -8900,7 +9129,7 @@
     "housing_quality": 65.7,
     "literacy": 83.0,
     "numeracy": 87.8,
-    "recycling": 54.3,
+    "recycling": 52.0,
     "repair_days": 11.3,
     "street_clean": 90.9,
     "streets_satisfied": 52.7,
@@ -8921,6 +9150,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 278,
+    "url": "https://index.silktide.com/website/east-dunbartonshire-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -8948,7 +9182,8 @@
      "2021-22": 45.3,
      "2022-23": 48.6,
      "2023-24": 46.0,
-     "2024-25": 54.3
+     "2024-25": 54.3,
+     "2025-26": 52.0
     },
     "ta_days": {
      "2021-22": 359.0,
@@ -8974,7 +9209,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 53.9,
+    "web_access": 53.88,
     "attendance": 92.3,
     "bins_satisfied": 79.0,
     "care_graded": 83.2,
@@ -8985,7 +9220,7 @@
     "housing_quality": 90.0,
     "literacy": 74.5,
     "numeracy": 79.3,
-    "recycling": 55.3,
+    "recycling": 54.3,
     "repair_days": 8.6,
     "street_clean": 91.0,
     "streets_satisfied": 73.3,
@@ -9006,6 +9241,7 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": null,
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -9033,7 +9269,8 @@
      "2021-22": 53.9,
      "2022-23": 53.1,
      "2023-24": 53.1,
-     "2024-25": 55.3
+     "2024-25": 55.3,
+     "2025-26": 54.3
     },
     "ta_days": {
      "2021-22": 388.0,
@@ -9059,7 +9296,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 97.1,
+    "web_access": 97.09,
     "attendance": 93.6,
     "bins_satisfied": 80.3,
     "care_graded": 96.2,
@@ -9070,7 +9307,7 @@
     "housing_quality": 86.9,
     "literacy": 89.0,
     "numeracy": 92.5,
-    "recycling": 50.9,
+    "recycling": 53.3,
     "repair_days": 10.9,
     "street_clean": 95.3,
     "streets_satisfied": 62.7,
@@ -9091,6 +9328,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 76,
+    "url": "https://index.silktide.com/website/east-renfrewshire-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -9118,7 +9360,8 @@
      "2021-22": 58.1,
      "2022-23": 56.0,
      "2023-24": 58.2,
-     "2024-25": 50.9
+     "2024-25": 50.9,
+     "2025-26": 53.3
     },
     "ta_days": {
      "2021-22": 151.0,
@@ -9179,7 +9422,7 @@
     "relief": 18.2,
     "ta_long": 8.5,
     "ta_rate": 1.8,
-    "web_access": 77.6,
+    "web_access": 77.58,
     "planning_data": 100.0
    },
    "spend": {
@@ -9201,6 +9444,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 336,
+    "url": "https://index.silktide.com/website/east-riding-of-yorkshire-council"
    },
    "fly": {
     "actions": [
@@ -9406,7 +9654,7 @@
     "relief": 51.2,
     "ta_long": 63.7,
     "ta_rate": 25.3,
-    "web_access": 90.0,
+    "web_access": 89.98,
     "planning_data": 25.0
    },
    "spend": {
@@ -9435,6 +9683,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 231,
+    "url": "https://index.silktide.com/website/london-borough-of-enfield-council"
    },
    "fly": {
     "actions": [
@@ -9612,7 +9865,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 91.0,
+    "web_access": 91.02,
     "attendance": 91.6,
     "bins_satisfied": 65.3,
     "care_graded": 88.1,
@@ -9623,7 +9876,7 @@
     "housing_quality": 91.9,
     "literacy": 79.1,
     "numeracy": 83.4,
-    "recycling": 51.5,
+    "recycling": 50.9,
     "repair_days": 10.4,
     "street_clean": 90.3,
     "streets_satisfied": 52.3,
@@ -9644,6 +9897,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 218,
+    "url": "https://index.silktide.com/website/falkirk-district-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -9671,7 +9929,8 @@
      "2021-22": 48.2,
      "2022-23": 51.4,
      "2023-24": 50.9,
-     "2024-25": 51.5
+     "2024-25": 51.5,
+     "2025-26": 50.9
     },
     "ta_days": {
      "2021-22": 223.0,
@@ -9708,7 +9967,7 @@
     "housing_quality": 92.8,
     "literacy": 72.0,
     "numeracy": 77.4,
-    "recycling": 44.5,
+    "recycling": 43.1,
     "repair_days": 6.2,
     "street_clean": 96.1,
     "streets_satisfied": 65.7,
@@ -9729,6 +9988,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 74,
+    "url": "https://index.silktide.com/website/fife-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -9756,7 +10020,8 @@
      "2021-22": 43.6,
      "2022-23": 45.7,
      "2023-24": 45.9,
-     "2024-25": 44.5
+     "2024-25": 44.5,
+     "2025-26": 43.1
     },
     "ta_days": {
      "2021-22": 217.0,
@@ -9812,7 +10077,7 @@
     "relief": 51.2,
     "ta_long": 0.0,
     "ta_rate": 1.4,
-    "web_access": 93.4,
+    "web_access": 93.36,
     "planning_data": 87.5
    },
    "spend": {
@@ -9836,6 +10101,11 @@
     "missing": [
      "Conservation area documents"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 168,
+    "url": "https://index.silktide.com/website/gateshead-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -10009,7 +10279,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 86.4,
+    "web_access": 86.42,
     "attendance": 89.2,
     "bins_satisfied": 60.3,
     "care_graded": 90.4,
@@ -10019,7 +10289,7 @@
     "destinations": 94.9,
     "literacy": 68.5,
     "numeracy": 75.3,
-    "recycling": 30.6,
+    "recycling": 26.0,
     "street_clean": 82.3,
     "streets_satisfied": 37.3,
     "om_received": 20.9,
@@ -10039,6 +10309,7 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": null,
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -10066,7 +10337,8 @@
      "2021-22": 27.3,
      "2022-23": 27.6,
      "2023-24": 27.2,
-     "2024-25": 30.6
+     "2024-25": 30.6,
+     "2025-26": 26.0
     },
     "ta_days": {
      "2021-22": 193.0,
@@ -10124,7 +10396,7 @@
     "relief": 41.8,
     "ta_long": 45.5,
     "ta_rate": 15.5,
-    "web_access": 82.5,
+    "web_access": 82.52,
     "planning_data": 0.0
    },
    "spend": {
@@ -10155,6 +10427,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 299,
+    "url": "https://index.silktide.com/website/royal-borough-of-greenwich-council"
    },
    "fly": {
     "actions": [
@@ -10364,7 +10641,7 @@
     "relief": 23.5,
     "ta_long": 61.9,
     "ta_rate": 32.8,
-    "web_access": 88.3,
+    "web_access": 88.32,
     "planning_data": 37.5
    },
    "spend": {
@@ -10392,6 +10669,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 252,
+    "url": "https://index.silktide.com/website/london-borough-of-hackney-council"
    },
    "fly": {
     "actions": [
@@ -10590,7 +10872,7 @@
     "relief": 19.4,
     "ta_long": 0.0,
     "ta_rate": 2.1,
-    "web_access": 82.5,
+    "web_access": 82.49,
     "planning_data": 100.0
    },
    "spend": {
@@ -10612,6 +10894,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 300,
+    "url": "https://index.silktide.com/website/halton-borough-council"
    },
    "fly": {
     "actions": [
@@ -10817,7 +11104,7 @@
     "relief": 32.9,
     "ta_long": 62.6,
     "ta_rate": 17.1,
-    "web_access": 87.5,
+    "web_access": 87.46,
     "planning_data": 12.5
    },
    "spend": {
@@ -10847,6 +11134,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 258,
+    "url": "https://index.silktide.com/website/london-borough-of-hammersmith-fulham-council"
    },
    "fly": {
     "actions": [
@@ -11052,7 +11344,7 @@
     "relief": 26.0,
     "ta_long": 69.0,
     "ta_rate": 25.3,
-    "web_access": 83.3,
+    "web_access": 83.28,
     "planning_data": 62.5
    },
    "spend": {
@@ -11078,6 +11370,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 293,
+    "url": "https://index.silktide.com/website/london-borough-of-haringey-council"
    },
    "fly": {
     "actions": [
@@ -11287,7 +11584,7 @@
     "relief": 52.5,
     "ta_long": 52.3,
     "ta_rate": 15.9,
-    "web_access": 99.4,
+    "web_access": 99.38,
     "planning_data": 0.0
    },
    "spend": {
@@ -11318,6 +11615,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 20,
+    "url": "https://index.silktide.com/website/london-borough-of-harrow-council"
    },
    "fly": {
     "actions": [
@@ -11499,7 +11801,7 @@
     "prevention": 75.6,
     "relief": 50.7,
     "ta_rate": 0.4,
-    "web_access": 98.8,
+    "web_access": 98.76,
     "planning_data": 0.0
    },
    "spend": {
@@ -11530,6 +11832,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 39,
+    "url": "https://index.silktide.com/website/hartlepool-borough-council"
    },
    "fly": {
     "actions": [
@@ -11739,7 +12046,7 @@
     "relief": 41.0,
     "ta_long": 63.0,
     "ta_rate": 12.6,
-    "web_access": 91.5,
+    "web_access": 91.46,
     "planning_data": 0.0
    },
    "spend": {
@@ -11770,6 +12077,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 211,
+    "url": "https://index.silktide.com/website/london-borough-of-havering-council"
    },
    "fly": {
     "actions": [
@@ -11971,7 +12283,7 @@
     "relief": 14.9,
     "ta_long": 13.6,
     "ta_rate": 2.2,
-    "web_access": 88.0,
+    "web_access": 87.99,
     "planning_data": 0.0
    },
    "spend": {
@@ -12002,6 +12314,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 254,
+    "url": "https://index.silktide.com/website/herefordshire-council"
    },
    "fly": {
     "actions": [
@@ -12174,7 +12491,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 99.2,
+    "web_access": 99.22,
     "attendance": 90.1,
     "bins_satisfied": 87.0,
     "care_graded": 82.9,
@@ -12185,7 +12502,7 @@
     "housing_quality": 61.6,
     "literacy": 69.0,
     "numeracy": 74.5,
-    "recycling": 42.5,
+    "recycling": 45.8,
     "repair_days": 8.0,
     "street_clean": 95.3,
     "streets_satisfied": 62.0,
@@ -12206,6 +12523,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 26,
+    "url": "https://index.silktide.com/website/highland-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -12233,7 +12555,8 @@
      "2021-22": 37.4,
      "2022-23": 37.2,
      "2023-24": 36.0,
-     "2024-25": 42.5
+     "2024-25": 42.5,
+     "2025-26": 45.8
     },
     "ta_days": {
      "2021-22": 346.0,
@@ -12291,7 +12614,7 @@
     "relief": 43.8,
     "ta_long": 42.9,
     "ta_rate": 13.5,
-    "web_access": 96.7,
+    "web_access": 96.69,
     "planning_data": 75.0
    },
    "spend": {
@@ -12317,6 +12640,7 @@
      "Protected trees"
     ]
    },
+   "silktide": null,
    "fly": {
     "actions": [
      [
@@ -12525,7 +12849,7 @@
     "relief": 18.1,
     "ta_long": 14.1,
     "ta_rate": 4.8,
-    "web_access": 86.7,
+    "web_access": 86.71,
     "planning_data": 50.0
    },
    "spend": {
@@ -12552,6 +12876,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 263,
+    "url": "https://index.silktide.com/website/london-borough-of-hounslow-council"
    },
    "fly": {
     "actions": [
@@ -12721,7 +13050,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 93.8,
+    "web_access": 93.78,
     "attendance": 91.6,
     "bins_satisfied": 88.3,
     "care_graded": 80.2,
@@ -12731,7 +13060,7 @@
     "destinations": 96.4,
     "literacy": 77.3,
     "numeracy": 82.3,
-    "recycling": 50.3,
+    "recycling": 53.1,
     "street_clean": 89.8,
     "streets_satisfied": 72.3,
     "om_received": 21.6,
@@ -12751,6 +13080,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 163,
+    "url": "https://index.silktide.com/website/inverclyde-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -12778,7 +13112,8 @@
      "2021-22": 48.5,
      "2022-23": 46.8,
      "2023-24": 46.9,
-     "2024-25": 50.3
+     "2024-25": 50.3,
+     "2025-26": 53.1
     },
     "ta_days": {
      "2021-22": 143.0,
@@ -12832,7 +13167,7 @@
     "relief": 29.0,
     "ta_long": 48.3,
     "ta_rate": 3.8,
-    "web_access": 96.9,
+    "web_access": 96.92,
     "planning_data": 0.0
    },
    "spend": {
@@ -12863,6 +13198,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 81,
+    "url": "https://index.silktide.com/website/isle-of-wight-council"
    },
    "fly": {
     "actions": [
@@ -13061,7 +13401,7 @@
     "relief": 33.1,
     "ta_long": 41.1,
     "ta_rate": 19.7,
-    "web_access": 91.4,
+    "web_access": 91.45,
     "planning_data": 0.0
    },
    "spend": {
@@ -13092,6 +13432,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 212,
+    "url": "https://index.silktide.com/website/london-borough-of-islington-council"
    },
    "fly": {
     "actions": [
@@ -13301,7 +13646,7 @@
     "relief": 64.5,
     "ta_long": 82.0,
     "ta_rate": 25.4,
-    "web_access": 91.6,
+    "web_access": 91.63,
     "planning_data": 87.5
    },
    "spend": {
@@ -13325,6 +13670,11 @@
     "missing": [
      "Conservation area documents"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 209,
+    "url": "https://index.silktide.com/website/royal-borough-of-kensington-chelsea-council"
    },
    "fly": {
     "actions": [
@@ -13522,7 +13872,7 @@
     "relief": 31.1,
     "ta_long": 0.8,
     "ta_rate": 1.9,
-    "web_access": 98.1,
+    "web_access": 98.06,
     "planning_data": 37.5
    },
    "spend": {
@@ -13550,6 +13900,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 60,
+    "url": "https://index.silktide.com/website/hull-city-council"
    },
    "fly": {
     "actions": [
@@ -13759,7 +14114,7 @@
     "relief": 18.7,
     "ta_long": 72.3,
     "ta_rate": 12.4,
-    "web_access": 83.6,
+    "web_access": 83.62,
     "planning_data": 75.0
    },
    "spend": {
@@ -13784,6 +14139,11 @@
      "Conservation area documents",
      "Tree preservation orders"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 291,
+    "url": "https://index.silktide.com/website/royal-borough-of-kingston-upon-thames-council"
    },
    "fly": {
     "actions": [
@@ -13987,7 +14347,7 @@
     "relief": 32.0,
     "ta_long": 21.6,
     "ta_rate": 1.9,
-    "web_access": 91.5,
+    "web_access": 91.54,
     "planning_data": 0.0
    },
    "spend": {
@@ -14018,6 +14378,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 210,
+    "url": "https://index.silktide.com/website/kirklees-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -14220,7 +14585,7 @@
     "relief": 26.9,
     "ta_long": 0.0,
     "ta_rate": 1.4,
-    "web_access": 80.8,
+    "web_access": 80.79,
     "planning_data": 37.5
    },
    "spend": {
@@ -14248,6 +14613,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 319,
+    "url": "https://index.silktide.com/website/knowsley-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -14457,7 +14827,7 @@
     "relief": 31.6,
     "ta_long": 73.1,
     "ta_rate": 30.9,
-    "web_access": 66.7,
+    "web_access": 66.68,
     "planning_data": 75.0
    },
    "spend": {
@@ -14482,6 +14852,11 @@
      "Conservation area documents",
      "Tree preservation zones"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 372,
+    "url": "https://index.silktide.com/website/lambeth-council"
    },
    "fly": {
     "actions": [
@@ -14691,7 +15066,7 @@
     "relief": 22.8,
     "ta_long": 0.2,
     "ta_rate": 2.1,
-    "web_access": 84.0,
+    "web_access": 83.95,
     "planning_data": 87.5
    },
    "spend": {
@@ -14715,6 +15090,11 @@
     "missing": [
      "Conservation area documents"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 288,
+    "url": "https://index.silktide.com/website/leeds-city-council"
    },
    "fly": {
     "actions": [
@@ -14926,7 +15306,7 @@
     "relief": 15.7,
     "ta_long": 3.7,
     "ta_rate": 8.6,
-    "web_access": 97.7,
+    "web_access": 97.72,
     "planning_data": 100.0
    },
    "spend": {
@@ -14948,6 +15328,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 65,
+    "url": "https://index.silktide.com/website/leicester-city-council"
    },
    "fly": {
     "actions": [
@@ -15155,7 +15540,7 @@
     "relief": 41.2,
     "ta_long": 67.6,
     "ta_rate": 18.4,
-    "web_access": 92.7,
+    "web_access": 92.68,
     "planning_data": 62.5
    },
    "spend": {
@@ -15181,6 +15566,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 192,
+    "url": "https://index.silktide.com/website/london-borough-of-lewisham-council"
    },
    "fly": {
     "actions": [
@@ -15380,7 +15770,7 @@
     "fly_rate": 40.0,
     "ta_long": 4.1,
     "ta_rate": 8.4,
-    "web_access": 99.0,
+    "web_access": 98.96,
     "planning_data": 75.0
    },
    "spend": {
@@ -15405,6 +15795,11 @@
      "Conservation area documents",
      "Article 4 directions"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 32,
+    "url": "https://index.silktide.com/website/liverpool-city-council"
    },
    "fly": {
     "actions": [
@@ -15605,7 +16000,7 @@
     "relief": 51.7,
     "ta_long": 65.2,
     "ta_rate": 11.0,
-    "web_access": 73.1,
+    "web_access": 73.13,
     "planning_data": 50.0
    },
    "spend": {
@@ -15632,6 +16027,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 356,
+    "url": "https://index.silktide.com/website/luton-borough-council"
    },
    "fly": {
     "actions": [
@@ -15841,7 +16241,7 @@
     "relief": 14.8,
     "ta_long": 52.6,
     "ta_rate": 11.9,
-    "web_access": 95.2,
+    "web_access": 95.23,
     "planning_data": 0.0
    },
    "spend": {
@@ -15872,6 +16272,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 132,
+    "url": "https://index.silktide.com/website/manchester-city-council"
    },
    "fly": {
     "actions": [
@@ -16076,7 +16481,7 @@
     "relief": 37.0,
     "ta_long": 14.6,
     "ta_rate": 5.4,
-    "web_access": 92.8,
+    "web_access": 92.76,
     "planning_data": 62.5
    },
    "spend": {
@@ -16102,6 +16507,11 @@
      "Article 4 directions",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 188,
+    "url": "https://index.silktide.com/website/medway-council"
    },
    "fly": {
     "actions": [
@@ -16299,7 +16709,7 @@
     "relief": 32.9,
     "ta_long": 44.5,
     "ta_rate": 8.6,
-    "web_access": 99.0,
+    "web_access": 98.96,
     "planning_data": 0.0
    },
    "spend": {
@@ -16330,6 +16740,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 31,
+    "url": "https://index.silktide.com/website/london-borough-of-merton-council"
    },
    "fly": {
     "actions": [
@@ -16531,7 +16946,7 @@
     "relief": 61.7,
     "ta_long": 0.0,
     "ta_rate": 1.5,
-    "web_access": 95.3,
+    "web_access": 95.29,
     "planning_data": 25.0
    },
    "spend": {
@@ -16560,6 +16975,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 129,
+    "url": "https://index.silktide.com/website/middlesbrough-borough-council"
    },
    "fly": {
     "actions": [
@@ -16737,7 +17157,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 96.1,
+    "web_access": 96.09,
     "attendance": 91.5,
     "bins_satisfied": 88.0,
     "care_graded": 78.5,
@@ -16748,7 +17168,7 @@
     "housing_quality": 94.1,
     "literacy": 76.6,
     "numeracy": 80.2,
-    "recycling": 48.1,
+    "recycling": 45.9,
     "repair_days": 36.5,
     "street_clean": 91.7,
     "streets_satisfied": 63.7,
@@ -16769,6 +17189,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 104,
+    "url": "https://index.silktide.com/website/midlothian-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -16796,7 +17221,8 @@
      "2021-22": 47.4,
      "2022-23": 47.2,
      "2023-24": 47.9,
-     "2024-25": 48.1
+     "2024-25": 48.1,
+     "2025-26": 45.9
     },
     "ta_days": {
      "2021-22": 510.0,
@@ -16857,7 +17283,7 @@
     "relief": 16.0,
     "ta_long": 45.8,
     "ta_rate": 8.4,
-    "web_access": 87.4,
+    "web_access": 87.42,
     "planning_data": 100.0
    },
    "spend": {
@@ -16879,6 +17305,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 259,
+    "url": "https://index.silktide.com/website/milton-keynes-council"
    },
    "fly": {
     "actions": [
@@ -17054,7 +17485,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 59.6,
+    "web_access": 59.62,
     "attendance": 91.2,
     "bins_satisfied": 75.3,
     "care_graded": 86.2,
@@ -17065,7 +17496,7 @@
     "housing_quality": 63.3,
     "literacy": 72.7,
     "numeracy": 76.9,
-    "recycling": 56.7,
+    "recycling": 50.8,
     "repair_days": 10.0,
     "streets_satisfied": 55.0,
     "om_received": 41.2,
@@ -17085,6 +17516,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 380,
+    "url": "https://index.silktide.com/website/moray-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -17112,7 +17548,8 @@
      "2021-22": 52.2,
      "2022-23": 57.8,
      "2023-24": 56.2,
-     "2024-25": 56.7
+     "2024-25": 56.7,
+     "2025-26": 50.8
     },
     "ta_days": {
      "2021-22": 136.0,
@@ -17138,7 +17575,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 95.4,
+    "web_access": 95.36,
     "attendance": 91.9,
     "bins_satisfied": 79.3,
     "care_graded": 85.7,
@@ -17148,7 +17585,7 @@
     "destinations": 96.1,
     "literacy": 80.1,
     "numeracy": 81.0,
-    "recycling": 40.3,
+    "recycling": 35.4,
     "street_clean": 95.3,
     "streets_satisfied": 52.3,
     "om_received": 19.4,
@@ -17168,6 +17605,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 125,
+    "url": "https://index.silktide.com/website/comhairle-nan-eilean-siar-western-isles-council-"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -17195,7 +17637,8 @@
      "2021-22": 33.5,
      "2022-23": 31.8,
      "2023-24": 35.1,
-     "2024-25": 40.3
+     "2024-25": 40.3,
+     "2025-26": 35.4
     },
     "ta_days": {
      "2021-22": 309.0,
@@ -17253,7 +17696,7 @@
     "relief": 31.5,
     "ta_long": 3.6,
     "ta_rate": 1.6,
-    "web_access": 80.2,
+    "web_access": 80.18,
     "planning_data": 75.0
    },
    "spend": {
@@ -17278,6 +17721,11 @@
      "Conservation area documents",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 321,
+    "url": "https://index.silktide.com/website/newcastle-upon-tyne-city-council"
    },
    "fly": {
     "actions": [
@@ -17487,7 +17935,7 @@
     "relief": 38.5,
     "ta_long": 65.0,
     "ta_rate": 59.8,
-    "web_access": 97.0,
+    "web_access": 97.04,
     "planning_data": 0.0
    },
    "spend": {
@@ -17518,6 +17966,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 77,
+    "url": "https://index.silktide.com/website/london-borough-of-newham-council"
    },
    "fly": {
     "actions": [
@@ -17695,7 +18148,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 75.1,
+    "web_access": 75.06,
     "attendance": 89.6,
     "bins_satisfied": 85.0,
     "care_graded": 87.8,
@@ -17706,7 +18159,7 @@
     "housing_quality": 96.3,
     "literacy": 68.2,
     "numeracy": 73.9,
-    "recycling": 53.0,
+    "recycling": 52.9,
     "repair_days": 8.5,
     "street_clean": 89.6,
     "streets_satisfied": 67.0,
@@ -17727,6 +18180,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 348,
+    "url": "https://index.silktide.com/website/north-ayrshire-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -17754,7 +18212,8 @@
      "2021-22": 56.9,
      "2022-23": 55.3,
      "2023-24": 56.1,
-     "2024-25": 53.0
+     "2024-25": 53.0,
+     "2025-26": 52.9
     },
     "ta_days": {
      "2021-22": 118.0,
@@ -17837,6 +18296,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 306,
+    "url": "https://index.silktide.com/website/north-east-lincolnshire-council"
    },
    "fly": {
     "actions": [
@@ -18010,7 +18474,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 91.9,
+    "web_access": 91.89,
     "attendance": 89.9,
     "bins_satisfied": 76.3,
     "care_graded": 87.6,
@@ -18021,7 +18485,7 @@
     "housing_quality": 91.2,
     "literacy": 74.7,
     "numeracy": 80.4,
-    "recycling": 47.9,
+    "recycling": 46.0,
     "repair_days": 6.8,
     "street_clean": 87.9,
     "streets_satisfied": 52.7,
@@ -18042,6 +18506,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 206,
+    "url": "https://index.silktide.com/website/north-lanarkshire-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -18069,7 +18538,8 @@
      "2021-22": 43.4,
      "2022-23": 43.0,
      "2023-24": 46.7,
-     "2024-25": 47.9
+     "2024-25": 47.9,
+     "2025-26": 46.0
     },
     "ta_days": {
      "2021-22": 130.0,
@@ -18144,6 +18614,7 @@
     "brownfield": true,
     "missing": []
    },
+   "silktide": null,
    "fly": {
     "actions": [
      [
@@ -18350,7 +18821,7 @@
     "relief": 48.2,
     "ta_long": 17.6,
     "ta_rate": 1.6,
-    "web_access": 99.8,
+    "web_access": 99.79,
     "planning_data": 0.0
    },
    "spend": {
@@ -18381,6 +18852,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 9,
+    "url": "https://index.silktide.com/website/north-northamptonshire"
    },
    "fly": {
     "actions": [
@@ -18558,7 +19034,7 @@
     "relief": 54.9,
     "ta_long": 12.5,
     "ta_rate": 0.8,
-    "web_access": 93.5,
+    "web_access": 93.52,
     "planning_data": 87.5
    },
    "spend": {
@@ -18582,6 +19058,11 @@
     "missing": [
      "Conservation area documents"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 166,
+    "url": "https://index.silktide.com/website/north-somerset-council"
    },
    "fly": {
     "actions": [
@@ -18782,7 +19263,7 @@
     "relief": 26.1,
     "ta_long": 25.0,
     "ta_rate": 0.7,
-    "web_access": 81.8,
+    "web_access": 81.79,
     "planning_data": 100.0
    },
    "spend": {
@@ -18804,6 +19285,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 309,
+    "url": "https://index.silktide.com/website/north-tyneside-council"
    },
    "fly": {
     "actions": [
@@ -19009,7 +19495,7 @@
     "relief": 34.9,
     "ta_long": 3.7,
     "ta_rate": 0.9,
-    "web_access": 96.6,
+    "web_access": 96.62,
     "planning_data": 0.0
    },
    "spend": {
@@ -19040,6 +19526,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 88,
+    "url": "https://index.silktide.com/website/north-yorkshire-county-council"
    },
    "fly": {
     "actions": [
@@ -19208,7 +19699,7 @@
     "relief": 39.5,
     "ta_long": 0.0,
     "ta_rate": 0.5,
-    "web_access": 88.9,
+    "web_access": 88.86,
     "planning_data": 100.0
    },
    "spend": {
@@ -19230,6 +19721,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 239,
+    "url": "https://index.silktide.com/website/northumberland-county-council"
    },
    "fly": {
     "actions": [
@@ -19431,7 +19927,7 @@
     "relief": 41.1,
     "ta_long": 10.8,
     "ta_rate": 5.3,
-    "web_access": 97.2,
+    "web_access": 97.17,
     "planning_data": 12.5
    },
    "spend": {
@@ -19461,6 +19957,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 75,
+    "url": "https://index.silktide.com/website/nottingham-city-council"
    },
    "fly": {
     "actions": [
@@ -19669,6 +20170,11 @@
      "Protected trees"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 133,
+    "url": "https://index.silktide.com/website/oldham-metropolitan-borough-council"
+   },
    "fly": {
     "actions": [
      [
@@ -19845,7 +20351,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 90.5,
+    "web_access": 90.53,
     "attendance": 91.9,
     "bins_satisfied": 78.7,
     "care_graded": 71.1,
@@ -19856,7 +20362,7 @@
     "housing_quality": 93.9,
     "literacy": 81.2,
     "numeracy": 87.0,
-    "recycling": 21.1,
+    "recycling": 18.2,
     "repair_days": 14.6,
     "street_clean": 97.4,
     "streets_satisfied": 65.7,
@@ -19877,6 +20383,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 222,
+    "url": "https://index.silktide.com/website/orkney-islands-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -19904,7 +20415,8 @@
      "2021-22": 24.2,
      "2022-23": 23.3,
      "2023-24": 21.4,
-     "2024-25": 21.1
+     "2024-25": 21.1,
+     "2025-26": 18.2
     },
     "ta_days": {
      "2021-22": 202.0,
@@ -19930,7 +20442,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 92.8,
+    "web_access": 92.76,
     "attendance": 90.8,
     "bins_satisfied": 81.0,
     "care_graded": 81.4,
@@ -19941,7 +20453,7 @@
     "housing_quality": 79.7,
     "literacy": 75.0,
     "numeracy": 81.2,
-    "recycling": 50.9,
+    "recycling": 48.8,
     "repair_days": 8.3,
     "street_clean": 88.1,
     "streets_satisfied": 67.7,
@@ -19962,6 +20474,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 189,
+    "url": "https://index.silktide.com/website/perth-kinross-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -19989,7 +20506,8 @@
      "2021-22": 50.2,
      "2022-23": 49.3,
      "2023-24": 51.7,
-     "2024-25": 50.9
+     "2024-25": 50.9,
+     "2025-26": 48.8
     },
     "ta_days": {
      "2021-22": 60.0,
@@ -20042,7 +20560,7 @@
     "relief": 25.3,
     "ta_long": 16.8,
     "ta_rate": 3.7,
-    "web_access": 98.1,
+    "web_access": 98.09,
     "planning_data": 100.0
    },
    "spend": {
@@ -20064,6 +20582,11 @@
    "planning": {
     "brownfield": false,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 58,
+    "url": "https://index.silktide.com/website/peterborough-city-council"
    },
    "fly": {
     "actions": [
@@ -20269,7 +20792,7 @@
     "relief": 40.8,
     "ta_long": 7.9,
     "ta_rate": 2.9,
-    "web_access": 96.8,
+    "web_access": 96.76,
     "planning_data": 100.0
    },
    "spend": {
@@ -20291,6 +20814,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 83,
+    "url": "https://index.silktide.com/website/plymouth-city-council"
    },
    "fly": {
     "actions": [
@@ -20519,6 +21047,11 @@
      "Protected trees"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 187,
+    "url": "https://index.silktide.com/website/portsmouth-city-council"
+   },
    "fly": {
     "actions": [
      [
@@ -20730,7 +21263,7 @@
     "relief": 34.9,
     "ta_long": 18.8,
     "ta_rate": 6.2,
-    "web_access": 90.1,
+    "web_access": 90.15,
     "planning_data": 0.0
    },
    "spend": {
@@ -20761,6 +21294,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 226,
+    "url": "https://index.silktide.com/website/reading-borough-council"
    },
    "fly": {
     "actions": [
@@ -20970,7 +21508,7 @@
     "relief": 17.8,
     "ta_long": 64.8,
     "ta_rate": 26.1,
-    "web_access": 88.8,
+    "web_access": 88.75,
     "planning_data": 0.0
    },
    "spend": {
@@ -21001,6 +21539,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 240,
+    "url": "https://index.silktide.com/website/london-borough-of-redbridge-council"
    },
    "fly": {
     "actions": [
@@ -21196,7 +21739,7 @@
     "fly_rate": 38.1,
     "prevention": 90.0,
     "relief": 81.5,
-    "web_access": 82.9,
+    "web_access": 82.86,
     "planning_data": 0.0
    },
    "spend": {
@@ -21227,6 +21770,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 297,
+    "url": "https://index.silktide.com/website/redcar-and-cleveland-council"
    },
    "fly": {
     "actions": [
@@ -21404,7 +21952,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 92.3,
+    "web_access": 92.31,
     "attendance": 91.0,
     "bins_satisfied": 75.3,
     "care_graded": 78.9,
@@ -21415,7 +21963,7 @@
     "housing_quality": 80.9,
     "literacy": 77.4,
     "numeracy": 84.9,
-    "recycling": 42.8,
+    "recycling": 42.7,
     "repair_days": 5.5,
     "street_clean": 93.5,
     "streets_satisfied": 48.7,
@@ -21436,6 +21984,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 198,
+    "url": "https://index.silktide.com/website/renfrewshire-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -21463,7 +22016,8 @@
      "2021-22": 51.7,
      "2022-23": 53.7,
      "2023-24": 44.0,
-     "2024-25": 42.8
+     "2024-25": 42.8,
+     "2025-26": 42.7
     },
     "ta_days": {
      "2021-22": 115.0,
@@ -21514,7 +22068,7 @@
     "relief": 20.0,
     "ta_long": 31.8,
     "ta_rate": 8.3,
-    "web_access": 91.7,
+    "web_access": 91.74,
     "planning_data": 0.0
    },
    "spend": {
@@ -21545,6 +22099,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 207,
+    "url": "https://index.silktide.com/website/london-borough-of-richmond-upon-thames-council"
    },
    "fly": {
     "actions": [
@@ -21741,7 +22300,7 @@
     "relief": 27.3,
     "ta_long": 4.7,
     "ta_rate": 3.3,
-    "web_access": 99.3,
+    "web_access": 99.27,
     "planning_data": 62.5
    },
    "spend": {
@@ -21767,6 +22326,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 25,
+    "url": "https://index.silktide.com/website/rochdale-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -21974,7 +22538,7 @@
     "relief": 45.3,
     "ta_long": 0.0,
     "ta_rate": 1.5,
-    "web_access": 84.8,
+    "web_access": 84.79,
     "planning_data": 0.0
    },
    "spend": {
@@ -22005,6 +22569,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 280,
+    "url": "https://index.silktide.com/website/rotherham-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -22207,7 +22776,7 @@
     "prevention": 33.3,
     "relief": 37.5,
     "ta_rate": 1.4,
-    "web_access": 85.2,
+    "web_access": 85.24,
     "planning_data": 0.0
    },
    "spend": {
@@ -22238,6 +22807,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 275,
+    "url": "https://index.silktide.com/website/rutland-county-council"
    },
    "fly": {
     "actions": [
@@ -22436,7 +23010,7 @@
     "relief": 34.2,
     "ta_long": 19.8,
     "ta_rate": 6.7,
-    "web_access": 92.4,
+    "web_access": 92.44,
     "planning_data": 100.0
    },
    "spend": {
@@ -22458,6 +23032,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 196,
+    "url": "https://index.silktide.com/website/salford-city-council"
    },
    "fly": {
     "actions": [
@@ -22663,7 +23242,7 @@
     "relief": 25.7,
     "ta_long": 1.0,
     "ta_rate": 1.7,
-    "web_access": 94.8,
+    "web_access": 94.82,
     "planning_data": 100.0
    },
    "spend": {},
@@ -22674,6 +23253,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 141,
+    "url": "https://index.silktide.com/website/sandwell-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -22851,7 +23435,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 99.2,
+    "web_access": 99.18,
     "attendance": 92.1,
     "bins_satisfied": 86.7,
     "care_graded": 87.0,
@@ -22861,7 +23445,7 @@
     "destinations": 97.0,
     "literacy": 73.0,
     "numeracy": 79.8,
-    "recycling": 53.2,
+    "recycling": 44.6,
     "street_clean": 97.2,
     "streets_satisfied": 65.7,
     "om_received": 37.7,
@@ -22881,6 +23465,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 27,
+    "url": "https://index.silktide.com/website/scottish-borders-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -22908,7 +23497,8 @@
      "2021-22": 55.2,
      "2022-23": 57.3,
      "2023-24": 57.9,
-     "2024-25": 53.2
+     "2024-25": 53.2,
+     "2025-26": 44.6
     },
     "ta_days": {
      "2021-22": 162.0,
@@ -22959,7 +23549,7 @@
     "relief": 53.5,
     "ta_long": 1.8,
     "ta_rate": 1.6,
-    "web_access": 72.1,
+    "web_access": 72.15,
     "planning_data": 100.0
    },
    "spend": {
@@ -22981,6 +23571,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 360,
+    "url": "https://index.silktide.com/website/sefton-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -23189,7 +23784,7 @@
     "relief": 26.1,
     "ta_long": 4.2,
     "ta_rate": 2.8,
-    "web_access": 98.9,
+    "web_access": 98.89,
     "planning_data": 12.5
    },
    "spend": {
@@ -23219,6 +23814,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 34,
+    "url": "https://index.silktide.com/website/sheffield-city-council"
    },
    "fly": {
     "actions": [
@@ -23396,7 +23996,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 95.6,
+    "web_access": 95.59,
     "attendance": 91.5,
     "bins_satisfied": 90.3,
     "care_graded": 76.6,
@@ -23407,7 +24007,7 @@
     "housing_quality": 91.1,
     "literacy": 70.5,
     "numeracy": 76.8,
-    "recycling": 20.5,
+    "recycling": 19.6,
     "repair_days": 7.9,
     "street_clean": 99.6,
     "streets_satisfied": 75.7,
@@ -23428,6 +24028,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 121,
+    "url": "https://index.silktide.com/website/shetland-islands-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -23455,7 +24060,8 @@
      "2021-22": 18.1,
      "2022-23": 20.7,
      "2023-24": 20.7,
-     "2024-25": 20.5
+     "2024-25": 20.5,
+     "2025-26": 19.6
     },
     "ta_days": {
      "2021-22": 399.0,
@@ -23516,7 +24122,7 @@
     "relief": 19.7,
     "ta_long": 5.1,
     "ta_rate": 1.7,
-    "web_access": 73.6,
+    "web_access": 73.56,
     "planning_data": 0.0
    },
    "spend": {
@@ -23547,6 +24153,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 355,
+    "url": "https://index.silktide.com/website/shropshire-council"
    },
    "fly": {
     "actions": [
@@ -23751,7 +24362,7 @@
     "fly_enforce": 15.9,
     "fly_fpn": 2.3,
     "fly_rate": 16.7,
-    "web_access": 99.7,
+    "web_access": 99.69,
     "planning_data": 0.0
    },
    "spend": {
@@ -23782,6 +24393,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 12,
+    "url": "https://index.silktide.com/website/slough-borough-council"
    },
    "fly": {
     "actions": [
@@ -24023,6 +24639,11 @@
      "Protected trees"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 176,
+    "url": "https://index.silktide.com/website/solihull-metropolitan-borough-council"
+   },
    "fly": {
     "actions": [
      [
@@ -24225,7 +24846,7 @@
     "relief": 22.3,
     "ta_long": 7.7,
     "ta_rate": 1.2,
-    "web_access": 96.4,
+    "web_access": 96.35,
     "planning_data": 0.0
    },
    "spend": {
@@ -24256,6 +24877,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 99,
+    "url": "https://index.silktide.com/website/somerset-county-council"
    },
    "fly": {
     "actions": [
@@ -24387,7 +25013,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 94.8,
+    "web_access": 94.77,
     "attendance": 91.2,
     "bins_satisfied": 85.3,
     "care_graded": 84.0,
@@ -24398,7 +25024,7 @@
     "housing_quality": 92.7,
     "literacy": 79.1,
     "numeracy": 84.9,
-    "recycling": 53.3,
+    "recycling": 55.1,
     "repair_days": 7.8,
     "street_clean": 90.8,
     "streets_satisfied": 46.3,
@@ -24419,6 +25045,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 143,
+    "url": "https://index.silktide.com/website/south-ayrshire-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -24446,7 +25077,8 @@
      "2021-22": 56.0,
      "2022-23": 54.3,
      "2023-24": 54.7,
-     "2024-25": 53.3
+     "2024-25": 53.3,
+     "2025-26": 55.1
     },
     "ta_days": {
      "2021-22": 165.0,
@@ -24500,7 +25132,7 @@
     "relief": 44.8,
     "ta_long": 4.2,
     "ta_rate": 2.0,
-    "web_access": 81.9,
+    "web_access": 81.89,
     "planning_data": 100.0
    },
    "spend": {
@@ -24522,6 +25154,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 307,
+    "url": "https://index.silktide.com/website/south-gloucestershire-district-council"
    },
    "fly": {
     "actions": [
@@ -24703,7 +25340,7 @@
     "housing_quality": 78.1,
     "literacy": 73.2,
     "numeracy": 80.2,
-    "recycling": 40.7,
+    "recycling": 42.1,
     "repair_days": 12.6,
     "street_clean": 94.0,
     "streets_satisfied": 57.3,
@@ -24724,6 +25361,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 93,
+    "url": "https://index.silktide.com/website/south-lanarkshire-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -24751,7 +25393,8 @@
      "2021-22": 41.0,
      "2022-23": 41.1,
      "2023-24": 41.0,
-     "2024-25": 40.7
+     "2024-25": 40.7,
+     "2025-26": 42.1
     },
     "ta_days": {
      "2021-22": 186.0,
@@ -24809,7 +25452,7 @@
     "relief": 36.4,
     "ta_long": 18.2,
     "ta_rate": 0.6,
-    "web_access": 64.9,
+    "web_access": 64.89,
     "planning_data": 0.0
    },
    "spend": {
@@ -24840,6 +25483,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 375,
+    "url": "https://index.silktide.com/website/south-tyneside-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -25052,7 +25700,7 @@
     "relief": 40.0,
     "ta_long": 27.5,
     "ta_rate": 3.8,
-    "web_access": 86.4,
+    "web_access": 86.42,
     "planning_data": 100.0
    },
    "spend": {
@@ -25074,6 +25722,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 267,
+    "url": "https://index.silktide.com/website/southampton-city-council"
    },
    "fly": {
     "actions": [
@@ -25286,7 +25939,7 @@
     "relief": 30.0,
     "ta_long": 26.4,
     "ta_rate": 5.3,
-    "web_access": 99.1,
+    "web_access": 99.07,
     "planning_data": 12.5
    },
    "spend": {
@@ -25316,6 +25969,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 30,
+    "url": "https://index.silktide.com/website/southend-on-sea-council"
    },
    "fly": {
     "actions": [
@@ -25550,6 +26208,11 @@
      "Tree preservation orders"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 357,
+    "url": "https://index.silktide.com/website/london-borough-of-southwark-council"
+   },
    "fly": {
     "actions": [
      [
@@ -25745,7 +26408,7 @@
     "relief": 52.3,
     "ta_long": 0.0,
     "ta_rate": 0.5,
-    "web_access": 84.6,
+    "web_access": 84.64,
     "planning_data": 0.0
    },
    "spend": {
@@ -25776,6 +26439,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 283,
+    "url": "https://index.silktide.com/website/st-helens-borough-council"
    },
    "fly": {
     "actions": [
@@ -25953,7 +26621,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 85.9,
+    "web_access": 85.88,
     "attendance": 92.4,
     "bins_satisfied": 64.0,
     "care_graded": 87.5,
@@ -25964,7 +26632,7 @@
     "housing_quality": 81.0,
     "literacy": 76.7,
     "numeracy": 81.3,
-    "recycling": 53.2,
+    "recycling": 52.6,
     "repair_days": 6.7,
     "street_clean": 86.4,
     "streets_satisfied": 65.3,
@@ -25985,6 +26653,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 270,
+    "url": "https://index.silktide.com/website/stirling-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -26012,7 +26685,8 @@
      "2021-22": 50.9,
      "2022-23": 51.4,
      "2023-24": 51.6,
-     "2024-25": 53.2
+     "2024-25": 53.2,
+     "2025-26": 52.6
     },
     "ta_days": {
      "2021-22": 292.0,
@@ -26070,7 +26744,7 @@
     "relief": 29.5,
     "ta_long": 0.8,
     "ta_rate": 1.6,
-    "web_access": 93.9,
+    "web_access": 93.95,
     "planning_data": 100.0
    },
    "spend": {
@@ -26092,6 +26766,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 157,
+    "url": "https://index.silktide.com/website/stockport-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -26290,7 +26969,7 @@
     "prevention": 74.2,
     "relief": 67.3,
     "ta_rate": 0.6,
-    "web_access": 81.2,
+    "web_access": 81.21,
     "planning_data": 0.0
    },
    "spend": {
@@ -26321,6 +27000,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 313,
+    "url": "https://index.silktide.com/website/stockton-on-tees-borough-council"
    },
    "fly": {
     "actions": [
@@ -26528,7 +27212,7 @@
     "relief": 64.3,
     "ta_long": 0.0,
     "ta_rate": 0.7,
-    "web_access": 78.7,
+    "web_access": 78.67,
     "planning_data": 100.0
    },
    "spend": {
@@ -26550,6 +27234,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 330,
+    "url": "https://index.silktide.com/website/stoke-on-trent-city-council"
    },
    "fly": {
     "actions": [
@@ -26750,7 +27439,7 @@
     "relief": 32.4,
     "ta_long": 6.7,
     "ta_rate": 1.3,
-    "web_access": 92.1,
+    "web_access": 92.14,
     "planning_data": 0.0
    },
    "spend": {
@@ -26781,6 +27470,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 203,
+    "url": "https://index.silktide.com/website/sunderland-city-council"
    },
    "fly": {
     "actions": [
@@ -27022,6 +27716,11 @@
      "Protected trees"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 170,
+    "url": "https://index.silktide.com/website/london-borough-of-sutton-council"
+   },
    "fly": {
     "actions": [
      [
@@ -27224,7 +27923,7 @@
     "relief": 38.5,
     "ta_long": 17.1,
     "ta_rate": 3.5,
-    "web_access": 93.9,
+    "web_access": 93.88,
     "planning_data": 0.0
    },
    "spend": {
@@ -27255,6 +27954,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 160,
+    "url": "https://index.silktide.com/website/swindon-borough-council"
    },
    "fly": {
     "actions": [
@@ -27453,7 +28157,7 @@
     "relief": 27.1,
     "ta_long": 1.4,
     "ta_rate": 3.8,
-    "web_access": 84.5,
+    "web_access": 84.45,
     "planning_data": 0.0
    },
    "spend": {
@@ -27484,6 +28188,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 285,
+    "url": "https://index.silktide.com/website/tameside-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -27680,7 +28389,7 @@
     "relief": 55.9,
     "ta_long": 8.8,
     "ta_rate": 0.8,
-    "web_access": 96.2,
+    "web_access": 96.16,
     "planning_data": 0.0
    },
    "spend": {
@@ -27711,6 +28420,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 100,
+    "url": "https://index.silktide.com/website/telford-wrekin-council"
    },
    "fly": {
     "actions": [
@@ -27923,7 +28637,7 @@
     "relief": 32.5,
     "ta_long": 27.2,
     "ta_rate": 9.4,
-    "web_access": 74.2,
+    "web_access": 74.25,
     "planning_data": 0.0
    },
    "spend": {
@@ -27954,6 +28668,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 353,
+    "url": "https://index.silktide.com/website/thurrock-council"
    },
    "fly": {
     "actions": [
@@ -28147,7 +28866,7 @@
     "relief": 25.3,
     "ta_long": 0.0,
     "ta_rate": 2.6,
-    "web_access": 93.3,
+    "web_access": 93.27,
     "planning_data": 100.0
    },
    "spend": {
@@ -28169,6 +28888,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 173,
+    "url": "https://index.silktide.com/website/torbay-council"
    },
    "fly": {
     "actions": [
@@ -28378,7 +29102,7 @@
     "relief": 51.7,
     "ta_long": 69.6,
     "ta_rate": 22.0,
-    "web_access": 91.6,
+    "web_access": 91.64,
     "planning_data": 100.0
    },
    "spend": {
@@ -28400,6 +29124,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 208,
+    "url": "https://index.silktide.com/website/london-borough-of-tower-hamlets-council"
    },
    "fly": {
     "actions": [
@@ -28632,6 +29361,11 @@
      "Protected trees"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 256,
+    "url": "https://index.silktide.com/website/trafford-council"
+   },
    "fly": {
     "actions": [
      [
@@ -28823,7 +29557,7 @@
     "relief": 33.5,
     "ta_long": 0.0,
     "ta_rate": 1.5,
-    "web_access": 98.4,
+    "web_access": 98.37,
     "planning_data": 0.0
    },
    "spend": {
@@ -28854,6 +29588,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 52,
+    "url": "https://index.silktide.com/website/wakefield-city-metropolitan-district-council"
    },
    "fly": {
     "actions": [
@@ -29086,6 +29825,11 @@
      "Protected trees"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 315,
+    "url": "https://index.silktide.com/website/walsall-metropolitan-borough-council"
+   },
    "fly": {
     "actions": [
      [
@@ -29294,7 +30038,7 @@
     "relief": 22.0,
     "ta_long": 42.8,
     "ta_rate": 14.5,
-    "web_access": 95.6,
+    "web_access": 95.63,
     "planning_data": 100.0
    },
    "spend": {
@@ -29316,6 +30060,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 118,
+    "url": "https://index.silktide.com/website/london-borough-of-waltham-forest-council"
    },
    "fly": {
     "actions": [
@@ -29517,7 +30266,7 @@
     "relief": 21.5,
     "ta_long": 55.7,
     "ta_rate": 30.0,
-    "web_access": 78.4,
+    "web_access": 78.37,
     "planning_data": 0.0
    },
    "spend": {
@@ -29548,6 +30297,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 331,
+    "url": "https://index.silktide.com/website/london-borough-of-wandsworth-council"
    },
    "fly": {
     "actions": [
@@ -29735,7 +30489,7 @@
     "relief": 33.0,
     "ta_long": 4.5,
     "ta_rate": 2.1,
-    "web_access": 85.2,
+    "web_access": 85.18,
     "planning_data": 0.0
    },
    "spend": {
@@ -29766,6 +30520,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 276,
+    "url": "https://index.silktide.com/website/warrington-council"
    },
    "fly": {
     "actions": [
@@ -29965,7 +30724,7 @@
     "relief": 56.9,
     "ta_long": 25.0,
     "ta_rate": 2.3,
-    "web_access": 90.6,
+    "web_access": 90.63,
     "planning_data": 62.5
    },
    "spend": {
@@ -29991,6 +30750,11 @@
      "Article 4 directions",
      "Tree preservation orders"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 221,
+    "url": "https://index.silktide.com/website/west-berkshire-council"
    },
    "fly": {
     "actions": [
@@ -30162,7 +30926,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 99.3,
+    "web_access": 99.33,
     "attendance": 90.5,
     "bins_satisfied": 86.0,
     "care_graded": 84.2,
@@ -30173,7 +30937,7 @@
     "housing_quality": 81.7,
     "literacy": 72.1,
     "numeracy": 79.0,
-    "recycling": 38.2,
+    "recycling": 40.0,
     "repair_days": 10.9,
     "street_clean": 92.5,
     "streets_satisfied": 63.3,
@@ -30194,6 +30958,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 22,
+    "url": "https://index.silktide.com/website/west-dunbartonshire-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -30221,7 +30990,8 @@
      "2021-22": 35.6,
      "2022-23": 38.8,
      "2023-24": 36.2,
-     "2024-25": 38.2
+     "2024-25": 38.2,
+     "2025-26": 40.0
     },
     "ta_days": {
      "2021-22": 189.0,
@@ -30247,7 +31017,7 @@
    },
    "funding": null,
    "values": {
-    "web_access": 92.3,
+    "web_access": 92.29,
     "attendance": 90.6,
     "bins_satisfied": 77.7,
     "care_graded": 84.9,
@@ -30258,7 +31028,7 @@
     "housing_quality": 95.8,
     "literacy": 79.1,
     "numeracy": 84.6,
-    "recycling": 49.3,
+    "recycling": 42.1,
     "repair_days": 6.6,
     "street_clean": 88.4,
     "streets_satisfied": 67.0,
@@ -30279,6 +31049,11 @@
    },
    "ofsted": null,
    "planning": null,
+   "silktide": {
+    "of": 391,
+    "rank": 199,
+    "url": "https://index.silktide.com/website/west-lothian-council"
+   },
    "fly": null,
    "bnb_families": null,
    "neighbours": [
@@ -30306,7 +31081,8 @@
      "2021-22": 41.3,
      "2022-23": 45.9,
      "2023-24": 50.8,
-     "2024-25": 49.3
+     "2024-25": 49.3,
+     "2025-26": 42.1
     },
     "ta_days": {
      "2021-22": 257.0,
@@ -30364,7 +31140,7 @@
     "relief": 42.2,
     "ta_long": 10.2,
     "ta_rate": 3.7,
-    "web_access": 99.4,
+    "web_access": 99.44,
     "planning_data": 0.0
    },
    "spend": {
@@ -30395,6 +31171,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 19,
+    "url": "https://index.silktide.com/website/west-northamptonshire"
    },
    "fly": {
     "actions": [
@@ -30597,6 +31378,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 191,
+    "url": "https://index.silktide.com/website/westminster-city-council"
    },
    "fly": {
     "actions": [
@@ -30837,6 +31623,11 @@
      "Protected trees"
     ]
    },
+   "silktide": {
+    "of": 391,
+    "rank": 120,
+    "url": "https://index.silktide.com/website/westmorland-and-furness-council"
+   },
    "fly": {
     "actions": [
      [
@@ -31007,7 +31798,7 @@
     "relief": 40.9,
     "ta_long": 0.0,
     "ta_rate": 1.7,
-    "web_access": 98.3,
+    "web_access": 98.29,
     "planning_data": 0.0
    },
    "spend": {
@@ -31038,6 +31829,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 53,
+    "url": "https://index.silktide.com/website/wigan-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -31247,7 +32043,7 @@
     "relief": 43.1,
     "ta_long": 2.0,
     "ta_rate": 0.4,
-    "web_access": 95.3,
+    "web_access": 95.32,
     "planning_data": 50.0
    },
    "spend": {
@@ -31274,6 +32070,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 128,
+    "url": "https://index.silktide.com/website/wiltshire-council"
    },
    "fly": {
     "actions": [
@@ -31473,7 +32274,7 @@
     "relief": 12.5,
     "ta_long": 20.0,
     "ta_rate": 4.0,
-    "web_access": 92.9,
+    "web_access": 92.86,
     "planning_data": 0.0
    },
    "spend": {
@@ -31504,6 +32305,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 186,
+    "url": "https://index.silktide.com/website/royal-borough-of-windsor-and-maidenhead-council"
    },
    "fly": {
     "actions": [
@@ -31703,7 +32509,7 @@
     "relief": 36.0,
     "ta_long": 0.0,
     "ta_rate": 1.3,
-    "web_access": 81.2,
+    "web_access": 81.18,
     "planning_data": 100.0
    },
    "spend": {
@@ -31725,6 +32531,11 @@
    "planning": {
     "brownfield": true,
     "missing": []
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 316,
+    "url": "https://index.silktide.com/website/wirral-metropolitan-borough-council"
    },
    "fly": {
     "actions": [
@@ -31936,7 +32747,7 @@
     "relief": 46.5,
     "ta_long": 0.0,
     "ta_rate": 1.1,
-    "web_access": 80.1,
+    "web_access": 80.12,
     "planning_data": 0.0
    },
    "spend": {
@@ -31967,6 +32778,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 322,
+    "url": "https://index.silktide.com/website/wokingham-council"
    },
    "fly": {
     "actions": [
@@ -32166,7 +32982,7 @@
     "relief": 22.4,
     "ta_long": 1.5,
     "ta_rate": 2.2,
-    "web_access": 76.2,
+    "web_access": 76.23,
     "planning_data": 0.0
    },
    "spend": {
@@ -32197,6 +33013,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 344,
+    "url": "https://index.silktide.com/website/wolverhampton-city-council"
    },
    "fly": {
     "actions": [
@@ -32393,7 +33214,7 @@
     "relief": 31.5,
     "ta_long": 0.0,
     "ta_rate": 0.7,
-    "web_access": 95.3,
+    "web_access": 95.28,
     "planning_data": 37.5
    },
    "spend": {
@@ -32421,6 +33242,11 @@
      "Tree preservation zones",
      "Protected trees"
     ]
+   },
+   "silktide": {
+    "of": 391,
+    "rank": 130,
+    "url": "https://index.silktide.com/website/city-of-york-council"
    },
    "fly": {
     "actions": [

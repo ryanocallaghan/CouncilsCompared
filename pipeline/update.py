@@ -166,6 +166,7 @@ def assemble():
             "spend": {},
             "ofsted": None,
             "planning": None,
+            "silktide": None,
             "fly": None,
             "bnb_families": None,
             "neighbours": [],
@@ -189,6 +190,8 @@ def assemble():
             council["ofsted"] = sources["ofsted"].extra.get(code)
         if sources["planning_data"]:
             council["planning"] = sources["planning_data"].extra.get(code)
+        if sources["silktide"]:
+            council["silktide"] = sources["silktide"].extra.get(code)
         if sources["neighbours"]:
             council["neighbours"] = sources["neighbours"].extra.get(code, [])
         if sources["lgbf"] and code.startswith("S"):  # the LGBF family group

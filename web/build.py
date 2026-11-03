@@ -131,6 +131,12 @@ def write_lookups(out, councils):
                 pages.setdefault(b, pages[a])
     with open(os.path.join(out, "data", "councils-by-code.json"), "w") as f:
         json.dump(pages, f, separators=(",", ":"))
+    # For finding a council by name: [slug, name, ONS name], go.js matches either
+    population = os.path.join(model.ROOT, "data", "sources", "population.json")
+    ons = json.load(open(population))["extra"] if os.path.exists(population) else {}
+    names = [[c["slug"], c["name"], ons.get(c["code"], {}).get("ons_name", c["name"])] for c in councils]
+    with open(os.path.join(out, "data", "council-names.json"), "w") as f:
+        json.dump(names, f, separators=(",", ":"), ensure_ascii=False)
     path = os.path.join(model.ROOT, "data", "sources", "area_bands.json")
     if not os.path.exists(path):
         return
@@ -348,6 +354,7 @@ def build(out=DIST):
     page("/privacy/", "privacy.html", today="19 October 2026")
     page("404.html", "404.html")
     page("/postcode-not-found/", "postcode_not_found.html")
+    page("/council-not-found/", "council_not_found.html")
     page("/not-covered/", "not_covered.html")
 
     os.makedirs(os.path.join(out, "data"), exist_ok=True)
