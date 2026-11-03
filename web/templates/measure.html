@@ -10,6 +10,7 @@
     <span class="govuk-caption-l">{{ area_name }}</span>
     <h1 class="govuk-heading-xl">{{ m.label }}</h1>
     <p class="govuk-body-s app-secondary-text">{% if m.official %}{{ m.official }}. {% endif %}{{ period }}. {{ "Higher" if m.better == "higher" else "Lower" }} is better. Source: <a class="govuk-link" href="{{ source.url }}">{{ source.title }}</a>.</p>
+    {% if m.note %}<p class="govuk-body">{{ m.note }}</p>{% endif %}
     {% if summary %}<p class="govuk-body">{{ summary }}</p>{% endif %}
     {% if updated %}<p class="govuk-body-s app-secondary-text">Last updated {{ updated | long_date }}.</p>{% endif %}
   </div>

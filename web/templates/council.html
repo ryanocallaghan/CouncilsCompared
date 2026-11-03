@@ -184,6 +184,7 @@
                   {{ r.measure.label }}
                   <span class="govuk-body-s app-secondary-text app-compare-table__period">{% if r.measure.official %}{{ r.measure.official }}. {% endif %}{{ r.period }}</span>
                   {% if r.caveat %}<span class="govuk-body-s app-secondary-text app-compare-table__period">{{ r.caveat }}</span>{% endif %}
+                  {% if r.elsewhere %}<span class="govuk-body-s app-secondary-text app-compare-table__period">{{ r.elsewhere }} <a class="govuk-link" href="{{ b.silktide.url }}">See it on Silktide</a>.</span>{% endif %}
                 </th>
                 <td class="govuk-table__cell govuk-table__cell--numeric" data-label="{{ b.name }}"><strong>{{ r.value }}</strong></td>
                 <td class="govuk-table__cell govuk-table__cell--numeric" data-label="Median">{{ r.median }}</td>
