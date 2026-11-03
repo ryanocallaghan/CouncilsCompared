@@ -187,9 +187,9 @@
                 </th>
                 <td class="govuk-table__cell govuk-table__cell--numeric" data-label="{{ b.name }}"><strong>{{ r.value }}</strong></td>
                 <td class="govuk-table__cell govuk-table__cell--numeric" data-label="Median">{{ r.median }}</td>
-                <td class="govuk-table__cell" data-label="Position">{{ model.ordinal(r.position) }} of {{ r.count }}</td>
+                <td class="govuk-table__cell" data-label="Position">{{ model.place(r.position, r.tied, r.count) }}</td>
                 <td class="govuk-table__cell app-compare-table__chart">
-                  {{ stripChart(r.strip, b.name ~ ": " ~ r.value ~ ". Median " ~ r.median ~ ". " ~ model.ordinal(r.position) ~ " of " ~ r.count ~ ".", measure=r.measure.id) }}
+                  {{ stripChart(r.strip, b.name ~ ": " ~ r.value ~ ". Median " ~ r.median ~ ". " ~ model.place(r.position, r.tied, r.count) | capitalize ~ ".", measure=r.measure.id) }}
                 </td>
               </tr>
             {% endfor %}
