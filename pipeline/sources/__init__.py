@@ -18,6 +18,7 @@ class Result:
     files: list = field(default_factory=list)  # what was downloaded
     values: dict = field(default_factory=dict)  # {ons code: {measure: value}}
     trends: dict = field(default_factory=dict)  # {ons code: {trend: {period: value}}}
+    checks: dict = field(default_factory=dict)  # {ons code: {check: {"pass": bool, "reason": str}}}
     extra: dict = field(default_factory=dict)  # anything else a later step needs
     notes: list = field(default_factory=list)  # warnings for the update summary
 
@@ -25,6 +26,10 @@ class Result:
         if _missing(value):
             return
         self.values.setdefault(code, {})[measure] = round(value, places) if places is not None else value
+
+    def check(self, code, check, passed, reason=""):
+        """A yes or no, with why in a sentence: not ranked, so kept apart from values."""
+        self.checks.setdefault(code, {})[check] = {"pass": bool(passed), "reason": reason}
 
     def trend(self, code, trend, period, value, places=1):
         if _missing(value):

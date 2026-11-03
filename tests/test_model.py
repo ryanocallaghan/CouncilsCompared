@@ -361,3 +361,28 @@ def test_silktide_s_own_rank_is_shown_with_ours():
     assert model.elsewhere(council, "recycling") is None
     assert model.elsewhere({"silktide": None}, "web_access") is None
     assert model.elsewhere({}, "web_access") is None
+
+
+def test_checks_are_shown_but_never_ranked(fixture_data):
+    hartlepool = model.compare(model.councils()["hartlepool"])
+    openness = next(a for a in hartlepool.areas if a.id == "openness")
+    assert [(k.check.id, k.passed) for k in openness.checks] == [("brownfield", False)]
+    assert "doesn't collect one" in openness.checks[0].reason
+    # Not in the quarters, the count of measures or the best and worst lists
+    assert hartlepool.ranked == sum(hartlepool.counts.values())
+    assert not any("brownfield" in text for text in hartlepool.compares_worst + hartlepool.compares_best)
+    assert hartlepool.fails == "Fails 1 of 1 check"
+    assert model.compare(model.councils()["lewisham"]).fails is None
+
+
+def test_a_check_page_lists_those_that_fail_first(fixture_data):
+    brownfield = next(k for k in model.CHECKS if k.id == "brownfield")
+    assert model.check_available(brownfield)
+    assert not model.check_available(brownfield, "Scotland")
+    results = model.check_results(brownfield)
+    assert results[0][0]["name"] == "Hartlepool" and not results[0][1].passed
+    assert all(r.passed for _, r in results[1:])
+    assert model.check_overview(brownfield) == "5 of 6 councils do"
+    cells = {cell["council"]["name"]: cell for cell in model.check_hexmap(brownfield)["cells"] if cell["council"]}
+    assert cells["Hartlepool"]["class"] == "app-check--no" and cells["Hartlepool"]["label"] == "Hartlepool: No"
+    assert cells["Lewisham"]["class"] == "app-check--yes"

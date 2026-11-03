@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "_check.html" import checkTag %}
 
 {% set c = comparison %}
 {% set b = c.council %}
@@ -146,6 +147,9 @@
       </div>
     {% endif %}
   </div>
+  {% if c.fails %}
+    <p class="govuk-body app-summary__fails"><strong>{{ c.fails }}:</strong> {% for k in c.failed %}<a class="govuk-link" href="#{{ k.check.area }}">{{ k.check.short }}</a>{% if not loop.last %}, {% endif %}{% endfor %}. Checks are a yes or no, so they aren't counted in the quarters.</p>
+  {% endif %}
   <p class="govuk-body-s app-secondary-text govuk-!-margin-bottom-0">Councils serve very different places, so a low position can reflect more need or less money, not only how well a council is run. <a class="govuk-link" href="/about/">About the figures</a></p>
 </div>
 
@@ -208,6 +212,17 @@
         </table>
       </div>
     </details>
+  {% endif %}
+  {% if area.checks %}
+    <ul class="app-area__checks">
+      {% for k in area.checks %}
+        <li class="app-area__check">
+          <a class="app-area__label govuk-link" href="{{ model.measure_path(k.check, b.nation) }}#{{ b.slug }}">{{ k.check.label }}</a>
+          {{ checkTag(k.passed) }}
+          {% if k.reason %}<span class="govuk-body-s app-secondary-text app-check__reason">{{ k.reason }}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
   {% endif %}
   {% if area.id == "streets" and c.fly %}
     {% set fly = c.fly %}

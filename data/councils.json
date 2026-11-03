@@ -192,6 +192,7 @@
     "ta_days": 103.0,
     "ta_rate": 4.1
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1151.3,
     "Central services": 99.8,
@@ -297,6 +298,7 @@
     "ta_days": 73.0,
     "ta_rate": 1.1
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1283.0,
     "Central services": 40.0,
@@ -397,6 +399,7 @@
     "ta_days": 167.0,
     "ta_rate": 2.0
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1467.6,
     "Central services": 167.3,
@@ -492,6 +495,7 @@
     "ta_days": 261.0,
     "ta_rate": 2.8
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1722.9,
     "Central services": 107.0,
@@ -604,6 +608,12 @@
     "links_working": 70.0,
     "planning_data": 62.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 405.7,
     "All services excluding schools": 957.7,
@@ -633,7 +643,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Tree preservation orders",
      "Tree preservation zones",
@@ -857,6 +866,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 449.0,
     "All services excluding schools": 940.2,
@@ -879,7 +894,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -1089,6 +1103,12 @@
     "links_working": 95.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 390.8,
     "All services excluding schools": 1171.6,
@@ -1113,7 +1133,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -1338,6 +1357,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 415.2,
     "All services excluding schools": 984.4,
@@ -1360,7 +1385,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -1576,6 +1600,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    }
+   },
    "spend": {
     "Adult social care": 472.3,
     "All services excluding schools": 1175.0,
@@ -1598,7 +1628,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -1815,6 +1844,12 @@
     "links_working": 100.0,
     "planning_data": 37.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 353.5,
     "All services excluding schools": 950.3,
@@ -1837,7 +1872,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Article 4 directions",
@@ -2061,6 +2095,12 @@
     "links_working": 100.0,
     "planning_data": 75.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 459.2,
     "All services excluding schools": 1285.2,
@@ -2083,7 +2123,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Tree preservation orders",
      "Protected trees"
@@ -2300,6 +2339,12 @@
     "links_working": 85.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 491.6,
     "All services excluding schools": 1328.2,
@@ -2327,7 +2372,6 @@
     ]
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -2557,6 +2601,12 @@
     "links_working": 100.0,
     "planning_data": 62.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 582.2,
     "All services excluding schools": 1718.9,
@@ -2579,7 +2629,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Tree preservation orders",
      "Tree preservation zones",
@@ -2796,6 +2845,12 @@
     "links_working": 85.0,
     "planning_data": 12.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 443.2,
     "All services excluding schools": 1140.4,
@@ -2822,7 +2877,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -3050,6 +3104,12 @@
     "links_working": 100.0,
     "planning_data": 12.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 496.4,
     "All services excluding schools": 1168.3,
@@ -3072,7 +3132,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -3257,6 +3316,12 @@
     "links_working": 95.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    }
+   },
    "spend": {
     "Adult social care": 433.3,
     "All services excluding schools": 1035.1,
@@ -3281,7 +3346,6 @@
     ]
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -3494,6 +3558,12 @@
     "links_working": 95.0,
     "planning_data": 50.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 405.1,
     "All services excluding schools": 1255.3,
@@ -3518,7 +3588,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Listed building outlines",
      "Tree preservation orders",
@@ -3743,6 +3812,12 @@
     "links_working": 90.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 446.0,
     "All services excluding schools": 1275.3,
@@ -3768,7 +3843,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -3988,6 +4062,12 @@
     "links_working": 80.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 562.2,
     "All services excluding schools": 1368.2,
@@ -4015,7 +4095,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -4240,6 +4319,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 496.1,
     "All services excluding schools": 1176.4,
@@ -4262,7 +4347,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -4473,6 +4557,12 @@
     "links_working": 80.0,
     "planning_data": 37.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 389.7,
     "All services excluding schools": 1066.2,
@@ -4500,7 +4590,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 direction areas",
@@ -4712,6 +4801,12 @@
     "links_working": 100.0,
     "planning_data": 62.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 410.0,
     "All services excluding schools": 949.0,
@@ -4734,7 +4829,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -4923,6 +5017,12 @@
     "links_working": 95.0,
     "planning_data": 37.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 495.9,
     "All services excluding schools": 1114.8,
@@ -4947,7 +5047,6 @@
     ]
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Listed building outlines",
@@ -5162,6 +5261,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 496.9,
     "All services excluding schools": 1260.3,
@@ -5184,7 +5289,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -5401,6 +5505,12 @@
     "links_working": 85.0,
     "planning_data": 62.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 719.3,
     "All services excluding schools": 1939.4,
@@ -5427,7 +5537,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Tree preservation orders",
      "Tree preservation zones",
@@ -5647,6 +5756,12 @@
     "links_working": 65.0,
     "planning_data": 75.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 414.8,
     "All services excluding schools": 874.5,
@@ -5677,7 +5792,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Tree preservation zones",
      "Protected trees"
@@ -5891,6 +6005,12 @@
     "links_working": 90.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 472.8,
     "All services excluding schools": 1042.4,
@@ -5916,7 +6036,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -6139,6 +6258,12 @@
     "links_working": 75.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 522.6,
     "All services excluding schools": 1265.8,
@@ -6167,7 +6292,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -6376,6 +6500,7 @@
     "ta_days": 517.0,
     "ta_rate": 21.8
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1241.8,
     "Central services": 82.2,
@@ -6475,6 +6600,7 @@
     "ta_days": 179.0,
     "ta_rate": 6.5
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1406.2,
     "Central services": 114.6,
@@ -6592,6 +6718,12 @@
     "links_working": 100.0,
     "planning_data": 12.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 603.8,
     "All services excluding schools": 1383.2,
@@ -6614,7 +6746,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -6830,6 +6961,12 @@
     "links_working": 100.0,
     "planning_data": 12.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 388.4,
     "All services excluding schools": 1287.1,
@@ -6852,7 +6989,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -7073,6 +7209,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 408.5,
     "All services excluding schools": 1111.0,
@@ -7095,7 +7237,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -7315,6 +7456,12 @@
     "links_working": 85.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 475.8,
     "All services excluding schools": 1336.6,
@@ -7342,7 +7489,6 @@
     ]
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -7559,6 +7705,12 @@
     "links_working": 5.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform collects registers for only part of the area, from 2 of the 3 councils it replaced in 2023, and none from the council itself."
+    }
+   },
    "spend": {},
    "ofsted": {
     "grade": "Good",
@@ -7590,7 +7742,6 @@
     ]
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -7784,6 +7935,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 463.3,
     "All services excluding schools": 1306.3,
@@ -7806,7 +7963,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -8037,6 +8193,12 @@
     "links_working": 80.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    }
+   },
    "spend": {
     "Adult social care": 343.4,
     "All services excluding schools": 1111.7,
@@ -8064,7 +8226,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -8293,6 +8454,12 @@
     "links_working": 100.0,
     "planning_data": 62.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 492.4,
     "All services excluding schools": 1276.2,
@@ -8315,7 +8482,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -8532,6 +8698,12 @@
     "links_working": 100.0,
     "planning_data": 50.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 523.6,
     "All services excluding schools": 1143.3,
@@ -8554,7 +8726,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Tree preservation orders",
@@ -8750,6 +8921,12 @@
     "links_working": 100.0,
     "planning_data": 12.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {},
    "ofsted": {
     "grade": "Requires improvement",
@@ -8761,7 +8938,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -8970,6 +9146,7 @@
     "ta_days": 143.0,
     "ta_rate": 3.3
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1608.7,
     "Central services": 113.9,
@@ -9067,6 +9244,7 @@
     "ta_days": 175.0,
     "ta_rate": 6.1
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1558.9,
     "Central services": 116.9,
@@ -9182,6 +9360,12 @@
     "links_working": 70.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 323.3,
     "All services excluding schools": 917.5,
@@ -9211,7 +9395,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -9425,6 +9608,7 @@
     "ta_days": 126.0,
     "ta_rate": 1.6
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1345.4,
     "Central services": 2.8,
@@ -9524,6 +9708,7 @@
     "ta_days": 413.0,
     "ta_rate": 2.9
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1183.6,
     "Central services": 92.1,
@@ -9621,6 +9806,7 @@
     "ta_days": 334.0,
     "ta_rate": 5.6
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1312.1,
     "Central services": 34.8,
@@ -9718,6 +9904,7 @@
     "ta_days": 224.0,
     "ta_rate": 4.1
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1200.9,
     "Central services": 29.1,
@@ -9833,6 +10020,12 @@
     "links_working": 90.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 515.0,
     "All services excluding schools": 1155.1,
@@ -9858,7 +10051,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -10074,6 +10266,12 @@
     "links_working": 95.0,
     "planning_data": 25.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 453.2,
     "All services excluding schools": 1115.9,
@@ -10098,7 +10296,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -10310,6 +10507,7 @@
     "ta_days": 225.0,
     "ta_rate": 6.0
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1337.9,
     "Central services": 98.0,
@@ -10415,6 +10613,7 @@
     "ta_days": 263.0,
     "ta_rate": 6.2
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1454.6,
     "Central services": 42.3,
@@ -10527,6 +10726,12 @@
     "links_working": 100.0,
     "planning_data": 87.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 577.4,
     "All services excluding schools": 1416.1,
@@ -10549,7 +10754,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents"
     ]
@@ -10750,6 +10954,7 @@
     "ta_days": 303.0,
     "ta_rate": 16.3
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1496.0,
     "Central services": 49.4,
@@ -10858,6 +11063,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 457.3,
     "All services excluding schools": 1276.6,
@@ -10880,7 +11091,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -11109,6 +11319,12 @@
     "links_working": 100.0,
     "planning_data": 37.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 551.8,
     "All services excluding schools": 1534.3,
@@ -11131,7 +11347,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Listed building outlines",
@@ -11346,6 +11561,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 633.7,
     "All services excluding schools": 1617.0,
@@ -11368,7 +11589,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -11584,6 +11804,12 @@
     "links_working": 100.0,
     "planning_data": 12.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 534.5,
     "All services excluding schools": 1325.1,
@@ -11606,7 +11832,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -11830,6 +12055,12 @@
     "links_working": 95.0,
     "planning_data": 62.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    }
+   },
    "spend": {
     "Adult social care": 539.7,
     "All services excluding schools": 1350.0,
@@ -11854,7 +12085,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Tree preservation orders",
      "Tree preservation zones",
@@ -12078,6 +12308,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 387.8,
     "All services excluding schools": 873.1,
@@ -12100,7 +12336,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -12301,6 +12536,12 @@
     "links_working": 75.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    }
+   },
    "spend": {
     "Adult social care": 502.2,
     "All services excluding schools": 1558.4,
@@ -12329,7 +12570,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -12558,6 +12798,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    }
+   },
    "spend": {
     "Adult social care": 396.5,
     "All services excluding schools": 938.6,
@@ -12580,7 +12826,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -12801,6 +13046,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 557.8,
     "All services excluding schools": 1250.0,
@@ -12823,7 +13074,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -13032,6 +13282,7 @@
     "ta_days": 244.0,
     "ta_rate": 4.0
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1464.8,
     "Central services": 44.2,
@@ -13148,6 +13399,12 @@
     "links_working": 85.0,
     "planning_data": 75.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 364.7,
     "All services excluding schools": 932.5,
@@ -13175,7 +13432,6 @@
     ]
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Tree preservation zones",
      "Protected trees"
@@ -13394,6 +13650,12 @@
     "links_working": 100.0,
     "planning_data": 50.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 406.0,
     "All services excluding schools": 1048.5,
@@ -13416,7 +13678,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Listed building outlines",
      "Tree preservation orders",
@@ -13616,6 +13877,7 @@
     "ta_days": 131.0,
     "ta_rate": 1.7
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1513.3,
     "Central services": 138.5,
@@ -13727,6 +13989,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 706.1,
     "All services excluding schools": 1487.7,
@@ -13749,7 +14017,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -13967,6 +14234,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 610.8,
     "All services excluding schools": 1799.2,
@@ -13989,7 +14262,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -14218,6 +14490,12 @@
     "links_working": 85.0,
     "planning_data": 87.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    }
+   },
    "spend": {
     "Adult social care": 502.5,
     "All services excluding schools": 1808.5,
@@ -14244,7 +14522,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation area documents"
     ]
@@ -14454,6 +14731,12 @@
     "links_working": 95.0,
     "planning_data": 37.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 502.2,
     "All services excluding schools": 1496.9,
@@ -14478,7 +14761,6 @@
     ]
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Article 4 directions",
      "Article 4 direction areas",
@@ -14704,6 +14986,12 @@
     "links_working": 90.0,
     "planning_data": 75.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 414.2,
     "All services excluding schools": 1103.6,
@@ -14729,7 +15017,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Tree preservation orders"
@@ -14946,6 +15233,12 @@
     "links_working": 95.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 455.1,
     "All services excluding schools": 1024.6,
@@ -14970,7 +15263,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -15192,6 +15484,12 @@
     "links_working": 85.0,
     "planning_data": 37.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 641.2,
     "All services excluding schools": 1653.3,
@@ -15218,7 +15516,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 direction areas",
@@ -15444,6 +15741,12 @@
     "links_working": 100.0,
     "planning_data": 75.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 464.2,
     "All services excluding schools": 1399.2,
@@ -15466,7 +15769,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Tree preservation zones"
@@ -15689,6 +15991,12 @@
     "links_working": 85.0,
     "planning_data": 87.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 409.0,
     "All services excluding schools": 1083.8,
@@ -15715,7 +16023,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents"
     ]
@@ -15939,6 +16246,12 @@
     "links_working": 85.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 549.4,
     "All services excluding schools": 1285.2,
@@ -15965,7 +16278,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -16183,6 +16495,12 @@
     "links_working": 90.0,
     "planning_data": 62.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 422.0,
     "All services excluding schools": 1459.8,
@@ -16208,7 +16526,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Tree preservation orders",
      "Tree preservation zones",
@@ -16422,6 +16739,12 @@
     "links_working": 90.0,
     "planning_data": 75.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 607.6,
     "All services excluding schools": 1508.3,
@@ -16447,7 +16770,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions"
@@ -16661,6 +16983,12 @@
     "links_working": 100.0,
     "planning_data": 50.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 385.8,
     "All services excluding schools": 1189.3,
@@ -16683,7 +17011,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Listed building outlines",
      "Tree preservation orders",
@@ -16908,6 +17235,12 @@
     "links_working": 85.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 535.6,
     "All services excluding schools": 1375.6,
@@ -16934,7 +17267,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -17158,6 +17490,12 @@
     "links_working": 100.0,
     "planning_data": 62.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 443.6,
     "All services excluding schools": 1227.2,
@@ -17180,7 +17518,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -17392,6 +17729,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 371.0,
     "All services excluding schools": 1026.5,
@@ -17414,7 +17757,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -17635,6 +17977,12 @@
     "links_working": 100.0,
     "planning_data": 25.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 485.1,
     "All services excluding schools": 1568.4,
@@ -17657,7 +18005,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Article 4 directions",
      "Article 4 direction areas",
@@ -17869,6 +18216,7 @@
     "ta_days": 339.0,
     "ta_rate": 8.2
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1313.0,
     "Central services": 57.2,
@@ -17984,6 +18332,12 @@
     "links_working": 85.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 386.4,
     "All services excluding schools": 994.4,
@@ -18011,7 +18365,6 @@
     ]
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -18213,6 +18566,7 @@
     "ta_days": 129.0,
     "ta_rate": 2.2
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1355.7,
     "Central services": 77.4,
@@ -18311,6 +18665,7 @@
     "ta_days": 191.0,
     "ta_rate": 4.1
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 2327.9,
     "Central services": 219.7,
@@ -18431,6 +18786,12 @@
     "links_working": 70.0,
     "planning_data": 75.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 543.2,
     "All services excluding schools": 1234.0,
@@ -18461,7 +18822,6 @@
     ]
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Protected trees"
@@ -18684,6 +19044,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 394.2,
     "All services excluding schools": 1226.3,
@@ -18706,7 +19072,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -18920,6 +19285,7 @@
     "ta_days": 153.0,
     "ta_rate": 4.3
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1599.8,
     "Central services": 88.9,
@@ -19033,6 +19399,12 @@
     "links_working": 80.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 449.3,
     "All services excluding schools": 1293.4,
@@ -19060,7 +19432,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -19270,6 +19641,7 @@
     "ta_days": 142.0,
     "ta_rate": 4.1
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1215.7,
     "Central services": 39.3,
@@ -19376,6 +19748,12 @@
     "links_working": 65.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 488.2,
     "All services excluding schools": 1237.6,
@@ -19406,7 +19784,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": null,
@@ -19620,6 +19997,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 458.2,
     "All services excluding schools": 1111.6,
@@ -19642,7 +20025,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -19839,6 +20221,12 @@
     "links_working": 85.0,
     "planning_data": 87.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 497.9,
     "All services excluding schools": 1087.8,
@@ -19865,7 +20253,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents"
     ]
@@ -20078,6 +20465,12 @@
     "links_working": 75.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 448.0,
     "All services excluding schools": 1123.5,
@@ -20106,7 +20499,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -20322,6 +20714,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform collects registers for only part of the area, from 5 of the 7 councils it replaced in 2023, and none from the council itself."
+    }
+   },
    "spend": {
     "Adult social care": 504.3,
     "All services excluding schools": 1079.3,
@@ -20344,7 +20742,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -20532,6 +20929,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 494.0,
     "All services excluding schools": 1274.7,
@@ -20554,7 +20957,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -20766,6 +21168,12 @@
     "links_working": 90.0,
     "planning_data": 12.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 458.6,
     "All services excluding schools": 1431.2,
@@ -20791,7 +21199,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -20988,6 +21395,12 @@
     "links_working": 90.0,
     "planning_data": 25.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 394.2,
     "All services excluding schools": 1147.7,
@@ -21013,7 +21426,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -21225,6 +21637,7 @@
     "ta_days": 353.0,
     "ta_rate": 7.7
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 2710.1,
     "Central services": 364.2,
@@ -21332,6 +21745,7 @@
     "ta_days": 80.0,
     "ta_rate": 1.2
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1437.1,
     "Central services": 121.9,
@@ -21439,6 +21853,12 @@
     "links_working": 75.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    }
+   },
    "spend": {
     "Adult social care": 378.7,
     "All services excluding schools": 1006.8,
@@ -21467,7 +21887,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": false,
     "missing": []
    },
    "silktide": {
@@ -21683,6 +22102,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 480.5,
     "All services excluding schools": 1253.0,
@@ -21705,7 +22130,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -21912,6 +22336,12 @@
     "links_working": 60.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 414.0,
     "All services excluding schools": 1380.8,
@@ -21943,7 +22373,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -22175,6 +22604,12 @@
     "links_working": 95.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 423.8,
     "All services excluding schools": 1199.0,
@@ -22199,7 +22634,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -22428,6 +22862,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 370.5,
     "All services excluding schools": 1004.5,
@@ -22450,7 +22890,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -22665,6 +23104,12 @@
     "links_working": 85.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 486.0,
     "All services excluding schools": 1441.2,
@@ -22691,7 +23136,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -22905,6 +23349,7 @@
     "ta_days": 153.0,
     "ta_rate": 3.3
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1262.9,
     "Central services": 93.0,
@@ -23014,6 +23459,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 483.0,
     "All services excluding schools": 1240.3,
@@ -23036,7 +23487,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -23252,6 +23702,12 @@
     "links_working": 100.0,
     "planning_data": 62.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 494.1,
     "All services excluding schools": 1249.8,
@@ -23274,7 +23730,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Tree preservation orders",
      "Tree preservation zones",
@@ -23496,6 +23951,12 @@
     "links_working": 90.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 531.6,
     "All services excluding schools": 1256.7,
@@ -23521,7 +23982,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -23743,6 +24203,12 @@
     "links_working": 85.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 524.6,
     "All services excluding schools": 1206.7,
@@ -23769,7 +24235,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -23987,6 +24452,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 407.9,
     "All services excluding schools": 1069.8,
@@ -24009,7 +24480,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -24225,6 +24695,12 @@
     "links_working": 95.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {},
    "ofsted": {
     "grade": "Good",
@@ -24238,7 +24714,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -24441,6 +24916,7 @@
     "ta_days": 178.0,
     "ta_rate": 2.6
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1529.7,
     "Central services": 57.3,
@@ -24546,6 +25022,12 @@
     "links_working": 65.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 486.0,
     "All services excluding schools": 1282.0,
@@ -24576,7 +25058,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -24795,6 +25276,12 @@
     "links_working": 90.0,
     "planning_data": 12.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 580.5,
     "All services excluding schools": 1363.2,
@@ -24820,7 +25307,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -25033,6 +25519,7 @@
     "ta_days": 333.0,
     "ta_rate": 9.8
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 2836.3,
     "Central services": 311.1,
@@ -25152,6 +25639,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 543.7,
     "All services excluding schools": 1108.5,
@@ -25174,7 +25667,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -25398,6 +25890,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 386.8,
     "All services excluding schools": 959.1,
@@ -25420,7 +25918,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -25649,6 +26146,12 @@
     "links_working": 90.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 480.5,
     "All services excluding schools": 1130.3,
@@ -25674,7 +26177,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -25897,6 +26399,12 @@
     "links_working": 50.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform collects registers for only part of the area, from 3 of the 4 councils it replaced in 2023, and none from the council itself."
+    }
+   },
    "spend": {
     "Adult social care": 485.3,
     "All services excluding schools": 1112.2,
@@ -25931,7 +26439,6 @@
     ]
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -26099,6 +26606,7 @@
     "ta_days": 156.0,
     "ta_rate": 4.7
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1536.8,
     "Central services": 73.2,
@@ -26207,6 +26715,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 536.6,
     "All services excluding schools": 1082.5,
@@ -26229,7 +26743,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -26427,6 +26940,7 @@
     "ta_days": 218.0,
     "ta_rate": 4.8
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1152.3,
     "Central services": 31.7,
@@ -26539,6 +27053,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 619.1,
     "All services excluding schools": 1478.5,
@@ -26561,7 +27081,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -26793,6 +27312,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 453.1,
     "All services excluding schools": 1122.3,
@@ -26815,7 +27340,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -27038,6 +27562,12 @@
     "links_working": 100.0,
     "planning_data": 12.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    }
+   },
    "spend": {
     "Adult social care": 444.4,
     "All services excluding schools": 1242.1,
@@ -27060,7 +27590,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -27286,6 +27815,12 @@
     "links_working": 70.0,
     "planning_data": 62.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 436.4,
     "All services excluding schools": 1653.6,
@@ -27315,7 +27850,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 direction areas",
@@ -27526,6 +28060,12 @@
     "links_working": 75.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 480.2,
     "All services excluding schools": 1222.4,
@@ -27554,7 +28094,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -27768,6 +28307,7 @@
     "ta_days": 270.0,
     "ta_rate": 7.4
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1413.8,
     "Central services": 115.9,
@@ -27886,6 +28426,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 500.2,
     "All services excluding schools": 1062.0,
@@ -27908,7 +28454,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -28117,6 +28662,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 414.1,
     "All services excluding schools": 1187.0,
@@ -28139,7 +28690,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -28366,6 +28916,12 @@
     "links_working": 70.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 513.4,
     "All services excluding schools": 1404.2,
@@ -28395,7 +28951,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -28606,6 +29161,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 545.7,
     "All services excluding schools": 1338.3,
@@ -28628,7 +29189,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -28857,6 +29417,12 @@
     "links_working": 95.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    }
+   },
    "spend": {
     "Adult social care": 437.4,
     "All services excluding schools": 1096.7,
@@ -28881,7 +29447,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -29104,6 +29669,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 422.6,
     "All services excluding schools": 1001.5,
@@ -29126,7 +29697,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -29344,6 +29914,12 @@
     "links_working": 85.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 468.6,
     "All services excluding schools": 1231.3,
@@ -29370,7 +29946,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -29586,6 +30161,12 @@
     "links_working": 90.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 515.8,
     "All services excluding schools": 1225.7,
@@ -29611,7 +30192,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -29843,6 +30423,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 457.5,
     "All services excluding schools": 1176.0,
@@ -29865,7 +30451,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -30078,6 +30663,12 @@
     "links_working": 95.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 498.4,
     "All services excluding schools": 1392.1,
@@ -30102,7 +30693,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -30322,6 +30912,12 @@
     "links_working": 95.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 565.7,
     "All services excluding schools": 1463.1,
@@ -30346,7 +30942,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -30558,6 +31153,12 @@
     "links_working": 65.0,
     "planning_data": 12.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    }
+   },
    "spend": {
     "Adult social care": 445.3,
     "All services excluding schools": 984.9,
@@ -30588,7 +31189,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": false,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -30799,6 +31399,12 @@
     "links_working": 65.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 464.7,
     "All services excluding schools": 1173.7,
@@ -30830,7 +31436,6 @@
     ]
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -31050,6 +31655,12 @@
     "links_working": 85.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 500.5,
     "All services excluding schools": 1338.0,
@@ -31076,7 +31687,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -31305,6 +31915,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 439.2,
     "All services excluding schools": 1168.3,
@@ -31327,7 +31943,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -31539,6 +32154,12 @@
     "links_working": 95.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 429.5,
     "All services excluding schools": 1092.7,
@@ -31563,7 +32184,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -31770,6 +32390,12 @@
     "links_working": 90.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 565.2,
     "All services excluding schools": 1271.4,
@@ -31795,7 +32421,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -32014,6 +32639,12 @@
     "links_working": 100.0,
     "planning_data": 62.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 475.7,
     "All services excluding schools": 1086.2,
@@ -32036,7 +32667,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Article 4 directions",
@@ -32239,6 +32869,7 @@
     "ta_days": 135.0,
     "ta_rate": 6.5
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1492.9,
     "Central services": 75.0,
@@ -32339,6 +32970,7 @@
     "ta_days": 310.0,
     "ta_rate": 7.8
    },
+   "checks": {},
    "spend": {
     "All services excluding schools": 1149.7,
     "Central services": 78.6,
@@ -32453,6 +33085,12 @@
     "links_working": 95.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 405.5,
     "All services excluding schools": 1053.3,
@@ -32477,7 +33115,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -32677,6 +33314,12 @@
     "links_working": 90.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 532.6,
     "All services excluding schools": 1967.5,
@@ -32702,7 +33345,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -32921,6 +33563,12 @@
     "links_working": 10.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 520.0,
     "All services excluding schools": 1314.2,
@@ -32962,7 +33610,6 @@
     ]
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -33153,6 +33800,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 428.6,
     "All services excluding schools": 1135.3,
@@ -33175,7 +33828,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -33404,6 +34056,12 @@
     "links_working": 100.0,
     "planning_data": 50.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 444.2,
     "All services excluding schools": 964.6,
@@ -33426,7 +34084,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Listed building outlines",
      "Tree preservation orders",
@@ -33641,6 +34298,12 @@
     "links_working": 85.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 405.6,
     "All services excluding schools": 948.4,
@@ -33667,7 +34330,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -33886,6 +34548,12 @@
     "links_working": 100.0,
     "planning_data": 100.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 546.3,
     "All services excluding schools": 1270.3,
@@ -33908,7 +34576,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": []
    },
    "silktide": {
@@ -34130,6 +34797,12 @@
     "links_working": 100.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 429.9,
     "All services excluding schools": 973.3,
@@ -34152,7 +34825,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -34371,6 +35043,12 @@
     "links_working": 95.0,
     "planning_data": 0.0
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 482.3,
     "All services excluding schools": 1227.1,
@@ -34395,7 +35073,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation areas",
      "Conservation area documents",
@@ -34611,6 +35288,12 @@
     "links_working": 100.0,
     "planning_data": 37.5
    },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   },
    "spend": {
     "Adult social care": 454.9,
     "All services excluding schools": 1054.3,
@@ -34633,7 +35316,6 @@
     "missing": []
    },
    "planning": {
-    "brownfield": true,
     "missing": [
      "Conservation area documents",
      "Listed building outlines",

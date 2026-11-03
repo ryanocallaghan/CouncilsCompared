@@ -209,6 +209,33 @@ MEASURES = [
             "Adults satisfied with street cleaning (three-year average)", nations=("Scotland",)),
 ]
 
+
+@dataclass(frozen=True)
+class Check:
+    """A yes or no for each council, such as whether it publishes something
+    the law says it must. Checks aren't ranked or counted in the quarters: a
+    council either does it or doesn't."""
+    id: str
+    area: str
+    label: str  # what a yes means, as a statement
+    short: str  # what fails, in a list: "brownfield land register"
+    source: str
+    how: str  # how it is decided
+    nations: tuple = ("England",)
+
+    def source_for(self, nation="England"):
+        return self.source
+
+
+CHECKS = [
+    Check("brownfield", "openness", "Publishes its brownfield land register as open data", "brownfield land register",
+          "planning_data",
+          "Since 2017, every planning authority has had to publish a register of brownfield land that could be "
+          "built on, in a standard form. This checks whether MHCLG's Planning Data platform collects one from "
+          "the council. For a council created since 2019, the registers of the councils it replaced count if "
+          "together they cover the whole area."),
+]
+
 SPENDING = [
     "Children's social care", "Adult social care", "Social work and social care", "Public health", "Housing (general fund)",
     "Environmental and regulatory", "Highways and transport", "Culture and leisure", "Planning and development",
@@ -290,6 +317,14 @@ def available(measure, nation="England"):
         return False
     total = sum(1 for c in councils().values() if c["nation"] == nation)
     return measure.area == "housing" or _coverage(DATA_FILE, tuple(PUBLISHED), nation)[measure.id] >= MIN_COVERAGE * total
+
+
+def check_available(check, nation="England"):
+    """Whether a check covers enough of a nation's councils to show."""
+    if nation not in check.nations:
+        return False
+    in_it = in_nation(nation)
+    return sum(1 for c in in_it if check.id in c.get("checks", {})) >= MIN_COVERAGE * len(in_it)
 
 
 def period(measure, nation="England"):
@@ -501,6 +536,7 @@ class Area:
     note: str
     rows: list  # [Row], only measures with a figure for this council
     missing: int  # measures with no figure
+    checks: list = field(default_factory=list)  # [CheckResult]
 
     @property
     def counts(self):
@@ -530,6 +566,13 @@ class Area:
 
 
 @dataclass
+class CheckResult:
+    check: Check
+    passed: bool
+    reason: str = ""
+
+
+@dataclass
 class Comparison:
     council: dict
     group: str
@@ -545,6 +588,19 @@ class Comparison:
     grades: list = field(default_factory=list)
     trends: list = field(default_factory=list)
     fly: dict = None
+    checks: list = field(default_factory=list)  # [CheckResult], every area's
+
+    @property
+    def fails(self):
+        """ "Fails 1 of 3 checks", or None when it passes them all."""
+        failed = [k for k in self.checks if not k.passed]
+        if not failed:
+            return None
+        return f"Fails {len(failed)} of {len(self.checks)} {'check' if len(self.checks) == 1 else 'checks'}"
+
+    @property
+    def failed(self):
+        return [k for k in self.checks if not k.passed]
 
 
 def _summary(rows, worst=True):
@@ -585,11 +641,15 @@ def compare(council, group="nation"):
                 row.strip = strip(all_values, council["code"], member_codes, m.better, median(group_values))
             area_rows.append(row)
             rows.append(row)
-        if not any(m.area == area_id and council["nation"] in m.nations for m in MEASURES):
+        if not any(m.area == area_id and council["nation"] in m.nations for m in MEASURES + CHECKS):
             continue  # an area with no measures in the council's nation, such as schools in England
         shown = [r for r in area_rows if r.band]
+        checks = [CheckResult(k, found["pass"], found["reason"])
+                  for k in CHECKS if k.area == area_id and check_available(k, council["nation"])
+                  for found in [council.get("checks", {}).get(k.id)] if found]
+        result.checks += checks
         result.areas.append(Area(area_id, area_name, area_note(area_id, council["nation"]), shown,
-                                 len(area_rows) - len(shown)))
+                                 len(area_rows) - len(shown), checks))
     banded = [r for r in rows if r.band]
     result.ranked = len(banded)
     result.counts = {key: sum(1 for r in banded if r.band == key) for key in BANDS}
@@ -901,6 +961,19 @@ def ranking(measure, nation="England", members=None):
     return rows
 
 
+def check_results(check, nation="England"):
+    """[(council, CheckResult)] for every council in the nation with an answer, those that fail first."""
+    found = [(c, CheckResult(check, c["checks"][check.id]["pass"], c["checks"][check.id]["reason"]))
+             for c in in_nation(nation) if check.id in c.get("checks", {})]
+    return sorted(found, key=lambda r: (r[1].passed, r[0]["name"]))
+
+
+def check_overview(check, nation="England"):
+    """ "116 of 130 councils do", for the list of measures."""
+    results = check_results(check, nation)
+    return f"{sum(1 for _, r in results if r.passed)} of {len(results)} councils do" if results else None
+
+
 def measure_overview(measure, nation="England"):
     """The best and worst councils and the median on a measure, for the list
     of measures: {"best": (names, figure), "worst": ..., "median": figure}."""
@@ -1025,12 +1098,21 @@ def hexmap(measure, nation="England"):
     Hexagons are pointy-topped in odd-r layout (odd rows shifted right), and
     r counts up from the south, so it is flipped to draw north at the top.
     """
+    ranked = ranking(measure, nation)
+    return _hexmap(nation, {c["code"]: (QUARTER_CLASSES[q], f"{fmt(v, measure.unit)}, {QUARTER_NAMES[q].lower()}")
+                            for _, c, v, q in ranked})
+
+
+def check_hexmap(check, nation="England"):
+    return _hexmap(nation, {c["code"]: (f"app-check--{'yes' if r.passed else 'no'}", "Yes" if r.passed else "No")
+                            for c, r in check_results(check, nation)})
+
+
+def _hexmap(nation, shade):
+    """shade: {code: (class, what the council's figure is)} for the councils with one."""
     from pipeline.sheets import SAME_COUNCIL
     alias = {a: b for pair in SAME_COUNCIL for a, b in (pair, pair[::-1])}
     by_code = load()["by_code"]
-    ranked = ranking(measure, nation)
-    quarter_of = {c["code"]: q for _, c, _, q in ranked}
-    value = {c["code"]: v for _, c, v, _ in ranked}
     hexes = {code: h for code, h in _hexes()["hexes"].items() if NATIONS.get(code[0]) == nation}
     size = 10  # centre to corner
     w = math.sqrt(3) * size
@@ -1044,11 +1126,9 @@ def hexmap(measure, nation="England"):
         x = (h["q"] - min_q) * w + (w / 2 if h["r"] % 2 else 0) + w
         y = (max_r - h["r"]) * size * 1.5 + size * 1.5
         points = " ".join(f"{round(x + dx, 1)},{round(y + dy, 1)}" for dx, dy in corners)
-        if council and council["code"] in quarter_of:
-            q = quarter_of[council["code"]]
-            cells.append({"points": points, "class": QUARTER_CLASSES[q], "council": council,
-                          "label": f"{council['name']}: {fmt(value[council['code']], measure.unit)}, "
-                                   f"{QUARTER_NAMES[q].lower()}"})
+        if council and council["code"] in shade:
+            cls, text = shade[council["code"]]
+            cells.append({"points": points, "class": cls, "council": council, "label": f"{council['name']}: {text}"})
         elif council:
             cells.append({"points": points, "class": "app-hex--none", "council": council,
                           "label": f"{council['name']}: no figure"})

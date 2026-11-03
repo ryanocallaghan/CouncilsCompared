@@ -11,7 +11,8 @@ def test_builds_every_page(fixture_data, tmp_path):
     from web import model
     # Home, about, privacy, three search pages, measures index and one page per measure, then the councils,
     # then the council tax page and the hubs: 3 regions, and metropolitan districts and unitary authorities
-    assert count == 7 + len([m for m in model.MEASURES if model.available(m)]) + (4 * 2 + 1) + 2 * 3 + 1 + 3 + 2
+    assert count == (7 + len([m for m in model.MEASURES if model.available(m)])
+                     + len([k for k in model.CHECKS if model.check_available(k)]) + (4 * 2 + 1) + 2 * 3 + 1 + 3 + 2)
     lewisham = (tmp_path / "lewisham" / "index.html").read_text()
     assert "<h1 class=\"govuk-heading-xl govuk-!-margin-bottom-4\">Lewisham</h1>" in lewisham
     assert "<title>How Lewisham Council compares – Councils compared</title>" in lewisham
@@ -23,6 +24,14 @@ def test_builds_every_page(fixture_data, tmp_path):
     assert "Fly-tipping incidents" not in lewisham and "more measures have no figure" in lewisham
     assert "&lt;" not in lewisham  # no HTML shown as text
     assert (tmp_path / "privacy" / "index.html").exists()
+    # Checks: a yes or no on the council's page, and a page of their own
+    hartlepool = (tmp_path / "hartlepool" / "index.html").read_text()
+    assert "Fails 1 of 1 check:</strong>" in hartlepool and 'href="/measures/brownfield/#hartlepool"' in hartlepool
+    assert "govuk-tag--red app-check__tag\">No</strong>" in hartlepool
+    assert "Fails" not in lewisham and "govuk-tag--green app-check__tag\">Yes</strong>" in lewisham
+    brownfield = (tmp_path / "measures" / "brownfield" / "index.html").read_text()
+    assert "5 of 6 councils in England do. 1 don't." in brownfield and "app-check--no" in brownfield
+    assert "Publishes its brownfield land register" in (tmp_path / "measures" / "index.html").read_text()
     fly = (tmp_path / "measures" / "om-upheld" / "index.html").read_text()
     assert "Complaints the Ombudsman upheld" in fly and 'class="app-hex app-q1"' in fly
     assert json.loads((tmp_path / "data" / "site.json").read_text())["councils"]
