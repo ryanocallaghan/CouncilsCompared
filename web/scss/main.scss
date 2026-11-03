@@ -450,6 +450,13 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
 .app-summary__facts {
   margin: 0 0 15px;
 
+  // Above the comparison controls: they don't change with the comparison
+  &--first {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--govuk-border-colour, #cecece);
+  }
+
   div {
     margin-bottom: 10px;
 
@@ -669,11 +676,6 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
     padding-left: 0;
     border-left: 0;
   }
-}
-
-.app-choose--plain {
-  padding: 0;
-  background: none;
 }
 
 .app-group__button[hidden] {

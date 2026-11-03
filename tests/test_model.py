@@ -334,3 +334,12 @@ def test_fly_tipping_detail_compares_size_with_the_group():
     detail = model.fly_detail(members[0], members)
     assert detail["large"] == 10 and detail["large_median"] == 50
     assert model.fly_detail({"fly": None}, members) is None
+
+
+def test_silktide_s_own_rank_is_shown_with_ours():
+    council = {"silktide": {"rank": 192, "of": 391, "url": "https://index.silktide.com/website/x"}}
+    assert model.elsewhere(council, "web_access") == (
+        "Silktide ranks it 192nd of 391 UK councils, including county and district councils.")
+    assert model.elsewhere(council, "recycling") is None
+    assert model.elsewhere({"silktide": None}, "web_access") is None
+    assert model.elsewhere({}, "web_access") is None

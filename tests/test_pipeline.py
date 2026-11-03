@@ -165,3 +165,35 @@ def test_local_links_rechecks_links_gov_uk_marks_broken(monkeypatch):
     assert figures["working"] == 40.0
     assert figures["broken"] == ["Council tax discounts", "Council tax support"]
     assert figures["missing"] == ["Bin collections"]
+
+
+def test_silktide_keeps_two_places_and_its_own_rank_for_this_month(monkeypatch):
+    from pipeline.sources import silktide
+
+    def snapshot(timeframe, score):
+        return {"timeframeId": timeframe, "metricSnapshots": [
+            {"metricType": {"name": "wcag-22-aa.score"}, "numericValue": 1.0},
+            {"metricType": {"name": "wcag-22.score"}, "numericValue": score}]}
+
+    pages = {
+        silktide.CATEGORY: {
+            "latestTimeframeSlug": "october-2026",
+            "timeframes": [{"id": 83, "slug": "october-2026", "name": "October 2026"},
+                           {"id": 82, "slug": "september-2026", "name": "September 2026"}],
+            "websites": [{"name": "London Borough of Lewisham Council", "slug": "lewisham"},
+                         {"name": "Haringey London Borough Council", "slug": "haringey"},
+                         {"name": "Kent County Council", "slug": "kent"}]},
+        f"{silktide.BASE}/website/lewisham": {
+            "timeframe": "october-2026", "categoryRanks": [{"rank": 192, "categoryName": "UK Councils"}],
+            "website": {"websiteSnapshots": [snapshot(82, 50.0), snapshot(83, 92.682724)]}},
+        # Only last month's snapshot: no figure, and so no rank
+        f"{silktide.BASE}/website/haringey": {
+            "timeframe": "october-2026", "categoryRanks": [{"rank": 5, "categoryName": "UK Councils"}],
+            "website": {"websiteSnapshots": [snapshot(82, 99.0)]}},
+    }
+    monkeypatch.setattr(silktide, "page_data", lambda url: pages[url])
+    population = {code: 1 for code in COUNCILS}
+    result = silktide.fetch({"matcher": names.Matcher(COUNCILS), "population": population})
+    assert result.period == "October 2026"
+    assert result.values == {"E09000023": {"web_access": 92.68}}
+    assert result.extra == {"E09000023": {"rank": 192, "of": 3, "url": f"{silktide.BASE}/website/lewisham"}}

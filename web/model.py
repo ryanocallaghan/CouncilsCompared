@@ -102,6 +102,7 @@ class Measure:
     official: str = ""  # the publication's own name for it, if different
     nations: tuple = ("England",)  # where it is published; ranked within each separately
     other_sources: tuple = ()  # ((nation, source id),) where a nation's figures come from another source
+    note: str = ""  # anything a reader needs to know to read the positions, shown on the measure's page
 
     def source_for(self, nation="England"):
         return dict(self.other_sources).get(nation, self.source)
@@ -159,7 +160,9 @@ MEASURES = [
     Measure("relief", "homeless", "Homeless people helped to find a home", "%", "higher", "homelessness",
             "Relief duty cases ending with accommodation secured for 6 months or more"),
     Measure("web_access", "digital", "Council website accessibility score", "%", "higher", "silktide",
-            "Silktide Index WCAG 2.2 AA score", nations=("England", "Scotland")),
+            "Silktide Index WCAG 2.2 AA score", nations=("England", "Scotland"),
+            note="Silktide ranks every UK council together, including county and district councils and those in "
+                 "the other nations, so its positions are different from the ones here. The scores are the same."),
     Measure("links_working", "digital", "Core services GOV.UK can link straight to", "%", "higher", "local_links",
             "GOV.UK's links to the council's pages for its core services that worked when GOV.UK last checked",
             nations=("England", "Scotland")),
@@ -457,6 +460,7 @@ class Row:
     band: str = None
     strip: Strip = None
     caveat: str = None
+    elsewhere: str = None  # how the publisher itself ranks the council, if differently
 
     @property
     def band_text(self):
@@ -548,7 +552,7 @@ def compare(council, group="nation"):
             value = council["values"].get(m.id)
             shown_value, shown_median = fmt_pair(value, median(group_values) if group_values else None, m.unit)
             row = Row(measure=m, period=period(m, council["nation"]), value=shown_value, median=shown_median,
-                      caveat=caveat(council, m.id))
+                      caveat=caveat(council, m.id), elsewhere=elsewhere(council, m.id))
             if value is not None and len(group_values) > 1:
                 row.position = position(value, group_values, m.better)
                 row.count = len(group_values)
@@ -580,6 +584,15 @@ def caveat(council, measure_id):
     if measure_id == "fly_rate" and (council.get("fly") or {}).get("basis") == "public":
         return ("Counts only fly-tips reported by the public, not those council staff find, so it may look lower "
                 "than councils that count both.")
+    return None
+
+
+def elsewhere(council, measure_id):
+    """The publisher's own position for the council, where it ranks a different group from ours."""
+    rank = council.get("silktide")
+    if measure_id == "web_access" and rank:
+        return (f"Silktide ranks it {ordinal(rank['rank'])} of {rank['of']} UK councils, "
+                "including county and district councils.")
     return None
 
 
