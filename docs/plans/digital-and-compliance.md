@@ -175,6 +175,26 @@ page ("This council's website runs on…").
 `online_tasks` is the hardest to make fair, so it goes last within phase 3.
 Before it ships, check a sample of 20 councils by hand and agree the rules.
 
+### The existing Silktide measure
+
+Silktide's site gives each council a rank among all 391 UK councils (county,
+district and the other nations included), while we rank it among the
+councils in its comparison group. Lewisham, for example, is 192nd on
+Silktide and 63rd of 130 on our site, from the same October 2026 score
+(92.68). Both put it near the middle, but a reader who checks will think one
+of us is wrong. So:
+
+- Under the measure, say that our position is among the group shown, and that
+  Silktide ranks every UK council together.
+- Keep Silktide's own rank (`categoryRanks` on the website page we already
+  fetch, so no extra requests) in `extra`, and show it with a link: "Silktide
+  ranks it 192nd of 391 UK councils".
+- Keep two decimal places rather than one (`places=2` in
+  `pipeline/sources/silktide.py`). Rounding to 92.7 creates ties Silktide
+  doesn't have: Lewisham shares its position with another council.
+
+This can be done on its own, before phase 1.
+
 ## Pipeline changes
 
 - `pipeline/sources/local_links.py` and `planning_data.py` (phase 1);
