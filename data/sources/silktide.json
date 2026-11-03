@@ -1,5 +1,796 @@
 {
- "extra": {},
+ "extra": {
+  "E06000001": {
+   "of": 391,
+   "rank": 39,
+   "url": "https://index.silktide.com/website/hartlepool-borough-council"
+  },
+  "E06000002": {
+   "of": 391,
+   "rank": 129,
+   "url": "https://index.silktide.com/website/middlesbrough-borough-council"
+  },
+  "E06000003": {
+   "of": 391,
+   "rank": 297,
+   "url": "https://index.silktide.com/website/redcar-and-cleveland-council"
+  },
+  "E06000004": {
+   "of": 391,
+   "rank": 313,
+   "url": "https://index.silktide.com/website/stockton-on-tees-borough-council"
+  },
+  "E06000005": {
+   "of": 391,
+   "rank": 312,
+   "url": "https://index.silktide.com/website/darlington-borough-council"
+  },
+  "E06000006": {
+   "of": 391,
+   "rank": 300,
+   "url": "https://index.silktide.com/website/halton-borough-council"
+  },
+  "E06000007": {
+   "of": 391,
+   "rank": 276,
+   "url": "https://index.silktide.com/website/warrington-council"
+  },
+  "E06000008": {
+   "of": 391,
+   "rank": 90,
+   "url": "https://index.silktide.com/website/blackburn-with-darwen-borough-council"
+  },
+  "E06000009": {
+   "of": 391,
+   "rank": 290,
+   "url": "https://index.silktide.com/website/blackpool-council"
+  },
+  "E06000010": {
+   "of": 391,
+   "rank": 60,
+   "url": "https://index.silktide.com/website/hull-city-council"
+  },
+  "E06000011": {
+   "of": 391,
+   "rank": 336,
+   "url": "https://index.silktide.com/website/east-riding-of-yorkshire-council"
+  },
+  "E06000012": {
+   "of": 391,
+   "rank": 306,
+   "url": "https://index.silktide.com/website/north-east-lincolnshire-council"
+  },
+  "E06000014": {
+   "of": 391,
+   "rank": 130,
+   "url": "https://index.silktide.com/website/city-of-york-council"
+  },
+  "E06000015": {
+   "of": 391,
+   "rank": 119,
+   "url": "https://index.silktide.com/website/derby-city-council"
+  },
+  "E06000016": {
+   "of": 391,
+   "rank": 65,
+   "url": "https://index.silktide.com/website/leicester-city-council"
+  },
+  "E06000017": {
+   "of": 391,
+   "rank": 275,
+   "url": "https://index.silktide.com/website/rutland-county-council"
+  },
+  "E06000018": {
+   "of": 391,
+   "rank": 75,
+   "url": "https://index.silktide.com/website/nottingham-city-council"
+  },
+  "E06000019": {
+   "of": 391,
+   "rank": 254,
+   "url": "https://index.silktide.com/website/herefordshire-council"
+  },
+  "E06000020": {
+   "of": 391,
+   "rank": 100,
+   "url": "https://index.silktide.com/website/telford-wrekin-council"
+  },
+  "E06000021": {
+   "of": 391,
+   "rank": 330,
+   "url": "https://index.silktide.com/website/stoke-on-trent-city-council"
+  },
+  "E06000022": {
+   "of": 391,
+   "rank": 317,
+   "url": "https://index.silktide.com/website/bath-north-east-somerset-council"
+  },
+  "E06000023": {
+   "of": 391,
+   "rank": 274,
+   "url": "https://index.silktide.com/website/bristol-city-council"
+  },
+  "E06000024": {
+   "of": 391,
+   "rank": 166,
+   "url": "https://index.silktide.com/website/north-somerset-council"
+  },
+  "E06000025": {
+   "of": 391,
+   "rank": 307,
+   "url": "https://index.silktide.com/website/south-gloucestershire-district-council"
+  },
+  "E06000026": {
+   "of": 391,
+   "rank": 83,
+   "url": "https://index.silktide.com/website/plymouth-city-council"
+  },
+  "E06000027": {
+   "of": 391,
+   "rank": 173,
+   "url": "https://index.silktide.com/website/torbay-council"
+  },
+  "E06000030": {
+   "of": 391,
+   "rank": 160,
+   "url": "https://index.silktide.com/website/swindon-borough-council"
+  },
+  "E06000031": {
+   "of": 391,
+   "rank": 58,
+   "url": "https://index.silktide.com/website/peterborough-city-council"
+  },
+  "E06000032": {
+   "of": 391,
+   "rank": 356,
+   "url": "https://index.silktide.com/website/luton-borough-council"
+  },
+  "E06000033": {
+   "of": 391,
+   "rank": 30,
+   "url": "https://index.silktide.com/website/southend-on-sea-council"
+  },
+  "E06000034": {
+   "of": 391,
+   "rank": 353,
+   "url": "https://index.silktide.com/website/thurrock-council"
+  },
+  "E06000035": {
+   "of": 391,
+   "rank": 188,
+   "url": "https://index.silktide.com/website/medway-council"
+  },
+  "E06000036": {
+   "of": 391,
+   "rank": 15,
+   "url": "https://index.silktide.com/website/bracknell-forest-council"
+  },
+  "E06000037": {
+   "of": 391,
+   "rank": 221,
+   "url": "https://index.silktide.com/website/west-berkshire-council"
+  },
+  "E06000038": {
+   "of": 391,
+   "rank": 226,
+   "url": "https://index.silktide.com/website/reading-borough-council"
+  },
+  "E06000039": {
+   "of": 391,
+   "rank": 12,
+   "url": "https://index.silktide.com/website/slough-borough-council"
+  },
+  "E06000040": {
+   "of": 391,
+   "rank": 186,
+   "url": "https://index.silktide.com/website/royal-borough-of-windsor-and-maidenhead-council"
+  },
+  "E06000041": {
+   "of": 391,
+   "rank": 322,
+   "url": "https://index.silktide.com/website/wokingham-council"
+  },
+  "E06000042": {
+   "of": 391,
+   "rank": 259,
+   "url": "https://index.silktide.com/website/milton-keynes-council"
+  },
+  "E06000043": {
+   "of": 391,
+   "rank": 44,
+   "url": "https://index.silktide.com/website/brighton-and-hove-city-council"
+  },
+  "E06000044": {
+   "of": 391,
+   "rank": 187,
+   "url": "https://index.silktide.com/website/portsmouth-city-council"
+  },
+  "E06000045": {
+   "of": 391,
+   "rank": 267,
+   "url": "https://index.silktide.com/website/southampton-city-council"
+  },
+  "E06000046": {
+   "of": 391,
+   "rank": 81,
+   "url": "https://index.silktide.com/website/isle-of-wight-council"
+  },
+  "E06000047": {
+   "of": 391,
+   "rank": 142,
+   "url": "https://index.silktide.com/website/durham-county-council"
+  },
+  "E06000049": {
+   "of": 391,
+   "rank": 131,
+   "url": "https://index.silktide.com/website/cheshire-east-council"
+  },
+  "E06000050": {
+   "of": 391,
+   "rank": 28,
+   "url": "https://index.silktide.com/website/cheshire-west-and-chester-council"
+  },
+  "E06000051": {
+   "of": 391,
+   "rank": 355,
+   "url": "https://index.silktide.com/website/shropshire-council"
+  },
+  "E06000052": {
+   "of": 391,
+   "rank": 194,
+   "url": "https://index.silktide.com/website/cornwall-council"
+  },
+  "E06000054": {
+   "of": 391,
+   "rank": 128,
+   "url": "https://index.silktide.com/website/wiltshire-council"
+  },
+  "E06000055": {
+   "of": 391,
+   "rank": 228,
+   "url": "https://index.silktide.com/website/bedford-borough-council"
+  },
+  "E06000056": {
+   "of": 391,
+   "rank": 234,
+   "url": "https://index.silktide.com/website/central-bedfordshire-council"
+  },
+  "E06000057": {
+   "of": 391,
+   "rank": 239,
+   "url": "https://index.silktide.com/website/northumberland-county-council"
+  },
+  "E06000058": {
+   "of": 391,
+   "rank": 91,
+   "url": "https://index.silktide.com/website/bcp-council"
+  },
+  "E06000059": {
+   "of": 391,
+   "rank": 156,
+   "url": "https://index.silktide.com/website/dorset-county-council"
+  },
+  "E06000060": {
+   "of": 391,
+   "rank": 36,
+   "url": "https://index.silktide.com/website/buckinghamshire-council"
+  },
+  "E06000061": {
+   "of": 391,
+   "rank": 9,
+   "url": "https://index.silktide.com/website/north-northamptonshire"
+  },
+  "E06000062": {
+   "of": 391,
+   "rank": 19,
+   "url": "https://index.silktide.com/website/west-northamptonshire"
+  },
+  "E06000063": {
+   "of": 391,
+   "rank": 152,
+   "url": "https://index.silktide.com/website/cumberland-council"
+  },
+  "E06000064": {
+   "of": 391,
+   "rank": 120,
+   "url": "https://index.silktide.com/website/westmorland-and-furness-council"
+  },
+  "E06000065": {
+   "of": 391,
+   "rank": 88,
+   "url": "https://index.silktide.com/website/north-yorkshire-county-council"
+  },
+  "E06000066": {
+   "of": 391,
+   "rank": 99,
+   "url": "https://index.silktide.com/website/somerset-county-council"
+  },
+  "E08000001": {
+   "of": 391,
+   "rank": 105,
+   "url": "https://index.silktide.com/website/bolton-metropolitan-borough-council"
+  },
+  "E08000002": {
+   "of": 391,
+   "rank": 151,
+   "url": "https://index.silktide.com/website/bury-metropolitan-borough-council"
+  },
+  "E08000003": {
+   "of": 391,
+   "rank": 132,
+   "url": "https://index.silktide.com/website/manchester-city-council"
+  },
+  "E08000004": {
+   "of": 391,
+   "rank": 133,
+   "url": "https://index.silktide.com/website/oldham-metropolitan-borough-council"
+  },
+  "E08000005": {
+   "of": 391,
+   "rank": 25,
+   "url": "https://index.silktide.com/website/rochdale-metropolitan-borough-council"
+  },
+  "E08000006": {
+   "of": 391,
+   "rank": 196,
+   "url": "https://index.silktide.com/website/salford-city-council"
+  },
+  "E08000007": {
+   "of": 391,
+   "rank": 157,
+   "url": "https://index.silktide.com/website/stockport-metropolitan-borough-council"
+  },
+  "E08000008": {
+   "of": 391,
+   "rank": 285,
+   "url": "https://index.silktide.com/website/tameside-metropolitan-borough-council"
+  },
+  "E08000009": {
+   "of": 391,
+   "rank": 256,
+   "url": "https://index.silktide.com/website/trafford-council"
+  },
+  "E08000010": {
+   "of": 391,
+   "rank": 53,
+   "url": "https://index.silktide.com/website/wigan-metropolitan-borough-council"
+  },
+  "E08000011": {
+   "of": 391,
+   "rank": 319,
+   "url": "https://index.silktide.com/website/knowsley-metropolitan-borough-council"
+  },
+  "E08000012": {
+   "of": 391,
+   "rank": 32,
+   "url": "https://index.silktide.com/website/liverpool-city-council"
+  },
+  "E08000013": {
+   "of": 391,
+   "rank": 283,
+   "url": "https://index.silktide.com/website/st-helens-borough-council"
+  },
+  "E08000014": {
+   "of": 391,
+   "rank": 360,
+   "url": "https://index.silktide.com/website/sefton-metropolitan-borough-council"
+  },
+  "E08000015": {
+   "of": 391,
+   "rank": 316,
+   "url": "https://index.silktide.com/website/wirral-metropolitan-borough-council"
+  },
+  "E08000016": {
+   "of": 391,
+   "rank": 179,
+   "url": "https://index.silktide.com/website/barnsley-borough-council"
+  },
+  "E08000017": {
+   "of": 391,
+   "rank": 67,
+   "url": "https://index.silktide.com/website/doncaster-metropolitan-borough-council"
+  },
+  "E08000018": {
+   "of": 391,
+   "rank": 280,
+   "url": "https://index.silktide.com/website/rotherham-metropolitan-borough-council"
+  },
+  "E08000019": {
+   "of": 391,
+   "rank": 34,
+   "url": "https://index.silktide.com/website/sheffield-city-council"
+  },
+  "E08000021": {
+   "of": 391,
+   "rank": 321,
+   "url": "https://index.silktide.com/website/newcastle-upon-tyne-city-council"
+  },
+  "E08000022": {
+   "of": 391,
+   "rank": 309,
+   "url": "https://index.silktide.com/website/north-tyneside-council"
+  },
+  "E08000023": {
+   "of": 391,
+   "rank": 375,
+   "url": "https://index.silktide.com/website/south-tyneside-metropolitan-borough-council"
+  },
+  "E08000024": {
+   "of": 391,
+   "rank": 203,
+   "url": "https://index.silktide.com/website/sunderland-city-council"
+  },
+  "E08000025": {
+   "of": 391,
+   "rank": 87,
+   "url": "https://index.silktide.com/website/birmingham-city-council"
+  },
+  "E08000026": {
+   "of": 391,
+   "rank": 215,
+   "url": "https://index.silktide.com/website/coventry-city-council"
+  },
+  "E08000027": {
+   "of": 391,
+   "rank": 174,
+   "url": "https://index.silktide.com/website/dudley-metropolitan-borough-council"
+  },
+  "E08000028": {
+   "of": 391,
+   "rank": 141,
+   "url": "https://index.silktide.com/website/sandwell-metropolitan-borough-council"
+  },
+  "E08000029": {
+   "of": 391,
+   "rank": 176,
+   "url": "https://index.silktide.com/website/solihull-metropolitan-borough-council"
+  },
+  "E08000030": {
+   "of": 391,
+   "rank": 315,
+   "url": "https://index.silktide.com/website/walsall-metropolitan-borough-council"
+  },
+  "E08000031": {
+   "of": 391,
+   "rank": 344,
+   "url": "https://index.silktide.com/website/wolverhampton-city-council"
+  },
+  "E08000032": {
+   "of": 391,
+   "rank": 180,
+   "url": "https://index.silktide.com/website/bradford-metropolitan-council"
+  },
+  "E08000033": {
+   "of": 391,
+   "rank": 378,
+   "url": "https://index.silktide.com/website/calderdale-council"
+  },
+  "E08000034": {
+   "of": 391,
+   "rank": 210,
+   "url": "https://index.silktide.com/website/kirklees-metropolitan-borough-council"
+  },
+  "E08000035": {
+   "of": 391,
+   "rank": 288,
+   "url": "https://index.silktide.com/website/leeds-city-council"
+  },
+  "E08000036": {
+   "of": 391,
+   "rank": 52,
+   "url": "https://index.silktide.com/website/wakefield-city-metropolitan-district-council"
+  },
+  "E08000037": {
+   "of": 391,
+   "rank": 168,
+   "url": "https://index.silktide.com/website/gateshead-metropolitan-borough-council"
+  },
+  "E09000002": {
+   "of": 391,
+   "rank": 282,
+   "url": "https://index.silktide.com/website/london-borough-of-barking-dagenham-council"
+  },
+  "E09000003": {
+   "of": 391,
+   "rank": 243,
+   "url": "https://index.silktide.com/website/london-borough-of-barnet-council"
+  },
+  "E09000004": {
+   "of": 391,
+   "rank": 351,
+   "url": "https://index.silktide.com/website/london-borough-of-bexley-council"
+  },
+  "E09000005": {
+   "of": 391,
+   "rank": 97,
+   "url": "https://index.silktide.com/website/london-borough-of-brent-council"
+  },
+  "E09000006": {
+   "of": 391,
+   "rank": 56,
+   "url": "https://index.silktide.com/website/london-borough-of-bromley-council"
+  },
+  "E09000007": {
+   "of": 391,
+   "rank": 178,
+   "url": "https://index.silktide.com/website/london-borough-of-camden-council"
+  },
+  "E09000008": {
+   "of": 391,
+   "rank": 235,
+   "url": "https://index.silktide.com/website/london-borough-of-croydon-council"
+  },
+  "E09000009": {
+   "of": 391,
+   "rank": 289,
+   "url": "https://index.silktide.com/website/london-borough-of-ealing-council"
+  },
+  "E09000010": {
+   "of": 391,
+   "rank": 231,
+   "url": "https://index.silktide.com/website/london-borough-of-enfield-council"
+  },
+  "E09000011": {
+   "of": 391,
+   "rank": 299,
+   "url": "https://index.silktide.com/website/royal-borough-of-greenwich-council"
+  },
+  "E09000012": {
+   "of": 391,
+   "rank": 252,
+   "url": "https://index.silktide.com/website/london-borough-of-hackney-council"
+  },
+  "E09000013": {
+   "of": 391,
+   "rank": 258,
+   "url": "https://index.silktide.com/website/london-borough-of-hammersmith-fulham-council"
+  },
+  "E09000014": {
+   "of": 391,
+   "rank": 293,
+   "url": "https://index.silktide.com/website/london-borough-of-haringey-council"
+  },
+  "E09000015": {
+   "of": 391,
+   "rank": 20,
+   "url": "https://index.silktide.com/website/london-borough-of-harrow-council"
+  },
+  "E09000016": {
+   "of": 391,
+   "rank": 211,
+   "url": "https://index.silktide.com/website/london-borough-of-havering-council"
+  },
+  "E09000018": {
+   "of": 391,
+   "rank": 263,
+   "url": "https://index.silktide.com/website/london-borough-of-hounslow-council"
+  },
+  "E09000019": {
+   "of": 391,
+   "rank": 212,
+   "url": "https://index.silktide.com/website/london-borough-of-islington-council"
+  },
+  "E09000020": {
+   "of": 391,
+   "rank": 209,
+   "url": "https://index.silktide.com/website/royal-borough-of-kensington-chelsea-council"
+  },
+  "E09000021": {
+   "of": 391,
+   "rank": 291,
+   "url": "https://index.silktide.com/website/royal-borough-of-kingston-upon-thames-council"
+  },
+  "E09000022": {
+   "of": 391,
+   "rank": 372,
+   "url": "https://index.silktide.com/website/lambeth-council"
+  },
+  "E09000023": {
+   "of": 391,
+   "rank": 192,
+   "url": "https://index.silktide.com/website/london-borough-of-lewisham-council"
+  },
+  "E09000024": {
+   "of": 391,
+   "rank": 31,
+   "url": "https://index.silktide.com/website/london-borough-of-merton-council"
+  },
+  "E09000025": {
+   "of": 391,
+   "rank": 77,
+   "url": "https://index.silktide.com/website/london-borough-of-newham-council"
+  },
+  "E09000026": {
+   "of": 391,
+   "rank": 240,
+   "url": "https://index.silktide.com/website/london-borough-of-redbridge-council"
+  },
+  "E09000027": {
+   "of": 391,
+   "rank": 207,
+   "url": "https://index.silktide.com/website/london-borough-of-richmond-upon-thames-council"
+  },
+  "E09000028": {
+   "of": 391,
+   "rank": 357,
+   "url": "https://index.silktide.com/website/london-borough-of-southwark-council"
+  },
+  "E09000029": {
+   "of": 391,
+   "rank": 170,
+   "url": "https://index.silktide.com/website/london-borough-of-sutton-council"
+  },
+  "E09000030": {
+   "of": 391,
+   "rank": 208,
+   "url": "https://index.silktide.com/website/london-borough-of-tower-hamlets-council"
+  },
+  "E09000031": {
+   "of": 391,
+   "rank": 118,
+   "url": "https://index.silktide.com/website/london-borough-of-waltham-forest-council"
+  },
+  "E09000032": {
+   "of": 391,
+   "rank": 331,
+   "url": "https://index.silktide.com/website/london-borough-of-wandsworth-council"
+  },
+  "E09000033": {
+   "of": 391,
+   "rank": 191,
+   "url": "https://index.silktide.com/website/westminster-city-council"
+  },
+  "S12000005": {
+   "of": 391,
+   "rank": 384,
+   "url": "https://index.silktide.com/website/clackmannanshire-council"
+  },
+  "S12000006": {
+   "of": 391,
+   "rank": 185,
+   "url": "https://index.silktide.com/website/dumfries-and-galloway-council"
+  },
+  "S12000008": {
+   "of": 391,
+   "rank": 11,
+   "url": "https://index.silktide.com/website/east-ayrshire-council"
+  },
+  "S12000011": {
+   "of": 391,
+   "rank": 76,
+   "url": "https://index.silktide.com/website/east-renfrewshire-council"
+  },
+  "S12000013": {
+   "of": 391,
+   "rank": 125,
+   "url": "https://index.silktide.com/website/comhairle-nan-eilean-siar-western-isles-council-"
+  },
+  "S12000014": {
+   "of": 391,
+   "rank": 218,
+   "url": "https://index.silktide.com/website/falkirk-district-council"
+  },
+  "S12000017": {
+   "of": 391,
+   "rank": 26,
+   "url": "https://index.silktide.com/website/highland-council"
+  },
+  "S12000018": {
+   "of": 391,
+   "rank": 163,
+   "url": "https://index.silktide.com/website/inverclyde-council"
+  },
+  "S12000019": {
+   "of": 391,
+   "rank": 104,
+   "url": "https://index.silktide.com/website/midlothian-council"
+  },
+  "S12000020": {
+   "of": 391,
+   "rank": 380,
+   "url": "https://index.silktide.com/website/moray-council"
+  },
+  "S12000021": {
+   "of": 391,
+   "rank": 348,
+   "url": "https://index.silktide.com/website/north-ayrshire-council"
+  },
+  "S12000023": {
+   "of": 391,
+   "rank": 222,
+   "url": "https://index.silktide.com/website/orkney-islands-council"
+  },
+  "S12000026": {
+   "of": 391,
+   "rank": 27,
+   "url": "https://index.silktide.com/website/scottish-borders-council"
+  },
+  "S12000027": {
+   "of": 391,
+   "rank": 121,
+   "url": "https://index.silktide.com/website/shetland-islands-council"
+  },
+  "S12000028": {
+   "of": 391,
+   "rank": 143,
+   "url": "https://index.silktide.com/website/south-ayrshire-council"
+  },
+  "S12000029": {
+   "of": 391,
+   "rank": 93,
+   "url": "https://index.silktide.com/website/south-lanarkshire-council"
+  },
+  "S12000030": {
+   "of": 391,
+   "rank": 270,
+   "url": "https://index.silktide.com/website/stirling-council"
+  },
+  "S12000033": {
+   "of": 391,
+   "rank": 359,
+   "url": "https://index.silktide.com/website/aberdeen-city-council"
+  },
+  "S12000034": {
+   "of": 391,
+   "rank": 148,
+   "url": "https://index.silktide.com/website/aberdeenshire-council"
+  },
+  "S12000035": {
+   "of": 391,
+   "rank": 51,
+   "url": "https://index.silktide.com/website/argyll-bute-council"
+  },
+  "S12000036": {
+   "of": 391,
+   "rank": 48,
+   "url": "https://index.silktide.com/website/city-of-edinburgh-council"
+  },
+  "S12000038": {
+   "of": 391,
+   "rank": 198,
+   "url": "https://index.silktide.com/website/renfrewshire-council"
+  },
+  "S12000039": {
+   "of": 391,
+   "rank": 22,
+   "url": "https://index.silktide.com/website/west-dunbartonshire-council"
+  },
+  "S12000040": {
+   "of": 391,
+   "rank": 199,
+   "url": "https://index.silktide.com/website/west-lothian-council"
+  },
+  "S12000041": {
+   "of": 391,
+   "rank": 197,
+   "url": "https://index.silktide.com/website/angus-council"
+  },
+  "S12000042": {
+   "of": 391,
+   "rank": 349,
+   "url": "https://index.silktide.com/website/dundee-city-council"
+  },
+  "S12000045": {
+   "of": 391,
+   "rank": 278,
+   "url": "https://index.silktide.com/website/east-dunbartonshire-council"
+  },
+  "S12000047": {
+   "of": 391,
+   "rank": 74,
+   "url": "https://index.silktide.com/website/fife-council"
+  },
+  "S12000048": {
+   "of": 391,
+   "rank": 189,
+   "url": "https://index.silktide.com/website/perth-kinross-council"
+  },
+  "S12000050": {
+   "of": 391,
+   "rank": 206,
+   "url": "https://index.silktide.com/website/north-lanarkshire-council"
+  }
+ },
  "files": [],
  "id": "silktide",
  "notes": [],
@@ -10,37 +801,37 @@
  "url": "https://index.silktide.com/category/council-uk",
  "values": {
   "E06000001": {
-   "web_access": 98.8
+   "web_access": 98.76
   },
   "E06000002": {
-   "web_access": 95.3
+   "web_access": 95.29
   },
   "E06000003": {
-   "web_access": 82.9
+   "web_access": 82.86
   },
   "E06000004": {
-   "web_access": 81.2
+   "web_access": 81.21
   },
   "E06000005": {
-   "web_access": 81.5
+   "web_access": 81.55
   },
   "E06000006": {
-   "web_access": 82.5
+   "web_access": 82.49
   },
   "E06000007": {
-   "web_access": 85.2
+   "web_access": 85.18
   },
   "E06000008": {
-   "web_access": 96.6
+   "web_access": 96.56
   },
   "E06000009": {
-   "web_access": 83.7
+   "web_access": 83.68
   },
   "E06000010": {
-   "web_access": 98.1
+   "web_access": 98.06
   },
   "E06000011": {
-   "web_access": 77.6
+   "web_access": 77.58
   },
   "E06000012": {
    "web_access": 82.0
@@ -49,232 +840,232 @@
    "web_access": 69.1
   },
   "E06000014": {
-   "web_access": 95.3
+   "web_access": 95.28
   },
   "E06000015": {
    "web_access": 95.6
   },
   "E06000016": {
-   "web_access": 97.7
+   "web_access": 97.72
   },
   "E06000017": {
-   "web_access": 85.2
+   "web_access": 85.24
   },
   "E06000018": {
-   "web_access": 97.2
+   "web_access": 97.17
   },
   "E06000019": {
-   "web_access": 88.0
+   "web_access": 87.99
   },
   "E06000020": {
-   "web_access": 96.2
+   "web_access": 96.16
   },
   "E06000021": {
-   "web_access": 78.7
+   "web_access": 78.67
   },
   "E06000022": {
-   "web_access": 80.9
+   "web_access": 80.94
   },
   "E06000023": {
-   "web_access": 85.3
+   "web_access": 85.33
   },
   "E06000024": {
-   "web_access": 93.5
+   "web_access": 93.52
   },
   "E06000025": {
-   "web_access": 81.9
+   "web_access": 81.89
   },
   "E06000026": {
-   "web_access": 96.8
+   "web_access": 96.76
   },
   "E06000027": {
-   "web_access": 93.3
+   "web_access": 93.27
   },
   "E06000030": {
-   "web_access": 93.9
+   "web_access": 93.88
   },
   "E06000031": {
-   "web_access": 98.1
+   "web_access": 98.09
   },
   "E06000032": {
-   "web_access": 73.1
+   "web_access": 73.13
   },
   "E06000033": {
-   "web_access": 99.1
+   "web_access": 99.07
   },
   "E06000034": {
-   "web_access": 74.2
+   "web_access": 74.25
   },
   "E06000035": {
-   "web_access": 92.8
+   "web_access": 92.76
   },
   "E06000036": {
-   "web_access": 99.6
+   "web_access": 99.63
   },
   "E06000037": {
-   "web_access": 90.6
+   "web_access": 90.63
   },
   "E06000038": {
-   "web_access": 90.1
+   "web_access": 90.15
   },
   "E06000039": {
-   "web_access": 99.7
+   "web_access": 99.69
   },
   "E06000040": {
-   "web_access": 92.9
+   "web_access": 92.86
   },
   "E06000041": {
-   "web_access": 80.1
+   "web_access": 80.12
   },
   "E06000042": {
-   "web_access": 87.4
+   "web_access": 87.42
   },
   "E06000043": {
-   "web_access": 98.6
+   "web_access": 98.57
   },
   "E06000044": {
    "web_access": 92.8
   },
   "E06000045": {
-   "web_access": 86.4
+   "web_access": 86.42
   },
   "E06000046": {
-   "web_access": 96.9
+   "web_access": 96.92
   },
   "E06000047": {
-   "web_access": 94.8
+   "web_access": 94.79
   },
   "E06000049": {
-   "web_access": 95.3
+   "web_access": 95.27
   },
   "E06000050": {
-   "web_access": 99.2
+   "web_access": 99.18
   },
   "E06000051": {
-   "web_access": 73.6
+   "web_access": 73.56
   },
   "E06000052": {
-   "web_access": 92.5
+   "web_access": 92.55
   },
   "E06000054": {
-   "web_access": 95.3
+   "web_access": 95.32
   },
   "E06000055": {
-   "web_access": 90.1
+   "web_access": 90.11
   },
   "E06000056": {
-   "web_access": 89.5
+   "web_access": 89.49
   },
   "E06000057": {
-   "web_access": 88.9
+   "web_access": 88.86
   },
   "E06000058": {
-   "web_access": 96.5
+   "web_access": 96.54
   },
   "E06000059": {
-   "web_access": 94.0
+   "web_access": 93.97
   },
   "E06000060": {
-   "web_access": 98.8
+   "web_access": 98.83
   },
   "E06000061": {
-   "web_access": 99.8
+   "web_access": 99.79
   },
   "E06000062": {
-   "web_access": 99.4
+   "web_access": 99.44
   },
   "E06000063": {
-   "web_access": 94.2
+   "web_access": 94.24
   },
   "E06000064": {
    "web_access": 95.6
   },
   "E06000065": {
-   "web_access": 96.6
+   "web_access": 96.62
   },
   "E06000066": {
-   "web_access": 96.4
+   "web_access": 96.35
   },
   "E08000001": {
-   "web_access": 96.1
+   "web_access": 96.07
   },
   "E08000002": {
    "web_access": 94.4
   },
   "E08000003": {
-   "web_access": 95.2
+   "web_access": 95.23
   },
   "E08000004": {
    "web_access": 95.2
   },
   "E08000005": {
-   "web_access": 99.3
+   "web_access": 99.27
   },
   "E08000006": {
-   "web_access": 92.4
+   "web_access": 92.44
   },
   "E08000007": {
-   "web_access": 93.9
+   "web_access": 93.95
   },
   "E08000008": {
-   "web_access": 84.5
+   "web_access": 84.45
   },
   "E08000009": {
    "web_access": 87.8
   },
   "E08000010": {
-   "web_access": 98.3
+   "web_access": 98.29
   },
   "E08000011": {
-   "web_access": 80.8
+   "web_access": 80.79
   },
   "E08000012": {
-   "web_access": 99.0
+   "web_access": 98.96
   },
   "E08000013": {
-   "web_access": 84.6
+   "web_access": 84.64
   },
   "E08000014": {
-   "web_access": 72.1
+   "web_access": 72.15
   },
   "E08000015": {
-   "web_access": 81.2
+   "web_access": 81.18
   },
   "E08000016": {
-   "web_access": 93.0
+   "web_access": 92.96
   },
   "E08000017": {
    "web_access": 97.6
   },
   "E08000018": {
-   "web_access": 84.8
+   "web_access": 84.79
   },
   "E08000019": {
-   "web_access": 98.9
+   "web_access": 98.89
   },
   "E08000021": {
-   "web_access": 80.2
+   "web_access": 80.18
   },
   "E08000022": {
-   "web_access": 81.8
+   "web_access": 81.79
   },
   "E08000023": {
-   "web_access": 64.9
+   "web_access": 64.89
   },
   "E08000024": {
-   "web_access": 92.1
+   "web_access": 92.14
   },
   "E08000025": {
-   "web_access": 96.6
+   "web_access": 96.62
   },
   "E08000026": {
    "web_access": 91.2
   },
   "E08000027": {
-   "web_access": 93.2
+   "web_access": 93.25
   },
   "E08000028": {
-   "web_access": 94.8
+   "web_access": 94.82
   },
   "E08000029": {
    "web_access": 93.1
@@ -283,103 +1074,103 @@
    "web_access": 81.2
   },
   "E08000031": {
-   "web_access": 76.2
+   "web_access": 76.23
   },
   "E08000032": {
-   "web_access": 92.9
+   "web_access": 92.92
   },
   "E08000033": {
-   "web_access": 62.6
+   "web_access": 62.58
   },
   "E08000034": {
-   "web_access": 91.5
+   "web_access": 91.54
   },
   "E08000035": {
-   "web_access": 84.0
+   "web_access": 83.95
   },
   "E08000036": {
-   "web_access": 98.4
+   "web_access": 98.37
   },
   "E08000037": {
-   "web_access": 93.4
+   "web_access": 93.36
   },
   "E09000002": {
-   "web_access": 84.6
+   "web_access": 84.64
   },
   "E09000003": {
-   "web_access": 88.7
+   "web_access": 88.69
   },
   "E09000004": {
    "web_access": 74.6
   },
   "E09000005": {
-   "web_access": 96.4
+   "web_access": 96.43
   },
   "E09000006": {
-   "web_access": 98.1
+   "web_access": 98.12
   },
   "E09000007": {
-   "web_access": 93.0
+   "web_access": 92.99
   },
   "E09000008": {
-   "web_access": 89.2
+   "web_access": 89.24
   },
   "E09000009": {
-   "web_access": 83.9
+   "web_access": 83.93
   },
   "E09000010": {
-   "web_access": 90.0
+   "web_access": 89.98
   },
   "E09000011": {
-   "web_access": 82.5
+   "web_access": 82.52
   },
   "E09000012": {
-   "web_access": 88.3
+   "web_access": 88.32
   },
   "E09000013": {
-   "web_access": 87.5
+   "web_access": 87.46
   },
   "E09000014": {
-   "web_access": 83.3
+   "web_access": 83.28
   },
   "E09000015": {
-   "web_access": 99.4
+   "web_access": 99.38
   },
   "E09000016": {
-   "web_access": 91.5
+   "web_access": 91.46
   },
   "E09000017": {
-   "web_access": 96.7
+   "web_access": 96.69
   },
   "E09000018": {
-   "web_access": 86.7
+   "web_access": 86.71
   },
   "E09000019": {
-   "web_access": 91.4
+   "web_access": 91.45
   },
   "E09000020": {
-   "web_access": 91.6
+   "web_access": 91.63
   },
   "E09000021": {
-   "web_access": 83.6
+   "web_access": 83.62
   },
   "E09000022": {
-   "web_access": 66.7
+   "web_access": 66.68
   },
   "E09000023": {
-   "web_access": 92.7
+   "web_access": 92.68
   },
   "E09000024": {
-   "web_access": 99.0
+   "web_access": 98.96
   },
   "E09000025": {
-   "web_access": 97.0
+   "web_access": 97.04
   },
   "E09000026": {
-   "web_access": 88.8
+   "web_access": 88.75
   },
   "E09000027": {
-   "web_access": 91.7
+   "web_access": 91.74
   },
   "E09000028": {
    "web_access": 73.0
@@ -388,112 +1179,112 @@
    "web_access": 93.3
   },
   "E09000030": {
-   "web_access": 91.6
+   "web_access": 91.64
   },
   "E09000031": {
-   "web_access": 95.6
+   "web_access": 95.63
   },
   "E09000032": {
-   "web_access": 78.4
+   "web_access": 78.37
   },
   "E09000033": {
    "web_access": 92.7
   },
   "S12000005": {
-   "web_access": 49.8
+   "web_access": 49.84
   },
   "S12000006": {
-   "web_access": 92.9
+   "web_access": 92.86
   },
   "S12000008": {
-   "web_access": 99.8
+   "web_access": 99.77
   },
   "S12000010": {
-   "web_access": 53.9
+   "web_access": 53.88
   },
   "S12000011": {
-   "web_access": 97.1
+   "web_access": 97.09
   },
   "S12000013": {
-   "web_access": 95.4
+   "web_access": 95.36
   },
   "S12000014": {
-   "web_access": 91.0
+   "web_access": 91.02
   },
   "S12000017": {
-   "web_access": 99.2
+   "web_access": 99.22
   },
   "S12000018": {
-   "web_access": 93.8
+   "web_access": 93.78
   },
   "S12000019": {
-   "web_access": 96.1
+   "web_access": 96.09
   },
   "S12000020": {
-   "web_access": 59.6
+   "web_access": 59.62
   },
   "S12000021": {
-   "web_access": 75.1
+   "web_access": 75.06
   },
   "S12000023": {
-   "web_access": 90.5
+   "web_access": 90.53
   },
   "S12000026": {
-   "web_access": 99.2
+   "web_access": 99.18
   },
   "S12000027": {
-   "web_access": 95.6
+   "web_access": 95.59
   },
   "S12000028": {
-   "web_access": 94.8
+   "web_access": 94.77
   },
   "S12000029": {
    "web_access": 96.5
   },
   "S12000030": {
-   "web_access": 85.9
+   "web_access": 85.88
   },
   "S12000033": {
-   "web_access": 72.3
+   "web_access": 72.31
   },
   "S12000034": {
-   "web_access": 94.5
+   "web_access": 94.53
   },
   "S12000035": {
-   "web_access": 98.4
+   "web_access": 98.38
   },
   "S12000036": {
-   "web_access": 98.5
+   "web_access": 98.49
   },
   "S12000038": {
-   "web_access": 92.3
+   "web_access": 92.31
   },
   "S12000039": {
-   "web_access": 99.3
+   "web_access": 99.33
   },
   "S12000040": {
-   "web_access": 92.3
+   "web_access": 92.29
   },
   "S12000041": {
-   "web_access": 92.4
+   "web_access": 92.39
   },
   "S12000042": {
-   "web_access": 75.0
+   "web_access": 74.98
   },
   "S12000045": {
-   "web_access": 84.9
+   "web_access": 84.94
   },
   "S12000047": {
    "web_access": 97.2
   },
   "S12000048": {
-   "web_access": 92.8
+   "web_access": 92.76
   },
   "S12000049": {
-   "web_access": 86.4
+   "web_access": 86.42
   },
   "S12000050": {
-   "web_access": 91.9
+   "web_access": 91.89
   }
  }
 }

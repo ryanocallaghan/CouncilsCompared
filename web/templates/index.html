@@ -7,9 +7,8 @@
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">How does your council compare?</h1>
     <p class="govuk-body-l">See how your council does on special educational needs, complaints, housing, bins, homelessness and more, and where your council tax goes.</p>
-    {% include "_postcode.html" %}
-    <p class="govuk-body govuk-!-margin-top-6 govuk-!-margin-bottom-2">Or choose a council:</p>
-    {% with current=None, label="Council" %}{% include "_choose.html" %}{% endwith %}
+    {% include "_find.html" %}
+    <p class="govuk-body govuk-!-margin-top-4"><a class="govuk-link" href="#all-councils">Or see all {{ all_councils | length }} councils</a></p>
   </div>
   <div class="govuk-grid-column-one-third">
     <aside class="app-aside" aria-labelledby="explore-title">
@@ -38,7 +37,7 @@
 
 <div class="govuk-grid-row govuk-!-margin-top-8">
   <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-m">All {{ all_councils | length }} councils{% if not other_nations %}, by region{% endif %}</h2>
+    <h2 class="govuk-heading-m" id="all-councils">All {{ all_councils | length }} councils{% if not other_nations %}, by region{% endif %}</h2>
     <p class="govuk-body">Every council in England that runs all local services: unitary authorities, metropolitan districts and London boroughs{% for nation, members in other_nations %}{{ " and" if loop.last else "," }} every council in {{ nation }}{% endfor %}.{% if other_nations %} Each council is compared with others in the same nation.{% endif %} Figures come from official statistics, updated as new editions are published.</p>
     {% if other_nations %}<h3 class="govuk-heading-s">England, by region</h3>{% endif %}
     {% for region, members in regions %}

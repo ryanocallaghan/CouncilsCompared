@@ -352,3 +352,12 @@ def test_tied_positions_are_shown_as_a_range():
     assert model.place(38, 1, 130) == "38th of 130"
     assert model.place(74, 57, 130) == "joint 74th to 130th of 130"
     assert model.place(1, 2, 6) == "joint 1st to 2nd of 6"
+
+
+def test_silktide_s_own_rank_is_shown_with_ours():
+    council = {"silktide": {"rank": 192, "of": 391, "url": "https://index.silktide.com/website/x"}}
+    assert model.elsewhere(council, "web_access") == (
+        "Silktide ranks it 192nd of 391 UK councils, including county and district councils.")
+    assert model.elsewhere(council, "recycling") is None
+    assert model.elsewhere({"silktide": None}, "web_access") is None
+    assert model.elsewhere({}, "web_access") is None
