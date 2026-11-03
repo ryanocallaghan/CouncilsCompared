@@ -252,6 +252,11 @@
       {% if b.links.missing %}GOV.UK has no link for {{ b.links.missing | map("lower") | sentence_join }}, so it can only send people to the council's homepage.{% endif %}
     </div>
   {% endif %}
+  {% if area.id == "openness" and b.planning and b.planning.missing %}
+    <div class="govuk-inset-text govuk-!-margin-top-2">
+      The Planning Data platform doesn't collect {{ b.planning.missing | map("lower") | sentence_join }} from {{ b.name }}.
+    </div>
+  {% endif %}
   {% if area.missing and not area.rows and area.id == "housing" %}
     <p class="govuk-body app-secondary-text">{{ b.name }} Council no longer owns council homes, so there are no council housing figures.</p>
   {% elif area.missing and not area.rows %}

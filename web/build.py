@@ -296,7 +296,7 @@ def build(out=DIST):
                  council_tax=model.council_tax(council),
                  structured_data=structured_data(council, group, council_updated))
     order = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "band_d", "fly", "waste", "homelessness",
-             "silktide", "local_links", "spending", "ofsted", "neighbours", "lgbf", "spso", "scot_homelessness", "scot_band_d",
+             "silktide", "local_links", "planning_data", "spending", "ofsted", "neighbours", "lgbf", "spso", "scot_homelessness", "scot_band_d",
              "scot_spending", "population"]
     # A nation's sources only once the nation is on the site
     used = set().union(*(model.nation_sources(n) for n in model.nations()))
