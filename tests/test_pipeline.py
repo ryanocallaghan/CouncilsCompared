@@ -94,3 +94,36 @@ def test_most_common_band_in_each_neighbourhood(monkeypatch):
     assert result.extra["E01000001"] == "B"
     assert result.extra["E01999999"] == "A"  # a tie goes to the lower band
     assert "E09000023" not in result.extra and result.period == "2026"
+
+
+def test_planning_data_counts_datasets_with_a_working_endpoint(monkeypatch):
+    from pipeline.sources import planning_data
+
+    rows = ["organisation,dataset,provision_reason,active_endpoint_count,error_endpoint_count",
+            "local-authority:LEW,conservation-area,expected,1,0",
+            "local-authority:LEW,tree,expected,2,1",  # one of two endpoints erroring still counts
+            "local-authority:LEW,article-4-direction,encouraged,0,1",  # only an erroring endpoint
+            "local-authority:LEW,brownfield-land,statutory,1,0",
+            "local-authority:LEW,local-plan,statutory,1,0",  # not one of the eight
+            "local-authority:HRY,tree,expected,0,0",
+            "national-park-authority:X,conservation-area,expected,1,0"]
+    organisations = {"organisations": {
+        "local-authority": [{"organisation": "local-authority:LEW", "statistical-geography": "E09000023"},
+                            {"organisation": "local-authority:HRY", "statistical-geography": "E09000014"}],
+        "national-park-authority": [{"organisation": "national-park-authority:X", "statistical-geography": ""}]}}
+    monkeypatch.setattr(planning_data, "get_text", lambda url: "\n".join(rows))
+    monkeypatch.setattr(planning_data, "get_json", lambda url: organisations)
+    result = planning_data.fetch({"population": {"E09000023": 1, "E09000014": 1, "E08000032": 1, "S12000033": 1}})
+    assert result.values == {"E09000023": {"planning_data": 25.0}, "E09000014": {"planning_data": 0.0}}
+    assert result.extra["E09000023"]["brownfield"] is True
+    assert result.extra["E09000014"]["brownfield"] is False
+    assert "Conservation areas" not in result.extra["E09000023"]["missing"]
+    assert len(result.extra["E09000014"]["missing"]) == 8
+    assert any("E08000032" in note for note in result.notes)  # not on the platform; Scotland isn't asked
+
+
+def test_planning_data_fails_when_its_columns_change(monkeypatch):
+    from pipeline.sources import planning_data
+    monkeypatch.setattr(planning_data, "get_text", lambda url: "organisation,dataset,endpoints\nx,y,1\n")
+    with pytest.raises(KeyError, match="active_endpoint_count"):
+        planning_data.fetch({"population": {}})

@@ -63,6 +63,10 @@ AREAS = [
      "Temporary accommodation and the outcomes of homelessness cases, from the council's statutory returns."),
     ("digital", "Website",
      "An automated test of the council website's accessibility."),
+    ("openness", "Openness",
+     "Whether the council publishes the information it should, in a form other people can use. Planning data "
+     "is what MHCLG's Planning Data platform collects from each council: conservation areas, Article 4 "
+     "directions, tree preservation orders and listed building outlines."),
 ]
 
 # Where a nation's figures need a different explanation from England's
@@ -159,6 +163,9 @@ MEASURES = [
             "Relief duty cases ending with accommodation secured for 6 months or more"),
     Measure("web_access", "digital", "Council website accessibility score", "%", "higher", "silktide",
             "Silktide Index WCAG 2.2 AA score", nations=("England", "Scotland")),
+    Measure("planning_data", "openness", "Planning datasets the council publishes", "%", "higher", "planning_data",
+            "Of 8 datasets the Planning Data platform asks councils for, those it collects from at least one "
+            "working source"),
     # Scotland, from the Local Government Benchmarking Framework
     Measure("literacy", "schools", "Primary pupils at the expected level in literacy", "%", "higher", "lgbf",
             "Pupils in P1, P4 and P7 achieving the expected Curriculum for Excellence level in literacy",

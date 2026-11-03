@@ -1,0 +1,1681 @@
+{
+ "extra": {
+  "E06000001": {
+   "brownfield": false,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000002": {
+   "brownfield": true,
+   "missing": [
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000003": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000004": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000005": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000006": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000007": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000008": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000009": {
+   "brownfield": true,
+   "missing": [
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000010": {
+   "brownfield": true,
+   "missing": [
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000011": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000012": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000013": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000014": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000015": {
+   "brownfield": false,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000016": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000017": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000018": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000019": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000020": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000021": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000022": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000023": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000024": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents"
+   ]
+  },
+  "E06000025": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000026": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000027": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000030": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000031": {
+   "brownfield": false,
+   "missing": []
+  },
+  "E06000032": {
+   "brownfield": true,
+   "missing": [
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000033": {
+   "brownfield": false,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000034": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000035": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Protected trees"
+   ]
+  },
+  "E06000036": {
+   "brownfield": false,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000037": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Tree preservation orders"
+   ]
+  },
+  "E06000038": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000039": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000040": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000041": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000042": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000043": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000044": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000045": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000046": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000047": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000049": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000050": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000051": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000052": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000054": {
+   "brownfield": true,
+   "missing": [
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000055": {
+   "brownfield": false,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000056": {
+   "brownfield": true,
+   "missing": [
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000057": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E06000058": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000059": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000060": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Tree preservation orders"
+   ]
+  },
+  "E06000061": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000062": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000063": {
+   "brownfield": false,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000064": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000065": {
+   "brownfield": false,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E06000066": {
+   "brownfield": false,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000001": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000002": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000003": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000004": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000005": {
+   "brownfield": true,
+   "missing": [
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000006": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E08000007": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E08000008": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000009": {
+   "brownfield": false,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000010": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000011": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000012": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions"
+   ]
+  },
+  "E08000013": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000014": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E08000015": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E08000016": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000017": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Tree preservation orders"
+   ]
+  },
+  "E08000018": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000019": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000021": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Protected trees"
+   ]
+  },
+  "E08000022": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E08000023": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000024": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000025": {
+   "brownfield": true,
+   "missing": [
+    "Tree preservation orders",
+    "Protected trees"
+   ]
+  },
+  "E08000026": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E08000027": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000028": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E08000029": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000030": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000031": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000032": {
+   "brownfield": true,
+   "missing": [
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000033": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E08000034": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000035": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents"
+   ]
+  },
+  "E08000036": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E08000037": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents"
+   ]
+  },
+  "E09000002": {
+   "brownfield": true,
+   "missing": [
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000003": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E09000004": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000005": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E09000006": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 direction areas",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000007": {
+   "brownfield": true,
+   "missing": [
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000008": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000009": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000010": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000011": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000012": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000013": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000014": {
+   "brownfield": false,
+   "missing": [
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000015": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000016": {
+   "brownfield": false,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000017": {
+   "brownfield": true,
+   "missing": [
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000018": {
+   "brownfield": true,
+   "missing": [
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000019": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000020": {
+   "brownfield": false,
+   "missing": [
+    "Conservation area documents"
+   ]
+  },
+  "E09000021": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Tree preservation orders"
+   ]
+  },
+  "E09000022": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Tree preservation zones"
+   ]
+  },
+  "E09000023": {
+   "brownfield": true,
+   "missing": [
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000024": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000025": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000026": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000027": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000028": {
+   "brownfield": true,
+   "missing": [
+    "Conservation area documents",
+    "Article 4 direction areas",
+    "Tree preservation orders"
+   ]
+  },
+  "E09000029": {
+   "brownfield": false,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000030": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E09000031": {
+   "brownfield": true,
+   "missing": []
+  },
+  "E09000032": {
+   "brownfield": true,
+   "missing": [
+    "Conservation areas",
+    "Conservation area documents",
+    "Article 4 directions",
+    "Article 4 direction areas",
+    "Listed building outlines",
+    "Tree preservation orders",
+    "Tree preservation zones",
+    "Protected trees"
+   ]
+  },
+  "E09000033": {
+   "brownfield": true,
+   "missing": []
+  }
+ },
+ "files": [
+  "https://datasette.planning.data.gov.uk/performance/provision_summary.csv?_stream=on&_size=max",
+  "https://www.planning.data.gov.uk/organisation.json"
+ ],
+ "id": "planning_data",
+ "notes": [],
+ "period": "November 2026",
+ "published": "2026-11-03",
+ "title": "Planning Data: data provided by each planning authority",
+ "trends": {},
+ "url": "https://www.planning.data.gov.uk/",
+ "values": {
+  "E06000001": {
+   "planning_data": 0.0
+  },
+  "E06000002": {
+   "planning_data": 25.0
+  },
+  "E06000003": {
+   "planning_data": 0.0
+  },
+  "E06000004": {
+   "planning_data": 0.0
+  },
+  "E06000005": {
+   "planning_data": 0.0
+  },
+  "E06000006": {
+   "planning_data": 100.0
+  },
+  "E06000007": {
+   "planning_data": 0.0
+  },
+  "E06000008": {
+   "planning_data": 0.0
+  },
+  "E06000009": {
+   "planning_data": 62.5
+  },
+  "E06000010": {
+   "planning_data": 37.5
+  },
+  "E06000011": {
+   "planning_data": 100.0
+  },
+  "E06000012": {
+   "planning_data": 0.0
+  },
+  "E06000013": {
+   "planning_data": 100.0
+  },
+  "E06000014": {
+   "planning_data": 37.5
+  },
+  "E06000015": {
+   "planning_data": 0.0
+  },
+  "E06000016": {
+   "planning_data": 100.0
+  },
+  "E06000017": {
+   "planning_data": 0.0
+  },
+  "E06000018": {
+   "planning_data": 12.5
+  },
+  "E06000019": {
+   "planning_data": 0.0
+  },
+  "E06000020": {
+   "planning_data": 0.0
+  },
+  "E06000021": {
+   "planning_data": 100.0
+  },
+  "E06000022": {
+   "planning_data": 0.0
+  },
+  "E06000023": {
+   "planning_data": 100.0
+  },
+  "E06000024": {
+   "planning_data": 87.5
+  },
+  "E06000025": {
+   "planning_data": 100.0
+  },
+  "E06000026": {
+   "planning_data": 100.0
+  },
+  "E06000027": {
+   "planning_data": 100.0
+  },
+  "E06000030": {
+   "planning_data": 0.0
+  },
+  "E06000031": {
+   "planning_data": 100.0
+  },
+  "E06000032": {
+   "planning_data": 50.0
+  },
+  "E06000033": {
+   "planning_data": 12.5
+  },
+  "E06000034": {
+   "planning_data": 0.0
+  },
+  "E06000035": {
+   "planning_data": 62.5
+  },
+  "E06000036": {
+   "planning_data": 0.0
+  },
+  "E06000037": {
+   "planning_data": 62.5
+  },
+  "E06000038": {
+   "planning_data": 0.0
+  },
+  "E06000039": {
+   "planning_data": 0.0
+  },
+  "E06000040": {
+   "planning_data": 0.0
+  },
+  "E06000041": {
+   "planning_data": 0.0
+  },
+  "E06000042": {
+   "planning_data": 100.0
+  },
+  "E06000043": {
+   "planning_data": 0.0
+  },
+  "E06000044": {
+   "planning_data": 0.0
+  },
+  "E06000045": {
+   "planning_data": 100.0
+  },
+  "E06000046": {
+   "planning_data": 0.0
+  },
+  "E06000047": {
+   "planning_data": 12.5
+  },
+  "E06000049": {
+   "planning_data": 0.0
+  },
+  "E06000050": {
+   "planning_data": 0.0
+  },
+  "E06000051": {
+   "planning_data": 0.0
+  },
+  "E06000052": {
+   "planning_data": 12.5
+  },
+  "E06000054": {
+   "planning_data": 50.0
+  },
+  "E06000055": {
+   "planning_data": 0.0
+  },
+  "E06000056": {
+   "planning_data": 75.0
+  },
+  "E06000057": {
+   "planning_data": 100.0
+  },
+  "E06000058": {
+   "planning_data": 12.5
+  },
+  "E06000059": {
+   "planning_data": 50.0
+  },
+  "E06000060": {
+   "planning_data": 62.5
+  },
+  "E06000061": {
+   "planning_data": 0.0
+  },
+  "E06000062": {
+   "planning_data": 0.0
+  },
+  "E06000063": {
+   "planning_data": 0.0
+  },
+  "E06000064": {
+   "planning_data": 0.0
+  },
+  "E06000065": {
+   "planning_data": 0.0
+  },
+  "E06000066": {
+   "planning_data": 0.0
+  },
+  "E08000001": {
+   "planning_data": 12.5
+  },
+  "E08000002": {
+   "planning_data": 37.5
+  },
+  "E08000003": {
+   "planning_data": 0.0
+  },
+  "E08000004": {
+   "planning_data": 25.0
+  },
+  "E08000005": {
+   "planning_data": 62.5
+  },
+  "E08000006": {
+   "planning_data": 100.0
+  },
+  "E08000007": {
+   "planning_data": 100.0
+  },
+  "E08000008": {
+   "planning_data": 0.0
+  },
+  "E08000009": {
+   "planning_data": 12.5
+  },
+  "E08000010": {
+   "planning_data": 0.0
+  },
+  "E08000011": {
+   "planning_data": 37.5
+  },
+  "E08000012": {
+   "planning_data": 75.0
+  },
+  "E08000013": {
+   "planning_data": 0.0
+  },
+  "E08000014": {
+   "planning_data": 100.0
+  },
+  "E08000015": {
+   "planning_data": 100.0
+  },
+  "E08000016": {
+   "planning_data": 0.0
+  },
+  "E08000017": {
+   "planning_data": 62.5
+  },
+  "E08000018": {
+   "planning_data": 0.0
+  },
+  "E08000019": {
+   "planning_data": 12.5
+  },
+  "E08000021": {
+   "planning_data": 75.0
+  },
+  "E08000022": {
+   "planning_data": 100.0
+  },
+  "E08000023": {
+   "planning_data": 0.0
+  },
+  "E08000024": {
+   "planning_data": 0.0
+  },
+  "E08000025": {
+   "planning_data": 75.0
+  },
+  "E08000026": {
+   "planning_data": 100.0
+  },
+  "E08000027": {
+   "planning_data": 12.5
+  },
+  "E08000028": {
+   "planning_data": 100.0
+  },
+  "E08000029": {
+   "planning_data": 0.0
+  },
+  "E08000030": {
+   "planning_data": 0.0
+  },
+  "E08000031": {
+   "planning_data": 0.0
+  },
+  "E08000032": {
+   "planning_data": 50.0
+  },
+  "E08000033": {
+   "planning_data": 100.0
+  },
+  "E08000034": {
+   "planning_data": 0.0
+  },
+  "E08000035": {
+   "planning_data": 87.5
+  },
+  "E08000036": {
+   "planning_data": 0.0
+  },
+  "E08000037": {
+   "planning_data": 87.5
+  },
+  "E09000002": {
+   "planning_data": 62.5
+  },
+  "E09000003": {
+   "planning_data": 100.0
+  },
+  "E09000004": {
+   "planning_data": 37.5
+  },
+  "E09000005": {
+   "planning_data": 100.0
+  },
+  "E09000006": {
+   "planning_data": 37.5
+  },
+  "E09000007": {
+   "planning_data": 62.5
+  },
+  "E09000008": {
+   "planning_data": 0.0
+  },
+  "E09000009": {
+   "planning_data": 0.0
+  },
+  "E09000010": {
+   "planning_data": 25.0
+  },
+  "E09000011": {
+   "planning_data": 0.0
+  },
+  "E09000012": {
+   "planning_data": 37.5
+  },
+  "E09000013": {
+   "planning_data": 12.5
+  },
+  "E09000014": {
+   "planning_data": 62.5
+  },
+  "E09000015": {
+   "planning_data": 0.0
+  },
+  "E09000016": {
+   "planning_data": 0.0
+  },
+  "E09000017": {
+   "planning_data": 75.0
+  },
+  "E09000018": {
+   "planning_data": 50.0
+  },
+  "E09000019": {
+   "planning_data": 0.0
+  },
+  "E09000020": {
+   "planning_data": 87.5
+  },
+  "E09000021": {
+   "planning_data": 75.0
+  },
+  "E09000022": {
+   "planning_data": 75.0
+  },
+  "E09000023": {
+   "planning_data": 62.5
+  },
+  "E09000024": {
+   "planning_data": 0.0
+  },
+  "E09000025": {
+   "planning_data": 0.0
+  },
+  "E09000026": {
+   "planning_data": 0.0
+  },
+  "E09000027": {
+   "planning_data": 0.0
+  },
+  "E09000028": {
+   "planning_data": 62.5
+  },
+  "E09000029": {
+   "planning_data": 0.0
+  },
+  "E09000030": {
+   "planning_data": 100.0
+  },
+  "E09000031": {
+   "planning_data": 100.0
+  },
+  "E09000032": {
+   "planning_data": 0.0
+  },
+  "E09000033": {
+   "planning_data": 100.0
+  }
+ }
+}

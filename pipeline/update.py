@@ -42,6 +42,7 @@ STEPS = [
     ("funding", "spending", "funding"),
     ("ofsted", "ofsted", "fetch"),
     ("silktide", "silktide", "fetch"),
+    ("planning_data", "planning_data", "fetch"),
     ("area_bands", "area_bands", "fetch"),
     ("lgbf", "lgbf", "fetch"),
     ("spso", "spso", "fetch"),
@@ -51,7 +52,8 @@ STEPS = [
 ]
 
 # Measures each source provides, in data/councils.json "values"
-VALUE_SOURCES = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "waste", "fly", "homelessness", "silktide", "lgbf",
+VALUE_SOURCES = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "waste", "fly", "homelessness", "silktide",
+                 "planning_data", "lgbf",
                  "spso", "scot_homelessness"]
 # Trends each source provides; a council only has figures in one source per trend
 TRENDS = {"ehcp_20wk": ["ehcp"], "om_upheld": ["lgo"], "recycling": ["waste", "lgbf"], "fly_rate": ["fly"],
@@ -163,6 +165,7 @@ def assemble():
             "values": {},
             "spend": {},
             "ofsted": None,
+            "planning": None,
             "fly": None,
             "bnb_families": None,
             "neighbours": [],
@@ -184,6 +187,8 @@ def assemble():
             council["fly"] = sources["fly"].extra.get("detail", {}).get(code)
         if sources["ofsted"]:
             council["ofsted"] = sources["ofsted"].extra.get(code)
+        if sources["planning_data"]:
+            council["planning"] = sources["planning_data"].extra.get(code)
         if sources["neighbours"]:
             council["neighbours"] = sources["neighbours"].extra.get(code, [])
         if sources["lgbf"] and code.startswith("S"):  # the LGBF family group
