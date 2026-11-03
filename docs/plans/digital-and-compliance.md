@@ -314,9 +314,15 @@ Made on 3 November 2026:
 - **Our own checks are published**, labelled "Our checks". Phase 3 goes ahead.
 - **This plan stays on its branch**, not merged to `main`.
 
-Still needed:
+- **Ask mySociety for FOI data**: either a periodic extract of requests by
+  authority (on time, late, overdue) or permission to read the authority JSON
+  pages at a low rate. FOI joins Openness only if they agree.
+- **Areas**: Online services, Privacy and security, Openness.
 
-1. Should we ask mySociety for WhatDoTheyKnow data, or leave FOI out?
-2. Are the three area names above right?
-3. Should check measures appear in the summary at the top of the council
-   page, or only in their areas?
+Proposed, to confirm:
+
+- **Checks in the council page summary.** Keep checks out of the quarter
+  counts ("5 of 12 measures in the top quarter"), since a yes/no can't be
+  ranked. Add one line under the summary when a council fails any: "Fails 2
+  of 9 checks: DMARC, accessibility statement". Say nothing when it passes
+  them all.
