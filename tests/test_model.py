@@ -336,6 +336,24 @@ def test_fly_tipping_detail_compares_size_with_the_group():
     assert model.fly_detail({"fly": None}, members) is None
 
 
+def test_ties_are_placed_at_their_middle_for_quarters():
+    # 57 of 130 councils share the lowest figure: positions 74 to 130
+    values = [100.0] * 26 + [50.0] * 47 + [0.0] * 57
+    assert model.position(0.0, values, "higher") == 74
+    assert model.middle(0.0, values, "higher") == 102
+    assert model.quarter(model.middle(0.0, values, "higher"), 130) == 3  # the bottom quarter
+    assert model.quarter(model.position(0.0, values, "higher"), 130) == 2  # not the third, as 74th alone would be
+    assert model.quarter(model.middle(100.0, values, "higher"), 130) == 0
+    # Lower is better: ties at the best figure
+    assert model.middle(0, [0, 0, 0, 5], "lower") == 2
+
+
+def test_tied_positions_are_shown_as_a_range():
+    assert model.place(38, 1, 130) == "38th of 130"
+    assert model.place(74, 57, 130) == "joint 74th to 130th of 130"
+    assert model.place(1, 2, 6) == "joint 1st to 2nd of 6"
+
+
 def test_silktide_s_own_rank_is_shown_with_ours():
     council = {"silktide": {"rank": 192, "of": 391, "url": "https://index.silktide.com/website/x"}}
     assert model.elsewhere(council, "web_access") == (
