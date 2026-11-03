@@ -94,3 +94,74 @@ def test_most_common_band_in_each_neighbourhood(monkeypatch):
     assert result.extra["E01000001"] == "B"
     assert result.extra["E01999999"] == "A"  # a tie goes to the lower band
     assert "E09000023" not in result.extra and result.period == "2026"
+
+
+@pytest.mark.parametrize("name, slug", [
+    ("London Borough of Lewisham", "lewisham"),
+    ("Leeds City Council", "leeds"),
+    ("Royal Borough of Kensington and Chelsea", "kensington-and-chelsea"),
+    ("St. Helens Metropolitan Borough Council", "st-helens"),
+    ("Westmorland and Furness Council", "westmorland-and-furness"),
+    ("Brighton & Hove City Council", "brighton-and-hove"),
+])
+def test_local_links_slugs_from_gov_uk_names(name, slug):
+    from pipeline.sources import local_links
+    assert local_links.slug(name) == slug
+
+
+def test_local_links_counts_working_links(monkeypatch):
+    from pipeline.sources import local_links
+
+    csv_text = ("Authority Name,GSS,Description,LGSL,LGIL,URL,Title,Supported by GOV.UK\n"
+                "London Borough of Lewisham,E09000023,x,57,8,https://lewisham.gov.uk/tax,,true\n"
+                "Fife Council,S12000015,x,57,8,https://fife.gov.uk/tax,,true\n")
+    authorities = {"lewisham": "E09000023", "fife": "S12000015"}  # Fife by its old code
+    statuses = {57: "ok", 524: "broken", 36: "caution", 13: None}  # 13: not checked yet; others: no link
+
+    def get_json(url, pause=0):
+        query = dict(p.split("=") for p in url.split("?")[1].split("&"))
+        lgsl = int(query["lgsl"])
+        response = {"local_authority": {"gss": authorities[query["authority_slug"]], "homepage_url": "https://x"}}
+        if lgsl in statuses:
+            response["local_interaction"] = {"lgsl_code": lgsl, "status": statuses[lgsl], "url": f"https://x/{lgsl}"}
+        return response
+
+    monkeypatch.setattr(local_links, "get_text", lambda url: csv_text)
+    monkeypatch.setattr(local_links, "get_json", get_json)
+    monkeypatch.setattr(local_links, "loads", lambda url: False)  # the broken link really is
+    monkeypatch.setattr(local_links.time, "sleep", lambda seconds: None)
+    result = local_links.fetch({"population": {"E09000023": 1, "S12000047": 1, "W06000001": 1}})
+    # England: 19 checked (13 isn't yet), of which ok and caution work
+    assert result.values["E09000023"]["links_working"] == round(100 * 2 / 19, 1)
+    lewisham = result.extra["E09000023"]
+    assert lewisham["services"] == 19 and lewisham["broken"] == ["Bin collections"]
+    assert len(lewisham["missing"]) == 16 and "Paying council tax" not in lewisham["missing"]
+    # Scotland is compared on fewer services, and Fife is found by its old code
+    assert result.extra["S12000047"]["services"] == len(local_links.SERVICES) - 4 - 1
+    assert "W06000001" not in result.values
+
+
+def test_local_links_refuses_a_slug_for_the_wrong_council(monkeypatch):
+    from pipeline.sources import local_links
+    monkeypatch.setattr(local_links, "get_text", lambda url: "Authority Name,GSS\nLewisham,E09000023\n")
+    monkeypatch.setattr(local_links, "get_json", lambda url, pause=0: {"local_authority": {"gss": "E09000014"}})
+    with pytest.raises(ValueError, match="E09000014"):
+        local_links.fetch({"population": {"E09000023": 1}})
+
+
+def test_local_links_rechecks_links_gov_uk_marks_broken(monkeypatch):
+    from pipeline.sources import local_links
+    monkeypatch.setattr(local_links.time, "sleep", lambda seconds: None)
+    pages = {"https://x/works": True, "https://x/gone": False, "https://x/blocked": None}
+    monkeypatch.setattr(local_links, "loads", pages.get)
+    links = {"57": {"status": "broken", "url": "https://x/works"},  # keys as saved: strings
+             "59": {"status": "broken", "url": "https://x/gone"},
+             "63": {"status": "broken", "url": "https://x/blocked"},
+             "69": {"status": "ok", "url": "https://x/ok"},
+             "524": {"status": "missing", "url": None}}
+    local_links.recheck(links)
+    assert [v["status"] for v in links.values()] == ["rechecked", "broken", "broken", "ok", "missing"]
+    figures = local_links.summary(links)
+    assert figures["working"] == 40.0
+    assert figures["broken"] == ["Council tax discounts", "Council tax support"]
+    assert figures["missing"] == ["Bin collections"]
