@@ -649,6 +649,42 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
   grid-column: 1 / -1;
 }
 
+// Checks: a yes or no, on its own line under the measures, with why on a no
+.app-area__checks {
+  margin: 0 0 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.app-area__check {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 5px 15px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--govuk-border-colour, #cecece);
+  @include govuk.govuk-font($size: 19);
+}
+
+.app-check__tag {
+  justify-self: end;
+  min-width: 3em;
+  text-align: center;
+}
+
+.app-area__check .app-check__reason {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.app-check__reason {
+  display: block;
+}
+
+.app-summary__fails {
+  margin-top: 15px;
+}
+
 // A quarter, as a label: the map colours, with text that reads on each
 .app-tag {
   display: inline-block;
@@ -827,6 +863,17 @@ a:focus .app-hex {
     fill: list.nth($app-quarters, $i);
     background: list.nth($app-quarters, $i);
   }
+}
+
+// A check's map: the best and worst quarters' colours
+.app-check--yes {
+  fill: list.nth($app-quarters, 1);
+  background: list.nth($app-quarters, 1);
+}
+
+.app-check--no {
+  fill: list.nth($app-quarters, 4);
+  background: list.nth($app-quarters, 4);
 }
 
 .app-map__legend {

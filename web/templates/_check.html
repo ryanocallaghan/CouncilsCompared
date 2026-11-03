@@ -1,0 +1,2 @@
+{# A check's answer: a yes or no in words, never only a colour #}
+{% macro checkTag(passed) %}<strong class="govuk-tag {{ 'govuk-tag--green' if passed else 'govuk-tag--red' }} app-check__tag">{{ "Yes" if passed else "No" }}</strong>{% endmacro %}

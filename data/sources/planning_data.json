@@ -1,7 +1,788 @@
 {
+ "checks": {
+  "E06000001": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+   }
+  },
+  "E06000002": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000003": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000004": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000005": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000006": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000007": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000008": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000009": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000010": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000011": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000012": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000013": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000014": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000015": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+   }
+  },
+  "E06000016": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000017": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000018": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000019": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000020": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000021": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000022": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000023": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000024": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000025": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000026": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000027": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000030": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000031": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+   }
+  },
+  "E06000032": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000033": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+   }
+  },
+  "E06000034": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000035": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000036": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+   }
+  },
+  "E06000037": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000038": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000039": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000040": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000041": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000042": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000043": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000044": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000045": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000046": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000047": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000049": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000050": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000051": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000052": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000054": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000055": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+   }
+  },
+  "E06000056": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000057": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000058": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000059": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000060": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000061": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000062": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000063": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform collects registers for only part of the area, from 2 of the 3 councils it replaced in 2023, and none from the council itself."
+   }
+  },
+  "E06000064": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000065": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform collects registers for only part of the area, from 5 of the 7 councils it replaced in 2023, and none from the council itself."
+   }
+  },
+  "E06000066": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform collects registers for only part of the area, from 3 of the 4 councils it replaced in 2023, and none from the council itself."
+   }
+  },
+  "E08000001": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000002": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000003": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000004": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000005": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000006": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000007": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000008": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000009": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+   }
+  },
+  "E08000010": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000011": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000012": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000013": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000014": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000015": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000016": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000017": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000018": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000019": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000021": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000022": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000023": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000024": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000025": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000026": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000027": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000028": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000029": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000030": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000031": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000032": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000033": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000034": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000035": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000036": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000037": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000002": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000003": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000004": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000005": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000006": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000007": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000008": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000009": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000010": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000011": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000012": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000013": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000014": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+   }
+  },
+  "E09000015": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000016": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+   }
+  },
+  "E09000017": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000018": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000019": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000020": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+   }
+  },
+  "E09000021": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000022": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000023": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000024": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000025": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000026": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000027": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000028": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000029": {
+   "brownfield": {
+    "pass": false,
+    "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+   }
+  },
+  "E09000030": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000031": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000032": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000033": {
+   "brownfield": {
+    "pass": true,
+    "reason": ""
+   }
+  }
+ },
  "extra": {
   "E06000001": {
-   "brownfield": false,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -14,7 +795,6 @@
    ]
   },
   "E06000002": {
-   "brownfield": true,
    "missing": [
     "Article 4 directions",
     "Article 4 direction areas",
@@ -25,7 +805,6 @@
    ]
   },
   "E06000003": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -38,7 +817,6 @@
    ]
   },
   "E06000004": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -51,7 +829,6 @@
    ]
   },
   "E06000005": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -64,11 +841,9 @@
    ]
   },
   "E06000006": {
-   "brownfield": true,
    "missing": []
   },
   "E06000007": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -81,7 +856,6 @@
    ]
   },
   "E06000008": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -94,7 +868,6 @@
    ]
   },
   "E06000009": {
-   "brownfield": true,
    "missing": [
     "Tree preservation orders",
     "Tree preservation zones",
@@ -102,7 +875,6 @@
    ]
   },
   "E06000010": {
-   "brownfield": true,
    "missing": [
     "Article 4 directions",
     "Article 4 direction areas",
@@ -112,11 +884,9 @@
    ]
   },
   "E06000011": {
-   "brownfield": true,
    "missing": []
   },
   "E06000012": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -129,11 +899,9 @@
    ]
   },
   "E06000013": {
-   "brownfield": true,
    "missing": []
   },
   "E06000014": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Listed building outlines",
@@ -143,7 +911,6 @@
    ]
   },
   "E06000015": {
-   "brownfield": false,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -156,11 +923,9 @@
    ]
   },
   "E06000016": {
-   "brownfield": true,
    "missing": []
   },
   "E06000017": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -173,7 +938,6 @@
    ]
   },
   "E06000018": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -185,7 +949,6 @@
    ]
   },
   "E06000019": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -198,7 +961,6 @@
    ]
   },
   "E06000020": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -211,11 +973,9 @@
    ]
   },
   "E06000021": {
-   "brownfield": true,
    "missing": []
   },
   "E06000022": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -228,29 +988,23 @@
    ]
   },
   "E06000023": {
-   "brownfield": true,
    "missing": []
   },
   "E06000024": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents"
    ]
   },
   "E06000025": {
-   "brownfield": true,
    "missing": []
   },
   "E06000026": {
-   "brownfield": true,
    "missing": []
   },
   "E06000027": {
-   "brownfield": true,
    "missing": []
   },
   "E06000030": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -263,11 +1017,9 @@
    ]
   },
   "E06000031": {
-   "brownfield": false,
    "missing": []
   },
   "E06000032": {
-   "brownfield": true,
    "missing": [
     "Listed building outlines",
     "Tree preservation orders",
@@ -276,7 +1028,6 @@
    ]
   },
   "E06000033": {
-   "brownfield": false,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -288,7 +1039,6 @@
    ]
   },
   "E06000034": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -301,7 +1051,6 @@
    ]
   },
   "E06000035": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -309,7 +1058,6 @@
    ]
   },
   "E06000036": {
-   "brownfield": false,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -322,7 +1070,6 @@
    ]
   },
   "E06000037": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -330,7 +1077,6 @@
    ]
   },
   "E06000038": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -343,7 +1089,6 @@
    ]
   },
   "E06000039": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -356,7 +1101,6 @@
    ]
   },
   "E06000040": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -369,7 +1113,6 @@
    ]
   },
   "E06000041": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -382,11 +1125,9 @@
    ]
   },
   "E06000042": {
-   "brownfield": true,
    "missing": []
   },
   "E06000043": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -399,7 +1140,6 @@
    ]
   },
   "E06000044": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -412,11 +1152,9 @@
    ]
   },
   "E06000045": {
-   "brownfield": true,
    "missing": []
   },
   "E06000046": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -429,7 +1167,6 @@
    ]
   },
   "E06000047": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -441,7 +1178,6 @@
    ]
   },
   "E06000049": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -454,7 +1190,6 @@
    ]
   },
   "E06000050": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -467,7 +1202,6 @@
    ]
   },
   "E06000051": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -480,7 +1214,6 @@
    ]
   },
   "E06000052": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -492,7 +1225,6 @@
    ]
   },
   "E06000054": {
-   "brownfield": true,
    "missing": [
     "Listed building outlines",
     "Tree preservation orders",
@@ -501,7 +1233,6 @@
    ]
   },
   "E06000055": {
-   "brownfield": false,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -514,18 +1245,15 @@
    ]
   },
   "E06000056": {
-   "brownfield": true,
    "missing": [
     "Tree preservation zones",
     "Protected trees"
    ]
   },
   "E06000057": {
-   "brownfield": true,
    "missing": []
   },
   "E06000058": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -537,7 +1265,6 @@
    ]
   },
   "E06000059": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Tree preservation orders",
@@ -546,7 +1273,6 @@
    ]
   },
   "E06000060": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -554,7 +1280,6 @@
    ]
   },
   "E06000061": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -567,7 +1292,6 @@
    ]
   },
   "E06000062": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -580,7 +1304,6 @@
    ]
   },
   "E06000063": {
-   "brownfield": false,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -593,7 +1316,6 @@
    ]
   },
   "E06000064": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -606,7 +1328,6 @@
    ]
   },
   "E06000065": {
-   "brownfield": false,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -619,7 +1340,6 @@
    ]
   },
   "E06000066": {
-   "brownfield": false,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -632,7 +1352,6 @@
    ]
   },
   "E08000001": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -644,7 +1363,6 @@
    ]
   },
   "E08000002": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Listed building outlines",
@@ -654,7 +1372,6 @@
    ]
   },
   "E08000003": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -667,7 +1384,6 @@
    ]
   },
   "E08000004": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -678,7 +1394,6 @@
    ]
   },
   "E08000005": {
-   "brownfield": true,
    "missing": [
     "Tree preservation orders",
     "Tree preservation zones",
@@ -686,15 +1401,12 @@
    ]
   },
   "E08000006": {
-   "brownfield": true,
    "missing": []
   },
   "E08000007": {
-   "brownfield": true,
    "missing": []
   },
   "E08000008": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -707,7 +1419,6 @@
    ]
   },
   "E08000009": {
-   "brownfield": false,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -719,7 +1430,6 @@
    ]
   },
   "E08000010": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -732,7 +1442,6 @@
    ]
   },
   "E08000011": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 direction areas",
@@ -742,14 +1451,12 @@
    ]
   },
   "E08000012": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions"
    ]
   },
   "E08000013": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -762,15 +1469,12 @@
    ]
   },
   "E08000014": {
-   "brownfield": true,
    "missing": []
   },
   "E08000015": {
-   "brownfield": true,
    "missing": []
   },
   "E08000016": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -783,7 +1487,6 @@
    ]
   },
   "E08000017": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -791,7 +1494,6 @@
    ]
   },
   "E08000018": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -804,7 +1506,6 @@
    ]
   },
   "E08000019": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -816,18 +1517,15 @@
    ]
   },
   "E08000021": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Protected trees"
    ]
   },
   "E08000022": {
-   "brownfield": true,
    "missing": []
   },
   "E08000023": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -840,7 +1538,6 @@
    ]
   },
   "E08000024": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -853,18 +1550,15 @@
    ]
   },
   "E08000025": {
-   "brownfield": true,
    "missing": [
     "Tree preservation orders",
     "Protected trees"
    ]
   },
   "E08000026": {
-   "brownfield": true,
    "missing": []
   },
   "E08000027": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -876,11 +1570,9 @@
    ]
   },
   "E08000028": {
-   "brownfield": true,
    "missing": []
   },
   "E08000029": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -893,7 +1585,6 @@
    ]
   },
   "E08000030": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -906,7 +1597,6 @@
    ]
   },
   "E08000031": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -919,7 +1609,6 @@
    ]
   },
   "E08000032": {
-   "brownfield": true,
    "missing": [
     "Listed building outlines",
     "Tree preservation orders",
@@ -928,11 +1617,9 @@
    ]
   },
   "E08000033": {
-   "brownfield": true,
    "missing": []
   },
   "E08000034": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -945,13 +1632,11 @@
    ]
   },
   "E08000035": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents"
    ]
   },
   "E08000036": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -964,13 +1649,11 @@
    ]
   },
   "E08000037": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents"
    ]
   },
   "E09000002": {
-   "brownfield": true,
    "missing": [
     "Tree preservation orders",
     "Tree preservation zones",
@@ -978,11 +1661,9 @@
    ]
   },
   "E09000003": {
-   "brownfield": true,
    "missing": []
   },
   "E09000004": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Article 4 directions",
@@ -992,11 +1673,9 @@
    ]
   },
   "E09000005": {
-   "brownfield": true,
    "missing": []
   },
   "E09000006": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 direction areas",
@@ -1006,7 +1685,6 @@
    ]
   },
   "E09000007": {
-   "brownfield": true,
    "missing": [
     "Tree preservation orders",
     "Tree preservation zones",
@@ -1014,7 +1692,6 @@
    ]
   },
   "E09000008": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1027,7 +1704,6 @@
    ]
   },
   "E09000009": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1040,7 +1716,6 @@
    ]
   },
   "E09000010": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -1051,7 +1726,6 @@
    ]
   },
   "E09000011": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1064,7 +1738,6 @@
    ]
   },
   "E09000012": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Listed building outlines",
@@ -1074,7 +1747,6 @@
    ]
   },
   "E09000013": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 directions",
@@ -1086,7 +1758,6 @@
    ]
   },
   "E09000014": {
-   "brownfield": false,
    "missing": [
     "Tree preservation orders",
     "Tree preservation zones",
@@ -1094,7 +1765,6 @@
    ]
   },
   "E09000015": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1107,7 +1777,6 @@
    ]
   },
   "E09000016": {
-   "brownfield": false,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1120,14 +1789,12 @@
    ]
   },
   "E09000017": {
-   "brownfield": true,
    "missing": [
     "Tree preservation zones",
     "Protected trees"
    ]
   },
   "E09000018": {
-   "brownfield": true,
    "missing": [
     "Listed building outlines",
     "Tree preservation orders",
@@ -1136,7 +1803,6 @@
    ]
   },
   "E09000019": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1149,27 +1815,23 @@
    ]
   },
   "E09000020": {
-   "brownfield": false,
    "missing": [
     "Conservation area documents"
    ]
   },
   "E09000021": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Tree preservation orders"
    ]
   },
   "E09000022": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Tree preservation zones"
    ]
   },
   "E09000023": {
-   "brownfield": true,
    "missing": [
     "Tree preservation orders",
     "Tree preservation zones",
@@ -1177,7 +1839,6 @@
    ]
   },
   "E09000024": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1190,7 +1851,6 @@
    ]
   },
   "E09000025": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1203,7 +1863,6 @@
    ]
   },
   "E09000026": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1216,7 +1875,6 @@
    ]
   },
   "E09000027": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1229,7 +1887,6 @@
    ]
   },
   "E09000028": {
-   "brownfield": true,
    "missing": [
     "Conservation area documents",
     "Article 4 direction areas",
@@ -1237,7 +1894,6 @@
    ]
   },
   "E09000029": {
-   "brownfield": false,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1250,15 +1906,12 @@
    ]
   },
   "E09000030": {
-   "brownfield": true,
    "missing": []
   },
   "E09000031": {
-   "brownfield": true,
    "missing": []
   },
   "E09000032": {
-   "brownfield": true,
    "missing": [
     "Conservation areas",
     "Conservation area documents",
@@ -1271,7 +1924,6 @@
    ]
   },
   "E09000033": {
-   "brownfield": true,
    "missing": []
   }
  },

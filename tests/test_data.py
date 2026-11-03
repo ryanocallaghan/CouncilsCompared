@@ -67,6 +67,15 @@ def test_measures_only_appear_in_their_nations():
             assert nation_of(c) in nations[measure], (c["name"], measure)
 
 
+@pytest.mark.parametrize("check,nation", [(k.id, n) for k in model.CHECKS for n in k.nations])
+def test_each_check_covers_most_councils_and_says_why_it_fails(check, nation):
+    answers = [c["checks"][check] for c in COUNCILS if nation_of(c) == nation and check in c.get("checks", {})]
+    assert len(answers) >= MINIMUM.get((check, nation), 120), f"{check} in {nation}: only {len(answers)} councils"
+    assert all(isinstance(a["pass"], bool) for a in answers)
+    assert all(a["reason"] for a in answers if not a["pass"])
+    assert any(a["pass"] for a in answers) and not all(a["pass"] for a in answers)  # a check that tells councils apart
+
+
 @pytest.mark.parametrize("measure", [m.id for m in model.MEASURES if m.unit == "%"])
 def test_percentages_are_percentages(measure):
     for c in COUNCILS:

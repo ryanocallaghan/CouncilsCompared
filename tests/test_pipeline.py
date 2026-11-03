@@ -76,6 +76,14 @@ def test_changes_describe_new_editions_and_revised_figures():
     assert changes(after, after) == "No figures changed."
 
 
+def test_changes_list_checks_that_flipped():
+    def data(passed):
+        return {"sources": {}, "councils": [{"code": "A", "name": "Aville", "values": {},
+                                             "checks": {"brownfield": {"pass": passed, "reason": ""}}}]}
+    assert "| `brownfield` | 1 | Aville (fails) |" in changes(data(True), data(False))
+    assert changes(data(True), data(True)) == "No figures changed."
+
+
 def test_most_common_band_in_each_neighbourhood(monkeypatch):
     import io
     import zipfile
@@ -115,11 +123,33 @@ def test_planning_data_counts_datasets_with_a_working_endpoint(monkeypatch):
     monkeypatch.setattr(planning_data, "get_json", lambda url: organisations)
     result = planning_data.fetch({"population": {"E09000023": 1, "E09000014": 1, "E08000032": 1, "S12000033": 1}})
     assert result.values == {"E09000023": {"planning_data": 25.0}, "E09000014": {"planning_data": 0.0}}
-    assert result.extra["E09000023"]["brownfield"] is True
-    assert result.extra["E09000014"]["brownfield"] is False
+    assert result.checks["E09000023"]["brownfield"] == {"pass": True, "reason": ""}
+    assert result.checks["E09000014"]["brownfield"]["pass"] is False
+    assert "doesn't collect one" in result.checks["E09000014"]["brownfield"]["reason"]
     assert "Conservation areas" not in result.extra["E09000023"]["missing"]
     assert len(result.extra["E09000014"]["missing"]) == 8
     assert any("E08000032" in note for note in result.notes)  # not on the platform; Scotland isn't asked
+
+
+def test_planning_data_counts_the_councils_a_new_one_replaced_only_if_all_have_it(monkeypatch):
+    from pipeline.sources import planning_data
+
+    rows = ["organisation,dataset,active_endpoint_count",
+            "local-authority:CUA,tree,0",
+            # Cumberland replaced Allerdale, Carlisle and Copeland in 2023
+            "local-authority:ALL,conservation-area,1", "local-authority:CAR,conservation-area,1",
+            "local-authority:COP,conservation-area,1",
+            "local-authority:CAR,brownfield-land,1", "local-authority:COP,brownfield-land,1"]
+    organisations = {"organisations": {"local-authority": [
+        {"organisation": "local-authority:CUA", "statistical-geography": "E06000063"},
+        {"organisation": "local-authority:CAR", "statistical-geography": "E07000028", "end-date": "2023-03-31"}]}}
+    monkeypatch.setattr(planning_data, "get_text", lambda url: "\n".join(rows))
+    monkeypatch.setattr(planning_data, "get_json", lambda url: organisations)
+    result = planning_data.fetch({"population": {"E06000063": 1}})
+    assert result.values["E06000063"]["planning_data"] == 12.5  # conservation areas, from all three
+    check = result.checks["E06000063"]["brownfield"]
+    assert check["pass"] is False
+    assert "from 2 of the 3 councils it replaced in 2023" in check["reason"]
 
 
 def test_planning_data_fails_when_its_columns_change(monkeypatch):

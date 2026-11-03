@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% from "_check.html" import checkTag %}
+{% set k = check %}
+{% block title %}{{ k.label }}: every council in {{ nation }}{% if period %} ({{ period }}){% endif %}{% endblock %}
+{% block description %}Whether each council in {{ nation }} {{ k.label | lower_first }}, from official data ({{ period }}).{% endblock %}
+{% block backLink %}{{ govukBackLink({"text": "All measures", "href": "/measures/"}) }}{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <span class="govuk-caption-l">{{ area_name }}</span>
+    <h1 class="govuk-heading-xl">{{ k.label }}</h1>
+    <p class="govuk-body-s app-secondary-text">{{ period }}. A yes or no, so councils aren't ranked on it. Source: <a class="govuk-link" href="{{ source.url }}">{{ source.title }}</a>.</p>
+    <p class="govuk-body">{{ k.how }}</p>
+    <p class="govuk-body">{{ passed }} of {{ results | length }} councils in {{ nation }} do. {{ results | length - passed }} don't.</p>
+    {% if updated %}<p class="govuk-body-s app-secondary-text">Last updated {{ updated | long_date }}.</p>{% endif %}
+  </div>
+</div>
+
+<div class="app-explore" data-module="app-explore">
+  <form class="app-highlight" data-module="app-highlight" hidden>
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-label--s" for="highlight">Find a council</label>
+      <select class="govuk-select" id="highlight" name="highlight">
+        <option value="">Choose a council</option>
+        {% for c, r in results | sort(attribute="0.name") %}<option value="{{ c.slug }}">{{ c.name }}</option>{% endfor %}
+      </select>
+    </div>
+  </form>
+  {% if nation == "England" %}
+  <form class="app-explore__filters" hidden>
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-label--s" for="filter-region">Region</label>
+      <select class="govuk-select" id="filter-region">
+        <option value="">All of England</option>
+        {% for region in regions %}<option>{{ region }}</option>{% endfor %}
+      </select>
+    </div>
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-label--s" for="filter-type">Type of council</label>
+      <select class="govuk-select" id="filter-type">
+        <option value="">All types</option>
+        {% for type in types %}<option>{{ type }}</option>{% endfor %}
+      </select>
+    </div>
+  </form>
+  {% endif %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <figure class="app-map">
+        <svg class="app-map__svg" viewBox="0 0 {{ map.width }} {{ map.height }}" role="img" aria-label="Map of {{ nation }} with each council as a hexagon, coloured by whether it {{ k.label | lower_first }}. The same answers are in the table." focusable="false">
+          {% for cell in map.cells %}
+            {% if cell.council %}<a href="/{{ cell.council.slug }}/" data-slug="{{ cell.council.slug }}" data-region="{{ cell.council.region }}" data-type="{{ cell.council.type }}" aria-label="{{ cell.label }}"><polygon class="app-hex {{ cell.class }}" points="{{ cell.points }}"><title>{{ cell.label }}</title></polygon></a>{% else %}<polygon class="app-hex {{ cell.class }}" points="{{ cell.points }}"><title>{{ cell.label }}: not covered</title></polygon>{% endif %}
+          {% endfor %}
+        </svg>
+        <figcaption>
+          <ul class="app-map__legend govuk-body-s">
+            <li><span class="app-map__key app-check--yes"></span>Yes</li>
+            <li><span class="app-map__key app-check--no"></span>No</li>
+            <li><span class="app-map__key app-hex--other"></span>{% if nation == "England" %}Not covered (county and district areas){% else %}Elsewhere in the UK{% endif %}</li>
+          </ul>
+          <p class="govuk-body-s app-secondary-text">Each council is the same size, so London is easy to see. Map layout by <a class="govuk-link" href="https://github.com/odileeds/hexmaps">Open Innovations</a>.</p>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="govuk-grid-column-one-half">
+      <table class="govuk-table app-ranking">
+        <caption class="govuk-table__caption govuk-table__caption--m">Every council, those that don't first</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Council</th>
+            <th scope="col" class="govuk-table__header">Answer</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          {% for c, r in results %}
+            <tr class="govuk-table__row" data-region="{{ c.region }}" data-type="{{ c.type }}" data-slug="{{ c.slug }}">
+              <td class="govuk-table__cell">
+                <a class="govuk-link" href="/{{ c.slug }}/">{{ c.name }}</a>
+                {% if r.reason %}<span class="govuk-body-s app-secondary-text app-check__reason">{{ r.reason }}</span>{% endif %}
+              </td>
+              <td class="govuk-table__cell">{{ checkTag(r.passed) }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% if missing %}<p class="govuk-body-s app-secondary-text">No answer for: {{ missing | map(attribute="name") | join(", ") }}.</p>{% endif %}
+    </div>
+  </div>
+</div>
+<script type="application/ld+json">{{ structured_data | tojson }}</script>
+{% endblock %}

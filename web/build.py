@@ -75,7 +75,7 @@ def environment():
         lstrip_blocks=True,
     )
     env.filters.update(possessive=possessive, sentence_join=sentence_join, council_links=council_links,
-                       long_date=long_date)
+                       long_date=long_date, lower_first=model.lower_first)
     env.tests["caveated"] = lambda council, measure_id: bool(model.caveat(council, measure_id))
     return env
 
@@ -106,14 +106,16 @@ def write(out, path, text):
 
 def csv_text(councils):
     measures = [m.id for m in model.MEASURES]
+    checks = [k.id for k in model.CHECKS]
     out = io.StringIO()
     writer = csv.writer(out)
-    writer.writerow(["ons_code", "council", "type", "region", "population", "band_d"] + measures
+    writer.writerow(["ons_code", "council", "type", "region", "population", "band_d"] + measures + checks
                     + [f"spend_per_resident: {s}" for s in model.SPENDING] + ["ofsted_grade", "ofsted_inspected"])
     for c in councils:
         ofsted = c.get("ofsted") or {}
         writer.writerow([c["code"], c["name"], c["type"], c["region"], c["population"], c["band_d"]]
                         + [c["values"].get(m) for m in measures]
+                        + [{True: "yes", False: "no"}.get((c.get("checks", {}).get(k) or {}).get("pass")) for k in checks]
                         + [c["spend"].get(s) for s in model.SPENDING]
                         + [ofsted.get("grade"), ofsted.get("inspected")])
     return out.getvalue()
@@ -200,13 +202,14 @@ def every_council(nation):
     return f"every council in {nation}"
 
 
-def dataset(name, description, path, period, source, updated, ogl=True, nation="England"):
-    """A ranking page as a dataset, for Google Dataset Search."""
+def dataset(name, description, path, period, source, updated, ogl=True, nation="England", ranked=True):
+    """A ranking page (or a check's page) as a dataset, for Google Dataset Search."""
     data = {
         "@context": "https://schema.org",
         "@type": "Dataset",
         "name": f"{name}: every council in {nation}",
-        "description": f"{name}, for {every_council(nation)}, ranked, from official statistics. {description}",
+        "description": f"{name}, for {every_council(nation)}, {'ranked, ' if ranked else ''}from official statistics. "
+                       f"{description}",
         "url": SITE_URL + path,
         "creator": AUTHOR,
         "spatialCoverage": {"@type": "Place", "name": nation},
@@ -231,6 +234,8 @@ def llms_txt(councils):
     """A plain summary for AI tools: what the site is and where the figures are."""
     measures = "\n".join(f"- [{m.label}]({SITE_URL}/measures/{m.id.replace('_', '-')}/)"
                          for m in model.MEASURES if model.available(m))
+    measures += "".join(f"\n- [{k.label}]({SITE_URL}/measures/{k.id.replace('_', '-')}/) (a yes or no for each council)"
+                        for k in model.CHECKS if model.check_available(k))
     return f"""# Councils compared
 
 > How each of the {len(councils)} single-tier councils in England (unitary authorities, metropolitan districts and London boroughs) compares with the rest of England, its region, councils of the same type and similar councils, using official published statistics. An independent website by Ryan O'Callaghan, not affiliated with any government department or council.
@@ -322,6 +327,19 @@ def build(out=DIST):
                  area_name=areas[m.area][0], note=model.area_note(m.area, nation), regions=regions_list,
                  types=types,
                  missing=[c for c in model.in_nation(nation) if c["code"] not in ranked])
+        for k in (k for k in model.CHECKS if model.check_available(k, nation)):
+            results = model.check_results(k, nation)
+            answered = {c["code"] for c, _ in results}
+            path = model.measure_path(k, nation)
+            source = sources.get(k.source, {})
+            check_updated = model.updated({k.source})
+            page(path, "check.html", nav="/measures/", lastmod=check_updated or None, check=k, results=results,
+                 nation=nation, updated=check_updated, passed=sum(1 for _, r in results if r.passed),
+                 structured_data=dataset(k.label, k.how, path, source.get("period", ""), source, check_updated,
+                                         nation=nation, ranked=False),
+                 map=model.check_hexmap(k, nation), period=source.get("period", ""), source=source,
+                 area_name=areas[k.area][0], regions=regions_list, types=types,
+                 missing=[c for c in model.in_nation(nation) if c["code"] not in answered])
     for nation in model.nations():
         band_d_id = model.nation_source("band_d", nation)
         band_d_source = sources.get(band_d_id, {})

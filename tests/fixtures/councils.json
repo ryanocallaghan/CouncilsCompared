@@ -111,6 +111,12 @@
    "url": "https://www.gov.scot/publications/scottish-local-government-finance-statistics-2024-25/",
    "period": "2024-25",
    "published": "2026-02-05"
+  },
+  "planning_data": {
+   "title": "Planning Data: data provided by each planning authority",
+   "url": "https://www.planning.data.gov.uk/",
+   "period": "November 2026",
+   "published": "2026-07-31"
   }
  },
  "councils": [
@@ -162,6 +168,12 @@
     "Council tax": 15.2,
     "Business rates": 10.3,
     "Government grants": 74.5
+   },
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
    }
   },
   {
@@ -197,7 +209,13 @@
     }
    },
    "band_d_parts": null,
-   "funding": null
+   "funding": null,
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   }
   },
   {
    "code": "E09000022",
@@ -227,7 +245,13 @@
    ],
    "trends": {},
    "band_d_parts": null,
-   "funding": null
+   "funding": null,
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   }
   },
   {
    "code": "E09000028",
@@ -256,7 +280,13 @@
    ],
    "trends": {},
    "band_d_parts": null,
-   "funding": null
+   "funding": null,
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   }
   },
   {
    "code": "E08000010",
@@ -284,7 +314,13 @@
    "neighbours": [],
    "trends": {},
    "band_d_parts": null,
-   "funding": null
+   "funding": null,
+   "checks": {
+    "brownfield": {
+     "pass": true,
+     "reason": ""
+    }
+   }
   },
   {
    "code": "E06000001",
@@ -311,7 +347,13 @@
    "neighbours": [],
    "trends": {},
    "band_d_parts": null,
-   "funding": null
+   "funding": null,
+   "checks": {
+    "brownfield": {
+     "pass": false,
+     "reason": "The Planning Data platform doesn't collect one from the council."
+    }
+   }
   },
   {
    "code": "S12000049",

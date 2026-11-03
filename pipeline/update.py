@@ -164,6 +164,7 @@ def assemble():
             "band_d_parts": None,
             "funding": None,
             "values": {},
+            "checks": {},
             "spend": {},
             "ofsted": None,
             "links": None,
@@ -177,6 +178,9 @@ def assemble():
         for source_id in VALUE_SOURCES:
             if sources[source_id]:
                 council["values"].update(sources[source_id].values.get(code, {}))
+        for result in sources.values():
+            if result:
+                council["checks"].update(result.checks.get(code, {}))
         if source("band_d"):
             council["band_d"] = source("band_d").values.get(code, {}).get("band_d")
             council["band_d_parts"] = source("band_d").extra.get(code)
@@ -236,6 +240,12 @@ def changes(before, after):
             if previous.get("values", {}).get(measure) != value:
                 changed.setdefault(measure, []).append(
                     (council["name"], previous.get("values", {}).get(measure), value))
+    flipped = {}
+    for council in after["councils"]:
+        was = old.get(council["code"], {}).get("checks", {})
+        for check, now in council.get("checks", {}).items():
+            if (was.get(check) or {}).get("pass") != now["pass"]:
+                flipped.setdefault(check, []).append(f"{council['name']} ({'passes' if now['pass'] else 'fails'})")
     if lines:
         lines.insert(0, "| Source | Period | |\n|---|---|---|")
     if changed:
@@ -244,6 +254,11 @@ def changes(before, after):
         for measure, rows in sorted(changed.items()):
             name, was, now = max(rows, key=lambda r: abs((r[2] or 0) - (r[1] or 0)))
             lines.append(f"| `{measure}` | {len(rows)} | {name}: {was} → {now} |")
+    if flipped:
+        lines.append("\n### Checks that changed\n")
+        lines.append("| Check | Councils | |\n|---|---|---|")
+        for check, names in sorted(flipped.items()):
+            lines.append(f"| `{check}` | {len(names)} | {', '.join(names[:5])}{', …' if len(names) > 5 else ''} |")
     return "\n".join(lines) or "No figures changed."
 
 
