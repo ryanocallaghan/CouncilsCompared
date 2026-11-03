@@ -10,9 +10,12 @@ def test_builds_every_page(fixture_data, tmp_path):
     # (all England, region, type)
     from web import model
     # Home, about, privacy, three search pages, measures index and one page per measure, then the councils,
-    # then the council tax page and the hubs: 3 regions, and metropolitan districts and unitary authorities
+    # then the council tax page and the hubs: 3 regions, and metropolitan districts and unitary authorities.
+    # Each council's areas have a page each, but only England's versions are in the sitemap.
+    area_pages = sum(len(model.compare(c).areas) for c in model.in_nation("England"))
     assert count == (7 + len([m for m in model.MEASURES if model.available(m)])
-                     + len([k for k in model.CHECKS if model.check_available(k)]) + (4 * 2 + 1) + 2 * 3 + 1 + 3 + 2)
+                     + len([k for k in model.CHECKS if model.check_available(k)]) + (4 * 2 + 1) + 2 * 3 + 1 + 3 + 2
+                     + area_pages)
     lewisham = (tmp_path / "lewisham" / "index.html").read_text()
     assert "<h1 class=\"govuk-heading-xl govuk-!-margin-bottom-4\">Lewisham</h1>" in lewisham
     assert "<title>How Lewisham Council compares – Councils compared</title>" in lewisham
@@ -38,16 +41,35 @@ def test_builds_every_page(fixture_data, tmp_path):
     similar = (tmp_path / "lewisham" / "similar" / "index.html").read_text()
     assert 'href="/greenwich/similar/"' in similar
     assert (tmp_path / "404.html").exists()
-    assert 'id="money"' in lewisham and "Council tax is only part of the money" in lewisham
     assert "Your council tax</dt>" in lewisham  # the bill, at the top
-    assert lewisham.index('id="ofsted"') < lewisham.index('id="money"') < lewisham.index('id="spending"')
-    assert 'id="council-tax"' in similar  # on every comparison page, still at its old address
+    assert lewisham.index('id="ofsted"') < lewisham.index('id="money"')
+    # Each area in full on a page of its own; the council page has its lines and a link
+    lewisham_tax = (tmp_path / "lewisham" / "council-tax" / "index.html").read_text()
+    assert 'href="/lewisham/council-tax/"' in lewisham and 'data-ratios="' in lewisham
+    assert "Council tax is only part of the money" in lewisham_tax and 'id="spending"' in lewisham_tax
+    assert "Council tax is only part of the money" not in lewisham and "app-compare-table" not in lewisham
+    assert 'id="council-tax"' in (tmp_path / "lewisham" / "similar" / "council-tax" / "index.html").read_text()
+    complaints = (tmp_path / "lewisham" / "complaints" / "index.html").read_text()
+    assert 'href="/lewisham/complaints/"' in lewisham
+    assert "app-compare-table" in complaints and "Key figures" in complaints
+    send = (tmp_path / "lewisham" / "special-educational-needs" / "index.html").read_text()
+    assert 'data-trend="ehcp_20wk"' in send and 'data-trend="ehcp_20wk"' not in lewisham  # trends, by area
+    assert '<link rel="canonical" href="https://councilscompared.com/lewisham/complaints/">' in complaints
+    assert '"name": "Ombudsman complaints"' in complaints  # in the breadcrumbs
+    # The group versions point search engines at England's, and keep the area when the group changes
+    similar_complaints = (tmp_path / "lewisham" / "similar" / "complaints" / "index.html").read_text()
+    assert '<link rel="canonical" href="https://councilscompared.com/lewisham/complaints/">' in similar_complaints
+    assert 'data-area="complaints"' in similar_complaints and 'name="area" value="complaints"' in similar_complaints
+    sitemap = (tmp_path / "sitemap.xml").read_text()
+    assert "/lewisham/complaints/" in sitemap and "/lewisham/similar/complaints/" not in sitemap
+    hartlepool_openness = (tmp_path / "hartlepool" / "openness" / "index.html").read_text()
+    assert "collect one from the council" in hartlepool_openness  # why it fails, on the area's page
     assert json.loads((tmp_path / "data" / "councils-by-code.json").read_text())["E09000023"] == "lewisham"
     assert (tmp_path / "_headers").exists()
     assert "https://councilscompared.com/lewisham/similar/" in (tmp_path / "sitemap.xml").read_text()
     assert json.loads((tmp_path / "data" / "councils.json").read_text())["councils"]
     # For search engines and AI answers
-    assert "Key figures" in lewisham and "Last updated 17 September 2026" in lewisham
+    assert "Last updated 17 September 2026" in complaints
     assert '"@type": "GovernmentOrganization"' in lewisham
     assert '"@type": "Dataset"' in fly and "<title>Complaints the Ombudsman upheld, per 100,000 residents: every council in England ranked (2025-26)" in fly
     assert "<lastmod>2026-09-17</lastmod>" in (tmp_path / "sitemap.xml").read_text()
@@ -95,7 +117,8 @@ def test_builds_scotland_when_published(fixture_data, tmp_path, monkeypatch):
     assert "S12000049" in (tmp_path / "data" / "councils-by-code.json").read_text()
     band_d = (tmp_path / "council-tax" / "scotland" / "index.html").read_text()
     assert "every council in Scotland ranked" in band_d and "Scottish Water" in band_d
-    assert "Scottish Assessors" in glasgow and "Social work and social care" in glasgow
+    glasgow_tax = (tmp_path / "glasgow-city" / "council-tax" / "index.html").read_text()
+    assert "Scottish Assessors" in glasgow_tax and "Social work and social care" in glasgow_tax
 
 
 def test_scotland_not_built_by_default(fixture_data, tmp_path):

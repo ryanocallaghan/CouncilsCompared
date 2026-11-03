@@ -386,3 +386,9 @@ def test_a_check_page_lists_those_that_fail_first(fixture_data):
     cells = {cell["council"]["name"]: cell for cell in model.check_hexmap(brownfield)["cells"] if cell["council"]}
     assert cells["Hartlepool"]["class"] == "app-check--no" and cells["Hartlepool"]["label"] == "Hartlepool: No"
     assert cells["Lewisham"]["class"] == "app-check--yes"
+
+
+def test_labels_in_sentences_keep_names_capitalised():
+    assert model.lower_first("Tenants satisfied") == "tenants satisfied"
+    assert model.lower_first("EHC plans") == "EHC plans"
+    assert model.lower_first("Ombudsman's recommendations carried out on time").startswith("Ombudsman's")

@@ -1,0 +1,53 @@
+{# A row of marks, one per council in the nation, better to the right #}
+{% macro stripChart(s, label, ends=("Worse", "Better"), measure="", spend="", mini=False) %}
+  <svg class="app-strip{% if mini %} app-strip--mini{% endif %}" width="100%" height="26" role="img" aria-label="{{ label }}" focusable="false" data-measure="{{ measure }}" data-spend="{{ spend }}">
+    <line class="app-strip__axis" x1="1%" x2="99%" y1="13" y2="13"></line>
+    <svg viewBox="0 0 1000 26" preserveAspectRatio="none" width="100%" height="26" aria-hidden="true">
+      <path class="app-strip__marks" d="{{ s.path(False) }}"></path>
+      <path class="app-strip__marks app-strip__marks--group" d="{{ s.path(True) }}"></path>
+    </svg>
+    <line class="app-strip__median" x1="{{ s.median }}%" x2="{{ s.median }}%" y1="2" y2="24"></line>
+    <circle class="app-strip__me" cx="{{ s.me }}%" cy="13" r="{{ 6 if mini else 8 }}"></circle>
+  </svg>
+  {% if not mini %}<span class="app-strip__ends" aria-hidden="true"><span>{{ ends[0] }}</span><span>{{ ends[1] }}</span></span>{% endif %}
+{% endmacro %}
+
+{# Counts as bars, longest first, for figures that aren't ranked #}
+{% macro bars(items, caption) %}
+  {% set most = items | map(attribute=1) | max %}
+  <table class="app-bars">
+    <caption class="govuk-visually-hidden">{{ caption }}</caption>
+    <tbody>
+      {% for label, n in items %}
+        <tr>
+          <th scope="row" class="app-bars__label">{{ label }}</th>
+          <td class="app-bars__value">{{ "{:,}".format(n) }}</td>
+          <td class="app-bars__bar" aria-hidden="true"><span style="width: {{ (n / most * 100) | round(1) if most else 0 }}%"></span></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endmacro %}
+
+{# A line chart over time: the council against the group's median #}
+{% macro trendChart(t) %}
+      {% set ch = t.chart %}
+      <svg class="app-chart" viewBox="0 0 {{ ch.width }} {{ ch.height }}" width="100%" data-trend="{{ t.id }}" data-top="{{ ch.top }}" data-left="{{ ch.left }}" data-right="{{ ch.right }}" data-pad-t="{{ ch.pad_t }}" data-plot-h="{{ ch.plot_h }}" data-periods="{{ ch.periods | join(',') }}" role="img" aria-label="{{ t.title }}: {% for l in ch.lines %}{{ l.name }} latest {{ l.last }}{% if not loop.last %}, {% endif %}{% endfor %}" focusable="false">
+        {% for tick in ch.ticks %}
+          <line class="app-chart__grid" x1="{{ ch.left }}" x2="{{ ch.right }}" y1="{{ tick.y }}" y2="{{ tick.y }}"></line>
+          <text class="app-chart__tick" x="{{ ch.left - 6 }}" y="{{ tick.y + 4 }}" text-anchor="end">{{ tick.label }}</text>
+        {% endfor %}
+        {% for label in ch.labels %}
+          <text class="app-chart__tick" x="{{ label.x }}" y="{{ ch.height - 6 }}" text-anchor="middle">{{ label.text }}</text>
+        {% endfor %}
+        {% for l in ch.lines %}
+          <path class="app-chart__line {{ l.class }}" d="{{ l.path }}"></path>
+          {% for px, py in l.points %}<circle class="{{ l.class }}" cx="{{ px }}" cy="{{ py }}" r="3"></circle>{% endfor %}
+        {% endfor %}
+      </svg>
+      <ul class="app-chart__key govuk-body-s" data-trend-key="{{ t.id }}">
+        {% for l in ch.lines %}
+          <li><span class="app-chart__swatch {{ l.class }}"></span>{{ l.name }}: {{ l.last }}</li>
+        {% endfor %}
+      </ul>
+{% endmacro %}

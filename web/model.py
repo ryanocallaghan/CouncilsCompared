@@ -91,6 +91,19 @@ AREA_NOTES = {
 }
 
 
+# Each area's page under a council's: /lewisham/complaints/. Council tax has
+# the bill, what it pays for and spending, as well as collection.
+AREA_SLUGS = {
+    "send": "special-educational-needs", "schools": "schools", "care": "adult-social-care",
+    "complaints": "complaints", "housing": "council-housing", "ctax": "council-tax", "streets": "streets-and-waste",
+    "homeless": "homelessness", "digital": "online-services", "openness": "openness",
+}
+
+
+def area_path(council, area_id, group="nation"):
+    return f"{path(council, group)}{AREA_SLUGS[area_id]}/"
+
+
 def area_note(area_id, nation="England"):
     return AREA_NOTES.get((nation, area_id)) or next(note for a, _, note in AREAS if a == area_id)
 
@@ -432,8 +445,13 @@ def ordinal(n):
     return f"{n}{suffix}"
 
 
+PROPER_NOUNS = ("Ombudsman",)  # kept capitalised at the start of a label
+
+
 def lower_first(text):
-    """ "New EHC plans..." -> "new EHC plans...", leaving acronyms alone."""
+    """ "New EHC plans..." -> "new EHC plans...", leaving acronyms and names alone."""
+    if text.startswith(PROPER_NOUNS):
+        return text
     if len(text) > 1 and text[0].isupper() and text[1].islower():
         return text[0].lower() + text[1:]
     return text
@@ -537,6 +555,8 @@ class Area:
     rows: list  # [Row], only measures with a figure for this council
     missing: int  # measures with no figure
     checks: list = field(default_factory=list)  # [CheckResult]
+    trends: list = field(default_factory=list)  # the charts over time for this area's measures
+    sentences: list = field(default_factory=list)  # each ranked measure in a sentence that stands on its own
 
     @property
     def counts(self):
@@ -660,6 +680,10 @@ def compare(council, group="nation"):
                      for grade in GRADES]
     result.trends = _trends(council, members)
     result.fly = fly_detail(council, members)
+    area_of = {m.id: m.area for m in MEASURES}
+    for area in result.areas:
+        area.trends = [t for t in result.trends if area_of.get(t["id"]) == area.id]
+        area.sentences = [sentence(result, r) for r in area.rows if r.band]
     return result
 
 
@@ -695,18 +719,15 @@ def key_figures(comparison):
     """One sentence for each area, on its first measure with a position:
     each stands on its own, so it can be quoted with the council, figure,
     year and position together."""
-    name = comparison.council["name"]
-    sentences = []
-    for area in comparison.areas:
-        r = next((r for r in area.rows if r.band), None)
-        if not r:
-            continue
-        end = "highest" if r.measure.better == "higher" else "lowest"
-        when = f"In {r.period}, " if r.period else ""
-        sentences.append(f"{when}{name} was {place(r.position, r.tied, r.count)} among {comparison.phrase} "
-                         f"for {lower_first(r.measure.label)} (1st is {end}), at {r.value} against a median "
-                         f"of {r.median}.")
-    return sentences
+    return [area.sentences[0] for area in comparison.areas if area.sentences]
+
+
+def sentence(comparison, r):
+    """Where the council is on one measure, with the figure, year and group."""
+    end = "highest" if r.measure.better == "higher" else "lowest"
+    when = f"In {r.period}, " if r.period else ""
+    return (f"{when}{comparison.council['name']} was {place(r.position, r.tied, r.count)} among {comparison.phrase} "
+            f"for {lower_first(r.measure.label)} (1st is {end}), at {r.value} against a median of {r.median}.")
 
 
 def measure_summary(measure, rows, nation="England"):
@@ -918,6 +939,7 @@ def council_tax(council):
         "band_d": council["band_d"],
         "council_band_d": parts["council"],
         "bands": [{"band": b, "ratio": r} for b, r in BANDS_CT[nation]],
+        "ratios": {b: round(r, 6) for b, r in BANDS_CT[nation]},  # for the bill in a council page's summary
         "period": sources().get(nation_source("band_d", nation), {}).get("period", ""),
         "spend_period": sources().get(nation_source("spending", nation), {}).get("period", ""),
         "check": BAND_CHECK[nation],

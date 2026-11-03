@@ -153,16 +153,18 @@ def write_lookups(out, councils):
             json.dump(shard, f, separators=(",", ":"))
 
 
-def structured_data(council, group, updated):
+def structured_data(council, group, updated, area=None):
     """Breadcrumbs for search results (Councils compared > Lewisham), and
     the page as one about the council, so search engines and AI answers
     know which council the figures are for."""
     crumbs = [("Councils compared", "/"), (council["name"], model.path(council))]
     if group != "nation":
         crumbs.append((model.group_tab(council, group), model.path(council, group)))
+    if area:
+        crumbs.append(("Council tax" if area.id == "ctax" else area.name, model.area_path(council, area.id, group)))
     page = {
         "@type": "WebPage",
-        "url": SITE_URL + model.path(council, group),
+        "url": SITE_URL + crumbs[-1][1],
         "about": {
             "@type": "GovernmentOrganization",
             "name": f"{council['name']} Council",
@@ -275,9 +277,11 @@ def build(out=DIST):
     pages = []  # [(path, last modified)]
     updated = model.updated()
 
-    def page(path, template, nav=None, lastmod=None, **context):
-        write(out, path, env.get_template(template).render(page_path=path, nav=nav, **common, **context))
-        if path.endswith("/"):
+    def page(path, template, nav=None, lastmod=None, canonical=None, **context):
+        """canonical: another page this one is a version of, which search engines should show instead."""
+        write(out, path, env.get_template(template).render(page_path=path, nav=nav, canonical=canonical, **common,
+                                                           **context))
+        if path.endswith("/") and not canonical:
             pages.append((path, lastmod))
 
     regions = {}
@@ -296,10 +300,19 @@ def build(out=DIST):
         for group in groups:
             comparison = model.compare(council, group)
             council_updated = model.updated(model.nation_sources(council["nation"]))
+            council_tax = model.council_tax(council)
             page(model.path(council, group), "council.html", nav="/", lastmod=council_updated, groups=groups,
-                 comparison=comparison, key_figures=model.key_figures(comparison), updated=council_updated,
-                 council_tax=model.council_tax(council),
+                 comparison=comparison, updated=council_updated, council_tax=council_tax,
                  structured_data=structured_data(council, group, council_updated))
+            # Each area in full. The versions for a region, type or similar councils are for readers
+            # who chose that group; search engines are pointed at England's.
+            for area in comparison.areas:
+                area_path = model.area_path(council, area.id, group)
+                page(area_path, "area.html", nav="/", lastmod=council_updated, groups=groups,
+                     comparison=comparison, area=area, area_slug=model.AREA_SLUGS[area.id],
+                     updated=council_updated, council_tax=council_tax,
+                     canonical=model.area_path(council, area.id) if group != "nation" else None,
+                     structured_data=structured_data(council, group, council_updated, area))
     order = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "band_d", "fly", "waste", "homelessness",
              "silktide", "local_links", "planning_data", "spending", "ofsted", "neighbours", "lgbf", "spso", "scot_homelessness", "scot_band_d",
              "scot_spending", "population"]

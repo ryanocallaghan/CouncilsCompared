@@ -3,7 +3,7 @@
    discount chosen #}
 {% set ct = council_tax %}
 <div class="app-ctax" data-module="app-ctax">
-  <h3 class="govuk-heading-m" id="council-tax">Your council tax</h3>
+  <h2 class="govuk-heading-l" id="council-tax">Your council tax</h2>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <p class="govuk-body">Choose your band to see what your bill in {{ b.name }} pays for in {{ ct.period }}. <a class="govuk-link" href="{{ ct.check[0] }}">{{ ct.check[1] }}</a>.</p>
@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <h4 class="govuk-heading-s">Who your bill goes to</h4>
+  <h3 class="govuk-heading-s">Who your bill goes to</h3>
   <div class="app-ctax__bar" aria-hidden="true">
     {% for part in ct.who %}<span class="app-ctax__segment app-ctax__segment--{{ loop.index }}" style="width: {{ (part.band_d / ct.band_d * 100) | round(2) }}%"></span>{% endfor %}
   </div>
@@ -52,7 +52,7 @@
   {% if ct.note %}<p class="govuk-body-s app-secondary-text">{{ ct.note }}</p>{% endif %}
 
   {% if ct.services %}
-  <h4 class="govuk-heading-s">What the council's share pays for</h4>
+  <h3 class="govuk-heading-s">What the council's share pays for</h3>
   <p class="govuk-body app-measure-note">The council's part of your bill, <strong data-band-d="{{ ct.council_band_d }}">{{ model.fmt(ct.council_band_d, "£") }}</strong>, split in the same proportions as the council's own spending in {{ ct.spend_period }}, not counting schools.</p>
   <table class="govuk-table app-ctax__table">
     <caption class="govuk-table__caption govuk-visually-hidden">What the council's share of your bill pays for</caption>
@@ -79,7 +79,7 @@
   {% endif %}
 
   {% if ct.funding %}
-  <h4 class="govuk-heading-s">Council tax is only part of the money</h4>
+  <h3 class="govuk-heading-s">Council tax is only part of the money</h3>
   <p class="govuk-body app-measure-note">In {{ sources.funding.period }}, council tax paid for <strong>{{ ct.funding["Council tax"] | round | int }}%</strong> of what {{ b.name }} council spent on day-to-day services, including schools. Most government grants can only be spent on what they are given for, such as schools, housing benefit or public health.</p>
   <div class="app-ctax__bar" aria-hidden="true">
     {% for name, share in ct.funding.items() %}<span class="app-ctax__segment app-ctax__segment--f{{ loop.index }}" style="width: {{ share }}%"></span>{% endfor %}

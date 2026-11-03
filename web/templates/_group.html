@@ -1,0 +1,16 @@
+{# "Compared with": which group of councils a page compares with. A form
+   without JavaScript; app.js goes straight to the group's page. On an
+   area's page, area_slug keeps the reader on the same area #}
+<form class="app-group" action="/go" method="get" data-module="app-group"{% if area_slug %} data-area="{{ area_slug }}"{% endif %}>
+  <input type="hidden" name="council" value="{{ b.slug }}">
+  {% if area_slug %}<input type="hidden" name="area" value="{{ area_slug }}">{% endif %}
+  <div class="govuk-form-group govuk-!-margin-bottom-0">
+    <label class="govuk-label govuk-label--s" for="group">Compared with</label>
+    <select class="govuk-select" id="group" name="group">
+      {% for group in groups %}
+        <option value="{{ group }}"{% if group == c.group %} selected{% endif %}>{{ model.group_option(b, group) }}</option>
+      {% endfor %}
+    </select>
+    {{ govukButton({"text": "Change", "classes": "govuk-button--secondary govuk-!-margin-bottom-0 app-group__button"}) }}
+  </div>
+</form>
