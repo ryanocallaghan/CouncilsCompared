@@ -20,7 +20,8 @@ plan adds measures for three questions:
 
 - **Published sources first.** The site uses official published statistics.
   Phases 1 and 2 use only data someone else publishes. Phase 3 adds checks we
-  run ourselves, and those are labelled as such everywhere they appear.
+  run ourselves (agreed 3 November 2026), and those are labelled as such
+  everywhere they appear.
 - **Same shape as every other source.** One module per source in
   `pipeline/sources/`, returning a `Result`, saved to `data/sources/<id>.json`,
   run by the Monday workflow, with checks in `tests/test_data.py`.
@@ -136,7 +137,6 @@ through a working endpoint. It has been a legal requirement since 2017.
 | `contracts_published` | Contracts awarded with a notice published within 30 days | %, higher | Find a Tender (OCDS) |
 | `accounts_audited` | Latest accounts audited by the deadline | check | MHCLG / PSAA |
 | `ico_action` | ICO enforcement or reprimand in the last three years | check | ICO |
-| `local_digital` | Has signed the Local Digital Declaration | check | MHCLG Local Digital |
 
 These need more care in matching and explaining, so they come after phase 1
 has shipped. `contracts_published` needs a careful definition: Find a Tender
@@ -145,7 +145,7 @@ replaced Contracts Finder for new procurements under the Procurement Act 2023
 OCDS are named, not coded, so they need matching through `pipeline/names.py`.
 `ico_action` and the accounts deadline are rare events, so they are shown as a
 flag on the council's page rather than ranked. The sources for
-`accounts_audited`, `ico_action` and `local_digital` haven't been checked yet.
+`accounts_audited` and `ico_action` haven't been checked yet.
 
 FOI timeliness (from WhatDoTheyKnow) goes here only if mySociety provides the
 data (see "What the sources hold").
@@ -198,7 +198,7 @@ This can be done on its own, before phase 1.
 ## Pipeline changes
 
 - `pipeline/sources/local_links.py` and `planning_data.py` (phase 1);
-  `contracts.py`, `accounts.py`, `ico.py`, `local_digital.py` (phase 2);
+  `contracts.py`, `accounts.py`, `ico.py` (phase 2);
   `website.py` (phase 3). Each added to `STEPS`, and those with measures to
   `VALUE_SOURCES`, in `pipeline/update.py`.
 - `website.py` needs the homepages from `local_links`, so it runs after it and
@@ -214,14 +214,26 @@ This can be done on its own, before phase 1.
   `local_links` (also monthly, 45 minutes) so they don't both run in the same
   week. Raise the workflow's `timeout-minutes` to 90 if they ever do.
 - Local Links Manager and Planning Data give GSS codes, so they need no name
-  matching. OCDS buyers and the Local Digital list do; add aliases to
+  matching. OCDS buyers and ICO notices do; add aliases to
   `pipeline/names.py` as needed.
 
 ## Site changes
 
-- `web/model.py`: new `Measure`s in the `digital` area. Rename the area from
-  "Website" to something covering more than the website (to decide), and
-  rewrite its description to cover the new measures.
+- `web/model.py`: split the measures over three areas, by the question a
+  resident would ask (proposed; names to agree):
+
+  | Area | Question | Measures |
+  |---|---|---|
+  | Online services (the existing `digital` area, renamed) | Can I get things done online? | `links_working`, `online_tasks`, `web_access`, `a11y_statement` (with `a11y_status` shown in its reason) |
+  | Privacy and security | Is my data safe with them? | `trackers_before_consent`, `reject_cookies`, `dmarc`, `https`, `security_txt`, `ico_action` |
+  | Openness | Do they publish what they should? | `spend_data_age`, `contracts_published`, `accounts_audited`, `brownfield`, `planning_data`, FOI if it comes |
+
+  Accessibility goes with online services because an inaccessible site is a
+  service some residents can't use. `planning_data` and `brownfield` could
+  later move to a Planning area with MHCLG's planning application statistics.
+  Most of Privacy and security is our own checks, so the area as a whole
+  carries the "Our checks" label. `local_digital` is left out: signing a
+  declaration says little a resident would notice.
 - Measures support a `kind` of `"check"`. Checks aren't ranked: the council's
   page shows a tick or cross with a short reason, and the measure page shows
   how many councils pass, with a list of those that don't.
@@ -295,11 +307,16 @@ own. Where one needs another merged first, its description says so.
   (links that work, services online) over ones that only test paperwork, and
   keep check measures out of any overall ranking.
 
-## Decisions needed
+## Decisions
 
-1. Are you happy to publish our own checks (phase 3) alongside official
-   statistics, labelled "Our checks"? If not, stop after phase 2.
-2. Should we ask mySociety for WhatDoTheyKnow data, or leave FOI out?
-3. What should the area be called once it covers more than the website?
-4. Should check measures appear in the summary at the top of the council
-   page, or only in the area itself?
+Made on 3 November 2026:
+
+- **Our own checks are published**, labelled "Our checks". Phase 3 goes ahead.
+- **This plan stays on its branch**, not merged to `main`.
+
+Still needed:
+
+1. Should we ask mySociety for WhatDoTheyKnow data, or leave FOI out?
+2. Are the three area names above right?
+3. Should check measures appear in the summary at the top of the council
+   page, or only in their areas?
