@@ -29,7 +29,7 @@ def test_builds_every_page(fixture_data, tmp_path):
     assert (tmp_path / "privacy" / "index.html").exists()
     # Checks: a yes or no on the council's page, and a page of their own
     hartlepool = (tmp_path / "hartlepool" / "index.html").read_text()
-    assert "Fails 1 of 1 check:</strong>" in hartlepool and 'href="/measures/brownfield/#hartlepool"' in hartlepool
+    assert "Fails 2 of 3 checks:</strong>" in hartlepool and 'href="/measures/brownfield/#hartlepool"' in hartlepool
     assert "govuk-tag--red app-check__tag\">No</strong>" in hartlepool
     assert "Fails" not in lewisham and "govuk-tag--green app-check__tag\">Yes</strong>" in lewisham
     brownfield = (tmp_path / "measures" / "brownfield" / "index.html").read_text()
@@ -62,6 +62,14 @@ def test_builds_every_page(fixture_data, tmp_path):
     assert 'data-area="complaints"' in similar_complaints and 'name="area" value="complaints"' in similar_complaints
     sitemap = (tmp_path / "sitemap.xml").read_text()
     assert "/lewisham/complaints/" in sitemap and "/lewisham/similar/complaints/" not in sitemap
+    # Our own checks: marked, with what we found, and "couldn't check" when a site blocks us
+    security = (tmp_path / "lewisham" / "privacy-and-security" / "index.html").read_text()
+    assert 'href="/about/#our-checks">Our check</a>' in security and "<code class=\"app-check__evidence\">v=DMARC1; p=reject</code>" in security
+    assert "govuk-tag--grey app-check__tag\">Couldn't check</strong>" in security
+    assert 'id="group"' not in security  # checks don't depend on the group
+    https_page = (tmp_path / "measures" / "https" / "index.html").read_text()
+    assert "5 of 5 councils in England do. 0 don't. We couldn't check 1" in https_page
+    assert 'id="our-checks"' in (tmp_path / "about" / "index.html").read_text()
     hartlepool_openness = (tmp_path / "hartlepool" / "openness" / "index.html").read_text()
     assert "collect one from the council" in hartlepool_openness  # why it fails, on the area's page
     assert json.loads((tmp_path / "data" / "councils-by-code.json").read_text())["E09000023"] == "lewisham"

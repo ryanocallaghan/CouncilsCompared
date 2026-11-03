@@ -204,13 +204,15 @@ def every_council(nation):
     return f"every council in {nation}"
 
 
-def dataset(name, description, path, period, source, updated, ogl=True, nation="England", ranked=True):
+def dataset(name, description, path, period, source, updated, ogl=True, nation="England", ranked=True,
+            official=True):
     """A ranking page (or a check's page) as a dataset, for Google Dataset Search."""
     data = {
         "@context": "https://schema.org",
         "@type": "Dataset",
         "name": f"{name}: every council in {nation}",
-        "description": f"{name}, for {every_council(nation)}, {'ranked, ' if ranked else ''}from official statistics. "
+        "description": f"{name}, for {every_council(nation)}, {'ranked, ' if ranked else ''}"
+                       f"{'from official statistics' if official else 'from our own checks of council websites'}. "
                        f"{description}",
         "url": SITE_URL + path,
         "creator": AUTHOR,
@@ -347,9 +349,11 @@ def build(out=DIST):
             source = sources.get(k.source, {})
             check_updated = model.updated({k.source})
             page(path, "check.html", nav="/measures/", lastmod=check_updated or None, check=k, results=results,
-                 nation=nation, updated=check_updated, passed=sum(1 for _, r in results if r.passed),
+                 nation=nation, updated=check_updated, passed=sum(1 for _, r in results if r.passed is True),
+                 failed=sum(1 for _, r in results if r.passed is False),
+                 unchecked=sum(1 for _, r in results if r.passed is None),
                  structured_data=dataset(k.label, k.how, path, source.get("period", ""), source, check_updated,
-                                         nation=nation, ranked=False),
+                                         nation=nation, ranked=False, ogl=not k.own, official=not k.own),
                  map=model.check_hexmap(k, nation), period=source.get("period", ""), source=source,
                  area_name=areas[k.area][0], regions=regions_list, types=types,
                  missing=[c for c in model.in_nation(nation) if c["code"] not in answered])

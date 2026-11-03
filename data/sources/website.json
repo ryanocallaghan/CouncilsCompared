@@ -1,0 +1,3224 @@
+{
+ "checks": {
+  "E06000001": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;pct=100;fo=1;rua=mailto:dmarc@hartlepool.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc@hartlepool.gov.uk,mailto:dmarc-ruf@dmarc.service.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.hartlepool.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000002": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;pct=100;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:mb9pcagu@ag.dmarcian.com;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:mb9pcagu@fr.dmarcian.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "security_txt": {
+    "evidence": "https://www.middlesbrough.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000003": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc-ruf@dmarc.service.gov.uk; rf=afrf; pct=100; ri=86400; fo=1",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+   }
+  },
+  "E06000004": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:VUi9uQqypW4@dmarc-rua.mailcheck.service.ncsc.gov.uk; pct=100; sp=reject; adkim=s; aspf=s; fo=1",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "security_txt": {
+    "evidence": "https://www.stockton.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000005": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:VUi9uQqypW4@dmarc-rua.mailcheck.service.ncsc.gov.uk; pct=100; sp=reject; adkim=s; aspf=s; fo=1",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubDomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.darlington.gov.uk/404/",
+    "pass": false,
+    "reason": "There's no security.txt file: the address shows a web page instead."
+   }
+  },
+  "E06000006": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; adkim=s; aspf=s; rua=mailto:Ypu2gCehgHj@dmarc-rua.mailcheck.service.ncsc.gov.uk; ruf=mailto:dnsadmin@halton.gov.uk; pct=100; fo=1; ri=86400",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage."
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look."
+   }
+  },
+  "E06000007": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400;rua=mailto:dmarc.reporting@warrington.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc_agg@vali.email",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.warrington.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000008": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;fo=1;rua=mailto:dmarc@blackburn.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.blackburn.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000009": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;adkim=r;aspf=r;rua=mailto:dmarc-rua@dmarc.service.gov.uk;rf=afrf;pct=100;ri=86400;ruf=mailto:dmarc@blackpool.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=15552000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 180 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.blackpool.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000010": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@hullcc.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk; aspf=r",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.hull.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000011": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;ruf=mailto:eryc.dmarc@eastriding.gov.uk;rua=mailto:eryc.dmarc@eastriding.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;aspf=r;adkim=r",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.eastriding.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000012": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc@4gby4br8.uriports.com; ruf=mailto:dmarc@4gby4br8.uriports.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=0; includeSubDomains; preload",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header turns the protection off (max-age=0)."
+   },
+   "security_txt": {
+    "evidence": "https://www.nelincs.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "Its security.txt file expired on 2023-01-01."
+   }
+  },
+  "E06000013": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; pct=100; fo=1; ri=3600; rua=mailto:8Qom4FYzMeB@dmarc-rua.mailcheck.service.ncsc.gov.uk; ruf=mailto:dmarc.ruf@northlincs.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.northlincs.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000014": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;rua=mailto:478bfd36f9e0478ea1ecba8eda8ed4bf@dmarc-reports.cloudflare.net,mailto:dmarc@york.gov.uk;ruf=mailto:dmarcf@york.gov.uk;pct=100",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.york.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000015": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; rua=mailto:0ca21e81@in.mailhardener.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.derby.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000016": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:fb5356969963222@rep.dmarcanalyzer.com; ruf=mailto:fb5356969963222@for.dmarcanalyzer.com; fo=1;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.leicester.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000017": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; pct=100; rua=mailto:tiasyuw4@ag.dmarcian-eu.com,mailto:dmarc-rua@dmarc.service.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.rutland.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000018": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; rua=mailto:87f3c726ffe1589@rep.dmarcanalyzer.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:87f3c726ffe1589@for.dmarcanalyzer.com,mailto:dmarc-ruf@dmarc.service.gov.uk; pct=100; sp=quarantine; fo=1;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.nottinghamcity.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000019": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@herefordshire.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.herefordshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000020": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc@telford.gov.uk;ruf=mailto:dmarc@telford.gov.uk;aspf=s;adkim=s",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.telford.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000021": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:4ep5BLaysSQ@dmarc-rua.mailcheck.service.ncsc.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.stoke.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000022": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; rua=mailto:5e317705995bc@ag.dmarcly.com; ruf=mailto:5e317705995bc@fo.dmarcly.com; fo=1; aspf=s; adkim=s;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.bathnes.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000023": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; rua=mailto:vif1p8ya2zP@dmarc-rua.mailcheck.service.ncsc.gov.uk, mailto:novjgfam@ag.eu.dmarcadvisor.com; ruf=mailto:novjgfam@fr.eu.dmarcadvisor.com, mailto:dmarc-ruf@bristol.gov.uk; fo=1",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.bristol.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000024": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc-rua@n-somerset.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc-ruf@n-somerset.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://n-somerset.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000025": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc-rua@southglos.gov.uk; ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc-ruf@southglos.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "\"max-age=31536000; includeSubDomains; preload\"",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://beta.southglos.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000026": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:wczacj1u@fr.dmarcian-eu.com; aspf=r;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=15552000; includeSubDomains; preload",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 180 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.plymouth.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000027": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:90b30086bc37028@rep.dmarcanalyzer.com;ruf=mailto:90b30086bc37028@for.dmarcanalyzer.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.torbay.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000030": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:KvRFwYsm5Hp@dmarc-rua.mailcheck.service.ncsc.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.swindon.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000031": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:8f60481dc492707@rep.dmarcanalyzer.com; ruf=mailto:8f60481dc492707@for.dmarcanalyzer.com; pct=100; sp=quarantine; fo=1;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=15768000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.peterborough.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000032": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;pct=100;sp=reject;fo=1;rua=mailto:zF4FaMHhwHx@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc@luton.gov.uk;ruf=mailto:dmarc@luton.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31557600",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.luton.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000033": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:cybersecurity@southend.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.southend.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000034": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc@thurrock.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk; pct=100",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.thurrock.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000035": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:4b12161d@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:noc@medway.gov.uk; ruf=mailto:4b12161d@inbox.ondmarc.com;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=157680000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.medway.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000036": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; rua=mailto:dER7QmoLpCd@dmarc-rua.mailcheck.service.ncsc.gov.uk, mailto:dmarc-rua@bracknell-forest.gov.uk; ruf=mailto:dmarc-ruf@bracknell-forest.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=300",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 300 seconds. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.bracknell-forest.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000037": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;rua=mailto:aggrep@westberks.gov.uk,mailto:re+dq4lnu2g6fc@dmarc.postmarkapp.com;ruf=mailto:authfail@westberks.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "security_txt": {
+    "evidence": "https://www.westberks.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000038": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;fo=0;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@reading.gov.uk,mailto:pjj1satv@ag.dmarcian-eu.com,mailto:dmarc@inbound.flowmailer.net;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:pjj1satv@fr.dmarcian-eu.com,mailto:dmarc@inbound.flowmailer.net;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.reading.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000039": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;rua=mailto:hguLf3eKCYN@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc_agg@vali.email;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.slough.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000040": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;pct=100;rua=mailto:dmarc-rua@rbwm.gov.uk;ruf=mailto:dmarc-ruf@rbwm.gov.uk;ri=86400;aspf=r;adkim=r;fo=1",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.rbwm.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000041": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;pct=100;sp=reject;rua=mailto:oU7csZRAk2E@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:ll6z21kd@ag.eu.dmarcadvisor.com;ruf=mailto:ll6z21kd@fr.eu.dmarcadvisor.com;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.wokingham.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000042": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400;rua=mailto:Yg2KmuDmBRb@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:jt20lkzq@ag.eu.dmarcian.com;ruf=mailto:jt20lkzq@fr.eu.dmarcian.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=300",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 300 seconds. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.milton-keynes.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000043": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;pct=100;fo=1;rua=mailto:dmarcbhcc@brighton-hove.gov.uk;ruf=mailto:DMARCBHCCRUF@brighton-hove.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.brighton-hove.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file: the address shows a web page instead."
+   }
+  },
+  "E06000044": {
+   "dmarc": {
+    "pass": false,
+    "reason": "It has no DMARC record, so nothing stops email being faked to look as if it's from the council."
+   },
+   "https": {
+    "evidence": "max-age=31557600",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.portsmouth.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000045": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:re+bz8n721ainw@dmarc.postmarkapp.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com; sp=reject; aspf=r;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.southampton.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file: the address shows a web page instead."
+   }
+  },
+  "E06000046": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; rua=mailto:ef2ac41e@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:ef2ac41e@inbox.ondmarc.com; adkim=r; aspf=r; fo=1; rf=afrf; ri=3600",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "security_txt": {
+    "evidence": "https://www.iow.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000047": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@durham.gov.uk,mailto:dmarc_agg@vali.email; ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc@durham.gov.uk; rf=afrf; pct=100; ri=86400; fo=1; aspf=r; adkim=r;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.durham.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000049": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; aspf=s; adkim=s; rua=mailto:HK9cNnk8ijg@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc_agg@vali.email",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=15768000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.cheshireeast.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000050": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; aspf=s; adkim=s; rua=mailto:HK9cNnk8ijg@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc_agg@vali.email",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=15768000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.cheshirewestandchester.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000051": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk, mailto:re+rsxllsamowx@dmarc.postmarkapp.com, mailto:ict.security@shropshire.gov.uk; sp=quarantine; aspf=s;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31535999",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 365 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://next.shropshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000052": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; pct=75; rua=mailto:dmarc-rua@dmarc.service.gov.uk;",
+    "pass": false,
+    "reason": "Its DMARC policy only applies to 75% of email (pct=75)."
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.cornwall.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000054": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc_agg@vali.email; ruf=mailto:dmarc-ruf@wiltshire.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.wiltshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000055": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc.agg@bedford.gov.uk,mailto:rua+bedford.gov.uk@dmarc.barracudanetworks.com; ruf=mailto:dmarc.for@bedford.gov.uk,mailto:ruf+bedford.gov.uk@dmarc.barracudanetworks.com;  fo=1; adkim=r; aspf=r; rf=afrf; ri=86400",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31557600",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.bedford.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000056": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=none; sp=quarantine; rua=mailto:dmarc@centralbedfordshire.gov.uk,mailto:Gd9vSx89Stw@dmarc-rua.mailcheck.service.ncsc.gov.uk ; ruf=mailto:dmarc@centralbedfordshire.gov.uk; fo=1; adkim=r; aspf=r; pct=10; rf=afrf; ri=86400;",
+    "pass": false,
+    "reason": "Its DMARC policy is “none”, so faked email is still delivered. It needs to be quarantine or reject."
+   },
+   "https": {
+    "evidence": "max-age=1000; includeSubDomains; preload",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 1000 seconds. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.centralbedfordshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000057": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@2h3nfqhm.uriports.com; ruf=mailto:dmarc-ruf@northumberland.gov.uk,mailto:dmarc@2h3nfqhm.uriports.com;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.northumberland.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000058": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:pCHYiCiiRhN@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc@bcpcouncil.gov.uk,mailto:dmarc_agg@vali.email;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=15768000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.bcpcouncil.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000059": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine;sp=quarantine;fo=1;pct=100;ruf=mailto:authfail@dorsetcouncil.gov.uk;rua=mailto:aggrep@dorsetcouncil.gov.uk,mailto:dmarc_agg@vali.email;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubdomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.dorsetcouncil.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000060": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; rua=mailto:EttQYhqZFdp@dmarc-rua.mailcheck.service.ncsc.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.buckinghamshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000061": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;pct=100",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.northnorthants.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000062": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.westnorthants.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000063": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;adkim=s;aspf=s;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@allerdale.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=1000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 1000 seconds. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.cumberland.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000064": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@westmorlandandfurness.gov.uk; adkim=s; aspf=s;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=1000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 1000 seconds. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.westmorlandandfurness.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000065": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;rua=mailto:059e7d75@mxtoolbox.dmarc-report.com;aspf=s;adkim=s;ruf=mailto:059e7d75@forensics.dmarc-report.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.northyorks.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E06000066": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:6a9d89b400eb.a@dmarcinput.com,mailto:dmarc@somerset.gov.uk; ruf=mailto:6a9d89b400eb.f@dmarcinput.com; adkim=s; aspf=r; fo=1; pct=100",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.somerset.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000001": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; fo=1; pct=100; rua=mailto:dmarc-rua@bolton.gov.uk, mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc-ruf@bolton.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.bolton.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000002": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:dmarcbury@bury.gov.uk; ruf=mailto:dmarc-rua@dmarc.service.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=15768000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.bury.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000003": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;rua=mailto:dmarc@manchester.gov.uk;pct=100; adkim=r; aspf=r;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+   }
+  },
+  "E08000004": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; rua=mailto:dmarc.reports@oldham.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk; aspf=s; sp=reject; adkim=s",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.oldham.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000005": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:re+msf7oo7lebd@dmarc.postmarkapp.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.rochdale.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000006": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; rua=mailto:675e20b7@in.mailhardener.com; fo=0:1:d:s; adkim=s; aspf=r ; ruf=mailto:675e20b7@in.mailhardener.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.salford.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000007": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; sp=none; fo=1; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@stockport.gov.uk,mailto:re+zqdvs1h3izf@dmarc.postmarkapp.com; ruf=mailto:dmarc-forensic@stockport.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000;includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.stockport.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000008": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc-rep@tameside.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubdomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.tameside.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000009": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:re+dejradrtech@dmarc.postmarkapp.com, mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc@trafford.gov.uk; aspf=r; pct=100;ri=86400",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+   }
+  },
+  "E08000010": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; fo=1; pct=100; rua=mailto:dmarc-rua@wigan.gov.uk, mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc-ruf@wigan.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=0; includeSubDomains",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header turns the protection off (max-age=0)."
+   },
+   "security_txt": {
+    "evidence": "https://www.wigan.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000011": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=none;rua=mailto:DAg3T2xcozj@dmarc-rua.mailcheck.service.ncsc.gov.uk;",
+    "pass": false,
+    "reason": "Its DMARC policy is “none”, so faked email is still delivered. It needs to be quarantine or reject."
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+   }
+  },
+  "E08000012": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject; pct=100;sp=none;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc-rua@liverpool.gov.uk;ruf=mailto:dmarc-ruf@liverpool.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=16070400",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 186 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://liverpool.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000013": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; fo=1; ri=3600; rua=mailto:db675a9f@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:db675a9f@inbox.ondmarc.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.sthelens.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000014": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:pmsq6ye2b74@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc-rua@sefton.gov.uk; ruf=mailto:pmsq6ye2b74@dmarc-ruf.mailcheck.service.ncsc.gov.uk,mailto:dmarc-ruf@sefton.gov.uk;fo=1; pct=100;adkim=s;aspf=s",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.sefton.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000015": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc_agg@vali.email",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31557600",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.wirral.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000016": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:DMARC-ReportA@barnsley.gov.uk; ruf=mailto:DMARC-ReportF@barnsley.gov.uk; rf=afrf; pct=100; adkim=r; aspf=r",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.barnsley.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000017": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;rua=mailto:dmarc@doncaster.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc-ruf@doncaster.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.doncaster.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file: the address shows a web page instead."
+   }
+  },
+  "E08000018": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; fo=1;\nrua=mailto:dmarc-rua@rotherham.gov.uk,mailto:UzHTqhoPsL9@dmarc-rua.mailcheck.service.ncsc.gov.uk;\nruf=mailto:dmarc-rua@rotherham.gov.uk;\nri=84600;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.rotherham.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000019": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc_agg@vali.email; ruf=mailto:security@sheffield.gov.uk; ri=86400",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.sheffield.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000021": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; fo=1; rua=mailto:dmarc_agg@vali.email,mailto:dmarc-rua@dmarc.service.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://new.newcastle.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000022": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:postmaster@northtyneside.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk; adkim=r; aspf=r",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=0",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header turns the protection off (max-age=0)."
+   },
+   "security_txt": {
+    "evidence": "https://my.northtyneside.gov.uk/?originalUrl=https://my.northtyneside.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file: the address shows a web page instead."
+   }
+  },
+  "E08000023": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc@southtyneside.gov.uk; ruf=mailto:dmarc@southtyneside.gov.uk; fo=1; adkim=r; aspf=r",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "security_txt": {
+    "evidence": "https://www.southtyneside.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000024": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; fo=0; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@sunderland.gov.uk; ruf=mailto:dmarc@sunderland.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "security_txt": {
+    "evidence": "https://www.sunderland.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000025": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;pct=100;rua=mailto:dmarc@birmingham.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.birmingham.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000026": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;fo=1;pct=100;rua=mailto:kjt2jJcZAcr@dmarc-rua.mailcheck.service.ncsc.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.coventry.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000027": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; rua=mailto:4321799a@inbox.ondmarc.com; ruf=mailto:4321799a@inbox.ondmarc.com; adkim=s; aspf=s; fo=1; rf=afrf; ri=3600",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.dudley.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000028": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc_reports@sandwell.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.sandwell.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000029": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; rua=mailto:b7nf5mx2@ag.dmarcian-eu.com,mailto:dmarc-rua@dmarc.service.gov.uk; ri=86400; pct=100",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31557600",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.solihull.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000030": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=quarantine; adkim=s; fo=1; pct=100; rua=mailto:dmarca@walsall.gov.uk; ruf=mailto:dmarcf@walsall.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31622400; includeSubDomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://go.walsall.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000031": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:ZRBwR4khYAn@dmarc-rua.mailcheck.service.ncsc.gov.uk; pct=100; sp=quarantine; fo=1;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.wolverhampton.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000032": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;aspf=s;rua=mailto:1258c7b15a3e41bf94bbb0d053d88f13@dmarc-reports.cloudflare.net",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.bradford.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000033": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=quarantine;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@calderdale.gov.uk,mailto:i7edxs6s@ag.dmarcian-eu.com;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:i7edxs6s@fr.dmarcian-eu.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.calderdale.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "Its security.txt file expired on 2026-08-18."
+   }
+  },
+  "E08000034": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:DMARC.kirklees@kirklees.gov.uk,mailto:dmarc_agg@vali.email; ruf=mailto:DMARC.Kirklees@kirklees.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.kirklees.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000035": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; sp=reject; np=reject; fo=1:d:s; ri=3600; rua=mailto:dmarc-rua@leeds.gov.uk,mailto:dmarc@6qfg4pck.uriports.com;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=1000; includeSubDomains; preload",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 1000 seconds. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.leeds.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000036": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@wakefield.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.wakefield.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E08000037": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:nfeimlbt@ag.eu.dmarcian.com, mailto:dmarc@gateshead.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc_agg@vali.email; adkim=s; aspf=s;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "security_txt": {
+    "evidence": "https://www.gateshead.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000002": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;rua=mailto:rua@lbbd.gov.uk,mailto:0ls9p4jm@ag.eu.dmarcadvisor.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+   }
+  },
+  "E09000003": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s;pct=100;fo=1;rf=afrf;ri=86400;rua=mailto:dmarc@barnet.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:d2447481@inbox.ondmarc.com;ruf=mailto:dmarc-forensics@barnet.gov.uk,mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:d2447481@inbox.ondmarc.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+   }
+  },
+  "E09000004": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@bexley.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.bexley.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000005": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:shared-technology-services@rua.agari-eu.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:shared-technology-services@ruf.agari-eu.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.brent.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000006": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;pct=100;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:re+igdz7egtgrd@dmarc.postmarkapp.com;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc@bromley.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.bromley.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000007": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:77d78618@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:77d78618@inbox.ondmarc.com,mailto:dmarc-ruf@dmarc.service.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubdomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.camden.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000008": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;rua=mailto:b06dac187a@rua.easydmarc.eu,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@croydon.gov.uk;ruf=mailto:b06dac187a@ruf.easydmarc.eu,mailto:dmarc@croydon.gov.uk;fo=1;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.croydon.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000009": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=r; aspf=r; fo=1; rua=mailto:MtruiGgX7J4@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:RUA.DMARC@ealing.gov.uk; ruf=mailto:RUF.DMARC@ealing.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.ealing.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000010": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@enfield.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage."
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look."
+   }
+  },
+  "E09000011": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; np=reject; rua=mailto:e1006f39@in.mailhardener.com,mailto:dmarc-aggregate@royalgreenwich.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.royalgreenwich.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000012": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarcreports@hackney.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.hackney.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000013": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;fo=1;rua=mailto:dmarc.rua@lbhf.gov.uk,mailto:9X7esxcMGcB@dmarc-rua.mailcheck.service.ncsc.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 404)."
+   },
+   "security_txt": {
+    "evidence": "https://www.lbhf.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000014": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;pct=100;fo=1;ri=3600;rua=mailto:347555e2@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:347555e2@inbox.ondmarc.com;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31557600",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://haringey.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000015": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@harrow.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.harrow.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000016": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk, mailto:rua.dmarc@havering.gov.uk; fo=1",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.havering.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000017": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; adkim=r; aspf=r; pct=100; fo=1; rua=mailto:dmarc-dmarc@hillingdon.gov.uk, mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc-dmarc@hillingdon.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://pre.hillingdon.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000018": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk; sp=reject; fo=1; ruf=mailto:dmarc-ruf@dmarc.service.gov.uk; pct=100",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.hounslow.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000019": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:5a0b3fb8@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:5a0b3fb8@inbox.ondmarc.com;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.islington.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000020": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; sp=quarantine; rua=mailto:5191b598@inbox.ondmarc.com,mailto:rbkcdmarc@rbkc.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:5191b598@inbox.ondmarc.com,mailto:rbkcdmarc@rbkc.gov.uk; adkim=r; aspf=r; fo=0; rf=afrf; ri=3600",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+   }
+  },
+  "E09000021": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;rf=afrf;fo=1;pct=100;ri=86400;rua=mailto:dmarc.report@kingston.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc.report@kingston.gov.uk,mailto:dmarc-ruf@dmarc.service.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.kingston.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000022": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; rua=mailto:d3596287@in.mailhardener.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc_ruf@lambeth.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+   }
+  },
+  "E09000023": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:shared-technology-services@rua.agari-eu.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:shared-technology-services@ruf.agari-eu.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://lewisham.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000024": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc_rua@emaildefense.proofpoint.com;ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.merton.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000025": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk, mailto:rua@newham.gov.uk; fo=1",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.newham.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000026": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk, mailto:exvwjobs@ag.eu.dmarcian.com; ruf=mailto:exvwjobs@fr.eu.dmarcian.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.redbridge.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000027": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s; fo=1; rua=mailto:RUA.DMARC@richmond.gov.uk; ruf=mailto:RUF.DMARC@richmond.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.richmond.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000028": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:shared-technology-services@rua.agari-eu.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:shared-technology-services@ruf.agari-eu.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.southwark.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000029": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;rf=afrf;fo=1;pct=100;ri=86400;rua=mailto:dmarc.report@sutton.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc.report@sutton.gov.uk,mailto:dmarc-ruf@dmarc.service.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.sutton.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000030": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:8224deed@in.mailhardener.com,mailto:dmarc-rua@towerhamlets.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=15768000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.towerhamlets.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000031": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@walthamforest.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.walthamforest.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000032": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s; fo=1; rua=mailto:rua.Dmarc@wandsworth.gov.uk; ruf=mailto:ruf.Dmarc@wandsworth.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.wandsworth.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "E09000033": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:1131b119@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:1131b119@inbox.ondmarc.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.westminster.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000005": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@clacks.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.clacks.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000006": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:be4cbcfdd55b4a6090a2fd644b323a01@dmarc-reports.cloudflare.net,mailto:dmarc-rua@dmarc.service.gov.uk, mailto:dmarc@dumgal.gov.uk; ruf=mailto:security@dumgal.gov.uk;  pct=100",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=1000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 1000 seconds. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.dumfriesandgalloway.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000008": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:p9yfs1hj@ag.dmarcian.com;ruf=mailto:DMARC_afrf@east-ayrshire.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.east-ayrshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000010": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; ruf=mailto:eastlothiancouncil@eu.cp-dmarc.com; rua=mailto:eastlothiancouncil@eu.cp-dmarc.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.eastlothian.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000011": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; rua=mailto:netdata@eastrenfrewshire.gov.uk; ruf=mailto:netdata@eastrenfrewshire.gov.uk; fo=1; pct=100",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.eastrenfrewshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000013": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;pct=100;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:itanalysts@cne-siar.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.cne-siar.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000014": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=reject;pct=100;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarcreports@falkirk.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarcreports@falkirk.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.falkirk.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000017": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:dmarc-rua@highland.gov.uk,mailto:6887976f824cb@ag.eu.dmarcly.com; ruf=mailto:dmarc-ruf@highland.gov.uk,mailto:6887976f824cb@fo.eu.dmarcly.com;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.highland.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000018": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@inverclyde.gov.uk; ruf=mailto:dmarc@inverclyde.gov.uk,mailto:dmarc-ruf@dmarc.service.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains;",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.inverclyde.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000019": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:re+jzxcpmib7vj@dmarc.postmarkapp.com,mailto:dmarc@midlothian.gov.uk;ruf=mailto:dmarc@midlothian.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "strict-transport-security: max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.midlothian.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000020": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc@moray.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.moray.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000021": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:aTPnitLNc78@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc@north-ayrshire.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=15768000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.north-ayrshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000023": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:a.klnzhb6e@sdmarc.net,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@orkney.gov.uk; adkim=r; aspf=r",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=15724800; includeSubdomains",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.orkney.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000026": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@scotborders.gov.uk;ruf=mailto:dmarc@scotborders.gov.uk;sp=reject;fo=1;pct=100",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.scotborders.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000027": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;pct=100;rua=mailto:zrql5msp@ag.eu.dmarcian.com;ruf=mailto:zrql5msp@fr.eu.dmarcian.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.shetland.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "Its security.txt file expired on 2025-11-30."
+   }
+  },
+  "S12000028": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=reject;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@south-ayrshire.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.south-ayrshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000029": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;rua=mailto:7fygxugy@ag.eu.dmarcadvisor.com,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarcreports@southlanarkshire.gov.uk;ruf=mailto:forensicreports@southlanarkshire.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.southlanarkshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000030": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@stirling.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc@stirling.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+   }
+  },
+  "S12000033": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine;pct=100;fo=1; ruf=mailto:dmarc-ruf@aberdeencity.gov.uk; rua=mailto:dmarc@aberdeencity.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:87rb18e8@rua.dmarceye.com; ri=86400",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage."
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look."
+   }
+  },
+  "S12000034": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;fo=1;pct=100;rua=mailto:rcw7zdfj@ag.dmarcian-eu.com;ruf=mailto:rcw7zdfj@fr.dmarcian-eu.com;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.aberdeenshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000035": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; fo=1; rua=mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:security@argyll-bute.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=63072000; includeSubdomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.argyll-bute.gov.uk/.well-known/security.txt",
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000036": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;aspf=s;adkim=s;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@edinburgh.gov.uk;fo=1;pct=100",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.edinburgh.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000038": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=quarantine;pct=100;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@renfrewshire.gov.uk,mailto:esnmmkrv@ag.dmarcian-eu.com;ruf=mailto:dmarc@renfrewshire.gov.uk",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubdomains;",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.renfrewshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000039": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=quarantine; rua=mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:server.alerts@west-dunbarton.gov.uk; fo=0; adkim=r; aspf=r; pct=100; sp=reject",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=2592000",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.west-dunbarton.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000040": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;pct=100;rua=mailto:56f3fe296f@rep.dmarcanalyzer.com,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:56f3fe296f@for.dmarcanalyzer.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.westlothian.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "Its security.txt file expired on 2025-01-01."
+   }
+  },
+  "S12000041": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarcreports@angus.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarcreports@angus.gov.uk, mailto:dmarc-ruf@dmarc.service.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; includeSubDomains; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.angus.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000042": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; rua=mailto:a.eybeiv09@sdmarc.net,mailto:dmarc@dundeecity.gov.uk; adkim=r; aspf=r",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
+   },
+   "security_txt": {
+    "evidence": "https://www.dundeecity.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000045": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:4aaaa6eb@inbox.ondmarc.com;ruf=mailto:4aaaa6eb@inbox.ondmarc.com;fo=1;sp=reject",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000; preload",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.eastdunbarton.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000047": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:mxb71w0c@ag.dmarcian-eu.com,mailto:dmarc_agg@vali.email;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc@fife.gov.uk;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "security_txt": {
+    "pass": null,
+    "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+   }
+  },
+  "S12000048": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;fo=0;sp=reject;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@pkc.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc@pkc.gov.uk;rf=afrf;pct=100;ri=86400;",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.pkc.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000049": {
+   "dmarc": {
+    "evidence": "v=DMARC1; p=none; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@glasgow.gov.uk; ruf=mailto:dmarc@glasgow.gov.uk;fo=0",
+    "pass": false,
+    "reason": "Its DMARC policy is “none”, so faked email is still delivered. It needs to be quarantine or reject."
+   },
+   "https": {
+    "evidence": "max-age=31536000",
+    "pass": true,
+    "reason": ""
+   },
+   "security_txt": {
+    "evidence": "https://www.glasgow.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  },
+  "S12000050": {
+   "dmarc": {
+    "evidence": "v=DMARC1;p=quarantine;sp=reject;pct=100;fo=1;rua=mailto:99feb8bcf90b184@rep.dmarcanalyzer.com,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:99feb8bcf90b184@for.dmarcanalyzer.com",
+    "pass": true,
+    "reason": ""
+   },
+   "https": {
+    "evidence": "max-age=300",
+    "pass": false,
+    "reason": "Its Strict-Transport-Security header lasts only 300 seconds. It needs to last at least a year."
+   },
+   "security_txt": {
+    "evidence": "https://www.northlanarkshire.gov.uk/.well-known/security.txt",
+    "pass": false,
+    "reason": "There's no security.txt file."
+   }
+  }
+ },
+ "extra": {
+  "E06000001": {
+   "homepage": "http://www.hartlepool.gov.uk"
+  },
+  "E06000002": {
+   "homepage": "https://www.middlesbrough.gov.uk/"
+  },
+  "E06000003": {
+   "homepage": "https://www.redcar-cleveland.gov.uk/"
+  },
+  "E06000004": {
+   "homepage": "https://www.stockton.gov.uk/"
+  },
+  "E06000005": {
+   "homepage": "https://www.darlington.gov.uk/"
+  },
+  "E06000006": {
+   "homepage": "https://www3.halton.gov.uk/"
+  },
+  "E06000007": {
+   "homepage": "https://www.warrington.gov.uk/"
+  },
+  "E06000008": {
+   "homepage": "https://www.blackburn.gov.uk/"
+  },
+  "E06000009": {
+   "homepage": "https://www.blackpool.gov.uk/Home.aspx"
+  },
+  "E06000010": {
+   "homepage": "https://www.hull.gov.uk"
+  },
+  "E06000011": {
+   "homepage": "http://www.eastriding.gov.uk/"
+  },
+  "E06000012": {
+   "homepage": "http://www.nelincs.gov.uk/"
+  },
+  "E06000013": {
+   "homepage": "https://www.northlincs.gov.uk/"
+  },
+  "E06000014": {
+   "homepage": "https://www.york.gov.uk/"
+  },
+  "E06000015": {
+   "homepage": "https://www.derby.gov.uk/"
+  },
+  "E06000016": {
+   "homepage": "https://www.leicester.gov.uk/"
+  },
+  "E06000017": {
+   "homepage": "https://www.rutland.gov.uk/"
+  },
+  "E06000018": {
+   "homepage": "https://www.nottinghamcity.gov.uk/"
+  },
+  "E06000019": {
+   "homepage": "https://www.herefordshire.gov.uk/"
+  },
+  "E06000020": {
+   "homepage": "https://www.telford.gov.uk/"
+  },
+  "E06000021": {
+   "homepage": "https://www.stoke.gov.uk/"
+  },
+  "E06000022": {
+   "homepage": "http://www.bathnes.gov.uk/"
+  },
+  "E06000023": {
+   "homepage": "https://www.bristol.gov.uk/"
+  },
+  "E06000024": {
+   "homepage": "https://www.n-somerset.gov.uk/"
+  },
+  "E06000025": {
+   "homepage": "http://www.southglos.gov.uk/"
+  },
+  "E06000026": {
+   "homepage": "https://www.plymouth.gov.uk/"
+  },
+  "E06000027": {
+   "homepage": "http://www.torbay.gov.uk/"
+  },
+  "E06000030": {
+   "homepage": "https://www.swindon.gov.uk/"
+  },
+  "E06000031": {
+   "homepage": "http://www.peterborough.gov.uk/"
+  },
+  "E06000032": {
+   "homepage": "https://m.luton.gov.uk/Page/Show"
+  },
+  "E06000033": {
+   "homepage": "http://www.southend.gov.uk/"
+  },
+  "E06000034": {
+   "homepage": "https://www.thurrock.gov.uk/"
+  },
+  "E06000035": {
+   "homepage": "https://www.medway.gov.uk/"
+  },
+  "E06000036": {
+   "homepage": "https://www.bracknell-forest.gov.uk/"
+  },
+  "E06000037": {
+   "homepage": "http://www.westberks.gov.uk/"
+  },
+  "E06000038": {
+   "homepage": "https://www.reading.gov.uk/"
+  },
+  "E06000039": {
+   "homepage": "https://www.slough.gov.uk/"
+  },
+  "E06000040": {
+   "homepage": "http://www.rbwm.gov.uk/"
+  },
+  "E06000041": {
+   "homepage": "https://www.wokingham.gov.uk/"
+  },
+  "E06000042": {
+   "homepage": "https://www.milton-keynes.gov.uk/"
+  },
+  "E06000043": {
+   "homepage": "https://www.brighton-hove.gov.uk/"
+  },
+  "E06000044": {
+   "homepage": "https://www.portsmouth.gov.uk/"
+  },
+  "E06000045": {
+   "homepage": "http://www.southampton.gov.uk/"
+  },
+  "E06000046": {
+   "homepage": "https://www.iow.gov.uk/"
+  },
+  "E06000047": {
+   "homepage": "http://www.durham.gov.uk/"
+  },
+  "E06000049": {
+   "homepage": "https://www.cheshireeast.gov.uk/"
+  },
+  "E06000050": {
+   "homepage": "https://www.cheshirewestandchester.gov.uk/"
+  },
+  "E06000051": {
+   "homepage": "https://next.shropshire.gov.uk/"
+  },
+  "E06000052": {
+   "homepage": "https://www.cornwall.gov.uk/"
+  },
+  "E06000054": {
+   "homepage": "https://www.wiltshire.gov.uk/"
+  },
+  "E06000055": {
+   "homepage": "https://www.bedford.gov.uk/"
+  },
+  "E06000056": {
+   "homepage": "http://www.centralbedfordshire.gov.uk"
+  },
+  "E06000057": {
+   "homepage": "https://www.northumberland.gov.uk/"
+  },
+  "E06000058": {
+   "homepage": "https://www.bcpcouncil.gov.uk/"
+  },
+  "E06000059": {
+   "homepage": "https://www.dorsetcouncil.gov.uk/"
+  },
+  "E06000060": {
+   "homepage": "https://www.buckinghamshire.gov.uk/"
+  },
+  "E06000061": {
+   "homepage": "https://www.northnorthants.gov.uk/"
+  },
+  "E06000062": {
+   "homepage": "https://www.westnorthants.gov.uk/"
+  },
+  "E06000063": {
+   "homepage": "https://www.cumberland.gov.uk/"
+  },
+  "E06000064": {
+   "homepage": "https://www.westmorlandandfurness.gov.uk/"
+  },
+  "E06000065": {
+   "homepage": "http://www.northyorks.gov.uk/"
+  },
+  "E06000066": {
+   "homepage": "http://www.somerset.gov.uk/"
+  },
+  "E08000001": {
+   "homepage": "http://www.bolton.gov.uk/"
+  },
+  "E08000002": {
+   "homepage": "https://www.bury.gov.uk/"
+  },
+  "E08000003": {
+   "homepage": "http://www.manchester.gov.uk/"
+  },
+  "E08000004": {
+   "homepage": "https://www.oldham.gov.uk/"
+  },
+  "E08000005": {
+   "homepage": "http://www.rochdale.gov.uk/"
+  },
+  "E08000006": {
+   "homepage": "https://www.salford.gov.uk/"
+  },
+  "E08000007": {
+   "homepage": "https://www.stockport.gov.uk/"
+  },
+  "E08000008": {
+   "homepage": "https://www.tameside.gov.uk/"
+  },
+  "E08000009": {
+   "homepage": "https://www.trafford.gov.uk/"
+  },
+  "E08000010": {
+   "homepage": "https://www.wigan.gov.uk/"
+  },
+  "E08000011": {
+   "homepage": "https://www.knowsley.gov.uk/"
+  },
+  "E08000012": {
+   "homepage": "https://liverpool.gov.uk/"
+  },
+  "E08000013": {
+   "homepage": "https://www.sthelens.gov.uk/"
+  },
+  "E08000014": {
+   "homepage": "https://www.sefton.gov.uk/"
+  },
+  "E08000015": {
+   "homepage": "http://www.wirral.gov.uk/"
+  },
+  "E08000016": {
+   "homepage": "https://www.barnsley.gov.uk/"
+  },
+  "E08000017": {
+   "homepage": "http://www.doncaster.gov.uk/"
+  },
+  "E08000018": {
+   "homepage": "https://www.rotherham.gov.uk/"
+  },
+  "E08000019": {
+   "homepage": "https://www.sheffield.gov.uk/"
+  },
+  "E08000021": {
+   "homepage": "https://www.newcastle.gov.uk/"
+  },
+  "E08000022": {
+   "homepage": "https://my.northtyneside.gov.uk/"
+  },
+  "E08000023": {
+   "homepage": "http://www.southtyneside.gov.uk"
+  },
+  "E08000024": {
+   "homepage": "https://www.sunderland.gov.uk/"
+  },
+  "E08000025": {
+   "homepage": "https://www.birmingham.gov.uk/"
+  },
+  "E08000026": {
+   "homepage": "https://www.coventry.gov.uk/"
+  },
+  "E08000027": {
+   "homepage": "https://www.dudley.gov.uk/"
+  },
+  "E08000028": {
+   "homepage": "http://www.sandwell.gov.uk/"
+  },
+  "E08000029": {
+   "homepage": "https://www.solihull.gov.uk/"
+  },
+  "E08000030": {
+   "homepage": "https://go.walsall.gov.uk/"
+  },
+  "E08000031": {
+   "homepage": "http://www.wolverhampton.gov.uk"
+  },
+  "E08000032": {
+   "homepage": "https://www.bradford.gov.uk/"
+  },
+  "E08000033": {
+   "homepage": "https://www.calderdale.gov.uk/"
+  },
+  "E08000034": {
+   "homepage": "https://www.kirklees.gov.uk/"
+  },
+  "E08000035": {
+   "homepage": "https://www.leeds.gov.uk/"
+  },
+  "E08000036": {
+   "homepage": "https://www.wakefield.gov.uk/"
+  },
+  "E08000037": {
+   "homepage": "https://www.gateshead.gov.uk/"
+  },
+  "E09000002": {
+   "homepage": "https://www.lbbd.gov.uk/"
+  },
+  "E09000003": {
+   "homepage": "https://www.barnet.gov.uk/"
+  },
+  "E09000004": {
+   "homepage": "https://www.bexley.gov.uk/"
+  },
+  "E09000005": {
+   "homepage": "https://www.brent.gov.uk/"
+  },
+  "E09000006": {
+   "homepage": "https://www.bromley.gov.uk/"
+  },
+  "E09000007": {
+   "homepage": "https://www.camden.gov.uk/"
+  },
+  "E09000008": {
+   "homepage": "http://www.croydon.gov.uk"
+  },
+  "E09000009": {
+   "homepage": "https://www.ealing.gov.uk/"
+  },
+  "E09000010": {
+   "homepage": "https://new.enfield.gov.uk/"
+  },
+  "E09000011": {
+   "homepage": "http://www.royalgreenwich.gov.uk/"
+  },
+  "E09000012": {
+   "homepage": "https://hackney.gov.uk/"
+  },
+  "E09000013": {
+   "homepage": "http://www.lbhf.gov.uk/"
+  },
+  "E09000014": {
+   "homepage": "https://www.haringey.gov.uk/"
+  },
+  "E09000015": {
+   "homepage": "https://www.harrow.gov.uk/"
+  },
+  "E09000016": {
+   "homepage": "https://www.havering.gov.uk/"
+  },
+  "E09000017": {
+   "homepage": "https://www.hillingdon.gov.uk/"
+  },
+  "E09000018": {
+   "homepage": "https://www.hounslow.gov.uk/"
+  },
+  "E09000019": {
+   "homepage": "https://www.islington.gov.uk/"
+  },
+  "E09000020": {
+   "homepage": "https://www.rbkc.gov.uk/"
+  },
+  "E09000021": {
+   "homepage": "https://www.kingston.gov.uk/"
+  },
+  "E09000022": {
+   "homepage": "http://www.lambeth.gov.uk/"
+  },
+  "E09000023": {
+   "homepage": "https://lewisham.gov.uk/"
+  },
+  "E09000024": {
+   "homepage": "http://www.merton.gov.uk/"
+  },
+  "E09000025": {
+   "homepage": "https://www.newham.gov.uk/"
+  },
+  "E09000026": {
+   "homepage": "https://www.redbridge.gov.uk/"
+  },
+  "E09000027": {
+   "homepage": "http://www.richmond.gov.uk/"
+  },
+  "E09000028": {
+   "homepage": "https://www.southwark.gov.uk/"
+  },
+  "E09000029": {
+   "homepage": "https://www.sutton.gov.uk/"
+  },
+  "E09000030": {
+   "homepage": "https://www.towerhamlets.gov.uk/"
+  },
+  "E09000031": {
+   "homepage": "https://www.walthamforest.gov.uk/"
+  },
+  "E09000032": {
+   "homepage": "https://www.wandsworth.gov.uk/"
+  },
+  "E09000033": {
+   "homepage": "https://www.westminster.gov.uk/"
+  },
+  "S12000005": {
+   "homepage": "https://www.clacks.gov.uk/"
+  },
+  "S12000006": {
+   "homepage": "https://www.dumgal.gov.uk/"
+  },
+  "S12000008": {
+   "homepage": "https://www.east-ayrshire.gov.uk/"
+  },
+  "S12000010": {
+   "homepage": "https://www.eastlothian.gov.uk/"
+  },
+  "S12000011": {
+   "homepage": "http://www.eastrenfrewshire.gov.uk"
+  },
+  "S12000013": {
+   "homepage": "https://www.cne-siar.gov.uk/"
+  },
+  "S12000014": {
+   "homepage": "https://www.falkirk.gov.uk/"
+  },
+  "S12000017": {
+   "homepage": "https://www.highland.gov.uk/"
+  },
+  "S12000018": {
+   "homepage": "https://www.inverclyde.gov.uk/"
+  },
+  "S12000019": {
+   "homepage": "https://www.midlothian.gov.uk/"
+  },
+  "S12000020": {
+   "homepage": "http://www.moray.gov.uk"
+  },
+  "S12000021": {
+   "homepage": "https://www.north-ayrshire.gov.uk/"
+  },
+  "S12000023": {
+   "homepage": "https://www.orkney.gov.uk/"
+  },
+  "S12000026": {
+   "homepage": "https://www.scotborders.gov.uk"
+  },
+  "S12000027": {
+   "homepage": "https://www.shetland.gov.uk/"
+  },
+  "S12000028": {
+   "homepage": "https://www.south-ayrshire.gov.uk/"
+  },
+  "S12000029": {
+   "homepage": "https://www.southlanarkshire.gov.uk/"
+  },
+  "S12000030": {
+   "homepage": "https://stirling.gov.uk/"
+  },
+  "S12000033": {
+   "homepage": "https://www.aberdeencity.gov.uk/"
+  },
+  "S12000034": {
+   "homepage": "https://www.aberdeenshire.gov.uk/"
+  },
+  "S12000035": {
+   "homepage": "https://www.argyll-bute.gov.uk/"
+  },
+  "S12000036": {
+   "homepage": "https://www.edinburgh.gov.uk/"
+  },
+  "S12000038": {
+   "homepage": "https://www.renfrewshire.gov.uk/"
+  },
+  "S12000039": {
+   "homepage": "https://www.west-dunbarton.gov.uk/"
+  },
+  "S12000040": {
+   "homepage": "https://www.westlothian.gov.uk/"
+  },
+  "S12000041": {
+   "homepage": "https://www.angus.gov.uk/"
+  },
+  "S12000042": {
+   "homepage": "https://www.dundeecity.gov.uk/"
+  },
+  "S12000045": {
+   "homepage": "https://www.eastdunbarton.gov.uk/"
+  },
+  "S12000047": {
+   "homepage": "https://www.fife.gov.uk/"
+  },
+  "S12000048": {
+   "homepage": "https://www.pkc.gov.uk/"
+  },
+  "S12000049": {
+   "homepage": "https://www.glasgow.gov.uk/"
+  },
+  "S12000050": {
+   "homepage": "https://www.northlanarkshire.gov.uk/"
+  },
+  "checked": "2026-11-03"
+ },
+ "files": [],
+ "id": "website",
+ "notes": [
+  "E06000002: couldn't check https",
+  "E06000003: couldn't check security_txt",
+  "E06000004: couldn't check https",
+  "E06000006: couldn't check https, security_txt",
+  "E06000037: couldn't check https",
+  "E06000046: couldn't check https",
+  "E08000003: couldn't check https, security_txt",
+  "E08000009: couldn't check https, security_txt",
+  "E08000011: couldn't check security_txt",
+  "E08000023: couldn't check https",
+  "E08000024: couldn't check https",
+  "E08000037: couldn't check https",
+  "E09000002: couldn't check security_txt",
+  "E09000003: couldn't check security_txt",
+  "E09000010: couldn't check https, security_txt",
+  "E09000013: couldn't check https",
+  "E09000020: couldn't check security_txt",
+  "E09000022: couldn't check security_txt",
+  "S12000030: couldn't check https, security_txt",
+  "S12000033: couldn't check https, security_txt",
+  "S12000047: couldn't check https, security_txt"
+ ],
+ "period": "November 2026",
+ "published": "2026-11-03",
+ "title": "Our checks of council websites",
+ "trends": {},
+ "url": "https://councilscompared.com/about/#our-checks",
+ "values": {}
+}

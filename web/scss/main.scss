@@ -1066,3 +1066,15 @@ a.app-highlighted .app-hex {
 .app-area__more-link {
   margin: 0 0 10px;
 }
+
+// "Our check": a check we run ourselves, rather than published data
+.app-check__own {
+  margin-left: 5px;
+  white-space: nowrap;
+  @include govuk.govuk-font($size: 16);
+}
+
+.app-check__evidence {
+  overflow-wrap: anywhere;
+  font-size: inherit;
+}

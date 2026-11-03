@@ -64,6 +64,10 @@ AREAS = [
     ("digital", "Online services",
      "Whether GOV.UK's links to the council's pages for its core services work, and an automated test of the "
      "council website's accessibility."),
+    ("security", "Privacy and security",
+     "Checks we run ourselves each month on the council's website and email, rather than published statistics: "
+     "whether its email is protected from being faked, whether its website makes browsers always connect "
+     "securely, and whether it says how to report a security problem."),
     ("openness", "Openness",
      "Whether the council publishes the information it should, in a form other people can use. Planning data "
      "is what MHCLG's Planning Data platform collects from each council: conservation areas, Article 4 "
@@ -96,7 +100,8 @@ AREA_NOTES = {
 AREA_SLUGS = {
     "send": "special-educational-needs", "schools": "schools", "care": "adult-social-care",
     "complaints": "complaints", "housing": "council-housing", "ctax": "council-tax", "streets": "streets-and-waste",
-    "homeless": "homelessness", "digital": "online-services", "openness": "openness",
+    "homeless": "homelessness", "digital": "online-services", "security": "privacy-and-security",
+    "openness": "openness",
 }
 
 
@@ -235,6 +240,7 @@ class Check:
     source: str
     how: str  # how it is decided
     nations: tuple = ("England",)
+    own: bool = False  # our own check of the council's website, rather than published data
 
     def source_for(self, nation="England"):
         return self.source
@@ -247,6 +253,20 @@ CHECKS = [
           "built on, in a standard form. This checks whether MHCLG's Planning Data platform collects one from "
           "the council. For a council created since 2019, the registers of the councils it replaced count if "
           "together they cover the whole area."),
+    Check("dmarc", "security", "Protects its email from being faked", "email protection (DMARC)", "website",
+          "Anyone can send email that looks as if it's from the council unless the council publishes a DMARC "
+          "policy telling other mail servers to quarantine or reject email that fails its checks. This looks up "
+          "the DMARC record for the council's own domain (such as lewisham.gov.uk). It passes if the policy is "
+          "quarantine or reject, for all email.", nations=("England", "Scotland"), own=True),
+    Check("https", "security", "Makes browsers always connect securely", "secure connections (HSTS)", "website",
+          "A website can tell browsers to only ever connect to it securely, with a Strict-Transport-Security "
+          "header, so the connection can't be quietly switched to an insecure one. This checks that the "
+          "council's homepage sends one lasting at least a year, the shortest that browsers' preload lists accept.",
+          nations=("England", "Scotland"), own=True),
+    Check("security_txt", "security", "Says how to report a security problem", "security.txt", "website",
+          "A security.txt file, at the same address on every website (/.well-known/security.txt), tells people "
+          "who find a security problem how to report it. It passes if the file is there, gives a way to contact "
+          "the council and hasn't expired.", nations=("England", "Scotland"), own=True),
 ]
 
 SPENDING = [
@@ -588,8 +608,9 @@ class Area:
 @dataclass
 class CheckResult:
     check: Check
-    passed: bool
+    passed: bool  # None: we couldn't check
     reason: str = ""
+    evidence: str = ""  # what we found, for our own checks
 
 
 @dataclass
@@ -612,15 +633,15 @@ class Comparison:
 
     @property
     def fails(self):
-        """ "Fails 1 of 3 checks", or None when it passes them all."""
-        failed = [k for k in self.checks if not k.passed]
-        if not failed:
+        """ "Fails 1 of 3 checks", or None when it passes them all. Checks we couldn't do aren't counted."""
+        answered = [k for k in self.checks if k.passed is not None]
+        if not self.failed:
             return None
-        return f"Fails {len(failed)} of {len(self.checks)} {'check' if len(self.checks) == 1 else 'checks'}"
+        return f"Fails {len(self.failed)} of {len(answered)} {'check' if len(answered) == 1 else 'checks'}"
 
     @property
     def failed(self):
-        return [k for k in self.checks if not k.passed]
+        return [k for k in self.checks if k.passed is False]
 
 
 def _summary(rows, worst=True):
@@ -664,7 +685,7 @@ def compare(council, group="nation"):
         if not any(m.area == area_id and council["nation"] in m.nations for m in MEASURES + CHECKS):
             continue  # an area with no measures in the council's nation, such as schools in England
         shown = [r for r in area_rows if r.band]
-        checks = [CheckResult(k, found["pass"], found["reason"])
+        checks = [CheckResult(k, found["pass"], found["reason"], found.get("evidence", ""))
                   for k in CHECKS if k.area == area_id and check_available(k, council["nation"])
                   for found in [council.get("checks", {}).get(k.id)] if found]
         result.checks += checks
@@ -984,16 +1005,18 @@ def ranking(measure, nation="England", members=None):
 
 
 def check_results(check, nation="England"):
-    """[(council, CheckResult)] for every council in the nation with an answer, those that fail first."""
-    found = [(c, CheckResult(check, c["checks"][check.id]["pass"], c["checks"][check.id]["reason"]))
-             for c in in_nation(nation) if check.id in c.get("checks", {})]
-    return sorted(found, key=lambda r: (r[1].passed, r[0]["name"]))
+    """[(council, CheckResult)] for every council in the nation with an answer: those that fail first,
+    then those we couldn't check, then those that pass."""
+    found = [(c, CheckResult(check, entry["pass"], entry["reason"], entry.get("evidence", "")))
+             for c in in_nation(nation) for entry in [c.get("checks", {}).get(check.id)] if entry]
+    order = {False: 0, None: 1, True: 2}
+    return sorted(found, key=lambda r: (order[r[1].passed], r[0]["name"]))
 
 
 def check_overview(check, nation="England"):
-    """ "116 of 130 councils do", for the list of measures."""
-    results = check_results(check, nation)
-    return f"{sum(1 for _, r in results if r.passed)} of {len(results)} councils do" if results else None
+    """ "116 of 130 councils do", for the list of measures, out of those we could check."""
+    answered = [r for _, r in check_results(check, nation) if r.passed is not None]
+    return f"{sum(1 for r in answered if r.passed)} of {len(answered)} councils do" if answered else None
 
 
 def measure_overview(measure, nation="England"):
@@ -1126,8 +1149,8 @@ def hexmap(measure, nation="England"):
 
 
 def check_hexmap(check, nation="England"):
-    return _hexmap(nation, {c["code"]: (f"app-check--{'yes' if r.passed else 'no'}", "Yes" if r.passed else "No")
-                            for c, r in check_results(check, nation)})
+    answers = {True: ("app-check--yes", "Yes"), False: ("app-check--no", "No"), None: ("app-hex--none", "couldn't check")}
+    return _hexmap(nation, {c["code"]: answers[r.passed] for c, r in check_results(check, nation)})
 
 
 def _hexmap(nation, shade):

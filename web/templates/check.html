@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-{% from "_check.html" import checkTag %}
+{% from "_check.html" import checkTag, ownTag, evidence %}
 {% set k = check %}
 {% block title %}{{ k.label }}: every council in {{ nation }}{% if period %} ({{ period }}){% endif %}{% endblock %}
-{% block description %}Whether each council in {{ nation }} {{ k.label | lower_first }}, from official data ({{ period }}).{% endblock %}
+{% block description %}Whether each council in {{ nation }} {{ k.label | lower_first }}, from {{ "our own check of its website" if k.own else "official data" }} ({{ period }}).{% endblock %}
 {% block backLink %}{{ govukBackLink({"text": "All measures", "href": "/measures/"}) }}{% endblock %}
 
 {% block content %}
@@ -10,9 +10,13 @@
   <div class="govuk-grid-column-two-thirds">
     <span class="govuk-caption-l">{{ area_name }}</span>
     <h1 class="govuk-heading-xl">{{ k.label }}</h1>
-    <p class="govuk-body-s app-secondary-text">{{ period }}. A yes or no, so councils aren't ranked on it. Source: <a class="govuk-link" href="{{ source.url }}">{{ source.title }}</a>.</p>
+    {% if k.own %}
+      <p class="govuk-body-s app-secondary-text">{{ period }}. A yes or no, so councils aren't ranked on it. <strong>Our own check</strong> of each council's website, not published statistics: <a class="govuk-link" href="/about/#our-checks">how we check</a>.</p>
+    {% else %}
+      <p class="govuk-body-s app-secondary-text">{{ period }}. A yes or no, so councils aren't ranked on it. Source: <a class="govuk-link" href="{{ source.url }}">{{ source.title }}</a>.</p>
+    {% endif %}
     <p class="govuk-body">{{ k.how }}</p>
-    <p class="govuk-body">{{ passed }} of {{ results | length }} councils in {{ nation }} do. {{ results | length - passed }} don't.</p>
+    <p class="govuk-body">{{ passed }} of {{ passed + failed }} councils in {{ nation }} do. {{ failed }} don't.{% if unchecked %} We couldn't check {{ unchecked }}, usually because the website blocked our checker.{% endif %}</p>
     {% if updated %}<p class="govuk-body-s app-secondary-text">Last updated {{ updated | long_date }}.</p>{% endif %}
   </div>
 </div>
@@ -58,6 +62,7 @@
           <ul class="app-map__legend govuk-body-s">
             <li><span class="app-map__key app-check--yes"></span>Yes</li>
             <li><span class="app-map__key app-check--no"></span>No</li>
+            {% if unchecked %}<li><span class="app-map__key app-hex--none"></span>Couldn't check</li>{% endif %}
             <li><span class="app-map__key app-hex--other"></span>{% if nation == "England" %}Not covered (county and district areas){% else %}Elsewhere in the UK{% endif %}</li>
           </ul>
           <p class="govuk-body-s app-secondary-text">Each council is the same size, so London is easy to see. Map layout by <a class="govuk-link" href="https://github.com/odileeds/hexmaps">Open Innovations</a>.</p>
@@ -79,6 +84,7 @@
               <td class="govuk-table__cell">
                 <a class="govuk-link" href="/{{ c.slug }}/">{{ c.name }}</a>
                 {% if r.reason %}<span class="govuk-body-s app-secondary-text app-check__reason">{{ r.reason }}</span>{% endif %}
+                {{ evidence(r) }}
               </td>
               <td class="govuk-table__cell">{{ checkTag(r.passed) }}</td>
             </tr>

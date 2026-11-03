@@ -75,6 +75,14 @@
     <p class="govuk-body">Contains public sector information licensed under the <a class="govuk-link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>. Website scores from the <a class="govuk-link" href="https://index.silktide.com/">Silktide Index</a>.</p>
     <p class="govuk-body">You can <a class="govuk-link" href="/data/councils.csv">download every figure as a spreadsheet (CSV)</a> or <a class="govuk-link" href="/data/councils.json">as JSON</a>.</p>
 
+    <h2 class="govuk-heading-m" id="our-checks">Our own checks</h2>
+    <p class="govuk-body">Everything else on this site comes from published statistics. A few checks we run ourselves, and they are marked “Our check” wherever they appear. Once a month we look at each council's website and email domain, the same way for every council, starting from the homepage GOV.UK lists for it:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      {% for k in model.CHECKS if k.own %}<li><strong>{{ k.label }}.</strong> {{ k.how }}</li>{% endfor %}
+    </ul>
+    <p class="govuk-body">We only look at public pages and public DNS records, using a user agent that says who we are. We never log in, fill in a form or try to get past a website's protection against automated visits. If a website blocks us, or we can't reach it, its answer is “couldn't check”, not a fail, and it isn't counted against the council.</p>
+    <p class="govuk-body">We keep what we found, such as the DMARC record or the header the website sent, and show it on the council's page so anyone can see why it passed or failed. If you think one of our checks is wrong about a council, <a class="govuk-link" href="{{ issues_url }}">tell us</a>.</p>
+
     <h2 class="govuk-heading-m" id="who">Who runs this website</h2>
     <p class="govuk-body">I'm <a class="govuk-link" href="{{ author_url }}">Ryan O'Callaghan</a>, and Councils compared is my personal project. It's independent: it's not run by, funded by or connected to GOV.UK, the government, any council, my employer, or any of the organisations whose figures it uses.</p>
     <p class="govuk-body">Every figure comes from a published source and the code is public, so you can check how it was put together.</p>

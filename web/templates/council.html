@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_check.html" import checkTag %}
+{% from "_check.html" import checkTag, ownTag, evidence %}
 {% from "_charts.html" import stripChart, bars, trendChart %}
 
 {% set c = comparison %}
@@ -130,7 +130,7 @@
     <ul class="app-area__checks">
       {% for k in area.checks %}
         <li class="app-area__check">
-          <a class="app-area__label govuk-link" href="{{ model.measure_path(k.check, b.nation) }}#{{ b.slug }}">{{ k.check.label }}</a>
+          <span class="app-area__label"><a class="govuk-link" href="{{ model.measure_path(k.check, b.nation) }}#{{ b.slug }}">{{ k.check.label }}</a>{{ ownTag(k.check) }}</span>
           {{ checkTag(k.passed) }}
         </li>
       {% endfor %}

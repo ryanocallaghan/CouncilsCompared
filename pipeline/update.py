@@ -43,6 +43,7 @@ STEPS = [
     ("ofsted", "ofsted", "fetch"),
     ("silktide", "silktide", "fetch"),
     ("local_links", "local_links", "fetch"),
+    ("website", "website", "fetch"),  # our own checks: needs the homepages from local_links
     ("planning_data", "planning_data", "fetch"),
     ("area_bands", "area_bands", "fetch"),
     ("lgbf", "lgbf", "fetch"),
@@ -245,7 +246,8 @@ def changes(before, after):
         was = old.get(council["code"], {}).get("checks", {})
         for check, now in council.get("checks", {}).items():
             if (was.get(check) or {}).get("pass") != now["pass"]:
-                flipped.setdefault(check, []).append(f"{council['name']} ({'passes' if now['pass'] else 'fails'})")
+                answer = {True: "passes", False: "fails", None: "couldn't check"}[now["pass"]]
+                flipped.setdefault(check, []).append(f"{council['name']} ({answer})")
     if lines:
         lines.insert(0, "| Source | Period | |\n|---|---|---|")
     if changed:

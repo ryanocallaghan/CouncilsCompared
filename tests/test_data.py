@@ -70,10 +70,13 @@ def test_measures_only_appear_in_their_nations():
 @pytest.mark.parametrize("check,nation", [(k.id, n) for k in model.CHECKS for n in k.nations])
 def test_each_check_covers_most_councils_and_says_why_it_fails(check, nation):
     answers = [c["checks"][check] for c in COUNCILS if nation_of(c) == nation and check in c.get("checks", {})]
-    assert len(answers) >= MINIMUM.get((check, nation), 120), f"{check} in {nation}: only {len(answers)} councils"
-    assert all(isinstance(a["pass"], bool) for a in answers)
-    assert all(a["reason"] for a in answers if not a["pass"])
-    assert any(a["pass"] for a in answers) and not all(a["pass"] for a in answers)  # a check that tells councils apart
+    minimum = {"England": 120, "Scotland": 30}[nation]
+    assert len(answers) >= minimum, f"{check} in {nation}: only {len(answers)} councils"
+    assert all(a["pass"] in (True, False, None) for a in answers)  # None: we couldn't check
+    assert all(a["reason"] for a in answers if a["pass"] is not True)
+    # We could check most councils, and the check tells them apart
+    assert sum(1 for a in answers if a["pass"] is None) <= 0.2 * len(answers), f"{check}: too many unchecked"
+    assert any(a["pass"] is True for a in answers) and any(a["pass"] is False for a in answers)
 
 
 @pytest.mark.parametrize("measure", [m.id for m in model.MEASURES if m.unit == "%"])
