@@ -1057,3 +1057,12 @@ a.app-highlighted .app-hex {
     display: none;
   }
 }
+
+// An area's own page: the group to compare with, before the figures
+.app-area-page__group {
+  margin-bottom: 30px;
+}
+
+.app-area__more-link {
+  margin: 0 0 10px;
+}

@@ -43,6 +43,25 @@ for (const section of document.querySelectorAll('[data-module="app-ctax"]')) {
   }
 }
 
+// A council's summary, where the calculator is on the council tax page:
+// show the bill for the band from a postcode search, and keep the band on
+// the way to the calculator
+if (nearby && !document.querySelector('[data-module="app-ctax"]')) {
+  for (const bill of document.querySelectorAll("[data-ratios]")) {
+    const ratio = JSON.parse(bill.dataset.ratios)[nearby];
+    if (!ratio) continue;
+    bill.textContent = money(Number(bill.dataset.bandD) * ratio);
+    for (const note of document.querySelectorAll(".app-ctax__band-note[data-near]")) {
+      note.textContent = `(Band ${nearby}, the most common near your postcode)`;
+    }
+    for (const link of document.querySelectorAll(".app-ctax__link")) {
+      const url = new URL(link.href);
+      url.searchParams.set("band", nearby);
+      link.href = url.pathname + url.search;
+    }
+  }
+}
+
 // "Compared with": go straight to the group's page when it changes
 for (const form of document.querySelectorAll('[data-module="app-group"]')) {
   const button = form.querySelector(".app-group__button");
@@ -55,7 +74,8 @@ for (const form of document.querySelectorAll('[data-module="app-group"]')) {
     const kept = new URLSearchParams();
     for (const key of ["with", "band"]) if (search.get(key)) kept.set(key, search.get(key));
     const query = kept.size ? `?${kept}` : "";
-    window.location.href = (group === "nation" ? `/${slug}/` : `/${slug}/${group}/`) + query;
+    const area = form.dataset.area ? `${form.dataset.area}/` : ""; // on an area's page, stay on the area
+    window.location.href = (group === "nation" ? `/${slug}/` : `/${slug}/${group}/`) + area + query;
   });
 }
 

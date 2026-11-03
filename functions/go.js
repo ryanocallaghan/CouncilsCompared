@@ -4,6 +4,7 @@
 //                            the neighbourhood (postcodes.io gives both codes)
 //   /go?q=lewisham        -> /lewisham/, or the closest names if it's not exact
 //   /go?council=lewisham  -> /lewisham/ (and &group=region and so on)
+//   /go?council=lewisham&group=region&area=complaints -> /lewisham/region/complaints/
 //   /go?postcode=SE14 6AF -> as q, for links made before q
 // The postcode is never put in the address it redirects to.
 
@@ -66,8 +67,10 @@ export async function onRequestGet({ request, env }) {
 
   const slug = url.searchParams.get("council") || "";
   const group = url.searchParams.get("group") || "";
+  const section = url.searchParams.get("area") || ""; // an area's page, such as complaints
   if (/^[a-z0-9-]+$/.test(slug)) {
-    return to(["region", "type", "similar"].includes(group) ? `/${slug}/${group}/` : `/${slug}/`);
+    const page = ["region", "type", "similar"].includes(group) ? `/${slug}/${group}/` : `/${slug}/`;
+    return to(/^[a-z0-9-]+$/.test(section) ? `${page}${section}/` : page);
   }
 
   const query = (url.searchParams.get("q") || url.searchParams.get("postcode") || "").trim();

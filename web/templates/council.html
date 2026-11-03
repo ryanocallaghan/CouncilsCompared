@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% from "_check.html" import checkTag %}
+{% from "_charts.html" import stripChart, bars, trendChart %}
 
 {% set c = comparison %}
 {% set b = c.council %}
@@ -11,37 +12,6 @@
   {{ govukBackLink({"text": "All councils", "href": "/"}) }}
 {% endblock %}
 
-{# A row of marks, one per council in the nation, better to the right #}
-{% macro stripChart(s, label, ends=("Worse", "Better"), measure="", spend="", mini=False) %}
-  <svg class="app-strip{% if mini %} app-strip--mini{% endif %}" width="100%" height="26" role="img" aria-label="{{ label }}" focusable="false" data-measure="{{ measure }}" data-spend="{{ spend }}">
-    <line class="app-strip__axis" x1="1%" x2="99%" y1="13" y2="13"></line>
-    <svg viewBox="0 0 1000 26" preserveAspectRatio="none" width="100%" height="26" aria-hidden="true">
-      <path class="app-strip__marks" d="{{ s.path(False) }}"></path>
-      <path class="app-strip__marks app-strip__marks--group" d="{{ s.path(True) }}"></path>
-    </svg>
-    <line class="app-strip__median" x1="{{ s.median }}%" x2="{{ s.median }}%" y1="2" y2="24"></line>
-    <circle class="app-strip__me" cx="{{ s.me }}%" cy="13" r="{{ 6 if mini else 8 }}"></circle>
-  </svg>
-  {% if not mini %}<span class="app-strip__ends" aria-hidden="true"><span>{{ ends[0] }}</span><span>{{ ends[1] }}</span></span>{% endif %}
-{% endmacro %}
-
-{# Counts as bars, longest first, for figures that aren't ranked #}
-{% macro bars(items, caption) %}
-  {% set most = items | map(attribute=1) | max %}
-  <table class="app-bars">
-    <caption class="govuk-visually-hidden">{{ caption }}</caption>
-    <tbody>
-      {% for label, n in items %}
-        <tr>
-          <th scope="row" class="app-bars__label">{{ label }}</th>
-          <td class="app-bars__value">{{ "{:,}".format(n) }}</td>
-          <td class="app-bars__bar" aria-hidden="true"><span style="width: {{ (n / most * 100) | round(1) if most else 0 }}%"></span></td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-{% endmacro %}
-
 {% macro contents(id, classes) %}
   <nav class="app-contents {{ classes }}" aria-labelledby="{{ id }}">
     <h2 class="govuk-heading-s govuk-!-margin-bottom-2" id="{{ id }}">On this page</h2>
@@ -50,18 +20,9 @@
         <ol class="govuk-list app-contents__sub">
           {% for area in c.areas %}<li><a class="govuk-link" href="#{{ area.id }}">{{ area.name }}</a></li>{% endfor %}
           {% if b.ofsted %}<li><a class="govuk-link" href="#ofsted">Children's services inspection</a></li>{% endif %}
+          {% if c.spending %}<li><a class="govuk-link" href="#money">What the council spends</a></li>{% endif %}
         </ol>
       </li>
-      {% if council_tax or c.spending %}
-        <li><a class="govuk-link" href="#money">Money</a>
-          <ol class="govuk-list app-contents__sub">
-            {% if council_tax %}<li><a class="govuk-link" href="#council-tax">Your council tax</a></li>{% endif %}
-            {% if c.spending %}<li><a class="govuk-link" href="#spending">What the council spends</a></li>{% endif %}
-          </ol>
-        </li>
-      {% endif %}
-      {% if c.trends %}<li><a class="govuk-link" href="#over-time">Over time</a></li>{% endif %}
-      {% if key_figures %}<li><a class="govuk-link" href="#key-figures">Key figures</a></li>{% endif %}
     </ol>
   </nav>
 {% endmacro %}
@@ -80,7 +41,7 @@
     <div><dt>Residents</dt><dd>{{ "{:,}".format(b.population) }}</dd></div>
     {% if b.band_d %}
       {% if council_tax %}
-        <div class="app-summary__bill"><dt>Your council tax</dt><dd><strong data-band-d="{{ council_tax.band_d }}">{{ model.fmt(council_tax.band_d, "£") }}</strong> a year <span class="app-ctax__band-note" data-near="true">(Band D)</span> <a class="govuk-link" href="#council-tax">Change your band and see what it pays for</a></dd></div>
+        <div class="app-summary__bill"><dt>Your council tax</dt><dd><strong data-band-d="{{ council_tax.band_d }}" data-ratios="{{ council_tax.ratios | tojson | forceescape }}">{{ model.fmt(council_tax.band_d, "£") }}</strong> a year <span class="app-ctax__band-note" data-near="true">(Band D)</span> <a class="govuk-link app-ctax__link" href="{{ model.area_path(b, 'ctax', c.group) }}">Change your band and see what it pays for</a></dd></div>
       {% else %}
         <div><dt>Band D council tax</dt><dd>{{ model.fmt(b.band_d, "£") }} a year</dd></div>
       {% endif %}
@@ -90,19 +51,7 @@
     {% endif %}
   </dl>
   <div class="app-summary__controls">
-    {# Compared with: a form without JavaScript; app.js goes straight to the group's page #}
-    <form class="app-group" action="/go" method="get" data-module="app-group">
-      <input type="hidden" name="council" value="{{ b.slug }}">
-      <div class="govuk-form-group govuk-!-margin-bottom-0">
-        <label class="govuk-label govuk-label--s" for="group">Compared with</label>
-        <select class="govuk-select" id="group" name="group">
-          {% for group in groups %}
-            <option value="{{ group }}"{% if group == c.group %} selected{% endif %}>{{ model.group_option(b, group) }}</option>
-          {% endfor %}
-        </select>
-        {{ govukButton({"text": "Change", "classes": "govuk-button--secondary govuk-!-margin-bottom-0 app-group__button"}) }}
-      </div>
-    </form>
+    {% include "_group.html" %}
     <form class="app-with" data-module="app-with" hidden>
       <div class="govuk-form-group govuk-!-margin-bottom-0">
         <label class="govuk-label govuk-label--s" for="with">Show another council too</label>
@@ -156,7 +105,7 @@
 {{ contents("contents-title", "app-contents--inline") }}
 
 <h2 class="govuk-heading-l govuk-!-margin-top-6" id="how-it-does">How the council does</h2>
-<p class="govuk-body app-measure-note">Each measure ranks {{ b.name }} among {{ c.phrase }}. On each line, every mark is a council in {{ b.nation }}, better to the right; the large dot is {{ b.name }} and the dashed line is the median. Open a section for the full figures.</p>
+<p class="govuk-body app-measure-note">Each measure ranks {{ b.name }} among {{ c.phrase }}. On each line, every mark is a council in {{ b.nation }}, better to the right; the large dot is {{ b.name }} and the dashed line is the median. Each area has a page of its own with the full figures, notes and trends.</p>
 
 {% for area in c.areas %}
 <section class="app-area" id="{{ area.id }}" aria-labelledby="{{ area.id }}-title">
@@ -176,42 +125,6 @@
         </li>
       {% endfor %}
     </ul>
-    <details class="govuk-details app-area__details">
-      <summary class="govuk-details__summary"><span class="govuk-details__summary-text">Figures and charts<span class="govuk-visually-hidden"> for {{ area.name | lower }}</span></span></summary>
-      <div class="govuk-details__text app-area__more">
-        <p class="govuk-body app-measure-note">{{ area.note }}</p>
-        <table class="govuk-table app-compare-table">
-          <caption class="govuk-table__caption govuk-visually-hidden">{{ area.name }}: {{ b.name }} compared with {{ c.phrase }}</caption>
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header app-compare-table__measure">Measure</th>
-              <th scope="col" class="govuk-table__header govuk-table__header--numeric">{{ b.name }}</th>
-              <th scope="col" class="govuk-table__header govuk-table__header--numeric">Median</th>
-              <th scope="col" class="govuk-table__header">Position</th>
-              <th scope="col" class="govuk-table__header app-compare-table__strip">Across {{ b.nation }}</th>
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-            {% for r in area.rows %}
-              <tr class="govuk-table__row">
-                <th scope="row" class="govuk-table__header app-compare-table__label">
-                  {{ r.measure.label }}
-                  <span class="govuk-body-s app-secondary-text app-compare-table__period">{% if r.measure.official %}{{ r.measure.official }}. {% endif %}{{ r.period }}</span>
-                  {% if r.caveat %}<span class="govuk-body-s app-secondary-text app-compare-table__period">{{ r.caveat }}</span>{% endif %}
-                  {% if r.elsewhere %}<span class="govuk-body-s app-secondary-text app-compare-table__period">{{ r.elsewhere }} <a class="govuk-link" href="{{ b.silktide.url }}">See it on Silktide</a>.</span>{% endif %}
-                </th>
-                <td class="govuk-table__cell govuk-table__cell--numeric" data-label="{{ b.name }}"><strong>{{ r.value }}</strong></td>
-                <td class="govuk-table__cell govuk-table__cell--numeric" data-label="Median">{{ r.median }}</td>
-                <td class="govuk-table__cell" data-label="Position">{{ model.place(r.position, r.tied, r.count) }}</td>
-                <td class="govuk-table__cell app-compare-table__chart">
-                  {{ stripChart(r.strip, b.name ~ ": " ~ r.value ~ ". Median " ~ r.median ~ ". " ~ model.place(r.position, r.tied, r.count) | capitalize ~ ".", measure=r.measure.id) }}
-                </td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-    </details>
   {% endif %}
   {% if area.checks %}
     <ul class="app-area__checks">
@@ -219,58 +132,9 @@
         <li class="app-area__check">
           <a class="app-area__label govuk-link" href="{{ model.measure_path(k.check, b.nation) }}#{{ b.slug }}">{{ k.check.label }}</a>
           {{ checkTag(k.passed) }}
-          {% if k.reason %}<span class="govuk-body-s app-secondary-text app-check__reason">{{ k.reason }}</span>{% endif %}
         </li>
       {% endfor %}
     </ul>
-  {% endif %}
-  {% if area.id == "streets" and c.fly %}
-    {% set fly = c.fly %}
-    <details class="govuk-details app-area__details">
-      <summary class="govuk-details__summary"><span class="govuk-details__summary-text">Fly-tipping in detail</span></summary>
-      <div class="govuk-details__text app-area__more">
-        <p class="govuk-body app-measure-note">{{ b.name }} recorded {{ "{:,}".format(fly.incidents) }} fly-tips in {{ sources.fly.period }}{% if fly.large is not none %}. {{ fly.large }}% were a small van load or bigger, against a median of {{ fly.large_median }}% among {{ c.phrase }}{% endif %}. These figures aren't ranked: councils record sizes in different ways, and most prosecute nobody in a year.</p>
-        <div class="app-bars__pair">
-          {% for title, items in [("Where they were found", fly.land), ("What was dumped", fly.waste)] if items %}
-            <div>
-              <h4 class="govuk-heading-s govuk-!-margin-bottom-2">{{ title }}</h4>
-              {{ bars(items, title) }}
-            </div>
-          {% endfor %}
-        </div>
-        {% set done = fly.actions | selectattr(1) | list %}
-        {% set nothing = fly.actions | rejectattr(1) | map(attribute=0) | list %}
-        {% if done %}
-          <h4 class="govuk-heading-s govuk-!-margin-bottom-2">What the council did</h4>
-          {{ bars(done, "What the council did") }}
-          {% if fly.court_fines %}<p class="govuk-body">Courts fined fly-tippers {{ model.fmt(fly.court_fines, "£") }} in total.</p>{% endif %}
-        {% endif %}
-        {% if nothing %}
-          <p class="govuk-body">None recorded: {{ nothing | map("lower") | sentence_join }}.</p>
-        {% endif %}
-        {% if fly.fpn_amount %}
-          <p class="govuk-body">{{ b.name | possessive }} fixed penalty for fly-tipping is {{ model.fmt(fly.fpn_amount, "£") }}{% if fly.fpn_early %}, or {{ model.fmt(fly.fpn_early, "£") }} if paid early{% endif %}.</p>
-        {% endif %}
-        <p class="govuk-body-s app-secondary-text">From <a class="govuk-link" href="{{ sources.fly.url }}">{{ sources.fly.title | replace("Defra: ", "Defra's ") }}</a>. Defra doesn't publish how much fly-tipped waste weighed or what it cost to clear.</p>
-      </div>
-    </details>
-  {% endif %}
-  {% if area.id == "homeless" and b.bnb_families %}
-    <div class="govuk-inset-text govuk-!-margin-top-2">
-      In the latest figures ({{ sources.homelessness.period }}), {% if b.bnb_families == "few" %}a small number of families{% else %}{{ b.bnb_families }} {{ "family" if b.bnb_families == 1 else "families" }}{% endif %} with children had been in bed and breakfast accommodation arranged by {{ b.name }} for more than 6 weeks. The law says families should only be in a B&amp;B in an emergency, and for no longer than 6 weeks.{% if b.bnb_families == "few" %} The exact number isn't published because it is small.{% endif %}
-    </div>
-  {% endif %}
-  {% if area.id == "digital" and b.links and (b.links.broken or b.links.missing) %}
-    <div class="govuk-inset-text govuk-!-margin-top-2">
-      Of the {{ b.links.services }} core services GOV.UK checked in {{ sources.local_links.period }}:
-      {% if b.links.broken %}the link to {{ b.name | possessive }} page didn't work for {{ b.links.broken | map("lower") | sentence_join }}.{% endif %}
-      {% if b.links.missing %}GOV.UK has no link for {{ b.links.missing | map("lower") | sentence_join }}, so it can only send people to the council's homepage.{% endif %}
-    </div>
-  {% endif %}
-  {% if area.id == "openness" and b.planning and b.planning.missing %}
-    <div class="govuk-inset-text govuk-!-margin-top-2">
-      The Planning Data platform doesn't collect {{ b.planning.missing | map("lower") | sentence_join }} from {{ b.name }}.
-    </div>
   {% endif %}
   {% if area.missing and not area.rows and area.id == "housing" %}
     <p class="govuk-body app-secondary-text">{{ b.name }} Council no longer owns council homes, so there are no council housing figures.</p>
@@ -278,6 +142,9 @@
     <p class="govuk-body app-secondary-text">No figures for {{ b.name }} yet.</p>
   {% elif area.missing %}
     <p class="govuk-body-s app-secondary-text">{{ area.missing }} more {{ "measure has" if area.missing == 1 else "measures have" }} no figure for {{ b.name }}.</p>
+  {% endif %}
+  {% if area.rows or area.checks %}
+    <p class="govuk-body app-area__more-link"><a class="govuk-link" href="{{ model.area_path(b, area.id, c.group) }}">{% if area.id == "ctax" %}Your bill, what it pays for and collection in full{% else %}{{ area.name }} in full{% endif %}<span class="govuk-visually-hidden"> for {{ b.name }}</span></a></p>
   {% endif %}
 </section>
 {% endfor %}
@@ -304,93 +171,14 @@
 </section>
 {% endif %}
 
-{% if council_tax or c.spending %}
-<h2 class="govuk-heading-l govuk-!-margin-top-8" id="money">Money</h2>
-{% endif %}
-{% if council_tax %}
-  {% include "_council_tax.html" %}
-{% endif %}
-
-{# Spending: not better or worse, so no colours #}
 {% if c.spending %}
-<section class="app-area govuk-!-margin-top-6" id="spending" aria-labelledby="spending-title">
+<section class="app-area govuk-!-margin-top-8" id="money" aria-labelledby="money-title">
   <div class="app-area__header">
-    <h3 class="govuk-heading-m govuk-!-margin-bottom-1" id="spending-title">What the council spends</h3>
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-1" id="money-title">What the council spends</h2>
     <p class="govuk-body govuk-!-margin-bottom-0 app-area__headline">{{ c.spending[-1].value }} per resident in {{ sources[model.nation_source('spending', b.nation)].period }}, not counting schools. The median is {{ c.spending[-1].median }}.</p>
   </div>
-  <details class="govuk-details app-area__details">
-    <summary class="govuk-details__summary"><span class="govuk-details__summary-text">Spending by service</span></summary>
-    <div class="govuk-details__text app-area__more">
-      <p class="govuk-body app-measure-note">Net spending per resident, after fees, charges and specific grants. Spending more is not better or worse on its own. Negative highways figures come from parking income.{% if b.nation == "Scotland" %} Social work covers adults and children, including the council’s payments to its health and social care partnership (Integration Joint Board). Public health is run by the NHS in Scotland.{% endif %}</p>
-      <table class="govuk-table app-compare-table">
-        <caption class="govuk-table__caption govuk-visually-hidden">Spending per resident: {{ b.name }} compared with {{ c.phrase }}</caption>
-        <thead class="govuk-table__head">
-          <tr class="govuk-table__row">
-            <th scope="col" class="govuk-table__header app-compare-table__measure">Service</th>
-            <th scope="col" class="govuk-table__header govuk-table__header--numeric">{{ b.name }}</th>
-            <th scope="col" class="govuk-table__header govuk-table__header--numeric">Median</th>
-            <th scope="col" class="govuk-table__header">Rank, highest first</th>
-            <th scope="col" class="govuk-table__header app-compare-table__strip">Across {{ b.nation }}</th>
-          </tr>
-        </thead>
-        <tbody class="govuk-table__body">
-          {% for s in c.spending %}
-            <tr class="govuk-table__row{% if loop.last %} app-compare-table__total{% endif %}">
-              <th scope="row" class="govuk-table__header app-compare-table__label">{{ s.service }}</th>
-              <td class="govuk-table__cell govuk-table__cell--numeric" data-label="{{ b.name }}"><strong>{{ s.value }}</strong></td>
-              <td class="govuk-table__cell govuk-table__cell--numeric" data-label="Median">{{ s.median }}</td>
-              <td class="govuk-table__cell" data-label="Rank">{{ model.ordinal(s.rank) }} of {{ s.count }}</td>
-              <td class="govuk-table__cell app-compare-table__chart">{{ stripChart(s.strip, b.name ~ ": " ~ s.value ~ " per resident. Median " ~ s.median ~ ".", ("Lower", "Higher"), spend=s.service) }}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-  </details>
+  <p class="govuk-body app-area__more-link"><a class="govuk-link" href="{{ model.area_path(b, 'ctax', c.group) }}#spending">Spending by service, and what your council tax pays for</a></p>
 </section>
-{% endif %}
-
-
-{% if c.trends %}
-<h2 class="govuk-heading-l govuk-!-margin-top-8" id="over-time">Over time</h2>
-<p class="govuk-body app-measure-note">{{ b.name }} against the median of {{ c.phrase }}.</p>
-{% for row in c.trends | batch(2) %}
-<div class="govuk-grid-row">
-  {% for t in row %}
-    <div class="govuk-grid-column-one-half">
-      <h3 class="govuk-heading-s">{{ t.title }}</h3>
-      <p class="govuk-body-s app-secondary-text">{{ t.note }}</p>
-      {% set ch = t.chart %}
-      <svg class="app-chart" viewBox="0 0 {{ ch.width }} {{ ch.height }}" width="100%" data-trend="{{ t.id }}" data-top="{{ ch.top }}" data-left="{{ ch.left }}" data-right="{{ ch.right }}" data-pad-t="{{ ch.pad_t }}" data-plot-h="{{ ch.plot_h }}" data-periods="{{ ch.periods | join(',') }}" role="img" aria-label="{{ t.title }}: {% for l in ch.lines %}{{ l.name }} latest {{ l.last }}{% if not loop.last %}, {% endif %}{% endfor %}" focusable="false">
-        {% for tick in ch.ticks %}
-          <line class="app-chart__grid" x1="{{ ch.left }}" x2="{{ ch.right }}" y1="{{ tick.y }}" y2="{{ tick.y }}"></line>
-          <text class="app-chart__tick" x="{{ ch.left - 6 }}" y="{{ tick.y + 4 }}" text-anchor="end">{{ tick.label }}</text>
-        {% endfor %}
-        {% for label in ch.labels %}
-          <text class="app-chart__tick" x="{{ label.x }}" y="{{ ch.height - 6 }}" text-anchor="middle">{{ label.text }}</text>
-        {% endfor %}
-        {% for l in ch.lines %}
-          <path class="app-chart__line {{ l.class }}" d="{{ l.path }}"></path>
-          {% for px, py in l.points %}<circle class="{{ l.class }}" cx="{{ px }}" cy="{{ py }}" r="3"></circle>{% endfor %}
-        {% endfor %}
-      </svg>
-      <ul class="app-chart__key govuk-body-s" data-trend-key="{{ t.id }}">
-        {% for l in ch.lines %}
-          <li><span class="app-chart__swatch {{ l.class }}"></span>{{ l.name }}: {{ l.last }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endfor %}
-</div>
-{% endfor %}
-{% endif %}
-
-{% if key_figures %}
-  <h2 class="govuk-heading-l govuk-!-margin-top-6" id="key-figures">Key figures</h2>
-  <ul class="govuk-list govuk-list--bullet app-measure-note">
-    {% for sentence in key_figures %}<li>{{ sentence }}</li>{% endfor %}
-  </ul>
-  <p class="govuk-body-s app-secondary-text">Last updated {{ updated | long_date }}. Sources are listed on <a class="govuk-link" href="/about/">About the figures</a>.</p>
 {% endif %}
 
 <div class="app-measure-note govuk-!-margin-top-6">

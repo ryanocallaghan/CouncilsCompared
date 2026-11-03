@@ -61,7 +61,7 @@
           {% for pos, c, value, own in rows %}
             <tr class="govuk-table__row" data-region="{{ c.region }}" data-type="{{ c.type }}">
               <td class="govuk-table__cell govuk-table__cell--numeric">{{ pos }}</td>
-              <td class="govuk-table__cell"><a class="govuk-link" href="/{{ c.slug }}/#council-tax">{{ c.name }}</a></td>
+              <td class="govuk-table__cell"><a class="govuk-link" href="/{{ c.slug }}/council-tax/">{{ c.name }}</a></td>
               <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(value, "£") }}</td>
               {% if nation == "England" %}
               <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(own, "£") if own else "No figure" }}</td>
