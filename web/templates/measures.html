@@ -27,7 +27,7 @@
         {% for k in checks %}
           <li class="app-measure-list__item">
             <a class="govuk-link" href="{{ model.measure_path(k, nation) }}">{{ k.label }}</a>
-            <span class="govuk-body-s app-secondary-text app-measure-list__overview">A yes or no. {{ model.check_overview(k, nation) }}.</span>
+            <span class="govuk-body-s app-secondary-text app-measure-list__overview">{{ "Our check: a yes or no." if k.own else "A yes or no." }} {{ model.check_overview(k, nation) }}.</span>
           </li>
         {% endfor %}
         {% if area_id == "ctax" and model.band_d_ranking(nation) %}<li><a class="govuk-link" href="{{ model.band_d_path(nation) }}">Band D council tax</a></li>{% endif %}

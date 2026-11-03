@@ -371,7 +371,8 @@ def test_checks_are_shown_but_never_ranked(fixture_data):
     # Not in the quarters, the count of measures or the best and worst lists
     assert hartlepool.ranked == sum(hartlepool.counts.values())
     assert not any("brownfield" in text for text in hartlepool.compares_worst + hartlepool.compares_best)
-    assert hartlepool.fails == "Fails 1 of 1 check"
+    assert hartlepool.fails == "Fails 2 of 3 checks"
+    assert [k.check.id for k in hartlepool.failed] == ["dmarc", "brownfield"]
     assert model.compare(model.councils()["lewisham"]).fails is None
 
 
@@ -392,3 +393,19 @@ def test_labels_in_sentences_keep_names_capitalised():
     assert model.lower_first("Tenants satisfied") == "tenants satisfied"
     assert model.lower_first("EHC plans") == "EHC plans"
     assert model.lower_first("Ombudsman's recommendations carried out on time").startswith("Ombudsman's")
+
+
+def test_checks_we_couldnt_do_arent_held_against_a_council(fixture_data):
+    lewisham = model.compare(model.councils()["lewisham"])
+    security = next(a for a in lewisham.areas if a.id == "security")
+    https = next(k for k in security.checks if k.check.id == "https")
+    assert https.passed is None and "403" in https.reason
+    assert lewisham.fails is None  # passes everything we could check
+    dmarc = next(k for k in model.CHECKS if k.id == "dmarc")
+    assert dmarc.own and next(k for k in security.checks if k.check.id == "dmarc").evidence == "v=DMARC1; p=reject"
+    https_check = next(k for k in model.CHECKS if k.id == "https")
+    assert model.check_overview(https_check) == "5 of 5 councils do"  # out of those we could check
+    results = model.check_results(https_check)
+    assert results[0][1].passed is None and results[0][0]["name"] == "Lewisham"  # no fails, so unchecked first
+    cells = {cell["council"]["name"]: cell for cell in model.check_hexmap(https_check)["cells"] if cell["council"]}
+    assert cells["Lewisham"]["label"] == "Lewisham: couldn't check"

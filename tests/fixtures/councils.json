@@ -117,6 +117,12 @@
    "url": "https://www.planning.data.gov.uk/",
    "period": "November 2026",
    "published": "2026-07-31"
+  },
+  "website": {
+   "title": "Our checks of council websites",
+   "url": "https://councilscompared.com/about/#our-checks",
+   "period": "November 2026",
+   "published": "2026-07-31"
   }
  },
  "councils": [
@@ -173,6 +179,15 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "dmarc": {
+     "pass": true,
+     "reason": "",
+     "evidence": "v=DMARC1; p=reject"
+    },
+    "https": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
     }
    }
   },
@@ -214,6 +229,16 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "dmarc": {
+     "pass": true,
+     "reason": "",
+     "evidence": "v=DMARC1; p=reject"
+    },
+    "https": {
+     "pass": true,
+     "reason": "",
+     "evidence": "max-age=31536000"
     }
    }
   },
@@ -250,6 +275,16 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "dmarc": {
+     "pass": true,
+     "reason": "",
+     "evidence": "v=DMARC1; p=reject"
+    },
+    "https": {
+     "pass": true,
+     "reason": "",
+     "evidence": "max-age=31536000"
     }
    }
   },
@@ -285,6 +320,16 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "dmarc": {
+     "pass": true,
+     "reason": "",
+     "evidence": "v=DMARC1; p=reject"
+    },
+    "https": {
+     "pass": true,
+     "reason": "",
+     "evidence": "max-age=31536000"
     }
    }
   },
@@ -319,6 +364,16 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "dmarc": {
+     "pass": true,
+     "reason": "",
+     "evidence": "v=DMARC1; p=reject"
+    },
+    "https": {
+     "pass": true,
+     "reason": "",
+     "evidence": "max-age=31536000"
     }
    }
   },
@@ -352,6 +407,15 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council."
+    },
+    "dmarc": {
+     "pass": false,
+     "reason": "It has no DMARC record, so nothing stops email being faked."
+    },
+    "https": {
+     "pass": true,
+     "reason": "",
+     "evidence": "max-age=31536000"
     }
    }
   },

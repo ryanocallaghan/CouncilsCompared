@@ -1,2 +1,8 @@
-{# A check's answer: a yes or no in words, never only a colour #}
-{% macro checkTag(passed) %}<strong class="govuk-tag {{ 'govuk-tag--green' if passed else 'govuk-tag--red' }} app-check__tag">{{ "Yes" if passed else "No" }}</strong>{% endmacro %}
+{# A check's answer: a yes or no in words, never only a colour. None: we couldn't check #}
+{% macro checkTag(passed) %}{% if passed is none %}<strong class="govuk-tag govuk-tag--grey app-check__tag">Couldn't check</strong>{% else %}<strong class="govuk-tag {{ 'govuk-tag--green' if passed else 'govuk-tag--red' }} app-check__tag">{{ "Yes" if passed else "No" }}</strong>{% endif %}{% endmacro %}
+
+{# Marks a check we run ourselves, rather than one from published data #}
+{% macro ownTag(check) %}{% if check.own %} <a class="govuk-link app-check__own" href="/about/#our-checks">Our check</a>{% endif %}{% endmacro %}
+
+{# What we found, so a council can see why it passed or failed #}
+{% macro evidence(k) %}{% if k.evidence %}<span class="govuk-body-s app-secondary-text app-check__reason">{{ "Where we looked" if k.evidence.startswith("http") else "What we found" }}: <code class="app-check__evidence">{{ k.evidence }}</code></span>{% endif %}{% endmacro %}

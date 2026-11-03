@@ -260,3 +260,88 @@ def test_silktide_keeps_two_places_and_its_own_rank_for_this_month(monkeypatch):
     assert result.period == "October 2026"
     assert result.values == {"E09000023": {"web_access": 92.68}}
     assert result.extra == {"E09000023": {"rank": 192, "of": 3, "url": f"{silktide.BASE}/website/lewisham"}}
+
+
+@pytest.mark.parametrize("homepage, expected", [
+    ("https://www.lewisham.gov.uk/", "lewisham.gov.uk"),
+    ("http://lewisham.gov.uk", "lewisham.gov.uk"),
+    ("https://new.enfield.gov.uk/", "enfield.gov.uk"),  # the council's own domain, not the website's part of it
+    ("https://m.luton.gov.uk/Page/Show", "luton.gov.uk"),
+])
+def test_our_checks_use_the_councils_own_domain_for_email(homepage, expected):
+    from pipeline.sources import website
+    assert website.domain(homepage) == expected
+
+
+@pytest.mark.parametrize("records, passed, says", [
+    (["v=DMARC1; p=reject; rua=mailto:x@example.gov.uk"], True, ""),
+    (["v=DMARC1;p=quarantine;pct=100"], True, ""),
+    (["v=DMARC1; p=none; rua=mailto:x@example.gov.uk"], False, "“none”"),
+    (["v=DMARC1; p=quarantine; pct=75"], False, "75%"),
+    ([], False, "no DMARC record"),
+    (["v=DMARC1; p=reject", "v=DMARC1; p=none"], False, "more than one"),
+    (None, None, "couldn't"),  # DNS failed: not held against the council
+])
+def test_dmarc_needs_quarantine_or_reject_for_all_email(records, passed, says):
+    from pipeline.sources import website
+    result, reason, _ = website.dmarc(records)
+    assert result is passed and says in reason
+
+
+@pytest.mark.parametrize("status, final, header, passed, says", [
+    (200, "https://x.gov.uk/", "max-age=31536000; includeSubDomains", True, ""),
+    (200, "https://x.gov.uk/", "max-age=2592000", False, "only 30 days"),
+    (200, "https://x.gov.uk/", "max-age=0", False, "turns the protection off"),
+    (200, "https://x.gov.uk/", None, False, "doesn't send"),
+    (200, "http://x.gov.uk/", None, False, "insecure"),
+    (403, "https://x.gov.uk/", None, None, "403"),  # blocked: couldn't check
+    (None, "https://x.gov.uk/", None, None, "couldn't load"),
+])
+def test_hsts_needs_to_last_a_year(status, final, header, passed, says):
+    from pipeline.sources import website
+    headers = {"strict-transport-security": header} if header else {}
+    result, reason, _ = website.hsts(status, final, headers)
+    assert result is passed and says in reason
+
+
+@pytest.mark.parametrize("status, kind, text, passed, says", [
+    (200, "text/plain; charset=utf-8", "Contact: mailto:security@x.gov.uk\nExpires: 2027-01-01T00:00:00Z\n", True, ""),
+    (200, "text/plain", "contact: https://x.gov.uk/report\n", True, ""),
+    (200, "text/plain", "Contact: mailto:a@x.gov.uk\nExpires: 2025-01-01T00:00:00Z\n", False, "expired on 2025-01-01"),
+    (200, "text/plain", "Contact: mailto:a@x.gov.uk\nExpires: 2027-02-30T00:00:00Z\n", True, ""),  # not a real date
+    (200, "text/html", "<html>Page not found</html>", False, "web page instead"),
+    (404, "text/html", "", False, "no security.txt"),
+    (403, "text/html", "", None, "didn't let us look"),
+])
+def test_security_txt_needs_a_contact_and_not_to_have_expired(status, kind, text, passed, says):
+    import datetime
+    from pipeline.sources import website
+    result, reason, _ = website.security_txt(status, "https://x.gov.uk/.well-known/security.txt",
+                                             {"content-type": kind}, text, datetime.date(2026, 11, 3))
+    assert result is passed and says in reason
+
+
+def test_our_checks_record_answers_reasons_and_evidence(monkeypatch):
+    from pipeline.sources import Result, website
+    pages = {
+        "https://www.lewisham.gov.uk/": (200, "https://lewisham.gov.uk/",
+                                         {"strict-transport-security": "max-age=31536000"}, ""),
+        "https://lewisham.gov.uk/.well-known/security.txt": (404, "https://lewisham.gov.uk/.well-known/security.txt",
+                                                             {}, ""),
+        "https://www.haringey.gov.uk/": (403, "https://www.haringey.gov.uk/", {}, ""),
+        "https://www.haringey.gov.uk/.well-known/security.txt": (403, "https://www.haringey.gov.uk/x", {}, ""),
+    }
+    monkeypatch.setattr(website, "get_page", pages.get)
+    monkeypatch.setattr(website, "dmarc_records", lambda name: {"lewisham.gov.uk": ["v=DMARC1; p=reject"]}.get(name, []))
+    monkeypatch.setattr(website.time, "sleep", lambda seconds: None)
+    links = Result(id="local_links", title="", url="", period="", extra={
+        "E09000023": {"homepage": "http://www.lewisham.gov.uk"}, "E09000014": {"homepage": "https://www.haringey.gov.uk/"}})
+    result = website.fetch({"results": {"local_links": links}, "population": {"E09000023": 1, "E09000014": 1, "E09000001": 1}})
+    lewisham = result.checks["E09000023"]
+    assert lewisham["dmarc"] == {"pass": True, "reason": "", "evidence": "v=DMARC1; p=reject"}
+    assert lewisham["https"]["pass"] is True and lewisham["security_txt"]["pass"] is False
+    haringey = result.checks["E09000014"]
+    assert haringey["dmarc"]["pass"] is False  # DNS still answers when the website blocks us
+    assert haringey["https"]["pass"] is None and haringey["security_txt"]["pass"] is None
+    assert any("E09000014: couldn't check https, security_txt" == note for note in result.notes)
+    assert any("E09000001" in note for note in result.notes)  # no homepage

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_check.html" import checkTag %}
+{% from "_check.html" import checkTag, ownTag, evidence %}
 {% from "_charts.html" import stripChart, bars, trendChart %}
 
 {# One area of a council's page in full: every figure, the notes, the
@@ -22,7 +22,8 @@
   <span class="govuk-caption-l"><a class="govuk-link govuk-link--muted" href="{{ overview }}">{{ b.name }}</a></span>
   <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">{{ "Council tax" if area.id == "ctax" else area.name }}</h1>
   <p class="govuk-body-l app-measure-note">{% if area.id == "ctax" %}Your bill and what it pays for, how much of the year's bills the council collected, and what it spends.{% else %}{{ area.note }}{% endif %}</p>
-  <div class="app-area-page__group">{% include "_group.html" %}</div>
+  {# Checks are the same whatever the group, so an area of only checks has nothing to change #}
+  {% if area.rows or area.missing or area.id == "ctax" %}<div class="app-area-page__group">{% include "_group.html" %}</div>{% endif %}
 </div>
 </div>
 
@@ -77,9 +78,10 @@
     <ul class="app-area__checks">
       {% for k in area.checks %}
         <li class="app-area__check">
-          <a class="app-area__label govuk-link" href="{{ model.measure_path(k.check, b.nation) }}#{{ b.slug }}">{{ k.check.label }}</a>
+          <span class="app-area__label"><a class="govuk-link" href="{{ model.measure_path(k.check, b.nation) }}#{{ b.slug }}">{{ k.check.label }}</a>{{ ownTag(k.check) }}</span>
           {{ checkTag(k.passed) }}
           {% if k.reason %}<span class="govuk-body-s app-secondary-text app-check__reason">{{ k.reason }}</span>{% endif %}
+          {{ evidence(k) }}
         </li>
       {% endfor %}
     </ul>
@@ -202,6 +204,7 @@
   </ul>
 </nav>
 
+{% if area.rows %}
 <div class="app-measure-note govuk-!-margin-top-6">
   {% set howToRead %}
     <p class="govuk-body">Position 1 is the best in the group. Each measure is coloured by the quarter of the group {{ b.name }} is in, from the top quarter in dark green to the bottom quarter in red, the same as on the maps. Councils with the same figure share a position.</p>
@@ -210,6 +213,7 @@
   {% endset %}
   {{ govukDetails({"summaryText": "How to read these figures", "html": howToRead}) }}
 </div>
+{% endif %}
 
 <script type="application/ld+json">{{ structured_data | tojson }}</script>
 {% endblock %}
