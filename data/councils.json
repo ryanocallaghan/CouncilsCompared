@@ -102,6 +102,12 @@
    "period": "November 2026",
    "published": "2026-11-03"
   },
+  "cookies": {
+   "title": "Our checks of council websites' cookies",
+   "url": "https://councilscompared.com/about/#our-checks",
+   "period": "November 2026",
+   "published": "2026-11-03"
+  },
   "planning_data": {
    "title": "Planning Data: data provided by each planning authority",
    "url": "https://www.planning.data.gov.uk/",
@@ -211,6 +217,15 @@
     "security_txt": {
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look."
+    },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on aberdeencity.gov.uk, _ga_06J3LQRLNB on aberdeencity.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     }
    },
    "spend": {
@@ -332,6 +347,15 @@
      "evidence": "https://www.aberdeenshire.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -449,6 +473,15 @@
      "evidence": "https://www.angus.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept analytics cookies” and “Reject analytics cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -559,6 +592,15 @@
     },
     "security_txt": {
      "evidence": "https://www.argyll-bute.gov.uk/.well-known/security.txt",
+     "pass": true,
+     "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept non-essential cookies” and “Reject non-essential cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
      "pass": true,
      "reason": ""
     }
@@ -689,6 +731,16 @@
     "security_txt": {
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept” and “No, thanks”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on lbbd.gov.uk, _ga_DYL02NZPXN on lbbd.gov.uk, _gcl_au on lbbd.gov.uk, test_cookie on doubleclick.net, MUID on bing.com, _uetsid on lbbd.gov.uk, _uetvid on lbbd.gov.uk, VISITOR_INFO1_LIVE on youtube.com, VISITOR_PRIVACY_METADATA on youtube.com, YSC on youtube.com, __Secure-ROLLOUT_TOKEN on youtube.com, __Secure-YNID on youtube.com",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising, Microsoft Clarity, Microsoft advertising and YouTube."
     },
     "brownfield": {
      "pass": true,
@@ -961,6 +1013,15 @@
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look (it returned 403)."
     },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -1212,6 +1273,15 @@
      "evidence": "https://www.barnsley.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“I Accept Cookies”) but not one to reject them alongside it."
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -1482,6 +1552,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept analytics cookies” and “Reject analytics cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -1739,6 +1818,15 @@
      "evidence": "https://www.bedford.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “OK” and “No Thanks”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": false,
@@ -1998,6 +2086,16 @@
      "evidence": "https://www.bexley.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Accept only essential cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on bexley.gov.uk, _gat on bexley.gov.uk, _gid on bexley.gov.uk, _fbp on bexley.gov.uk, nmstat on bexley.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Meta (Facebook) and Siteimprove Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -2265,6 +2363,14 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "trackers": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -2523,6 +2629,15 @@
      "evidence": "https://www.blackburn.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“Accept”) but not one to reject them alongside it."
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -2801,6 +2916,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all” and “Reject all”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -3058,6 +3182,15 @@
      "evidence": "https://www.bolton.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I agree” and “I decline”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -3333,6 +3466,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -3559,6 +3701,15 @@
      "evidence": "https://www.bracknell-forest.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Accept necessary cookies only”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": false,
@@ -3816,6 +3967,15 @@
      "evidence": "https://www.bradford.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -4086,6 +4246,16 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept All Cookies”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“Accept All Cookies”) but not one to reject them alongside it."
+    },
+    "trackers": {
+     "evidence": "_ga on brent.gov.uk, _ga_RLFF5LRDVC on brent.gov.uk, _gat on brent.gov.uk, _gid on brent.gov.uk, _hjSessionUser_770193 on brent.gov.uk, _hjSession_770193 on brent.gov.uk, nmstat on brent.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Hotjar and Siteimprove Analytics."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -4349,6 +4519,15 @@
      "evidence": "https://www.brighton-hove.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file: the address shows a web page instead."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Accept only essential cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -4622,6 +4801,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Reject cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -4873,6 +5061,16 @@
      "evidence": "https://www.bromley.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on bromley.gov.uk, _ga_17QLKVX3HM on bromley.gov.uk, _ga_2FBTR4XB14 on bromley.gov.uk, _gcl_au on bromley.gov.uk, test_cookie on doubleclick.net, _hjSessionUser_1066301 on bromley.gov.uk, _hjSession_1066301 on bromley.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising and Hotjar."
     },
     "brownfield": {
      "pass": true,
@@ -5133,6 +5331,16 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "nmstat on buckinghamshire.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -5363,6 +5571,15 @@
      "evidence": "https://www.bury.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -5622,6 +5839,15 @@
      "pass": false,
      "reason": "Its security.txt file expired on 2026-08-18."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“Accept all”) but not one to reject them alongside it."
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -5880,6 +6106,16 @@
      "evidence": "https://www.camden.gov.uk/.well-known/security.txt",
      "pass": true,
      "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept analytics cookies” and “Reject analytics cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_hjSessionUser_2972342 on camden.gov.uk, _hjSession_2972342 on camden.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Hotjar."
     },
     "brownfield": {
      "pass": true,
@@ -6147,6 +6383,16 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept” and “Reject cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_fbp on centralbedfordshire.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Meta (Facebook)."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -6410,6 +6656,16 @@
      "evidence": "https://www.cheshireeast.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_gcl_au on cheshireeast.gov.uk, test_cookie on doubleclick.net",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google advertising."
     },
     "brownfield": {
      "pass": true,
@@ -6679,6 +6935,16 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on cheshirewestandchester.gov.uk, _ga_2WQ402M1CZ on cheshirewestandchester.gov.uk, _gat_UA-10075401-1 on cheshirewestandchester.gov.uk, _gid on cheshirewestandchester.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -6935,6 +7201,16 @@
      "evidence": "https://www.edinburgh.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “OK to use analytics cookies” and “Don't use analytics cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on edinburgh.gov.uk, _ga_ENB58TQFF8 on edinburgh.gov.uk, _gat_UA-11731499-1 on edinburgh.gov.uk, _gid on edinburgh.gov.uk, VISITOR_INFO1_LIVE on youtube.com, VISITOR_PRIVACY_METADATA on youtube.com, YSC on youtube.com, __Secure-ROLLOUT_TOKEN on youtube.com, __Secure-YNID on youtube.com",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics and YouTube."
     }
    },
    "spend": {
@@ -7050,6 +7326,15 @@
      "evidence": "https://www.clacks.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Use essential cookies only”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -7184,6 +7469,15 @@
      "evidence": "https://www.cornwall.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept non-essential cookies” and “Reject non-essential cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -7442,6 +7736,16 @@
      "evidence": "https://www.durham.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all” and “Reject all”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on durham.gov.uk, _ga_65SSVFG16R on durham.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -7706,6 +8010,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I accept all cookies” and “I do not accept”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -7966,6 +8279,15 @@
      "evidence": "https://www.croydon.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -8231,6 +8553,16 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept other cookies” and “Reject other cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "nmstat on cumberland.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+    },
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform collects registers for only part of the area, from 2 of the 3 councils it replaced in 2023, and none from the council itself."
@@ -8475,6 +8807,15 @@
      "evidence": "https://www.darlington.gov.uk/404/",
      "pass": false,
      "reason": "There's no security.txt file: the address shows a web page instead."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I agree” and “I decline”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -8745,6 +9086,15 @@
     },
     "security_txt": {
      "evidence": "https://www.derby.gov.uk/.well-known/security.txt",
+     "pass": true,
+     "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow all cookies”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“Allow all cookies”) but not one to reject them alongside it."
+    },
+    "trackers": {
      "pass": true,
      "reason": ""
     },
@@ -9024,6 +9374,15 @@
      "pass": false,
      "reason": "There's no security.txt file: the address shows a web page instead."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “ACCEPT ALL COOKIES”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“ACCEPT ALL COOKIES”) but not one to reject them alongside it."
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -9283,6 +9642,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -9520,6 +9888,15 @@
      "evidence": "https://www.dudley.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept” and “Decline”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -9760,6 +10137,15 @@
      "evidence": "https://www.dumfriesandgalloway.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I accept” and “I do not accept”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -9873,6 +10259,15 @@
      "evidence": "https://www.dundeecity.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -10005,6 +10400,16 @@
      "evidence": "https://www.ealing.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept All” and “Reject All”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "nmstat on ealing.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -10267,6 +10672,15 @@
      "evidence": "https://www.east-ayrshire.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept” and “Reject”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -10383,6 +10797,16 @@
      "evidence": "https://www.eastdunbarton.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "nmstat on eastdunbarton.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
     }
    },
    "spend": {
@@ -10495,6 +10919,15 @@
     },
     "security_txt": {
      "evidence": "https://www.eastlothian.gov.uk/.well-known/security.txt",
+     "pass": true,
+     "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I'm OK with analytics cookies” and “Do not use analytics cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
      "pass": true,
      "reason": ""
     }
@@ -10611,6 +11044,15 @@
      "evidence": "https://www.eastrenfrewshire.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -10743,6 +11185,14 @@
      "evidence": "https://www.eastriding.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "pass": null,
+     "reason": "We couldn't load the homepage."
+    },
+    "trackers": {
+     "pass": null,
+     "reason": "We couldn't load the homepage."
     },
     "brownfield": {
      "pass": true,
@@ -11003,6 +11453,15 @@
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -11258,6 +11717,15 @@
      "evidence": "https://www.falkirk.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -11378,6 +11846,15 @@
     "security_txt": {
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I accept cookies” and “I do not accept cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -11506,6 +11983,15 @@
      "evidence": "https://www.gateshead.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on gateshead.gov.uk, _ga_EVRPFH9BG5 on gateshead.gov.uk, _hjSessionUser_1504008 on gateshead.gov.uk, _hjSession_1504008 on gateshead.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics and Hotjar."
     },
     "brownfield": {
      "pass": true,
@@ -11749,6 +12235,15 @@
      "evidence": "https://www.glasgow.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -11874,6 +12369,15 @@
      "evidence": "https://www.royalgreenwich.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -12146,6 +12650,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on hackney.gov.uk, _ga_0XQ2E7WFCJ on hackney.gov.uk, _gcl_au on hackney.gov.uk, _hjSessionUser_1344672 on hackney.gov.uk, _hjSession_1344672 on hackney.gov.uk, MUID on clarity.ms, SM on c.clarity.ms, _clck on hackney.gov.uk, _clsk on hackney.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising, Hotjar and Microsoft Clarity."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -12400,6 +12913,15 @@
     "security_txt": {
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -12657,6 +13179,15 @@
      "evidence": "https://www.lbhf.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow all” and “Deny”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -12923,6 +13454,15 @@
      "evidence": "https://haringey.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow all” and “Deny”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": false,
@@ -13192,6 +13732,14 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "trackers": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -13434,6 +13982,16 @@
      "evidence": "https://www.hartlepool.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on hartlepool.gov.uk, _ga_2YXLBKBVBX on hartlepool.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": false,
@@ -13712,6 +14270,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow all” and “Deny”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
@@ -13975,6 +14542,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept cookies” and “Reject cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -14225,6 +14801,15 @@
      "evidence": "https://www.highland.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -14358,6 +14943,15 @@
      "evidence": "https://pre.hillingdon.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -14625,6 +15219,14 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "trackers": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -14866,6 +15468,15 @@
      "evidence": "https://www.inverclyde.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -14993,6 +15604,15 @@
      "evidence": "https://www.iow.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -15251,6 +15871,15 @@
     },
     "security_txt": {
      "evidence": "https://www.islington.gov.uk/.well-known/security.txt",
+     "pass": true,
+     "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
      "pass": true,
      "reason": ""
     },
@@ -15524,6 +16153,14 @@
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look (it returned 403)."
     },
+    "reject_cookies": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "trackers": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
@@ -15779,6 +16416,14 @@
      "evidence": "https://www.hull.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "trackers": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
     },
     "brownfield": {
      "pass": true,
@@ -16050,6 +16695,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “ACCEPT ALL” and “DECLINE ALL”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -16311,6 +16965,15 @@
      "evidence": "https://www.kirklees.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on kirklees.gov.uk, _ga_R2LK29GVG0 on kirklees.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -16575,6 +17238,15 @@
     "security_txt": {
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“Accept all cookies”) but not one to reject them alongside it."
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -16847,6 +17519,15 @@
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look (it returned 403)."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -17111,6 +17792,16 @@
      "evidence": "https://www.leeds.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept” and “Decline”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on leeds.gov.uk, _ga_X1N5D1XM9L on leeds.gov.uk, _gcl_au on leeds.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics and Google advertising."
     },
     "brownfield": {
      "pass": true,
@@ -17382,6 +18073,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I'm OK with analytics cookies” and “Do not use analytics cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -17646,6 +18346,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow all” and “Deny”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -17905,6 +18614,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept” and “I Do Not Accept”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -18163,6 +18881,16 @@
      "evidence": "https://www.luton.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow all” and “Deny”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "MUID on bing.com, _uetsid on luton.gov.uk, _uetvid on luton.gov.uk, _scid on luton.gov.uk, _scid_r on luton.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Microsoft Clarity, Microsoft advertising and Snapchat."
     },
     "brownfield": {
      "pass": true,
@@ -18428,6 +19156,15 @@
     "security_txt": {
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow all cookies” and “Use necessary cookies only”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -18699,6 +19436,14 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "trackers": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -18950,6 +19695,15 @@
     },
     "security_txt": {
      "evidence": "https://www.merton.gov.uk/.well-known/security.txt",
+     "pass": true,
+     "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Reject all”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
      "pass": true,
      "reason": ""
     },
@@ -19215,6 +19969,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -19468,6 +20231,15 @@
      "evidence": "https://www.midlothian.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -19600,6 +20372,16 @@
      "evidence": "https://www.milton-keynes.gov.uk/.well-known/security.txt",
      "pass": true,
      "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “AGREE” and “DISAGREE”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on milton-keynes.gov.uk, _ga_TNYQZHFPN4 on milton-keynes.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -19849,6 +20631,16 @@
      "evidence": "https://www.moray.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on moray.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     }
    },
    "spend": {
@@ -19964,6 +20756,16 @@
      "evidence": "https://www.cne-siar.gov.uk/.well-known/security.txt",
      "pass": true,
      "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on cne-siar.gov.uk, _ga_RPNZ18Q728 on cne-siar.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     }
    },
    "spend": {
@@ -20101,6 +20903,15 @@
      "evidence": "https://new.newcastle.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -20374,6 +21185,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -20629,6 +21449,15 @@
      "evidence": "https://www.north-ayrshire.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -20759,6 +21588,15 @@
      "evidence": "https://www.nelincs.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "Its security.txt file expired on 2023-01-01."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow all” and “Use necessary cookies only”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -21016,6 +21854,15 @@
      "evidence": "https://www.northlanarkshire.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on www.northlanarkshire.gov.uk, _ga_5RTC1195TY on www.northlanarkshire.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     }
    },
    "spend": {
@@ -21138,6 +21985,15 @@
      "evidence": "https://www.northlincs.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -21402,6 +22258,16 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Reject all cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on northnorthants.gov.uk, _ga_BDHGRT1VCC on northnorthants.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -21640,6 +22506,16 @@
      "evidence": "https://n-somerset.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept All” and “Deny All”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on n-somerset.gov.uk, _ga_LQ6E90BLB3 on n-somerset.gov.uk, _gat_gtag_UA_745223_8 on n-somerset.gov.uk, _gid on n-somerset.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -21899,6 +22775,15 @@
      "evidence": "https://my.northtyneside.gov.uk/?originalUrl=https://my.northtyneside.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file: the address shows a web page instead."
+    },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on northtyneside.gov.uk, _ga_JYF9DSY0WN on northtyneside.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -22164,6 +23049,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform collects registers for only part of the area, from 5 of the 7 councils it replaced in 2023, and none from the council itself."
@@ -22392,6 +23286,16 @@
      "evidence": "https://www.northumberland.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all” and “Reject non-essential”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on northumberland.gov.uk, _ga_MVFVG1D7L3 on northumberland.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -22646,6 +23550,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept All” and “Reject All”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -22887,6 +23800,15 @@
      "evidence": "https://www.oldham.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow all cookies” and “Use necessary cookies only”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -23144,6 +24066,15 @@
      "evidence": "https://www.orkney.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -23268,6 +24199,15 @@
      "evidence": "https://www.pkc.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -23392,6 +24332,15 @@
      "evidence": "https://www.peterborough.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept All” and “Reject All”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": false,
@@ -23657,6 +24606,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I accept all cookies” and “Reject all cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -23904,6 +24862,15 @@
      "evidence": "https://www.portsmouth.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on portsmouth.gov.uk, _ga_ZEC15Y5FQ5 on portsmouth.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -24188,6 +25155,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept analytics cookies” and “Reject analytics cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -24460,6 +25436,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -24715,6 +25700,15 @@
     "security_txt": {
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+    },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on redcar-cleveland.gov.uk, _ga_JK1KBLN8DH on redcar-cleveland.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -24975,6 +25969,15 @@
      "evidence": "https://www.renfrewshire.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“Accept all cookies”) but not one to reject them alongside it."
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -25101,6 +26104,15 @@
      "evidence": "https://www.richmond.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -25358,6 +26370,15 @@
      "evidence": "https://www.rochdale.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all Cookies” and “Reject all Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -25622,6 +26643,14 @@
      "evidence": "https://www.rotherham.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "trackers": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
     },
     "brownfield": {
      "pass": true,
@@ -25890,6 +26919,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept cookies” and “Reject cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -26154,6 +27192,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept cookies”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“Accept cookies”) but not one to reject them alongside it."
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -26412,6 +27459,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -26647,6 +27703,15 @@
      "evidence": "https://www.scotborders.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -26768,6 +27833,16 @@
      "evidence": "https://www.sefton.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “AGREE” and “DISAGREE”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on sefton.gov.uk, _ga_W9ZFB1ZS0R on sefton.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -27038,6 +28113,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -27295,6 +28379,15 @@
      "evidence": "https://www.shetland.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "Its security.txt file expired on 2025-11-30."
+    },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -27431,6 +28524,15 @@
      "evidence": "https://next.shropshire.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Essential cookies only”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -27696,6 +28798,14 @@
      "evidence": "https://www.slough.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "trackers": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
     },
     "brownfield": {
      "pass": true,
@@ -27968,6 +29078,16 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow all cookies” and “Use necessary cookies only”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "nmstat on solihull.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -28236,6 +29356,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform collects registers for only part of the area, from 3 of the 4 councils it replaced in 2023, and none from the council itself."
@@ -28457,6 +29586,16 @@
      "evidence": "https://www.south-ayrshire.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on south-ayrshire.gov.uk, _gat_UA-4728307-1 on south-ayrshire.gov.uk, _gid on south-ayrshire.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     }
    },
    "spend": {
@@ -28582,6 +29721,15 @@
      "evidence": "https://beta.southglos.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “AGREE” and “DISAGREE”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -28822,6 +29970,15 @@
      "evidence": "https://www.southlanarkshire.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -28950,6 +30107,15 @@
      "evidence": "https://www.southtyneside.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow All Cookies” and “Essential Only”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -29224,6 +30390,16 @@
      "pass": false,
      "reason": "There's no security.txt file: the address shows a web page instead."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “AGREE” and “DISAGREE”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "VISITOR_INFO1_LIVE on youtube.com, VISITOR_PRIVACY_METADATA on youtube.com, YSC on youtube.com, __Secure-ROLLOUT_TOKEN on youtube.com, __Secure-YNID on youtube.com",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from YouTube."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -29487,6 +30663,15 @@
      "evidence": "https://www.southend.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": false,
@@ -29756,6 +30941,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “I accept” and “I do not accept”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -30016,6 +31210,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all” and “Reject all”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -30275,6 +31478,15 @@
     "security_txt": {
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept” and “I Do Not Accept”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -30410,6 +31622,15 @@
      "evidence": "https://www.stockport.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I agree” and “I decline”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -30660,6 +31881,16 @@
      "evidence": "https://www.stockton.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on stockton.gov.uk, _gat_UA-10062602-6 on stockton.gov.uk, _gid on stockton.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -30930,6 +32161,16 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept All” and “Reject All”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on stoke.gov.uk, _ga_DDFB9VFS11 on stoke.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -31188,6 +32429,16 @@
      "evidence": "https://www.sunderland.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_gcl_au on sunderland.gov.uk, test_cookie on doubleclick.net",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google advertising."
     },
     "brownfield": {
      "pass": true,
@@ -31460,6 +32711,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “ACCEPT ALL” and “DECLINE ALL”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
@@ -31727,6 +32987,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "nmstat on swindon.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -31986,6 +33255,16 @@
      "evidence": "https://www.tameside.gov.uk/.well-known/security.txt",
      "pass": true,
      "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“Accept all cookies”) but not one to reject them alongside it."
+    },
+    "trackers": {
+     "evidence": "_ga on tameside.gov.uk, _ga_2V07BTGZHV on tameside.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -32248,6 +33527,15 @@
      "evidence": "https://www.telford.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on telford.gov.uk, _ga_RX634LXC06 on telford.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -32526,6 +33814,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept” and “No, thanks”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -32779,6 +34076,15 @@
      "evidence": "https://www.torbay.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all” and “Reject all”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -33044,6 +34350,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on towerhamlets.gov.uk, _ga_CM7HE0C0K6 on towerhamlets.gov.uk, _gcl_au on towerhamlets.gov.uk, test_cookie on doubleclick.net, _fbp on towerhamlets.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising and Meta (Facebook)."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -33297,6 +34612,16 @@
     "security_txt": {
      "pass": null,
      "reason": "We couldn't check: the site didn't let us look (it returned 403)."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept” and “Reject”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on trafford.gov.uk, _ga_2EK6K2H6VR on trafford.gov.uk, _ga_R9QBP50T6F on trafford.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": false,
@@ -33558,6 +34883,15 @@
      "evidence": "https://www.wakefield.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -33829,6 +35163,15 @@
      "evidence": "https://go.walsall.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “AGREE” and “DISAGREE”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -34105,6 +35448,16 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Decline all cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on walthamforest.gov.uk, _ga_Q319TE7QL3 on walthamforest.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -34359,6 +35712,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -34609,6 +35971,15 @@
      "evidence": "https://www.warrington.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "nmstat on warrington.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -34873,6 +36244,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on westberks.gov.uk, _ga_7PL61TEDNE on westberks.gov.uk, _ga_R0GVXD3LQP on westberks.gov.uk, _gat_UA-48440595-2 on westberks.gov.uk, _gat_UA-48440595-3 on westberks.gov.uk, _gid on westberks.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -35117,6 +36497,15 @@
      "evidence": "https://www.west-dunbarton.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Allow cookies”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“Allow cookies”) but not one to reject them alongside it."
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -35234,6 +36623,16 @@
      "evidence": "https://www.westlothian.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "Its security.txt file expired on 2025-01-01."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_hjSessionUser_1177707 on westlothian.gov.uk, _hjSession_1177707 on westlothian.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Hotjar."
     }
    },
    "spend": {
@@ -35364,6 +36763,15 @@
      "evidence": "https://www.westnorthants.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Reject all cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -35608,6 +37016,16 @@
      "evidence": "https://www.westminster.gov.uk/.well-known/security.txt",
      "pass": true,
      "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept cookies policy” and “No, thanks . Reject cookies policy”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on westminster.gov.uk, _ga_9PYXQ1V5EN on westminster.gov.uk, _gcl_au on westminster.gov.uk, test_cookie on doubleclick.net",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics and Google advertising."
     },
     "brownfield": {
      "pass": true,
@@ -35873,6 +37291,16 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept” and “Decline”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_gcl_au on westmorlandandfurness.gov.uk, test_cookie on doubleclick.net",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google advertising."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -36124,6 +37552,15 @@
      "evidence": "https://www.wigan.gov.uk/.well-known/security.txt",
      "pass": false,
      "reason": "There's no security.txt file."
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept All Cookies”",
+     "pass": false,
+     "reason": "Its cookie banner has a button to accept cookies (“Accept All Cookies”) but not one to reject them alongside it."
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
     },
     "brownfield": {
      "pass": true,
@@ -36396,6 +37833,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all cookies” and “Reject non-essential cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -36652,6 +38098,16 @@
      "evidence": "https://www.rbwm.gov.uk/.well-known/security.txt",
      "pass": true,
      "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "evidence": "_ga on rbwm.gov.uk, _ga_B1S76ZFQXK on rbwm.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
      "pass": true,
@@ -36918,6 +38374,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "No analytics or advertising cookies, so nothing to ask",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -37182,6 +38647,15 @@
      "pass": false,
      "reason": "There's no security.txt file."
     },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept” and “No, thanks”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
+     "pass": true,
+     "reason": ""
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -37443,6 +38917,15 @@
      "pass": true,
      "reason": ""
     },
+    "reject_cookies": {
+     "pass": false,
+     "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+    },
+    "trackers": {
+     "evidence": "_ga on wolverhampton.gov.uk, _ga_NGDJHT45YN on wolverhampton.gov.uk, _gat_UA-28643929-1 on wolverhampton.gov.uk, _gid on wolverhampton.gov.uk, _gcl_au on wolverhampton.gov.uk, _hjSessionUser_1212801 on wolverhampton.gov.uk, _hjSession_1212801 on wolverhampton.gov.uk",
+     "pass": false,
+     "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising and Hotjar."
+    },
     "brownfield": {
      "pass": true,
      "reason": ""
@@ -37700,6 +39183,15 @@
     },
     "security_txt": {
      "evidence": "https://www.york.gov.uk/.well-known/security.txt",
+     "pass": true,
+     "reason": ""
+    },
+    "reject_cookies": {
+     "evidence": "Buttons: “Accept all” and “Reject non-essential”",
+     "pass": true,
+     "reason": ""
+    },
+    "trackers": {
      "pass": true,
      "reason": ""
     },

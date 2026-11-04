@@ -76,7 +76,7 @@
     <p class="govuk-body">You can <a class="govuk-link" href="/data/councils.csv">download every figure as a spreadsheet (CSV)</a> or <a class="govuk-link" href="/data/councils.json">as JSON</a>.</p>
 
     <h2 class="govuk-heading-m" id="our-checks">Our own checks</h2>
-    <p class="govuk-body">Everything else on this site comes from published statistics. A few checks we run ourselves, and they are marked “Our check” wherever they appear. Once a month we look at each council's website and email domain, the same way for every council, starting from the homepage GOV.UK lists for it:</p>
+    <p class="govuk-body">Everything else on this site comes from published statistics. A few checks we run ourselves, and they are marked “Our check” wherever they appear. Once a month we look at each council's website and email domain, the same way for every council, starting from the homepage GOV.UK lists for it. For the cookie checks we open the homepage in a browser, as a new visitor, and click nothing.</p>
     <ul class="govuk-list govuk-list--bullet">
       {% for k in model.CHECKS if k.own %}<li><strong>{{ k.label }}.</strong> {{ k.how }}</li>{% endfor %}
     </ul>

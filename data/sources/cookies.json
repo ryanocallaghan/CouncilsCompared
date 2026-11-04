@@ -1,0 +1,1836 @@
+{
+ "checks": {
+  "E06000001": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on hartlepool.gov.uk, _ga_2YXLBKBVBX on hartlepool.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000002": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000003": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on redcar-cleveland.gov.uk, _ga_JK1KBLN8DH on redcar-cleveland.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000004": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on stockton.gov.uk, _gat_UA-10062602-6 on stockton.gov.uk, _gid on stockton.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000005": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I agree” and “I decline”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000006": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000007": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "nmstat on warrington.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+   }
+  },
+  "E06000008": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“Accept”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000009": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all” and “Reject all”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000010": {
+   "reject_cookies": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "trackers": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   }
+  },
+  "E06000011": {
+   "reject_cookies": {
+    "pass": null,
+    "reason": "We couldn't load the homepage."
+   },
+   "trackers": {
+    "pass": null,
+    "reason": "We couldn't load the homepage."
+   }
+  },
+  "E06000012": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow all” and “Use necessary cookies only”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000013": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000014": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all” and “Reject non-essential”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000015": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow all cookies”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“Allow all cookies”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000016": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I'm OK with analytics cookies” and “Do not use analytics cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000017": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept cookies” and “Reject cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000018": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept All” and “Reject All”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000019": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept cookies” and “Reject cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000020": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on telford.gov.uk, _ga_RX634LXC06 on telford.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000021": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept All” and “Reject All”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on stoke.gov.uk, _ga_DDFB9VFS11 on stoke.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000022": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept analytics cookies” and “Reject analytics cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000023": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Reject cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000024": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept All” and “Deny All”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on n-somerset.gov.uk, _ga_LQ6E90BLB3 on n-somerset.gov.uk, _gat_gtag_UA_745223_8 on n-somerset.gov.uk, _gid on n-somerset.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000025": {
+   "reject_cookies": {
+    "evidence": "Buttons: “AGREE” and “DISAGREE”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000026": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I accept all cookies” and “Reject all cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000027": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all” and “Reject all”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000030": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "nmstat on swindon.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+   }
+  },
+  "E06000031": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept All” and “Reject All”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000032": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow all” and “Deny”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "MUID on bing.com, _uetsid on luton.gov.uk, _uetvid on luton.gov.uk, _scid on luton.gov.uk, _scid_r on luton.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Microsoft Clarity, Microsoft advertising and Snapchat."
+   }
+  },
+  "E06000033": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000034": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept” and “No, thanks”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000035": {
+   "reject_cookies": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "trackers": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   }
+  },
+  "E06000036": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Accept necessary cookies only”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000037": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on westberks.gov.uk, _ga_7PL61TEDNE on westberks.gov.uk, _ga_R0GVXD3LQP on westberks.gov.uk, _gat_UA-48440595-2 on westberks.gov.uk, _gat_UA-48440595-3 on westberks.gov.uk, _gid on westberks.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000038": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept analytics cookies” and “Reject analytics cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000039": {
+   "reject_cookies": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "trackers": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   }
+  },
+  "E06000040": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on rbwm.gov.uk, _ga_B1S76ZFQXK on rbwm.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000041": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept” and “No, thanks”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000042": {
+   "reject_cookies": {
+    "evidence": "Buttons: “AGREE” and “DISAGREE”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on milton-keynes.gov.uk, _ga_TNYQZHFPN4 on milton-keynes.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000043": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Accept only essential cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000044": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on portsmouth.gov.uk, _ga_ZEC15Y5FQ5 on portsmouth.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000045": {
+   "reject_cookies": {
+    "evidence": "Buttons: “AGREE” and “DISAGREE”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "VISITOR_INFO1_LIVE on youtube.com, VISITOR_PRIVACY_METADATA on youtube.com, YSC on youtube.com, __Secure-ROLLOUT_TOKEN on youtube.com, __Secure-YNID on youtube.com",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from YouTube."
+   }
+  },
+  "E06000046": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000047": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all” and “Reject all”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on durham.gov.uk, _ga_65SSVFG16R on durham.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000049": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_gcl_au on cheshireeast.gov.uk, test_cookie on doubleclick.net",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google advertising."
+   }
+  },
+  "E06000050": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on cheshirewestandchester.gov.uk, _ga_2WQ402M1CZ on cheshirewestandchester.gov.uk, _gat_UA-10075401-1 on cheshirewestandchester.gov.uk, _gid on cheshirewestandchester.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000051": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Essential cookies only”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000052": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept non-essential cookies” and “Reject non-essential cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000054": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Reject non-essential cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000055": {
+   "reject_cookies": {
+    "evidence": "Buttons: “OK” and “No Thanks”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000056": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept” and “Reject cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_fbp on centralbedfordshire.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Meta (Facebook)."
+   }
+  },
+  "E06000057": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all” and “Reject non-essential”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on northumberland.gov.uk, _ga_MVFVG1D7L3 on northumberland.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000058": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000059": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000060": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "nmstat on buckinghamshire.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+   }
+  },
+  "E06000061": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Reject all cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on northnorthants.gov.uk, _ga_BDHGRT1VCC on northnorthants.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E06000062": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Reject all cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000063": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept other cookies” and “Reject other cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "nmstat on cumberland.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+   }
+  },
+  "E06000064": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept” and “Decline”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_gcl_au on westmorlandandfurness.gov.uk, test_cookie on doubleclick.net",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google advertising."
+   }
+  },
+  "E06000065": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000066": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000001": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I agree” and “I decline”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000002": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000003": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow all cookies” and “Use necessary cookies only”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000004": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow all cookies” and “Use necessary cookies only”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000005": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all Cookies” and “Reject all Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000006": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept cookies”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“Accept cookies”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000007": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I agree” and “I decline”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000008": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“Accept all cookies”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "evidence": "_ga on tameside.gov.uk, _ga_2V07BTGZHV on tameside.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E08000009": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept” and “Reject”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on trafford.gov.uk, _ga_2EK6K2H6VR on trafford.gov.uk, _ga_R9QBP50T6F on trafford.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E08000010": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept All Cookies”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“Accept All Cookies”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000011": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“Accept all cookies”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000012": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept” and “I Do Not Accept”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000013": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all” and “Reject all”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000014": {
+   "reject_cookies": {
+    "evidence": "Buttons: “AGREE” and “DISAGREE”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on sefton.gov.uk, _ga_W9ZFB1ZS0R on sefton.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E08000015": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000016": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“I Accept Cookies”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000017": {
+   "reject_cookies": {
+    "evidence": "Buttons: “ACCEPT ALL COOKIES”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“ACCEPT ALL COOKIES”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000018": {
+   "reject_cookies": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "trackers": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   }
+  },
+  "E08000019": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000021": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000022": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on northtyneside.gov.uk, _ga_JYF9DSY0WN on northtyneside.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E08000023": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow All Cookies” and “Essential Only”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000024": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_gcl_au on sunderland.gov.uk, test_cookie on doubleclick.net",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google advertising."
+   }
+  },
+  "E08000025": {
+   "reject_cookies": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "trackers": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   }
+  },
+  "E08000026": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I accept all cookies” and “I do not accept”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000027": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept” and “Decline”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000028": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000029": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow all cookies” and “Use necessary cookies only”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "nmstat on solihull.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+   }
+  },
+  "E08000030": {
+   "reject_cookies": {
+    "evidence": "Buttons: “AGREE” and “DISAGREE”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000031": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on wolverhampton.gov.uk, _ga_NGDJHT45YN on wolverhampton.gov.uk, _gat_UA-28643929-1 on wolverhampton.gov.uk, _gid on wolverhampton.gov.uk, _gcl_au on wolverhampton.gov.uk, _hjSessionUser_1212801 on wolverhampton.gov.uk, _hjSession_1212801 on wolverhampton.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising and Hotjar."
+   }
+  },
+  "E08000032": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000033": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“Accept all”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000034": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on kirklees.gov.uk, _ga_R2LK29GVG0 on kirklees.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E08000035": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept” and “Decline”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on leeds.gov.uk, _ga_X1N5D1XM9L on leeds.gov.uk, _gcl_au on leeds.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics and Google advertising."
+   }
+  },
+  "E08000036": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000037": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on gateshead.gov.uk, _ga_EVRPFH9BG5 on gateshead.gov.uk, _hjSessionUser_1504008 on gateshead.gov.uk, _hjSession_1504008 on gateshead.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics and Hotjar."
+   }
+  },
+  "E09000002": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept” and “No, thanks”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on lbbd.gov.uk, _ga_DYL02NZPXN on lbbd.gov.uk, _gcl_au on lbbd.gov.uk, test_cookie on doubleclick.net, MUID on bing.com, _uetsid on lbbd.gov.uk, _uetvid on lbbd.gov.uk, VISITOR_INFO1_LIVE on youtube.com, VISITOR_PRIVACY_METADATA on youtube.com, YSC on youtube.com, __Secure-ROLLOUT_TOKEN on youtube.com, __Secure-YNID on youtube.com",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising, Microsoft Clarity, Microsoft advertising and YouTube."
+   }
+  },
+  "E09000003": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000004": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Accept only essential cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on bexley.gov.uk, _gat on bexley.gov.uk, _gid on bexley.gov.uk, _fbp on bexley.gov.uk, nmstat on bexley.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Meta (Facebook) and Siteimprove Analytics."
+   }
+  },
+  "E09000005": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept All Cookies”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“Accept All Cookies”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "evidence": "_ga on brent.gov.uk, _ga_RLFF5LRDVC on brent.gov.uk, _gat on brent.gov.uk, _gid on brent.gov.uk, _hjSessionUser_770193 on brent.gov.uk, _hjSession_770193 on brent.gov.uk, nmstat on brent.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Hotjar and Siteimprove Analytics."
+   }
+  },
+  "E09000006": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on bromley.gov.uk, _ga_17QLKVX3HM on bromley.gov.uk, _ga_2FBTR4XB14 on bromley.gov.uk, _gcl_au on bromley.gov.uk, test_cookie on doubleclick.net, _hjSessionUser_1066301 on bromley.gov.uk, _hjSession_1066301 on bromley.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising and Hotjar."
+   }
+  },
+  "E09000007": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept analytics cookies” and “Reject analytics cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_hjSessionUser_2972342 on camden.gov.uk, _hjSession_2972342 on camden.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Hotjar."
+   }
+  },
+  "E09000008": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000009": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept All” and “Reject All”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "nmstat on ealing.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+   }
+  },
+  "E09000010": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000011": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000012": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on hackney.gov.uk, _ga_0XQ2E7WFCJ on hackney.gov.uk, _gcl_au on hackney.gov.uk, _hjSessionUser_1344672 on hackney.gov.uk, _hjSession_1344672 on hackney.gov.uk, MUID on clarity.ms, SM on c.clarity.ms, _clck on hackney.gov.uk, _clsk on hackney.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising, Hotjar and Microsoft Clarity."
+   }
+  },
+  "E09000013": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow all” and “Deny”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000014": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow all” and “Deny”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000015": {
+   "reject_cookies": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "trackers": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   }
+  },
+  "E09000016": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow all” and “Deny”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000017": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000018": {
+   "reject_cookies": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "trackers": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   }
+  },
+  "E09000019": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000020": {
+   "reject_cookies": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
+   "trackers": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   }
+  },
+  "E09000021": {
+   "reject_cookies": {
+    "evidence": "Buttons: “ACCEPT ALL” and “DECLINE ALL”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000022": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000023": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow all” and “Deny”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000024": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Reject all”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000025": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000026": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000027": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000028": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I accept” and “I do not accept”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000029": {
+   "reject_cookies": {
+    "evidence": "Buttons: “ACCEPT ALL” and “DECLINE ALL”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000030": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on towerhamlets.gov.uk, _ga_CM7HE0C0K6 on towerhamlets.gov.uk, _gcl_au on towerhamlets.gov.uk, test_cookie on doubleclick.net, _fbp on towerhamlets.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising and Meta (Facebook)."
+   }
+  },
+  "E09000031": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Decline all cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on walthamforest.gov.uk, _ga_Q319TE7QL3 on walthamforest.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "E09000032": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000033": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept cookies policy” and “No, thanks . Reject cookies policy”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on westminster.gov.uk, _ga_9PYXQ1V5EN on westminster.gov.uk, _gcl_au on westminster.gov.uk, test_cookie on doubleclick.net",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics and Google advertising."
+   }
+  },
+  "S12000005": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Use essential cookies only”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000006": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I accept” and “I do not accept”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000008": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept” and “Reject”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000010": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I'm OK with analytics cookies” and “Do not use analytics cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000011": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000013": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on cne-siar.gov.uk, _ga_RPNZ18Q728 on cne-siar.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "S12000014": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000017": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000018": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000019": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000020": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on moray.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "S12000021": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept additional cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000023": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000026": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000027": {
+   "reject_cookies": {
+    "evidence": "No analytics or advertising cookies, so nothing to ask",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000028": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on south-ayrshire.gov.uk, _gat_UA-4728307-1 on south-ayrshire.gov.uk, _gid on south-ayrshire.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "S12000029": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000030": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept” and “I Do Not Accept”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000033": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on aberdeencity.gov.uk, _ga_06J3LQRLNB on aberdeencity.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  },
+  "S12000034": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000035": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept non-essential cookies” and “Reject non-essential cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000036": {
+   "reject_cookies": {
+    "evidence": "Buttons: “OK to use analytics cookies” and “Don't use analytics cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_ga on edinburgh.gov.uk, _ga_ENB58TQFF8 on edinburgh.gov.uk, _gat_UA-11731499-1 on edinburgh.gov.uk, _gid on edinburgh.gov.uk, VISITOR_INFO1_LIVE on youtube.com, VISITOR_PRIVACY_METADATA on youtube.com, YSC on youtube.com, __Secure-ROLLOUT_TOKEN on youtube.com, __Secure-YNID on youtube.com",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics and YouTube."
+   }
+  },
+  "S12000038": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“Accept all cookies”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000039": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Allow cookies”",
+    "pass": false,
+    "reason": "Its cookie banner has a button to accept cookies (“Allow cookies”) but not one to reject them alongside it."
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000040": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "_hjSessionUser_1177707 on westlothian.gov.uk, _hjSession_1177707 on westlothian.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Hotjar."
+   }
+  },
+  "S12000041": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept analytics cookies” and “Reject analytics cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000042": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000045": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I Accept Cookies” and “I Do Not Accept Cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "evidence": "nmstat on eastdunbarton.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+   }
+  },
+  "S12000047": {
+   "reject_cookies": {
+    "evidence": "Buttons: “I accept cookies” and “I do not accept cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000048": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000049": {
+   "reject_cookies": {
+    "evidence": "Buttons: “Accept all cookies” and “Reject additional cookies”",
+    "pass": true,
+    "reason": ""
+   },
+   "trackers": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000050": {
+   "reject_cookies": {
+    "pass": false,
+    "reason": "It sets analytics or advertising cookies without showing a banner that offers to refuse them."
+   },
+   "trackers": {
+    "evidence": "_ga on www.northlanarkshire.gov.uk, _ga_5RTC1195TY on www.northlanarkshire.gov.uk",
+    "pass": false,
+    "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+   }
+  }
+ },
+ "extra": {
+  "checked": "2026-11-03"
+ },
+ "files": [],
+ "id": "cookies",
+ "notes": [
+  "E06000010: couldn't check cookies (We couldn't load the homepage (it returned 403).)",
+  "E06000011: couldn't check cookies (We couldn't load the homepage.)",
+  "E06000035: couldn't check cookies (We couldn't load the homepage (it returned 403).)",
+  "E06000039: couldn't check cookies (We couldn't load the homepage (it returned 403).)",
+  "E08000018: couldn't check cookies (We couldn't load the homepage (it returned 403).)",
+  "E08000025: couldn't check cookies (We couldn't load the homepage (it returned 403).)",
+  "E09000015: couldn't check cookies (We couldn't load the homepage (it returned 403).)",
+  "E09000018: couldn't check cookies (We couldn't load the homepage (it returned 403).)",
+  "E09000020: couldn't check cookies (We couldn't load the homepage (it returned 403).)"
+ ],
+ "period": "November 2026",
+ "published": "2026-11-03",
+ "title": "Our checks of council websites' cookies",
+ "trends": {},
+ "url": "https://councilscompared.com/about/#our-checks",
+ "values": {}
+}
