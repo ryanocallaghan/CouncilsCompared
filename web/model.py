@@ -66,6 +66,7 @@ AREAS = [
      "council website's accessibility."),
     ("security", "Privacy and security",
      "Checks we run ourselves each month on the council's website and email, rather than published statistics: "
+     "whether it waits for you to choose before setting tracking cookies and lets you reject them easily, "
      "whether its email is protected from being faked, whether its website makes browsers always connect "
      "securely, and whether it says how to report a security problem."),
     ("openness", "Openness",
@@ -253,6 +254,18 @@ CHECKS = [
           "built on, in a standard form. This checks whether MHCLG's Planning Data platform collects one from "
           "the council. For a council created since 2019, the registers of the councils it replaced count if "
           "together they cover the whole area."),
+    Check("trackers", "security", "Waits for you to choose before setting tracking cookies",
+          "tracking cookies before you choose", "cookies",
+          "Cookies from analytics and advertising services, such as Google Analytics, Meta or Hotjar, follow what "
+          "you do on a website, so you should be asked first. This opens the council's homepage in a browser as a "
+          "new visitor, clicks nothing, and waits a few seconds. It passes if the page hasn't set a cookie from a "
+          "well-known analytics or advertising service.", nations=("England", "Scotland"), own=True),
+    Check("reject_cookies", "security", "Lets you reject cookies as easily as accept them", "rejecting cookies",
+          "cookies",
+          "If a cookie banner has a button to accept cookies, it should have one to reject them beside it, not "
+          "only in a settings page. This looks at the buttons on the homepage when it first opens. It passes if "
+          "there's a reject button alongside accept, or if the site sets no analytics or advertising cookies and "
+          "so has nothing to ask.", nations=("England", "Scotland"), own=True),
     Check("dmarc", "security", "Protects its email from being faked", "email protection (DMARC)", "website",
           "Anyone can send email that looks as if it's from the council unless the council publishes a DMARC "
           "policy telling other mail servers to quarantine or reject email that fails its checks. This looks up "

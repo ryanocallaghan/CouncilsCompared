@@ -26,6 +26,8 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements-dev.txt
+      # For our cookie checks, which open each council's homepage in a browser
+      - run: pip install "playwright>=1.48,<2" && python -m playwright install --with-deps chromium
 
       - name: Fetch the latest figures
         run: |

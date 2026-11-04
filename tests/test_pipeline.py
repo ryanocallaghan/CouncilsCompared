@@ -345,3 +345,84 @@ def test_our_checks_record_answers_reasons_and_evidence(monkeypatch):
     assert haringey["https"]["pass"] is None and haringey["security_txt"]["pass"] is None
     assert any("E09000014: couldn't check https, security_txt" == note for note in result.notes)
     assert any("E09000001" in note for note in result.notes)  # no homepage
+
+
+@pytest.mark.parametrize("name, domain, expected", [
+    ("_ga", ".lewisham.gov.uk", "Google Analytics"),
+    ("_ga_2YXLBKBVBX", ".hartlepool.gov.uk", "Google Analytics"),
+    ("_hjSession_2972342", ".camden.gov.uk", "Hotjar"),
+    ("nmstat", ".cumberland.gov.uk", "Siteimprove Analytics"),
+    ("YSC", ".youtube.com", "YouTube"),
+    ("anything", ".doubleclick.net", "Google advertising"),  # by the site that set it
+    ("CookieControl", "www.leeds.gov.uk", None),  # the banner remembering a choice
+    ("__cf_bm", ".lewisham.gov.uk", None),  # bot protection
+    ("__cf_bm", ".twitter.com", None),  # bot protection, even on a site whose other cookies track
+    ("ASP.NET_SessionId", "www.york.gov.uk", None),
+])
+def test_tracking_cookies_are_from_known_analytics_and_advertising_services(name, domain, expected):
+    from pipeline.sources import cookies
+    assert cookies.service(name, domain) == expected
+
+
+@pytest.mark.parametrize("texts, accept, reject", [
+    (["OK to use analytics cookies", "Don't use analytics cookies"], 1, 1),
+    (["I Accept Cookies", "I Do Not Accept Cookies"], 1, 1),
+    (["Allow all", "Deny"], 1, 1),
+    (["MORE OPTIONS", "DISAGREE", "AGREE"], 1, 1),
+    (["Accept all cookies", "Use necessary cookies only"], 1, 1),
+    (["Accept all cookies", "Accept only essential cookies"], 1, 1),
+    (["Accept all cookies", "Cookie settings"], 1, 0),
+    (["Yes", "No", "Search", "Menu"], 0, 0),  # "Is this page useful?" isn't a cookie banner
+])
+def test_cookie_banner_buttons(texts, accept, reject):
+    from pipeline.sources import cookies
+    found = cookies.buttons(texts)
+    assert (len(found[0]), len(found[1])) == (accept, reject)
+
+
+def test_cookie_checks_judge_what_a_visit_found():
+    from pipeline.sources import cookies
+    ga = [{"name": "_ga", "domain": ".x.gov.uk"}, {"name": "YSC", "domain": ".youtube.com"},
+          {"name": "CookieControl", "domain": "x.gov.uk"}]
+    judged = cookies.judge(200, "Home", ga, ["Accept all cookies", "Reject all cookies"])
+    assert judged["trackers"][0] is False
+    assert judged["trackers"][1] == "Before we chose anything, the homepage set cookies from Google Analytics and YouTube."
+    assert judged["trackers"][2] == "_ga on x.gov.uk, YSC on youtube.com"  # by service
+    assert judged["reject_cookies"][0] is True
+    # Accept but no reject; no banner but tracking; no banner and nothing to ask
+    assert cookies.judge(200, "Home", [], ["Accept all cookies", "Manage cookies"])["reject_cookies"][0] is False
+    assert "without showing a banner" in cookies.judge(200, "Home", ga, [])["reject_cookies"][1]
+    assert cookies.judge(200, "Home", [], ["Search"]) == {
+        "trackers": (True, "", ""), "reject_cookies": (True, "", "No analytics or advertising cookies, so nothing to ask")}
+    # Blocked, a bot check or unreachable: couldn't check, never a fail
+    for status, title in [(403, ""), (429, ""), (200, "Just a moment..."), (None, "")]:
+        judged = cookies.judge(status, title, ga, [])
+        assert judged["trackers"][0] is None and judged["reject_cookies"][0] is None
+
+
+def test_cookie_checks_run_in_a_browser_for_each_homepage(monkeypatch):
+    import sys
+    import types
+    from pipeline.sources import Result, cookies
+
+    class Playwright:
+        chromium = types.SimpleNamespace(launch=lambda: types.SimpleNamespace(close=lambda: None))
+        def __enter__(self):
+            return self
+        def __exit__(self, *args):
+            return False
+    monkeypatch.setitem(sys.modules, "playwright", types.ModuleType("playwright"))
+    monkeypatch.setitem(sys.modules, "playwright.sync_api", types.SimpleNamespace(sync_playwright=Playwright))
+    visits = {"https://lewisham.gov.uk/": (200, "Lewisham", [{"name": "_ga", "domain": ".lewisham.gov.uk"}],
+                                           ["Allow all", "Deny"]),
+              "https://www.manchester.gov.uk/": (403, "", [], [])}
+    monkeypatch.setattr(cookies, "visit", lambda browser, url: visits[url])
+    monkeypatch.setattr(cookies.time, "sleep", lambda seconds: None)
+    links = Result(id="local_links", title="", url="", period="", extra={
+        "E09000023": {"homepage": "https://lewisham.gov.uk/"}, "E08000003": {"homepage": "https://www.manchester.gov.uk/"}})
+    result = cookies.fetch({"results": {"local_links": links}, "population": {"E09000023": 1, "E08000003": 1}})
+    assert result.checks["E09000023"]["trackers"]["pass"] is False
+    assert result.checks["E09000023"]["trackers"]["evidence"] == "_ga on lewisham.gov.uk"
+    assert result.checks["E09000023"]["reject_cookies"]["pass"] is True
+    assert result.checks["E08000003"]["trackers"]["pass"] is None
+    assert any(note.startswith("E08000003: couldn't check cookies") for note in result.notes)
