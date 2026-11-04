@@ -1,6 +1,11 @@
 {
  "checks": {
   "E06000001": {
+   "a11y_statement": {
+    "evidence": "https://www.hartlepool.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 4 September 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;pct=100;fo=1;rua=mailto:dmarc@hartlepool.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc@hartlepool.gov.uk,mailto:dmarc-ruf@dmarc.service.gov.uk",
     "pass": true,
@@ -18,6 +23,10 @@
    }
   },
   "E06000002": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;pct=100;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:mb9pcagu@ag.dmarcian.com;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:mb9pcagu@fr.dmarcian.com",
     "pass": true,
@@ -34,6 +43,11 @@
    }
   },
   "E06000003": {
+   "a11y_statement": {
+    "evidence": "https://www.redcar-cleveland.gov.uk/site-terms/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 29 August 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc-ruf@dmarc.service.gov.uk; rf=afrf; pct=100; ri=86400; fo=1",
     "pass": true,
@@ -50,6 +64,10 @@
    }
   },
   "E06000004": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:VUi9uQqypW4@dmarc-rua.mailcheck.service.ncsc.gov.uk; pct=100; sp=reject; adkim=s; aspf=s; fo=1",
     "pass": true,
@@ -66,6 +84,11 @@
    }
   },
   "E06000005": {
+   "a11y_statement": {
+    "evidence": "https://www.darlington.gov.uk/about-this-website/accessibility/",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 14 October 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:VUi9uQqypW4@dmarc-rua.mailcheck.service.ncsc.gov.uk; pct=100; sp=reject; adkim=s; aspf=s; fo=1",
     "pass": true,
@@ -83,6 +106,10 @@
    }
   },
   "E06000006": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; adkim=s; aspf=s; rua=mailto:Ypu2gCehgHj@dmarc-rua.mailcheck.service.ncsc.gov.uk; ruf=mailto:dnsadmin@halton.gov.uk; pct=100; fo=1; ri=86400",
     "pass": true,
@@ -98,6 +125,11 @@
    }
   },
   "E06000007": {
+   "a11y_statement": {
+    "evidence": "https://www.warrington.gov.uk/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 14 May 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400;rua=mailto:dmarc.reporting@warrington.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc_agg@vali.email",
     "pass": true,
@@ -115,6 +147,11 @@
    }
   },
   "E06000008": {
+   "a11y_statement": {
+    "evidence": "https://www.blackburn.gov.uk/legal-notices/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 8 January 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;fo=1;rua=mailto:dmarc@blackburn.gov.uk",
     "pass": true,
@@ -132,6 +169,11 @@
    }
   },
   "E06000009": {
+   "a11y_statement": {
+    "evidence": "https://www.blackpool.gov.uk/Accessibility.aspx",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 6 January 2022, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;adkim=r;aspf=r;rua=mailto:dmarc-rua@dmarc.service.gov.uk;rf=afrf;pct=100;ri=86400;ruf=mailto:dmarc@blackpool.gov.uk",
     "pass": true,
@@ -149,6 +191,11 @@
    }
   },
   "E06000010": {
+   "a11y_statement": {
+    "evidence": "https://www.hull.gov.uk/web-help/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 23 December 2025."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@hullcc.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk; aspf=r",
     "pass": true,
@@ -166,6 +213,10 @@
    }
   },
   "E06000011": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;ruf=mailto:eryc.dmarc@eastriding.gov.uk;rua=mailto:eryc.dmarc@eastriding.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;aspf=r;adkim=r",
     "pass": true,
@@ -183,6 +234,11 @@
    }
   },
   "E06000012": {
+   "a11y_statement": {
+    "evidence": "https://www.nelincs.gov.uk/accessibility/",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 19 October 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc@4gby4br8.uriports.com; ruf=mailto:dmarc@4gby4br8.uriports.com",
     "pass": true,
@@ -200,6 +256,10 @@
    }
   },
   "E06000013": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; pct=100; fo=1; ri=3600; rua=mailto:8Qom4FYzMeB@dmarc-rua.mailcheck.service.ncsc.gov.uk; ruf=mailto:dmarc.ruf@northlincs.gov.uk;",
     "pass": true,
@@ -216,6 +276,11 @@
    }
   },
   "E06000014": {
+   "a11y_statement": {
+    "evidence": "https://www.york.gov.uk/AccessibilityStatement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 2 October 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;rua=mailto:478bfd36f9e0478ea1ecba8eda8ed4bf@dmarc-reports.cloudflare.net,mailto:dmarc@york.gov.uk;ruf=mailto:dmarcf@york.gov.uk;pct=100",
     "pass": true,
@@ -233,6 +298,11 @@
    }
   },
   "E06000015": {
+   "a11y_statement": {
+    "evidence": "https://www.derby.gov.uk/site-info/accessibility/accessibility-statement/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 17 January 2022, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; rua=mailto:0ca21e81@in.mailhardener.com",
     "pass": true,
@@ -249,6 +319,11 @@
    }
   },
   "E06000016": {
+   "a11y_statement": {
+    "evidence": "https://www.leicester.gov.uk/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 9 February 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:fb5356969963222@rep.dmarcanalyzer.com; ruf=mailto:fb5356969963222@for.dmarcanalyzer.com; fo=1;",
     "pass": true,
@@ -266,6 +341,11 @@
    }
   },
   "E06000017": {
+   "a11y_statement": {
+    "evidence": "https://www.rutland.gov.uk/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 11 August 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; pct=100; rua=mailto:tiasyuw4@ag.dmarcian-eu.com,mailto:dmarc-rua@dmarc.service.gov.uk;",
     "pass": true,
@@ -283,6 +363,11 @@
    }
   },
   "E06000018": {
+   "a11y_statement": {
+    "evidence": "https://www.nottinghamcity.gov.uk/footer-pages/accessibility/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 7 January 2021, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; rua=mailto:87f3c726ffe1589@rep.dmarcanalyzer.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:87f3c726ffe1589@for.dmarcanalyzer.com,mailto:dmarc-ruf@dmarc.service.gov.uk; pct=100; sp=quarantine; fo=1;",
     "pass": true,
@@ -299,6 +384,11 @@
    }
   },
   "E06000019": {
+   "a11y_statement": {
+    "evidence": "https://www.herefordshire.gov.uk/site-information/accessibility/",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 7 July 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@herefordshire.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk",
     "pass": true,
@@ -316,6 +406,11 @@
    }
   },
   "E06000020": {
+   "a11y_statement": {
+    "evidence": "https://www.telford.gov.uk/accessibility-statement/",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 20 October 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc@telford.gov.uk;ruf=mailto:dmarc@telford.gov.uk;aspf=s;adkim=s",
     "pass": true,
@@ -333,6 +428,11 @@
    }
   },
   "E06000021": {
+   "a11y_statement": {
+    "evidence": "https://www.stoke.gov.uk/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 7 January 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:4ep5BLaysSQ@dmarc-rua.mailcheck.service.ncsc.gov.uk;",
     "pass": true,
@@ -350,6 +450,10 @@
    }
   },
   "E06000022": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; rua=mailto:5e317705995bc@ag.dmarcly.com; ruf=mailto:5e317705995bc@fo.dmarcly.com; fo=1; aspf=s; adkim=s;",
     "pass": true,
@@ -367,6 +471,11 @@
    }
   },
   "E06000023": {
+   "a11y_statement": {
+    "evidence": "https://www.bristol.gov.uk/council/about-our-website/website-accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 12 November 2025."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; rua=mailto:vif1p8ya2zP@dmarc-rua.mailcheck.service.ncsc.gov.uk, mailto:novjgfam@ag.eu.dmarcadvisor.com; ruf=mailto:novjgfam@fr.eu.dmarcadvisor.com, mailto:dmarc-ruf@bristol.gov.uk; fo=1",
     "pass": true,
@@ -384,6 +493,11 @@
    }
   },
   "E06000024": {
+   "a11y_statement": {
+    "evidence": "https://n-somerset.gov.uk/council-democracy/equality-diversity-inclusion/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 7 November 2025."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc-rua@n-somerset.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc-ruf@n-somerset.gov.uk",
     "pass": true,
@@ -401,6 +515,11 @@
    }
   },
   "E06000025": {
+   "a11y_statement": {
+    "evidence": "https://beta.southglos.gov.uk/website-accessibility-statement/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 29 July 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc-rua@southglos.gov.uk; ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc-ruf@southglos.gov.uk",
     "pass": true,
@@ -418,6 +537,11 @@
    }
   },
   "E06000026": {
+   "a11y_statement": {
+    "evidence": "https://www.plymouth.gov.uk/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 8 May 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:wczacj1u@fr.dmarcian-eu.com; aspf=r;",
     "pass": true,
@@ -435,6 +559,11 @@
    }
   },
   "E06000027": {
+   "a11y_statement": {
+    "evidence": "https://www.torbay.gov.uk/website-help/accessibility/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 15 March 2022, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:90b30086bc37028@rep.dmarcanalyzer.com;ruf=mailto:90b30086bc37028@for.dmarcanalyzer.com",
     "pass": true,
@@ -451,6 +580,11 @@
    }
   },
   "E06000030": {
+   "a11y_statement": {
+    "evidence": "https://www.swindon.gov.uk/info/20255/your_council/1654/accessibility_statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 6 July 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:KvRFwYsm5Hp@dmarc-rua.mailcheck.service.ncsc.gov.uk",
     "pass": true,
@@ -468,6 +602,11 @@
    }
   },
   "E06000031": {
+   "a11y_statement": {
+    "evidence": "https://www.peterborough.gov.uk/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 1 August 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:8f60481dc492707@rep.dmarcanalyzer.com; ruf=mailto:8f60481dc492707@for.dmarcanalyzer.com; pct=100; sp=quarantine; fo=1;",
     "pass": true,
@@ -485,6 +624,11 @@
    }
   },
   "E06000032": {
+   "a11y_statement": {
+    "evidence": "https://www.luton.gov.uk/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 9 April 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;pct=100;sp=reject;fo=1;rua=mailto:zF4FaMHhwHx@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc@luton.gov.uk;ruf=mailto:dmarc@luton.gov.uk",
     "pass": true,
@@ -502,6 +646,11 @@
    }
   },
   "E06000033": {
+   "a11y_statement": {
+    "evidence": "https://www.southend.gov.uk/council-8/accessibility-statement/1",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 26 October 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:cybersecurity@southend.gov.uk;",
     "pass": true,
@@ -518,6 +667,11 @@
    }
   },
   "E06000034": {
+   "a11y_statement": {
+    "evidence": "https://www.thurrock.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 22 October 2021, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc@thurrock.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk; pct=100",
     "pass": true,
@@ -535,6 +689,11 @@
    }
   },
   "E06000035": {
+   "a11y_statement": {
+    "evidence": "https://www.medway.gov.uk/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 8 October 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:4b12161d@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:noc@medway.gov.uk; ruf=mailto:4b12161d@inbox.ondmarc.com;",
     "pass": true,
@@ -552,6 +711,11 @@
    }
   },
   "E06000036": {
+   "a11y_statement": {
+    "evidence": "https://www.bracknell-forest.gov.uk/help/about-site/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 18 April 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; rua=mailto:dER7QmoLpCd@dmarc-rua.mailcheck.service.ncsc.gov.uk, mailto:dmarc-rua@bracknell-forest.gov.uk; ruf=mailto:dmarc-ruf@bracknell-forest.gov.uk;",
     "pass": true,
@@ -569,6 +733,10 @@
    }
   },
   "E06000037": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;rua=mailto:aggrep@westberks.gov.uk,mailto:re+dq4lnu2g6fc@dmarc.postmarkapp.com;ruf=mailto:authfail@westberks.gov.uk",
     "pass": true,
@@ -585,6 +753,10 @@
    }
   },
   "E06000038": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;fo=0;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@reading.gov.uk,mailto:pjj1satv@ag.dmarcian-eu.com,mailto:dmarc@inbound.flowmailer.net;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:pjj1satv@fr.dmarcian-eu.com,mailto:dmarc@inbound.flowmailer.net;",
     "pass": true,
@@ -602,6 +774,11 @@
    }
   },
   "E06000039": {
+   "a11y_statement": {
+    "evidence": "https://www.slough.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement doesn't say when it was prepared or last reviewed."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;rua=mailto:hguLf3eKCYN@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc_agg@vali.email;",
     "pass": true,
@@ -618,6 +795,11 @@
    }
   },
   "E06000040": {
+   "a11y_statement": {
+    "evidence": "https://www.rbwm.gov.uk/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 30 September 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;pct=100;rua=mailto:dmarc-rua@rbwm.gov.uk;ruf=mailto:dmarc-ruf@rbwm.gov.uk;ri=86400;aspf=r;adkim=r;fo=1",
     "pass": true,
@@ -635,6 +817,11 @@
    }
   },
   "E06000041": {
+   "a11y_statement": {
+    "evidence": "https://www.wokingham.gov.uk/accessibility-statement-wokingham-borough-council/technical-information-about-websites-accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement doesn't say when it was prepared or last reviewed."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;pct=100;sp=reject;rua=mailto:oU7csZRAk2E@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:ll6z21kd@ag.eu.dmarcadvisor.com;ruf=mailto:ll6z21kd@fr.eu.dmarcadvisor.com;",
     "pass": true,
@@ -652,6 +839,10 @@
    }
   },
   "E06000042": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400;rua=mailto:Yg2KmuDmBRb@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:jt20lkzq@ag.eu.dmarcian.com;ruf=mailto:jt20lkzq@fr.eu.dmarcian.com",
     "pass": true,
@@ -669,6 +860,10 @@
    }
   },
   "E06000043": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;pct=100;fo=1;rua=mailto:dmarcbhcc@brighton-hove.gov.uk;ruf=mailto:DMARCBHCCRUF@brighton-hove.gov.uk",
     "pass": true,
@@ -685,6 +880,11 @@
    }
   },
   "E06000044": {
+   "a11y_statement": {
+    "evidence": "https://www.portsmouth.gov.uk/services/council-and-democracy/transparency/accessibility/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 25 August 2026."
+   },
    "dmarc": {
     "pass": false,
     "reason": "It has no DMARC record, so nothing stops email being faked to look as if it's from the council."
@@ -701,6 +901,10 @@
    }
   },
   "E06000045": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc_rua@emaildefense.proofpoint.com,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:re+bz8n721ainw@dmarc.postmarkapp.com; ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com; sp=reject; aspf=r;",
     "pass": true,
@@ -717,6 +921,10 @@
    }
   },
   "E06000046": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; rua=mailto:ef2ac41e@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:ef2ac41e@inbox.ondmarc.com; adkim=r; aspf=r; fo=1; rf=afrf; ri=3600",
     "pass": true,
@@ -733,6 +941,11 @@
    }
   },
   "E06000047": {
+   "a11y_statement": {
+    "evidence": "https://www.durham.gov.uk/article/3157/Accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 29 May 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@durham.gov.uk,mailto:dmarc_agg@vali.email; ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc@durham.gov.uk; rf=afrf; pct=100; ri=86400; fo=1; aspf=r; adkim=r;",
     "pass": true,
@@ -750,6 +963,11 @@
    }
   },
   "E06000049": {
+   "a11y_statement": {
+    "evidence": "https://www.cheshireeast.gov.uk/council-and-democracy/council-information/website-information/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 1 December 2025."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; aspf=s; adkim=s; rua=mailto:HK9cNnk8ijg@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc_agg@vali.email",
     "pass": true,
@@ -767,6 +985,10 @@
    }
   },
   "E06000050": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; aspf=s; adkim=s; rua=mailto:HK9cNnk8ijg@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc_agg@vali.email",
     "pass": true,
@@ -784,6 +1006,11 @@
    }
   },
   "E06000051": {
+   "a11y_statement": {
+    "evidence": "https://next.shropshire.gov.uk/website-information/help-using-our-website/accessibility-statement-for-shropshire-council/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 16 July 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk, mailto:re+rsxllsamowx@dmarc.postmarkapp.com, mailto:ict.security@shropshire.gov.uk; sp=quarantine; aspf=s;",
     "pass": true,
@@ -801,6 +1028,11 @@
    }
   },
   "E06000052": {
+   "a11y_statement": {
+    "evidence": "https://www.cornwall.gov.uk/the-council-and-democracy/website-help-and-information/website-accessibility-statement/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 28 January 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; pct=75; rua=mailto:dmarc-rua@dmarc.service.gov.uk;",
     "pass": false,
@@ -818,15 +1050,18 @@
    }
   },
   "E06000054": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc_agg@vali.email; ruf=mailto:dmarc-ruf@wiltshire.gov.uk",
     "pass": true,
     "reason": ""
    },
    "https": {
-    "evidence": "max-age=31536000",
-    "pass": true,
-    "reason": ""
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
    },
    "security_txt": {
     "evidence": "https://www.wiltshire.gov.uk/.well-known/security.txt",
@@ -835,6 +1070,10 @@
    }
   },
   "E06000055": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc.agg@bedford.gov.uk,mailto:rua+bedford.gov.uk@dmarc.barracudanetworks.com; ruf=mailto:dmarc.for@bedford.gov.uk,mailto:ruf+bedford.gov.uk@dmarc.barracudanetworks.com;  fo=1; adkim=r; aspf=r; rf=afrf; ri=86400",
     "pass": true,
@@ -852,6 +1091,11 @@
    }
   },
   "E06000056": {
+   "a11y_statement": {
+    "evidence": "https://www.centralbedfordshire.gov.uk/contact-us/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 31 July 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=none; sp=quarantine; rua=mailto:dmarc@centralbedfordshire.gov.uk,mailto:Gd9vSx89Stw@dmarc-rua.mailcheck.service.ncsc.gov.uk ; ruf=mailto:dmarc@centralbedfordshire.gov.uk; fo=1; adkim=r; aspf=r; pct=10; rf=afrf; ri=86400;",
     "pass": false,
@@ -869,6 +1113,11 @@
    }
   },
   "E06000057": {
+   "a11y_statement": {
+    "evidence": "https://www.northumberland.gov.uk/about-council/accessibility?utm_source=footer",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 16 September 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@2h3nfqhm.uriports.com; ruf=mailto:dmarc-ruf@northumberland.gov.uk,mailto:dmarc@2h3nfqhm.uriports.com;",
     "pass": true,
@@ -885,6 +1134,11 @@
    }
   },
   "E06000058": {
+   "a11y_statement": {
+    "evidence": "https://www.bcpcouncil.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 26 May 2022, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:pCHYiCiiRhN@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc@bcpcouncil.gov.uk,mailto:dmarc_agg@vali.email;",
     "pass": true,
@@ -902,6 +1156,11 @@
    }
   },
   "E06000059": {
+   "a11y_statement": {
+    "evidence": "https://www.dorsetcouncil.gov.uk/w/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 16 December 2025."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine;sp=quarantine;fo=1;pct=100;ruf=mailto:authfail@dorsetcouncil.gov.uk;rua=mailto:aggrep@dorsetcouncil.gov.uk,mailto:dmarc_agg@vali.email;",
     "pass": true,
@@ -919,6 +1178,11 @@
    }
   },
   "E06000060": {
+   "a11y_statement": {
+    "evidence": "https://www.buckinghamshire.gov.uk/about/accessibility/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 10 September 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; rua=mailto:EttQYhqZFdp@dmarc-rua.mailcheck.service.ncsc.gov.uk;",
     "pass": true,
@@ -936,6 +1200,11 @@
    }
   },
   "E06000061": {
+   "a11y_statement": {
+    "evidence": "https://www.northnorthants.gov.uk/web-services-and-communications/accessibility-feedback-and-copyright",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 27 August 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;pct=100",
     "pass": true,
@@ -952,6 +1221,11 @@
    }
   },
   "E06000062": {
+   "a11y_statement": {
+    "evidence": "https://www.westnorthants.gov.uk/about-website/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 20 October 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk",
     "pass": true,
@@ -968,6 +1242,11 @@
    }
   },
   "E06000063": {
+   "a11y_statement": {
+    "evidence": "https://www.cumberland.gov.uk/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 1 April 2023, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;adkim=s;aspf=s;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@allerdale.gov.uk",
     "pass": true,
@@ -985,6 +1264,11 @@
    }
   },
   "E06000064": {
+   "a11y_statement": {
+    "evidence": "https://www.westmorlandandfurness.gov.uk/accessibility-statement-westmorland-and-furness-council",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 2 October 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@westmorlandandfurness.gov.uk; adkim=s; aspf=s;",
     "pass": true,
@@ -1002,6 +1286,11 @@
    }
   },
   "E06000065": {
+   "a11y_statement": {
+    "evidence": "https://www.northyorks.gov.uk/your-council/websites-and-media/website-accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 29 May 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;rua=mailto:059e7d75@mxtoolbox.dmarc-report.com;aspf=s;adkim=s;ruf=mailto:059e7d75@forensics.dmarc-report.com",
     "pass": true,
@@ -1019,6 +1308,11 @@
    }
   },
   "E06000066": {
+   "a11y_statement": {
+    "evidence": "https://www.somerset.gov.uk/accessibility/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 9 February 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:6a9d89b400eb.a@dmarcinput.com,mailto:dmarc@somerset.gov.uk; ruf=mailto:6a9d89b400eb.f@dmarcinput.com; adkim=s; aspf=r; fo=1; pct=100",
     "pass": true,
@@ -1036,6 +1330,11 @@
    }
   },
   "E08000001": {
+   "a11y_statement": {
+    "evidence": "https://www.bolton.gov.uk/policies-strategies-procedures/accessibilty/2",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 23 July 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; fo=1; pct=100; rua=mailto:dmarc-rua@bolton.gov.uk, mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc-ruf@bolton.gov.uk",
     "pass": true,
@@ -1052,6 +1351,11 @@
    }
   },
   "E08000002": {
+   "a11y_statement": {
+    "evidence": "https://www.bury.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 20 June 2023, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:dmarcbury@bury.gov.uk; ruf=mailto:dmarc-rua@dmarc.service.gov.uk",
     "pass": true,
@@ -1069,6 +1373,10 @@
    }
   },
   "E08000003": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;rua=mailto:dmarc@manchester.gov.uk;pct=100; adkim=r; aspf=r;",
     "pass": true,
@@ -1084,6 +1392,11 @@
    }
   },
   "E08000004": {
+   "a11y_statement": {
+    "evidence": "https://www.oldham.gov.uk/info/100004/about_the_council/2338/accessibility_statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 20 April 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; rua=mailto:dmarc.reports@oldham.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk; aspf=s; sp=reject; adkim=s",
     "pass": true,
@@ -1101,6 +1414,11 @@
    }
   },
   "E08000005": {
+   "a11y_statement": {
+    "evidence": "https://www.rochdale.gov.uk/website/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 29 January 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:re+msf7oo7lebd@dmarc.postmarkapp.com",
     "pass": true,
@@ -1117,6 +1435,11 @@
    }
   },
   "E08000006": {
+   "a11y_statement": {
+    "evidence": "https://www.salford.gov.uk/help/accessibility-statement/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 24 September 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; rua=mailto:675e20b7@in.mailhardener.com; fo=0:1:d:s; adkim=s; aspf=r ; ruf=mailto:675e20b7@in.mailhardener.com",
     "pass": true,
@@ -1134,6 +1457,11 @@
    }
   },
   "E08000007": {
+   "a11y_statement": {
+    "evidence": "https://www.stockport.gov.uk/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 6 March 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; sp=none; fo=1; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@stockport.gov.uk,mailto:re+zqdvs1h3izf@dmarc.postmarkapp.com; ruf=mailto:dmarc-forensic@stockport.gov.uk;",
     "pass": true,
@@ -1151,6 +1479,11 @@
    }
   },
   "E08000008": {
+   "a11y_statement": {
+    "evidence": "https://www.tameside.gov.uk/webteam/accessibilitystatement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 26 June 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc-rep@tameside.gov.uk",
     "pass": true,
@@ -1168,6 +1501,10 @@
    }
   },
   "E08000009": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:re+dejradrtech@dmarc.postmarkapp.com, mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc@trafford.gov.uk; aspf=r; pct=100;ri=86400",
     "pass": true,
@@ -1183,6 +1520,11 @@
    }
   },
   "E08000010": {
+   "a11y_statement": {
+    "evidence": "https://www.wigan.gov.uk/SitePages/Accessibility-statement.aspx",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 14 May 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; fo=1; pct=100; rua=mailto:dmarc-rua@wigan.gov.uk, mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc-ruf@wigan.gov.uk",
     "pass": true,
@@ -1200,6 +1542,11 @@
    }
   },
   "E08000011": {
+   "a11y_statement": {
+    "evidence": "https://www.knowsley.gov.uk/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 2 January 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=none;rua=mailto:DAg3T2xcozj@dmarc-rua.mailcheck.service.ncsc.gov.uk;",
     "pass": false,
@@ -1215,6 +1562,11 @@
    }
   },
   "E08000012": {
+   "a11y_statement": {
+    "evidence": "https://liverpool.gov.uk/accessibility/accessibility-statement/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 22 September 2020, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject; pct=100;sp=none;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc-rua@liverpool.gov.uk;ruf=mailto:dmarc-ruf@liverpool.gov.uk",
     "pass": true,
@@ -1232,6 +1584,11 @@
    }
   },
   "E08000013": {
+   "a11y_statement": {
+    "evidence": "https://www.sthelens.gov.uk/article/3902/Accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 11 January 2022, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; fo=1; ri=3600; rua=mailto:db675a9f@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:db675a9f@inbox.ondmarc.com",
     "pass": true,
@@ -1249,6 +1606,11 @@
    }
   },
   "E08000014": {
+   "a11y_statement": {
+    "evidence": "https://www.sefton.gov.uk/your-council/website-accessibility-statement/",
+    "pass": false,
+    "reason": "Its accessibility statement doesn't say when it was prepared or last reviewed."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:pmsq6ye2b74@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc-rua@sefton.gov.uk; ruf=mailto:pmsq6ye2b74@dmarc-ruf.mailcheck.service.ncsc.gov.uk,mailto:dmarc-ruf@sefton.gov.uk;fo=1; pct=100;adkim=s;aspf=s",
     "pass": true,
@@ -1265,6 +1627,10 @@
    }
   },
   "E08000015": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc_agg@vali.email",
     "pass": true,
@@ -1282,6 +1648,11 @@
    }
   },
   "E08000016": {
+   "a11y_statement": {
+    "evidence": "https://www.barnsley.gov.uk/website-information/accessibility-statement/",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 26 August 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:DMARC-ReportA@barnsley.gov.uk; ruf=mailto:DMARC-ReportF@barnsley.gov.uk; rf=afrf; pct=100; adkim=r; aspf=r",
     "pass": true,
@@ -1299,6 +1670,11 @@
    }
   },
   "E08000017": {
+   "a11y_statement": {
+    "evidence": "https://www.doncaster.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 10 October 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;rua=mailto:dmarc@doncaster.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc-ruf@doncaster.gov.uk",
     "pass": true,
@@ -1316,6 +1692,11 @@
    }
   },
   "E08000018": {
+   "a11y_statement": {
+    "evidence": "https://www.rotherham.gov.uk/website/accessibility-statement/2",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 1 September 2020, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; fo=1;\nrua=mailto:dmarc-rua@rotherham.gov.uk,mailto:UzHTqhoPsL9@dmarc-rua.mailcheck.service.ncsc.gov.uk;\nruf=mailto:dmarc-rua@rotherham.gov.uk;\nri=84600;",
     "pass": true,
@@ -1333,6 +1714,11 @@
    }
   },
   "E08000019": {
+   "a11y_statement": {
+    "evidence": "https://www.sheffield.gov.uk/utilities/footer-links/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 7 August 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc_agg@vali.email; ruf=mailto:security@sheffield.gov.uk; ri=86400",
     "pass": true,
@@ -1350,6 +1736,11 @@
    }
   },
   "E08000021": {
+   "a11y_statement": {
+    "evidence": "https://newcastle.gov.uk/local-government/website-terms-and-conditions/website-accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 24 December 2020, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; fo=1; rua=mailto:dmarc_agg@vali.email,mailto:dmarc-rua@dmarc.service.gov.uk;",
     "pass": true,
@@ -1367,6 +1758,10 @@
    }
   },
   "E08000022": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:postmaster@northtyneside.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk; adkim=r; aspf=r",
     "pass": true,
@@ -1384,6 +1779,10 @@
    }
   },
   "E08000023": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc@southtyneside.gov.uk; ruf=mailto:dmarc@southtyneside.gov.uk; fo=1; adkim=r; aspf=r",
     "pass": true,
@@ -1400,6 +1799,10 @@
    }
   },
   "E08000024": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; fo=0; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@sunderland.gov.uk; ruf=mailto:dmarc@sunderland.gov.uk",
     "pass": true,
@@ -1416,6 +1819,11 @@
    }
   },
   "E08000025": {
+   "a11y_statement": {
+    "evidence": "https://www.birmingham.gov.uk/info/20011/your_council/2262/accessibility_statement/2",
+    "pass": false,
+    "reason": "Its accessibility statement doesn't say when it was prepared or last reviewed."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;pct=100;rua=mailto:dmarc@birmingham.gov.uk",
     "pass": true,
@@ -1433,6 +1841,11 @@
    }
   },
   "E08000026": {
+   "a11y_statement": {
+    "evidence": "https://www.coventry.gov.uk/accessibilitystatement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 21 May 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;fo=1;pct=100;rua=mailto:kjt2jJcZAcr@dmarc-rua.mailcheck.service.ncsc.gov.uk",
     "pass": true,
@@ -1450,6 +1863,11 @@
    }
   },
   "E08000027": {
+   "a11y_statement": {
+    "evidence": "https://www.dudley.gov.uk/accessibility-statement/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 26 August 2022, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; rua=mailto:4321799a@inbox.ondmarc.com; ruf=mailto:4321799a@inbox.ondmarc.com; adkim=s; aspf=s; fo=1; rf=afrf; ri=3600",
     "pass": true,
@@ -1467,6 +1885,11 @@
    }
   },
   "E08000028": {
+   "a11y_statement": {
+    "evidence": "https://www.sandwell.gov.uk/council/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 9 May 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc_reports@sandwell.gov.uk",
     "pass": true,
@@ -1484,6 +1907,11 @@
    }
   },
   "E08000029": {
+   "a11y_statement": {
+    "evidence": "https://www.solihull.gov.uk/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 22 November 2021, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; rua=mailto:b7nf5mx2@ag.dmarcian-eu.com,mailto:dmarc-rua@dmarc.service.gov.uk; ri=86400; pct=100",
     "pass": true,
@@ -1501,6 +1929,11 @@
    }
   },
   "E08000030": {
+   "a11y_statement": {
+    "evidence": "https://go.walsall.gov.uk/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 30 July 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=quarantine; adkim=s; fo=1; pct=100; rua=mailto:dmarca@walsall.gov.uk; ruf=mailto:dmarcf@walsall.gov.uk",
     "pass": true,
@@ -1518,6 +1951,11 @@
    }
   },
   "E08000031": {
+   "a11y_statement": {
+    "evidence": "https://www.wolverhampton.gov.uk/your-council/our-website/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement doesn't say when it was prepared or last reviewed."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:ZRBwR4khYAn@dmarc-rua.mailcheck.service.ncsc.gov.uk; pct=100; sp=quarantine; fo=1;",
     "pass": true,
@@ -1535,6 +1973,11 @@
    }
   },
   "E08000032": {
+   "a11y_statement": {
+    "evidence": "https://www.bradford.gov.uk/our-websites/accessibility/accessibility/",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 28 October 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;aspf=s;rua=mailto:1258c7b15a3e41bf94bbb0d053d88f13@dmarc-reports.cloudflare.net",
     "pass": true,
@@ -1552,6 +1995,10 @@
    }
   },
   "E08000033": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=quarantine;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@calderdale.gov.uk,mailto:i7edxs6s@ag.dmarcian-eu.com;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:i7edxs6s@fr.dmarcian-eu.com",
     "pass": true,
@@ -1568,6 +2015,11 @@
    }
   },
   "E08000034": {
+   "a11y_statement": {
+    "evidence": "https://www.kirklees.gov.uk/beta/information-and-data/accessibility-statement.aspx",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 27 February 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:DMARC.kirklees@kirklees.gov.uk,mailto:dmarc_agg@vali.email; ruf=mailto:DMARC.Kirklees@kirklees.gov.uk;",
     "pass": true,
@@ -1585,6 +2037,11 @@
    }
   },
   "E08000035": {
+   "a11y_statement": {
+    "evidence": "https://www.leeds.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 1 February 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; sp=reject; np=reject; fo=1:d:s; ri=3600; rua=mailto:dmarc-rua@leeds.gov.uk,mailto:dmarc@6qfg4pck.uriports.com;",
     "pass": true,
@@ -1602,6 +2059,11 @@
    }
   },
   "E08000036": {
+   "a11y_statement": {
+    "evidence": "https://www.wakefield.gov.uk/about-our-website/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 5 February 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@wakefield.gov.uk",
     "pass": true,
@@ -1619,6 +2081,10 @@
    }
   },
   "E08000037": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:nfeimlbt@ag.eu.dmarcian.com, mailto:dmarc@gateshead.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc_agg@vali.email; adkim=s; aspf=s;",
     "pass": true,
@@ -1635,6 +2101,11 @@
    }
   },
   "E09000002": {
+   "a11y_statement": {
+    "evidence": "https://www.lbbd.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 28 August 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;rua=mailto:rua@lbbd.gov.uk,mailto:0ls9p4jm@ag.eu.dmarcadvisor.com",
     "pass": true,
@@ -1651,6 +2122,10 @@
    }
   },
   "E09000003": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;adkim=s;aspf=s;pct=100;fo=1;rf=afrf;ri=86400;rua=mailto:dmarc@barnet.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:d2447481@inbox.ondmarc.com;ruf=mailto:dmarc-forensics@barnet.gov.uk,mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:d2447481@inbox.ondmarc.com",
     "pass": true,
@@ -1666,6 +2141,11 @@
    }
   },
   "E09000004": {
+   "a11y_statement": {
+    "evidence": "https://www.bexley.gov.uk/accessibility-statement/accessibility-statement-wwwbexleygovuk",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 12 February 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@bexley.gov.uk;",
     "pass": true,
@@ -1683,6 +2163,11 @@
    }
   },
   "E09000005": {
+   "a11y_statement": {
+    "evidence": "https://www.brent.gov.uk/accessibility-statements/brent-website",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 25 January 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:shared-technology-services@rua.agari-eu.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:shared-technology-services@ruf.agari-eu.com",
     "pass": true,
@@ -1700,6 +2185,11 @@
    }
   },
   "E09000006": {
+   "a11y_statement": {
+    "evidence": "https://www.bromley.gov.uk/websites/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 7 December 2021, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;pct=100;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:re+igdz7egtgrd@dmarc.postmarkapp.com;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc@bromley.gov.uk",
     "pass": true,
@@ -1716,6 +2206,11 @@
    }
   },
   "E09000007": {
+   "a11y_statement": {
+    "evidence": "https://www.camden.gov.uk/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 2 April 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:77d78618@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:77d78618@inbox.ondmarc.com,mailto:dmarc-ruf@dmarc.service.gov.uk",
     "pass": true,
@@ -1733,6 +2228,11 @@
    }
   },
   "E09000008": {
+   "a11y_statement": {
+    "evidence": "https://www.croydon.gov.uk/accessibility-statement-croydon-council-0",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 29 July 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;rua=mailto:b06dac187a@rua.easydmarc.eu,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@croydon.gov.uk;ruf=mailto:b06dac187a@ruf.easydmarc.eu,mailto:dmarc@croydon.gov.uk;fo=1;",
     "pass": true,
@@ -1749,6 +2249,11 @@
    }
   },
   "E09000009": {
+   "a11y_statement": {
+    "evidence": "https://www.ealing.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 18 November 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=r; aspf=r; fo=1; rua=mailto:MtruiGgX7J4@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:RUA.DMARC@ealing.gov.uk; ruf=mailto:RUF.DMARC@ealing.gov.uk",
     "pass": true,
@@ -1766,6 +2271,10 @@
    }
   },
   "E09000010": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@enfield.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk",
     "pass": true,
@@ -1781,6 +2290,11 @@
    }
   },
   "E09000011": {
+   "a11y_statement": {
+    "evidence": "https://www.royalgreenwich.gov.uk/accessibility/accessibility-statement-royal-borough-greenwich",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 8 September 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; np=reject; rua=mailto:e1006f39@in.mailhardener.com,mailto:dmarc-aggregate@royalgreenwich.gov.uk",
     "pass": true,
@@ -1798,6 +2312,11 @@
    }
   },
   "E09000012": {
+   "a11y_statement": {
+    "evidence": "https://www.hackney.gov.uk/more-us/accessibility-statement-hackney-council",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 18 November 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarcreports@hackney.gov.uk;",
     "pass": true,
@@ -1815,6 +2334,10 @@
    }
   },
   "E09000013": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 404)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;fo=1;rua=mailto:dmarc.rua@lbhf.gov.uk,mailto:9X7esxcMGcB@dmarc-rua.mailcheck.service.ncsc.gov.uk",
     "pass": true,
@@ -1831,6 +2354,11 @@
    }
   },
   "E09000014": {
+   "a11y_statement": {
+    "evidence": "https://haringey.gov.uk/about-this-website/accessibility-statements",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 13 July 2023, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;pct=100;fo=1;ri=3600;rua=mailto:347555e2@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:347555e2@inbox.ondmarc.com;",
     "pass": true,
@@ -1848,6 +2376,11 @@
    }
   },
   "E09000015": {
+   "a11y_statement": {
+    "evidence": "https://www.harrow.gov.uk/council/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 6 October 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@harrow.gov.uk;",
     "pass": true,
@@ -1865,6 +2398,11 @@
    }
   },
   "E09000016": {
+   "a11y_statement": {
+    "evidence": "https://www.havering.gov.uk/council-democracy/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 25 November 2025."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk, mailto:rua.dmarc@havering.gov.uk; fo=1",
     "pass": true,
@@ -1882,6 +2420,11 @@
    }
   },
   "E09000017": {
+   "a11y_statement": {
+    "evidence": "https://pre.hillingdon.gov.uk/website/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 12 June 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; adkim=r; aspf=r; pct=100; fo=1; rua=mailto:dmarc-dmarc@hillingdon.gov.uk, mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc-dmarc@hillingdon.gov.uk",
     "pass": true,
@@ -1899,6 +2442,11 @@
    }
   },
   "E09000018": {
+   "a11y_statement": {
+    "evidence": "https://www.hounslow.gov.uk/customer-services/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 20 May 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc-rua@dmarc.service.gov.uk; sp=reject; fo=1; ruf=mailto:dmarc-ruf@dmarc.service.gov.uk; pct=100",
     "pass": true,
@@ -1916,6 +2464,11 @@
    }
   },
   "E09000019": {
+   "a11y_statement": {
+    "evidence": "https://www.islington.gov.uk/accessibility/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 30 September 2020, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:5a0b3fb8@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:5a0b3fb8@inbox.ondmarc.com;",
     "pass": true,
@@ -1933,6 +2486,11 @@
    }
   },
   "E09000020": {
+   "a11y_statement": {
+    "evidence": "https://www.rbkc.gov.uk/web-services/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 9 July 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; sp=quarantine; rua=mailto:5191b598@inbox.ondmarc.com,mailto:rbkcdmarc@rbkc.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:5191b598@inbox.ondmarc.com,mailto:rbkcdmarc@rbkc.gov.uk; adkim=r; aspf=r; fo=0; rf=afrf; ri=3600",
     "pass": true,
@@ -1949,6 +2507,11 @@
    }
   },
   "E09000021": {
+   "a11y_statement": {
+    "evidence": "https://www.kingston.gov.uk/your-council/privacy-and-data/privacy-notice/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 18 August 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;rf=afrf;fo=1;pct=100;ri=86400;rua=mailto:dmarc.report@kingston.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc.report@kingston.gov.uk,mailto:dmarc-ruf@dmarc.service.gov.uk;",
     "pass": true,
@@ -1966,6 +2529,11 @@
    }
   },
   "E09000022": {
+   "a11y_statement": {
+    "evidence": "https://www.lambeth.gov.uk/accessibility/accessibility-statement-lambeth-council-website?utm_source=D8LBLFooter",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 19 October 2020, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; rua=mailto:d3596287@in.mailhardener.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarc_ruf@lambeth.gov.uk;",
     "pass": true,
@@ -1982,6 +2550,11 @@
    }
   },
   "E09000023": {
+   "a11y_statement": {
+    "evidence": "https://lewisham.gov.uk/about-this-site/accessibility/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 1 July 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:shared-technology-services@rua.agari-eu.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:shared-technology-services@ruf.agari-eu.com",
     "pass": true,
@@ -1999,6 +2572,11 @@
    }
   },
   "E09000024": {
+   "a11y_statement": {
+    "evidence": "https://www.merton.gov.uk/accessibility-statements/merton",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 30 April 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc_rua@emaildefense.proofpoint.com;ruf=mailto:dmarc_ruf@emaildefense.proofpoint.com",
     "pass": true,
@@ -2016,6 +2594,11 @@
    }
   },
   "E09000025": {
+   "a11y_statement": {
+    "evidence": "https://www.newham.gov.uk/contact-information/website-accessibility/1",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 23 September 2020, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk, mailto:rua@newham.gov.uk; fo=1",
     "pass": true,
@@ -2032,6 +2615,11 @@
    }
   },
   "E09000026": {
+   "a11y_statement": {
+    "evidence": "https://www.redbridge.gov.uk/accessibility-statement/",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 21 September 2022, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk, mailto:exvwjobs@ag.eu.dmarcian.com; ruf=mailto:exvwjobs@fr.eu.dmarcian.com",
     "pass": true,
@@ -2048,6 +2636,11 @@
    }
   },
   "E09000027": {
+   "a11y_statement": {
+    "evidence": "https://www.richmond.gov.uk/help/web_accessibility/accessibility_statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 14 August 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s; fo=1; rua=mailto:RUA.DMARC@richmond.gov.uk; ruf=mailto:RUF.DMARC@richmond.gov.uk",
     "pass": true,
@@ -2065,6 +2658,11 @@
    }
   },
   "E09000028": {
+   "a11y_statement": {
+    "evidence": "https://www.southwark.gov.uk/about-council/transparency/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 15 October 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; fo=1; ri=3600; rua=mailto:shared-technology-services@rua.agari-eu.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:shared-technology-services@ruf.agari-eu.com",
     "pass": true,
@@ -2082,6 +2680,11 @@
    }
   },
   "E09000029": {
+   "a11y_statement": {
+    "evidence": "https://www.sutton.gov.uk/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 15 August 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;rf=afrf;fo=1;pct=100;ri=86400;rua=mailto:dmarc.report@sutton.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc.report@sutton.gov.uk,mailto:dmarc-ruf@dmarc.service.gov.uk",
     "pass": true,
@@ -2099,6 +2702,11 @@
    }
   },
   "E09000030": {
+   "a11y_statement": {
+    "evidence": "https://www.towerhamlets.gov.uk/lgnl/council_and_democracy/Website/website_accessibility.aspx",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 17 February 2022, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:8224deed@in.mailhardener.com,mailto:dmarc-rua@towerhamlets.gov.uk",
     "pass": true,
@@ -2116,6 +2724,11 @@
    }
   },
   "E09000031": {
+   "a11y_statement": {
+    "evidence": "https://www.walthamforest.gov.uk/council-and-elections/information-about-website/website-accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 14 October 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@walthamforest.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk",
     "pass": true,
@@ -2133,6 +2746,11 @@
    }
   },
   "E09000032": {
+   "a11y_statement": {
+    "evidence": "https://www.wandsworth.gov.uk/about-this-website/accessibility-statement/",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 25 May 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; adkim=s; aspf=s; fo=1; rua=mailto:rua.Dmarc@wandsworth.gov.uk; ruf=mailto:ruf.Dmarc@wandsworth.gov.uk",
     "pass": true,
@@ -2150,6 +2768,11 @@
    }
   },
   "E09000033": {
+   "a11y_statement": {
+    "evidence": "https://www.westminster.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 28 January 2021, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:1131b119@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:1131b119@inbox.ondmarc.com",
     "pass": true,
@@ -2167,6 +2790,11 @@
    }
   },
   "S12000005": {
+   "a11y_statement": {
+    "evidence": "https://www.clacks.gov.uk/site/accessibilitystatement/",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 13 August 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@clacks.gov.uk",
     "pass": true,
@@ -2183,6 +2811,11 @@
    }
   },
   "S12000006": {
+   "a11y_statement": {
+    "evidence": "https://www.dumfriesandgalloway.gov.uk/council-elections/about-website/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 31 August 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:be4cbcfdd55b4a6090a2fd644b323a01@dmarc-reports.cloudflare.net,mailto:dmarc-rua@dmarc.service.gov.uk, mailto:dmarc@dumgal.gov.uk; ruf=mailto:security@dumgal.gov.uk;  pct=100",
     "pass": true,
@@ -2200,6 +2833,11 @@
    }
   },
   "S12000008": {
+   "a11y_statement": {
+    "evidence": "https://www.east-ayrshire.gov.uk/Help/Accessibility-statement.aspx",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 6 July 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:p9yfs1hj@ag.dmarcian.com;ruf=mailto:DMARC_afrf@east-ayrshire.gov.uk;",
     "pass": true,
@@ -2216,6 +2854,11 @@
    }
   },
   "S12000010": {
+   "a11y_statement": {
+    "evidence": "https://www.eastlothian.gov.uk/council-and-democracy/about-your-council/more-council-information/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 14 July 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; ruf=mailto:eastlothiancouncil@eu.cp-dmarc.com; rua=mailto:eastlothiancouncil@eu.cp-dmarc.com",
     "pass": true,
@@ -2233,6 +2876,11 @@
    }
   },
   "S12000011": {
+   "a11y_statement": {
+    "evidence": "https://www.eastrenfrewshire.gov.uk/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 28 July 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; rua=mailto:netdata@eastrenfrewshire.gov.uk; ruf=mailto:netdata@eastrenfrewshire.gov.uk; fo=1; pct=100",
     "pass": true,
@@ -2250,6 +2898,11 @@
    }
   },
   "S12000013": {
+   "a11y_statement": {
+    "evidence": "https://www.cne-siar.gov.uk/accessibility-statement-comhairle-nan-eilean-siar",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 18 December 2025."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;pct=100;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:itanalysts@cne-siar.gov.uk",
     "pass": true,
@@ -2267,6 +2920,11 @@
    }
   },
   "S12000014": {
+   "a11y_statement": {
+    "evidence": "https://www.falkirk.gov.uk/help/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 9 July 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=reject;pct=100;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarcreports@falkirk.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarcreports@falkirk.gov.uk",
     "pass": true,
@@ -2284,6 +2942,11 @@
    }
   },
   "S12000017": {
+   "a11y_statement": {
+    "evidence": "https://www.highland.gov.uk/equality-diversity/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 3 August 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; sp=reject; fo=1; rua=mailto:dmarc-rua@highland.gov.uk,mailto:6887976f824cb@ag.eu.dmarcly.com; ruf=mailto:dmarc-ruf@highland.gov.uk,mailto:6887976f824cb@fo.eu.dmarcly.com;",
     "pass": true,
@@ -2301,6 +2964,11 @@
    }
   },
   "S12000018": {
+   "a11y_statement": {
+    "evidence": "https://www.inverclyde.gov.uk/site-basics/help/accessibility-information",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 1 April 2022, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@inverclyde.gov.uk; ruf=mailto:dmarc@inverclyde.gov.uk,mailto:dmarc-ruf@dmarc.service.gov.uk;",
     "pass": true,
@@ -2318,6 +2986,11 @@
    }
   },
   "S12000019": {
+   "a11y_statement": {
+    "evidence": "https://www.midlothian.gov.uk/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 8 September 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=quarantine;fo=1;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:re+jzxcpmib7vj@dmarc.postmarkapp.com,mailto:dmarc@midlothian.gov.uk;ruf=mailto:dmarc@midlothian.gov.uk",
     "pass": true,
@@ -2335,6 +3008,11 @@
    }
   },
   "S12000020": {
+   "a11y_statement": {
+    "evidence": "https://www.moray.gov.uk/accessibility-statement/",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 23 March 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:dmarc@moray.gov.uk",
     "pass": true,
@@ -2352,6 +3030,11 @@
    }
   },
   "S12000021": {
+   "a11y_statement": {
+    "evidence": "https://www.north-ayrshire.gov.uk/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 3 November 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;pct=100;rua=mailto:aTPnitLNc78@dmarc-rua.mailcheck.service.ncsc.gov.uk,mailto:dmarc@north-ayrshire.gov.uk",
     "pass": true,
@@ -2369,6 +3052,11 @@
    }
   },
   "S12000023": {
+   "a11y_statement": {
+    "evidence": "https://www.orkney.gov.uk/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 14 April 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:a.klnzhb6e@sdmarc.net,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@orkney.gov.uk; adkim=r; aspf=r",
     "pass": true,
@@ -2386,6 +3074,11 @@
    }
   },
   "S12000026": {
+   "a11y_statement": {
+    "evidence": "https://www.scotborders.gov.uk/access-information/accessibility-statement/1",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 29 May 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@scotborders.gov.uk;ruf=mailto:dmarc@scotborders.gov.uk;sp=reject;fo=1;pct=100",
     "pass": true,
@@ -2403,6 +3096,11 @@
    }
   },
   "S12000027": {
+   "a11y_statement": {
+    "evidence": "https://www.shetland.gov.uk/accessibility-1/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 15 September 2021, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;pct=100;rua=mailto:zrql5msp@ag.eu.dmarcian.com;ruf=mailto:zrql5msp@fr.eu.dmarcian.com",
     "pass": true,
@@ -2420,6 +3118,11 @@
    }
   },
   "S12000028": {
+   "a11y_statement": {
+    "evidence": "https://www.south-ayrshire.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 14 August 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=reject;pct=100;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@south-ayrshire.gov.uk",
     "pass": true,
@@ -2437,6 +3140,11 @@
    }
   },
   "S12000029": {
+   "a11y_statement": {
+    "evidence": "https://www.southlanarkshire.gov.uk/accessibility-1/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 5 October 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;rua=mailto:7fygxugy@ag.eu.dmarcadvisor.com,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarcreports@southlanarkshire.gov.uk;ruf=mailto:forensicreports@southlanarkshire.gov.uk",
     "pass": true,
@@ -2454,6 +3162,10 @@
    }
   },
   "S12000030": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage (it returned 403)."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@stirling.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc@stirling.gov.uk",
     "pass": true,
@@ -2469,6 +3181,10 @@
    }
   },
   "S12000033": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't load the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine;pct=100;fo=1; ruf=mailto:dmarc-ruf@aberdeencity.gov.uk; rua=mailto:dmarc@aberdeencity.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:87rb18e8@rua.dmarceye.com; ri=86400",
     "pass": true,
@@ -2484,6 +3200,11 @@
    }
   },
   "S12000034": {
+   "a11y_statement": {
+    "evidence": "https://www.aberdeenshire.gov.uk/data/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement doesn't say when it was prepared or last reviewed."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;fo=1;pct=100;rua=mailto:rcw7zdfj@ag.dmarcian-eu.com;ruf=mailto:rcw7zdfj@fr.dmarcian-eu.com;",
     "pass": true,
@@ -2500,6 +3221,11 @@
    }
   },
   "S12000035": {
+   "a11y_statement": {
+    "evidence": "https://www.argyll-bute.gov.uk/my-council/plans-and-policy/accessibility-statement-argyll-and-bute-council",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 16 March 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; fo=1; rua=mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:security@argyll-bute.gov.uk",
     "pass": true,
@@ -2517,6 +3243,11 @@
    }
   },
   "S12000036": {
+   "a11y_statement": {
+    "evidence": "https://www.edinburgh.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 30 April 2025, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;aspf=s;adkim=s;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@edinburgh.gov.uk;fo=1;pct=100",
     "pass": true,
@@ -2534,6 +3265,11 @@
    }
   },
   "S12000038": {
+   "a11y_statement": {
+    "evidence": "https://www.renfrewshire.gov.uk/about-councils-new-website/accessibility-statement",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 30 November 2025."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=quarantine;pct=100;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@renfrewshire.gov.uk,mailto:esnmmkrv@ag.dmarcian-eu.com;ruf=mailto:dmarc@renfrewshire.gov.uk",
     "pass": true,
@@ -2551,6 +3287,11 @@
    }
   },
   "S12000039": {
+   "a11y_statement": {
+    "evidence": "https://www.west-dunbarton.gov.uk/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 2 February 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=quarantine; rua=mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:server.alerts@west-dunbarton.gov.uk; fo=0; adkim=r; aspf=r; pct=100; sp=reject",
     "pass": true,
@@ -2568,6 +3309,11 @@
    }
   },
   "S12000040": {
+   "a11y_statement": {
+    "evidence": "https://www.westlothian.gov.uk/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 30 November 2025."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;fo=1;pct=100;rua=mailto:56f3fe296f@rep.dmarcanalyzer.com,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:56f3fe296f@for.dmarcanalyzer.com",
     "pass": true,
@@ -2585,6 +3331,11 @@
    }
   },
   "S12000041": {
+   "a11y_statement": {
+    "evidence": "https://www.angus.gov.uk/communities_and_people/equality_diversity_and_human_rights/accessibility",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 18 August 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; fo=1; rua=mailto:dmarcreports@angus.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:dmarcreports@angus.gov.uk, mailto:dmarc-ruf@dmarc.service.gov.uk;",
     "pass": true,
@@ -2602,6 +3353,11 @@
    }
   },
   "S12000042": {
+   "a11y_statement": {
+    "evidence": "https://www.dundeecity.gov.uk/service-area/council-wide/accessibility-statement",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 7 February 2022, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; rua=mailto:a.eybeiv09@sdmarc.net,mailto:dmarc@dundeecity.gov.uk; adkim=r; aspf=r",
     "pass": true,
@@ -2618,6 +3374,11 @@
    }
   },
   "S12000045": {
+   "a11y_statement": {
+    "evidence": "https://www.eastdunbarton.gov.uk/accessibility-statement/",
+    "pass": true,
+    "reason": "Its accessibility statement was last reviewed or updated on 24 March 2026."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:4aaaa6eb@inbox.ondmarc.com;ruf=mailto:4aaaa6eb@inbox.ondmarc.com;fo=1;sp=reject",
     "pass": true,
@@ -2635,14 +3396,18 @@
    }
   },
   "S12000047": {
+   "a11y_statement": {
+    "pass": null,
+    "reason": "We couldn't find an accessibility statement linked from the homepage."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:mxb71w0c@ag.dmarcian-eu.com,mailto:dmarc_agg@vali.email;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc@fife.gov.uk;",
     "pass": true,
     "reason": ""
    },
    "https": {
-    "pass": null,
-    "reason": "We couldn't load the homepage (it returned 403)."
+    "pass": false,
+    "reason": "The homepage doesn't send a Strict-Transport-Security header."
    },
    "security_txt": {
     "pass": null,
@@ -2650,6 +3415,11 @@
    }
   },
   "S12000048": {
+   "a11y_statement": {
+    "evidence": "https://www.pkc.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 16 May 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;fo=0;sp=reject;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@pkc.gov.uk;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc@pkc.gov.uk;rf=afrf;pct=100;ri=86400;",
     "pass": true,
@@ -2667,6 +3437,11 @@
    }
   },
   "S12000049": {
+   "a11y_statement": {
+    "evidence": "https://www.glasgow.gov.uk/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 7 May 2024, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1; p=none; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@glasgow.gov.uk; ruf=mailto:dmarc@glasgow.gov.uk;fo=0",
     "pass": false,
@@ -2684,6 +3459,11 @@
    }
   },
   "S12000050": {
+   "a11y_statement": {
+    "evidence": "https://www.northlanarkshire.gov.uk/your-council/communication-and-resources/website-guidance/accessibility",
+    "pass": false,
+    "reason": "Its accessibility statement was last reviewed or updated on 23 August 2021, more than a year ago."
+   },
    "dmarc": {
     "evidence": "v=DMARC1;p=quarantine;sp=reject;pct=100;fo=1;rua=mailto:99feb8bcf90b184@rep.dmarcanalyzer.com,mailto:dmarc-rua@dmarc.service.gov.uk;ruf=mailto:99feb8bcf90b184@for.dmarcanalyzer.com",
     "pass": true,
@@ -3188,35 +3968,48 @@
   "S12000050": {
    "homepage": "https://www.northlanarkshire.gov.uk/"
   },
-  "checked": "2026-11-03"
+  "checked": "2026-11-04"
  },
  "files": [],
  "id": "website",
  "notes": [
-  "E06000002: couldn't check https",
+  "E06000002: couldn't check https, a11y_statement",
   "E06000003: couldn't check security_txt",
-  "E06000004: couldn't check https",
-  "E06000006: couldn't check https, security_txt",
-  "E06000037: couldn't check https",
-  "E06000046: couldn't check https",
-  "E08000003: couldn't check https, security_txt",
-  "E08000009: couldn't check https, security_txt",
+  "E06000004: couldn't check https, a11y_statement",
+  "E06000006: couldn't check https, security_txt, a11y_statement",
+  "E06000011: couldn't check a11y_statement",
+  "E06000013: couldn't check a11y_statement",
+  "E06000022: couldn't check a11y_statement",
+  "E06000037: couldn't check https, a11y_statement",
+  "E06000038: couldn't check a11y_statement",
+  "E06000042: couldn't check a11y_statement",
+  "E06000043: couldn't check a11y_statement",
+  "E06000045: couldn't check a11y_statement",
+  "E06000046: couldn't check https, a11y_statement",
+  "E06000050: couldn't check a11y_statement",
+  "E06000054: couldn't check https, a11y_statement",
+  "E06000055: couldn't check a11y_statement",
+  "E08000003: couldn't check https, security_txt, a11y_statement",
+  "E08000009: couldn't check https, security_txt, a11y_statement",
   "E08000011: couldn't check security_txt",
-  "E08000023: couldn't check https",
-  "E08000024: couldn't check https",
-  "E08000037: couldn't check https",
+  "E08000015: couldn't check a11y_statement",
+  "E08000022: couldn't check a11y_statement",
+  "E08000023: couldn't check https, a11y_statement",
+  "E08000024: couldn't check https, a11y_statement",
+  "E08000033: couldn't check a11y_statement",
+  "E08000037: couldn't check https, a11y_statement",
   "E09000002: couldn't check security_txt",
-  "E09000003: couldn't check security_txt",
-  "E09000010: couldn't check https, security_txt",
-  "E09000013: couldn't check https",
+  "E09000003: couldn't check security_txt, a11y_statement",
+  "E09000010: couldn't check https, security_txt, a11y_statement",
+  "E09000013: couldn't check https, a11y_statement",
   "E09000020: couldn't check security_txt",
   "E09000022: couldn't check security_txt",
-  "S12000030: couldn't check https, security_txt",
-  "S12000033: couldn't check https, security_txt",
-  "S12000047: couldn't check https, security_txt"
+  "S12000030: couldn't check https, security_txt, a11y_statement",
+  "S12000033: couldn't check https, security_txt, a11y_statement",
+  "S12000047: couldn't check security_txt, a11y_statement"
  ],
  "period": "November 2026",
- "published": "2026-11-03",
+ "published": "2026-11-04",
  "title": "Our checks of council websites",
  "trends": {},
  "url": "https://councilscompared.com/about/#our-checks",

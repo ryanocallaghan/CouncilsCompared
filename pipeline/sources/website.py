@@ -10,6 +10,10 @@ see why a council passed or failed.
   least a year, so browsers only ever connect securely.
 - security_txt: /.well-known/security.txt says how to report a security
   problem (RFC 9116): it has a Contact line and hasn't expired.
+- a11y_statement: the accessibility statement linked from the homepage says
+  it was prepared, reviewed or updated in the last year. Only the dates the
+  statement gives for itself count ("This statement was last reviewed on
+  ..."), not when the page was edited or the website tested.
 
 The homepage comes from GOV.UK's Local Links Manager. When a site blocks us
 or can't be reached, the answer is "couldn't check" (None), never a fail.
@@ -17,10 +21,12 @@ We never get past a bot challenge, log in or submit a form.
 """
 
 import datetime
+import html
 import re
 import time
 import urllib.error
 import urllib.request
+from urllib.parse import urljoin
 
 import dns.exception
 import dns.resolver
@@ -57,7 +63,7 @@ def get_page(url):
     try:
         with urllib.request.urlopen(request, timeout=30) as response:
             return (response.status, response.geturl(), {k.lower(): v for k, v in response.headers.items()},
-                    response.read(200000).decode("utf-8", errors="replace"))
+                    response.read(2_000_000).decode("utf-8", errors="replace"))
     except urllib.error.HTTPError as e:
         return e.code, url, {k.lower(): v for k, v in e.headers.items()}, ""
     except (urllib.error.URLError, TimeoutError, ConnectionError, OSError):
@@ -140,6 +146,181 @@ def security_txt(status, final, headers, text, today):
     return True, "", final
 
 
+MONTH_NAMES = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
+               "november", "december"]
+DATE = (r"(?:(?:monday|tuesday|wednesday|thursday|friday|saturday|sunday),?\s+)?"
+        r"(?:(?:the\s+)?(\d{1,2})\s*(?:st|nd|rd|th)?\s+(?:of\s+)?)?(" + "|".join(MONTH_NAMES) + r"),?\s+(\d{4})"
+        r"|(\d{1,2})/(\d{1,2})/(\d{4})")
+# "This statement was prepared on 7 May 2024. It was last reviewed on 1 February 2025." and the like:
+# the dates a statement gives for itself
+STATEMENT_DATE = re.compile(
+    r"(?:statement|\bit)\s+(?:was|has been|is):?\s+(?:first\s+|last\s+|originally\s+)?(?:prepared|reviewed|updated|revised|published|created|written)"
+    r"(?:\s+and\s+(?:last\s+)?(?:reviewed|updated))?\s*(?:on|in|:)?\s*:?\s*(" + DATE.replace("(", "(?:").replace("(?:?:", "(?:") + ")",
+    re.I)
+# Words every accessibility statement has, following the regulations' model statement
+IS_STATEMENT = re.compile(r"(fully|partially|not) compliant|compliance status|preparation of this accessibility statement",
+                          re.I)
+
+
+# Soon after the word "statement": "This statement was: originally prepared on 8 April 2020 last reviewed
+# on 16 September 2025". Not "updated" on its own, which is how pages say when they were last edited.
+NEAR_STATEMENT = re.compile(r"\b(?:prepared|reviewed|revised|created)\s+(?:on|in)?\s*:?\s*("
+                            + DATE.replace("(", "(?:").replace("(?:?:", "(?:") + ")", re.I)
+
+
+def anchors(base, page):
+    """[(url, text)] for each link on a page."""
+    return [(urljoin(base, html.unescape(href)), re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", text))).strip())
+            for href, text in re.findall(r'<a\b[^>]*?href="([^"#]+)"[^>]*>(.*?)</a>', page, re.I | re.S)]
+
+
+def plain(page):
+    """A page's text, without its scripts, styles and markup."""
+    page = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", page)
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", page)))
+
+
+def to_date(text):
+    """ "7 May 2024", "May 2024" (the end of the month) or "07/05/2024" -> a date, or None."""
+    match = re.fullmatch(DATE, text.strip().rstrip(".,"), re.I)
+    if not match:
+        return None
+    day, month, year, d2, m2, y2 = match.groups()
+    try:
+        if month:
+            month_number = MONTH_NAMES.index(month.lower()) + 1
+            if day:
+                return datetime.date(int(year), month_number, int(day))
+            following = datetime.date(int(year) + month_number // 12, month_number % 12 + 1, 1)
+            return following - datetime.timedelta(days=1)
+        return datetime.date(int(y2), int(m2), int(d2))
+    except ValueError:
+        return None
+
+
+def statement_link(base, page):
+    """The homepage's link to its accessibility statement, or None: one that says "statement" first,
+    then a plain "Accessibility" on the council's own site."""
+    site = domain(base)
+    links = [(url, text) for url, text in anchors(base, page)
+             if re.search(r"accessib", text, re.I) and len(text) < 60
+             and not re.search(r"tool|reader|recite|translate|browsealoud|options|settings|help|support|recruit|job",
+                               text, re.I)]
+
+    def rank(link):
+        url, text = link
+        return ("statement" not in text.lower(), domain(url) != site,
+                not re.fullmatch(r"(website |web )?accessibility", text, re.I))
+    links.sort(key=rank)
+    return links[0][0] if links else None
+
+
+def statement_dates(text, today):
+    """The dates a statement gives for itself, up to today."""
+    found = STATEMENT_DATE.findall(text)
+    for word in re.finditer(r"statement", text, re.I):
+        found += NEAR_STATEMENT.findall(text[word.end():word.end() + 250])
+    dates = {to_date(match) for match in found}
+    return sorted(d for d in dates if d and d <= today)
+
+
+def a11y_statement(found, today):
+    """(pass, reason, evidence) for the statement found: (url, text) or None."""
+    if not found:
+        return None, "We couldn't find an accessibility statement linked from the homepage.", ""
+    url, text = found
+    dates = statement_dates(text, today)
+    if not dates:
+        return False, "Its accessibility statement doesn't say when it was prepared or last reviewed.", url
+    latest = dates[-1]
+    if (today - latest).days > 365:
+        return False, f"Its accessibility statement was last reviewed or updated on {latest:%-d %B %Y}, more than a year ago.", url
+    return True, f"Its accessibility statement was last reviewed or updated on {latest:%-d %B %Y}.", url
+
+
+def find_statement(home, pause=PAUSE):
+    """(url, text) of the council's accessibility statement, or None if we can't find one. We try the
+    homepage's link first; then, for a homepage built by JavaScript (with no links for us to follow) or
+    a link that doesn't lead to a statement, the usual addresses and the site's sitemap."""
+    status, final, _, page = home
+    if status is None or status >= 400:
+        return None
+    site = f"https://{host(final)}"
+    tried = set()
+    for candidate in [lambda: statement_link(final, page),
+                      lambda: f"{site}/accessibility",
+                      lambda: f"{site}/accessibility-statement",
+                      lambda: from_sitemap(site, pause)]:
+        url = candidate()
+        if not url or url in tried:
+            continue
+        tried.add(url)
+        found = read_statement(url, pause)
+        if found:
+            return found
+    return None
+
+
+def read_statement(url, pause=PAUSE):
+    """(url, text) if url is an accessibility statement, or a page that links to one; else None."""
+    for _ in range(2):
+        time.sleep(pause)
+        status, final, _, page = get_page(url)
+        if status != 200:
+            return None
+        text = plain(page)
+        if STATEMENT_DATE.search(text):
+            return final, text
+        if IS_STATEMENT.search(text):
+            # A statement over several pages, with its dates on a later one
+            return final, text + " " + " ".join(rest_of_statement(final, page, pause))
+        # A page about accessibility that links to the statement itself
+        onward = [u for u, label in anchors(final, page)
+                  if re.search(r"statement|technical information", label, re.I) and re.search(r"accessib|website", label, re.I)
+                  and u.rstrip("/") != final.rstrip("/")]
+        if not onward:
+            return None
+        url = onward[0]
+    return None
+
+
+def from_sitemap(site, pause=PAUSE):
+    """The address in a site's sitemap that looks most like its accessibility statement, or None."""
+    time.sleep(pause)
+    robots = get_page(f"{site}/robots.txt")
+    maps = re.findall(r"(?im)^sitemap:\s*(\S+)", robots[3]) if robots[0] == 200 else []
+    found = []
+    for sitemap in (maps or [f"{site}/sitemap.xml"])[:2]:
+        time.sleep(pause)
+        locations = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", get_page(sitemap)[3])
+        for part in [loc for loc in locations if loc.endswith(".xml")][:8]:  # a sitemap of sitemaps
+            time.sleep(pause)
+            locations += re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", get_page(part)[3])
+        found += [loc for loc in locations if re.search(r"accessibility-statement|accessibility/?$", loc, re.I)]
+    found.sort(key=lambda loc: ("statement" not in loc.lower(), len(loc)))
+    return found[0] if found else None
+
+
+def rest_of_statement(url, page, pause=PAUSE, most=6):
+    """The text of the other pages of a statement split over several, found by their addresses
+    starting with the statement's own (/accessibility/2, /accessibility/preparation)."""
+    base = re.sub(r"/[^/]*/?$", "/", url) if re.search(r"/\d+/?$", url) else url.rstrip("/") + "/"
+    pages = []
+    for other, _ in anchors(url, page):
+        other = other.split("?")[0]
+        if other.startswith(base) and other.rstrip("/") != url.rstrip("/") and other not in pages:
+            pages.append(other)
+    texts = []
+    for other in pages[:most]:
+        time.sleep(pause)
+        status, _, _, more = get_page(other)
+        if status == 200:
+            texts.append(plain(more))
+            if STATEMENT_DATE.search(texts[-1]):
+                break
+    return texts
+
+
 def fetch_all(homepages, pause=PAUSE, today=None):
     """{ons code: {check: (pass, reason, evidence)}} for each council's homepage."""
     today = today or datetime.date.today()
@@ -154,6 +335,8 @@ def fetch_all(homepages, pause=PAUSE, today=None):
             "dmarc": dmarc(dmarc_records(domain(homepage))),
             "https": hsts(*home[:3]),
             "security_txt": security_txt(*security, today),
+            "a11y_statement": a11y_statement(find_statement(home, pause), today) if home[0] and home[0] < 400
+            else (None, "We couldn't load the homepage" + (f" (it returned {home[0]})." if home[0] else "."), ""),
         }
     return found
 
