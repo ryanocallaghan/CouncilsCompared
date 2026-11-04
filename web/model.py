@@ -70,9 +70,10 @@ AREAS = [
      "whether its email is protected from being faked, whether its website makes browsers always connect "
      "securely, and whether it says how to report a security problem."),
     ("openness", "Openness",
-     "Whether the council publishes the information it should, in a form other people can use. Planning data "
-     "is what MHCLG's Planning Data platform collects from each council: conservation areas, Article 4 "
-     "directions, tree preservation orders and listed building outlines."),
+     "Whether the council publishes the information it should, in a form other people can use, and has its "
+     "accounts audited on time. Planning data is what MHCLG's Planning Data platform collects from each "
+     "council: conservation areas, Article 4 directions, tree preservation orders and listed building "
+     "outlines."),
 ]
 
 # Where a nation's figures need a different explanation from England's
@@ -254,6 +255,18 @@ CHECKS = [
           "built on, in a standard form. This checks whether MHCLG's Planning Data platform collects one from "
           "the council. For a council created since 2019, the registers of the councils it replaced count if "
           "together they cover the whole area."),
+    Check("accounts_audited", "openness", "Had its latest accounts audited by the deadline",
+          "accounts audited on time", "psaa",
+          "Every council's accounts are audited each year. After years of delays, the law now sets a deadline "
+          "for each year's audit, such as 27 February 2026 for 2024-25. This uses the audit body PSAA's monthly "
+          "data, for the latest year whose deadline has passed. It passes if the auditor signed their opinion by "
+          "the deadline, including where they couldn't give full assurance (a “disclaimed” opinion) because of "
+          "the backlog from earlier years."),
+    Check("ico_action", "security", "No data protection action by the ICO in the last three years", "ICO action",
+          "ico",
+          "The Information Commissioner's Office enforces data protection law, and publishes the action it takes: "
+          "reprimands, enforcement notices, fines and prosecutions. This checks its list for any action against "
+          "the council in the last three years.", nations=("England", "Scotland")),
     Check("trackers", "security", "Waits for you to choose before setting tracking cookies",
           "tracking cookies before you choose", "cookies",
           "Cookies from analytics and advertising services, such as Google Analytics, Meta or Hotjar, follow what "
@@ -794,6 +807,8 @@ def nation_source(source_id, nation="England"):
 def nation_sources(nation):
     """The sources a nation's pages use."""
     used = {m.source_for(nation) for m in MEASURES if nation in m.nations} | {"population"}
+    # Checks from published data (our own checks are explained on the About page instead)
+    used |= {k.source for k in CHECKS if nation in k.nations and not k.own}
     return used | PAGE_SOURCES.get(nation, set())
 
 

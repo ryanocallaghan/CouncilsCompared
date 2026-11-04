@@ -46,6 +46,8 @@ STEPS = [
     ("website", "website", "fetch"),  # our own checks: needs the homepages from local_links
     ("cookies", "cookies", "fetch"),  # our own checks, in a browser: needs the homepages too
     ("planning_data", "planning_data", "fetch"),
+    ("psaa", "psaa", "fetch"),
+    ("ico", "ico", "fetch"),
     ("area_bands", "area_bands", "fetch"),
     ("lgbf", "lgbf", "fetch"),
     ("spso", "spso", "fetch"),

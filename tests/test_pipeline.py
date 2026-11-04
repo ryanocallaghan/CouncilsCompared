@@ -426,3 +426,61 @@ def test_cookie_checks_run_in_a_browser_for_each_homepage(monkeypatch):
     assert result.checks["E09000023"]["reject_cookies"]["pass"] is True
     assert result.checks["E08000003"]["trackers"]["pass"] is None
     assert any(note.startswith("E08000003: couldn't check cookies") for note in result.notes)
+
+
+def test_psaa_finds_the_newest_month_and_each_years_deadline():
+    import datetime
+    from pipeline.sources import psaa
+    listing = ('<a href="https://www.psaa.co.uk/managing-audit-quality/monthly-audit-opinion-data/august-2026-audit-opinion-data/">'
+               '<a href="https://www.psaa.co.uk/managing-audit-quality/monthly-audit-opinion-data/september-2026-audit-opinion-data/">'
+               '<a href="https://www.psaa.co.uk/managing-audit-quality/monthly-audit-opinion-data/december-2025-audit-opinion-data/">')
+    assert psaa.latest_month(listing)[:2] == (2026, 9)
+    page = ("<td>2025/26</td><td>31 January 2027</td><td>460 (534)</td>"
+            "<td>2024/25</td><td>27 Feb 2026</td><td>457 (531)</td><td>2023/24</td><td>28 Feb 2025</td>")
+    assert psaa.backstops(page) == {"2025-2026": datetime.date(2027, 1, 31), "2024-2025": datetime.date(2026, 2, 27),
+                                    "2023-2024": datetime.date(2025, 2, 28)}
+
+
+@pytest.mark.parametrize("status, when, passed, says", [
+    ("Delivered by backstop", "2026-02-20", True, "on 20 February 2026, by the deadline"),
+    ("Post backstop opinion delivered", "2026-04-15", False, "on 15 April 2026, after the deadline"),
+    ("Unsigned", "-", False, "still hadn't signed off its 2024-25 accounts"),
+])
+def test_psaa_accounts_audited_by_the_deadline(status, when, passed, says):
+    import datetime
+    from pipeline.sources import psaa
+    result, reason = psaa.judge(status, psaa.signed(when), "2024-2025", datetime.date(2026, 2, 27))
+    assert result is passed and says in reason
+
+
+def test_ico_action_in_the_last_three_years(monkeypatch):
+    import datetime
+    from pipeline.sources import ico
+
+    def item(when, kind, title, url):
+        return {"filterItemMetaData": f"{when}, {kind}, Local government", "title": title, "url": url}
+    pages = {"local-government": [
+        item("16 May 2025", "Reprimands", "London Borough of Hammersmith and Fulham", "/e/2025/05/hf/"),
+        item("16 August 2023", "Reprimands", "London Borough of Lewisham", "/e/2023/08/lewisham/"),  # too long ago
+        item("29 November 2025", "Reprimands", "Charnwood Borough Council", "/e/2025/11/charnwood/"),  # not on the site
+    ], "social-care": [item("27 August 2025", "Enforcement notices", "Bristol City Council", "/e/2025/08/bristol/")]}
+
+    def search(sector, page=1):
+        return {"results": pages.get(sector, []), "pagination": {"hasMore": False}}
+    monkeypatch.setattr(ico, "search", search)
+    monkeypatch.setattr(ico.time, "sleep", lambda seconds: None)
+
+    class Today(datetime.date):
+        @classmethod
+        def today(cls):
+            return cls(2026, 11, 4)
+    monkeypatch.setattr(ico.datetime, "date", Today)
+    councils = {"E09000013": "Hammersmith and Fulham", "E09000023": "Lewisham", "E06000023": "Bristol, City of"}
+    from pipeline.names import Matcher
+    result = ico.fetch({"matcher": Matcher(councils), "population": {code: 1 for code in councils}})
+    assert result.checks["E09000013"]["ico_action"] == {
+        "pass": False, "reason": "The ICO took action against the council: a reprimand on 16 May 2025.",
+        "evidence": "https://ico.org.uk/e/2025/05/hf/"}
+    assert result.checks["E09000023"]["ico_action"]["pass"] is True
+    assert "an enforcement notice on 27 August 2025" in result.checks["E06000023"]["ico_action"]["reason"]
+    assert result.period == "November 2023 to November 2026"
