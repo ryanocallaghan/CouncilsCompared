@@ -331,7 +331,7 @@ def test_our_checks_record_answers_reasons_and_evidence(monkeypatch):
         "https://www.haringey.gov.uk/": (403, "https://www.haringey.gov.uk/", {}, ""),
         "https://www.haringey.gov.uk/.well-known/security.txt": (403, "https://www.haringey.gov.uk/x", {}, ""),
     }
-    monkeypatch.setattr(website, "get_page", pages.get)
+    monkeypatch.setattr(website, "get_page", lambda url: pages.get(url, (404, url, {}, "")))
     monkeypatch.setattr(website, "dmarc_records", lambda name: {"lewisham.gov.uk": ["v=DMARC1; p=reject"]}.get(name, []))
     monkeypatch.setattr(website.time, "sleep", lambda seconds: None)
     links = Result(id="local_links", title="", url="", period="", extra={
@@ -343,7 +343,7 @@ def test_our_checks_record_answers_reasons_and_evidence(monkeypatch):
     haringey = result.checks["E09000014"]
     assert haringey["dmarc"]["pass"] is False  # DNS still answers when the website blocks us
     assert haringey["https"]["pass"] is None and haringey["security_txt"]["pass"] is None
-    assert any("E09000014: couldn't check https, security_txt" == note for note in result.notes)
+    assert any("E09000014: couldn't check https, security_txt, a11y_statement" == note for note in result.notes)
     assert any("E09000001" in note for note in result.notes)  # no homepage
 
 
@@ -484,3 +484,88 @@ def test_ico_action_in_the_last_three_years(monkeypatch):
     assert result.checks["E09000023"]["ico_action"]["pass"] is True
     assert "an enforcement notice on 27 August 2025" in result.checks["E06000023"]["ico_action"]["reason"]
     assert result.period == "November 2023 to November 2026"
+
+
+@pytest.mark.parametrize("text, latest", [
+    ("This statement was prepared on 23 September 2020. It was last reviewed on 1 February 2025.", "2025-02-01"),
+    ("This statement was last updated on 12 November 2025.", "2025-11-12"),
+    ("This statement was last reviewed in April 2025.", "2025-04-30"),  # a month: its last day
+    ("This statement was first prepared on 13 July 2023.", "2023-07-13"),
+    ("This statement was prepared January 2020. It was last reviewed on 28 January 2025.", "2025-01-28"),
+    ("This accessibility statement was last updated on 26 August 2026.", "2026-08-26"),
+    ("Self-evaluation Date: This statement was created on 4 September 2025", "2025-09-04"),
+    ("This statement was prepared on 29/05/2026.", "2026-05-29"),
+    ("This statement was published on Monday 18 November 2024", "2024-11-18"),
+    ("This statement was prepared on 16 th April 2020", "2020-04-16"),
+    ("This statement was last reviewed on the 3rd of March 2026", "2026-03-03"),
+    ("This statement was last reviewed on 3rd of March 2026", "2026-03-03"),
+    ("Page last updated: 23 October 2026", None),  # when the page was edited
+    ("This website was last tested on 29 May 2026", None),  # when the website was tested
+    ("It was last reviewed on 1 December 2026.", None),  # after today
+])
+def test_accessibility_statements_are_dated_by_what_they_say_about_themselves(text, latest):
+    import datetime
+    from pipeline.sources import website
+    dates = website.statement_dates(text, datetime.date(2026, 11, 4))
+    assert (dates[-1].isoformat() if dates else None) == latest
+
+
+def test_accessibility_statement_needs_reviewing_every_year():
+    import datetime
+    from pipeline.sources import website
+    today = datetime.date(2026, 11, 4)
+    url = "https://x.gov.uk/accessibility"
+    passed, reason, evidence = website.a11y_statement((url, "This statement was last reviewed on 1 July 2026."), today)
+    assert passed is True and "1 July 2026" in reason and evidence == url
+    passed, reason, _ = website.a11y_statement((url, "This statement was last reviewed on 2 October 2025."), today)
+    assert passed is False and "more than a year ago" in reason
+    assert website.a11y_statement((url, "Compliance status: partially compliant."), today)[0] is False  # no date
+    assert website.a11y_statement(None, today)[0] is None  # not found: couldn't check
+
+
+def test_finding_an_accessibility_statement(monkeypatch):
+    from pipeline.sources import website
+    monkeypatch.setattr(website.time, "sleep", lambda seconds: None)
+    pages = {
+        # A page about accessibility that links on to the statement
+        "https://x.gov.uk/accessibility": '<p>About accessibility</p><a href="/accessibility/statement">Accessibility statement for this website</a>',
+        # A statement over several pages, dated on the last
+        "https://x.gov.uk/accessibility/statement": '<p>This website is partially compliant.</p><a href="/accessibility/statement/2">Next</a>',
+        "https://x.gov.uk/accessibility/statement/2": "<p>This statement was last reviewed on 3 March 2026.</p>",
+    }
+    monkeypatch.setattr(website, "get_page", lambda url: (200, url, {}, pages[url]) if url in pages else (404, url, {}, ""))
+    home = (200, "https://x.gov.uk/", {}, '<a href="/accessibility-tools">Accessibility tools</a><a href="/accessibility">Accessibility</a>')
+    url, text = website.find_statement(home)
+    assert url == "https://x.gov.uk/accessibility/statement" and "3 March 2026" in text
+    assert website.find_statement((200, "https://y.gov.uk/", {}, "<p>No links</p>")) is None
+    # A homepage built by JavaScript: the usual address
+    url, _ = website.find_statement((200, "https://x.gov.uk/", {}, "<p>Loading…</p>"))
+    assert url == "https://x.gov.uk/accessibility/statement"
+
+
+def test_accessibility_statements_in_other_words_and_links_to_the_wrong_page():
+    import datetime
+    from pipeline.sources import website
+    text = ("Northumberland County Council runs this website. This statement was: originally prepared on 8 April 2020 "
+            "last reviewed on 16 September 2025 last tested internally on 4 September 2025")
+    assert website.statement_dates(text, datetime.date(2026, 11, 4))[-1] == datetime.date(2025, 9, 16)
+    # A page's footer isn't the statement's review
+    text = "This statement covers our main website. Page last updated: 23 October 2026"
+    assert website.statement_dates(text, datetime.date(2026, 11, 4)) == []
+    home = ('<a href="https://jobs.coventry.gov.uk/accessibility">Recruitment process accessibility</a>'
+            '<a href="/translate">Accessibility support</a><a href="/accessibilitystatement">Accessibility</a>')
+    assert website.statement_link("https://www.coventry.gov.uk/", home) == "https://www.coventry.gov.uk/accessibilitystatement"
+
+
+def test_finding_an_accessibility_statement_through_the_sitemap(monkeypatch):
+    from pipeline.sources import website
+    monkeypatch.setattr(website.time, "sleep", lambda seconds: None)
+    pages = {
+        "https://z.gov.uk/robots.txt": "Sitemap: https://z.gov.uk/sitemap.xml",
+        "https://z.gov.uk/sitemap.xml": "<loc>https://z.gov.uk/libraries/accessible-reading</loc>"
+                                        "<loc>https://z.gov.uk/help/accessibility-statement</loc>",
+        "https://z.gov.uk/help/accessibility-statement": "<p>This statement was last reviewed on 2 June 2026.</p>",
+    }
+    monkeypatch.setattr(website, "get_page", lambda url: (200, url, {}, pages[url]) if url in pages else (404, url, {}, ""))
+    url, text = website.find_statement((200, "https://z.gov.uk/", {}, "<div id=app></div>"))
+    assert url == "https://z.gov.uk/help/accessibility-statement" and "2 June 2026" in text
