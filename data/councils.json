@@ -114,6 +114,18 @@
    "period": "November 2026",
    "published": "2026-11-03"
   },
+  "psaa": {
+   "title": "PSAA: monthly audit opinion data",
+   "url": "https://www.psaa.co.uk/managing-audit-quality/monthly-audit-opinion-data/september-2026-audit-opinion-data/",
+   "period": "2024-25 accounts, as at September 2026",
+   "published": ""
+  },
+  "ico": {
+   "title": "ICO: enforcement action",
+   "url": "https://ico.org.uk/action-weve-taken/enforcement/",
+   "period": "November 2023 to November 2026",
+   "published": "2026-11-04"
+  },
   "area_bands": {
    "title": "Valuation Office Agency: Council Tax: stock of properties, 2026",
    "url": "https://www.gov.uk/government/statistics/council-tax-stock-of-properties-2026",
@@ -230,6 +242,10 @@
      "evidence": "_ga on aberdeencity.gov.uk, _ga_06J3LQRLNB on aberdeencity.gov.uk",
      "pass": false,
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -365,6 +381,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -496,6 +516,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -620,6 +644,10 @@
      "reason": ""
     },
     "trackers": {
+     "pass": true,
+     "reason": ""
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -767,6 +795,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising, Microsoft Clarity, Microsoft advertising and YouTube."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -1053,6 +1089,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -1317,6 +1361,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 1 December 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -1601,6 +1653,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 29 September 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -1872,6 +1932,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -2144,6 +2212,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Meta (Facebook) and Siteimprove Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 17 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -2425,6 +2501,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -2696,6 +2780,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -2989,6 +3081,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -3259,6 +3359,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 30 January 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -3549,6 +3657,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -3790,6 +3906,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -4059,6 +4183,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 10 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -4345,6 +4477,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -4620,6 +4760,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -4908,6 +5056,15 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 January 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2025/09/bristol-city-council/",
+     "pass": false,
+     "reason": "The ICO took action against the council: an enforcement notice on 27 August 2025."
     }
    },
    "spend": {
@@ -5173,6 +5330,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics, Google advertising and Hotjar."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -5449,6 +5614,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -5692,6 +5865,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -5963,6 +6144,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -6237,6 +6426,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Hotjar."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -6520,6 +6717,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 17 October 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -6797,6 +7002,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google advertising."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -7081,6 +7294,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 10 December 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -7349,6 +7570,11 @@
      "evidence": "_ga on edinburgh.gov.uk, _ga_ENB58TQFF8 on edinburgh.gov.uk, _gat_UA-11731499-1 on edinburgh.gov.uk, _gid on edinburgh.gov.uk, VISITOR_INFO1_LIVE on youtube.com, VISITOR_PRIVACY_METADATA on youtube.com, YSC on youtube.com, __Secure-ROLLOUT_TOKEN on youtube.com, __Secure-YNID on youtube.com",
      "pass": false,
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics and YouTube."
+    },
+    "ico_action": {
+     "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2025/02/city-of-edinburgh-council/",
+     "pass": false,
+     "reason": "The ICO took action against the council: a reprimand on 3 February 2025."
     }
    },
    "spend": {
@@ -7476,6 +7702,10 @@
      "reason": ""
     },
     "trackers": {
+     "pass": true,
+     "reason": ""
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -7628,6 +7858,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 14 January 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -7901,6 +8139,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 November 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -8180,6 +8426,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 18 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -8453,6 +8707,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -8734,6 +8996,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform collects registers for only part of the area, from 2 of the 3 councils it replaced in 2023, and none from the council itself."
+    },
+    "accounts_audited": {
+     "pass": false,
+     "reason": "Its auditor signed off its 2024-25 accounts on 13 March 2026, after the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {},
@@ -8991,6 +9261,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 23 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -9279,6 +9557,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -9569,6 +9855,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 9 December 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -9842,6 +10136,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -10094,6 +10396,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": false,
+     "reason": "Its auditor still hadn't signed off its 2024-25 accounts, due by 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {},
@@ -10344,6 +10654,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -10469,6 +10783,10 @@
      "reason": ""
     },
     "trackers": {
+     "pass": true,
+     "reason": ""
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -10620,6 +10938,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -10894,6 +11220,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -11025,6 +11355,10 @@
      "evidence": "nmstat on eastdunbarton.gov.uk",
      "pass": false,
      "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -11153,6 +11487,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -11279,6 +11617,10 @@
      "reason": ""
     },
     "trackers": {
+     "pass": true,
+     "reason": ""
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -11427,6 +11769,14 @@
      "reason": "We couldn't load the homepage."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 20 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -11701,6 +12051,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -11967,6 +12325,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -12098,6 +12460,10 @@
      "reason": ""
     },
     "trackers": {
+     "pass": true,
+     "reason": ""
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -12243,6 +12609,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics and Hotjar."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 19 December 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -12498,6 +12872,11 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2025/02/glasgow-city-council/",
+     "pass": false,
+     "reason": "The ICO took action against the council: a reprimand on 4 February 2025."
     }
    },
    "spend": {
@@ -12639,6 +13018,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -12926,6 +13313,15 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2024/07/london-borough-of-hackney-1/",
+     "pass": false,
+     "reason": "The ICO took action against the council: a reprimand on 5 July 2024."
     }
    },
    "spend": {
@@ -13192,6 +13588,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 11 November 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -13464,6 +13868,15 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 30 October 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2025/05/london-borough-of-hammersmith-and-fulham/",
+     "pass": false,
+     "reason": "The ICO took action against the council: a reprimand on 16 May 2025."
     }
    },
    "spend": {
@@ -13744,6 +14157,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -14025,6 +14446,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -14283,6 +14712,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -14574,6 +15011,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -14851,6 +15296,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 29 September 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -15112,6 +15565,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -15261,6 +15718,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -15542,6 +16007,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -15794,6 +16267,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -15936,6 +16413,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -16210,6 +16695,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -16495,6 +16988,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 6 November 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -16762,6 +17263,14 @@
      "reason": "We couldn't load the homepage (it returned 403)."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 11 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -17048,6 +17557,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 18 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -17322,6 +17839,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 11 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -17600,6 +18125,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 29 January 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -17887,6 +18420,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -18165,6 +18706,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics and Google advertising."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 21 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -18451,6 +19000,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -18729,6 +19286,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 10 December 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -19000,6 +19565,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 20 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -19274,6 +19847,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Microsoft Clarity, Microsoft advertising and Snapchat."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -19552,6 +20133,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -19837,6 +20426,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -20103,6 +20700,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 16 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -20380,6 +20985,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": false,
+     "reason": "Its auditor signed off its 2024-25 accounts on 3 March 2026, after the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -20644,6 +21257,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -20792,6 +21409,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -21054,6 +21679,10 @@
      "evidence": "_ga on moray.gov.uk",
      "pass": false,
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -21184,6 +21813,10 @@
      "evidence": "_ga on cne-siar.gov.uk, _ga_RPNZ18Q728 on cne-siar.gov.uk",
      "pass": false,
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -21337,6 +21970,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -21625,6 +22266,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -21891,6 +22540,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -22037,6 +22690,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 22 December 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -22306,6 +22967,10 @@
      "evidence": "_ga on www.northlanarkshire.gov.uk, _ga_5RTC1195TY on www.northlanarkshire.gov.uk",
      "pass": false,
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -22443,6 +23108,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 5 January 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -22723,6 +23396,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -22975,6 +23656,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 November 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -23247,6 +23936,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -23527,6 +24224,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform collects registers for only part of the area, from 5 of the 7 councils it replaced in 2023, and none from the council itself."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -23769,6 +24474,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 2 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -24038,6 +24751,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": false,
+     "reason": "Its auditor signed off its 2024-25 accounts on 15 April 2026, after the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -24292,6 +25013,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 16 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -24561,6 +25290,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -24697,6 +25430,10 @@
      "reason": ""
     },
     "trackers": {
+     "pass": true,
+     "reason": ""
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -24841,6 +25578,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 10 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -25119,6 +25864,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 23 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -25379,6 +26132,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -25677,6 +26438,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -25963,6 +26732,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -26231,6 +27008,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -26503,6 +27288,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -26645,6 +27434,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 23 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -26916,6 +27713,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 19 December 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -27193,6 +27998,14 @@
      "reason": "We couldn't load the homepage (it returned 403)."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 9 December 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -27476,6 +28289,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 31 October 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -27754,6 +28575,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -28026,6 +28855,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {},
@@ -28272,6 +29109,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -28410,6 +29251,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 20 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -28695,6 +29544,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": false,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 March 2026, after the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -28963,6 +29820,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -29115,6 +29976,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 10 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -29393,6 +30262,14 @@
      "reason": "We couldn't load the homepage (it returned 403)."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -29681,6 +30558,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 21 November 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -29963,6 +30848,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform collects registers for only part of the area, from 3 of the 4 councils it replaced in 2023, and none from the council itself."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -30196,6 +31089,10 @@
      "evidence": "_ga on south-ayrshire.gov.uk, _gat_UA-4728307-1 on south-ayrshire.gov.uk, _gid on south-ayrshire.gov.uk",
      "pass": false,
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -30337,6 +31234,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 18 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -30589,6 +31494,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -30732,6 +31641,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 30 January 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -31021,6 +31938,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -31299,6 +32224,15 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 13 January 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2024/10/southend-on-sea-city-council/",
+     "pass": false,
+     "reason": "The ICO took action against the council: a reprimand on 14 October 2024."
     }
    },
    "spend": {
@@ -31581,6 +32515,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 22 December 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -31855,6 +32797,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 November 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -32124,6 +33074,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -32275,6 +33229,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 12 December 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -32539,6 +33501,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -32825,6 +33795,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": false,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 March 2026, after the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -33096,6 +34074,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google advertising."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 13 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -33383,6 +34369,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 17 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -33664,6 +34658,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 21 January 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -33937,6 +34939,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -34213,6 +35223,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 10 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -34506,6 +35524,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": false,
+     "reason": "Its auditor still hadn't signed off its 2024-25 accounts, due by 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -34772,6 +35798,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -35052,6 +36086,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 11 December 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -35320,6 +36362,14 @@
     "brownfield": {
      "pass": false,
      "reason": "The Planning Data platform doesn't collect one from the council. If the council publishes one on its own website, it isn't in a form the platform can use."
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -35593,6 +36643,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -35878,6 +36936,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 28 November 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -36170,6 +37236,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -36438,6 +37512,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 23 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -36701,6 +37783,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Siteimprove Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": false,
+     "reason": "Its auditor still hadn't signed off its 2024-25 accounts, due by 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -36979,6 +38069,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -37234,6 +38332,10 @@
     "trackers": {
      "pass": true,
      "reason": ""
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -37366,6 +38468,10 @@
      "evidence": "_hjSessionUser_1177707 on westlothian.gov.uk, _hjSession_1177707 on westlothian.gov.uk",
      "pass": false,
      "reason": "Before we chose anything, the homepage set cookies from Hotjar."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -37512,6 +38618,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -37771,6 +38885,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics and Google advertising."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 12 November 2025, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -38052,6 +39174,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -38316,6 +39446,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -38601,6 +39739,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 20 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -38871,6 +40017,14 @@
      "reason": "Before we chose anything, the homepage set cookies from Google Analytics."
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }
@@ -39151,6 +40305,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 23 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -39429,6 +40591,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -39704,6 +40874,14 @@
     "brownfield": {
      "pass": true,
      "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 20 January 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
+     "pass": true,
+     "reason": ""
     }
    },
    "spend": {
@@ -39976,6 +41154,14 @@
      "reason": ""
     },
     "brownfield": {
+     "pass": true,
+     "reason": ""
+    },
+    "accounts_audited": {
+     "pass": true,
+     "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+    },
+    "ico_action": {
      "pass": true,
      "reason": ""
     }

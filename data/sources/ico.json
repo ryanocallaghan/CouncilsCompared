@@ -1,0 +1,992 @@
+{
+ "checks": {
+  "E06000001": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000002": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000003": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000004": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000005": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000006": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000007": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000008": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000009": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000010": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000011": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000012": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000013": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000014": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000015": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000016": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000017": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000018": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000019": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000020": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000021": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000022": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000023": {
+   "ico_action": {
+    "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2025/09/bristol-city-council/",
+    "pass": false,
+    "reason": "The ICO took action against the council: an enforcement notice on 27 August 2025."
+   }
+  },
+  "E06000024": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000025": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000026": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000027": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000030": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000031": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000032": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000033": {
+   "ico_action": {
+    "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2024/10/southend-on-sea-city-council/",
+    "pass": false,
+    "reason": "The ICO took action against the council: a reprimand on 14 October 2024."
+   }
+  },
+  "E06000034": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000035": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000036": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000037": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000038": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000039": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000040": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000041": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000042": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000043": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000044": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000045": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000046": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000047": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000049": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000050": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000051": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000052": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000054": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000055": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000056": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000057": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000058": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000059": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000060": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000061": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000062": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000063": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000064": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000065": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E06000066": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000001": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000002": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000003": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000004": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000005": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000006": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000007": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000008": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000009": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000010": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000011": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000012": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000013": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000014": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000015": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000016": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000017": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000018": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000019": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000021": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000022": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000023": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000024": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000025": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000026": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000027": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000028": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000029": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000030": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000031": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000032": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000033": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000034": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000035": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000036": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E08000037": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000002": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000003": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000004": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000005": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000006": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000007": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000008": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000009": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000010": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000011": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000012": {
+   "ico_action": {
+    "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2024/07/london-borough-of-hackney-1/",
+    "pass": false,
+    "reason": "The ICO took action against the council: a reprimand on 5 July 2024."
+   }
+  },
+  "E09000013": {
+   "ico_action": {
+    "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2025/05/london-borough-of-hammersmith-and-fulham/",
+    "pass": false,
+    "reason": "The ICO took action against the council: a reprimand on 16 May 2025."
+   }
+  },
+  "E09000014": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000015": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000016": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000017": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000018": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000019": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000020": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000021": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000022": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000023": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000024": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000025": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000026": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000027": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000028": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000029": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000030": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000031": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000032": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "E09000033": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000005": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000006": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000008": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000010": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000011": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000013": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000014": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000017": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000018": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000019": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000020": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000021": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000023": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000026": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000027": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000028": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000029": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000030": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000033": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000034": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000035": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000036": {
+   "ico_action": {
+    "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2025/02/city-of-edinburgh-council/",
+    "pass": false,
+    "reason": "The ICO took action against the council: a reprimand on 3 February 2025."
+   }
+  },
+  "S12000038": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000039": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000040": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000041": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000042": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000045": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000047": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000048": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  },
+  "S12000049": {
+   "ico_action": {
+    "evidence": "https://ico.org.uk/action-weve-taken/enforcement/2025/02/glasgow-city-council/",
+    "pass": false,
+    "reason": "The ICO took action against the council: a reprimand on 4 February 2025."
+   }
+  },
+  "S12000050": {
+   "ico_action": {
+    "pass": true,
+    "reason": ""
+   }
+  }
+ },
+ "extra": {},
+ "files": [],
+ "id": "ico",
+ "notes": [],
+ "period": "November 2023 to November 2026",
+ "published": "2026-11-04",
+ "title": "ICO: enforcement action",
+ "trends": {},
+ "url": "https://ico.org.uk/action-weve-taken/enforcement/",
+ "values": {}
+}

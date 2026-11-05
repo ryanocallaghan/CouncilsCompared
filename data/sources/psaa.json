@@ -1,0 +1,799 @@
+{
+ "checks": {
+  "E06000001": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000002": {
+   "accounts_audited": {
+    "pass": false,
+    "reason": "Its auditor signed off its 2024-25 accounts on 3 March 2026, after the deadline of 27 February 2026."
+   }
+  },
+  "E06000003": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000004": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000005": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 23 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000006": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 11 November 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000007": {
+   "accounts_audited": {
+    "pass": false,
+    "reason": "Its auditor still hadn't signed off its 2024-25 accounts, due by 27 February 2026."
+   }
+  },
+  "E06000008": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000009": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000010": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 11 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000011": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 20 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000012": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 22 December 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000013": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 5 January 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000014": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000015": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000016": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000017": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 31 October 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000018": {
+   "accounts_audited": {
+    "pass": false,
+    "reason": "Its auditor signed off its 2024-25 accounts on 15 April 2026, after the deadline of 27 February 2026."
+   }
+  },
+  "E06000019": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 29 September 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000020": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 10 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000021": {
+   "accounts_audited": {
+    "pass": false,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 March 2026, after the deadline of 27 February 2026."
+   }
+  },
+  "E06000022": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 29 September 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000023": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 January 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000024": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 November 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000025": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 18 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000026": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 23 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000027": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000030": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 21 January 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000031": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 10 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000032": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000033": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 13 January 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000034": {
+   "accounts_audited": {
+    "pass": false,
+    "reason": "Its auditor still hadn't signed off its 2024-25 accounts, due by 27 February 2026."
+   }
+  },
+  "E06000035": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000036": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000037": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000038": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000039": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000040": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000041": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000042": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000043": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000044": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000045": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000046": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000047": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 November 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000049": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000050": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 10 December 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000051": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 10 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000052": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 14 January 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000054": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 20 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000055": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000056": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 17 October 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000057": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 2 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000058": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000059": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000060": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000061": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000062": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000063": {
+   "accounts_audited": {
+    "pass": false,
+    "reason": "Its auditor signed off its 2024-25 accounts on 13 March 2026, after the deadline of 27 February 2026."
+   }
+  },
+  "E06000064": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000065": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E06000066": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000001": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 30 January 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000002": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000003": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000004": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 16 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000005": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 19 December 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000006": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000007": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 12 December 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000008": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000009": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000010": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000011": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 29 January 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000012": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 20 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000013": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 November 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000014": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 20 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000015": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 23 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000016": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 1 December 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000017": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 9 December 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000018": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 9 December 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000019": {
+   "accounts_audited": {
+    "pass": false,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 March 2026, after the deadline of 27 February 2026."
+   }
+  },
+  "E08000021": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000022": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000023": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 30 January 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000024": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 13 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000025": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000026": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 18 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000027": {
+   "accounts_audited": {
+    "pass": false,
+    "reason": "Its auditor still hadn't signed off its 2024-25 accounts, due by 27 February 2026."
+   }
+  },
+  "E08000028": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000029": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 21 November 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000030": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 28 November 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000031": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 20 January 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000032": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 10 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000033": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000034": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 11 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000035": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 21 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000036": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E08000037": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 19 December 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000002": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000003": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 24 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000004": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 17 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000005": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000006": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000007": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000008": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000009": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000010": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000011": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000012": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000013": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 30 October 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000014": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000015": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000016": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000017": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000018": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000019": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000020": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 6 November 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000021": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 18 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000022": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000023": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 10 December 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000024": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 16 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000025": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 27 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000026": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 26 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000027": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 23 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000028": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 22 December 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000029": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 17 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000030": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 11 December 2025, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000031": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 25 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000032": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 23 February 2026, by the deadline of 27 February 2026."
+   }
+  },
+  "E09000033": {
+   "accounts_audited": {
+    "pass": true,
+    "reason": "Its auditor signed off its 2024-25 accounts on 12 November 2025, by the deadline of 27 February 2026."
+   }
+  }
+ },
+ "extra": {},
+ "files": [
+  "https://www.psaa.co.uk/managing-audit-quality/monthly-audit-opinion-data/september-2026-audit-opinion-data/",
+  "https://www.psaa.co.uk/wp-content/uploads/2026/10/Opinion-data-detailed-30Sep2026-website.xlsx"
+ ],
+ "id": "psaa",
+ "notes": [
+  "No council for 'Council of the Isles of Scilly'"
+ ],
+ "period": "2024-25 accounts, as at September 2026",
+ "published": "",
+ "title": "PSAA: monthly audit opinion data",
+ "trends": {},
+ "url": "https://www.psaa.co.uk/managing-audit-quality/monthly-audit-opinion-data/september-2026-audit-opinion-data/",
+ "values": {}
+}

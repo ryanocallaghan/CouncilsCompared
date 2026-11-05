@@ -316,7 +316,7 @@ def build(out=DIST):
                      canonical=model.area_path(council, area.id) if group != "nation" else None,
                      structured_data=structured_data(council, group, council_updated, area))
     order = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "band_d", "fly", "waste", "homelessness",
-             "silktide", "local_links", "planning_data", "spending", "ofsted", "neighbours", "lgbf", "spso", "scot_homelessness", "scot_band_d",
+             "silktide", "local_links", "planning_data", "psaa", "ico", "spending", "ofsted", "neighbours", "lgbf", "spso", "scot_homelessness", "scot_band_d",
              "scot_spending", "population"]
     # A nation's sources only once the nation is on the site
     used = set().union(*(model.nation_sources(n) for n in model.nations()))
