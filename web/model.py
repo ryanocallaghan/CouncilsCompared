@@ -62,8 +62,8 @@ AREAS = [
     ("homeless", "Homelessness",
      "Temporary accommodation and the outcomes of homelessness cases, from the council's statutory returns."),
     ("digital", "Online services",
-     "Whether GOV.UK's links to the council's pages for its core services work, and an automated test of the "
-     "council website's accessibility."),
+     "Whether GOV.UK's links to the council's pages for its core services work, an automated test of the "
+     "council website's accessibility, and whether its accessibility statement is up to date."),
     ("security", "Privacy and security",
      "Checks we run ourselves each month on the council's website and email, rather than published statistics: "
      "whether it waits for you to choose before setting tracking cookies and lets you reject them easily, "
@@ -254,6 +254,14 @@ CHECKS = [
           "built on, in a standard form. This checks whether MHCLG's Planning Data platform collects one from "
           "the council. For a council created since 2019, the registers of the councils it replaced count if "
           "together they cover the whole area."),
+    Check("a11y_statement", "digital", "Has an accessibility statement reviewed in the last year",
+          "accessibility statement", "website",
+          "Council websites must have an accessibility statement saying what parts of the site some people "
+          "can't use and what the council is doing about it, and keep it up to date. This follows the "
+          "accessibility link on the council's homepage and reads the dates the statement gives for itself, "
+          "such as “This statement was last reviewed on…”. It passes if the latest is in the last year. A "
+          "page's “last updated” date, or when the website was tested, doesn't count.",
+          nations=("England", "Scotland"), own=True),
     Check("trackers", "security", "Waits for you to choose before setting tracking cookies",
           "tracking cookies before you choose", "cookies",
           "Cookies from analytics and advertising services, such as Google Analytics, Meta or Hotjar, follow what "
