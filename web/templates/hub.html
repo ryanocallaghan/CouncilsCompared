@@ -52,7 +52,7 @@
           <details class="govuk-details">
             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">{{ m.label }}</span></summary>
             <div class="govuk-details__text">
-              <p class="govuk-body">{% if item.period %}In {{ item.period }}, {% endif %}{{ best[1].name }} was 1st of {{ item.rows | length }} {{ hub.phrase }} ({{ model.fmt(best[2], m.unit) }}) and {{ worst[1].name }} was last ({{ model.fmt(worst[2], m.unit) }}). The median was {{ item.median }}. {{ "Higher" if m.better == "higher" else "Lower" }} is better.</p>
+              <p class="govuk-body">{% if item.period %}In {{ item.period }}, {% endif %}{{ best[1].name }} was 1st of {{ item.rows | length }} {{ hub.phrase }} ({{ model.fmt(best[2], m.unit) }}) and {{ worst[1].name }} was last ({{ model.fmt(worst[2], m.unit) }}). The median was {{ item.median }}. {{ model.better_text(m) }}</p>
               <table class="govuk-table">
                 <thead class="govuk-table__head">
                   <tr class="govuk-table__row">

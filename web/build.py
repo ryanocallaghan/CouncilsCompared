@@ -244,7 +244,7 @@ def llms_txt(councils):
 
 > How each of the {len(councils)} single-tier councils in England (unitary authorities, metropolitan districts and London boroughs) compares with the rest of England, its region, councils of the same type and similar councils, using official published statistics. An independent website by Ryan O'Callaghan, not affiliated with any government department or council.
 
-Each council has a page at {SITE_URL}/<council>/ (for example {SITE_URL}/lewisham/), with pages under it comparing it with its region (/region/), councils of the same type (/type/) and similar councils (/similar/). A position of 1st is the best in the group. Figures are updated weekly as new editions are published.
+Each council has a page at {SITE_URL}/<council>/ (for example {SITE_URL}/lewisham/), with pages under it comparing it with its region (/region/), councils of the same type (/type/) and similar councils (/similar/). Positions count from whichever end a council is nearer, such as “4th highest of 130”, and each measure says whether higher or lower is better. Figures are updated weekly as new editions are published.
 
 ## About
 
@@ -335,7 +335,7 @@ def build(out=DIST):
             measure_updated = model.updated({source_id})
             page(path, "measure.html", nav="/measures/", lastmod=measure_updated or None, measure=m, rows=rows,
                  nation=nation, summary=model.measure_summary(m, rows, nation), updated=measure_updated,
-                 structured_data=dataset(m.label, f"{'Higher' if m.better == 'higher' else 'Lower'} is better.",
+                 structured_data=dataset(m.label, model.better_text(m),
                                          path, model.period(m, nation), source, measure_updated, nation=nation,
                                          ogl=source_id != "silktide"),  # the Silktide Index is not under the OGL
                  map=model.hexmap(m, nation), period=model.period(m, nation), source=source,

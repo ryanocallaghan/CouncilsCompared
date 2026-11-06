@@ -88,9 +88,26 @@ def test_the_summary_says_which_end_is_best(fixture_data):
     # "Furthest behind on upheld complaints" was once read as good news:
     # for measures where lower is better, say so
     lambeth = model.compare(model.councils()["lambeth"])
-    assert lambeth.compares_worst[0] == "Complaints the Ombudsman upheld, per 100,000 residents (6th of 6; 1st is lowest)"
+    assert lambeth.compares_worst[0] == "Complaints the Ombudsman upheld, per 100,000 residents: highest of 6. Lower is better."
     lewisham = model.compare(model.councils()["lewisham"])
-    assert lewisham.compares_worst[0] == "Special educational needs plans issued on time (6th of 6; 1st is highest)"
+    assert lewisham.compares_worst[0] == "Special educational needs plans issued on time: lowest of 6. Higher is better."
+
+
+@pytest.mark.parametrize("position, tied, count, better, says", [
+    (1, 1, 130, "higher", "highest of 130"),
+    (1, 1, 130, "lower", "lowest of 130"),
+    (4, 1, 130, "lower", "4th lowest of 130"),
+    (127, 1, 130, "lower", "4th highest of 130"),
+    (80, 1, 82, "higher", "3rd lowest of 82"),
+    (130, 1, 130, "higher", "lowest of 130"),
+    (2, 3, 130, "higher", "joint 2nd highest of 130"),
+    (74, 57, 130, "lower", "joint highest of 130"),  # 57 share the worst figure
+    (126, 3, 130, "higher", "joint 3rd lowest of 130"),
+    (65, 1, 129, "higher", "65th highest of 129"),  # the exact middle counts from the best end
+    (66, 1, 130, "higher", "65th lowest of 130"),
+])
+def test_positions_count_from_the_nearer_end(position, tied, count, better, says):
+    assert model.from_end(position, tied, count, better) == says
 
 
 def test_region_and_type_groups(fixture_data):
@@ -178,8 +195,8 @@ def test_key_figures_stand_on_their_own(fixture_data):
     # Each sentence names the council, year, position and which end is best,
     # so it still makes sense quoted alone
     figures = model.key_figures(model.compare(model.councils()["lambeth"]))
-    assert figures[1] == ("In 2025-26, Lambeth was 6th of 6 among all councils in England for complaints the "
-                          "Ombudsman upheld, per 100,000 residents (1st is lowest), at 20 against a median of 7.")
+    assert figures[1] == ("In 2025-26, Lambeth was the highest of 6 among all councils in England for complaints the "
+                          "Ombudsman upheld, per 100,000 residents, at 20 against a median of 7. Lower is better.")
 
 
 def test_measure_summary(fixture_data):

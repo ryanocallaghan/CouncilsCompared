@@ -545,6 +545,24 @@ def place(position_, tied, count):
     return f"{ordinal(position_)} of {count}"
 
 
+def from_end(position_, tied, count, better):
+    """Where a council is in terms of its figure, counted from the nearer
+    end: "4th highest of 130", "joint lowest of 130". Positions are best
+    first, so "127th of 130; 1st is lowest" read as if 1st were sometimes
+    the worst; this says the figure is high or low, and better_text says
+    which is good."""
+    best_end = position_ + (tied - 1) / 2 <= (count + 1) / 2  # the middle of a tie decides
+    high = (better == "higher") == best_end
+    start = position_ if best_end else count - (position_ + tied - 1) + 1
+    words = ("joint " if tied > 1 else "") + ("" if start == 1 else ordinal(start) + " ")
+    return f"{words}{'highest' if high else 'lowest'} of {count}"
+
+
+def better_text(measure):
+    """ "Higher is better." or "Lower is better." """
+    return f"{'Higher' if measure.better == 'higher' else 'Lower'} is better."
+
+
 @dataclass
 class Strip:
     """Every council as a mark on one line, better to the right.
@@ -683,13 +701,10 @@ def _summary(rows, worst=True):
     ends = ["bottom", "third"] if worst else ["top", "second"]
     picked = next(([r for r in rows if r.band == end] for end in ends if any(r.band == end for r in rows)), [])
     picked.sort(key=lambda r: (r.position + (r.tied - 1) / 2) / r.count, reverse=worst)
-    # Each with its position and which end is best, so "6th of 6" can't be
-    # read as good on a measure where a low number is best
-    return [
-        f"{r.measure.label} ({place(r.position, r.tied, r.count)}; "
-        f"1st is {'highest' if r.measure.better == 'higher' else 'lowest'})"
-        for r in picked[:3]
-    ]
+    # Each says whether its figure is high or low and which is better, so
+    # "highest" can't be read as good on a measure where a low number is best
+    return [f"{r.measure.label}: {from_end(r.position, r.tied, r.count, r.measure.better)}. "
+            f"{better_text(r.measure)}" for r in picked[:3]]
 
 
 def compare(council, group="nation"):
@@ -779,10 +794,11 @@ def key_figures(comparison):
 
 def sentence(comparison, r):
     """Where the council is on one measure, with the figure, year and group."""
-    end = "highest" if r.measure.better == "higher" else "lowest"
     when = f"In {r.period}, " if r.period else ""
-    return (f"{when}{comparison.council['name']} was {place(r.position, r.tied, r.count)} among {comparison.phrase} "
-            f"for {lower_first(r.measure.label)} (1st is {end}), at {r.value} against a median of {r.median}.")
+    where = from_end(r.position, r.tied, r.count, r.measure.better)
+    return (f"{when}{comparison.council['name']} was the {where} among {comparison.phrase} "
+            f"for {lower_first(r.measure.label)}, at {r.value} against a median of {r.median}. "
+            f"{better_text(r.measure)}")
 
 
 def measure_summary(measure, rows, nation="England"):
