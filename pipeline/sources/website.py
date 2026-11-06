@@ -10,10 +10,23 @@ see why a council passed or failed.
   least a year, so browsers only ever connect securely.
 - security_txt: /.well-known/security.txt says how to report a security
   problem (RFC 9116): it has a Contact line and hasn't expired.
+- mta_sts: the domain publishes an MTA-STS policy in enforce mode, so other
+  mail servers only deliver email to the council over an encrypted,
+  verified connection.
+- old_tls: the website refuses TLS 1.0 and 1.1, old versions of the secure
+  connection that browsers stopped using in 2020.
+- frame_protection: the homepage tells browsers not to let other websites
+  show it inside theirs (X-Frame-Options, or a Content-Security-Policy
+  frame-ancestors), which stops "clickjacking".
 - a11y_statement: the accessibility statement linked from the homepage says
   it was prepared, reviewed or updated in the last year. Only the dates the
   statement gives for itself count ("This statement was last reviewed on
   ..."), not when the page was edited or the website tested.
+
+The six security checks (all but the accessibility statement) also make one
+ranked figure, security_basics: the share of them in place, of those we
+could check. DNSSEC was tried too, but only one council's domain is signed,
+so it says nothing about one council against another.
 
 The homepage comes from GOV.UK's Local Links Manager. When a site blocks us
 or can't be reached, the answer is "couldn't check" (None), never a fail.
@@ -23,7 +36,10 @@ We never get past a bot challenge, log in or submit a form.
 import datetime
 import html
 import re
+import socket
+import ssl
 import time
+import warnings
 import urllib.error
 import urllib.request
 from urllib.parse import urljoin
@@ -39,6 +55,9 @@ PAGE = "https://councilscompared.com/about/#our-checks"
 MAX_AGE_DAYS = 28  # monthly
 PAUSE = 0.5
 YEAR = 31536000  # seconds: the shortest max-age browsers' HSTS preload lists accept
+# The checks that make up security_basics, and how many must have an answer for a figure
+BASICS = ["dmarc", "https", "security_txt", "mta_sts", "old_tls", "frame_protection"]
+MIN_BASICS = 4
 
 
 def host(homepage):
@@ -72,14 +91,7 @@ def get_page(url):
 
 def dmarc_records(name):
     """The TXT records at _dmarc.<name> that are DMARC records ([] if none); None if DNS failed."""
-    try:
-        answers = dns.resolver.resolve(f"_dmarc.{name}", "TXT", lifetime=20)
-    except (dns.resolver.NXDOMAIN, dns.resolver.NoAnswer):
-        return []
-    except dns.exception.DNSException:
-        return None
-    records = [b"".join(r.strings).decode("utf-8", errors="replace").strip() for r in answers]
-    return [r for r in records if r.lower().startswith("v=dmarc1")]
+    return txt_records(f"_dmarc.{name}", "v=dmarc1")
 
 
 def dmarc(records):
@@ -144,6 +156,111 @@ def security_txt(status, final, headers, text, today):
     if expired:
         return False, f"Its security.txt file expired on {expires[1]}.", final
     return True, "", final
+
+
+def txt_records(name, prefix):
+    """The TXT records at name that start with prefix ([] if none); None if DNS failed."""
+    try:
+        answers = dns.resolver.resolve(name, "TXT", lifetime=20)
+    except (dns.resolver.NXDOMAIN, dns.resolver.NoAnswer):
+        return []
+    except dns.exception.DNSException:
+        return None
+    records = [b"".join(r.strings).decode("utf-8", errors="replace").strip() for r in answers]
+    return [r for r in records if r.lower().startswith(prefix)]
+
+
+def resolves(name):
+    """Whether name has an address: False if it doesn't exist, None if DNS failed."""
+    try:
+        dns.resolver.resolve(name, "A", lifetime=20)
+        return True
+    except (dns.resolver.NXDOMAIN, dns.resolver.NoAnswer):
+        return False
+    except dns.exception.DNSException:
+        return None
+
+
+def mta_sts(records, policy, host_exists=True):
+    """(pass, reason, evidence) for the _mta-sts TXT records and the response for the policy file
+    (status, final url, headers, text), or None if there was no record to fetch it for."""
+    if records is None:
+        return None, "We couldn't look up its MTA-STS record.", ""
+    if not records:
+        return (False, "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted "
+                       "connection to send it email.", "")
+    status, final, _, text = policy
+    if status is None and host_exists is not False:
+        return None, "We couldn't load its MTA-STS policy file.", final
+    if status is None or status >= 400 or not re.search(r"(?im)^\s*version\s*:\s*STSv1", text):
+        return False, "It says it has an MTA-STS policy, but the policy file isn't there.", final
+    mode = re.search(r"(?im)^\s*mode\s*:\s*(\w+)", text)
+    mode = mode[1].lower() if mode else "missing"
+    if mode != "enforce":
+        return (False, f"Its MTA-STS policy is in “{mode}” mode, so mail servers still send email unencrypted "
+                       "if the encrypted connection fails. It needs to be enforce.", f"{final} (mode: {mode})")
+    return True, "", f"{final} (mode: enforce)"
+
+
+def old_tls_handshake(hostname):
+    """ "TLSv1.1" (or "TLSv1") if the site accepts an old connection, "refused", or None if we couldn't tell."""
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", DeprecationWarning)  # offering old versions is the point
+        context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+        context.check_hostname = False
+        context.verify_mode = ssl.CERT_NONE
+        try:
+            context.set_ciphers("DEFAULT:@SECLEVEL=0")
+            context.minimum_version = ssl.TLSVersion.TLSv1
+            context.maximum_version = ssl.TLSVersion.TLSv1_1
+        except (ssl.SSLError, ValueError):
+            return None  # this machine's OpenSSL can't offer them, so can't test
+    try:
+        with socket.create_connection((hostname, 443), timeout=20) as raw:
+            with context.wrap_socket(raw, server_hostname=hostname) as tls:
+                return tls.version()
+    except ssl.SSLError as e:
+        return None if "NO_PROTOCOLS_AVAILABLE" in str(e) else "refused"
+    except ConnectionResetError:
+        return "refused"  # some servers hang up rather than say no
+    except OSError:
+        return None
+
+
+def old_tls(home_status, outcome, hostname=""):
+    """(pass, reason, evidence) for the homepage's status and old_tls_handshake's outcome."""
+    if home_status is None or outcome is None:
+        return None, "We couldn't test whether the website accepts old, insecure connections.", ""
+    if outcome == "refused":
+        return True, "", f"{hostname} refused TLS 1.0 and 1.1"
+    version = outcome.replace("TLSv", "TLS ")
+    return (False, f"Its website still accepts {version}, an old version of the secure connection that browsers "
+                   "stopped using in 2020.", f"{hostname} accepted {version}")
+
+
+def frame_protection(status, headers):
+    """(pass, reason, evidence) for the homepage's response."""
+    if status is None or status >= 400:
+        return None, "We couldn't load the homepage" + (f" (it returned {status})." if status else "."), ""
+    frame_options = headers.get("x-frame-options", "").strip()
+    policy = re.search(r"frame-ancestors\s+([^;]*)", headers.get("content-security-policy", ""), re.I)
+    if policy and "*" not in policy[1].split():
+        return True, "", f"Content-Security-Policy: frame-ancestors {policy[1].strip()}"
+    if frame_options.lower() in ("deny", "sameorigin"):
+        return True, "", f"X-Frame-Options: {frame_options}"
+    if frame_options:
+        return (False, f"Its X-Frame-Options header (“{frame_options}”) isn't one browsers act on, so other "
+                       "websites can show its pages inside their own.", f"X-Frame-Options: {frame_options}")
+    return (False, "The homepage doesn't stop other websites showing it inside their own, which can be used to "
+                   "trick people into clicking things.", "")
+
+
+def security_basics(checks):
+    """The share of the security basics in place, of those we could check; None if too few could be."""
+    answered = [checks[k][0] for k in BASICS if k in checks and checks[k][0] is not None]
+    if len(answered) < MIN_BASICS:
+        return None
+    return 100 * sum(answered) / len(answered)
 
 
 MONTH_NAMES = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
@@ -331,10 +448,21 @@ def fetch_all(homepages, pause=PAUSE, today=None):
         # The file goes on the site the homepage ends up at (lewisham.gov.uk, not www.)
         security = get_page(f"https://{host(home[1])}/.well-known/security.txt")
         time.sleep(pause)
+        mail = domain(homepage)
+        records = txt_records(f"_mta-sts.{mail}", "v=stsv1")
+        policy, exists = None, True
+        if records:
+            policy = get_page(f"https://mta-sts.{mail}/.well-known/mta-sts.txt")
+            exists = resolves(f"mta-sts.{mail}") if policy[0] is None else True
+            time.sleep(pause)
+        site = host(home[1])
         found[code] = {
-            "dmarc": dmarc(dmarc_records(domain(homepage))),
+            "dmarc": dmarc(dmarc_records(mail)),
             "https": hsts(*home[:3]),
             "security_txt": security_txt(*security, today),
+            "mta_sts": mta_sts(records, policy, exists),
+            "old_tls": old_tls(home[0] if home[1].startswith("https://") else None, old_tls_handshake(site), site),
+            "frame_protection": frame_protection(home[0], home[2]),
             "a11y_statement": a11y_statement(find_statement(home, pause), today) if home[0] and home[0] < 400
             else (None, "We couldn't load the homepage" + (f" (it returned {home[0]})." if home[0] else "."), ""),
         }
@@ -355,6 +483,7 @@ def fetch(context):
         result.extra[code] = {"homepage": homepages[code]}
         for check, (passed, reason, evidence) in checks.items():
             result.check(code, check, passed, reason, evidence)
+        result.set(code, "security_basics", security_basics(checks), places=0)
         blocked = [check for check, (passed, _, _) in checks.items() if passed is None]
         if blocked:
             result.notes.append(f"{code}: couldn't check {', '.join(blocked)}")

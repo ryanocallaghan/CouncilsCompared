@@ -337,7 +337,8 @@ def build(out=DIST):
                  nation=nation, summary=model.measure_summary(m, rows, nation), updated=measure_updated,
                  structured_data=dataset(m.label, model.better_text(m, why=True),
                                          path, model.period(m, nation), source, measure_updated, nation=nation,
-                                         ogl=source_id != "silktide"),  # the Silktide Index is not under the OGL
+                                         # the Silktide Index and our own checks are not under the OGL
+                                         ogl=source_id != "silktide" and not m.own, official=not m.own),
                  map=model.hexmap(m, nation), period=model.period(m, nation), source=source,
                  area_name=areas[m.area][0], note=model.area_note(m.area, nation), regions=regions_list,
                  types=types,

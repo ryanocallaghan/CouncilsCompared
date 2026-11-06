@@ -100,7 +100,7 @@
    "title": "Our checks of council websites",
    "url": "https://councilscompared.com/about/#our-checks",
    "period": "November 2026",
-   "published": "2026-11-04"
+   "published": "2026-11-06"
   },
   "cookies": {
    "title": "Our checks of council websites' cookies",
@@ -226,9 +226,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": null,
+     "reason": "We couldn't load the homepage."
+    },
     "https": {
      "pass": null,
      "reason": "We couldn't load the homepage."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.aberdeencity.gov.uk/.well-known/mta-sts.txt",
+     "pass": null,
+     "reason": "We couldn't load its MTA-STS policy file."
+    },
+    "old_tls": {
+     "pass": null,
+     "reason": "We couldn't test whether the website accepts old, insecure connections."
     },
     "security_txt": {
      "pass": null,
@@ -334,6 +347,7 @@
    "values": {
     "web_access": 94.53,
     "links_working": 87.5,
+    "security_basics": 50.0,
     "attendance": 92.8,
     "bins_satisfied": 73.7,
     "care_graded": 80.6,
@@ -364,9 +378,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.aberdeenshire.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.aberdeenshire.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.aberdeenshire.gov.uk/.well-known/security.txt",
@@ -468,6 +496,7 @@
    "values": {
     "web_access": 92.39,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "attendance": 91.5,
     "bins_satisfied": 87.7,
     "care_graded": 68.0,
@@ -498,10 +527,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains; preload",
      "pass": true,
      "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.angus.gov.uk accepted TLS 1.1",
+     "pass": false,
+     "reason": "Its website still accepts TLS 1.1, an old version of the secure connection that browsers stopped using in 2020."
     },
     "security_txt": {
      "evidence": "https://www.angus.gov.uk/.well-known/security.txt",
@@ -600,6 +643,7 @@
    "values": {
     "web_access": 98.38,
     "links_working": 100.0,
+    "security_basics": 100.0,
     "attendance": 90.7,
     "bins_satisfied": 76.3,
     "care_graded": 76.5,
@@ -628,8 +672,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.argyll-bute.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.argyll-bute.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -762,6 +821,7 @@
     "ta_rate": 13.1,
     "web_access": 84.64,
     "links_working": 70.0,
+    "security_basics": 80.0,
     "planning_data": 62.5
    },
    "checks": {
@@ -775,8 +835,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.lbbd.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -1057,6 +1131,7 @@
     "ta_rate": 19.3,
     "web_access": 88.69,
     "links_working": 100.0,
+    "security_basics": 40.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -1069,9 +1144,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.barnet.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "pass": null,
@@ -1328,6 +1416,7 @@
     "ta_rate": 0.5,
     "web_access": 92.96,
     "links_working": 95.0,
+    "security_basics": 33.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -1341,10 +1430,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.barnsley.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.barnsley.gov.uk/.well-known/security.txt",
@@ -1619,6 +1721,7 @@
     "ta_rate": 1.0,
     "web_access": 80.94,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -1631,8 +1734,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.bathnes.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.bathnes.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -1898,6 +2016,7 @@
     "ta_rate": 11.6,
     "web_access": 90.11,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -1910,8 +2029,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://*.bedfordborough.gov.uk",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31557600",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.bedford.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.bedford.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -2178,6 +2312,7 @@
     "ta_rate": 2.8,
     "web_access": 74.6,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 37.5
    },
    "checks": {
@@ -2191,10 +2326,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
      "pass": true,
      "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.bexley.gov.uk accepted TLS 1.1",
+     "pass": false,
+     "reason": "Its website still accepts TLS 1.1, an old version of the secure connection that browsers stopped using in 2020."
     },
     "security_txt": {
      "evidence": "https://www.bexley.gov.uk/.well-known/security.txt",
@@ -2467,6 +2616,7 @@
     "ta_rate": 11.9,
     "web_access": 96.62,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 75.0
    },
    "checks": {
@@ -2480,10 +2630,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.birmingham.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.birmingham.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.birmingham.gov.uk/.well-known/security.txt",
@@ -2747,6 +2912,7 @@
     "ta_rate": 0.6,
     "web_access": 96.56,
     "links_working": 85.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -2760,8 +2926,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.blackburn.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.blackburn.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -3046,6 +3227,7 @@
     "ta_rate": 2.0,
     "web_access": 83.68,
     "links_working": 100.0,
+    "security_basics": 33.0,
     "planning_data": 62.5
    },
    "checks": {
@@ -3059,10 +3241,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=15552000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 180 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.blackpool.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.blackpool.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.blackpool.gov.uk/.well-known/security.txt",
@@ -3327,6 +3523,7 @@
     "ta_rate": 1.7,
     "web_access": 96.07,
     "links_working": 85.0,
+    "security_basics": 67.0,
     "planning_data": 12.5
    },
    "checks": {
@@ -3340,9 +3537,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
+     "evidence": "max-age=2592000",
      "pass": false,
-     "reason": "The homepage doesn't send a Strict-Transport-Security header."
+     "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.bolton.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.bolton.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.bolton.gov.uk/.well-known/security.txt",
@@ -3622,6 +3835,7 @@
     "ta_rate": 2.7,
     "web_access": 96.54,
     "links_working": 100.0,
+    "security_basics": 40.0,
     "planning_data": 12.5
    },
    "checks": {
@@ -3635,10 +3849,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=15768000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.bcpcouncil.gov.uk/.well-known/mta-sts.txt",
+     "pass": null,
+     "reason": "We couldn't load its MTA-STS policy file."
+    },
+    "old_tls": {
+     "evidence": "www.bcpcouncil.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.bcpcouncil.gov.uk/.well-known/security.txt",
@@ -3871,16 +4099,21 @@
     "ta_rate": 3.0,
     "web_access": 99.63,
     "links_working": 95.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
     "a11y_statement": {
-     "evidence": "https://www.bracknell-forest.gov.uk/help/about-site/accessibility-statement",
-     "pass": false,
-     "reason": "Its accessibility statement was last reviewed or updated on 18 April 2024, more than a year ago."
+     "pass": null,
+     "reason": "We couldn't find an accessibility statement linked from the homepage."
     },
     "dmarc": {
      "evidence": "v=DMARC1; p=reject; sp=reject; pct=100; rua=mailto:dER7QmoLpCd@dmarc-rua.mailcheck.service.ncsc.gov.uk, mailto:dmarc-rua@bracknell-forest.gov.uk; ruf=mailto:dmarc-ruf@bracknell-forest.gov.uk;",
+     "pass": true,
+     "reason": ""
+    },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
      "pass": true,
      "reason": ""
     },
@@ -3888,6 +4121,16 @@
      "evidence": "max-age=300",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 300 seconds. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.bracknell-forest.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.bracknell-forest.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.bracknell-forest.gov.uk/.well-known/security.txt",
@@ -4150,6 +4393,7 @@
     "ta_rate": 2.6,
     "web_access": 92.92,
     "links_working": 95.0,
+    "security_basics": 50.0,
     "planning_data": 50.0
    },
    "checks": {
@@ -4163,10 +4407,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.bradford.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.bradford.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.bradford.gov.uk/.well-known/security.txt",
@@ -4441,6 +4700,7 @@
     "ta_rate": 19.9,
     "web_access": 96.43,
     "links_working": 90.0,
+    "security_basics": 67.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -4454,8 +4714,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.brent.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -4729,6 +5003,7 @@
     "ta_rate": 16.2,
     "web_access": 98.57,
     "links_working": 80.0,
+    "security_basics": 33.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -4741,9 +5016,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.brighton-hove.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.brighton-hove.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.brighton-hove.gov.uk/.well-known/security.txt",
@@ -5021,6 +5310,7 @@
     "fly_rate": 20.7,
     "web_access": 85.33,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -5034,8 +5324,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.bristol.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.bristol.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -5297,6 +5602,7 @@
     "ta_rate": 11.7,
     "web_access": 98.12,
     "links_working": 80.0,
+    "security_basics": 67.0,
     "planning_data": 37.5
    },
    "checks": {
@@ -5310,9 +5616,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
+     "evidence": "max-age=2592000",
      "pass": false,
-     "reason": "The homepage doesn't send a Strict-Transport-Security header."
+     "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.bromley.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.bromley.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.bromley.gov.uk/.well-known/security.txt",
@@ -5578,6 +5900,7 @@
     "ta_rate": 1.6,
     "web_access": 98.83,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 62.5
    },
    "checks": {
@@ -5591,8 +5914,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://journeokioskcontent.azurewebsites.net/ https://fosterwithyourcouncil.uk/",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.buckinghamshire.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.buckinghamshire.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -5832,6 +6170,7 @@
     "ta_rate": 2.9,
     "web_access": 94.4,
     "links_working": 95.0,
+    "security_basics": 33.0,
     "planning_data": 37.5
    },
    "checks": {
@@ -5845,10 +6184,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=15768000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.bury.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.bury.gov.uk/.well-known/security.txt",
@@ -6113,6 +6465,7 @@
     "ta_rate": 1.2,
     "web_access": 62.58,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -6125,9 +6478,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.calderdale.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.calderdale.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.calderdale.gov.uk/.well-known/security.txt",
@@ -6392,6 +6760,7 @@
     "ta_rate": 13.3,
     "web_access": 92.99,
     "links_working": 85.0,
+    "security_basics": 83.0,
     "planning_data": 62.5
    },
    "checks": {
@@ -6405,8 +6774,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubdomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.camden.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -6681,6 +7064,7 @@
     "ta_rate": 1.8,
     "web_access": 89.49,
     "links_working": 65.0,
+    "security_basics": 33.0,
     "planning_data": 75.0
    },
    "checks": {
@@ -6694,10 +7078,24 @@
      "pass": false,
      "reason": "Its DMARC policy is “none”, so faked email is still delivered. It needs to be quarantine or reject."
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=1000; includeSubDomains; preload",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 1000 seconds. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.centralbedfordshire.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.centralbedfordshire.gov.uk/.well-known/security.txt",
@@ -6968,6 +7366,7 @@
     "ta_rate": 0.3,
     "web_access": 95.27,
     "links_working": 90.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -6981,10 +7380,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors https://apps.facebook.com https://www.facebook.com/",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=15768000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.cheshireeast.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.cheshireeast.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.cheshireeast.gov.uk/.well-known/security.txt",
@@ -7259,6 +7673,7 @@
     "ta_rate": 0.6,
     "web_access": 99.18,
     "links_working": 75.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -7271,10 +7686,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=15768000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.cheshirewestandchester.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.cheshirewestandchester.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.cheshirewestandchester.gov.uk/.well-known/security.txt",
@@ -7521,6 +7950,7 @@
    "values": {
     "web_access": 98.49,
     "links_working": 93.8,
+    "security_basics": 60.0,
     "attendance": 92.1,
     "bins_satisfied": 77.7,
     "care_graded": 84.6,
@@ -7551,10 +7981,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.edinburgh.gov.uk/.well-known/mta-sts.txt",
+     "pass": null,
+     "reason": "We couldn't load its MTA-STS policy file."
+    },
+    "old_tls": {
+     "evidence": "www.edinburgh.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.edinburgh.gov.uk/.well-known/security.txt",
@@ -7657,6 +8102,7 @@
    "values": {
     "web_access": 49.84,
     "links_working": 93.8,
+    "security_basics": 33.0,
     "attendance": 91.2,
     "bins_satisfied": 66.7,
     "care_graded": 89.0,
@@ -7687,9 +8133,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.clacks.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.clacks.gov.uk/.well-known/security.txt",
@@ -7825,6 +8284,7 @@
     "ta_rate": 3.3,
     "web_access": 92.55,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 12.5
    },
    "checks": {
@@ -7838,8 +8298,23 @@
      "pass": false,
      "reason": "Its DMARC policy only applies to 75% of email (pct=75)."
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://localhost:44369 https://www.cornwall.gov.uk https://test2.cornwall.gov.uk https://app-rnd-euw-ccwebsite.azurewebsites.net https://wa-npd-euw-ccwebsite-master.npd-publishing.cc.cornwallonline.net https://wa-npd-euw-ccwebsite-frontend.npd-publishing.cc.cornwallonline.net/ https://wa-prd-euw-ccwebsite-master.publishing.cc.cornwallonline.net https://wa-prd-euw-ccwebsite-frontend.publishing.cc.cornwallonline.net https://train-contact-centre.crm4.dynamics.com https://test-contact-centre.crm4.dynamics.com https://contact-centre.crm4.dynamics.com https://portal-gb.one.network https://api.reciteme.com https://testforms.cornwall.gov.uk https://forms.cornwall.gov.uk https://testlogin.cornwall.gov.uk https://login.cornwall.gov.uk",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.cornwall.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.cornwall.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -8105,6 +8580,7 @@
     "ta_rate": 0.5,
     "web_access": 94.79,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 12.5
    },
    "checks": {
@@ -8118,8 +8594,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.durham.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.durham.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -8391,6 +8882,7 @@
     "ta_rate": 7.2,
     "web_access": 91.2,
     "links_working": 100.0,
+    "security_basics": 80.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -8404,10 +8896,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.coventry.gov.uk/.well-known/mta-sts.txt",
+     "pass": null,
+     "reason": "We couldn't load its MTA-STS policy file."
+    },
+    "old_tls": {
+     "evidence": "www.coventry.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.coventry.gov.uk/.well-known/security.txt",
@@ -8675,6 +9182,7 @@
     "ta_rate": 20.4,
     "web_access": 89.24,
     "links_working": 85.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -8688,9 +9196,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.croydon.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.croydon.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.croydon.gov.uk/.well-known/security.txt",
@@ -8960,6 +9483,7 @@
     "ta_rate": 0.7,
     "web_access": 94.24,
     "links_working": 5.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -8973,10 +9497,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=1000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 1000 seconds. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.cumberland.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.cumberland.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.cumberland.gov.uk/.well-known/security.txt",
@@ -9228,6 +9767,7 @@
     "ta_rate": 1.5,
     "web_access": 81.55,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -9241,8 +9781,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://*.darlington.gov.uk https://localhost:20007 https://localhost:1007 https://localhost:1011 https://localhost:1005",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubDomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.darlington.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.darlington.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -9523,6 +10078,7 @@
     "ta_rate": 4.9,
     "web_access": 95.6,
     "links_working": 80.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -9536,9 +10092,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.derby.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.derby.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.derby.gov.uk/.well-known/security.txt",
@@ -9820,6 +10390,7 @@
     "ta_rate": 0.9,
     "web_access": 97.6,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 62.5
    },
    "checks": {
@@ -9833,8 +10404,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: sameorigin",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.doncaster.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -10101,6 +10686,7 @@
     "ta_rate": 1.1,
     "web_access": 93.97,
     "links_working": 100.0,
+    "security_basics": 100.0,
     "planning_data": 50.0
    },
    "checks": {
@@ -10114,8 +10700,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubdomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.dorsetcouncil.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.dorsetcouncil.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -10361,6 +10962,7 @@
     "ta_rate": 0.2,
     "web_access": 93.25,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 12.5
    },
    "checks": {
@@ -10374,10 +10976,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SameOrigin",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.dudley.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.dudley.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.dudley.gov.uk/.well-known/security.txt",
@@ -10608,6 +11225,7 @@
    "values": {
     "web_access": 92.86,
     "links_working": 100.0,
+    "security_basics": 33.0,
     "attendance": 90.7,
     "bins_satisfied": 85.7,
     "care_graded": 82.7,
@@ -10636,10 +11254,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://*.verintcloudservices.com",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=1000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 1000 seconds. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.dumgal.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.dumfriesandgalloway.gov.uk accepted TLS 1.1",
+     "pass": false,
+     "reason": "Its website still accepts TLS 1.1, an old version of the secure connection that browsers stopped using in 2020."
     },
     "security_txt": {
      "evidence": "https://www.dumfriesandgalloway.gov.uk/.well-known/security.txt",
@@ -10738,6 +11371,7 @@
    "values": {
     "web_access": 74.98,
     "links_working": 87.5,
+    "security_basics": 67.0,
     "attendance": 89.6,
     "bins_satisfied": 74.3,
     "care_graded": 76.7,
@@ -10768,9 +11402,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.dundeecity.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.dundeecity.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.dundeecity.gov.uk/.well-known/security.txt",
@@ -10904,6 +11553,7 @@
     "ta_rate": 21.2,
     "web_access": 83.93,
     "links_working": 70.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -10917,8 +11567,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.ealing.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -11173,6 +11837,7 @@
    "values": {
     "web_access": 99.77,
     "links_working": 93.8,
+    "security_basics": 17.0,
     "attendance": 89.1,
     "bins_satisfied": 76.7,
     "care_graded": 76.6,
@@ -11203,9 +11868,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.east-ayrshire.gov.uk accepted TLS 1.1",
+     "pass": false,
+     "reason": "Its website still accepts TLS 1.1, an old version of the secure connection that browsers stopped using in 2020."
     },
     "security_txt": {
      "evidence": "https://www.east-ayrshire.gov.uk/.well-known/security.txt",
@@ -11306,6 +11984,7 @@
    "values": {
     "web_access": 84.94,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "attendance": 92.9,
     "bins_satisfied": 87.7,
     "care_graded": 87.7,
@@ -11336,8 +12015,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: sameorigin",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.eastdunbarton.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.eastdunbarton.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -11439,6 +12133,7 @@
    "values": {
     "web_access": 53.88,
     "links_working": 81.2,
+    "security_basics": 100.0,
     "attendance": 92.3,
     "bins_satisfied": 79.0,
     "care_graded": 83.2,
@@ -11469,8 +12164,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.eastlothian.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.eastlothian.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -11571,6 +12281,7 @@
    "values": {
     "web_access": 97.09,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "attendance": 93.6,
     "bins_satisfied": 80.3,
     "care_graded": 96.2,
@@ -11601,8 +12312,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.eastrenfrewshire.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.eastrenfrewshire.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -11738,6 +12464,7 @@
     "ta_rate": 1.8,
     "web_access": 77.58,
     "links_working": 90.0,
+    "security_basics": 67.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -11750,8 +12477,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.eastriding.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -12031,9 +12772,21 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": null,
+     "reason": "We couldn't load the homepage."
+    },
     "https": {
      "pass": null,
      "reason": "We couldn't load the homepage."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "pass": null,
+     "reason": "We couldn't test whether the website accepts old, insecure connections."
     },
     "security_txt": {
      "pass": null,
@@ -12277,6 +13030,7 @@
    "values": {
     "web_access": 91.02,
     "links_working": 56.2,
+    "security_basics": 50.0,
     "attendance": 91.6,
     "bins_satisfied": 65.3,
     "care_graded": 88.1,
@@ -12307,10 +13061,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://falkirk.onconverse.app",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.falkirk.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.falkirk.gov.uk/.well-known/security.txt",
@@ -12439,16 +13207,30 @@
    "checks": {
     "a11y_statement": {
      "pass": null,
-     "reason": "We couldn't find an accessibility statement linked from the homepage."
+     "reason": "We couldn't load the homepage (it returned 403)."
     },
     "dmarc": {
      "evidence": "v=DMARC1;p=reject;sp=reject;pct=100;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:mxb71w0c@ag.dmarcian-eu.com,mailto:dmarc_agg@vali.email;ruf=mailto:dmarc-ruf@dmarc.service.gov.uk,mailto:dmarc@fife.gov.uk;",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
     "https": {
-     "pass": false,
-     "reason": "The homepage doesn't send a Strict-Transport-Security header."
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.fife.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.fife.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "pass": null,
@@ -12578,21 +13360,39 @@
     "ta_rate": 1.4,
     "web_access": 93.36,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 87.5
    },
    "checks": {
     "a11y_statement": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "https://www.gateshead.gov.uk/accessibility",
+     "pass": true,
+     "reason": "Its accessibility statement was last reviewed or updated on 26 September 2026."
     },
     "dmarc": {
      "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:nfeimlbt@ag.eu.dmarcian.com, mailto:dmarc@gateshead.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc_agg@vali.email; adkim=s; aspf=s;",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.gateshead.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.gateshead.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.gateshead.gov.uk/.well-known/security.txt",
@@ -12826,6 +13626,7 @@
    "values": {
     "web_access": 86.42,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "attendance": 89.2,
     "bins_satisfied": 60.3,
     "care_graded": 90.4,
@@ -12854,8 +13655,22 @@
      "pass": false,
      "reason": "Its DMARC policy is “none”, so faked email is still delivered. It needs to be quarantine or reject."
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'none'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.glasgow.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -12985,6 +13800,7 @@
     "ta_rate": 15.5,
     "web_access": 82.52,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -12998,8 +13814,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.royalgreenwich.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.royalgreenwich.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -13278,6 +14109,7 @@
     "ta_rate": 32.8,
     "web_access": 88.32,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 37.5
    },
    "checks": {
@@ -13291,8 +14123,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://e5financesystem.hackney.gov.uk/",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.hackney.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.hackney.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -13570,9 +14417,21 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": null,
+     "reason": "We couldn't load the homepage."
+    },
     "https": {
      "pass": null,
      "reason": "We couldn't load the homepage."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "pass": null,
+     "reason": "We couldn't test whether the website accepts old, insecure connections."
     },
     "security_txt": {
      "pass": null,
@@ -13835,6 +14694,7 @@
     "ta_rate": 17.1,
     "web_access": 87.46,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 12.5
    },
    "checks": {
@@ -13847,9 +14707,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 404)."
+    },
     "https": {
      "pass": null,
      "reason": "We couldn't load the homepage (it returned 404)."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.lbhf.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.lbhf.gov.uk/.well-known/security.txt",
@@ -14122,6 +14995,7 @@
     "ta_rate": 25.3,
     "web_access": 83.28,
     "links_working": 95.0,
+    "security_basics": 83.0,
     "planning_data": 62.5
    },
    "checks": {
@@ -14135,8 +15009,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31557600",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.haringey.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "haringey.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -14412,6 +15301,7 @@
     "ta_rate": 15.9,
     "web_access": 99.38,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -14425,10 +15315,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.harrow.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.harrow.gov.uk/.well-known/security.txt",
@@ -14676,6 +15580,7 @@
     "ta_rate": 0.4,
     "web_access": 98.76,
     "links_working": 75.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -14689,10 +15594,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.hartlepool.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.hartlepool.gov.uk/.well-known/security.txt",
@@ -14976,6 +15895,7 @@
     "ta_rate": 12.6,
     "web_access": 91.46,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -14989,10 +15909,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.havering.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.havering.gov.uk/.well-known/security.txt",
@@ -15261,6 +16195,7 @@
     "ta_rate": 2.2,
     "web_access": 87.99,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -15274,8 +16209,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://herefordshirenaturerecovery.commonplace.is/",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.herefordshire.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.herefordshire.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -15517,6 +16467,7 @@
    "values": {
     "web_access": 99.22,
     "links_working": 81.2,
+    "security_basics": 50.0,
     "attendance": 90.1,
     "bins_satisfied": 87.0,
     "care_graded": 82.9,
@@ -15547,10 +16498,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.highland.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.highland.gov.uk/.well-known/security.txt",
@@ -15685,6 +16650,7 @@
     "ta_rate": 13.5,
     "web_access": 96.69,
     "links_working": 85.0,
+    "security_basics": 67.0,
     "planning_data": 75.0
    },
    "checks": {
@@ -15698,10 +16664,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.hillingdon.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "pre.hillingdon.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://pre.hillingdon.gov.uk/.well-known/security.txt",
@@ -15973,6 +16954,7 @@
     "ta_rate": 4.8,
     "web_access": 86.71,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 50.0
    },
    "checks": {
@@ -15986,10 +16968,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.hounslow.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.hounslow.gov.uk/.well-known/security.txt",
@@ -16221,6 +17217,7 @@
    "values": {
     "web_access": 93.78,
     "links_working": 87.5,
+    "security_basics": 67.0,
     "attendance": 91.6,
     "bins_satisfied": 88.3,
     "care_graded": 80.2,
@@ -16249,8 +17246,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains;",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.inverclyde.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -16382,21 +17393,38 @@
     "ta_rate": 3.8,
     "web_access": 96.92,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
     "a11y_statement": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "https://www.iow.gov.uk/article/766/Accessibility-statement",
+     "pass": true,
+     "reason": "Its accessibility statement was last reviewed or updated on 1 November 2026."
     },
     "dmarc": {
      "evidence": "v=DMARC1; p=reject; pct=100; sp=reject; rua=mailto:ef2ac41e@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:ef2ac41e@inbox.ondmarc.com; adkim=r; aspf=r; fo=1; rf=afrf; ri=3600",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.iow.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.iow.gov.uk/.well-known/security.txt",
@@ -16662,6 +17690,7 @@
     "ta_rate": 19.7,
     "web_access": 91.45,
     "links_working": 100.0,
+    "security_basics": 100.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -16675,8 +17704,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.islington.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.islington.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -16955,6 +17999,7 @@
     "ta_rate": 25.4,
     "web_access": 91.63,
     "links_working": 85.0,
+    "security_basics": 100.0,
     "planning_data": 87.5
    },
    "checks": {
@@ -16968,8 +18013,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.rbkc.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.rbkc.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -17231,6 +18291,7 @@
     "ta_rate": 1.9,
     "web_access": 98.06,
     "links_working": 95.0,
+    "security_basics": 50.0,
     "planning_data": 37.5
    },
    "checks": {
@@ -17244,10 +18305,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.hull.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.hull.gov.uk/.well-known/security.txt",
@@ -17522,6 +18597,7 @@
     "ta_rate": 12.4,
     "web_access": 83.62,
     "links_working": 90.0,
+    "security_basics": 83.0,
     "planning_data": 75.0
    },
    "checks": {
@@ -17535,8 +18611,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.kingston.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -17806,6 +18896,7 @@
     "ta_rate": 1.9,
     "web_access": 91.54,
     "links_working": 95.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -17819,8 +18910,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'none'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.kirklees.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.kirklees.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -18094,6 +19200,7 @@
     "ta_rate": 1.4,
     "web_access": 80.79,
     "links_working": 85.0,
+    "security_basics": 40.0,
     "planning_data": 37.5
    },
    "checks": {
@@ -18107,9 +19214,23 @@
      "pass": false,
      "reason": "Its DMARC policy is “none”, so faked email is still delivered. It needs to be quarantine or reject."
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.knowsley.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "pass": null,
@@ -18386,6 +19507,7 @@
     "ta_rate": 30.9,
     "web_access": 66.68,
     "links_working": 100.0,
+    "security_basics": 80.0,
     "planning_data": 75.0
    },
    "checks": {
@@ -18399,8 +19521,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.lambeth.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -18672,6 +19808,7 @@
     "ta_rate": 2.1,
     "web_access": 83.95,
     "links_working": 85.0,
+    "security_basics": 50.0,
     "planning_data": 87.5
    },
    "checks": {
@@ -18685,10 +19822,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=1000; includeSubDomains; preload",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 1000 seconds. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.leeds.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.leeds.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.leeds.gov.uk/.well-known/security.txt",
@@ -18965,6 +20117,7 @@
     "ta_rate": 8.6,
     "web_access": 97.72,
     "links_working": 85.0,
+    "security_basics": 83.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -18978,8 +20131,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.leicester.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -19251,6 +20418,7 @@
     "ta_rate": 18.4,
     "web_access": 92.68,
     "links_working": 90.0,
+    "security_basics": 50.0,
     "planning_data": 62.5
    },
    "checks": {
@@ -19264,8 +20432,21 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "lewisham.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -19532,6 +20713,7 @@
     "ta_rate": 8.4,
     "web_access": 98.96,
     "links_working": 90.0,
+    "security_basics": 33.0,
     "planning_data": 75.0
    },
    "checks": {
@@ -19545,10 +20727,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=16070400",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 186 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "liverpool.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://liverpool.gov.uk/.well-known/security.txt",
@@ -19813,6 +21008,7 @@
     "ta_rate": 11.0,
     "web_access": 73.13,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 50.0
    },
    "checks": {
@@ -19826,8 +21022,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31557600",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.luton.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -20103,21 +21313,38 @@
     "ta_rate": 11.9,
     "web_access": 95.23,
     "links_working": 85.0,
+    "security_basics": 60.0,
     "planning_data": 0.0
    },
    "checks": {
     "a11y_statement": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "https://www.manchester.gov.uk/accessibility-statement",
+     "pass": true,
+     "reason": "Its accessibility statement was last reviewed or updated on 25 March 2026."
     },
     "dmarc": {
      "evidence": "v=DMARC1;p=reject;sp=reject;rua=mailto:dmarc@manchester.gov.uk;pct=100; adkim=r; aspf=r;",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "pass": false,
+     "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.manchester.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.manchester.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "pass": null,
@@ -20392,6 +21619,7 @@
     "ta_rate": 5.4,
     "web_access": 92.76,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 62.5
    },
    "checks": {
@@ -20405,8 +21633,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' www.therochestercornexchange.co.uk rochester-21st.s1.umbraco.io www.medwayadulteducation.co.uk",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=157680000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.medway.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.medway.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -20667,6 +21910,7 @@
     "ta_rate": 8.6,
     "web_access": 98.96,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -20680,8 +21924,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.merton.gov.uk/.well-known/mta-sts.txt",
+     "pass": false,
+     "reason": "It says it has an MTA-STS policy, but the policy file isn't there."
+    },
+    "old_tls": {
+     "evidence": "www.merton.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -20952,6 +22211,7 @@
     "ta_rate": 1.5,
     "web_access": 95.29,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 25.0
    },
    "checks": {
@@ -20964,9 +22224,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
     "https": {
      "pass": null,
      "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.middlesbrough.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.middlesbrough.gov.uk accepted TLS 1.1",
+     "pass": false,
+     "reason": "Its website still accepts TLS 1.1, an old version of the secure connection that browsers stopped using in 2020."
     },
     "security_txt": {
      "evidence": "https://www.middlesbrough.gov.uk/.well-known/security.txt",
@@ -21209,6 +22483,7 @@
    "values": {
     "web_access": 96.09,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "attendance": 91.5,
     "bins_satisfied": 88.0,
     "care_graded": 78.5,
@@ -21239,10 +22514,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "strict-transport-security: max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.midlothian.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.midlothian.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.midlothian.gov.uk/.well-known/security.txt",
@@ -21376,6 +22666,7 @@
     "ta_rate": 8.4,
     "web_access": 87.42,
     "links_working": 85.0,
+    "security_basics": 67.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -21388,10 +22679,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=300",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 300 seconds. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.milton-keynes.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.milton-keynes.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.milton-keynes.gov.uk/.well-known/security.txt",
@@ -21631,6 +22937,7 @@
    "values": {
     "web_access": 59.62,
     "links_working": 87.5,
+    "security_basics": 50.0,
     "attendance": 91.2,
     "bins_satisfied": 75.3,
     "care_graded": 86.2,
@@ -21660,10 +22967,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SameOrigin",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.moray.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.moray.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.moray.gov.uk/.well-known/security.txt",
@@ -21766,6 +23088,7 @@
    "values": {
     "web_access": 95.36,
     "links_working": 62.5,
+    "security_basics": 100.0,
     "attendance": 91.9,
     "bins_satisfied": 79.3,
     "care_graded": 85.7,
@@ -21794,8 +23117,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.cne-siar.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.cne-siar.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -21937,6 +23275,7 @@
     "ta_rate": 1.6,
     "web_access": 80.18,
     "links_working": 70.0,
+    "security_basics": 83.0,
     "planning_data": 75.0
    },
    "checks": {
@@ -21950,8 +23289,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.newcastle.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "new.newcastle.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -22232,6 +23586,7 @@
     "ta_rate": 59.8,
     "web_access": 97.04,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -22245,9 +23600,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
+     "evidence": "max-age=2592000",
      "pass": false,
-     "reason": "The homepage doesn't send a Strict-Transport-Security header."
+     "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.newham.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.newham.gov.uk/.well-known/security.txt",
@@ -22492,6 +23862,7 @@
    "values": {
     "web_access": 75.06,
     "links_working": 62.5,
+    "security_basics": 50.0,
     "attendance": 89.6,
     "bins_satisfied": 85.0,
     "care_graded": 87.8,
@@ -22522,10 +23893,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=15768000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.north-ayrshire.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.north-ayrshire.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.north-ayrshire.gov.uk/.well-known/security.txt",
@@ -22657,6 +24042,7 @@
     "relief": 41.9,
     "web_access": 82.0,
     "links_working": 80.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -22670,10 +24056,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=0; includeSubDomains; preload",
      "pass": false,
      "reason": "Its Strict-Transport-Security header turns the protection off (max-age=0)."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.nelincs.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.nelincs.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.nelincs.gov.uk/.well-known/security.txt",
@@ -22919,6 +24319,7 @@
    "values": {
     "web_access": 91.89,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "attendance": 89.9,
     "bins_satisfied": 76.3,
     "care_graded": 87.6,
@@ -22949,10 +24350,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=300",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 300 seconds. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.northlanarkshire.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.northlanarkshire.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.northlanarkshire.gov.uk/.well-known/security.txt",
@@ -23077,6 +24493,7 @@
     "ta_rate": 1.4,
     "web_access": 69.1,
     "links_working": 65.0,
+    "security_basics": 50.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -23089,9 +24506,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.northlincs.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.northlincs.gov.uk/.well-known/security.txt",
@@ -23361,6 +24792,7 @@
     "ta_rate": 1.6,
     "web_access": 99.79,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -23374,9 +24806,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.northnorthants.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.northnorthants.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.northnorthants.gov.uk/.well-known/security.txt",
@@ -23622,6 +25068,7 @@
     "ta_rate": 0.8,
     "web_access": 93.52,
     "links_working": 85.0,
+    "security_basics": 67.0,
     "planning_data": 87.5
    },
    "checks": {
@@ -23635,8 +25082,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "n-somerset.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -23904,6 +25365,7 @@
     "ta_rate": 0.7,
     "web_access": 81.79,
     "links_working": 75.0,
+    "security_basics": 17.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -23916,10 +25378,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=0",
      "pass": false,
      "reason": "Its Strict-Transport-Security header turns the protection off (max-age=0)."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "my.northtyneside.gov.uk accepted TLS 1.1",
+     "pass": false,
+     "reason": "Its website still accepts TLS 1.1, an old version of the secure connection that browsers stopped using in 2020."
     },
     "security_txt": {
      "evidence": "https://my.northtyneside.gov.uk/?originalUrl=https://my.northtyneside.gov.uk/.well-known/security.txt",
@@ -24189,6 +25664,7 @@
     "ta_rate": 0.9,
     "web_access": 96.62,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -24202,8 +25678,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.northyorks.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.northyorks.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -24441,6 +25932,7 @@
     "ta_rate": 0.5,
     "web_access": 88.86,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -24454,9 +25946,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://northumberland-central-build.oncreate.app",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.northumberland.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.northumberland.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.northumberland.gov.uk/.well-known/security.txt",
@@ -24717,6 +26224,7 @@
     "ta_rate": 5.3,
     "web_access": 97.17,
     "links_working": 90.0,
+    "security_basics": 33.0,
     "planning_data": 12.5
    },
    "checks": {
@@ -24730,9 +26238,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.nottinghamcity.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.nottinghamcity.gov.uk/.well-known/security.txt",
@@ -24980,6 +26501,7 @@
     "ta_rate": 5.0,
     "web_access": 95.2,
     "links_working": 90.0,
+    "security_basics": 67.0,
     "planning_data": 25.0
    },
    "checks": {
@@ -24993,10 +26515,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.oldham.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.oldham.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.oldham.gov.uk/.well-known/security.txt",
@@ -25242,6 +26779,7 @@
    "values": {
     "web_access": 90.53,
     "links_working": 43.8,
+    "security_basics": 50.0,
     "attendance": 91.9,
     "bins_satisfied": 78.7,
     "care_graded": 71.1,
@@ -25272,10 +26810,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=15724800; includeSubdomains",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.orkney.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.orkney.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.orkney.gov.uk/.well-known/security.txt",
@@ -25384,6 +26937,7 @@
    "values": {
     "web_access": 92.76,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "attendance": 90.8,
     "bins_satisfied": 81.0,
     "care_graded": 81.4,
@@ -25414,8 +26968,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.pkc.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -25543,6 +27111,7 @@
     "ta_rate": 3.7,
     "web_access": 98.09,
     "links_working": 75.0,
+    "security_basics": 33.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -25556,10 +27125,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=15768000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.peterborough.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.peterborough.gov.uk/.well-known/security.txt",
@@ -25829,6 +27411,7 @@
     "ta_rate": 2.9,
     "web_access": 96.76,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -25842,10 +27425,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://performance.councilplatform.com",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=15552000; includeSubDomains; preload",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 180 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.plymouth.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.plymouth.gov.uk/.well-known/security.txt",
@@ -26100,6 +27697,7 @@
     "ta_rate": 6.9,
     "web_access": 92.8,
     "links_working": 60.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -26112,8 +27710,22 @@
      "pass": false,
      "reason": "It has no DMARC record, so nothing stops email being faked to look as if it's from the council."
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31557600",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.portsmouth.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -26404,6 +28016,7 @@
     "ta_rate": 6.2,
     "web_access": 90.15,
     "links_working": 95.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -26416,8 +28029,21 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=63072000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.reading.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -26698,6 +28324,7 @@
     "ta_rate": 26.1,
     "web_access": 88.75,
     "links_working": 100.0,
+    "security_basics": 17.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -26711,9 +28338,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.redbridge.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.redbridge.gov.uk accepted TLS 1.1",
+     "pass": false,
+     "reason": "Its website still accepts TLS 1.1, an old version of the secure connection that browsers stopped using in 2020."
     },
     "security_txt": {
      "evidence": "https://www.redbridge.gov.uk/.well-known/security.txt",
@@ -26976,6 +28617,7 @@
     "relief": 81.5,
     "web_access": 82.86,
     "links_working": 85.0,
+    "security_basics": 80.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -26989,8 +28631,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.redcar-cleveland.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -27240,6 +28896,7 @@
    "values": {
     "web_access": 92.31,
     "links_working": 81.2,
+    "security_basics": 83.0,
     "attendance": 91.0,
     "bins_satisfied": 75.3,
     "care_graded": 78.9,
@@ -27261,17 +28918,32 @@
    },
    "checks": {
     "a11y_statement": {
-     "evidence": "https://www.renfrewshire.gov.uk/about-councils-new-website/accessibility-statement",
-     "pass": true,
-     "reason": "Its accessibility statement was last reviewed or updated on 30 November 2025."
+     "evidence": "https://www1.renfrewshire.gov.uk/accessibility",
+     "pass": false,
+     "reason": "Its accessibility statement was last reviewed or updated on 30 June 2025, more than a year ago."
     },
     "dmarc": {
      "evidence": "v=DMARC1;p=quarantine;sp=quarantine;pct=100;fo=1;rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@renfrewshire.gov.uk,mailto:esnmmkrv@ag.dmarcian-eu.com;ruf=mailto:dmarc@renfrewshire.gov.uk",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubdomains;",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.renfrewshire.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.renfrewshire.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -27401,6 +29073,7 @@
     "ta_rate": 8.3,
     "web_access": 91.74,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -27414,8 +29087,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.richmond.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.richmond.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -27681,6 +29369,7 @@
     "ta_rate": 3.3,
     "web_access": 99.27,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 62.5
    },
    "checks": {
@@ -27694,9 +29383,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
+     "evidence": "max-age=2592000",
      "pass": false,
-     "reason": "The homepage doesn't send a Strict-Transport-Security header."
+     "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.rochdale.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.rochdale.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.rochdale.gov.uk/.well-known/security.txt",
@@ -27966,6 +29671,7 @@
     "ta_rate": 1.5,
     "web_access": 84.79,
     "links_working": 90.0,
+    "security_basics": 60.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -27979,10 +29685,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' www.rotherham.gov.uk www.rotherhamdigital.co.uk www.childrenscapitalofculture.co.uk",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.rotherham.gov.uk/.well-known/mta-sts.txt",
+     "pass": null,
+     "reason": "We couldn't load its MTA-STS policy file."
+    },
+    "old_tls": {
+     "evidence": "www.rotherham.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.rotherham.gov.uk/.well-known/security.txt",
@@ -28254,6 +29975,7 @@
     "ta_rate": 1.4,
     "web_access": 85.24,
     "links_working": 85.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -28267,8 +29989,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.rutland.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -28540,6 +30276,7 @@
     "ta_rate": 6.7,
     "web_access": 92.44,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -28553,8 +30290,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.salford.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.salford.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -28820,6 +30572,7 @@
     "ta_rate": 1.7,
     "web_access": 94.82,
     "links_working": 95.0,
+    "security_basics": 67.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -28833,10 +30586,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.sandwell.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.sandwell.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.sandwell.gov.uk/.well-known/security.txt",
@@ -29063,6 +30831,7 @@
    "values": {
     "web_access": 99.18,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "attendance": 92.1,
     "bins_satisfied": 86.7,
     "care_graded": 87.0,
@@ -29091,10 +30860,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.scotborders.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.scotborders.gov.uk/.well-known/security.txt",
@@ -29218,6 +31001,7 @@
     "ta_rate": 1.6,
     "web_access": 72.15,
     "links_working": 65.0,
+    "security_basics": 33.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -29231,9 +31015,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.sefton.gov.uk/.well-known/mta-sts.txt",
+     "pass": false,
+     "reason": "It says it has an MTA-STS policy, but the policy file isn't there."
+    },
+    "old_tls": {
+     "evidence": "www.sefton.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.sefton.gov.uk/.well-known/security.txt",
@@ -29509,6 +31307,7 @@
     "ta_rate": 2.8,
     "web_access": 98.89,
     "links_working": 90.0,
+    "security_basics": 83.0,
     "planning_data": 12.5
    },
    "checks": {
@@ -29522,8 +31321,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.sheffield.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -29772,6 +31585,7 @@
    "values": {
     "web_access": 95.59,
     "links_working": 81.2,
+    "security_basics": 83.0,
     "attendance": 91.5,
     "bins_satisfied": 90.3,
     "care_graded": 76.6,
@@ -29802,8 +31616,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' *.shetland.gov.uk shetland.interactgo.com",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.shetland.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.shetland.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -29943,6 +31772,7 @@
     "ta_rate": 1.7,
     "web_access": 73.56,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -29956,10 +31786,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SameOrigin",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31535999",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 365 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "next.shropshire.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://next.shropshire.gov.uk/.well-known/security.txt",
@@ -30231,6 +32075,7 @@
     "fly_rate": 16.7,
     "web_access": 99.69,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -30244,9 +32089,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' insite",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
+     "evidence": "max-age=2592000",
      "pass": false,
-     "reason": "The homepage doesn't send a Strict-Transport-Security header."
+     "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.slough.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.slough.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.slough.gov.uk/.well-known/security.txt",
@@ -30522,6 +32383,7 @@
     "ta_rate": 2.2,
     "web_access": 93.1,
     "links_working": 90.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -30535,8 +32397,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31557600",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.solihull.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -30813,6 +32689,7 @@
     "ta_rate": 1.2,
     "web_access": 96.35,
     "links_working": 50.0,
+    "security_basics": 100.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -30826,8 +32703,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors *.euw2.pure.cloud",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.somerset.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.somerset.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -31040,6 +32932,7 @@
    "values": {
     "web_access": 94.77,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "attendance": 91.2,
     "bins_satisfied": 85.3,
     "care_graded": 84.0,
@@ -31070,8 +32963,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.south-ayrshire.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -31201,6 +33108,7 @@
     "ta_rate": 2.0,
     "web_access": 81.89,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -31214,8 +33122,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "\"max-age=31536000; includeSubDomains; preload\"",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.southglos.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "beta.southglos.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -31446,6 +33368,7 @@
    "values": {
     "web_access": 96.5,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "attendance": 91.1,
     "bins_satisfied": 85.3,
     "care_graded": 86.0,
@@ -31476,10 +33399,25 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.southlanarkshire.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.southlanarkshire.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.southlanarkshire.gov.uk/.well-known/security.txt",
@@ -31610,21 +33548,39 @@
     "ta_rate": 0.6,
     "web_access": 64.89,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
     "a11y_statement": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "https://www.southtyneside.gov.uk/article/30113/E-services-accessibility-statement",
+     "pass": true,
+     "reason": "Its accessibility statement was last reviewed or updated on 20 April 2026."
     },
     "dmarc": {
      "evidence": "v=DMARC1; p=reject; pct=100; rua=mailto:dmarc@southtyneside.gov.uk; ruf=mailto:dmarc@southtyneside.gov.uk; fo=1; adkim=r; aspf=r",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.southtyneside.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.southtyneside.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.southtyneside.gov.uk/.well-known/security.txt",
@@ -31904,6 +33860,7 @@
     "ta_rate": 3.8,
     "web_access": 86.42,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -31916,9 +33873,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.southampton.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.southampton.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.southampton.gov.uk/.well-known/security.txt",
@@ -32190,6 +34161,7 @@
     "ta_rate": 5.3,
     "web_access": 99.07,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 12.5
    },
    "checks": {
@@ -32203,9 +34175,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
+     "evidence": "max-age=2592000",
      "pass": false,
-     "reason": "The homepage doesn't send a Strict-Transport-Security header."
+     "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.southend.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.southend.gov.uk/.well-known/security.txt",
@@ -32480,6 +34467,7 @@
     "ta_rate": 29.9,
     "web_access": 73.0,
     "links_working": 70.0,
+    "security_basics": 83.0,
     "planning_data": 62.5
    },
    "checks": {
@@ -32493,8 +34481,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.southwark.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -32762,6 +34764,7 @@
     "ta_rate": 0.5,
     "web_access": 84.64,
     "links_working": 75.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -32775,8 +34778,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.sthelens.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.sthelens.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -33058,9 +35076,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
     "https": {
      "pass": null,
      "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "stirling.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "pass": null,
@@ -33196,6 +35227,7 @@
     "ta_rate": 1.6,
     "web_access": 93.95,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -33209,10 +35241,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' *.stockport.gov.uk *.smbcdigital.net *.meetami.ai/ *.chat.meetami.ai/ http://forms.stockport.gov.uk https://forms.stockport.gov.uk http://app.contentful.com https://app.contentful.com http://forms-eu1.hsforms.com https://forms-eu1.hsforms.com http://my.matterport.com https://my.matterport.com http://int-formbuilder-origin.smbcdigital.net https://int-formbuilder-origin.smbcdigital.net http://lookinglocal.cdn.spotlightr.com/ https://lookinglocal.cdn.spotlightr.com/",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000;includeSubDomains",
      "pass": true,
      "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.stockport.gov.uk accepted TLS 1.1",
+     "pass": false,
+     "reason": "Its website still accepts TLS 1.1, an old version of the secure connection that browsers stopped using in 2020."
     },
     "security_txt": {
      "evidence": "https://www.stockport.gov.uk/.well-known/security.txt",
@@ -33469,21 +35515,39 @@
     "ta_rate": 0.6,
     "web_access": 81.21,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
     "a11y_statement": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "https://www.stockton.gov.uk/accessibility",
+     "pass": true,
+     "reason": "Its accessibility statement was last reviewed or updated on 2 October 2026."
     },
     "dmarc": {
      "evidence": "v=DMARC1; p=reject; rua=mailto:VUi9uQqypW4@dmarc-rua.mailcheck.service.ncsc.gov.uk; pct=100; sp=reject; adkim=s; aspf=s; fo=1",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.stockton.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.stockton.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.stockton.gov.uk/.well-known/security.txt",
@@ -33759,6 +35823,7 @@
     "ta_rate": 0.7,
     "web_access": 78.67,
     "links_working": 70.0,
+    "security_basics": 50.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -33772,10 +35837,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' www.stoke.gov.uk fostering.stoke.gov.uk shapestokesfuture.co.uk commercial.stoke.gov.uk activestoke.co.uk stokeontrenttogether.org.uk teamstoke.com team.stoke.gov.uk beta.stoke.gov.uk localoffer.stoke.gov.uk localoffer-stoke-gov-uk.translate.goog sendiass-stoke.co.uk recruitment.stoke.gov.uk fortiorhomes.co.uk stanleyhead.org.uk familyhub.stoke.gov.uk sendcohub.stoke.gov.uk sot100.org.uk families.stoke.gov.uk start4life.stoke.gov.uk safeguardingchildren.stoke.gov.uk",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.stoke.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.stoke.gov.uk/.well-known/security.txt",
@@ -34042,21 +36121,39 @@
     "ta_rate": 1.3,
     "web_access": 92.14,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
     "a11y_statement": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "https://www.sunderland.gov.uk:443/accessibility?ccp=true#cookie-consent-prompt",
+     "pass": false,
+     "reason": "Its accessibility statement was last reviewed or updated on 8 April 2022, more than a year ago."
     },
     "dmarc": {
      "evidence": "v=DMARC1; p=reject; fo=0; pct=100; rua=mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc@sunderland.gov.uk; ruf=mailto:dmarc@sunderland.gov.uk",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.sunderland.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.sunderland.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.sunderland.gov.uk/.well-known/security.txt",
@@ -34334,6 +36431,7 @@
     "ta_rate": 12.9,
     "web_access": 93.3,
     "links_working": 95.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -34347,8 +36445,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.sutton.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -34623,6 +36735,7 @@
     "ta_rate": 3.5,
     "web_access": 93.88,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -34636,10 +36749,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.swindon.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.swindon.gov.uk/.well-known/security.txt",
@@ -34905,6 +37032,7 @@
     "ta_rate": 3.8,
     "web_access": 84.45,
     "links_working": 85.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -34918,8 +37046,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubdomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.tameside.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -35190,6 +37332,7 @@
     "ta_rate": 0.8,
     "web_access": 96.16,
     "links_working": 90.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -35203,10 +37346,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.telford.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.telford.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.telford.gov.uk/.well-known/security.txt",
@@ -35489,6 +37646,7 @@
     "ta_rate": 9.4,
     "web_access": 74.25,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -35502,8 +37660,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.thurrock.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.thurrock.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -35766,6 +37939,7 @@
     "ta_rate": 2.6,
     "web_access": 93.27,
     "links_working": 95.0,
+    "security_basics": 50.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -35779,9 +37953,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.torbay.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.torbay.gov.uk/.well-known/security.txt",
@@ -36051,6 +38239,7 @@
     "ta_rate": 22.0,
     "web_access": 91.64,
     "links_working": 95.0,
+    "security_basics": 50.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -36064,10 +38253,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=15768000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 182 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.towerhamlets.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.towerhamlets.gov.uk/.well-known/security.txt",
@@ -36341,9 +38544,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": null,
+     "reason": "We couldn't load the homepage (it returned 403)."
+    },
     "https": {
      "pass": null,
      "reason": "We couldn't load the homepage (it returned 403)."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.trafford.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "pass": null,
@@ -36610,6 +38826,7 @@
     "ta_rate": 1.5,
     "web_access": 98.37,
     "links_working": 65.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -36623,8 +38840,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.wakefield.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -36903,6 +39134,7 @@
     "ta_rate": 1.0,
     "web_access": 81.2,
     "links_working": 85.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -36916,8 +39148,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://journeokioskcontent.azurewebsites.net/",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31622400; includeSubDomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.walsall.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "go.walsall.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -37200,6 +39447,7 @@
     "ta_rate": 14.5,
     "web_access": 95.63,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 100.0
    },
    "checks": {
@@ -37213,8 +39461,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.walthamforest.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.walthamforest.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -37477,6 +39740,7 @@
     "ta_rate": 30.0,
     "web_access": 78.37,
     "links_working": 95.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -37490,8 +39754,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.wandsworth.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.wandsworth.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -37750,21 +40029,36 @@
     "ta_rate": 2.1,
     "web_access": 85.18,
     "links_working": 90.0,
+    "security_basics": 67.0,
     "planning_data": 0.0
    },
    "checks": {
     "a11y_statement": {
      "evidence": "https://www.warrington.gov.uk/accessibility-statement",
-     "pass": false,
-     "reason": "Its accessibility statement was last reviewed or updated on 14 May 2025, more than a year ago."
+     "pass": true,
+     "reason": "Its accessibility statement was last reviewed or updated on 5 November 2026."
     },
     "dmarc": {
      "evidence": "v=DMARC1;p=quarantine;sp=quarantine;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400;rua=mailto:dmarc.reporting@warrington.gov.uk,mailto:dmarc-rua@dmarc.service.gov.uk,mailto:dmarc_agg@vali.email",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.warrington.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -38036,21 +40330,38 @@
     "ta_rate": 2.3,
     "web_access": 90.63,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 62.5
    },
    "checks": {
     "a11y_statement": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "https://www.westberks.gov.uk/accessibility",
+     "pass": false,
+     "reason": "Its accessibility statement was last reviewed or updated on 8 April 2024, more than a year ago."
     },
     "dmarc": {
      "evidence": "v=DMARC1;p=quarantine;rua=mailto:aggrep@westberks.gov.uk,mailto:re+dq4lnu2g6fc@dmarc.postmarkapp.com;ruf=mailto:authfail@westberks.gov.uk",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.westberks.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.westberks.gov.uk/.well-known/security.txt",
@@ -38284,6 +40595,7 @@
    "values": {
     "web_access": 99.33,
     "links_working": 87.5,
+    "security_basics": 33.0,
     "attendance": 90.5,
     "bins_satisfied": 86.0,
     "care_graded": 84.2,
@@ -38314,10 +40626,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=2592000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 30 days. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.west-dunbarton.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.west-dunbarton.gov.uk/.well-known/security.txt",
@@ -38419,6 +40744,7 @@
    "values": {
     "web_access": 92.29,
     "links_working": 93.8,
+    "security_basics": 83.0,
     "attendance": 90.6,
     "bins_satisfied": 77.7,
     "care_graded": 84.9,
@@ -38449,8 +40775,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self'",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.westlothian.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.westlothian.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -38586,6 +40927,7 @@
     "ta_rate": 3.7,
     "web_access": 99.44,
     "links_working": 95.0,
+    "security_basics": 33.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -38599,9 +40941,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "pass": false,
      "reason": "The homepage doesn't send a Strict-Transport-Security header."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.westnorthants.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.westnorthants.gov.uk/.well-known/security.txt",
@@ -38851,21 +41206,36 @@
     "ta_rate": 48.6,
     "web_access": 92.7,
     "links_working": 90.0,
+    "security_basics": 83.0,
     "planning_data": 100.0
    },
    "checks": {
     "a11y_statement": {
-     "evidence": "https://www.westminster.gov.uk/accessibility",
-     "pass": false,
-     "reason": "Its accessibility statement was last reviewed or updated on 28 January 2021, more than a year ago."
+     "pass": null,
+     "reason": "We couldn't find an accessibility statement linked from the homepage."
     },
     "dmarc": {
      "evidence": "v=DMARC1; p=reject; pct=100; fo=1; ri=3600; rua=mailto:1131b119@inbox.ondmarc.com,mailto:dmarc-rua@dmarc.service.gov.uk; ruf=mailto:1131b119@inbox.ondmarc.com",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.westminster.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.westminster.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -39138,6 +41508,7 @@
     "ta_rate": 0.6,
     "web_access": 95.6,
     "links_working": 10.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -39151,10 +41522,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=1000",
      "pass": false,
      "reason": "Its Strict-Transport-Security header lasts only 1000 seconds. It needs to last at least a year."
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.westmorlandandfurness.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.westmorlandandfurness.gov.uk/.well-known/security.txt",
@@ -39413,6 +41798,7 @@
     "ta_rate": 1.7,
     "web_access": 98.29,
     "links_working": 100.0,
+    "security_basics": 50.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -39426,10 +41812,24 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "pass": false,
+     "reason": "The homepage doesn't stop other websites showing it inside their own, which can be used to trick people into clicking things."
+    },
     "https": {
      "evidence": "max-age=0; includeSubDomains",
      "pass": false,
      "reason": "Its Strict-Transport-Security header turns the protection off (max-age=0)."
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.wigan.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.wigan.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.wigan.gov.uk/.well-known/security.txt",
@@ -39706,21 +42106,39 @@
     "ta_rate": 0.4,
     "web_access": 95.32,
     "links_working": 100.0,
+    "security_basics": 67.0,
     "planning_data": 50.0
    },
    "checks": {
     "a11y_statement": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "https://www.wiltshire.gov.uk/accessibility",
+     "pass": true,
+     "reason": "Its accessibility statement was last reviewed or updated on 11 June 2026."
     },
     "dmarc": {
      "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc_agg@vali.email; ruf=mailto:dmarc-ruf@wiltshire.gov.uk",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "Content-Security-Policy: frame-ancestors 'self' https://wiltshire.crm11.dynamics.com https://wiltshiredev.crm11.dynamics.com https://wiltshireuat.crm11.dynamics.com https://wiltshirecswdev.crm11.dynamics.com https://wiltshirecswuat.crm11.dynamics.com https://wiltshirecsw.crm11.dynamics.com",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
-     "pass": null,
-     "reason": "We couldn't load the homepage (it returned 403)."
+     "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.wiltshire.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.wiltshire.gov.uk refused TLS 1.0 and 1.1",
+     "pass": true,
+     "reason": ""
     },
     "security_txt": {
      "evidence": "https://www.wiltshire.gov.uk/.well-known/security.txt",
@@ -39983,6 +42401,7 @@
     "ta_rate": 4.0,
     "web_access": 92.86,
     "links_working": 85.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -39996,8 +42415,22 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000; includeSubdomains; preload",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "pass": false,
+     "reason": "It has no MTA-STS policy, so other mail servers aren't told they must use an encrypted connection to send it email."
+    },
+    "old_tls": {
+     "evidence": "www.rbwm.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -40271,20 +42704,37 @@
     "ta_rate": 1.3,
     "web_access": 81.18,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 100.0
    },
    "checks": {
     "a11y_statement": {
-     "pass": null,
-     "reason": "We couldn't find an accessibility statement linked from the homepage."
+     "evidence": "https://www.wirral.gov.uk/about-council/about-website/accessibility",
+     "pass": true,
+     "reason": "Its accessibility statement was last reviewed or updated on 30 September 2026."
     },
     "dmarc": {
      "evidence": "v=DMARC1; p=reject; rua=mailto:dmarc_agg@vali.email",
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31557600",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.wirral.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.wirral.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -40556,6 +43006,7 @@
     "ta_rate": 1.1,
     "web_access": 80.12,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -40569,8 +43020,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000; includeSubDomains",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.wokingham.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.wokingham.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -40839,6 +43305,7 @@
     "ta_rate": 2.2,
     "web_access": 76.23,
     "links_working": 95.0,
+    "security_basics": 100.0,
     "planning_data": 0.0
    },
    "checks": {
@@ -40852,8 +43319,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=63072000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.wolverhampton.gov.uk/.well-known/mta-sts.txt (mode: enforce)",
+     "pass": true,
+     "reason": ""
+    },
+    "old_tls": {
+     "evidence": "www.wolverhampton.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },
@@ -41121,6 +43603,7 @@
     "ta_rate": 0.7,
     "web_access": 95.28,
     "links_working": 100.0,
+    "security_basics": 83.0,
     "planning_data": 37.5
    },
    "checks": {
@@ -41134,8 +43617,23 @@
      "pass": true,
      "reason": ""
     },
+    "frame_protection": {
+     "evidence": "X-Frame-Options: SAMEORIGIN",
+     "pass": true,
+     "reason": ""
+    },
     "https": {
      "evidence": "max-age=31536000",
+     "pass": true,
+     "reason": ""
+    },
+    "mta_sts": {
+     "evidence": "https://mta-sts.york.gov.uk/.well-known/mta-sts.txt (mode: testing)",
+     "pass": false,
+     "reason": "Its MTA-STS policy is in “testing” mode, so mail servers still send email unencrypted if the encrypted connection fails. It needs to be enforce."
+    },
+    "old_tls": {
+     "evidence": "www.york.gov.uk refused TLS 1.0 and 1.1",
      "pass": true,
      "reason": ""
     },

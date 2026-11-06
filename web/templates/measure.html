@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% set m = measure %}
 {% block title %}{{ m.label }}: every council in {{ nation }} ranked{% if period %} ({{ period }}){% endif %}{% endblock %}
-{% block description %}{{ m.label }}, for every council in {{ nation }}{% if nation == "England" %} that runs all local services{% endif %}, ranked and mapped from official statistics ({{ period }}).{% endblock %}
+{% block description %}{{ m.label }}, for every council in {{ nation }}{% if nation == "England" %} that runs all local services{% endif %}, ranked and mapped from {{ "our own checks of council websites" if m.own else "official statistics" }} ({{ period }}).{% endblock %}
 {% block backLink %}{{ govukBackLink({"text": "All measures", "href": "/measures/"}) }}{% endblock %}
 
 {% block content %}
@@ -9,7 +9,7 @@
   <div class="govuk-grid-column-two-thirds">
     <span class="govuk-caption-l">{{ area_name }}</span>
     <h1 class="govuk-heading-xl">{{ m.label }}</h1>
-    <p class="govuk-body-s app-secondary-text">{% if m.official %}{{ m.official }}. {% endif %}{{ period }}. {{ model.better_text(m, why=True) }} Source: <a class="govuk-link" href="{{ source.url }}">{{ source.title }}</a>.</p>
+    <p class="govuk-body-s app-secondary-text">{% if m.official %}{{ m.official }}. {% endif %}{{ period }}. {{ model.better_text(m, why=True) }} {% if m.own %}<strong>Our own check</strong> of each council's website, not published statistics: <a class="govuk-link" href="/about/#our-checks">how we check</a>.{% else %}Source: <a class="govuk-link" href="{{ source.url }}">{{ source.title }}</a>.{% endif %}</p>
     {% if m.note %}<p class="govuk-body">{{ m.note }}</p>{% endif %}
     {% if summary %}<p class="govuk-body">{{ summary }}</p>{% endif %}
     {% if updated %}<p class="govuk-body-s app-secondary-text">Last updated {{ updated | long_date }}.</p>{% endif %}
@@ -77,7 +77,7 @@
             <tr class="govuk-table__row" data-region="{{ c.region }}" data-type="{{ c.type }}" data-slug="{{ c.slug }}">
               <td class="govuk-table__cell govuk-table__cell--numeric">{{ pos }}</td>
               <td class="govuk-table__cell"><span class="app-map__key {{ model.QUARTER_CLASSES[q] }}"></span><a class="govuk-link" href="/{{ c.slug }}/">{{ c.name }}</a>{% if model.caveat(c, m.id) %}<sup>†</sup>{% endif %}</td>
-              <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(value, m.unit) }}</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(value, m.unit, m.places) }}</td>
             </tr>
           {% endfor %}
         </tbody>
