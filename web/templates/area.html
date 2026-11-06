@@ -52,15 +52,15 @@
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header app-compare-table__label">
             {{ r.measure.label }}
-            <span class="govuk-body-s app-secondary-text app-compare-table__period">{% if r.measure.official %}{{ r.measure.official }}. {% endif %}{{ r.period }}</span>
+            <span class="govuk-body-s app-secondary-text app-compare-table__period">{% if r.measure.official %}{{ r.measure.official }}. {% endif %}{% if r.period %}{{ r.period }}. {% endif %}{{ model.better_text(r.measure, why=True) }}</span>
             {% if r.caveat %}<span class="govuk-body-s app-secondary-text app-compare-table__period">{{ r.caveat }}</span>{% endif %}
             {% if r.elsewhere %}<span class="govuk-body-s app-secondary-text app-compare-table__period">{{ r.elsewhere }} <a class="govuk-link" href="{{ b.silktide.url }}">See it on Silktide</a>.</span>{% endif %}
           </th>
           <td class="govuk-table__cell govuk-table__cell--numeric" data-label="{{ b.name }}"><strong>{{ r.value }}</strong></td>
           <td class="govuk-table__cell govuk-table__cell--numeric" data-label="Median">{{ r.median }}</td>
-          <td class="govuk-table__cell" data-label="Position">{{ model.place(r.position, r.tied, r.count) }}</td>
+          <td class="govuk-table__cell" data-label="Position">{{ model.from_end(r.position, r.tied, r.count, r.measure.better) | capitalize }}</td>
           <td class="govuk-table__cell app-compare-table__chart">
-            {{ stripChart(r.strip, b.name ~ ": " ~ r.value ~ ". Median " ~ r.median ~ ". " ~ model.place(r.position, r.tied, r.count) | capitalize ~ ".", measure=r.measure.id) }}
+            {{ stripChart(r.strip, b.name ~ ": " ~ r.value ~ ". Median " ~ r.median ~ ". " ~ model.from_end(r.position, r.tied, r.count, r.measure.better) | capitalize ~ ". " ~ model.better_text(r.measure), measure=r.measure.id) }}
           </td>
         </tr>
       {% endfor %}
@@ -207,7 +207,7 @@
 {% if area.rows %}
 <div class="app-measure-note govuk-!-margin-top-6">
   {% set howToRead %}
-    <p class="govuk-body">Position 1 is the best in the group. Each measure is coloured by the quarter of the group {{ b.name }} is in, from the top quarter in dark green to the bottom quarter in red, the same as on the maps. Councils with the same figure share a position.</p>
+    <p class="govuk-body">Positions count from whichever end the council is nearer: “4th highest of 130” means 3 councils had a higher figure. Each measure says whether higher or lower is better. Each measure is coloured by the quarter of the group {{ b.name }} is in, from the top quarter in dark green to the bottom quarter in red, the same as on the maps. Councils with the same figure share a position.</p>
     <p class="govuk-body">In each chart, every mark is a council in {{ b.nation }} and the large dot is {{ b.name }}. Councils in the group you are comparing with are darker. The dashed line is the group's median.</p>
     <p class="govuk-body"><a class="govuk-link" href="/about/">How the figures are put together</a></p>
   {% endset %}

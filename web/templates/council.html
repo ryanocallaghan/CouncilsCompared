@@ -117,7 +117,7 @@
     <ul class="app-area__measures">
       {% for r in area.rows %}
         <li class="app-area__measure">
-          <a class="app-area__label govuk-link" href="{{ model.measure_path(r.measure, b.nation) }}#{{ b.slug }}">{{ r.measure.label }}</a>
+          <span class="app-area__label"><a class="govuk-link" href="{{ model.measure_path(r.measure, b.nation) }}#{{ b.slug }}">{{ r.measure.label }}</a> <span class="app-area__better">{{ model.better_text(r.measure) }}</span></span>
           <span class="app-area__strip">{{ stripChart(r.strip, b.name ~ ": " ~ r.value ~ ". Median " ~ r.median ~ ".", measure=r.measure.id, mini=True) }}</span>
           <span class="app-area__value"><strong>{{ r.value }}</strong> <span class="app-area__median">median {{ r.median }}</span></span>
           {% if not area.uniform %}<span class="app-tag app-area__tag {{ r.band_class }}">{{ r.band_text }}</span>{% endif %}
@@ -183,7 +183,7 @@
 
 <div class="app-measure-note govuk-!-margin-top-6">
   {% set howToRead %}
-    <p class="govuk-body">Position 1 is the best in the group. Each measure is coloured by the quarter of the group {{ b.name }} is in, from the top quarter in dark green to the bottom quarter in red, the same as on the maps. Councils with the same figure share a position.</p>
+    <p class="govuk-body">Positions count from whichever end the council is nearer: “4th highest of 130” means 3 councils had a higher figure. Each measure says whether higher or lower is better. Each measure is coloured by the quarter of the group {{ b.name }} is in, from the top quarter in dark green to the bottom quarter in red, the same as on the maps. Councils with the same figure share a position.</p>
     <p class="govuk-body">In each chart, every mark is a council in {{ b.nation }} and the large dot is {{ b.name }}. Councils in the group you are comparing with are darker. The dashed line is the group's median.</p>
     <p class="govuk-body"><a class="govuk-link" href="/about/">How the figures are put together</a></p>
   {% endset %}
