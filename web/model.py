@@ -67,8 +67,9 @@ AREAS = [
     ("security", "Privacy and security",
      "Checks we run ourselves each month on the council's website and email, rather than published statistics: "
      "whether it waits for you to choose before setting tracking cookies and lets you reject them easily, "
-     "whether its email is protected from being faked, whether its website makes browsers always connect "
-     "securely, and whether it says how to report a security problem."),
+     "whether its email is protected from being faked or read in transit, whether its website makes browsers "
+     "always connect securely and stops other sites showing its pages inside theirs, and whether it says how to "
+     "report a security problem. Together these make a score of security basics in place."),
     ("openness", "Openness",
      "Whether the council publishes the information it should, in a form other people can use, and has its "
      "accounts audited on time. Planning data is what MHCLG's Planning Data platform collects from each "
@@ -128,6 +129,8 @@ class Measure:
     other_sources: tuple = ()  # ((nation, source id),) where a nation's figures come from another source
     note: str = ""  # anything a reader needs to know to read the positions, shown on the measure's page
     why: str = ""  # why higher or lower is better, where it isn't obvious from the label
+    own: bool = False  # worked out from our own checks of council websites, rather than published statistics
+    places: int = 1  # decimal places to show
 
     def source_for(self, nation="England"):
         return dict(self.other_sources).get(nation, self.source)
@@ -192,6 +195,14 @@ MEASURES = [
             "Silktide Index WCAG 2.2 AA score", nations=("England", "Scotland"),
             note="Silktide ranks every UK council together, including county and district councils and those in "
                  "the other nations, so its positions are different from the ones here. The scores are the same."),
+    Measure("security_basics", "security", "Website and email security basics in place", "%", "higher", "website",
+            nations=("England", "Scotland"), own=True, places=0,
+            why="Higher is better: each one closes off a common way to attack the council or fake its email.",
+            note="Of six checks we run ourselves, each shown on the council's page: protecting its email from being faked "
+                 "(DMARC) and read in transit (MTA-STS), always connecting securely (HSTS) and refusing old "
+                 "versions of the secure connection, stopping other websites showing its pages inside theirs, "
+                 "and saying how to report a security problem. Checks we couldn't do are left out of the share, "
+                 "and a council needs answers to at least four for a figure."),
     Measure("links_working", "digital", "Core services GOV.UK can link straight to", "%", "higher", "local_links",
             "GOV.UK's links to the council's pages for its core services that worked when GOV.UK last checked",
             nations=("England", "Scotland")),
@@ -306,6 +317,21 @@ CHECKS = [
           "A security.txt file, at the same address on every website (/.well-known/security.txt), tells people "
           "who find a security problem how to report it. It passes if the file is there, gives a way to contact "
           "the council and hasn't expired.", nations=("England", "Scotland"), own=True),
+    Check("mta_sts", "security", "Makes sure email sent to it is encrypted", "encrypted email (MTA-STS)", "website",
+          "Email between mail servers is usually encrypted, but an attacker can quietly stop that unless the "
+          "council publishes an MTA-STS policy telling other mail servers they must use an encrypted, verified "
+          "connection. This looks up the policy for the council's own domain. It passes if the policy is there "
+          "and in enforce mode, not only testing.", nations=("England", "Scotland"), own=True),
+    Check("old_tls", "security", "Refuses old, insecure connections", "old connections (TLS 1.0 and 1.1)", "website",
+          "TLS is what makes a website's connection secure. Its old versions, 1.0 and 1.1, have known weaknesses, "
+          "and browsers stopped using them in 2020. This tries to connect to the council's website using only "
+          "those versions. It passes if the website refuses.", nations=("England", "Scotland"), own=True),
+    Check("frame_protection", "security", "Stops other websites showing its pages inside theirs",
+          "framing protection", "website",
+          "A website can be shown inside another one, invisibly, to trick people into clicking things "
+          "(“clickjacking”). A header telling browsers not to allow it stops this. It passes if the homepage "
+          "sends X-Frame-Options (DENY or SAMEORIGIN) or a Content-Security-Policy with frame-ancestors.",
+          nations=("England", "Scotland"), own=True),
 ]
 
 SPENDING = [
@@ -484,13 +510,13 @@ def fmt(value, unit="", places=1):
     return text[:-2] if text.endswith(".0") else text
 
 
-def fmt_pair(value, other, unit=""):
+def fmt_pair(value, other, unit="", places=1):
     """A figure and the median it's compared with, with one more decimal
     place when they'd otherwise look the same but aren't: 0.9 against 0.95
     shouldn't read as "0.9 against 0.9"."""
-    if value is not None and other is not None and value != other and fmt(value, unit) == fmt(other, unit):
-        return fmt(value, unit, 2), fmt(other, unit, 2)
-    return fmt(value, unit), fmt(other, unit)
+    if value is not None and other is not None and value != other and fmt(value, unit, places) == fmt(other, unit, places):
+        return fmt(value, unit, places + 1), fmt(other, unit, places + 1)
+    return fmt(value, unit, places), fmt(other, unit, places)
 
 
 def fmt_pence(value):
@@ -731,7 +757,7 @@ def compare(council, group="nation"):
         for m in (m for m in MEASURES if m.area == area_id and available(m, council["nation"])):
             group_values = [c["values"][m.id] for c in members if m.id in c["values"]]
             value = council["values"].get(m.id)
-            shown_value, shown_median = fmt_pair(value, median(group_values) if group_values else None, m.unit)
+            shown_value, shown_median = fmt_pair(value, median(group_values) if group_values else None, m.unit, m.places)
             row = Row(measure=m, period=period(m, council["nation"]), value=shown_value, median=shown_median,
                       caveat=caveat(council, m.id), elsewhere=elsewhere(council, m.id))
             if value is not None and len(group_values) > 1:
@@ -819,10 +845,10 @@ def measure_summary(measure, rows, nation="England"):
         return None
     by_value = sorted(rows, key=lambda r: (r[2], r[1]["name"]))
     low, high = by_value[0], by_value[-1]
-    middle = fmt(median(r[2] for r in rows), measure.unit)
+    middle = fmt(median(r[2] for r in rows), measure.unit, measure.places)
     when = f"In {period(measure, nation)}, " if period(measure, nation) else ""
-    return (f"{when}the highest figure was {high[1]['name']}’s ({fmt(high[2], measure.unit)}) and the lowest "
-            f"{low[1]['name']}’s ({fmt(low[2], measure.unit)}). The median across {len(rows)} councils in "
+    return (f"{when}the highest figure was {high[1]['name']}’s ({fmt(high[2], measure.unit, measure.places)}) and the lowest "
+            f"{low[1]['name']}’s ({fmt(low[2], measure.unit, measure.places)}). The median across {len(rows)} councils in "
             f"{nation} was {middle}.")
 
 
@@ -842,7 +868,7 @@ def nation_source(source_id, nation="England"):
 
 def nation_sources(nation):
     """The sources a nation's pages use."""
-    used = {m.source_for(nation) for m in MEASURES if nation in m.nations} | {"population"}
+    used = {m.source_for(nation) for m in MEASURES if nation in m.nations and not m.own} | {"population"}
     # Checks from published data (our own checks are explained on the About page instead)
     used |= {k.source for k in CHECKS if nation in k.nations and not k.own}
     return used | PAGE_SOURCES.get(nation, set())
@@ -1093,9 +1119,9 @@ def measure_overview(measure, nation="England"):
         """ "Rutland" or, when others share the figure, "Rutland and 12 others"."""
         tied = sorted(c["name"] for _, c, v, _ in ranked if v == value)
         name = tied[0] if len(tied) == 1 else f"{tied[0]} and {len(tied) - 1} other{'s' if len(tied) > 2 else ''}"
-        return name, fmt(value, measure.unit)
+        return name, fmt(value, measure.unit, measure.places)
     return {"best": end(ranked[0][2]), "worst": end(ranked[-1][2]),
-            "median": fmt(median(v for _, _, v, _ in ranked), measure.unit)}
+            "median": fmt(median(v for _, _, v, _ in ranked), measure.unit, measure.places)}
 
 
 def recent_updates(n=4):
@@ -1104,8 +1130,8 @@ def recent_updates(n=4):
     found = []
     for source_id, source in sources().items():
         nation = next((nat for nat in nations() if source_id in nation_sources(nat)), None)
-        measure = next((m for m in MEASURES if nation and m.source_for(nation) == source_id and available(m, nation)),
-                       None)
+        measure = next((m for m in MEASURES if nation and m.source_for(nation) == source_id and available(m, nation)
+                        and not m.own), None)  # published statistics, not our checks
         if measure and source.get("published"):
             found.append({"date": source["published"], "measure": measure, "nation": nation,
                           "period": period(measure, nation)})
@@ -1162,7 +1188,7 @@ def hub(group, value):
         ranked = ranking(m, members=members)
         if len(ranked) > 1:
             measures.append({"measure": m, "rows": ranked, "period": period(m, nation),
-                             "median": fmt(median(v for _, _, v, _ in ranked), m.unit)})
+                             "median": fmt(median(v for _, _, v, _ in ranked), m.unit, m.places)})
     return {"group": group, "value": value, "nation": nation, "members": members, "phrase": phrase,
             "title": phrase[0].upper() + phrase[1:], "rows": rows, "measures": measures}
 
@@ -1208,7 +1234,7 @@ def hexmap(measure, nation="England"):
     r counts up from the south, so it is flipped to draw north at the top.
     """
     ranked = ranking(measure, nation)
-    return _hexmap(nation, {c["code"]: (QUARTER_CLASSES[q], f"{fmt(v, measure.unit)}, {QUARTER_NAMES[q].lower()}")
+    return _hexmap(nation, {c["code"]: (QUARTER_CLASSES[q], f"{fmt(v, measure.unit, measure.places)}, {QUARTER_NAMES[q].lower()}")
                             for _, c, v, q in ranked})
 
 
@@ -1257,5 +1283,5 @@ def site_data():
         "councils": [{"slug": c["slug"], "name": c["name"], "code": c["code"], "region": c["region"],
                       "nation": c["nation"], "type": c["type"], "values": c["values"], "spend": c["spend"], "trends": c["trends"]}
                      for c in everyone],
-        "measures": {m.id: {"label": m.label, "unit": m.unit, "better": m.better} for m in MEASURES},
+        "measures": {m.id: {"label": m.label, "unit": m.unit, "better": m.better, "places": m.places} for m in MEASURES},
     }

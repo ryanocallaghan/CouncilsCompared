@@ -33,7 +33,7 @@
 
 <span class="govuk-caption-l">{% if b.nation != "England" %}<a class="govuk-link govuk-link--muted" href="{{ model.hub_path('nation', b.nation) }}">{{ b.nation }}</a>{% else %}{% if b.type == "London borough" %}{{ b.type }}{% else %}<a class="govuk-link govuk-link--muted" href="{{ model.hub_for(b, 'type') }}">{{ b.type }}</a>{% endif %}, <a class="govuk-link govuk-link--muted" href="{{ model.hub_for(b, 'region') }}">{{ b.region }}</a>{% endif %}</span>
 <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">{{ b.name }}</h1>
-<p class="govuk-body-l app-measure-note">How {{ b.name }} Council compares with {{ c.phrase }}, on {{ c.ranked }} measures from official statistics.</p>
+<p class="govuk-body-l app-measure-note">How {{ b.name }} Council compares with {{ c.phrase }}, on {{ c.ranked }} measures from official statistics{% if c.areas | map(attribute="rows") | sum(start=[]) | selectattr("measure.own") | first %} and our own checks of its website{% endif %}.</p>
 
 {# Summary #}
 <div class="app-summary">
@@ -117,7 +117,7 @@
     <ul class="app-area__measures">
       {% for r in area.rows %}
         <li class="app-area__measure">
-          <span class="app-area__label"><a class="govuk-link" href="{{ model.measure_path(r.measure, b.nation) }}#{{ b.slug }}">{{ r.measure.label }}</a> <span class="app-area__better">{{ model.better_text(r.measure) }}</span></span>
+          <span class="app-area__label"><a class="govuk-link" href="{{ model.measure_path(r.measure, b.nation) }}#{{ b.slug }}">{{ r.measure.label }}</a>{{ ownTag(r.measure) }} <span class="app-area__better">{{ model.better_text(r.measure) }}</span></span>
           <span class="app-area__strip">{{ stripChart(r.strip, b.name ~ ": " ~ r.value ~ ". Median " ~ r.median ~ ".", measure=r.measure.id, mini=True) }}</span>
           <span class="app-area__value"><strong>{{ r.value }}</strong> <span class="app-area__median">median {{ r.median }}</span></span>
           {% if not area.uniform %}<span class="app-tag app-area__tag {{ r.band_class }}">{{ r.band_text }}</span>{% endif %}

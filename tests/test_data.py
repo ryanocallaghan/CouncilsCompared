@@ -25,6 +25,8 @@ MINIMUM.update({(m, "England"): n for m, n in
                 dict(om_remedy_before=100, om_timely=90, ta_long=100, fly_enforce=100).items()})
 MINIMUM.update({(m.id, "Scotland"): 30 for m in model.MEASURES})
 MINIMUM.update({(m.id, "Scotland"): 24 for m in model.MEASURES if m.area == "housing"})  # 26 own homes
+# Our own checks: a few councils' websites block us, and a council needs answers to most of them for a score
+MINIMUM.update({("security_basics", "England"): 115, ("security_basics", "Scotland"): 28})
 
 
 def nation_of(council):

@@ -333,6 +333,8 @@ def test_our_checks_record_answers_reasons_and_evidence(monkeypatch):
     }
     monkeypatch.setattr(website, "get_page", lambda url: pages.get(url, (404, url, {}, "")))
     monkeypatch.setattr(website, "dmarc_records", lambda name: {"lewisham.gov.uk": ["v=DMARC1; p=reject"]}.get(name, []))
+    monkeypatch.setattr(website, "txt_records", lambda name, prefix: [])  # no MTA-STS
+    monkeypatch.setattr(website, "old_tls_handshake", lambda hostname: "refused")
     monkeypatch.setattr(website.time, "sleep", lambda seconds: None)
     links = Result(id="local_links", title="", url="", period="", extra={
         "E09000023": {"homepage": "http://www.lewisham.gov.uk"}, "E09000014": {"homepage": "https://www.haringey.gov.uk/"}})
@@ -343,8 +345,53 @@ def test_our_checks_record_answers_reasons_and_evidence(monkeypatch):
     haringey = result.checks["E09000014"]
     assert haringey["dmarc"]["pass"] is False  # DNS still answers when the website blocks us
     assert haringey["https"]["pass"] is None and haringey["security_txt"]["pass"] is None
-    assert any("E09000014: couldn't check https, security_txt, a11y_statement" == note for note in result.notes)
+    assert any("E09000014: couldn't check https, security_txt, frame_protection, a11y_statement" == note
+               for note in result.notes)
     assert any("E09000001" in note for note in result.notes)  # no homepage
+    # DMARC, HSTS and old TLS of DMARC, HSTS, security.txt, MTA-STS, old TLS and framing
+    assert result.values["E09000023"]["security_basics"] == 50
+    assert "E09000014" not in result.values  # only 3 of the 6 could be checked
+
+
+@pytest.mark.parametrize("records, policy, exists, passed, says", [
+    ([], None, True, False, "no MTA-STS policy"),
+    (None, None, True, None, "couldn't look up"),
+    (["v=STSv1; id=1"], (200, "https://mta-sts.x.gov.uk/.well-known/mta-sts.txt", {},
+                         "version: STSv1\nmode: enforce\nmx: *.mail.protection.outlook.com\nmax_age: 604800"),
+     True, True, ""),
+    (["v=STSv1; id=1"], (200, "u", {}, "version: STSv1\nmode: testing\n"), True, False, "“testing” mode"),
+    (["v=STSv1; id=1"], (404, "u", {}, ""), True, False, "policy file isn't there"),
+    (["v=STSv1; id=1"], (200, "u", {}, "<html>Page not found</html>"), True, False, "policy file isn't there"),
+    (["v=STSv1; id=1"], (None, "u", {}, ""), False, False, "policy file isn't there"),  # no such host
+    (["v=STSv1; id=1"], (None, "u", {}, ""), True, None, "couldn't load"),  # timed out
+])
+def test_mta_sts(records, policy, exists, passed, says):
+    from pipeline.sources import website
+    result, reason, _ = website.mta_sts(records, policy, exists)
+    assert result is passed and says in reason
+
+
+def test_old_tls_and_framing():
+    from pipeline.sources import website
+    assert website.old_tls(200, "refused", "x.gov.uk") == (True, "", "x.gov.uk refused TLS 1.0 and 1.1")
+    passed, reason, evidence = website.old_tls(200, "TLSv1.1", "x.gov.uk")
+    assert passed is False and "TLS 1.1" in reason and evidence == "x.gov.uk accepted TLS 1.1"
+    assert website.old_tls(None, "refused")[0] is None and website.old_tls(200, None)[0] is None
+    assert website.frame_protection(200, {"x-frame-options": "SAMEORIGIN"})[0] is True
+    assert website.frame_protection(200, {"content-security-policy": "default-src 'self'; frame-ancestors 'self'"})[0] is True
+    assert website.frame_protection(200, {"content-security-policy": "frame-ancestors *"})[0] is False
+    assert "isn't one browsers act on" in website.frame_protection(200, {"x-frame-options": "ALLOW-FROM https://a.b"})[1]
+    assert website.frame_protection(200, {})[0] is False
+    assert website.frame_protection(403, {})[0] is None
+
+
+def test_security_basics_score_leaves_out_what_we_couldnt_check():
+    from pipeline.sources import website
+    yes, no, unknown = (True, "", ""), (False, "", ""), (None, "", "")
+    checks = dict(dmarc=yes, https=yes, security_txt=no, mta_sts=no, old_tls=yes, frame_protection=yes)
+    assert website.security_basics(checks) == 400 / 6
+    assert website.security_basics({**checks, "https": unknown, "security_txt": unknown}) == 75  # 3 of 4
+    assert website.security_basics({**checks, "https": unknown, "security_txt": unknown, "old_tls": unknown}) is None
 
 
 @pytest.mark.parametrize("name, domain, expected", [

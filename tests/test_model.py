@@ -264,7 +264,7 @@ def test_site_data_for_the_charts(fixture_data):
     data = model.site_data()
     assert data["councils"][0]["name"] == "Greenwich"
     assert data["measures"]["om_upheld"] == {"label": "Complaints the Ombudsman upheld, per 100,000 residents",
-                                             "unit": "", "better": "lower"}
+                                             "unit": "", "better": "lower", "places": 1}
 
 
 def test_measures_covering_too_few_councils_are_hidden(fixture_data):

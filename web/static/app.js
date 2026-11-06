@@ -87,9 +87,9 @@ const strips = document.querySelectorAll(".app-strip");
 let siteData = null;
 const loadSite = () => (siteData ??= fetch("/data/site.json").then((r) => r.json()));
 
-const format = (value, unit) => {
+const format = (value, unit, places = 1) => {
   if (value === null || value === undefined) return "No figure";
-  if (unit === "%") return `${value.toFixed(1)}%`;
+  if (unit === "%") return `${value.toFixed(places)}%`;
   if (unit === "£") return (value < 0 ? "−£" : "£") + Math.round(Math.abs(value)).toLocaleString("en-GB");
   return String(Number(value.toFixed(1)));
 };
@@ -104,6 +104,7 @@ function positions(site, strip) {
   const spend = strip.dataset.spend;
   const better = measure ? site.measures[measure].better : "higher";
   const unit = measure ? site.measures[measure].unit : "£";
+  const places = measure ? site.measures[measure].places : 0;
   const get = (c) => (measure ? c.values[measure] : c.spend[spend]);
   const placed = site.councils.filter((c) => get(c) !== undefined && get(c) !== null);
   const values = placed.map(get);
@@ -115,7 +116,7 @@ function positions(site, strip) {
       let share = (get(c) - low) / span;
       if (better === "lower") share = 1 - share;
       const rank = sorted.findIndex((v) => v === get(c)) + 1;
-      return { council: c, value: get(c), left: 2 + share * 96, text: `${c.name}: ${format(get(c), unit)}`,
+      return { council: c, value: get(c), left: 2 + share * 96, text: `${c.name}: ${format(get(c), unit, places)}`,
                rank: measure ? `${ordinal(rank)} of ${values.length}` : "" };
     })
     .sort((a, b) => a.left - b.left);
@@ -259,7 +260,7 @@ for (const form of document.querySelectorAll('[data-module="app-with"]')) {
       else if (verdict === "worse") worse += 1;
       else same += 1;
       const words = { better: `${mine.name} does better`, worse: `${mine.name} does worse`, same: "the same" };
-      el.textContent = `${other.name}: ${format(b, m.unit)} (${words[verdict]})`;
+      el.textContent = `${other.name}: ${format(b, m.unit, m.places)} (${words[verdict]})`;
       el.dataset.verdict = verdict;
     }
     summary.textContent = `${mine.name} does better than ${other.name} on ${better} of ${better + worse + same} measures they both have figures for, and worse on ${worse}.`;

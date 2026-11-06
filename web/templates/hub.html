@@ -52,7 +52,7 @@
           <details class="govuk-details">
             <summary class="govuk-details__summary"><span class="govuk-details__summary-text">{{ m.label }}</span></summary>
             <div class="govuk-details__text">
-              <p class="govuk-body">{% if item.period %}In {{ item.period }}, {% endif %}{{ best[1].name }} was 1st of {{ item.rows | length }} {{ hub.phrase }} ({{ model.fmt(best[2], m.unit) }}) and {{ worst[1].name }} was last ({{ model.fmt(worst[2], m.unit) }}). The median was {{ item.median }}. {{ model.better_text(m) }}</p>
+              <p class="govuk-body">{% if item.period %}In {{ item.period }}, {% endif %}{{ best[1].name }} was 1st of {{ item.rows | length }} {{ hub.phrase }} ({{ model.fmt(best[2], m.unit, m.places) }}) and {{ worst[1].name }} was last ({{ model.fmt(worst[2], m.unit, m.places) }}). The median was {{ item.median }}. {{ model.better_text(m) }}</p>
               <table class="govuk-table">
                 <thead class="govuk-table__head">
                   <tr class="govuk-table__row">
@@ -66,7 +66,7 @@
                     <tr class="govuk-table__row">
                       <td class="govuk-table__cell govuk-table__cell--numeric">{{ pos }}</td>
                       <td class="govuk-table__cell"><span class="app-map__key {{ model.QUARTER_CLASSES[q] }}"></span>{{ c.name }}</td>
-                      <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(value, m.unit) }}</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric">{{ model.fmt(value, m.unit, m.places) }}</td>
                     </tr>
                   {% endfor %}
                 </tbody>

@@ -58,7 +58,7 @@ STEPS = [
 
 # Measures each source provides, in data/councils.json "values"
 VALUE_SOURCES = ["ehcp", "lgo", "lgo_decisions", "tsm", "ctax", "waste", "fly", "homelessness", "silktide",
-                 "local_links", "planning_data", "lgbf",
+                 "local_links", "website", "planning_data", "lgbf",
                  "spso", "scot_homelessness"]
 # Trends each source provides; a council only has figures in one source per trend
 TRENDS = {"ehcp_20wk": ["ehcp"], "om_upheld": ["lgo"], "recycling": ["waste", "lgbf"], "fly_rate": ["fly"],
