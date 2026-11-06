@@ -103,11 +103,29 @@ def test_the_summary_says_which_end_is_best(fixture_data):
     (2, 3, 130, "higher", "joint 2nd highest of 130"),
     (74, 57, 130, "lower", "joint highest of 130"),  # 57 share the worst figure
     (126, 3, 130, "higher", "joint 3rd lowest of 130"),
-    (65, 1, 129, "higher", "65th highest of 129"),  # the exact middle counts from the best end
-    (66, 1, 130, "higher", "65th lowest of 130"),
+    (52, 1, 130, "higher", "52nd highest of 130"),
+    (53, 1, 130, "higher", "near the middle of 130"),  # "64th highest" sounds worse than it is
+    (64, 1, 130, "lower", "near the middle of 130"),
+    (78, 1, 130, "higher", "near the middle of 130"),
+    (79, 1, 130, "higher", "52nd lowest of 130"),
+    (60, 11, 130, "higher", "near the middle of 130"),  # a tie across the middle
+    (1, 130, 130, "higher", "joint highest of 130"),  # a tie that reaches an end is described from it
+    (3, 1, 6, "lower", "near the middle of 6"),
+    (2, 1, 6, "lower", "2nd lowest of 6"),
 ])
 def test_positions_count_from_the_nearer_end(position, tied, count, better, says):
     assert model.from_end(position, tied, count, better) == says
+
+
+def test_reasons_for_which_way_is_better():
+    measures = {m.id: m for m in model.MEASURES}
+    assert model.better_text(measures["fly_fpn"]) == "Higher is better."
+    assert model.better_text(measures["fly_fpn"], why=True) == "Higher is better: more fly-tips end in an on-the-spot fine."
+    assert model.better_text(measures["fly_rate"], why=True) == "Lower is better."
+    # Every reason starts by saying which way is better, and gets it the right way round
+    for m in measures.values():
+        if m.why:
+            assert m.why.startswith("Higher is better" if m.better == "higher" else "Lower is better"), m.id
 
 
 def test_region_and_type_groups(fixture_data):

@@ -117,7 +117,7 @@
     <ul class="app-area__measures">
       {% for r in area.rows %}
         <li class="app-area__measure">
-          <a class="app-area__label govuk-link" href="{{ model.measure_path(r.measure, b.nation) }}#{{ b.slug }}">{{ r.measure.label }}</a>
+          <span class="app-area__label"><a class="govuk-link" href="{{ model.measure_path(r.measure, b.nation) }}#{{ b.slug }}">{{ r.measure.label }}</a> <span class="app-area__better">{{ model.better_text(r.measure) }}</span></span>
           <span class="app-area__strip">{{ stripChart(r.strip, b.name ~ ": " ~ r.value ~ ". Median " ~ r.median ~ ".", measure=r.measure.id, mini=True) }}</span>
           <span class="app-area__value"><strong>{{ r.value }}</strong> <span class="app-area__median">median {{ r.median }}</span></span>
           {% if not area.uniform %}<span class="app-tag app-area__tag {{ r.band_class }}">{{ r.band_text }}</span>{% endif %}

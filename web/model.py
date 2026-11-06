@@ -127,6 +127,7 @@ class Measure:
     nations: tuple = ("England",)  # where it is published; ranked within each separately
     other_sources: tuple = ()  # ((nation, source id),) where a nation's figures come from another source
     note: str = ""  # anything a reader needs to know to read the positions, shown on the measure's page
+    why: str = ""  # why higher or lower is better, where it isn't obvious from the label
 
     def source_for(self, nation="England"):
         return dict(self.other_sources).get(nation, self.source)
@@ -137,7 +138,8 @@ MEASURES = [
             "New education, health and care (EHC) plans issued within the legal limit of 20 weeks"),
     Measure("om_upheld", "complaints", "Complaints the Ombudsman upheld, per 100,000 residents", "", "lower", "lgo"),
     Measure("om_received", "complaints", "Complaints that reached the Ombudsman, per 100,000 residents", "", "lower",
-            "lgo", nations=("England", "Scotland"), other_sources=(("Scotland", "spso"),)),
+            "lgo", nations=("England", "Scotland"), other_sources=(("Scotland", "spso"),),
+            why="Lower is better, though more complaints can also mean a council makes it easy to complain."),
     Measure("om_children", "complaints", "Upheld complaints about children's services, per 100,000 residents",
             "", "lower", "lgo_decisions"),
     Measure("om_sen", "complaints", "Upheld complaints about special educational needs, per 100,000 residents",
@@ -146,7 +148,7 @@ MEASURES = [
             "", "lower", "lgo_decisions"),
     Measure("om_remedy_before", "complaints", "Upheld complaints the council had already put right", "%", "higher",
             "lgo", "Upheld cases where the council provided a satisfactory remedy before the complaint reached "
-            "the Ombudsman"),
+            "the Ombudsman", why="Higher is better: the council put things right itself, before the Ombudsman had to."),
     Measure("om_timely", "complaints", "Ombudsman's recommendations carried out on time", "%", "higher", "lgo",
             "Compliance outcomes recorded as delivered on time"),
     Measure("tsm_overall", "housing", "Tenants satisfied with the overall service", "%", "higher", "tsm",
@@ -168,9 +170,12 @@ MEASURES = [
     Measure("nndr_collect", "ctax", "Business rates collected in the year they were due", "%", "higher", "ctax",
             "Non-domestic rates collected by 31 March as a percentage of the amount collectable"),
     Measure("fly_rate", "streets", "Fly-tipping incidents, per 1,000 residents", "", "lower", "fly"),
-    Measure("fly_enforce", "streets", "Enforcement actions, per 100 fly-tipping incidents", "", "higher", "fly"),
+    Measure("fly_enforce", "streets", "Enforcement actions, per 100 fly-tipping incidents", "", "higher", "fly",
+            why="Higher is better: the council follows up more fly-tips with action, such as an investigation, "
+                "a warning letter or a fine."),
     Measure("fly_fpn", "streets", "Fixed penalty notices, per 100 fly-tipping incidents", "", "higher", "fly",
-            "Fixed penalty notices for fly-tipping and for breaches of household duty of care"),
+            "Fixed penalty notices for fly-tipping and for breaches of household duty of care",
+            why="Higher is better: more fly-tips end in an on-the-spot fine."),
     Measure("recycling", "streets", "Household waste reused, recycled or composted", "%", "higher", "waste",
             nations=("England", "Scotland"), other_sources=(("Scotland", "lgbf"),)),
     Measure("residual_waste", "streets", "Household waste not recycled, in kg per household", "", "lower", "waste",
@@ -551,15 +556,22 @@ def from_end(position_, tied, count, better):
     first, so "127th of 130; 1st is lowest" read as if 1st were sometimes
     the worst; this says the figure is high or low, and better_text says
     which is good."""
-    best_end = position_ + (tied - 1) / 2 <= (count + 1) / 2  # the middle of a tie decides
+    middle_ = position_ + (tied - 1) / 2  # the middle of a tie decides
+    at_an_end = tied > 1 and (position_ == 1 or position_ + tied - 1 == count)
+    if not at_an_end and abs(middle_ - (count + 1) / 2) <= count / 10:
+        return f"near the middle of {count}"  # "64th highest of 130" sounds worse than it is
+    best_end = middle_ <= (count + 1) / 2
     high = (better == "higher") == best_end
     start = position_ if best_end else count - (position_ + tied - 1) + 1
     words = ("joint " if tied > 1 else "") + ("" if start == 1 else ordinal(start) + " ")
     return f"{words}{'highest' if high else 'lowest'} of {count}"
 
 
-def better_text(measure):
-    """ "Higher is better." or "Lower is better." """
+def better_text(measure, why=False):
+    """ "Higher is better." or "Lower is better.", or with why=True the
+    measure's own reason, where it has one."""
+    if why and measure.why:
+        return measure.why
     return f"{'Higher' if measure.better == 'higher' else 'Lower'} is better."
 
 

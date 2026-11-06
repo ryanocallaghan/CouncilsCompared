@@ -52,7 +52,7 @@
         <tr class="govuk-table__row">
           <th scope="row" class="govuk-table__header app-compare-table__label">
             {{ r.measure.label }}
-            <span class="govuk-body-s app-secondary-text app-compare-table__period">{% if r.measure.official %}{{ r.measure.official }}. {% endif %}{% if r.period %}{{ r.period }}. {% endif %}{{ model.better_text(r.measure) }}</span>
+            <span class="govuk-body-s app-secondary-text app-compare-table__period">{% if r.measure.official %}{{ r.measure.official }}. {% endif %}{% if r.period %}{{ r.period }}. {% endif %}{{ model.better_text(r.measure, why=True) }}</span>
             {% if r.caveat %}<span class="govuk-body-s app-secondary-text app-compare-table__period">{{ r.caveat }}</span>{% endif %}
             {% if r.elsewhere %}<span class="govuk-body-s app-secondary-text app-compare-table__period">{{ r.elsewhere }} <a class="govuk-link" href="{{ b.silktide.url }}">See it on Silktide</a>.</span>{% endif %}
           </th>

@@ -335,7 +335,7 @@ def build(out=DIST):
             measure_updated = model.updated({source_id})
             page(path, "measure.html", nav="/measures/", lastmod=measure_updated or None, measure=m, rows=rows,
                  nation=nation, summary=model.measure_summary(m, rows, nation), updated=measure_updated,
-                 structured_data=dataset(m.label, model.better_text(m),
+                 structured_data=dataset(m.label, model.better_text(m, why=True),
                                          path, model.period(m, nation), source, measure_updated, nation=nation,
                                          ogl=source_id != "silktide"),  # the Silktide Index is not under the OGL
                  map=model.hexmap(m, nation), period=model.period(m, nation), source=source,

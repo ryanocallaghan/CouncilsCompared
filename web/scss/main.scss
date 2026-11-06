@@ -610,6 +610,13 @@ $app-funding-colours: (#00625e, #12436d, govuk.govuk-colour("black", $variant: "
   }
 }
 
+// Which way is better, on its own line under the measure's name
+.app-area__better {
+  display: block;
+  color: var(--govuk-secondary-text-colour, #484949);
+  @include govuk.govuk-font($size: 16);
+}
+
 .app-area__strip {
   display: none;
 
