@@ -1665,10 +1665,6 @@
   },
   "E09000004": {
    "missing": [
-    "Conservation areas",
-    "Article 4 directions",
-    "Article 4 direction areas",
-    "Tree preservation zones",
     "Protected trees"
    ]
   },
@@ -1889,7 +1885,6 @@
   "E09000028": {
    "missing": [
     "Conservation area documents",
-    "Article 4 direction areas",
     "Tree preservation orders"
    ]
   },
@@ -1934,7 +1929,7 @@
  "id": "planning_data",
  "notes": [],
  "period": "November 2026",
- "published": "2026-11-03",
+ "published": "2026-11-16",
  "title": "Planning Data: data provided by each planning authority",
  "trends": {},
  "url": "https://www.planning.data.gov.uk/",
@@ -2240,7 +2235,7 @@
    "planning_data": 100.0
   },
   "E09000004": {
-   "planning_data": 37.5
+   "planning_data": 87.5
   },
   "E09000005": {
    "planning_data": 100.0
@@ -2312,7 +2307,7 @@
    "planning_data": 0.0
   },
   "E09000028": {
-   "planning_data": 62.5
+   "planning_data": 75.0
   },
   "E09000029": {
    "planning_data": 0.0
