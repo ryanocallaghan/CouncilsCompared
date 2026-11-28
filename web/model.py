@@ -12,7 +12,7 @@ import json
 import math
 import os
 from dataclasses import dataclass, field
-from datetime import date
+from datetime import date, datetime
 from functools import cache
 from statistics import median
 
@@ -379,6 +379,53 @@ def councils():
 
 def sources():
     return load()["sources"]
+
+
+# Summaries of council meetings (pipeline/meetings.py), a trial for a few councils. Their pages
+# are always built, but unlisted: live at their address to share for feedback, with nothing
+# linking to them, left out of the sitemap and marked noindex. With CC_MEETINGS set (as on
+# Cloudflare's previews) they're listed: linked from council pages and in the sitemap.
+def meetings_listed(council=None):
+    """Whether meeting pages are linked and indexed; for a council, only if its own pages are built."""
+    return bool(os.environ.get("CC_MEETINGS")) and (council is None or published(council))
+
+
+def published(council):
+    return council["nation"] in PUBLISHED
+
+
+def meetings_councils():
+    """Every council with meeting summaries, including those in nations whose pages aren't built yet."""
+    every = _load(DATA_FILE, tuple(NATIONS.values()))["councils"].values()
+    return [c for c in every if meetings(c)]
+
+
+def meetings(council):
+    """{"held": [...], "upcoming": [...], "checked": date} for the council, or None."""
+    data = _meetings(os.path.join(os.path.dirname(DATA_FILE), "meetings.json"))
+    entry = data.get("councils", {}).get(council["code"])
+    if not entry or not (entry["held"] or entry["upcoming"]):
+        return None
+    return {**entry, "checked": data.get("checked")}
+
+
+@cache
+def _meetings(path):
+    if not os.path.exists(path):
+        return {}
+    with open(path) as f:
+        return json.load(f)
+
+
+def meetings_path(council):
+    return f"/{council['slug']}/meetings/"
+
+
+def meeting_when(iso):
+    """ "2026-11-19T19:30" -> "Thursday 19 November 2026, 7.30pm"."""
+    when = datetime.fromisoformat(iso)
+    minutes = "" if when.minute == 0 else f".{when.minute:02d}"
+    return f"{when:%A} {when.day} {when:%B %Y}, {when.hour % 12 or 12}{minutes}{'am' if when.hour < 12 else 'pm'}"
 
 
 MIN_COVERAGE = 0.75  # the share of councils a measure needs figures for before it is shown

@@ -4,6 +4,7 @@
 
 {% set c = comparison %}
 {% set b = c.council %}
+{% set meetings = model.meetings(b) if model.meetings_listed(b) else None %}
 
 {% block title %}{% if c.group == "nation" %}How {{ b.name }} Council compares{% else %}{{ b.name }} Council compared with {{ c.phrase }}{% endif %}{% endblock %}
 {% block description %}How {{ b.name }} Council compares with {{ c.phrase }} on {% if b.nation == "England" %}special educational needs, complaints, council housing, council tax, streets, homelessness and spending{% else %}schools, adult social care, complaints, council housing, council tax, streets, homelessness and spending{% endif %}, from official statistics. See where your council tax goes.{% endblock %}
@@ -23,6 +24,7 @@
           {% if c.spending %}<li><a class="govuk-link" href="#money">What the council spends</a></li>{% endif %}
         </ol>
       </li>
+      {% if meetings and meetings.held %}<li><a class="govuk-link" href="#meetings">At council meetings</a></li>{% endif %}
     </ol>
   </nav>
 {% endmacro %}
@@ -178,6 +180,21 @@
     <p class="govuk-body govuk-!-margin-bottom-0 app-area__headline">{{ c.spending[-1].value }} per resident in {{ sources[model.nation_source('spending', b.nation)].period }}, not counting schools. The median is {{ c.spending[-1].median }}.</p>
   </div>
   <p class="govuk-body app-area__more-link"><a class="govuk-link" href="{{ model.area_path(b, 'ctax', c.group) }}#spending">Spending by service, and what your council tax pays for</a></p>
+</section>
+{% endif %}
+
+{% if meetings and meetings.held %}
+<section class="app-area govuk-!-margin-top-8" id="meetings" aria-labelledby="meetings-title">
+  <div class="app-area__header">
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-1" id="meetings-title">At council meetings</h2>
+    <p class="govuk-body govuk-!-margin-bottom-0 app-area__headline">The latest meetings, summarised by AI from the council's papers.</p>
+  </div>
+  <ul class="govuk-list app-meetings__latest">
+    {% for m in meetings.held[:3] %}
+      <li><a class="govuk-link" href="{{ model.meetings_path(b) }}#meeting-{{ m.id }}">{{ m.committee }}</a>, {{ m.date | long_date }}: {{ m.summary }}</li>
+    {% endfor %}
+  </ul>
+  <p class="govuk-body app-area__more-link"><a class="govuk-link" href="{{ model.meetings_path(b) }}">Every meeting in the last three months, and what's coming up<span class="govuk-visually-hidden"> at {{ b.name }} Council</span></a></p>
 </section>
 {% endif %}
 

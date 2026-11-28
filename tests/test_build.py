@@ -156,3 +156,37 @@ def test_finding_a_council_by_name(tmp_path):
     assert lewisham[1] == "Lewisham"
     # The page go.js fills with the closest names
     assert "<!--suggestions-->" in (tmp_path / "council-not-found" / "index.html").read_text()
+
+
+def test_meeting_summaries_are_unlisted_until_switched_on(fixture_data, tmp_path, monkeypatch):
+    # Without CC_MEETINGS the page is live at its address, but nothing links to it and it isn't indexed
+    monkeypatch.delenv("CC_MEETINGS", raising=False)
+    build.build(str(tmp_path / "off"))
+    unlisted = (tmp_path / "off" / "lewisham" / "meetings" / "index.html").read_text()
+    assert '<meta name="robots" content="noindex">' in unlisted and "This page is a trial, shared for feedback" in unlisted
+    assert "Accounts for 2025-26" in unlisted
+    assert 'id="meetings"' not in (tmp_path / "off" / "lewisham" / "index.html").read_text()
+    assert "/meetings/" not in (tmp_path / "off" / "sitemap.xml").read_text()
+    assert not any("/meetings/" in f.read_text() for f in (tmp_path / "off").rglob("*.html")
+                   if "meetings" not in f.parts)
+    # Other pages aren't marked noindex
+    assert 'content="noindex"' not in (tmp_path / "off" / "lewisham" / "index.html").read_text()
+
+    monkeypatch.setenv("CC_MEETINGS", "1")
+    build.build(str(tmp_path / "on"))
+    page = (tmp_path / "on" / "lewisham" / "meetings" / "index.html").read_text()
+    assert 'content="noindex"' not in page and "shared for feedback" not in page
+    assert "<h1 class=\"govuk-heading-xl govuk-!-margin-bottom-4\">Council meetings</h1>" in page
+    assert "written by AI (Claude)" in page
+    assert "Thursday 19 November 2026, 7.30pm" in page and "Accounts for 2025-26" in page
+    assert ('From <a class="govuk-link" href="https://docs.example.gov.uk/documents/s1/External%20Audit%20Update.pdf'
+            '#page=2">External Audit Update, page 2</a> and <a') in page
+    assert "Mayor and Cabinet</a>, Wednesday 2 December 2026, 6pm" in page and "Cancelled" in page
+    assert "first 2 of 193 pages read" in page and "all 5 pages read" in page
+    council = (tmp_path / "on" / "lewisham" / "index.html").read_text()
+    assert 'id="meetings"' in council and 'href="/lewisham/meetings/#meeting-8990"' in council
+    assert 'href="#meetings">At council meetings' in council
+    assert 'href="/lewisham/meetings/#meeting-8990"' in (tmp_path / "on" / "lewisham" / "similar" / "index.html").read_text()
+    # Councils without summaries have no section or page
+    assert not (tmp_path / "on" / "hartlepool" / "meetings").exists()
+    assert "/lewisham/meetings/" in (tmp_path / "on" / "sitemap.xml").read_text()

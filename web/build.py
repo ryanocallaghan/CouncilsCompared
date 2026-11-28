@@ -279,11 +279,12 @@ def build(out=DIST):
     pages = []  # [(path, last modified)]
     updated = model.updated()
 
-    def page(path, template, nav=None, lastmod=None, canonical=None, **context):
-        """canonical: another page this one is a version of, which search engines should show instead."""
-        write(out, path, env.get_template(template).render(page_path=path, nav=nav, canonical=canonical, **common,
-                                                           **context))
-        if path.endswith("/") and not canonical:
+    def page(path, template, nav=None, lastmod=None, canonical=None, listed=True, **context):
+        """canonical: another page this one is a version of, which search engines should show instead.
+        listed=False: a page only for people given its address, left out of the sitemap and marked noindex."""
+        write(out, path, env.get_template(template).render(page_path=path, nav=nav, canonical=canonical,
+                                                           noindex=not listed, **common, **context))
+        if listed and path.endswith("/") and not canonical:
             pages.append((path, lastmod))
 
     regions = {}
@@ -297,6 +298,11 @@ def build(out=DIST):
         "description": f"How {model.coverage()} compares, from official statistics.",
         "author": AUTHOR, "publisher": AUTHOR,
     })
+    for council in model.meetings_councils():
+        meetings = model.meetings(council)
+        listed = model.meetings_listed(council)
+        page(model.meetings_path(council), "meetings.html", nav="/", lastmod=meetings["checked"], listed=listed,
+             council=council, meetings=meetings)
     for council in councils:
         groups = model.groups_for(council)
         for group in groups:

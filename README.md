@@ -48,6 +48,20 @@ Scottish councils are compared only with each other, on their own measures. Thei
 
 Columns are found by their headings and rows by ONS code, so new editions usually work without changes. Councils named rather than coded (the Ombudsman, the regulator, Silktide) are matched by name in `pipeline/names.py`.
 
+### Council meetings (trial)
+
+`python -m pipeline.meetings` summarises what happened at council meetings, from each council's own papers on its Modern.gov site. It's a trial for four London boroughs (Barnet, Brent, Hackney and Lewisham), the councils whose robots.txt allows automated readers and whose papers can be downloaded without a bot check, and for Glasgow, whose own committee system is read by `pipeline/glasgow.py`. Every address is checked against the site's robots.txt first, with two seconds between requests.
+
+For each meeting held in the last fortnight, it reads the agenda and the decisions on the meeting's page, then downloads the reports. Routine papers (apologies, the last minutes, work programmes), confidential items and meetings about one person's case (licensing hearings, adoption panels) are left out, and so is any file already summarised for another meeting. Main reports are read in full up to 40 pages, appendices only their first two. Claude ([`claude-opus-5-5`](https://platform.claude.com/docs/en/about-claude/models/overview) by default; `--model` to try another) writes a short, neutral summary in which every point links to the page of the papers it came from. The results are in `data/meetings.json`.
+
+The [Update data](.github/workflows/update-data.yml) workflow runs it once an `ANTHROPIC_API_KEY` secret is added to the repository, so the summaries arrive in the same pull request as the figures, for a person to check. The pages (`/<council>/meetings/`) are always built but unlisted, so they can be shared for feedback: nothing links to them, they're left out of the sitemap, they're marked `noindex`, and each says it's a trial. Glasgow's is built too, though Scotland's other pages aren't. With `CC_MEETINGS` set (on Cloudflare's preview environment, say), they're listed: linked from a section on each council's page and included in the sitemap.
+
+```sh
+python -m pipeline.meetings --dry-run              # read the papers and say how much would be sent, without sending it
+python -m pipeline.meetings --only lewisham        # needs ANTHROPIC_API_KEY
+CC_MEETINGS=1 npm run build
+```
+
 ## Running it
 
 ```sh
