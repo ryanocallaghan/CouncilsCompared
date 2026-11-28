@@ -1,0 +1,39 @@
+{
+ "checked": "2026-11-23",
+ "councils": {
+  "E09000023": {
+   "name": "Lewisham",
+   "site": "https://councilmeetings.example.gov.uk",
+   "held": [
+    {
+     "committee": "Audit and Risk Committee",
+     "date": "2026-11-19T19:30",
+     "id": "8990",
+     "model": "claude-opus-5-5",
+     "papers": [
+      {"name": "External Audit Update", "pages": 5, "read": "all", "sha": "a1", "url": "https://docs.example.gov.uk/documents/s1/External%20Audit%20Update.pdf"},
+      {"name": "Appendix A - Draft Statement of Accounts", "pages": 193, "read": "first 2 of 193 pages", "sha": "a2", "url": "https://docs.example.gov.uk/documents/s2/Appendix%20A.pdf"}
+     ],
+     "points": [
+      {
+       "sources": [
+        {"label": "External Audit Update, page 2", "url": "https://docs.example.gov.uk/documents/s1/External%20Audit%20Update.pdf#page=2"},
+        {"label": "the meeting's page", "url": "https://councilmeetings.example.gov.uk/ieListDocuments.aspx?CId=471&MId=8990"}
+       ],
+       "text": "The committee agreed the draft letters the council sends its auditors with its accounts.",
+       "title": "Accounts for 2025-26"
+      }
+     ],
+     "summary": "The committee looked at the auditors' draft reports on the council's accounts for 2025-26.",
+     "summarised": "2026-11-23",
+     "tokens": {"input": 69000, "output": 1800},
+     "url": "https://councilmeetings.example.gov.uk/ieListDocuments.aspx?CId=471&MId=8990"
+    }
+   ],
+   "upcoming": [
+    {"cancelled": false, "committee": "Mayor and Cabinet", "committee_id": "115", "date": "2026-12-02T18:00", "id": "8957", "url": "https://councilmeetings.example.gov.uk/ieListDocuments.aspx?CId=115&MId=8957"},
+    {"cancelled": true, "committee": "Licensing Sub Committee C", "committee_id": "512", "date": "2026-12-01T19:00", "id": "9099", "url": "https://councilmeetings.example.gov.uk/ieListDocuments.aspx?CId=512&MId=9099"}
+   ]
+  }
+ }
+}

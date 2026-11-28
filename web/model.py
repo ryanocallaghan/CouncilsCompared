@@ -12,7 +12,7 @@ import json
 import math
 import os
 from dataclasses import dataclass, field
-from datetime import date
+from datetime import date, datetime
 from functools import cache
 from statistics import median
 
@@ -379,6 +379,43 @@ def councils():
 
 def sources():
     return load()["sources"]
+
+
+# Summaries of council meetings (pipeline/meetings.py), a trial for a few councils. Their pages
+# are only built when CC_MEETINGS is set (as Cloudflare does for previews) until they've been
+# checked for a while.
+def meetings_on():
+    return bool(os.environ.get("CC_MEETINGS"))
+
+
+def meetings(council):
+    """{"held": [...], "upcoming": [...], "checked": date} for the council, or None."""
+    if not meetings_on():
+        return None
+    data = _meetings(os.path.join(os.path.dirname(DATA_FILE), "meetings.json"))
+    entry = data.get("councils", {}).get(council["code"])
+    if not entry or not (entry["held"] or entry["upcoming"]):
+        return None
+    return {**entry, "checked": data.get("checked")}
+
+
+@cache
+def _meetings(path):
+    if not os.path.exists(path):
+        return {}
+    with open(path) as f:
+        return json.load(f)
+
+
+def meetings_path(council):
+    return f"/{council['slug']}/meetings/"
+
+
+def meeting_when(iso):
+    """ "2026-11-19T19:30" -> "Thursday 19 November 2026, 7.30pm"."""
+    when = datetime.fromisoformat(iso)
+    minutes = "" if when.minute == 0 else f".{when.minute:02d}"
+    return f"{when:%A} {when.day} {when:%B %Y}, {when.hour % 12 or 12}{minutes}{'am' if when.hour < 12 else 'pm'}"
 
 
 MIN_COVERAGE = 0.75  # the share of councils a measure needs figures for before it is shown

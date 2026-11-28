@@ -298,6 +298,10 @@ def build(out=DIST):
         "author": AUTHOR, "publisher": AUTHOR,
     })
     for council in councils:
+        meetings = model.meetings(council)
+        if meetings:
+            page(model.meetings_path(council), "meetings.html", nav="/", lastmod=meetings["checked"],
+                 council=council, meetings=meetings)
         groups = model.groups_for(council)
         for group in groups:
             comparison = model.compare(council, group)

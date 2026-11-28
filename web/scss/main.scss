@@ -1085,3 +1085,20 @@ a.app-highlighted .app-hex {
   overflow-wrap: anywhere;
   font-size: inherit;
 }
+
+// Council meetings: each summary under a rule, its points spaced apart, and
+// a long paper name allowed to wrap
+.app-meeting {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid var(--govuk-border-colour, #cecece);
+}
+
+.app-meeting__point {
+  margin-bottom: 20px;
+  overflow-wrap: anywhere;
+}
+
+.app-meetings__latest li {
+  margin-bottom: 10px;
+}

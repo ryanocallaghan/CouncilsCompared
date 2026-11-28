@@ -19,6 +19,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    env:
+      # Whether the meeting summaries can run: only once the secret has been added
+      HAS_ANTHROPIC_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -33,6 +36,19 @@ jobs:
         run: |
           python -m pipeline.update --summary summary.md
           cat summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      # Summaries of council meetings, a trial for a few councils (pipeline/meetings.py). If it
+      # fails, the figures still update and the pull request says so.
+      - name: Summarise council meetings
+        if: env.HAS_ANTHROPIC_KEY == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if ! python -m pipeline.meetings --summary meetings.md; then
+            printf '\n### Council meetings\n\nThe summaries could not be updated: check the workflow log.\n' >> meetings.md
+          fi
+          cat meetings.md >> summary.md
+          cat meetings.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Check the figures
         id: checks
@@ -49,7 +65,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           CHECKS: ${{ steps.checks.outputs.result }}
         run: |
-          if git diff --quiet -- data; then
+          if [ -z "$(git status --porcelain -- data)" ]; then  # new files count too
             echo "Nothing changed"
             exit 0
           fi

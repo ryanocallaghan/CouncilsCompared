@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{# What happened at a council's meetings: summaries written by Claude from
+   the council's papers (pipeline/meetings.py), and the meetings coming up. #}
+{% set b = council %}
+
+{% block title %}{{ b.name }} Council meetings: what was discussed and decided{% endblock %}
+{% block description %}Plain-English summaries of {{ b.name | possessive }} council meetings in the last three months, from the council's own papers, and the meetings coming up.{% endblock %}
+
+{% block backLink %}
+  {{ govukBackLink({"text": b.name, "href": model.path(b)}) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+  <span class="govuk-caption-l"><a class="govuk-link govuk-link--muted" href="{{ model.path(b) }}">{{ b.name }}</a></span>
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Council meetings</h1>
+  <p class="govuk-body-l">What was discussed and decided at {{ b.name }} Council's public meetings in the last three months, and the meetings coming up.</p>
+  {{ govukInsetText({"html": "<p class=\"govuk-body\">These summaries are written by AI (Claude) from the papers the council publishes. AI can get things wrong or leave out something important, so each point links to the page it came from: check there before relying on it.</p>" | safe}) }}
+
+  {% if meetings.upcoming %}
+  <h2 class="govuk-heading-l govuk-!-margin-top-6" id="coming-up">Coming up</h2>
+  <ul class="govuk-list app-meetings__upcoming">
+    {% for m in meetings.upcoming %}
+      <li><a class="govuk-link" href="{{ m.url }}">{{ m.committee }}</a>, {{ model.meeting_when(m.date) }}{% if m.cancelled %} <strong class="govuk-tag govuk-tag--grey">Cancelled</strong>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  <h2 class="govuk-heading-l govuk-!-margin-top-6" id="recent">Recent meetings</h2>
+  {% if not meetings.held %}
+    <p class="govuk-body">No meetings have been summarised yet.</p>
+  {% endif %}
+  {% for m in meetings.held %}
+  <section class="app-meeting" id="meeting-{{ m.id }}" aria-labelledby="meeting-{{ m.id }}-title">
+    <h3 class="govuk-heading-m govuk-!-margin-bottom-1" id="meeting-{{ m.id }}-title">{{ m.committee }}</h3>
+    <p class="govuk-body-s app-secondary-text">{{ model.meeting_when(m.date) }}. <a class="govuk-link" href="{{ m.url }}">Agenda and papers<span class="govuk-visually-hidden"> for {{ m.committee }}</span> on the council's website</a></p>
+    <p class="govuk-body">{{ m.summary }}</p>
+    {% if m.points %}
+    <ul class="govuk-list app-meeting__points">
+      {% for p in m.points %}
+        <li class="app-meeting__point">
+          <h4 class="govuk-heading-s govuk-!-margin-bottom-1">{{ p.title }}</h4>
+          <p class="govuk-body govuk-!-margin-bottom-1">{{ p.text }}</p>
+          <p class="govuk-body-s app-secondary-text">From {% for s in p.sources %}<a class="govuk-link" href="{{ s.url }}">{{ s.label }}</a>{% if not loop.last %}{{ " and " if loop.revindex == 2 else ", " }}{% endif %}{% endfor %}</p>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if m.papers %}
+    {% set papersHtml %}
+      <ul class="govuk-list govuk-list--bullet">
+        {% for p in m.papers %}<li><a class="govuk-link" href="{{ p.url }}">{{ p.name }}</a>: {% if p.read == "all" %}all {{ p.pages }} {{ "page" if p.pages == 1 else "pages" }} read{% elif p.read.startswith("first ") %}{{ p.read }} read{% else %}{{ p.read }}{% endif %}</li>{% endfor %}
+      </ul>
+      <p class="govuk-body-s">Routine papers, such as apologies and the last meeting's minutes, and confidential items aren't read. Appendices are only read to their first pages.</p>
+    {% endset %}
+    {{ govukDetails({"summaryText": "Papers the summary is based on", "html": papersHtml, "classes": "govuk-!-margin-bottom-6"}) }}
+    {% endif %}
+  </section>
+  {% endfor %}
+
+  <p class="govuk-body-s app-secondary-text">Checked for new meetings on {{ meetings.checked | long_date }}. Only meetings with published papers are summarised, and meetings about one person's case, such as licensing hearings, are left out.</p>
+</div>
+</div>
+{% endblock %}
