@@ -158,15 +158,24 @@ def test_finding_a_council_by_name(tmp_path):
     assert "<!--suggestions-->" in (tmp_path / "council-not-found" / "index.html").read_text()
 
 
-def test_meeting_summaries_are_only_built_when_switched_on(fixture_data, tmp_path, monkeypatch):
+def test_meeting_summaries_are_unlisted_until_switched_on(fixture_data, tmp_path, monkeypatch):
+    # Without CC_MEETINGS the page is live at its address, but nothing links to it and it isn't indexed
     monkeypatch.delenv("CC_MEETINGS", raising=False)
     build.build(str(tmp_path / "off"))
-    assert not (tmp_path / "off" / "lewisham" / "meetings").exists()
+    unlisted = (tmp_path / "off" / "lewisham" / "meetings" / "index.html").read_text()
+    assert '<meta name="robots" content="noindex">' in unlisted and "This page is a trial, shared for feedback" in unlisted
+    assert "Accounts for 2025-26" in unlisted
     assert 'id="meetings"' not in (tmp_path / "off" / "lewisham" / "index.html").read_text()
+    assert "/meetings/" not in (tmp_path / "off" / "sitemap.xml").read_text()
+    assert not any("/meetings/" in f.read_text() for f in (tmp_path / "off").rglob("*.html")
+                   if "meetings" not in f.parts)
+    # Other pages aren't marked noindex
+    assert 'content="noindex"' not in (tmp_path / "off" / "lewisham" / "index.html").read_text()
 
     monkeypatch.setenv("CC_MEETINGS", "1")
     build.build(str(tmp_path / "on"))
     page = (tmp_path / "on" / "lewisham" / "meetings" / "index.html").read_text()
+    assert 'content="noindex"' not in page and "shared for feedback" not in page
     assert "<h1 class=\"govuk-heading-xl govuk-!-margin-bottom-4\">Council meetings</h1>" in page
     assert "written by AI (Claude)" in page
     assert "Thursday 19 November 2026, 7.30pm" in page and "Accounts for 2025-26" in page

@@ -8,15 +8,18 @@
 {% block description %}Plain-English summaries of {{ b.name | possessive }} council meetings in the last three months, from the council's own papers, and the meetings coming up.{% endblock %}
 
 {% block backLink %}
-  {{ govukBackLink({"text": b.name, "href": model.path(b)}) }}
+  {% if model.published(b) %}{{ govukBackLink({"text": b.name, "href": model.path(b)}) }}{% endif %}
 {% endblock %}
 
 {% block content %}
 <div class="govuk-grid-row">
 <div class="govuk-grid-column-two-thirds">
-  <span class="govuk-caption-l"><a class="govuk-link govuk-link--muted" href="{{ model.path(b) }}">{{ b.name }}</a></span>
+  <span class="govuk-caption-l">{% if model.published(b) %}<a class="govuk-link govuk-link--muted" href="{{ model.path(b) }}">{{ b.name }}</a>{% else %}{{ b.name }}{% endif %}</span>
   <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Council meetings</h1>
   <p class="govuk-body-l">What was discussed and decided at {{ b.name }} Council's public meetings in the last three months, and the meetings coming up.</p>
+  {% if not model.meetings_listed(b) %}
+  <p class="govuk-body"><strong class="govuk-tag govuk-tag--yellow">Trial</strong> This page is a trial, shared for feedback. It isn't linked from the rest of the site yet.</p>
+  {% endif %}
   {{ govukInsetText({"html": "<p class=\"govuk-body\">These summaries are written by AI (Claude) from the papers the council publishes. AI can get things wrong or leave out something important, so each point links to the page it came from: check there before relying on it.</p>" | safe}) }}
 
   {% if meetings.upcoming %}

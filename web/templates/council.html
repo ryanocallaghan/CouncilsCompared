@@ -4,7 +4,7 @@
 
 {% set c = comparison %}
 {% set b = c.council %}
-{% set meetings = model.meetings(b) %}
+{% set meetings = model.meetings(b) if model.meetings_listed(b) else None %}
 
 {% block title %}{% if c.group == "nation" %}How {{ b.name }} Council compares{% else %}{{ b.name }} Council compared with {{ c.phrase }}{% endif %}{% endblock %}
 {% block description %}How {{ b.name }} Council compares with {{ c.phrase }} on {% if b.nation == "England" %}special educational needs, complaints, council housing, council tax, streets, homelessness and spending{% else %}schools, adult social care, complaints, council housing, council tax, streets, homelessness and spending{% endif %}, from official statistics. See where your council tax goes.{% endblock %}

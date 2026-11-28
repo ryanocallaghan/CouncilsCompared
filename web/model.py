@@ -382,16 +382,26 @@ def sources():
 
 
 # Summaries of council meetings (pipeline/meetings.py), a trial for a few councils. Their pages
-# are only built when CC_MEETINGS is set (as Cloudflare does for previews) until they've been
-# checked for a while.
-def meetings_on():
-    return bool(os.environ.get("CC_MEETINGS"))
+# are always built, but unlisted: live at their address to share for feedback, with nothing
+# linking to them, left out of the sitemap and marked noindex. With CC_MEETINGS set (as on
+# Cloudflare's previews) they're listed: linked from council pages and in the sitemap.
+def meetings_listed(council=None):
+    """Whether meeting pages are linked and indexed; for a council, only if its own pages are built."""
+    return bool(os.environ.get("CC_MEETINGS")) and (council is None or published(council))
+
+
+def published(council):
+    return council["nation"] in PUBLISHED
+
+
+def meetings_councils():
+    """Every council with meeting summaries, including those in nations whose pages aren't built yet."""
+    every = _load(DATA_FILE, tuple(NATIONS.values()))["councils"].values()
+    return [c for c in every if meetings(c)]
 
 
 def meetings(council):
     """{"held": [...], "upcoming": [...], "checked": date} for the council, or None."""
-    if not meetings_on():
-        return None
     data = _meetings(os.path.join(os.path.dirname(DATA_FILE), "meetings.json"))
     entry = data.get("councils", {}).get(council["code"])
     if not entry or not (entry["held"] or entry["upcoming"]):
